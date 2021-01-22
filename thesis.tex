@@ -1,0 +1,105 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{mathabx}
+\usepackage{amsopn}
+
+\title{Thesis Ch5: Event Reconstruction}
+\author{qthedesperate }
+\date{January 2021}
+
+\begin{document}
+
+\maketitle
+
+\section{Event Reconstruction}
+\subsection{True neutron tagging information}
+\subsection{Primary selection criteria}
+\subsection{Secondary selection criteria}
+When the neutron vertex is found by this method, 14 variables which describe different aspects of the neutron candidate are calculated. For each of the neutron candidates the vector of these variables are computed and fed into the neural network and this produces an output value which is between 0 and 1. These variables relate to different features regarding categorising hits from neutron capture on Gd or H, including the number of the hits from neutron capture, the isotropy of these hits, the Cherenkov angles of these hits and the position of the neutron vertex in the detector when capture occurs. A description of these variables are given as follows:
+\newline
+
+
+\underline{N10nvx}
+\newline
+This is the number of hits in the 10ns sliding window of the neutron candidate
+\newline
+
+
+\underline{N300S}
+\newline
+Excluding the number of hits in the 10ns sliding window (N10nvx), this is the number of hits in the extended window of 300ns.
+\newline
+
+
+\underline{NcS}
+\newline
+This variable is defined as:
+\begin{equation}
+\label{ncs}
+    NcS = N10nvx - Nclushit
+\end{equation}
+
+    Where $Nclushit$ is the number of clusterised hits: if hit \textit{i} and \textit{j} are hits on PMTs, then for hit \textit{i} and hit \textit{j} the hit vector $\hat{r}_i$ can be written as:
+
+\begin{equation}
+\label{hit}
+    \hat{r}_{i}=\frac{\overrightarrow{P M T_{i}}-\overrightarrow{V T X_{n}}}{\left\|\overrightarrow{P M T_{i}}-\overrightarrow{V T X_{n}}\right\|}
+\end{equation}
+
+where the angle at the point of the neutron capture vertex between $\hat{r}_{i}$ and $\hat{r}_{j}$ of the PMT hits is defined as:
+
+\begin{equation}
+\theta_{i j}=\arccos \left(\hat{p}_{i} \cdot \hat{p}_{j}\right)
+\end{equation}
+
+where the hits are defined as clustered if $\theta_{ij}$ is less than 14
+
+
+\underline{llrca}
+\newline
+This variable is the log likelihood ratio calculated using triplets of hits from N10nvx that make up a rudimentary Cherenkov cone, from which the opening angle $\theta$ is calculated. Two PDFs ($\theta_{Ci}$) and ($\theta_{Ci}$) are calculated from each $\theta_{Ci}$ where p\_s and p\_b are the probability density functions of $\theta_{C}$ depending on whether the hits come from a true neutron capture on Gd or H or a false neutron capture which makes up the background. The log likelihood ratio variable is computed using Equation {\ref{llrca}}.
+
+\begin{equation}
+\label{llrca}
+\newline
+  llrca =\sum_{i \in\{ { triplets }\}} \log \left(\frac{f_{B}\left(\theta_{C i}\right)}{f_{S}\left(\theta_{C i}\right)}\right)
+\end{equation}
+
+
+\underline{beta-n}
+\newline
+These variables (where n = 1,2,3,4,5) are defined using Legendre polynomials, shown in Equation \ref{beta} \cite{snopaper}, which gives the isotropy of the Cherenkov hits.
+
+\begin{equation}
+\label{beta}
+ beta- n=\frac{2}{N 10 {nvx}(N 10 {nvx}-1)} \sum_{i \neq j}  { Legendre }_{n}\left(\cos \theta_{i j}\right)
+\end{equation}
+
+where $Legendre_n$ gives the Legendre polynomial of order $n$ and $theta_{ij}$ is the angle between hit PMTs relative to the neutron capture vertex.
+
+
+
+\underline{ndwall}
+\newline
+This parameter, similar to dwall, gives the shortest distance of the neutron capture vertex from the wall of the Super-Kamiokande tank.
+\newline
+
+
+
+\underline{ntowall}
+\newline
+This variable (similar to effwall), gives the distance of the neutron capture vertex from the wall, however, unlike ndwall it gives the direction of the neutron capture specifically along the direction of the centre of the hits. The direction ($\overrightarrow{R}$) is given by:
+
+\begin{equation}
+\overrightarrow{\operatorname{dir}}=\sum_{i=1}^{N 10 n v x} \hat{p}_{i}
+\end{equation}
+
+
+
+
+
+
+
+
+
+\end{document}
