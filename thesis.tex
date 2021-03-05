@@ -13,6 +13,45 @@
 \maketitle
 
 \section{Event Reconstruction}
+\section{Fitting}
+Both MC and data neutrino events undergo a reconstruction phase, where the low-energy fitter BONSAI is applied to the event. This reconstruction is carried out using timing and cable information, however charge information is omitted. The ouput of BONSAI gives information which will be used in the reduction phase of the data and allow for the selection of the NCQE sample. BONSAI is a low-energy fitter used in the few-MeV to tens of MeV energy range, therefore suitable for this analysis. It's directional reconstruction uses the fitted vertex and maximises for direction while it's energy reconstruction of the event is based upon the number of hit PMTs. Equation \ref{bonsai} shows how the vertex reconstruction is formulated, where $w_{i}$ is the Gaussian hit weight of the PMT, $t_{i}$ is the hit time of the PMT and $x_{i}$ is the position of the hit PMT.
+\newline
+\begin{equation}
+\label{bonsai}
+g(\vec{v})=\sum_{i=1}^{N} w_{i} e^{\left.-0.5\left(t_{i}-\left|\overrightarrow{x_{i}}-\vec{v}\right| / c\right) / \sigma\right)^{2}}
+\end{equation}
+The following quantities comprise the BONSAI output, the first two being helpful spectator variables and the latter five constituting parameters which are used in the reduction phase of the analysis, from which the neutrino NCQE sample is determined.
+
+\newline
+\underline{Neutrino vertex direction}
+This vector points towards the direction which is an average over all the Cherenkov cone axes which are produced, due to there being multiple leptons induced in the interaction.
+
+
+\newline
+\underline{Neutrino vertex position}
+In NCQE events the vector of the Cherenkov cone produced by an outgoing charged lepton, gives the point at which the Oxygen molecule involved in an NCQE event excites and de-excites due to an interaction with a neutrino and it is this interaction point which is the neutrino vertex position.
+
+ \newline
+ \underline{Reconstructed energy}
+ In line with the standard SK low energy analysis definition, this energy is simply the reconstructed energy with the 0.511MeV electron mass omitted. The range for E_{rec} in this variable is 3.49 MeV to 29.49 MeV.
+
+ \newline
+ \underline{Dwall}
+ This variable gives the minimum distance of the neutrino vertex position from the closest wall of the Super-Kamiokande detector.
+
+ \newline
+ \underline{Effwall}
+ Thus variable gives the distance between the neutrino vertex posiiton and the closest wall, but moving back from the vertex position along the neutrino vertex direction vector.
+
+ \newline
+ \underline{Vertex direction and goodness coefficient}
+ The coefficient $ovaQ$ (defined in Equation \ref{ovaq}) describes the quality of the vertex reconstruction. It consists of two parameters $g^2_{vtx}$ and $g^2_{dir}$ where the former describes the goodness of the vertex which is based on PMT hit timings, and increases the sharper an event is in time. The latter is the directional goodness and measures the azimuthal uniformity in the ring pattern produced by the Cherenkov cone, which decreass the more uniform an event is in space. As a result of this, $ovaQ$ increases the more uniform and sharp in time an event is.
+
+ \newline
+ \underline{Cherenkov angle $theta_{C}$}
+ In neutral current events, this value determines the opening angle of the Cherenkov cone and unlike for charged current events does not 
+
+
 \subsection{True neutron tagging information}
 \subsection{Primary selection criteria}
 \subsection{Secondary selection criteria}
@@ -95,8 +134,7 @@ This variable (similar to effwall), gives the distance of the neutron capture ve
 \overrightarrow{\operatorname{dir}}=\sum_{i=1}^{N 10 n v x} \hat{p}_{i}
 \end{equation}
 
-\bibliographystyle{plain}
-\bibliography{mybib}{}
+
 
 
 
