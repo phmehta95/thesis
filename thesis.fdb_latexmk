@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1633529669 "c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis.tex" "c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis.pdf" "thesis" 1633529670
-  "c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis.aux" 1633529670 707 3cbcd93b67ff4f110c0f6e0a052e85d0 ""
-  "c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis.tex" 1633529668 7529 dfd1c094cc8a8c9101b36a814606966b ""
+["pdflatex"] 1634568875 "c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis.tex" "c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis.pdf" "thesis" 1634569256
+  "c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis.aux" 1634568876 713 9fe9b61755ec24b5dc576300cf0b88b3 ""
+  "c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis.tex" 1634568999 7537 e3a3ac940417344f8bfc41f62563b249 ""
   "c:/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1566055564 3332 103109f5612ad95229751940c61aada0 ""
   "c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1566054773 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1566054773 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -55,11 +55,11 @@
   "c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1566063936 4679123 759564569d4dc2958740c7e42f4faa01 ""
   "c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1566064037 4261111 8bea8fe3d7c7bffd60b15466d007a1f7 ""
   "c:/texlive/2019/texmf.cnf" 1566063914 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "thesis.aux" 1633529670 707 3cbcd93b67ff4f110c0f6e0a052e85d0 "pdflatex"
-  "thesis.tex" 1633529668 7529 dfd1c094cc8a8c9101b36a814606966b ""
+  "thesis.aux" 1634568876 713 9fe9b61755ec24b5dc576300cf0b88b3 "pdflatex"
+  "thesis.tex" 1634568999 7537 e3a3ac940417344f8bfc41f62563b249 ""
   (generated)
-  "c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis.pdf"
-  "thesis.pdf"
   "thesis.aux"
-  "c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis.log"
   "thesis.log"
+  "thesis.pdf"
+  "c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis.log"
+  "c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis.pdf"
