@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{mathabx}
+\usepackage{amsopn}
+\usepackage{cite}
+\setlength\parindent{0pt}
+
+
+\title{Systematic uncertainty calculations}
+
+
+\section{Systematic uncertainty calculation methodology}
+
+
+The systematic uncertainities for this analysis are calculated using the probablity distribution functions of each quantity appearing in the formula for the mean neutron multiplicity, which is given by:
+
+\begin{equation}
+ M=\frac{\# n_{\text {det }}-R \times \# \nu_{\text {det }}}{T} \frac{1}{\# \nu_{\text {det }}}
+ \label{multiplicity}
+\end{equation}
+
+
+
+By random sampling the probability distribution functions for each of the terms in Equation \eqref{multiplicity} one can calculate the multiplicity probability distribution functions for both the statistical uncertainty and the systematic uncertainty. The statistical uncertainty for the value for the multiplicity is related to the variation in the number of detected neutrons $# n_{\text {det }}$, while the systematic uncertainty is related to the variation on the tagging efficiency and the background rate. The total search time for the tagged neutrons is dependent on the number of "windows" in which the neutron is searched for in, and therefore the term for the number of detected neutrinos \nu_{\text {det }}}. Because any variation on the number of neutrinos which are detected is unrelated to the value for the mean neutron multiplicity, calculating a probability mass function for the number of neutrinos is uneccessary. 
+
+A Poissonian distribution is used to model the distribution for the number of detected neutrons, due to its value being approximated by counting the positives in the timing window that the neutron tagging search is carried out in. The mean value of this Poisson distribution is denoted in the equation below as 
+
+\begin{equation}
+P M F\left(\# n_{\text {det }}\right)=\frac{1}{\left(\# n_{\text {det }}\right) !}\left\langle \# n_{\text {det }}\right\rangle^{\# n_{\text {det }}} e^{-\left\langle \# n_{\text {det }}\right\rangle}
+\end{equation}
+
+Regarding the background rate, this is estimated from dummy spill data, but it's error is associated with the statistical variation of the Monte Carlo size that the backround rate is associated with, and secondly the change of the background rate value during the SK-V period. The statistical variation of the MC is modelled using a Gaussian, while the uncertainty relating to time variation is characterised by its own probability distribution function. In contrast, the tagging efficiency 
+
+
+
+
+\section{Neutrino beam flux uncertainty}
+
+
+
+
+
+
+
+
+
+\end{document}
