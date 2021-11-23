@@ -3,7 +3,6 @@
 \usepackage{mathabx}
 \usepackage{amsopn}
 \usepackage{cite}
-\setlength\parindent{0pt}
 
 
 \title{Systematic uncertainty calculations}
@@ -56,7 +55,7 @@ Each individual bin for the flux is increased/decreased by its error, the Monte 
 
 \begin{equation}
 \delta_{i}(\pm \sigma)=\frac{T_{i}(\pm \sigma)-T_{\text {nom }}}{T_{\text {nom }}} \quad i \in\{\text { each flux bin }\}
-\lebal{eq:nubeamfluxerror}
+\label{eq:nubeamfluxerror}
 \end{equation}
 
 Figure \figure{fluxuncertainty} shows the fractional errors calculated from the reweighted Monte Carlo, with the red bars showing the -1$\sigma$ variation and the blue bars showing the +1$\sigma$ variation. Table \ref{table:systuncertaintytable} contains the value for the total fractional uncertainty resulting from the neutrino beam flux, which was calculated using Equation \eqref{summingfluxuncertainty}, where the maximum value between the increased and decreased discrepancy is taken and summed over to produce the final neutrino flux beam uncertainty value.
@@ -65,6 +64,11 @@ Figure \figure{fluxuncertainty} shows the fractional errors calculated from the 
 \delta_{\nu \text { flux }}=\sum_{i \in\{\text { bins }\}} \max \left[\left|\delta_{i}(+\sigma)\right|,\left|\delta_{i}(-\sigma)\right|\right]
 \end{equation}
 
+\begin{figure}[here]
+\includegraphics[width=0.9\textwidth]{flux_uncertainty.png}
+\caption{Tagging efficiency }
+\label{fig:fluxuncertainty}
+\end{figure}
 
 
 
