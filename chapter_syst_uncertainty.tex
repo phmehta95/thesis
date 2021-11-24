@@ -7,12 +7,17 @@
 \usepackage{float}
 \usepackage{caption}
 \usepackage{amsmath}
+\setlength\parindent{0pt}
 
 
 
+
+
+\title{Systematic uncertainty calculations}
 
 \begin{document}
-\title{Systematic uncertainty calculations}
+\maketitle
+
 
 
 \section{Systematic uncertainty calculation methodology}
@@ -30,24 +35,24 @@ The systematic uncertainities for this analysis are calculated using the probabl
 By random sampling the probability distribution functions for each of the terms in Equation \eqref{multiplicity} one can calculate the multiplicity probability distribution functions for both the statistical uncertainty and the systematic uncertainty. The statistical uncertainty for the value for the multiplicity is related to the variation in the number of detected neutrons, while the systematic uncertainty is related to the variation on the tagging efficiency and the background rate. The total search time for the tagged neutrons is dependent on the number of "windows" in which the neutron is searched for in, and therefore the term for the number of detected neutrinos. Because any variation on the number of neutrinos which are detected is unrelated to the value for the mean neutron multiplicity, calculating a probability mass function for the number of neutrinos is uneccessary. 
 
 A Poissonian distribution is used to model the distribution for the number of detected neutrons, due to its value being approximated by counting the positives in the timing window that the neutron tagging search is carried out in. The mean value of this Poisson distribution is denoted in the equation below as 
-
+\newline
 %\begin{equation}
 %    P M F\left(\# n_{\text {det }}\right)=\frac{1}{\left(\# %n_{\text {det }}\right) !}\left\langle \# n_{\text {det }}%\right\rangle^{\# n_{\text {det }}} e^{-\left\langle \# n_%{\text {det }}\right\rangle}
 %\end{equation}
-
+\newline
 Regarding the background rate, this is estimated from dummy spill data, but it's error is associated with the statistical variation of the Monte Carlo size that the backround rate is associated with, and secondly the change of the background rate value during the SK-V period. The statistical variation of the MC is modelled using a Gaussian, while the uncertainty relating to time variation is characterised by its own probability distribution function. In contrast, the tagging efficiency is model dependent and has systematic uncertainties relating to this. The two ways in which the systematic error are estimated are either using MC re-weighting or MC regeneration.
-
+\newline
 For the MC-reweighting approach, weights are applied to a quantity and the tagging efficiency of the re-weighted MC is extracted. The general methodology is to have the input of a model (given by a set of parameters) and to vary them one by one and then calculate the reweighted tagging efficiencies - the set of relative discrepancies $\delta_{i}$ are computed from this set of reweighted tagging efficiencies $T_{i}$ and the nominal tagging efficiency $T_{nom}$ using Equation \eqref{taggeffdiscrep}.
-
+\newline
 %\begin{equation}
 %    \delta_{i}=\frac{T_{i}-T_{\text {nom }}}{T_{\text {nom }%}} \quad i \in\{\text { parameters }\}
 %\label{tageffdiscrep}
 %\end{equation}
-
+\newline
 These relative discrepancies $\delta_{i}$ are used to calculate the one indivdual discrepancy $\delta_{reweighted}$ that would describe the final deviation from the nominal tagging efficiency $T_{nom}$ due to the systematic error. $\delta_{reweighted}$ describes the model which has been produced through 1$\sigma$ variations of these parameters, therefore the final probability distribution function which describes the deviation from the nominal MC has a Gaussian distribution with the standard deviation being equal to $\delta_{reweighted}$. 
-
+\newline
 The other method to estimate the systematic error on the tagging efficiency is the method of Monte Carlo regeneration. This is carried out by varying a parameter then regenerating the whole Monte Carlo and then extracting the tagging efficiency - therefore unlike with MC re-weighting there is no set of discrepancies $\delta_{i}$ but instead two single discrepancies $\delta_{min}$ and $\delta_{max}$. The resulting probability distribution which describes the deviation from the nominal Monte Carlo is a Gaussian which has the mean and standard deviation relating to the discrepancies show in Equation \eqref{mcregengauss}.
-
+\newline
 
 
 
@@ -59,26 +64,23 @@ $\left(\nu_{e} \overline{\nu_{e}} \nu_{\mu} \overline{\nu_{\mu}}\right)$ have th
 
 
 Each individual bin for the flux is increased/decreased by its error, the Monte Carlo re-weighting method is then used to extract the taggging efficiency for each flux bin, and Equation \eqref{nubeamfluxerror} is used to calculate the fractional uncertainty.
+\newline
+\begin{equation}
+    \delta_{i}(\pm \sigma)=\frac{T_{i}(\pm \sigma)-T_{\text {nom }}}{T_{\text {nom }}} \quad i \in\{\text { each flux bin }\}
+\label{eq:nubeamfluxerror}
+\end{equation}
+\newline
+Figure shows the fractional errors calculated from the reweighted Monte Carlo, with the red bars showing the -1$\sigma$ variation and the blue bars showing the +1$\sigma$ variation. Table \ref{table:systuncertaintytable} contains the value for the total fractional uncertainty resulting from the neutrino beam flux, which was calculated using Equation \eqref{summingfluxuncertainty}, where the maximum value between the increased and decreased discrepancy is taken and summed over to produce the final neutrino flux beam uncertainty value.
+\newline
 
-%\begin{equation}
-%    \delta_{i}(\pm \sigma)=\frac{T_{i}(\pm \sigma)-T_{\text %{nom }}}{T_{\text {nom }}} \quad i \in\{\text { each flux %bin }\}
-%\label{eq:nubeamfluxerror}
-%\end{equation}
+\begin{equation}
+    \delta_{\nu \text { flux }}=\sum_{i \in\{\text { bins }\}} \max \left[\left|\delta_{i}(+\sigma)\right|,\left|\delta_{i}(-\sigma)\right|\right]
+\end{equation}
 
-Figure \figure{fluxuncertainty} shows the fractional errors calculated from the reweighted Monte Carlo, with the red bars showing the -1$\sigma$ variation and the blue bars showing the +1$\sigma$ variation. Table \ref{table:systuncertaintytable} contains the value for the total fractional uncertainty resulting from the neutrino beam flux, which was calculated using Equation \eqref{summingfluxuncertainty}, where the maximum value between the increased and decreased discrepancy is taken and summed over to produce the final neutrino flux beam uncertainty value.
-
-%\begin{equation}
-%    \delta_{\nu \text { flux }}=\sum_{i \in\{\text { bins }%\}} \max \left[\left|\delta_{i}(+\sigma)\right|,\left|%\delta_{i}(-\sigma)\right|\right]
-%\end{equation}
-
-%\begin{figure}[h!]
-%\includegraphics{flux_uncertainty.png}
-%\label{fig:fluxuncertainty}
-%\end{figure}
-
-
-
-
+\begin{figure}[h!]
+\includegraphics{flux_uncertainty.png}
+\label{fig:fluxuncertainty}
+\end{figure}
 
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.17)  24 NOV 2021 19:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.17)  24 NOV 2021 20:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -128,18 +128,18 @@ LaTeX Info: Redefining \] on input line 2845.
 ) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/chapter_syst_uncertainty.aux)
 \openout1 = `chapter_syst_uncertainty.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
  (c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count103
@@ -193,71 +193,93 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
 
-LaTeX Warning: Reference `multiplicity' on page 1 undefined on input line 30.
+LaTeX Warning: No \author given.
 
 
-LaTeX Warning: Reference `taggeffdiscrep' on page 1 undefined on input line 40.
+LaTeX Warning: Reference `multiplicity' on page 1 undefined on input line 35.
 
 
-LaTeX Warning: Reference `mcregengauss' on page 1 undefined on input line 49.
+LaTeX Warning: Reference `taggeffdiscrep' on page 1 undefined on input line 45.
+
+
+LaTeX Warning: Reference `mcregengauss' on page 1 undefined on input line 54.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--56
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--56
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--56
+
+ []
 
 [1
 
 {c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
-LaTeX Warning: Reference `nubeamfluxerror' on page 2 undefined on input line 61.
+LaTeX Warning: Reference `nubeamfluxerror' on page 2 undefined on input line 66.
 
 
-LaTeX Warning: Reference `table:systuncertaintytable' on page 2 undefined on input line 68.
+Underfull \hbox (badness 10000) in paragraph at lines 66--68
+
+ []
 
 
-LaTeX Warning: Reference `summingfluxuncertainty' on page 2 undefined on input line 68.
+LaTeX Warning: Reference `table:systuncertaintytable' on page 2 undefined on input line 73.
 
-(c:/Users/Pruthvi/git/phmehta95/thesis/thesis/chapter_syst_uncertainty.aux)
+
+LaTeX Warning: Reference `summingfluxuncertainty' on page 2 undefined on input line 73.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--75
+
+ []
+
+
+LaTeX Warning: File `flux_uncertainty.png' not found on input line 81.
+
+
+c:/Users/Pruthvi/git/phmehta95/thesis/thesis/chapter_syst_uncertainty.tex:81: Package pdftex.def Error: File `flux_uncertainty.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.81 \includegraphics{flux_uncertainty.png}
+                                           
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[2] [3] (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/chapter_syst_uncertainty.aux)
 
 LaTeX Warning: There were undefined references.
 
-c:/Users/Pruthvi/git/phmehta95/thesis/thesis/chapter_syst_uncertainty.tex:86: You can't use `\end' in internal vertical mode.
-\enddocument ... \endgroup \deadcycles \z@ \@@end 
-                                                  
-l.86 \end{document}
-                   
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
 
-c:/Users/Pruthvi/git/phmehta95/thesis/thesis/chapter_syst_uncertainty.tex:86: Missing } inserted.
-<inserted text> 
-                }
-l.86 \end{document}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-c:/Users/Pruthvi/git/phmehta95/thesis/thesis/chapter_syst_uncertainty.tex:86: Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.86 \end{document}
-                   
-Things are pretty mixed up, but I think the worst is over.
-
-)
-! Emergency stop.
-<*> .../thesis/thesis/chapter_syst_uncertainty.tex
-                                                  
-*** (job aborted, no legal \end found)
-
- 
+ ) 
 Here is how much of TeX's memory you used:
- 3286 strings out of 492609
- 49710 string characters out of 6132818
- 120059 words of memory out of 5000000
- 7191 multiletter control sequences out of 15000+600000
- 5007 words of font info for 19 fonts, out of 8000000 for 9000
+ 3314 strings out of 492609
+ 50022 string characters out of 6132818
+ 122080 words of memory out of 5000000
+ 7207 multiletter control sequences out of 15000+600000
+ 8884 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,4n,38p,983b,140s stack positions out of 5000i,500n,10000p,200000b,80000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 41i,6n,38p,983b,223s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on c:/Users/Pruthvi/git/phmehta95/thesis/thesis/chapter_syst_uncertainty.pdf (3 pages, 128013 bytes).
+PDF statistics:
+ 62 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
