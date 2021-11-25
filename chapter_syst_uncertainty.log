@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.17)  25 NOV 2021 22:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.17)  25 NOV 2021 23:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -196,9 +196,18 @@ Package caption Info: End \AtBeginDocument code.
 LaTeX Warning: No \author given.
 
 
+LaTeX Warning: Reference `multiplicity' on page 1 undefined on input line 35.
+
+
+LaTeX Warning: Reference `poissonuncertainty' on page 1 undefined on input line 37.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 37--39
 
  []
+
+
+LaTeX Warning: Reference `tageffdiscrep' on page 1 undefined on input line 46.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 42--48
@@ -213,9 +222,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--53
  []
 
 
+LaTeX Warning: Reference `mcregengauss' on page 2 undefined on input line 56.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 54--58
 
  []
+
+
+LaTeX Warning: Reference `nubeamfluxerror' on page 2 undefined on input line 74.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 74--76
@@ -223,7 +238,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--76
  []
 
 
+LaTeX Warning: Reference `fig:fluxuncertainty' on page 2 undefined on input line 81.
+
+
 LaTeX Warning: Reference `table:systuncertaintytable' on page 2 undefined on input line 81.
+
+
+LaTeX Warning: Reference `summingfluxuncertainty' on page 2 undefined on input line 81.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 79--83
@@ -231,7 +252,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--83
  []
 
 [2]
-<flux_uncertainty.png, id=20, 885.90974pt x 522.15076pt>
+<flux_uncertainty.png, id=21, 885.90974pt x 522.15076pt>
 File: flux_uncertainty.png Graphic file (type png)
 <use flux_uncertainty.png>
 Package pdftex.def Info: flux_uncertainty.png  used on input line 90.
@@ -241,7 +262,20 @@ Overfull \hbox (9.35762pt too wide) in paragraph at lines 90--91
 [][] 
  []
 
+
+LaTeX Warning: Reference `xsectable' on page 3 undefined on input line 97.
+
+
+LaTeX Warning: Reference `systmethod' on page 3 undefined on input line 97.
+
+
+LaTeX Warning: Reference `xsectageff' on page 3 undefined on input line 97.
+
 [3 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/flux_uncertainty.png>]
+
+LaTeX Warning: Reference `fig:xsecuncertainty' on page 4 undefined on input line 104.
+
+
 Overfull \hbox (77.35472pt too wide) detected at line 127
 [][]
  []
@@ -254,21 +288,33 @@ Package pdftex.def Info: xsec_uncertainty.png  used on input line 130.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+c:/Users/Pruthvi/git/phmehta95/thesis/thesis/chapter_syst_uncertainty.tex:135: Undefined control sequence.
+l.135 \Section
+              {Pion final state interaction (FSI) and secondary interaction ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 [4] [5 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/xsec_uncertainty.PNG>] (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/chapter_syst_uncertainty.aux)
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
  3331 strings out of 492609
  50324 string characters out of 6132818
- 122182 words of memory out of 5000000
+ 122094 words of memory out of 5000000
  7224 multiletter control sequences out of 15000+600000
  8716 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,9n,39p,982b,274s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,9n,39p,983b,274s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on c:/Users/Pruthvi/git/phmehta95/thesis/thesis/chapter_syst_uncertainty.pdf (5 pages, 308045 bytes).
+Output written on c:/Users/Pruthvi/git/phmehta95/thesis/thesis/chapter_syst_uncertainty.pdf (5 pages, 308314 bytes).
 PDF statistics:
  73 PDF objects out of 1000 (max. 8388607)
  49 compressed objects within 1 object stream
