@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.17)  27 NOV 2021 00:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.17)  27 NOV 2021 20:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -920,15 +920,15 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 25617 strings out of 492609
- 517160 string characters out of 6132818
- 540013 words of memory out of 5000000
- 29229 multiletter control sequences out of 15000+600000
- 537414 words of font info for 42 fonts, out of 8000000 for 9000
+ 25624 strings out of 492609
+ 517249 string characters out of 6132818
+ 540015 words of memory out of 5000000
+ 29234 multiletter control sequences out of 15000+600000
+ 538872 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,15n,69p,982b,317s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,15n,69p,1144b,317s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on c:/Users/Pruthvi/git/phmehta95/thesis/thesis/chapter_syst_uncertainty.pdf (8 pages, 479381 bytes).
+Output written on c:/Users/Pruthvi/git/phmehta95/thesis/thesis/chapter_syst_uncertainty.pdf (8 pages, 480667 bytes).
 PDF statistics:
  91 PDF objects out of 1000 (max. 8388607)
  60 compressed objects within 1 object stream
