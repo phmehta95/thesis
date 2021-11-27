@@ -1,4 +1,5 @@
 \documentclass{article}
+\DeclareUnicodeCharacter{0019}{ }
 \usepackage[utf8]{inputenc}
 %\usepackage{mathabx}
 %\usepackage{amsopn}
@@ -9,7 +10,7 @@
 \usepackage{amsmath}
 \setlength\parindent{0pt}
 \graphicspath{{C:\Users\Pruthvi\git\phmehta95\thesis\thesis}}
-
+\usepackage{chemformula}
 
 
 
@@ -103,6 +104,7 @@ A group of default neutrino cross section values are used to make up the nominal
 
 Figure \ref{fig:xsecuncertainty} shows the reweighted Monte Carlo fractional uncertainty plotted for the FHC sample. Since this sample contains a lot of NCother interactions, the uncertainty for this interaction type is greater than for the others.
 
+\begin{table}
 $$
 \begin{array}{llll}
 \hline & & & \\
@@ -125,6 +127,9 @@ B G_{A}^{R E S} & \mathrm{CC} \text { and NC1 } \pi & \text { Axial mass } & 0.9
 \end{array}
 \label{xsectable}
 $$
+\caption{Neutrino cross section parameters}
+\end{table}
+
 
 \begin{figure}[h!]
     \includegraphics[scale=0.4]{xsec_uncertainty.png}
@@ -132,7 +137,112 @@ $$
 \label{fig:xsecuncertainty}
 \end{figure}
 
-\Section{Pion final state interaction (FSI) and secondary interaction (SI) uncertainties}
+\section{Pion final state interaction (FSI) and secondary interaction (SI) uncertainties}
+
+The neutrino-nucleus interaction simulator used in this analysis (NEUT) handles pion final state interactions and secondary interactions using a cascade model. This cascade model contains parameters which will have uncertainties on them and these will be tranferred to a possible change in the tagging efficiency.
+
+Depending on the momentum of the pions, different interaction types occur in the model. For pions with a momentum less than 500 MeV, the interactions in place are absorption (ABS), quasi-elastic scattering (QE) and charge exchange (CX)./cite{} Absorption occurs when the incident pion is absorbed by the nucleus and no pions remain in the final state. Quasi-elastic (QE) scattering occurs when there is only one pion observed in the final state and it has the same charge as the incident beam. Charge exchange occurs when the charged pion interacts wtht he nucleus and a single $\pi_{0}$ can be seen in the final state.
+
+
+For pions with a momentum of greater than 500 MeV, a different set of interactions are used. Inelastic interactions (INEL) can now produce hadrons and replace absorption processes, but quasi-elastic scattering (QEH) and charge exchange (CXH) will still occur. The final state interaction parameters and the pion momentum range they are used in can be seen in Table \ref{fsiparameters}. Each parameter scales the relevant very small proabability of the charged pion interaction at every stage of the intra-nuclear cascade, aside from the parameter for charge exchange which scales only the fraction of low momentum QE scattering. 
+
+
+\begin{table}
+$$
+\begin{array}{ccc}
+\hline \text { Parameter } & \text { Description } & \begin{array}{c}
+\text { Momentum } \\
+\text { Region }(\mathrm{MeV} / c)
+\end{array} \\
+\hline f_{\mathrm{ABS}} & \text { Absorption } & <500 \\
+f_{\mathrm{QE}} & \text { Quasi-elastic scatter } & <500 \\
+f_{\mathrm{CX}} & \text { Single charge exchange } & <500 \\
+f_{\mathrm{QEH}} & \text { Quasi-elastic scatter } & >500 \\
+f_{\mathrm{CXH}} & \text { Single charge exchange } & >500 \\
+f_{\mathrm{INEL}} & \text { Hadron }(\mathrm{N}+\mathrm{n} \pi) \text { production } & >500 \\
+\hline
+\end{array}
+$$
+\caption{Table showing the pion final state interaction parameters in NEUT and the pion momentum range they are used in}
+\end{table}
+A set of paramater variations which determine a surface in paramater space have been estimated by pion scattering experiments, the values for which are shown in Table \ref{fsimodelparameters}. The 1$\sigma$ surface has been explored using the nominal Monte Carlo re-weighting method and the analagous tagging efficiency uncertainty is shown in Equation \ref{fsisitageff}, and the uncertainty stemming from the models shown in Table \ref{fsimodelparameters} is shown in Figure \ref{fig:fsisiuncertainty}
+
+\begin{equation}
+\delta_{i}=\frac{T_{i}-T_{\text {nom }}}{T_{\text {nom }}} \quad i \in \text { parameter vector }
+\label{fsisitageff}
+\end{equation}
+
+\begin{figure}[h!]
+    \includegraphics[scale=0.4]{fsisi_uncertainty.png}
+\caption{Tagging efficiency fractional uncertainty caused by the variation in the FSI/SI model parameters for the FHC mode.}
+\label{fig:fsisiuncertainty}
+\end{figure}
+
+\begin{table}
+    $$
+    \begin{array}{lllllll}
+        \hline & & & & & & \\
+        \text { Set } & \text { ABS } & \text { QE } & \text { CX } & \text { INEL } & \text { QEH } & \text { CXH } \\
+        \hline
+    %\begin{array}{ccccccc}
+    \text { Nominal } & 1.1 & 1.0 & 1.0 & 1.0 & 1.8 & 1.8 \\
+    & & & & & & \\
+    & 0.7 & 0.6 & 0.5 & 1.5 & 1.1 & 2.3 \\
+    & 0.7 & 0.6 & 1.6 & 1.5 & 1.1 & 2.3 \\
+    \text { Hadron production Up } & 1.6 & 0.7 & 0.4 & 1.5 & 1.1 & 2.3 \\
+    & 1.6 & 0.7 & 1.6 & 1.5 & 1.1 & 2.3 \\
+    & 0.6 & 1.4 & 0.6 & 1.5 & 1.1 & 2.3 \\
+    & 0.7 & 1.3 & 1.6 & 1.5 & 1.1 & 2.3 \\
+    & 1.5 & 1.5 & 0.4 & 1.5 & 1.1 & 2.3 \\
+    & 1.6 & 1.6 & 1.6 & 1.5 & 1.1 & 2.3 \\
+    & & & & & & \\
+    & 0.7 & 0.6 & 0.5 & 0.5 & 2.3 & 1.3 \\
+    & 0.7 & 0.6 & 1.6 & 0.5 & 2.3 & 1.3 \\
+    & 1.6 & 0.7 & 0.4 & 0.5 & 2.3 & 1.3 \\
+    \text { Hadron production Down } & 1.6 & 0.7 & 1.6 & 0.5 & 2.3 & 1.3 \\
+    & 0.6 & 1.4 & 0.6 & 0.5 & 2.3 & 1.3 \\
+    & 0.7 & 1.3 & 1.6 & 0.5 & 2.3 & 1.3 \\
+    & 1.5 & 1.5 & 0.4 & 0.5 & 2.3 & 1.3 \\
+    & 1.6 & 1.6 & 1.6 & 0.5 & 2.3 & 1.3
+    \end{array}
+    $$
+\caption{Pion FSI/SI model parameter nominal value and variations grouped according to inelastic hadron production value}
+\end{table}
+
+\section{Nucleon final state interactions}
+
+Uncertainties regarding the nucleon final state interactions can change the number of nucleons knocked out of 16O, therefore how the tagging efficiency is changed due to the variation in nucleon final state interactions needs to be investigated. This uncertainty is extracted using GENIE, a Monte Carlo event generator which contains the INTRANUKE (hA) intranuclear transport model. The uncertainties in the in the total scattering probability for hadrons inside the target nuclei ($x_{m f p}^{N}$) and the uncertainties in the likelihood of each hadron rescattering method: (elastic ($x_{e l}^{N}$), inelastic ($x_{i n e l}^{N}$), charge exchange ($x_{c e x}^{N}$), pion production ($x_{\pi}^{N}$) and absorption ($x_{a b s}^{N}$)) are taken into account. The fractional uncertainties for these modes for pions is shown in Table \ref{nucleonfsiuncertainties}. 
+
+\begin{table}
+$$
+\begin{array}{llc}
+\hline \text {Abbreviation} & \text { Description of uncertainty }  & \text{Fractional uncertainty} \\
+\hline x_{m f p}^{N} & \text { Nucleon mean free path (total rescattering probability) } & \pm 20 \% \\
+x_{c e x}^{N} & \text { Nucleon charge exchange probability } & \pm 50 \% \\
+x_{e l}^{N} & \text { Nucleon elastic reaction probability } & \pm 30 \% \\
+x_{i n e l}^{N} & \text { Nucleon inelastic reaction probability } & \pm 40 \% \\
+x_{a b s}^{N} & \text { Nucleon absorption probability } & \pm 20 \% \\
+x_{\pi}^{N} & \text { Nucleon } \pi \text {-production probability } & \pm 20 \%
+\end{array}
+$$
+\caption{Nucleon final state interaction parameters of the hA model executed inside GENIE.} 
+\label{nucleonfsiuncertainties}
+\end{table}
+
+A nominal GENIE Monte Carlo sample is generated (different from the previously used NEUT Monte Carlo) and this shifted using the re-weighting method to a varied GENIE Monte Carlo by individually increasing and decreasing the parameters in Table \ref{nucleonfsiuncertainties} by its error. For each shifted Monte Carlo produced, the fractional uncertainty can be written as in Equation \ref{nucleonfsitageff}.
+
+\begin{equation}
+\delta_{i}(\pm \sigma)=\frac{T_{i}(\pm \sigma)-T_{\text {nom }}}{T_{\text {nom }}} \quad i \in\{\text { parameters }\}
+\label{nucleonfsitageff}
+\end{equation}
+
+The tagging efficiency fractional uncertainties are displayed in Figure \ref{fig:nucleonfsiuncertainty}, showing which parameter from Table \ref{nucleonfsiuncertainties} each uncertainty has arisen from.
+
+\begin{figure}[h!]
+    \includegraphics[scale=0.4]{nucleonfsi_uncertainty.png}
+\caption{Tagging efficiency fractional uncertainties caused by the nucleon final state interaction model parameter variation for the FHC mode}
+\label{fig:nucleonfsiuncertainty}
+\end{figure}
 
 
 
