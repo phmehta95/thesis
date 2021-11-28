@@ -44,11 +44,11 @@
   <internal package="biblatex" priority="9" active="1">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>event_recon.aux</file>
-      <file>event_recon-blx.bib</file>
+      <file>chapter_event_recon.aux</file>
+      <file>chapter_event_recon-blx.bib</file>
     </provides>
     <requires type="dynamic">
-      <file>event_recon.bbl</file>
+      <file>chapter_event_recon.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -69,20 +69,20 @@
     <cmdline>
       <binary>bibtex</binary>
       <option>-min-crossrefs 2</option>
-      <infile>event_recon</infile>
+      <infile>chapter_event_recon</infile>
     </cmdline>
     <input>
-      <file>event_recon.aux</file>
+      <file>chapter_event_recon.aux</file>
     </input>
     <output>
-      <file>event_recon.bbl</file>
+      <file>chapter_event_recon.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>event_recon.bbl</file>
+      <file>chapter_event_recon.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>event_recon.aux</file>
-      <file>event_recon-blx.bib</file>
+      <file>chapter_event_recon.aux</file>
+      <file>chapter_event_recon-blx.bib</file>
     </requires>
     <requires type="editable">
     </requires>

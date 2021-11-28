@@ -1,21 +1,6 @@
-\documentclass{article}
-\usepackage[utf8]{inputenc}
-\usepackage{mathabx}
-\usepackage{amsopn}
-\usepackage{cite}\usepackage[backend=bibtex,style=trad-plain]{biblatex}
-\setlength\parindent{0pt}
+\chapter{NCQE-Gd}
+\label{chp:ncqegd}
 
-
-\title{Event Reconstruction}
-\author{Pruthvi Mehta}
-
-
-\begin{document}
-
-\maketitle
-
-\section{Event stuff Reconstruction}
-\section{Fitting}
 Both MC and data neutrino events undergo a reconstruction phase, where the low-energy fitter BONSAI is applied to the event. This reconstruction is carried out using timing and cable information, however charge information is omitted. The ouput of BONSAI gives information which will be used in the reduction phase of the data and allow for the selection of the NCQE sample. BONSAI is a low-energy fitter used in the few-MeV to tens of MeV energy range, therefore suitable for this analysis. It's directional reconstruction uses the fitted vertex and maximises for direction while it's energy reconstruction of the event is based upon the number of hit PMTs. Equation \ref{bonsai} shows how the vertex reconstruction is formulated, where $w_{i}$ is the Gaussian hit weight of the PMT, $t_{i}$ is the hit time of the PMT and $x_{i}$ is the position of the hit PMT.
 \newline
 \begin{equation}
@@ -140,6 +125,3 @@ This variable (similar to effwall), gives the distance of the neutron capture ve
 
 
 
-
-
-\end{document}

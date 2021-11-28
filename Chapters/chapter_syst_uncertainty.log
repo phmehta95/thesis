@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.17)  28 NOV 2021 17:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.17)  28 NOV 2021 22:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/Pruthvi/git/phmehta95/thesis/thesis/chapter_syst_uncertainty.tex
-(c:/Users/Pruthvi/git/phmehta95/thesis/thesis/chapter_syst_uncertainty.tex
+**c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex
+(c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex
 LaTeX2e <2018-12-01>
 (c:/texlive/2019/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
@@ -726,11 +726,7 @@ Package: chemformula 2017/03/23 v4.15e typeset chemical compounds and reactions 
 \l__chemformula_additions_symbol_space_skip=\skip58
 \l__chemformula_plus_space_skip=\skip59
 \l__chemformula_minus_space_skip=\skip60
-) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/chapter_syst_uncertainty.aux
-
-LaTeX Warning: Label `systmethod' multiply defined.
-
-)
+) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.aux)
 \openout1 = `chapter_syst_uncertainty.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
@@ -807,9 +803,18 @@ Package caption Info: End \AtBeginDocument code.
 LaTeX Warning: No \author given.
 
 
+LaTeX Warning: Reference `multiplicity' on page 1 undefined on input line 36.
+
+
+LaTeX Warning: Reference `poissonuncertainty' on page 1 undefined on input line 38.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 38--40
 
  []
+
+
+LaTeX Warning: Reference `tageffdiscrep' on page 1 undefined on input line 47.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 43--49
@@ -824,9 +829,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--54
  []
 
 
+LaTeX Warning: Reference `mcregengauss' on page 2 undefined on input line 57.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 55--59
 
  []
+
+
+LaTeX Warning: Reference `nubeamfluxerror' on page 2 undefined on input line 75.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 75--77
@@ -834,7 +845,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--77
  []
 
 
+LaTeX Warning: Reference `fig:fluxuncertainty' on page 2 undefined on input line 82.
+
+
 LaTeX Warning: Reference `table:systuncertaintytable' on page 2 undefined on input line 82.
+
+
+LaTeX Warning: Reference `summingfluxuncertainty' on page 2 undefined on input line 82.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 80--84
@@ -842,33 +859,185 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--84
  []
 
 [2]
-<flux_uncertainty.png, id=23, 885.90974pt x 522.15076pt>
-File: flux_uncertainty.png Graphic file (type png)
-<use flux_uncertainty.png>
-Package pdftex.def Info: flux_uncertainty.png  used on input line 91.
-(pdftex.def)             Requested size: 354.35762pt x 208.8566pt.
+c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex:91: Undefined control sequence.
+\reserved@b ->C:\Users 
+                       \Pruthvi \git \phmehta 95\thesis \thesis 
+l.91 ...egraphics[scale=0.4]{flux_uncertainty.png}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-Overfull \hbox (9.35762pt too wide) in paragraph at lines 91--92
-[][] 
- []
+c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex:91: Undefined control sequence.
+\reserved@b ->C:\Users \Pruthvi 
+                                \git \phmehta 95\thesis \thesis 
+l.91 ...egraphics[scale=0.4]{flux_uncertainty.png}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex:91: Undefined control sequence.
+\reserved@b ->C:\Users \Pruthvi \git 
+                                     \phmehta 95\thesis \thesis 
+l.91 ...egraphics[scale=0.4]{flux_uncertainty.png}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex:91: Undefined control sequence.
+\reserved@b ->C:\Users \Pruthvi \git \phmehta 
+                                              95\thesis \thesis 
+l.91 ...egraphics[scale=0.4]{flux_uncertainty.png}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex:91: Undefined control sequence.
+\reserved@b ...s \Pruthvi \git \phmehta 95\thesis 
+                                                  \thesis 
+l.91 ...egraphics[scale=0.4]{flux_uncertainty.png}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex:91: Undefined control sequence.
+\reserved@b ...vi \git \phmehta 95\thesis \thesis 
+                                                  
+l.91 ...egraphics[scale=0.4]{flux_uncertainty.png}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 
-Package caption Warning: \label without proper reference on input line 128.
-See the caption package documentation for explanation.
+LaTeX Warning: File `flux_uncertainty.png' not found on input line 91.
+
+
+c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex:91: Package pdftex.def Error: File `flux_uncertainty.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.91 ...egraphics[scale=0.4]{flux_uncertainty.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
 LaTeX Warning: Reference `xsectable' on page 3 undefined on input line 98.
 
-[3 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/flux_uncertainty.png>]
+
+LaTeX Warning: Reference `systmethod' on page 3 undefined on input line 98.
+
+
+LaTeX Warning: Reference `xsectageff' on page 3 undefined on input line 98.
+
+
+LaTeX Warning: Reference `fig:xsecuncertainty' on page 3 undefined on input line 105.
+
+
 Overfull \hbox (77.35472pt too wide) detected at line 129
 [][]
  []
 
-<xsec_uncertainty.png, id=30, 843.15pt x 532.389pt>
-File: xsec_uncertainty.png Graphic file (type png)
-<use xsec_uncertainty.png>
-Package pdftex.def Info: xsec_uncertainty.png  used on input line 135.
-(pdftex.def)             Requested size: 337.25401pt x 212.95183pt.
+c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex:135: Undefined control sequence.
+\reserved@b ->C:\Users 
+                       \Pruthvi \git \phmehta 95\thesis \thesis 
+l.135 ...graphics[scale=0.4]{xsec_uncertainty.png}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex:135: Undefined control sequence.
+\reserved@b ->C:\Users \Pruthvi 
+                                \git \phmehta 95\thesis \thesis 
+l.135 ...graphics[scale=0.4]{xsec_uncertainty.png}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex:135: Undefined control sequence.
+\reserved@b ->C:\Users \Pruthvi \git 
+                                     \phmehta 95\thesis \thesis 
+l.135 ...graphics[scale=0.4]{xsec_uncertainty.png}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex:135: Undefined control sequence.
+\reserved@b ->C:\Users \Pruthvi \git \phmehta 
+                                              95\thesis \thesis 
+l.135 ...graphics[scale=0.4]{xsec_uncertainty.png}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex:135: Undefined control sequence.
+\reserved@b ...s \Pruthvi \git \phmehta 95\thesis 
+                                                  \thesis 
+l.135 ...graphics[scale=0.4]{xsec_uncertainty.png}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex:135: Undefined control sequence.
+\reserved@b ...vi \git \phmehta 95\thesis \thesis 
+                                                  
+l.135 ...graphics[scale=0.4]{xsec_uncertainty.png}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: File `xsec_uncertainty.png' not found on input line 135.
+
+
+c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex:135: Package pdftex.def Error: File `xsec_uncertainty.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.135 ...graphics[scale=0.4]{xsec_uncertainty.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -877,68 +1046,238 @@ Overfull \hbox (8.34447pt too wide) in paragraph at lines 140--140
 []\OT1/cmr/bx/n/14.4 Pion fi-nal state in-ter-ac-tion (FSI) and sec-ondary
  []
 
+[3]
+
+LaTeX Warning: Reference `fsiparameters' on page 4 undefined on input line 147.
+
 [4]
 
-LaTeX Warning: Reference `fsiparameters' on page 5 undefined on input line 147.
+LaTeX Warning: Reference `fsimodelparameters' on page 5 undefined on input line 168.
+
+
+LaTeX Warning: Reference `fsisitageff' on page 5 undefined on input line 168.
 
 
 LaTeX Warning: Reference `fsimodelparameters' on page 5 undefined on input line 168.
 
 
-LaTeX Warning: Reference `fsimodelparameters' on page 5 undefined on input line 168.
+LaTeX Warning: Reference `fig:fsisiuncertainty' on page 5 undefined on input line 168.
 
-<fsisi_uncertainty.png, id=34, 860.61525pt x 496.254pt>
-File: fsisi_uncertainty.png Graphic file (type png)
-<use fsisi_uncertainty.png>
-Package pdftex.def Info: fsisi_uncertainty.png  used on input line 176.
-(pdftex.def)             Requested size: 344.24pt x 198.49808pt.
+c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex:176: Undefined control sequence.
+\reserved@b ->C:\Users 
+                       \Pruthvi \git \phmehta 95\thesis \thesis 
+l.176 ...raphics[scale=0.4]{fsisi_uncertainty.png}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex:176: Undefined control sequence.
+\reserved@b ->C:\Users \Pruthvi 
+                                \git \phmehta 95\thesis \thesis 
+l.176 ...raphics[scale=0.4]{fsisi_uncertainty.png}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex:176: Undefined control sequence.
+\reserved@b ->C:\Users \Pruthvi \git 
+                                     \phmehta 95\thesis \thesis 
+l.176 ...raphics[scale=0.4]{fsisi_uncertainty.png}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex:176: Undefined control sequence.
+\reserved@b ->C:\Users \Pruthvi \git \phmehta 
+                                              95\thesis \thesis 
+l.176 ...raphics[scale=0.4]{fsisi_uncertainty.png}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex:176: Undefined control sequence.
+\reserved@b ...s \Pruthvi \git \phmehta 95\thesis 
+                                                  \thesis 
+l.176 ...raphics[scale=0.4]{fsisi_uncertainty.png}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex:176: Undefined control sequence.
+\reserved@b ...vi \git \phmehta 95\thesis \thesis 
+                                                  
+l.176 ...raphics[scale=0.4]{fsisi_uncertainty.png}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: File `fsisi_uncertainty.png' not found on input line 176.
+
+
+c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex:176: Package pdftex.def Error: File `fsisi_uncertainty.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.176 ...raphics[scale=0.4]{fsisi_uncertainty.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
 Overfull \hbox (1.44489pt too wide) detected at line 208
 []
  []
 
-[5 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/xsec_uncertainty.PNG>] [6]
+
+LaTeX Warning: Reference `nucleonfsiuncertainties' on page 5 undefined on input line 214.
+
+[5] [6]
 Overfull \hbox (87.88972pt too wide) detected at line 227
 []
  []
 
-<nucleonfsi_uncertainty.png, id=42, 882.29625pt x 525.162pt>
-File: nucleonfsi_uncertainty.png Graphic file (type png)
-<use nucleonfsi_uncertainty.png>
-Package pdftex.def Info: nucleonfsi_uncertainty.png  used on input line 242.
-(pdftex.def)             Requested size: 352.91225pt x 210.06108pt.
 
-Overfull \hbox (7.91225pt too wide) in paragraph at lines 242--243
-[][] 
- []
+LaTeX Warning: Reference `nucleonfsiuncertainties' on page 7 undefined on input line 232.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: Reference `nucleonfsitageff' on page 7 undefined on input line 232.
 
-[7 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/fsisi_uncertainty.PNG>] [8 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/nucleonfsi_uncertainty.PNG>] [9] (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/chapter_syst_uncertainty.aux)
+
+LaTeX Warning: Reference `fig:nucleonfsiuncertainty' on page 7 undefined on input line 239.
+
+
+LaTeX Warning: Reference `nucleonfsiuncertainties' on page 7 undefined on input line 239.
+
+c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex:242: Undefined control sequence.
+\reserved@b ->C:\Users 
+                       \Pruthvi \git \phmehta 95\thesis \thesis 
+l.242 ...cs[scale=0.4]{nucleonfsi_uncertainty.png}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex:242: Undefined control sequence.
+\reserved@b ->C:\Users \Pruthvi 
+                                \git \phmehta 95\thesis \thesis 
+l.242 ...cs[scale=0.4]{nucleonfsi_uncertainty.png}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex:242: Undefined control sequence.
+\reserved@b ->C:\Users \Pruthvi \git 
+                                     \phmehta 95\thesis \thesis 
+l.242 ...cs[scale=0.4]{nucleonfsi_uncertainty.png}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex:242: Undefined control sequence.
+\reserved@b ->C:\Users \Pruthvi \git \phmehta 
+                                              95\thesis \thesis 
+l.242 ...cs[scale=0.4]{nucleonfsi_uncertainty.png}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex:242: Undefined control sequence.
+\reserved@b ...s \Pruthvi \git \phmehta 95\thesis 
+                                                  \thesis 
+l.242 ...cs[scale=0.4]{nucleonfsi_uncertainty.png}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex:242: Undefined control sequence.
+\reserved@b ...vi \git \phmehta 95\thesis \thesis 
+                                                  
+l.242 ...cs[scale=0.4]{nucleonfsi_uncertainty.png}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: File `nucleonfsi_uncertainty.png' not found on input line 242.
+
+
+c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex:242: Package pdftex.def Error: File `nucleonfsi_uncertainty.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.242 ...cs[scale=0.4]{nucleonfsi_uncertainty.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Reference `muoncap' on page 7 undefined on input line 249.
+
+[7]
+
+LaTeX Warning: Reference `muoncaptaggingeff' on page 8 undefined on input line 261.
+
+[8] (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.aux)
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 25626 strings out of 492609
- 517277 string characters out of 6132818
- 540072 words of memory out of 5000000
- 29236 multiletter control sequences out of 15000+600000
- 538872 words of font info for 47 fonts, out of 8000000 for 9000
+ 25616 strings out of 492609
+ 517026 string characters out of 6132818
+ 539856 words of memory out of 5000000
+ 29221 multiletter control sequences out of 15000+600000
+ 539040 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,15n,69p,1144b,317s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on c:/Users/Pruthvi/git/phmehta95/thesis/thesis/chapter_syst_uncertainty.pdf (9 pages, 484080 bytes).
+ 62i,15n,69p,1153b,317s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.pdf (8 pages, 170792 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
+ 86 PDF objects out of 1000 (max. 8388607)
  62 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

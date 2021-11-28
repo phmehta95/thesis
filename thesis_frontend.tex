@@ -1,0 +1,117 @@
+% /////////////////////////////////////////////////////////////////////////////
+%
+%   Ph.D. Thesis Manuscript -- Pruthvi Mehta
+%
+% /////////////////////////////////////////////////////////////////////////////
+
+
+% /////////////////////////////////////////////////////////////////////////////
+% PREAMBLE
+  \documentclass{report}
+  % for title page
+  \title{blah}
+  \author{Pruthvi Mehta}
+  \date{2021}
+
+
+
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%
+  %       PACKAGES        %
+  %%%%%%%%%%%%%%%%%%%%%%%%%
+  % Graphics and Figures
+  \usepackage{graphicx}                % Graphics importing library
+  \usepackage{float}                   % Placement of floats
+  \usepackage[font=small]{caption}     % Set formatting options for captions
+  \usepackage{subcaption}              % Like captions, but for sub-figures
+  \usepackage{wrapfig}                 % Wrap text around figures
+
+  % Tables
+  \usepackage{arydshln}                % dashed version of cline
+  \usepackage{array}                   % Do more fancy things with tables
+  \usepackage{multirow}                % Let cells span multiple rows
+  \usepackage{longtable}               % For tables that span multiple pages (remove if not needed)
+  \usepackage{booktabs}                % Make tables look better
+  \usepackage{makecell}
+  \newcommand{\mc}{\multicolumn{1}{c}}
+
+  % Maths
+  \usepackage{amsmath}                 % Makes maths look pretty
+  \usepackage{amssymb}                 % Something to do with symbols...
+  \usepackage{xfrac}                   % Pretty inline fractions
+  \usepackage{bbold}
+  \usepackage{chemformula}
+
+  
+
+  % Hyperlinks & Colors
+  %\usepackage[usenames, dvipsnames, table]{xcolor}
+
+  % Fonts
+  \usepackage{anyfontsize}             % Setting of font size by point
+  \usepackage{cite}                    % Make citations looks pretty
+
+  % Misc
+  \usepackage{lipsum}                  % Lorem ipsum generator, good for imagining writing
+  \usepackage[nohyperlinks]{acronym}   % Acronym support
+  \usepackage[displaymath, mathlines]{lineno}
+
+
+
+
+  %%%%%%%%%%%%%%%%%%%%%%
+  %       FONTS        %
+  %%%%%%%%%%%%%%%%%%%%%%
+ % \usepackage{fontspec}                       % Use of system fonts
+ % \setmainfont{Crimson Text}[
+ %   Ligatures=TeX,
+ %   SmallCapsFont=Crimson,
+ %   SmallCapsFeatures={Letters=SmallCaps}
+  %]
+  %\setsansfont[Ligatures=TeX]{Helvetica}      % Set sans-serif font
+
+  % Change to 2 to comply with UGS requirements
+  %\renewcommand{\baselinestretch}{1.15}
+
+  %\usepackage[hidelinks=true]{hyperref}
+
+  %/////////////////////////////////////////////////////////////////////////////
+  % DOCUMENT
+
+  \begin{document}
+
+
+    % Typeset title page.
+    \maketitle
+
+
+    % Include front matter
+    %\include{Frontmatter/dedication}
+    %\include{Frontmatter/acknowledgements}
+    %\include{Frontmatter/abstract}
+    % \include{acronyms}
+
+    \tableofcontents
+
+
+    % Include body text
+    \include{Chapters/01-introduction}
+
+ %   \part{NEUTRINOS \& SUPERNOVAE}
+    \include{Chapters/neutrino-physics}
+    \include{Chapters/superk-detector}
+    \include{Chapters/superk-calib}
+    \include{Chapters/ukli-system}
+    \include{Chapters/superkgd-upgrade}
+    \include{Chapters/chapter_ncqe-gd}
+    \include{Chapters/chapter_syst_uncertainty}
+    \include{Chapters/conclusion}
+ 
+
+    % Include bibliography
+    \bibliographystyle{unsrt}
+    \bibliography{thesis}
+
+
+
+  \end{document}
