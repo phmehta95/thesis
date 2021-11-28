@@ -24,6 +24,7 @@
 *.synctex.gz
 *.fdb_latexmk
 *.fls
+*.xml
 region.*
 prv_.fmt
 prv_.log
