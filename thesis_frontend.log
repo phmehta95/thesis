@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.17)  29 NOV 2021 21:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.17)  29 NOV 2021 21:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1141,16 +1141,6 @@ Overfull \hbox (9.35762pt too wide) in paragraph at lines 73--74
 [][] 
  []
 
-
-Package caption Warning: \label without proper reference on input line 111.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `xsectable' on page 12 undefined on input line 80.
-
-
-LaTeX Warning: Reference `systmethod' on page 12 undefined on input line 80.
-
 [12 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/flux_uncertainty.png>]
 Overfull \hbox (77.35478pt too wide) detected at line 110
 []
@@ -1164,39 +1154,29 @@ Package pdftex.def Info: Figures/xsec_uncertainty.png  used on input line 117.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[13]
-
-LaTeX Warning: Reference `fsiparameters' on page 14 undefined on input line 129.
-
-[14 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/xsec_uncertainty.PNG>]
-
-LaTeX Warning: Reference `fsimodelparameters' on page 15 undefined on input line 149.
-
-
-LaTeX Warning: Reference `fsimodelparameters' on page 15 undefined on input line 149.
-
+[13] [14 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/xsec_uncertainty.PNG>]
 <Figures/fsisi_uncertainty.png, id=75, 860.61525pt x 496.254pt>
 File: Figures/fsisi_uncertainty.png Graphic file (type png)
 <use Figures/fsisi_uncertainty.png>
-Package pdftex.def Info: Figures/fsisi_uncertainty.png  used on input line 157.
+Package pdftex.def Info: Figures/fsisi_uncertainty.png  used on input line 158.
 (pdftex.def)             Requested size: 344.24pt x 198.49808pt.
 
-Overfull \hbox (1.44499pt too wide) detected at line 189
+Overfull \hbox (1.44499pt too wide) detected at line 190
 []
  []
 
 [15 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/fsisi_uncertainty.PNG>] [16]
-Overfull \hbox (87.88977pt too wide) detected at line 208
+Overfull \hbox (87.88977pt too wide) detected at line 210
 []
  []
 
 <Figures/nucleonfsi_uncertainty.png, id=83, 882.29625pt x 525.162pt>
 File: Figures/nucleonfsi_uncertainty.png Graphic file (type png)
 <use Figures/nucleonfsi_uncertainty.png>
-Package pdftex.def Info: Figures/nucleonfsi_uncertainty.png  used on input line 223.
+Package pdftex.def Info: Figures/nucleonfsi_uncertainty.png  used on input line 225.
 (pdftex.def)             Requested size: 352.91225pt x 210.06108pt.
 
-Overfull \hbox (7.91225pt too wide) in paragraph at lines 223--224
+Overfull \hbox (7.91225pt too wide) in paragraph at lines 225--226
 [][] 
  []
 
@@ -1220,15 +1200,15 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 27606 strings out of 492609
- 549434 string characters out of 6132818
- 721261 words of memory out of 5000000
- 31066 multiletter control sequences out of 15000+600000
+ 27605 strings out of 492609
+ 549422 string characters out of 6132818
+ 720261 words of memory out of 5000000
+ 31065 multiletter control sequences out of 15000+600000
  545170 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,17n,69p,1183b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis_frontend.pdf (20 pages, 559523 bytes).
+Output written on c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis_frontend.pdf (20 pages, 559394 bytes).
 PDF statistics:
  150 PDF objects out of 1000 (max. 8388607)
  101 compressed objects within 2 object streams
