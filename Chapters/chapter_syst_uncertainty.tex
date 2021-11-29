@@ -1,4 +1,4 @@
-\chapter{syst_uncertainty}
+\chapter{Systematic and statistical uncertainty calculations}
 \label{chp:syst}
 
 
@@ -87,9 +87,9 @@ A group of default neutrino cross section values are used to make up the nominal
 Figure \ref{fig:xsecuncertainty} shows the reweighted Monte Carlo fractional uncertainty plotted for the FHC sample. Since this sample contains a lot of NCother interactions, the uncertainty for this interaction type is greater than for the others.
 
 \begin{table}
-
-\begin{array}{llll}
-\hline & & & \\
+$$
+\begin{array}{cccc}
+%\hline & & & \\
 \text { Parameter } & \text { Interaction } & \text { Type } & \text { Value } \\
 & & & \\
 p_{F}^{O} & \mathrm{CCQE} & { }^{16} \mathrm{O} \text { Fermi momentum } & 225 \pm 31 \mathrm{MeV} / \mathrm{c} \\
@@ -105,10 +105,10 @@ B G_{A}^{R E S} & \mathrm{CC} \text { and NC1 } \pi & \text { Axial mass } & 0.9
 \mathrm{NC} \text { coherent } & \mathrm{NC} \text { other } & \text { NC-dependent par. } & 1.0 \pm 0.3 \\
 & & \text { Normalization par. } & 1.0 \pm 0.3 \\
 \mathrm{FS} e^{-} \text {Bremsstrahlung } & \mathrm{CC} \nu_{e} & \text { Normalization par. } & 1.00 \pm 0.03 \\
-\hline
+%\hline
 \end{array}
+$$
 \label{xsectable}
-
 \caption{Neutrino cross section parameters}
 \end{table}
 
@@ -132,17 +132,16 @@ For pions with a momentum of greater than 500 MeV, a different set of interactio
 \begin{table}
 $$
 \begin{array}{ccc}
-\hline \text { Parameter } & \text { Description } & \begin{array}{c}
+\text { Parameter } & \text { Description } & \begin{array}{c}
 \text { Momentum } \\
 \text { Region }(\mathrm{MeV} / c)
 \end{array} \\
-\hline f_{\mathrm{ABS}} & \text { Absorption } & <500 \\
+f_{\mathrm{ABS}} & \text { Absorption } & <500 \\
 f_{\mathrm{QE}} & \text { Quasi-elastic scatter } & <500 \\
 f_{\mathrm{CX}} & \text { Single charge exchange } & <500 \\
 f_{\mathrm{QEH}} & \text { Quasi-elastic scatter } & >500 \\
 f_{\mathrm{CXH}} & \text { Single charge exchange } & >500 \\
 f_{\mathrm{INEL}} & \text { Hadron }(\mathrm{N}+\mathrm{n} \pi) \text { production } & >500 \\
-\hline
 \end{array}
 $$
 \caption{Table showing the pion final state interaction parameters in NEUT and the pion momentum range they are used in}
@@ -163,9 +162,9 @@ A set of paramater variations which determine a surface in paramater space have 
 \begin{table}
     $$
     \begin{array}{lllllll}
-        \hline & & & & & & \\
+         & & & & & & \\
         \text { Set } & \text { ABS } & \text { QE } & \text { CX } & \text { INEL } & \text { QEH } & \text { CXH } \\
-        \hline
+ %       \hline
     %\begin{array}{ccccccc}
     \text { Nominal } & 1.1 & 1.0 & 1.0 & 1.0 & 1.8 & 1.8 \\
     & & & & & & \\
@@ -198,8 +197,8 @@ Uncertainties regarding the nucleon final state interactions can change the numb
 \begin{table}
 $$
 \begin{array}{llc}
-\hline \text {Abbreviation} & \text { Description of uncertainty }  & \text{Fractional uncertainty} \\
-\hline x_{m f p}^{N} & \text { Nucleon mean free path (total rescattering probability) } & \pm 20 \% \\
+\text {Abbreviation} & \text { Description of uncertainty }  & \text{Fractional uncertainty} \\
+ x_{m f p}^{N} & \text { Nucleon mean free path (total rescattering probability) } & \pm 20 \% \\
 x_{c e x}^{N} & \text { Nucleon charge exchange probability } & \pm 50 \% \\
 x_{e l}^{N} & \text { Nucleon elastic reaction probability } & \pm 30 \% \\
 x_{i n e l}^{N} & \text { Nucleon inelastic reaction probability } & \pm 40 \% \\
