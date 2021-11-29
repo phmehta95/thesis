@@ -25,6 +25,7 @@
 *.fdb_latexmk
 *.fls
 *.xml
+*.sty
 region.*
 prv_.fmt
 prv_.log
