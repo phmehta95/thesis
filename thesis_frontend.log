@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.17)  29 NOV 2021 21:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.17)  6 JAN 2022 11:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -817,6 +817,8 @@ Package: chemformula 2017/03/23 v4.15e typeset chemical compounds and reactions 
 \l__chemformula_additions_symbol_space_skip=\skip66
 \l__chemformula_plus_space_skip=\skip67
 \l__chemformula_minus_space_skip=\skip68
+) (c:/texlive/2019/texmf-dist/tex/latex/was/gensymb.sty
+Package: gensymb 2003/07/02 v1.0 (WaS)
 ) (c:/texlive/2019/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty
 Package: anyfontsize 2007/11/22 anyfontsize.sty by pts
 ) (c:/texlive/2019/texmf-dist/tex/latex/cite/cite.sty
@@ -859,27 +861,27 @@ Package lineno Warning: Option [displaymath] is obsolete -- default now!.
 \bframesep=\dimen332
 \bframebox=\box77
 LaTeX Info: Redefining \\ on input line 3056.
-) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis_frontend.aux (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_introduction.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_neutrino-physics.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk-detector.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk-calib.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_ukli-system.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superkgd_upgrade.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_ncqe-gd.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_conclusion.aux))
+) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis_frontend.aux (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_introduction.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_neutrino-physics.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk_detector.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk-calib.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_ukli-system.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superkgd_upgrade.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_ncqe-gd.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_conclusion.aux))
 \openout1 = `thesis_frontend.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 81.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 81.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 82.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 82.
  (c:/texlive/2019/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    ... okay on input line 82.
  (c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count322
@@ -937,11 +939,21 @@ Package: ltcaption 2018/08/26 v1.4-95 longtable captions (AR)
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
  ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for U+msa on input line 85.
+\symgns@font=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
+(Font)                  TS1/cmr/m/n --> TS1/cmr/bx/n on input line 82.
+Package gensymb Info: Math companion symbols declared on input line 82.
+LaTeX Info: Redefining \degree on input line 82.
+LaTeX Info: Redefining \celsius on input line 82.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 82.
+LaTeX Info: Redefining \ohm on input line 82.
+Package gensymb Info: Using \textohm for \ohm on input line 82.
+Package gensymb Info: Using \textmu for \micro on input line 82.
+LaTeX Font Info:    Try loading font information for U+msa on input line 86.
  (c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 85.
+LaTeX Font Info:    Try loading font information for U+msb on input line 86.
  (c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -965,18 +977,44 @@ Chapter 1.
 
 
 No file Chapters/chapter_neutrino-physics.tex.
-\openout2 = `Chapters/chapter_superk-detector.aux'.
+\openout2 = `Chapters/chapter_superk_detector.aux'.
 
-No file Chapters/chapter_superk-detector.tex.
+(c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk_detector.tex
+Chapter 2.
+<Figures/bonsai_pdf_res.png, id=21, 282.45525pt x 234.8775pt>
+File: Figures/bonsai_pdf_res.png Graphic file (type png)
+<use Figures/bonsai_pdf_res.png>
+Package pdftex.def Info: Figures/bonsai_pdf_res.png  used on input line 20.
+(pdftex.def)             Requested size: 112.98009pt x 93.94933pt.
+
+LaTeX Warning: Citation `.' on page 3 undefined on input line 21.
+
+
+LaTeX Warning: Citation `.' on page 3 undefined on input line 21.
+
+<Figures/bonsai_vertex_res.png, id=23, 244.5135pt x 193.9245pt>
+File: Figures/bonsai_vertex_res.png Graphic file (type png)
+<use Figures/bonsai_vertex_res.png>
+Package pdftex.def Info: Figures/bonsai_vertex_res.png  used on input line 26.
+(pdftex.def)             Requested size: 97.80365pt x 77.56842pt.
+
+LaTeX Warning: Citation `.' on page 3 undefined on input line 27.
+
+
+LaTeX Warning: Citation `.' on page 3 undefined on input line 27.
+
+[3
+
+
+
+
+
+] [4 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/bonsai_pdf_res.PNG> <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/bonsai_vertex_res.PNG>]) [5]
 \openout2 = `Chapters/chapter_superk-calib.aux'.
 
-(c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk-calib.tex
-Chapter 2.
-) [3
-
-
-
-
+ (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk-calib.tex
+Chapter 3.
+) [6
 
 
 
@@ -984,8 +1022,8 @@ Chapter 2.
 \openout2 = `Chapters/chapter_ukli-system.aux'.
 
  (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_ukli-system.tex
-Chapter 3.
-) [4
+Chapter 4.
+) [7
 
 
 
@@ -993,8 +1031,8 @@ Chapter 3.
 \openout2 = `Chapters/chapter_superkgd_upgrade.aux'.
 
  (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superkgd_upgrade.tex
-Chapter 4.
-) [5
+Chapter 5.
+) [8
 
 
 
@@ -1002,98 +1040,66 @@ Chapter 4.
 \openout2 = `Chapters/chapter_ncqe-gd.aux'.
 
  (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_ncqe-gd.tex
-Chapter 5.
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--8
-
- []
-
+Chapter 6.
 
 Underfull \hbox (badness 10000) in paragraph at lines 11--13
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--15
+Underfull \hbox (badness 10000) in paragraph at lines 16--18
 
  []
 
-[6
+[9
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--23
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--27
+Underfull \hbox (badness 10000) in paragraph at lines 29--32
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--31
+Underfull \hbox (badness 10000) in paragraph at lines 33--36
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--35
+Underfull \hbox (badness 10000) in paragraph at lines 37--40
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 86--90
 
  []
 
 
-LaTeX Warning: Reference `ovaq' on page 7 undefined on input line 37.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--39
+Underfull \hbox (badness 10000) in paragraph at lines 92--96
 
  []
 
-
-Overfull \hbox (8.30614pt too wide) in paragraph at lines 40--43
-\OT1/cmr/m/n/10 In neu-tral cur-rent events, this value de-ter-mines the open-ing an-gle of the Cherenkov
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--43
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 146--150
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--49
-
- []
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 51--55
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--61
-
- []
-
-[8]
-
-LaTeX Warning: Citation `snopaper' on page 9 undefined on input line 100.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 111--115
-
- []
-
-) [9]
+) [12]
 \openout2 = `Chapters/chapter_syst_uncertainty.aux'.
 
  (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex
-Chapter 6.
+Chapter 7.
 
 Underfull \hbox (badness 10000) in paragraph at lines 20--22
 
@@ -1104,7 +1110,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--31
 
  []
 
-[10
+[13
 
 
 
@@ -1118,20 +1124,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--41
 
  []
 
-[11]
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 57--59
 
  []
 
 
-LaTeX Warning: Reference `table:systuncertaintytable' on page 12 undefined on input line 64.
+LaTeX Warning: Reference `table:systuncertaintytable' on page 15 undefined on input line 64.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 62--66
 
  []
 
-<Figures/flux_uncertainty.png, id=57, 885.90974pt x 522.15076pt>
+<Figures/flux_uncertainty.png, id=79, 885.90974pt x 522.15076pt>
 File: Figures/flux_uncertainty.png Graphic file (type png)
 <use Figures/flux_uncertainty.png>
 Package pdftex.def Info: Figures/flux_uncertainty.png  used on input line 73.
@@ -1141,12 +1147,12 @@ Overfull \hbox (9.35762pt too wide) in paragraph at lines 73--74
 [][] 
  []
 
-[12 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/flux_uncertainty.png>]
+[15 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/flux_uncertainty.png>]
 Overfull \hbox (77.35478pt too wide) detected at line 110
 []
  []
 
-<Figures/xsec_uncertainty.png, id=67, 843.15pt x 532.389pt>
+<Figures/xsec_uncertainty.png, id=85, 843.15pt x 532.389pt>
 File: Figures/xsec_uncertainty.png Graphic file (type png)
 <use Figures/xsec_uncertainty.png>
 Package pdftex.def Info: Figures/xsec_uncertainty.png  used on input line 117.
@@ -1154,8 +1160,8 @@ Package pdftex.def Info: Figures/xsec_uncertainty.png  used on input line 117.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[13] [14 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/xsec_uncertainty.PNG>]
-<Figures/fsisi_uncertainty.png, id=75, 860.61525pt x 496.254pt>
+[16] [17 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/xsec_uncertainty.PNG>]
+<Figures/fsisi_uncertainty.png, id=93, 860.61525pt x 496.254pt>
 File: Figures/fsisi_uncertainty.png Graphic file (type png)
 <use Figures/fsisi_uncertainty.png>
 Package pdftex.def Info: Figures/fsisi_uncertainty.png  used on input line 158.
@@ -1165,12 +1171,12 @@ Overfull \hbox (1.44499pt too wide) detected at line 190
 []
  []
 
-[15 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/fsisi_uncertainty.PNG>] [16]
+[18 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/fsisi_uncertainty.PNG>] [19]
 Overfull \hbox (87.88977pt too wide) detected at line 210
 []
  []
 
-<Figures/nucleonfsi_uncertainty.png, id=83, 882.29625pt x 525.162pt>
+<Figures/nucleonfsi_uncertainty.png, id=102, 882.29625pt x 525.162pt>
 File: Figures/nucleonfsi_uncertainty.png Graphic file (type png)
 <use Figures/nucleonfsi_uncertainty.png>
 Package pdftex.def Info: Figures/nucleonfsi_uncertainty.png  used on input line 225.
@@ -1183,35 +1189,35 @@ Overfull \hbox (7.91225pt too wide) in paragraph at lines 225--226
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[17]) [18 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/nucleonfsi_uncertainty.PNG>]
+[20]) [21 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/nucleonfsi_uncertainty.PNG>]
 \openout2 = `Chapters/chapter_conclusion.aux'.
 
  (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_conclusion.tex
-Chapter 7.
-) [19
+Chapter 8.
+) [22
 
 
 
 ]
 No file thesis_frontend.bbl.
-(c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis_frontend.aux (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_introduction.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_neutrino-physics.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk-detector.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk-calib.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_ukli-system.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superkgd_upgrade.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_ncqe-gd.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_conclusion.aux))
+(c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis_frontend.aux (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_introduction.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_neutrino-physics.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk_detector.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk-calib.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_ukli-system.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superkgd_upgrade.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_ncqe-gd.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_conclusion.aux))
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 27605 strings out of 492609
- 549422 string characters out of 6132818
- 720261 words of memory out of 5000000
- 31065 multiletter control sequences out of 15000+600000
- 545170 words of font info for 73 fonts, out of 8000000 for 9000
+ 27693 strings out of 492609
+ 550865 string characters out of 6132818
+ 721504 words of memory out of 5000000
+ 31136 multiletter control sequences out of 15000+600000
+ 548183 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,17n,69p,1183b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis_frontend.pdf (20 pages, 559394 bytes).
+ 62i,15n,69p,1247b,370s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis_frontend.pdf (23 pages, 671081 bytes).
 PDF statistics:
- 150 PDF objects out of 1000 (max. 8388607)
- 101 compressed objects within 2 object streams
+ 184 PDF objects out of 1000 (max. 8388607)
+ 123 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 

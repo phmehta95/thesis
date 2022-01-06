@@ -1,13 +1,18 @@
 \chapter{Measurement of Neutral Current Quasielastic
-Interactions with Super-Kamiokande Gadolin-
-ium Upgrade}
+Interactions with Super-Kamiokande Gadolinium Upgrade}
 \label{chp:ncqegd}
 
-Both MC and data neutrino events undergo a reconstruction phase, where the low-energy fitter BONSAI is applied to the event. This reconstruction is carried out using timing and cable information, however charge information is omitted. The ouput of BONSAI gives information which will be used in the reduction phase of the data and allow for the selection of the NCQE sample. BONSAI is a low-energy fitter used in the few-MeV to tens of MeV energy range, therefore suitable for this analysis. It's directional reconstruction uses the fitted vertex and maximises for direction while it's energy reconstruction of the event is based upon the number of hit PMTs. Equation \ref{bonsai} shows how the vertex reconstruction is formulated, where $w_{i}$ is the Gaussian hit weight of the PMT, $t_{i}$ is the hit time of the PMT and $x_{i}$ is the position of the hit PMT.
+
+\section{Bonsai output reconstruction quantities}
+
+Due to this analysis looking specifically at the low energy region, a fitter specific to low energies (called LOWFIT) is used to reconstruct events. 
+
+%%%%%%%%%%REPHRASE BELOW TO LEAD INTO BONSAI OUTPUT QUANTITIES%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Both MC and data neutrino events undergo a reconstruction phase, where the low-energy fitter BONSAI is applied to the event. This reconstruction is carried out using timing and cable information, however charge information is omitted. The ouput of BONSAI gives information which will be used in the reduction phase of the data and allow for the selection of the NCQE sample. BONSAI is a low-energy fitter used in the few-MeV to tens of MeV energy range, therefore suitable for this analysis. Its directional reconstruction uses the fitted vertex and maximises for direction while it's energy reconstruction of the event is based upon the number of hit PMTs. Equation \ref{bonsai} shows how the vertex reconstruction is formulated, where $w_{i}$ is the Gaussian hit weight of the PMT, $t_{i}$ is the hit time of the PMT and $x_{i}$ is the position of the hit PMT.
 \newline
 \begin{equation}
 \label{bonsai}
-g(\vec{v})=\sum_{i=1}^{N} w_{i} e^{\left.-0.5\left(t_{i}-\left|\overrightarrow{x_{i}}-\vec{v}\right| / c\right) / \sigma\right)^{2}}
+g(\vec{v})=\sum_{i=1}^{N} w_{i} e^{.-0.5(t_{i}-|\overrightarrow{x_{i}}-\vec{v}| / c) / \sigma)^{2}}
 \end{equation}
 The following quantities comprise the BONSAI output, the first two being helpful spectator variables and the latter five constituting parameters which are used in the reduction phase of the analysis, from which the neutrino NCQE sample is determined.\\
 
@@ -18,11 +23,11 @@ This vector points towards the direction which is an average over all the Cheren
 
 
 \underline{Neutrino vertex position}\\
-In NCQE events the vector of the Cherenkov cone produced by an outgoing charged lepton, gives the point at which the Oxygen molecule involved in an NCQE event excites and de-excites due to an interaction with a neutrino and it is this interaction point which is the neutrino vertex position.
-\newline
+The reconstructed location of the neutrino interaction event.
+
 
  \underline{Reconstructed energy}\\
- In line with the standard SK low energy analysis definition, this energy is simply the reconstructed energy with the 0.511MeV electron mass omitted. The range for Erec in this variable is 3.49 MeV to 29.49 MeV.
+ In line with the standard SK low energy analysis definition, this energy is simply the reconstructed energy with the 0.511 MeV electron mass omitted. The range for Erec in this variable is 3.49 MeV to 29.49 MeV - the estimated kinetic energy under the hypothesis that the event is a singular electron.
 \newline
 
  \underline{Dwall}\\
@@ -34,18 +39,48 @@ In NCQE events the vector of the Cherenkov cone produced by an outgoing charged 
 \newline
 
  \underline{Vertex direction and goodness coefficient}\\
- The coefficient $ovaQ$ (defined in Equation \ref{ovaq}) describes the quality of the vertex reconstruction. It consists of two parameters $g^2_{vtx}$ and $g^2_{dir}$ where the former describes the goodness of the vertex which is based on PMT hit timings, and increases the sharper an event is in time. The latter is the directional goodness and measures the azimuthal uniformity in the ring pattern produced by the Cherenkov cone, which decreass the more uniform an event is in space. As a result of this, $ovaQ$ increases the more uniform and sharp in time an event is.
-\newline
+ The coefficient $ovaQ$ (defined in Equation \ref{ovaq}) describes the quality of the vertex reconstruction. It consists of two parameters $g^2_{vtx}$ and $g^2_{dir}$ where the former describes the goodness of the vertex which is based on PMT hit timings, and increases the sharper an event is in time. The latter is the directional goodness and measures the azimuthal uniformity in the ring pattern produced by the Cherenkov cone, which decreases the more uniform an event is in space. As a result of this, $ovaQ$ increases the more uniform and sharp in time an event is.
 
- \underline{Cherenkov angle $theta_{C}$}\\
- In neutral current events, this value determines the opening angle of the Cherenkov cone and unlike for charged current events does not 
-\newline
+\begin{equation}
+    \text { ova } Q=g_{\text {vtx }}^{2}-g_{\text {dir }}^{2}
+    \label{ovaq}
+\end{equation}
+
+$g_{vtx}$ is calculated using a fit of the PMT timing distribution and using the hit times of the PMT it is defined asin Equation\ref{vertex_goodness}.
+
+\begin{equation}
+g_{\mathrm{vtx}}=\frac{\sum_{i} w_{i} \mathrm{e}^{-\frac{1}{2}(\frac{\Delta t_{i}}{\sigma})^{2}}}{\sum_{i} w_{i}} \text { with } w_{i}=-\frac{1}{2}(\frac{\Delta t_{i}}{\omega})^{2}
+\label{vertex_goodness}
+\end{equation}
+
+Here $\sum_{i} w_{i}$ is the weight given to the i-th hit PMT for the reduction of dark noise, where $\omega$ has a value of 60ns. $\sigma$ has a value of 5ns which is used to test the goodness, and as a result, a sharp timing distribution produces a large vertex goodness. $g_{dir}$ is calculated by looking at how spatially uniform the hit PMTs are around the reconstructed neutrino vertex direction. In order to quantify this uniformity, the Kolmogorov-Smirnov (KS) test is used as in Equation \ref{direction_goodness}.
+
+\begin{equation}
+    \mathrm{g}_{\mathrm{dir}}=\frac{\max _{i}\{\angle_{\mathrm{uni}}(i)-\angle_{\mathrm{data}}(i)\}-\min _{i}\{\angle_{\mathrm{uni}}(i)-\angle_{\mathrm{data}}(i)\}}{2 \pi}
+\label{direction_goodness}
+\end{equation}
+
+where $\angle_{\mathrm{data}}(i)$ is the azimuthal angle of i-th hit real PMT included in the number of hits in 50ns. $\angle_{\mathrm{uni}}(i)=2 \pi i / N_{50}$ is the azimuthal angle of the i-th virtual PMT hit, but only when uniform distribution of the hits is assumed. As the uniformity of the hit pattern increases, the goodness decreases. 
+ 
+
+
+
+ \underline{Cherenkov angle $theta_{C}$}
+
+ For relativistic electrons in water, the value of the Cherenkov opening angle is $\approx 41\degree$, due to the relation: 
+
+ \begin{equation}
+\cos \theta_{\mathrm{Cherenkov}}=\frac{1}{n\beta}
+\label{cherenkov_angle}
+\end{equation}
+ 
+where $\beta = v/c \approx 1$ and $n$ is the refractive index of water, 1.33. However due to other particles in the simulation, such as protons or muons, the Cherenkov cone is expected to be narrower, or if multiple leptons are present, the Cherenkov cones will be less distinct and more spread out, leading to deviations from the 41\degree value. 
+
 
 \subsection{True neutron tagging information}
 \subsection{Primary selection criteria}
 \subsection{Secondary selection criteria}
 When the neutron vertex is found by this method, 14 variables which describe different aspects of the neutron candidate are calculated. For each of the neutron candidates the vector of these variables are computed and fed into the neural network and this produces an output value which is between 0 and 1. These variables relate to different features regarding categorising hits from neutron capture on Gd or H, including the number of the hits from neutron capture, the isotropy of these hits, the Cherenkov angles of these hits and the position of the neutron vertex in the detector when capture occurs. A description of these variables are given as follows:
-\newline
 
 
 \underline{N10nvx}
@@ -97,7 +132,7 @@ This variable is the log likelihood ratio calculated using triplets of hits from
 
 \underline{beta-n}
 \newline
-These variables (where n = 1,2,3,4,5) are defined using Legendre polynomials, shown in Equation \ref{beta} \cite{snopaper}, which gives the isotropy of the Cherenkov hits.
+These variables (where n = 1,2,3,4,5) are defined using Legendre polynomials, shown in Equation \ref{beta}, which gives the isotropy of the Cherenkov hits.
 
 \begin{equation}
 \label{beta}
