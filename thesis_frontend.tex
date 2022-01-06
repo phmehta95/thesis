@@ -27,13 +27,16 @@
   \usepackage{wrapfig}                 % Wrap text around figures
 
   % Tables
-  \usepackage{arydshln}                % dashed version of cline
+  %\usepackage{arydshln}                % dashed version of cline
   \usepackage{array}                   % Do more fancy things with tables
+  \newcolumntype{L}{>{$}l<{$}} % math-mode version of "l" column type
+  
   \usepackage{multirow}                % Let cells span multiple rows
-  \usepackage{longtable}               % For tables that span multiple pages (remove if not needed)
+  %\usepackage{longtable}               % For tables that span multiple pages (remove if not needed)
   \usepackage{booktabs}                % Make tables look better
   \usepackage{makecell}
   \newcommand{\mc}{\multicolumn{1}{c}}
+
 
   % Maths
   \usepackage{amsmath}                 % Makes maths look pretty
