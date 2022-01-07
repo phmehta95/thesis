@@ -84,8 +84,9 @@ Figure \ref{fig:fluxuncertainty} shows the fractional errors calculated from the
 
 \section{Neutrino cross section uncertainty}
 
-A group of default neutrino cross section values are used to make up the nominal Monte Carlo from which the tagging efficiency is calculated. The values of the parameters that determine the cross sections are shown in Table \ref{xsectable}. Each of the parameter values relate to a specific interaction type and are either a normalisation parameter or a paramater which show a kinematic dependence.
-For charged current quasi-elastic interactions, the uncertainty is described by the Fermi momentum of the oxygen nucleus, ($p_{F}^{O}$), the binding energy of the oxygen nucleus,($E_{B}^{O}$) and the axial mass $M_{A}^{C C Q E}$. The axial mass for CCQE interactions relates to the axial form factor which along with vector form factors is proportional to the cross section of the interactions. For neutrino interactions where two nucleons produce two holes (2p2h), an overall normalisation parameter takes the uncertainty into account for these interactions. For $CC$ and $NC1\pi$ interactions, the uncertainty is described by the isospin background, the axial form factor $C_{A 5}^{R E S}$ which just like for CCQE interactions relates to the axial mass $M_{A}^{R E S}$. For neutral current and charged current interactions (both elastic and inelastic) there are normalisation parameters and energy dependent parameters to take the uncertainty into account. Finally, for charged current interactions with electron neutrinos, the braking radiation from the lepton in the final state is also considered when calcualting the uncertainty and is treated using a normalisation parameter.
+A group of default neutrino cross section values are used to make up the nominal Monte Carlo from which the tagging efficiency is calculated. The values of the parameters that determine the cross sections are shown in Table \ref{xsectable}. Each of the parameter values relate to a specific interaction type and are either a normalisation parameter or a paramater which shows a kinematic dependence. \newline
+
+For charged current quasi-elastic interactions, the uncertainty is described by the Fermi momentum of the oxygen nucleus, ($p_{F}^{O}$), the binding energy of the oxygen nucleus,($E_{B}^{O}$) and the axial mass $M_{A}^{C C Q E}$. The axial mass for CCQE interactions relates to the axial form factor which along with vector form factors is proportional to the cross section of the interactions. For neutrino interactions where two nucleons produce two holes (2p2h), an overall normalisation parameter takes the uncertainty of these interactions into account. For $CC$ and $NC1\pi$ interactions, the uncertainty is described by the isospin background, the axial form factor $C_{A 5}^{R E S}$ which just like for CCQE interactions relates to the axial mass $M_{A}^{R E S}$. For neutral current and charged current interactions (both elastic and inelastic) there are normalisation parameters and energy dependent parameters to take the uncertainty into account. Finally, for charged current interactions with electron neutrinos, the braking radiation from the lepton in the final state is also considered when calculating the uncertainty and is treated using a normalisation parameter.
 \newline
 
 The Monte Carlo re-weighting method is used to reweight the nominal Monte Carlo on an event by event basis with each parameter value being increased and decreased by its uncertainty, and for each reweighted Monte Carlo the equivalent tagging efficiency value is extracted. Equation \eqref{xsectageff} shows how the fractional discrepancies are extracted from the nominal and reweighted tagging efficiency values.
@@ -123,11 +124,15 @@ Figure \ref{fig:xsecuncertainty} shows the reweighted Monte Carlo fractional unc
 
 \begin{figure}[h!]
     \includegraphics[scale=0.4]{Figures/xsec_uncertainty.png}
-\caption{Tagging efficiency fractional uncertainty caused by the cross-section parameters variations for the FHC mode}
+\caption{Tagging efficiency uncertainty caused by the cross-section parameters variations for the FHC mode}
 \label{fig:xsecuncertainty}
 \end{figure}
 
 \section{Pion final state interaction (FSI) and secondary interaction (SI) uncertainties}
+
+Even though this is an analysis concerned with neutral current quasi elastic interactions, pion events are a significant contribution to the background, and as a result it is important to examne the pion interaction uncertainties both for final state interactions and secondary interactions as their trajectories span the detector. 
+\newline
+
 
 The neutrino-nucleus interaction simulator used in this analysis (NEUT) handles pion final state interactions and secondary interactions using a cascade model. This cascade model contains parameters which will have uncertainties on them and these will be tranferred to a possible change in the tagging efficiency.
 
@@ -240,16 +245,16 @@ The tagging efficiency fractional uncertainties are displayed in Figure \ref{fig
 Neutrons are produced from negative muon capture on $\ch{^{16}O}$ as show in Equation \ref{muoncap}.
 
 \begin{equation}
-    \mu^{-16} \mathrm{O} \longrightarrow \nu_{\mu} \mathrm{n}^{15} \mathrm{~N}
+        \mu^{-}\;\ch{^{16}{O}}\;\longrightarrow\;\nu_{\mu}\;n\;\ch{^{15}{N}}
 \label{muoncap}
 \end{equation}
 
-Direct neutrons are produced from pion capture on $\ch{^{16}O}$, but also a number of evaporation neutrons that leave the nucleus. For the capture of muons and pions on $\ch{^{16}O}$, the energy spectra of the neutrons produced have been measured: for muons the spectra can range up to 15MeV, while in the case of pions the spectra can reach up to 100MeV.
+Direct neutrons are produced from pion capture on $\ch{^{16}O}$, but also a number of evaporation neutrons that leave the nucleus. For the capture of muons and pions on $\ch{^{16}O}$, the energy spectra of the neutrons produced have been measured: for muons the spectra can range up to 15 MeV, while in the case of pions the spectra can reach up to 100 MeV.
 
 
 Geant4 simulates the capture processes for muons and pions, but there are alternate models that can be used: for example, the Chiral Invariant Phase Space (CHIPS) model for muon captures (based on non pertubative QCD) and two different routines for pion capture, one which is based on CHIPS and one based on intra-nuclear cascade.
 
-Because any change in the model can alter the energy spectra of the neutrons, these alternative functions can be used to estimate the fractional uncertainties for the tagging efficiency. This is done by using the MC regeneration method, where the nominal Monte Carlo is regenerated by replacing the default Geant4 routines with the alternative ones in order to see the varaition in the tagging efficiency value. For the alterantive muon capture model and the two alternative pion capture models, the fractional discrepancies are shown in Equation \ref{muoncaptaggingeff}.
+Because any change in the model can alter the energy spectra of the neutrons, these alternative functions can be used to estimate the fractional uncertainties for the tagging efficiency. This is done by using the MC regeneration method, where the nominal Monte Carlo is regenerated by replacing the default Geant4 routines with the alternative models. For the alterantive muon capture model and the two alternative pion capture models, the fractional discrepancies are shown in Equation \ref{muoncaptaggingeff}.
 
 \begin{equation}
     \begin{aligned}

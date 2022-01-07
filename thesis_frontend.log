@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.17)  6 JAN 2022 19:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.17)  7 JAN 2022 12:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -999,12 +999,17 @@ Chapter 5.
  (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_ncqe-gd.tex
 Chapter 6.
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--13
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--18
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
@@ -1013,42 +1018,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--18
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 19--20
+Underfull \hbox (badness 10000) in paragraph at lines 20--23
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--22
+Underfull \hbox (badness 10000) in paragraph at lines 24--27
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--32
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--36
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--40
+Underfull \hbox (badness 10000) in paragraph at lines 28--31
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 86--90
+Underfull \hbox (badness 10000) in paragraph at lines 77--81
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--96
+Underfull \hbox (badness 10000) in paragraph at lines 83--87
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 146--150
+Underfull \hbox (badness 10000) in paragraph at lines 137--141
 
  []
 
@@ -1113,12 +1108,17 @@ Overfull \hbox (9.35762pt too wide) in paragraph at lines 80--81
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--90
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
 
  []
 
 [15 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/frac_beam_flux_uncertainty.PNG>]
-Overfull \hbox (82.81589pt too wide) in paragraph at lines 101--119
+Overfull \hbox (82.81589pt too wide) in paragraph at lines 102--120
 []$[]$ 
  []
 
@@ -1126,38 +1126,41 @@ Overfull \hbox (82.81589pt too wide) in paragraph at lines 101--119
 <Figures/xsec_uncertainty.png, id=90, 843.15pt x 532.389pt>
 File: Figures/xsec_uncertainty.png Graphic file (type png)
 <use Figures/xsec_uncertainty.png>
-Package pdftex.def Info: Figures/xsec_uncertainty.png  used on input line 125.
+Package pdftex.def Info: Figures/xsec_uncertainty.png  used on input line 126.
 (pdftex.def)             Requested size: 337.25401pt x 212.95183pt.
- [17 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/xsec_uncertainty.PNG>]
-<Figures/fsisi_uncertainty.png, id=95, 860.61525pt x 496.254pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--135
+
+ []
+
+[17 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/xsec_uncertainty.PNG>] [18]
+<Figures/fsisi_uncertainty.png, id=99, 860.61525pt x 496.254pt>
 File: Figures/fsisi_uncertainty.png Graphic file (type png)
 <use Figures/fsisi_uncertainty.png>
-Package pdftex.def Info: Figures/fsisi_uncertainty.png  used on input line 166.
+Package pdftex.def Info: Figures/fsisi_uncertainty.png  used on input line 171.
 (pdftex.def)             Requested size: 344.24pt x 198.49808pt.
- [18]
-Overfull \hbox (1.44499pt too wide) detected at line 198
+
+Overfull \hbox (1.44499pt too wide) detected at line 203
 []
  []
 
 
-Overfull \hbox (87.88977pt too wide) detected at line 218
+Overfull \hbox (87.88977pt too wide) detected at line 223
 []
  []
 
-<Figures/nucleonfsi_uncertainty.png, id=100, 882.29625pt x 525.162pt>
+[19 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/fsisi_uncertainty.PNG>] [20]
+<Figures/nucleonfsi_uncertainty.png, id=107, 882.29625pt x 525.162pt>
 File: Figures/nucleonfsi_uncertainty.png Graphic file (type png)
 <use Figures/nucleonfsi_uncertainty.png>
-Package pdftex.def Info: Figures/nucleonfsi_uncertainty.png  used on input line 233.
+Package pdftex.def Info: Figures/nucleonfsi_uncertainty.png  used on input line 238.
 (pdftex.def)             Requested size: 352.91225pt x 210.06108pt.
 
-Overfull \hbox (7.91225pt too wide) in paragraph at lines 233--234
+Overfull \hbox (7.91225pt too wide) in paragraph at lines 238--239
 [][] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[19 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/fsisi_uncertainty.PNG>] [20] [21 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/nucleonfsi_uncertainty.PNG>]) [22]
+[21 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/nucleonfsi_uncertainty.PNG>]) [22]
 \openout2 = `Chapters/chapter_conclusion.aux'.
 
  (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_conclusion.tex
@@ -1174,15 +1177,15 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 27382 strings out of 492609
- 546791 string characters out of 6132818
+ 27381 strings out of 492609
+ 546783 string characters out of 6132818
  718031 words of memory out of 5000000
- 30833 multiletter control sequences out of 15000+600000
+ 30832 multiletter control sequences out of 15000+600000
  548183 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,15n,69p,1314b,370s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,15n,69p,1313b,370s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis_frontend.pdf (24 pages, 689521 bytes).
+Output written on c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis_frontend.pdf (24 pages, 688366 bytes).
 PDF statistics:
  189 PDF objects out of 1000 (max. 8388607)
  125 compressed objects within 2 object streams
