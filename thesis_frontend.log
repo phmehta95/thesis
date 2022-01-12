@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.17)  12 JAN 2022 17:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.17)  12 JAN 2022 17:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -990,17 +990,6 @@ LaTeX Warning: Reference `neff' on page 6 undefined on input line 70.
 
 
 LaTeX Warning: Reference `edark' on page 6 undefined on input line 70.
-
-c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk_detector.tex:70: Missing } inserted.
-<inserted text> 
-                }
-l.70 ...t is in and $N_{\text {PMT}\text {alive }$
-                                                   is the number of active p...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
 
 
 LaTeX Warning: Reference `etail' on page 6 undefined on input line 78.
