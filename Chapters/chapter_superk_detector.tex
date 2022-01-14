@@ -1,6 +1,21 @@
 \chapter{The Super Kamiokande Detector}
 \label{chp:superk}
 
+\section{The Super-Kamiokande detector}
+
+Super-Kamiokande is a neutrino observatory consisting of a cyclindrical tank which is 41.4 m in height and 39.3 m in diamter, and filled with 50kton of ultrapure water and gadolinium sulphate. It is used as a neutrino detctor for atmospheric, solar and astrophysical neutrinos, as well as being a far detector of the Tokai-to-Kamioka neutrino beam. It is based in the Mozumi mine, located in Gifu Prefecture, Japan. Due to it's location being underneath Mount Ikenoyama, 1000m underground, it is shielded as much as possible from the cosmic ray muon detector background. Super-Kamiokande is divided into two concentric cylinder volumes, consisting of the inner detector (ID) and outer detector (OD) using a stainless steel structure which supports the photomultiplier tubes. Tyvek and black polyethylene terephthelate sheets are mounted on this structure in order to optically seperate the inner and outer detector. 
+
+The inner detector is a cylinder which has a diameter of 33.8 m and a height of 36.2m, and has a fiducial volume of 22.5ktons of water. It is host to 11,129 photomultiplier tubes which give 40\% photocoverage of its inner surface, with the specific photomultiplier model chosen being the hemispherical, 50.8 cm diameter Hamamastu R3600 model. The outer detector has only 1885 photomultiplier tubes which are mounted on the outside of stainless steel structure, each with a smaller diameter of 20cm. Each outer detector photomultiplier tube is attached to a 50cm x 50cm wavelength shifting plate, improving the light collection ability in the OD. 
+
+The Super-Kamiokande experiment began taking data on 1st April 1996, and due to maintenance was shut down in July 2001, which was phase I of the experiment. A table of the Super-Kamiokande phases is shown in Table \ref{phasetable}. During the refilling of the tank after maintenence, there was cascade of PMT implosions that occurred on the 12th of November 2001, which were triggered by the implosion of a single photomultiplier tube, due to a microfracture in the neck of the tube. This implosion destroyed about 7,000 of the PMTs and in order to avoid such chain reactions in the future, from 2002 onwards all of the inner detector PMTs were encased inside acrylic and fibreglass shields. The experiment resumed in October 2002, and phase II of Super-Kamiokande began, and by October 2005 the experiement was fully rebuilt and resumed data taking with the full number of photomultiplier tubes in July 2006 which marked the beginning of Super-Kamiokande phase III. Super-Kamiokande phase IV began in September 2008 where a new data aquisition system and charge to time (QTC) based electronics with Ethernet (QBEE) were installed in order to measure arrival times and integrated charge for inner detector and outer detector photomultiplier tube signals. The improvements in electronics and calibration methods meant that when Super-Kamiokande phase IV started running in September of 2008, electrons with energies as low as 3.5 MeV were able to be detected. 
+
+
+
+
+
+
+
+
 
 \section{Event Reconstruction}
 
@@ -60,10 +75,9 @@ where $X_{i}$ is the correction factor hits with many photoelectrons. This corre
 
 \begin{equation}
     X_{i}=\left\{\begin{array}{ll}
-        \log \left(1-n_{i} / N_{i}\right)^{-N_{i} / n_{i}} & \left(n_{i}<N_{i}\right) \\
-        3 & \left(n_{i}=N_{i}\right)
-        \end{array}\right.
-        \label{correction_factor}
+    \log \left(1-n_{i} / N_{i}\right)^{-N_{i} / n_{i}} & \left(n_{i}<N_{i}\right) \\
+    3 & \left(n_{i}=N_{i}\right)
+    \end{array}\right.
 \end{equation}
 
 
@@ -82,9 +96,9 @@ $\epsilon_{tail}$ is the correction factor for photomultiplier tube hits which a
     \label{etail}
 \end{equation}
 
-\frac{N_{all}}{N_{alive}} is the factor which corrects the time variation of the number of dead photomultiplier tubes, where $\N_{all}$ is equal to 11129, the total number of photomultiplier tubes in the inner detector of Super-Kamiokande. 
 
-$\frac{1}{S\left(\theta_{i}, \phi_{i}\right)}$ is the inverse of the effective area of the ith hit photomultiplier tube photocathode, from the direction of the incident photon given by $(\theta_{i}, \phi_{i}\right)$.
+$\frac{1}{S(\theta_{i}, \phi_{i})}$ is the inverse of the effective area of the ith hit photomultiplier tube photocathode, from the direction of the incident photon given by $(\theta_{i}, \phi_{i})$.
 
 $G(i)$ is the gain correction for the quantum efficiency of the photomultiplier tubes and $exp(\frac{r_{s}}{\lambda})$ is the correction for water transparency which accounts for the amount of attenuation undergone by the photons in water, where $\lambda$ is the water transparency measured during the run period which includes the event, and $r_{i}$ is the distance between the reconstructed event vertex and the i-th hit PMT.
 
+The average of each $N_{eff}$ distribution is taken, after producing multiple $N_{eff}$ distributions with fixed energies using Monte Carlo. These energies are fitted with a polynomial which is a function of the averaged $N_{eff}$ distribution, so the reconstructed energy is converted from $N_{eff}$.

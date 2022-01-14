@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.17)  12 JAN 2022 17:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.17)  14 JAN 2022 17:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -822,7 +822,7 @@ Package lineno Warning: Option [displaymath] is obsolete -- default now!.
 \bframesep=\dimen323
 \bframebox=\box72
 LaTeX Info: Redefining \\ on input line 3056.
-) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis_frontend.aux)
+) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis_frontend.aux (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_introduction.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_neutrino-physics.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk_detector.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk-calib.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_ukli-system.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superkgd_upgrade.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_ncqe-gd.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_conclusion.aux))
 \openout1 = `thesis_frontend.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
@@ -915,12 +915,11 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 89.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-No file thesis_frontend.toc.
+{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis_frontend.toc)
 \tf@toc=\write4
 \openout4 = `thesis_frontend.toc'.
 
-[1
+ [1
 
 ]
 \openout2 = `Chapters/chapter_introduction.aux'.
@@ -940,32 +939,7 @@ No file Chapters/chapter_neutrino-physics.tex.
 (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk_detector.tex
 Chapter 2.
 
-LaTeX Warning: Reference `bonsailikelihood' on page 3 undefined on input line 10.
-
-<Figures/bonsai_pdf_res.png, id=19, 282.45525pt x 234.8775pt>
-File: Figures/bonsai_pdf_res.png Graphic file (type png)
-<use Figures/bonsai_pdf_res.png>
-Package pdftex.def Info: Figures/bonsai_pdf_res.png  used on input line 20.
-(pdftex.def)             Requested size: 112.98009pt x 93.94933pt.
-
-LaTeX Warning: Citation `.' on page 3 undefined on input line 21.
-
-
-LaTeX Warning: Citation `.' on page 3 undefined on input line 21.
-
-<Figures/bonsai_vertex_res.png, id=21, 244.5135pt x 193.9245pt>
-File: Figures/bonsai_vertex_res.png Graphic file (type png)
-<use Figures/bonsai_vertex_res.png>
-Package pdftex.def Info: Figures/bonsai_vertex_res.png  used on input line 26.
-(pdftex.def)             Requested size: 97.80365pt x 77.56842pt.
-
-LaTeX Warning: Citation `.' on page 3 undefined on input line 27.
-
-
-LaTeX Warning: Citation `.' on page 3 undefined on input line 27.
-
-
-LaTeX Warning: Reference `directionlikelihoodeq' on page 3 undefined on input line 33.
+LaTeX Warning: Reference `phasetable' on page 3 undefined on input line 10.
 
 [3
 
@@ -974,97 +948,42 @@ LaTeX Warning: Reference `directionlikelihoodeq' on page 3 undefined on input li
 
 
 ]
-
-LaTeX Warning: Reference `directionlikelihoodeq' on page 4 undefined on input line 40.
-
-[4 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/bonsai_pdf_res.PNG> <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/bonsai_vertex_res.PNG>]
-
-LaTeX Warning: Reference `effectivePMTs' on page 5 undefined on input line 52.
-
-
-LaTeX Warning: Reference `correction_factor' on page 5 undefined on input line 59.
-
-[5]
-
-LaTeX Warning: Reference `neff' on page 6 undefined on input line 70.
+<Figures/bonsai_pdf_res.png, id=24, 282.45525pt x 234.8775pt>
+File: Figures/bonsai_pdf_res.png Graphic file (type png)
+<use Figures/bonsai_pdf_res.png>
+Package pdftex.def Info: Figures/bonsai_pdf_res.png  used on input line 35.
+(pdftex.def)             Requested size: 112.98009pt x 93.94933pt.
 
 
-LaTeX Warning: Reference `edark' on page 6 undefined on input line 70.
+LaTeX Warning: Citation `.' on page 4 undefined on input line 36.
 
 
-LaTeX Warning: Reference `etail' on page 6 undefined on input line 78.
+LaTeX Warning: Citation `.' on page 4 undefined on input line 36.
 
-c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk_detector.tex:85: Missing $ inserted.
-<inserted text> 
-                $
-l.85 \frac{N_{all}}{N_{alive}}
-                               is the factor which corrects the time variati...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+<Figures/bonsai_vertex_res.png, id=26, 244.5135pt x 193.9245pt>
+File: Figures/bonsai_vertex_res.png Graphic file (type png)
+<use Figures/bonsai_vertex_res.png>
+Package pdftex.def Info: Figures/bonsai_vertex_res.png  used on input line 41.
+(pdftex.def)             Requested size: 97.80365pt x 77.56842pt.
 
-c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk_detector.tex:85: Missing $ inserted.
-<inserted text> 
-                $
-l.85 \frac{N_{all}}{N_{alive}}
-                               is the factor which corrects the time variati...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk_detector.tex:85: Missing $ inserted.
-<inserted text> 
-                $
-l.85 \frac{N_{all}}{N_{alive}}
-                               is the factor which corrects the time variati...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk_detector.tex:85: Extra }, or forgotten $.
-\frac  #1#2->{\begingroup #1\endgroup \@@over #2}
-                                                 
-l.85 \frac{N_{all}}{N_{alive}}
-                               is the factor which corrects the time variati...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk_detector.tex:85: Undefined control sequence.
-l.85 ...r of dead photomultiplier tubes, where $\N
-                                                  _{all}$ is equal to 11129,...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk_detector.tex:85: Missing $ inserted.
-<inserted text> 
-                $
-l.85 ... of dead photomultiplier tubes, where $\N_
-                                                  {all}$ is equal to 11129, ...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+LaTeX Warning: Citation `.' on page 4 undefined on input line 42.
 
 
-Overfull \hbox (52.14929pt too wide) in paragraph at lines 85--86
-[]\OT1/cmr/m/n/10 N$[]$$[]$$[]$
- []
+LaTeX Warning: Citation `.' on page 4 undefined on input line 42.
 
-c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk_detector.tex:87: Extra \right.
-l.87 ...ton given by $(\theta_{i}, \phi_{i}\right)
-                                                  $.
-I'm ignoring a \right that had no matching \left.
+[4] [5 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/bonsai_pdf_res.PNG> <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/bonsai_vertex_res.PNG>]
 
-) [6]
+LaTeX Warning: Reference `effectivePMTs' on page 6 undefined on input line 67.
+
+
+LaTeX Warning: Reference `correction_factor' on page 6 undefined on input line 74.
+
+[6]) [7]
 \openout2 = `Chapters/chapter_superk-calib.aux'.
 
  (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk-calib.tex
 Chapter 3.
-) [7
+) [8
 
 
 
@@ -1073,7 +992,7 @@ Chapter 3.
 
  (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_ukli-system.tex
 Chapter 4.
-) [8
+) [9
 
 
 
@@ -1082,7 +1001,7 @@ Chapter 4.
 
  (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superkgd_upgrade.tex
 Chapter 5.
-) [9
+) [10
 
 
 
@@ -1106,7 +1025,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
-[10
+[11
 
 
 
@@ -1125,16 +1044,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--31
 
  []
 
-
-LaTeX Warning: Reference `ovaq' on page 11 undefined on input line 33.
-
-
-LaTeX Warning: Reference `vertex_goodness' on page 11 undefined on input line 40.
-
-
-LaTeX Warning: Reference `direction_goodness' on page 11 undefined on input line 47.
-
-[11]
+[12]
 Underfull \hbox (badness 10000) in paragraph at lines 77--81
 
  []
@@ -1144,40 +1054,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--87
 
  []
 
-[12]
-
-LaTeX Warning: Reference `llrca' on page 13 undefined on input line 115.
-
-
-LaTeX Warning: Reference `beta' on page 13 undefined on input line 126.
-
-
+[13]
 Underfull \hbox (badness 10000) in paragraph at lines 137--141
 
  []
 
-) [13]
+) [14]
 \openout2 = `Chapters/chapter_syst_uncertainty.aux'.
 
  (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex
 Chapter 7.
 
-LaTeX Warning: Reference `multiplicity' on page 14 undefined on input line 18.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 20--22
 
  []
 
-[14
+[15
 
 
 
 ]
-
-LaTeX Warning: Reference `tageffdiscrep' on page 15 undefined on input line 29.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 25--31
 
  []
@@ -1188,45 +1084,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--36
  []
 
 
-LaTeX Warning: Reference `mcregengauss' on page 15 undefined on input line 39.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 37--41
 
  []
 
-
-LaTeX Warning: Reference `fig:frac_beam_flux_uncertainty' on page 15 undefined on input line 54.
-
-[15]
-
-LaTeX Warning: Reference `nubeamfluxerror' on page 16 undefined on input line 57.
-
-
+[16]
 Underfull \hbox (badness 10000) in paragraph at lines 57--59
 
  []
 
 
-LaTeX Warning: Reference `fig:fluxuncertainty' on page 16 undefined on input line 64.
-
-
-LaTeX Warning: Reference `table:systuncertaintytable' on page 16 undefined on input line 64.
-
-
-LaTeX Warning: Reference `summingfluxuncertainty' on page 16 undefined on input line 64.
+LaTeX Warning: Reference `table:systuncertaintytable' on page 17 undefined on input line 64.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 62--66
 
  []
 
-<Figures/frac_beam_flux_uncertainty.png, id=82, 527.571pt x 180.07275pt>
+<Figures/frac_beam_flux_uncertainty.png, id=85, 527.571pt x 180.07275pt>
 File: Figures/frac_beam_flux_uncertainty.png Graphic file (type png)
 <use Figures/frac_beam_flux_uncertainty.png>
 Package pdftex.def Info: Figures/frac_beam_flux_uncertainty.png  used on input line 68.
 (pdftex.def)             Requested size: 211.02466pt x 72.02782pt.
-<Figures/flux_uncertainty.png, id=83, 885.90974pt x 522.15076pt>
+<Figures/flux_uncertainty.png, id=86, 885.90974pt x 522.15076pt>
 File: Figures/flux_uncertainty.png Graphic file (type png)
 <use Figures/flux_uncertainty.png>
 Package pdftex.def Info: Figures/flux_uncertainty.png  used on input line 80.
@@ -1240,9 +1120,6 @@ Overfull \hbox (9.35762pt too wide) in paragraph at lines 80--81
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Reference `xsectable' on page 16 undefined on input line 87.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
@@ -1252,20 +1129,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--91
 
  []
 
-[16 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/frac_beam_flux_uncertainty.PNG>]
-
-LaTeX Warning: Reference `xsectageff' on page 17 undefined on input line 92.
-
-
-LaTeX Warning: Reference `fig:xsecuncertainty' on page 17 undefined on input line 99.
-
-
+[17 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/frac_beam_flux_uncertainty.PNG>]
 Overfull \hbox (82.81589pt too wide) in paragraph at lines 102--120
 []$[]$ 
  []
 
-[17 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/flux_uncertainty.png>]
-<Figures/xsec_uncertainty.png, id=93, 843.15pt x 532.389pt>
+[18 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/flux_uncertainty.png>]
+<Figures/xsec_uncertainty.png, id=97, 843.15pt x 532.389pt>
 File: Figures/xsec_uncertainty.png Graphic file (type png)
 <use Figures/xsec_uncertainty.png>
 Package pdftex.def Info: Figures/xsec_uncertainty.png  used on input line 126.
@@ -1275,24 +1145,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--135
 
  []
 
-[18 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/xsec_uncertainty.PNG>]
-
-LaTeX Warning: Reference `fsiparameters' on page 19 undefined on input line 142.
-
-
-LaTeX Warning: Reference `fsimodelparameters' on page 19 undefined on input line 163.
-
-
-LaTeX Warning: Reference `fsisitageff' on page 19 undefined on input line 163.
-
-
-LaTeX Warning: Reference `fsimodelparameters' on page 19 undefined on input line 163.
-
-
-LaTeX Warning: Reference `fig:fsisiuncertainty' on page 19 undefined on input line 163.
-
-[19]
-<Figures/fsisi_uncertainty.png, id=102, 860.61525pt x 496.254pt>
+[19 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/xsec_uncertainty.PNG>] [20]
+<Figures/fsisi_uncertainty.png, id=105, 860.61525pt x 496.254pt>
 File: Figures/fsisi_uncertainty.png Graphic file (type png)
 <use Figures/fsisi_uncertainty.png>
 Package pdftex.def Info: Figures/fsisi_uncertainty.png  used on input line 171.
@@ -1303,27 +1157,12 @@ Overfull \hbox (1.44499pt too wide) detected at line 203
  []
 
 
-LaTeX Warning: Reference `nucleonfsiuncertainties' on page 20 undefined on input line 210.
-
-
 Overfull \hbox (87.88977pt too wide) detected at line 223
 []
  []
 
-
-LaTeX Warning: Reference `nucleonfsiuncertainties' on page 20 undefined on input line 228.
-
-
-LaTeX Warning: Reference `nucleonfsitageff' on page 20 undefined on input line 228.
-
-[20 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/fsisi_uncertainty.PNG>] [21]
-
-LaTeX Warning: Reference `fig:nucleonfsiuncertainty' on page 22 undefined on input line 235.
-
-
-LaTeX Warning: Reference `nucleonfsiuncertainties' on page 22 undefined on input line 235.
-
-<Figures/nucleonfsi_uncertainty.png, id=110, 882.29625pt x 525.162pt>
+[21 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/fsisi_uncertainty.PNG>] [22]
+<Figures/nucleonfsi_uncertainty.png, id=113, 882.29625pt x 525.162pt>
 File: Figures/nucleonfsi_uncertainty.png Graphic file (type png)
 <use Figures/nucleonfsi_uncertainty.png>
 Package pdftex.def Info: Figures/nucleonfsi_uncertainty.png  used on input line 238.
@@ -1333,18 +1172,12 @@ Overfull \hbox (7.91225pt too wide) in paragraph at lines 238--239
 [][] 
  []
 
-
-LaTeX Warning: Reference `muoncap' on page 22 undefined on input line 245.
-
-
-LaTeX Warning: Reference `muoncaptaggingeff' on page 22 undefined on input line 257.
-
-[22 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/nucleonfsi_uncertainty.PNG>]) [23]
+[23 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/nucleonfsi_uncertainty.PNG>]) [24]
 \openout2 = `Chapters/chapter_conclusion.aux'.
 
  (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_conclusion.tex
 Chapter 8.
-) [24
+) [25
 
 
 
@@ -1354,27 +1187,20 @@ No file thesis_frontend.bbl.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- )
-(\end occurred inside a group at level 1)
-
-### simple group (level 1) entered at line 85 ({)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 27358 strings out of 492609
- 545011 string characters out of 6132818
+ 27388 strings out of 492609
+ 546864 string characters out of 6132818
  718031 words of memory out of 5000000
- 30829 multiletter control sequences out of 15000+600000
+ 30839 multiletter control sequences out of 15000+600000
  548183 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,15n,69p,1313b,370s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,15n,69p,1588b,370s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis_frontend.pdf (25 pages, 688384 bytes).
+Output written on c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis_frontend.pdf (26 pages, 699875 bytes).
 PDF statistics:
- 193 PDF objects out of 1000 (max. 8388607)
- 128 compressed objects within 2 object streams
+ 196 PDF objects out of 1000 (max. 8388607)
+ 130 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  48 words of extra memory for PDF output out of 10000 (max. 10000000)
 
