@@ -1,23 +1,25 @@
 \contentsline {chapter}{\numberline {1}Introduction}{2}% 
 \contentsline {chapter}{\numberline {2}The Super Kamiokande Detector}{3}% 
 \contentsline {section}{\numberline {2.1}The Super-Kamiokande detector}{3}% 
-\contentsline {section}{\numberline {2.2}Event Reconstruction}{4}% 
-\contentsline {subsection}{\numberline {2.2.1}Vertex Reconstruction}{4}% 
-\contentsline {subsection}{\numberline {2.2.2}Direction Reconstruction}{5}% 
-\contentsline {subsection}{\numberline {2.2.3}Energy reconstruction}{6}% 
-\contentsline {chapter}{\numberline {3}Super-Kamiokande Detector Calibration}{8}% 
-\contentsline {chapter}{\numberline {4}The UK Light Injection System}{9}% 
-\contentsline {chapter}{\numberline {5}Super-Kamiokande Gadolinium Upgrade}{10}% 
-\contentsline {chapter}{\numberline {6}Measurement of Neutral Current Quasielastic Interactions with Super-Kamiokande Gadolinium Upgrade}{11}% 
-\contentsline {section}{\numberline {6.1}Bonsai output reconstruction quantities}{11}% 
-\contentsline {subsection}{\numberline {6.1.1}True neutron tagging information}{13}% 
-\contentsline {subsection}{\numberline {6.1.2}Primary selection criteria}{13}% 
-\contentsline {subsection}{\numberline {6.1.3}Secondary selection criteria}{13}% 
-\contentsline {chapter}{\numberline {7}Systematic and statistical uncertainty calculations}{15}% 
-\contentsline {section}{\numberline {7.1}Systematic uncertainty calculation methodology}{15}% 
-\contentsline {section}{\numberline {7.2}Neutrino beam flux uncertainty}{17}% 
-\contentsline {section}{\numberline {7.3}Neutrino cross section uncertainty}{17}% 
-\contentsline {section}{\numberline {7.4}Pion final state interaction (FSI) and secondary interaction (SI) uncertainties}{20}% 
-\contentsline {section}{\numberline {7.5}Nucleon final state interactions}{21}% 
-\contentsline {section}{\numberline {7.6}Muon and pion capture on $\ch {^{16}O}$}{23}% 
-\contentsline {chapter}{\numberline {8}Conclusion}{25}% 
+\contentsline {subsection}{\numberline {2.1.1}Background and detector design}{3}% 
+\contentsline {subsection}{\numberline {2.1.2}Data aquisition system}{5}% 
+\contentsline {section}{\numberline {2.2}Event Reconstruction}{6}% 
+\contentsline {subsection}{\numberline {2.2.1}Vertex Reconstruction}{6}% 
+\contentsline {subsection}{\numberline {2.2.2}Direction Reconstruction}{7}% 
+\contentsline {subsection}{\numberline {2.2.3}Energy reconstruction}{8}% 
+\contentsline {chapter}{\numberline {3}Super-Kamiokande Detector Calibration}{10}% 
+\contentsline {chapter}{\numberline {4}The UK Light Injection System}{11}% 
+\contentsline {chapter}{\numberline {5}Super-Kamiokande Gadolinium Upgrade}{12}% 
+\contentsline {chapter}{\numberline {6}Measurement of Neutral Current Quasielastic Interactions with Super-Kamiokande Gadolinium Upgrade}{13}% 
+\contentsline {section}{\numberline {6.1}Bonsai output reconstruction quantities}{13}% 
+\contentsline {subsection}{\numberline {6.1.1}True neutron tagging information}{15}% 
+\contentsline {subsection}{\numberline {6.1.2}Primary selection criteria}{15}% 
+\contentsline {subsection}{\numberline {6.1.3}Secondary selection criteria}{15}% 
+\contentsline {chapter}{\numberline {7}Systematic and statistical uncertainty calculations}{17}% 
+\contentsline {section}{\numberline {7.1}Systematic uncertainty calculation methodology}{17}% 
+\contentsline {section}{\numberline {7.2}Neutrino beam flux uncertainty}{19}% 
+\contentsline {section}{\numberline {7.3}Neutrino cross section uncertainty}{19}% 
+\contentsline {section}{\numberline {7.4}Pion final state interaction (FSI) and secondary interaction (SI) uncertainties}{22}% 
+\contentsline {section}{\numberline {7.5}Nucleon final state interactions}{23}% 
+\contentsline {section}{\numberline {7.6}Muon and pion capture on $\ch {^{16}O}$}{25}% 
+\contentsline {chapter}{\numberline {8}Conclusion}{27}% 

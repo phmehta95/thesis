@@ -38,6 +38,8 @@ INPUT c:/texlive/2019/texmf-dist/tex/latex/booktabs/booktabs.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/booktabs/booktabs.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/makecell/makecell.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/makecell/makecell.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/tools/hhline.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/tools/hhline.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -320,10 +322,10 @@ INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk_detec
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
 INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/bonsai_pdf_res.png
 INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/bonsai_pdf_res.PNG
 INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/bonsai_pdf_res.PNG
-INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm
