@@ -10,6 +10,7 @@
 \contentsline {chapter}{\numberline {3}Super-Kamiokande Detector Calibration}{10}% 
 \contentsline {chapter}{\numberline {4}The UK Light Injection System}{11}% 
 \contentsline {chapter}{\numberline {5}Super-Kamiokande Gadolinium Upgrade}{12}% 
+\contentsline {section}{\numberline {5.1}Motivation behind Super-Kamiokande Gadolinium Upgrade}{12}% 
 \contentsline {chapter}{\numberline {6}Measurement of Neutral Current Quasielastic Interactions with Super-Kamiokande Gadolinium Upgrade}{13}% 
 \contentsline {section}{\numberline {6.1}Bonsai output reconstruction quantities}{13}% 
 \contentsline {subsection}{\numberline {6.1.1}True neutron tagging information}{15}% 
