@@ -53,14 +53,14 @@
 
   % Fonts
   \usepackage{anyfontsize}             % Setting of font size by point
-  \usepackage{cite}                    % Make citations looks pretty
+  %\usepackage{cite}                    % Make citations looks pretty
 
   % Misc
   \usepackage{lipsum}                  % Lorem ipsum generator, good for imagining writing
   \usepackage[nohyperlinks]{acronym}   % Acronym support
   \usepackage[displaymath, mathlines]{lineno}
-
-
+  \usepackage[backend=biber]{biblatex}
+  \addbibresource{thesisbib.bib}
 
 
   %%%%%%%%%%%%%%%%%%%%%%
@@ -113,8 +113,7 @@
  
 
     % Include bibliography
-    \bibliographystyle{unsrt}
-    \bibliography{thesis}
+    \printbibliography
 
 
 

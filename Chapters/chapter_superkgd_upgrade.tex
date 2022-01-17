@@ -1,6 +1,42 @@
 \chapter{Super-Kamiokande Gadolinium Upgrade}\label{chp:superkgdupgrade}
 
 
-\section{Motivation behind Super-Kamiokande Gadolinium Upgrade}
+\section{Physics motivation behind Super-Kamiokande Gadolinium Upgrade}
 
-In order to be able to possibly observe the supernova relic neutrino (SRN) flux, also known as diffuse supernova neutrino background (DSNB) flux it was proposed that Gadolinium (Gd) should be added to the the water in Super-Kamiokande. Natural isotopes of gadolinium have large thermal neutron capture cross sections. As a result of this, when neutrons are captured on them there is a cascade of gamma rays that occurs, with an energy totalling ~8 MeV, whereas neutron capture that occurs on hydrogen produces a single 2.2 MeV gamma ray. Two such natural isotopes, Gd-155 and Gd-157 have thermal neutron capture cross sections of 60740 barns and 253700 barns respectively, while the thermal neutron capture cross section of hydrogen is just 0.329 barns. The Super-Kamiokande with Gadolinium experiment, formerly known as GADZOOKS! (Gadolinium Antineutrino Detector Zealously Outperforming Old Kamiokande, Super!) was proposed in 2003, which stated the intention of enriching Water Cherenkov detectors with water soluble gadolinium salt.
+In order to be able to possibly observe the supernova relic neutrino (SRN) flux, also known as diffuse supernova neutrino background (DSNB) flux it was proposed that Gadolinium (Gd) should be added to the the water in Super-Kamiokande. Natural isotopes of gadolinium have large thermal neutron capture cross sections. As a result of this, when neutrons are captured on them there is a cascade of gamma rays that occurs, with an energy totalling ~8 MeV, whereas neutron capture that occurs on hydrogen produces a single 2.2 MeV gamma ray. Two such natural isotopes, Gd-155 and Gd-157 have thermal neutron capture cross sections of 60740 barns and 253700 barns respectively, while the thermal neutron capture cross section of hydrogen is just 0.329 barns. The Super-Kamiokande with Gadolinium experiment, formerly known as GADZOOKS! (Gadolinium Antineutrino Detector Zealously Outperforming Old Kamiokande, Super!) was proposed in 2003, which stated the intention of enriching Water Cherenkov detectors with water soluble gadolinium salt. The ultimate aim is to load a total amount of gadolinium in the form of gadolinium sulphate octahydrate($$
+\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$$) in Super-Kamiokande which equates to 0.2\% of Gd by mass, which would allow for 90\% neutron capture efficiency. The ability to tag neutrons efficiently in Super-Kamiokande will benefit multiple physics topics, not only for the aforementioned observation of SRN flux, but also for analyses involving atmospheric neutrinos and proton decay. 
+\newline
+
+A massive amount of energy is relased when a core-collapse supernova (SN) occurs, about $10^{46}$ J. The vast majority of this energy (99\%) is released in the form of neutrinos, and due to neutrinos interacting with matter only very weakly, these traverse space with barely any attenuation. The interaction through which neutrino detectors such as Super-Kamiokande detect SRN flux is through inverse beta decay (IBD), shown in Equation \ref{IBD_equation}. 
+
+\begin{equation}
+    \bar{\nu}_{e}+p \rightarrow n+e^{+}
+\label{eq:IBD_equation}
+\end{equation}
+
+Due to the large cross section of the interaction, these events constitute about 88\% of the total number of events in the detector. With efficient neutron tagging in Super-Kamiokande, the backgrounds (charged current interactions and muon spallation) in the search for SRN flux neutrinos would be largely reduced. The neutral current quasielastic (NCQE) background would still remain due to the way the gamma rays arising from neutron capture mimic the signal of the inverse beta decay (IBD) reactions: a schematic of both NCQE and IBD reactions are shown in Figure \ref{fig:NCQE_IBD}. The measurement of the NCQE interactions using T2K beam flux can aid in understanding this background more due to the T2K flux peak being near the atmospheric neutrino flux peak (~600 MeV). 
+
+
+\begin{figure}[h!]
+    \includegraphics[scale=0.4]{Figures/schematic.png}
+\caption{Schematic showing the IBD and NCQE interaction mechanisms}
+\label{fig:NCQE_IBD}
+\end{figure}
+
+
+Efficient neutron tagging aids information about neutrino energy and neutrino interaction type, and when it comes to studying atmospheric neutrino oscillations, accurate neutrino energy reconstruction is particularly important. Figure \ref{fig:atm_nu_energy} shows the fraction of non-visible energy as a function of the number of tagged neutrons from simulations of atmospheric neutrino interactions at Super-Kamiokande. Here $E_{\nu}$ is the energy of the atmospheric neutrino and $E_{vis}$ is the energy that is reconstructed from charged particles. Due to these neutrinos interacting with nuclei in the detector, more neutrons are produced, and with efficient neutron tagging on gadolinium the neutrino energy can be properly reconstructed. 
+
+\begin{figure}[h!]
+    \includegraphics[scale=0.4]{Figures/atm_recon_energy.png}
+\caption{MC study of (a) neutron multiplicity production for $\nu$ and ${\bar{\nu}}$, (b) neutral current, charged current and deep and non-deep inelastic scattering, (c) the correction to the visible energy as a function of neutrino multiplicity.}
+\label{fig:atm_nu_energy}
+\end{figure}
+
+
+Proton decay searches benefit from the addition of gadolinium to Super-Kamiokande because the main background to proton decay analyses come from atmospheric neutrino interactions, due to Figure \ref{fig:atm_recon_energy} showing that atmospheric neutrinos cause at least one neutron to be produced. 
+
+\section{The EGADS project}
+
+In 2009, prior to the additon of gadolinium in Super-Kamiokande, the EGADS (Evaluating Gadolinium's Action on Detector Systems) project was used to evaluate how the includion of gadolinium sulphate octahydrate would affect water quality, detector components inside Super-Kamiokande and their analyses, how to reduce the visible neutron background from spallation and neutrons from fission chains from the uranium and thorium impurities in the gadolonium sulphate. EGADS is a cylindrical 200 ton stainless steel tank in a cavern near Super-Kamiokande and has its own water purification system and gadolinium sulphate octahydrate dissolving system. 
+
+
