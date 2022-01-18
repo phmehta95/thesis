@@ -39,6 +39,28 @@ Proton decay searches benefit from the addition of gadolinium to Super-Kamiokand
 
 In 2009, prior to the additon of gadolinium in Super-Kamiokande, the EGADS (Evaluating Gadolinium's Action on Detector Systems) project was used to evaluate how the inclusion of gadolinium sulphate octahydrate would affect water quality and detector components inside Super-Kamiokande and their analyses. It was also used to observe how to reduce the visible neutron background from spallation and neutrons from fission chains from the uranium and thorium impurities in the gadolonium sulphate. EGADS is a cylindrical 200 ton stainless steel tank in a cavern near Super-Kamiokande and has its own water purification system and gadolinium sulphate octahydrate dissolving system. 
 
+Observing the impact the addition of gadolinium sulphate octahydrate had on the water quality and components was especially crucial, and after loading 0.2\% gadolinium sulphate into the the EGADS tank in 2013, 240 PMTs were installed into the detector. 224 of these are the 50 cm Super-Kamiokande inner detector PMTs, with 60 of these having the same FRP and acrylic covers as the inner detector PMTs. Much like Super-Kamiokande, the active photocoverage for EGADS is ~40\%, with the inside walls of the detector also being covered in black polyethylene terephthalate sheets. However, unlike Super-Kamiokande, there is no outer detector in EGADS. Figure \ref{fig:EGADS_PMT} shows the PMT map for the EGADS detector along with the PMT types. Along with the PMTs which are identical to the ones inside Super-Kamiokande, EGADS also contains PMTs which are used for research and developement for use inside Hyper-Kamiokande \cite{martiEvaluationGadoliniumAction2020a}.
 
+\begin{figure}[H]
+    \includegraphics[width=\textwidth]{Figures/egads_pmt_map.png}
+\caption{Map of unrolled cylindrical EGADS detector with PMT types. Taken from \cite{martiEvaluationGadoliniumAction2020a}.}
+\label{fig:EGADS_PMT}
+\end{figure}
 
+Measurements regarding neutron tagging were also taken using an Americium/Beryllium (Am/Be) source placed inside EGADS. Using an Am/Be neutron source to observe gadolinium's efficacy with respect to tagging neutrons is feasible because the Am/Be source decays as in Equation \ref{eq:ambe_decay}. It produces a prompt 4.4 MeV gamma ray alongside a neutron during it's decay process, and as a result the prompt 4.4 MeV signal can serve as a trigger signal, while the following hundreds of microseconds can be used as a timing window within which to scan for the neutron. Due to its similarity to the neutral current quasieleastic events studied in the analysis in this thesis, it can serve as a helpful control sample and is used in the calculation of the detector response uncertainty in Chapter 7.
 
+\begin{equation}
+\begin{array}{c}
+\alpha^{9} \mathrm{Be} \longrightarrow^{12} \mathrm{C}^{*} \mathrm{n} \\
+{ }^{12} \mathrm{C}^{*} \longrightarrow{ }^{12} \mathrm{C} \gamma(4.4 \mathrm{MeV})
+\end{array}
+\label{eq:ambe_decay}
+\end{equation}
+
+The delayed neutron capture time from an Am/Be source used in EGADS with the gadolinium sulphate concentration of 0.2\% is shown in Figure \ref{fig:EGADS_ambe_capture}. Here, we can see that the neutron capture time from the data is 29$\pm$0.3 $\mu$s and for the Monte Carlo it is 30$\pm$0.8 $\mu$s.
+
+\begin{figure}[H]
+    \includegraphics[width=\textwidth]{Figures/egads_ambe.png}
+\caption{a) Delayed neutron capture time from prompt event with Am/Be source. (b) Reconstructed energy from gamma rays after neutron capture.}
+\label{fig:EGADS_PMT}
+\end{figure}
