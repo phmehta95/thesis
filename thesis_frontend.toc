@@ -8,48 +8,48 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.1}Background and detector design}{4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}Data aquisition system}{6}% 
+\contentsline {subsection}{\numberline {2.1.2}Data aquisition system}{7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Event Reconstruction}{7}% 
+\contentsline {section}{\numberline {2.2}Event Reconstruction}{8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Vertex Reconstruction}{7}% 
+\contentsline {subsection}{\numberline {2.2.1}Vertex Reconstruction}{8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Direction Reconstruction}{8}% 
+\contentsline {subsection}{\numberline {2.2.2}Direction Reconstruction}{11}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}Energy reconstruction}{9}% 
+\contentsline {subsection}{\numberline {2.2.3}Energy reconstruction}{11}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Super-Kamiokande Detector Calibration}{11}% 
+\contentsline {chapter}{\numberline {3}Super-Kamiokande Detector Calibration}{14}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}The UK Light Injection System}{12}% 
+\contentsline {chapter}{\numberline {4}The UK Light Injection System}{15}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Super-Kamiokande Gadolinium Upgrade}{13}% 
+\contentsline {chapter}{\numberline {5}Super-Kamiokande Gadolinium Upgrade}{16}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Physics motivation behind Super-Kamiokande Gadolinium Upgrade}{13}% 
+\contentsline {section}{\numberline {5.1}Physics motivation behind Super-Kamiokande Gadolinium Upgrade}{16}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}The EGADS project}{15}% 
+\contentsline {section}{\numberline {5.2}The EGADS project}{18}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Measurement of Neutral Current Quasielastic Interactions with Super-Kamiokande Gadolinium Upgrade}{16}% 
+\contentsline {chapter}{\numberline {6}Measurement of Neutral Current Quasielastic Interactions with Super-Kamiokande Gadolinium Upgrade}{19}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Bonsai output reconstruction quantities}{16}% 
+\contentsline {section}{\numberline {6.1}Bonsai output reconstruction quantities}{19}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.1}True neutron tagging information}{18}% 
+\contentsline {subsection}{\numberline {6.1.1}True neutron tagging information}{21}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.2}Primary selection criteria}{18}% 
+\contentsline {subsection}{\numberline {6.1.2}Primary selection criteria}{21}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.3}Secondary selection criteria}{18}% 
+\contentsline {subsection}{\numberline {6.1.3}Secondary selection criteria}{21}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Systematic and statistical uncertainty calculations}{20}% 
+\contentsline {chapter}{\numberline {7}Systematic and statistical uncertainty calculations}{23}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Systematic uncertainty calculation methodology}{20}% 
+\contentsline {section}{\numberline {7.1}Systematic uncertainty calculation methodology}{23}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Neutrino beam flux uncertainty}{22}% 
+\contentsline {section}{\numberline {7.2}Neutrino beam flux uncertainty}{25}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Neutrino cross section uncertainty}{23}% 
+\contentsline {section}{\numberline {7.3}Neutrino cross section uncertainty}{26}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}Pion final state interaction (FSI) and secondary interaction (SI) uncertainties}{25}% 
+\contentsline {section}{\numberline {7.4}Pion final state interaction (FSI) and secondary interaction (SI) uncertainties}{28}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.5}Nucleon final state interactions}{28}% 
+\contentsline {section}{\numberline {7.5}Nucleon final state interactions}{31}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.6}Muon and pion capture on $\ch {^{16}O}$}{30}% 
+\contentsline {section}{\numberline {7.6}Muon and pion capture on $\ch {^{16}O}$}{33}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Conclusion}{31}% 
+\contentsline {chapter}{\numberline {8}Conclusion}{34}% 

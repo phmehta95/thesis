@@ -1996,10 +1996,22 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1">suzukiSuperKamiokandeExperiment2019</bcf:citekey>
-    <bcf:citekey order="2">.</bcf:citekey>
-    <bcf:citekey order="3">.</bcf:citekey>
-    <bcf:citekey order="4">.</bcf:citekey>
-    <bcf:citekey order="5">.</bcf:citekey>
+    <bcf:citekey order="2">fukudaSuperKamiokandeDetector2003</bcf:citekey>
+    <bcf:citekey order="3">fukudaSuperKamiokandeDetector2003</bcf:citekey>
+    <bcf:citekey order="4">fukudaSuperKamiokandeDetector2003</bcf:citekey>
+    <bcf:citekey order="5">fernandezmenendezNeutrinoPhysicsPresent2018</bcf:citekey>
+    <bcf:citekey order="6">fernandezmenendezNeutrinoPhysicsPresent2018</bcf:citekey>
+    <bcf:citekey order="7">nishinoHighspeedChargetotimeConverter2009a</bcf:citekey>
+    <bcf:citekey order="8">nishinoHighspeedChargetotimeConverter2009a</bcf:citekey>
+    <bcf:citekey order="9">fukudaSuperKamiokandeDetector2003</bcf:citekey>
+    <bcf:citekey order="10">.</bcf:citekey>
+    <bcf:citekey order="11">.</bcf:citekey>
+    <bcf:citekey order="12">.</bcf:citekey>
+    <bcf:citekey order="13">.</bcf:citekey>
+    <bcf:citekey order="14">uenoAnalysisNuclearDeexcitationa</bcf:citekey>
+    <bcf:citekey order="15">martiEvaluationGadoliniumAction2020</bcf:citekey>
+    <bcf:citekey order="16">martiEvaluationGadoliniumAction2020</bcf:citekey>
+    <bcf:citekey order="17">martiEvaluationGadoliniumAction2020</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
