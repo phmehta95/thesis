@@ -2009,12 +2009,15 @@
     <bcf:citekey order="12">.</bcf:citekey>
     <bcf:citekey order="13">.</bcf:citekey>
     <bcf:citekey order="14">uenoAnalysisNuclearDeexcitationa</bcf:citekey>
-    <bcf:citekey order="15">martiEvaluationGadoliniumAction2020</bcf:citekey>
+    <bcf:citekey order="15">meoMeasurementNeutronCapture</bcf:citekey>
     <bcf:citekey order="16">martiEvaluationGadoliniumAction2020</bcf:citekey>
     <bcf:citekey order="17">martiEvaluationGadoliniumAction2020</bcf:citekey>
-    <bcf:citekey order="18">martiEvaluationGadoliniumAction2020a</bcf:citekey>
+    <bcf:citekey order="18">martiEvaluationGadoliniumAction2020</bcf:citekey>
     <bcf:citekey order="19">martiEvaluationGadoliniumAction2020a</bcf:citekey>
     <bcf:citekey order="20">martiEvaluationGadoliniumAction2020a</bcf:citekey>
+    <bcf:citekey order="21">martiEvaluationGadoliniumAction2020a</bcf:citekey>
+    <bcf:citekey order="22">martiEvaluationGadoliniumAction2020a</bcf:citekey>
+    <bcf:citekey order="23">martiEvaluationGadoliniumAction2020a</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
