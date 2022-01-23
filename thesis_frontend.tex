@@ -59,8 +59,17 @@
   \usepackage{lipsum}                  % Lorem ipsum generator, good for imagining writing
   \usepackage[nohyperlinks]{acronym}   % Acronym support
   \usepackage[displaymath, mathlines]{lineno}
-  \usepackage[backend=biber]{biblatex}
+  \usepackage[backend=biber,
+              style=numeric,
+              backref=true,
+              bibencoding=utf8,
+              url=false,
+              doi=true,
+              isbn=false
+  ]{biblatex}
   \addbibresource{thesisbib.bib}
+  \AtEveryBibitem{\clearfield{note}\clearfield{addendum}\clearfield{annotation}} 
+  \AtEveryCitekey{\clearfield{note}\clearfield{addendum}\clearfield{annotation}}
 
 
   %%%%%%%%%%%%%%%%%%%%%%
@@ -78,6 +87,14 @@
   %\renewcommand{\baselinestretch}{1.15}
 
   %\usepackage[hidelinks=true]{hyperref}
+
+  \usepackage{hyperref}
+  \hypersetup{colorlinks,
+              citecolor=blue,
+              filecolor=blue,
+              linkcolor=blue,
+              urlcolor=blue
+  }
 
   %/////////////////////////////////////////////////////////////////////////////
   % DOCUMENT
