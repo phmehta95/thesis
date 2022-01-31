@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.17)  30 JAN 2022 15:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.17)  31 JAN 2022 18:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1251,7 +1251,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis_frontend.tocpdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.63 ...{\numberline {8}Conclusion}{42}{chapter.8}
+l.63 ...{\numberline {8}Conclusion}{43}{chapter.8}
                                                   % [1
 
 ])
@@ -1434,7 +1434,7 @@ File: Figures/gdconcentration.png Graphic file (type png)
 <use Figures/gdconcentration.png>
 Package pdftex.def Info: Figures/gdconcentration.png  used on input line 160.
 (pdftex.def)             Requested size: 345.0pt x 177.2025pt.
-) [26 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/gd_conductivity.png> <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/gdconcentration.PNG>]
+ [26 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/gd_conductivity.png> <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/gdconcentration.PNG>]) [27]
 \openout2 = `Chapters/chapter_ncqe-gd.aux'.
 
  (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_ncqe-gd.tex
@@ -1454,7 +1454,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
-[27
+[28
 
 
 
@@ -1473,7 +1473,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--31
 
  []
 
-[28]
+[29]
 Underfull \hbox (badness 10000) in paragraph at lines 77--81
 
  []
@@ -1483,17 +1483,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--87
 
  []
 
-[29]
+[30]
 Underfull \hbox (badness 10000) in paragraph at lines 137--141
 
  []
 
-) [30]
+) [31]
 \openout2 = `Chapters/chapter_syst_uncertainty.aux'.
 
  (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex
 Chapter 7.
-[31
+[32
 
 
 
@@ -1507,21 +1507,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--41
 
  []
 
-[32]
+[33]
 
-LaTeX Warning: Reference `table:systuncertaintytable' on page 33 undefined on input line 64.
+LaTeX Warning: Reference `table:systuncertaintytable' on page 34 undefined on input line 64.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 62--66
 
  []
 
-<Figures/frac_beam_flux_uncertainty.png, id=448, 527.571pt x 180.07275pt>
+<Figures/frac_beam_flux_uncertainty.png, id=454, 527.571pt x 180.07275pt>
 File: Figures/frac_beam_flux_uncertainty.png Graphic file (type png)
 <use Figures/frac_beam_flux_uncertainty.png>
 Package pdftex.def Info: Figures/frac_beam_flux_uncertainty.png  used on input line 68.
 (pdftex.def)             Requested size: 211.02466pt x 72.02782pt.
-<Figures/flux_uncertainty.png, id=449, 885.90974pt x 522.15076pt>
+<Figures/flux_uncertainty.png, id=455, 885.90974pt x 522.15076pt>
 File: Figures/flux_uncertainty.png Graphic file (type png)
 <use Figures/flux_uncertainty.png>
 Package pdftex.def Info: Figures/flux_uncertainty.png  used on input line 80.
@@ -1531,7 +1531,7 @@ Overfull \hbox (9.35762pt too wide) in paragraph at lines 80--81
 [][] 
  []
 
-[33 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/frac_beam_flux_uncertainty.PNG>]
+[34 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/frac_beam_flux_uncertainty.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
@@ -1541,39 +1541,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--91
 
  []
 
-[34 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/flux_uncertainty.png>]
+[35 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/flux_uncertainty.png>]
 Overfull \hbox (82.81589pt too wide) in paragraph at lines 102--120
 []$[]$ 
  []
 
-<Figures/xsec_uncertainty.png, id=470, 843.15pt x 532.389pt>
+<Figures/xsec_uncertainty.png, id=475, 843.15pt x 532.389pt>
 File: Figures/xsec_uncertainty.png Graphic file (type png)
 <use Figures/xsec_uncertainty.png>
 Package pdftex.def Info: Figures/xsec_uncertainty.png  used on input line 126.
 (pdftex.def)             Requested size: 337.25401pt x 212.95183pt.
-[35]
+[36]
 Underfull \hbox (badness 10000) in paragraph at lines 133--135
 
  []
 
-[36 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/xsec_uncertainty.PNG>]
-<Figures/fsisi_uncertainty.png, id=488, 860.61525pt x 496.254pt>
+[37 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/xsec_uncertainty.PNG>]
+<Figures/fsisi_uncertainty.png, id=493, 860.61525pt x 496.254pt>
 File: Figures/fsisi_uncertainty.png Graphic file (type png)
 <use Figures/fsisi_uncertainty.png>
 Package pdftex.def Info: Figures/fsisi_uncertainty.png  used on input line 171.
 (pdftex.def)             Requested size: 344.24pt x 198.49808pt.
- [37]
+ [38]
 Overfull \hbox (1.44499pt too wide) detected at line 203
 []
  []
 
-[38 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/fsisi_uncertainty.PNG>]
+[39 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/fsisi_uncertainty.PNG>]
 Overfull \hbox (87.88977pt too wide) detected at line 223
 []
  []
 
-[39]
-<Figures/nucleonfsi_uncertainty.png, id=512, 882.29625pt x 525.162pt>
+[40]
+<Figures/nucleonfsi_uncertainty.png, id=517, 882.29625pt x 525.162pt>
 File: Figures/nucleonfsi_uncertainty.png Graphic file (type png)
 <use Figures/nucleonfsi_uncertainty.png>
 Package pdftex.def Info: Figures/nucleonfsi_uncertainty.png  used on input line 238.
@@ -1595,12 +1595,12 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 243.
 
-[40 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/nucleonfsi_uncertainty.PNG>]) [41]
+[41 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/nucleonfsi_uncertainty.PNG>]) [42]
 \openout2 = `Chapters/chapter_conclusion.aux'.
 
  (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_conclusion.tex
 Chapter 8.
-) [42
+) [43
 
 
 
@@ -1609,7 +1609,7 @@ Overfull \hbox (8.99992pt too wide) in paragraph at lines 134--134
 []\OT1/cmr/m/n/10 Pablo Fern^^Sandez Men^^Sendez. \OT1/cmr/m/it/10 Neu-trino Physics in Present and Fu-ture Kamioka
  []
 
-[43
+[44
 
 
 ]
@@ -1629,18 +1629,18 @@ Package logreq Info: Writing requests to 'thesis_frontend.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37598 strings out of 492609
- 729447 string characters out of 6132818
+ 37599 strings out of 492609
+ 729454 string characters out of 6132818
  1235680 words of memory out of 5000000
  40807 multiletter control sequences out of 15000+600000
  548652 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,15n,69p,2254b,1469s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis_frontend.pdf (44 pages, 1789838 bytes).
+Output written on c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis_frontend.pdf (45 pages, 1791036 bytes).
 PDF statistics:
- 674 PDF objects out of 1000 (max. 8388607)
- 553 compressed objects within 6 object streams
- 141 named destinations out of 1000 (max. 500000)
+ 679 PDF objects out of 1000 (max. 8388607)
+ 557 compressed objects within 6 object streams
+ 142 named destinations out of 1000 (max. 500000)
  337 words of extra memory for PDF output out of 10000 (max. 10000000)
 
