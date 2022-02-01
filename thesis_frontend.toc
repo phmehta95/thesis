@@ -36,28 +36,28 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Gd-powder specification and loading}{23}{section*.16}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Measurement of Neutral Current Quasielastic Interactions with Super-Kamiokande Gadolinium Upgrade}{28}{chapter.6}% 
+\contentsline {chapter}{\numberline {6}Measurement of Neutral Current Quasielastic Interactions with Super-Kamiokande Gadolinium Upgrade}{30}{chapter.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Bonsai output reconstruction quantities}{28}{section.6.1}% 
+\contentsline {section}{\numberline {6.1}Bonsai output reconstruction quantities}{30}{section.6.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.1}True neutron tagging information}{30}{subsection.6.1.1}% 
+\contentsline {subsection}{\numberline {6.1.1}True neutron tagging information}{32}{subsection.6.1.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.2}Primary selection criteria}{30}{subsection.6.1.2}% 
+\contentsline {subsection}{\numberline {6.1.2}Primary selection criteria}{32}{subsection.6.1.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.3}Secondary selection criteria}{30}{subsection.6.1.3}% 
+\contentsline {subsection}{\numberline {6.1.3}Secondary selection criteria}{32}{subsection.6.1.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Systematic and statistical uncertainty calculations}{32}{chapter.7}% 
+\contentsline {chapter}{\numberline {7}Systematic and statistical uncertainty calculations}{34}{chapter.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Systematic uncertainty calculation methodology}{32}{section.7.1}% 
+\contentsline {section}{\numberline {7.1}Systematic uncertainty calculation methodology}{34}{section.7.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Neutrino beam flux uncertainty}{34}{section.7.2}% 
+\contentsline {section}{\numberline {7.2}Neutrino beam flux uncertainty}{36}{section.7.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Neutrino cross section uncertainty}{35}{section.7.3}% 
+\contentsline {section}{\numberline {7.3}Neutrino cross section uncertainty}{37}{section.7.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}Pion final state interaction (FSI) and secondary interaction (SI) uncertainties}{37}{section.7.4}% 
+\contentsline {section}{\numberline {7.4}Pion final state interaction (FSI) and secondary interaction (SI) uncertainties}{39}{section.7.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.5}Nucleon final state interactions}{40}{section.7.5}% 
+\contentsline {section}{\numberline {7.5}Nucleon final state interactions}{42}{section.7.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.6}Muon and pion capture on $\ch {^{16}O}$}{42}{section.7.6}% 
+\contentsline {section}{\numberline {7.6}Muon and pion capture on Oxygen-16}{44}{section.7.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Conclusion}{43}{chapter.8}% 
+\contentsline {chapter}{\numberline {8}Conclusion}{45}{chapter.8}% 

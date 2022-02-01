@@ -110,18 +110,20 @@ The acceptable background rate after the final value for Gd loading (set to be a
 
 \begin{table}[H]
 
-$\begin{array}{llll}
-\hline \text { Chain } & \text { Isotope } & \text { Criterion [mBq/kg] } & \text { Physics target } \\
-\hline{ }^{238} \mathrm{U} & { }^{238} \mathrm{U} & <5 & \text { SRN } \\
-& { }^{226} \mathrm{Ra} & <0.5 & \text { Solar } \\
-\hline{ }^{232} \mathrm{Th} & { }^{232} \mathrm{Th} & <0.05 & \text { Solar } \\
-& { }^{228} \mathrm{Ra} & <0.05 & \text { Solar } \\
-\hline{ }^{235} \mathrm{U} & { }^{235} \mathrm{U} & <30 & \text { Solar } \\
-& { }^{227} \mathrm{Ac} /{ }^{227} \mathrm{Th} & <30 & \text { Solar } \\
-\hline
-\end{array}
-$
-\label{gdpowderradiaton}
+    $$
+    \begin{array}{llll}
+    \hline \text { Chain } & \text { Isotope } & \text { Criterion [mBq/kg] } & \text { Physics target } \\
+        \hline{ }^{238} \mathrm{U} & { }^{238} \mathrm{U} & <5 & \text { SRN } \\
+    & { }^{226} \mathrm{Ra} & <0.5 & \text { Solar } \\
+    \hline{ }^{232} \mathrm{Th} & { }^{232} \mathrm{Th} & <0.05 & \text { Solar } \\
+    & { }^{228} \mathrm{Ra} & <0.05 & \text { Solar } \\
+    \hline{ }^{235} \mathrm{U} & { }^{235} \mathrm{U} & <30 & \text { Solar } \\
+    & { }^{227} \mathrm{Ac} /{ }^{227} \mathrm{Th} & <30 & \text { Solar } \\
+    \hline
+    \end{array}
+    $$
+\caption{Table of impurities in the gadolinium sulphate octahydrate powder}
+\label{gdpowderradiation}
 \end{table}
 
 
@@ -133,7 +135,7 @@ $
 
 To sustain this very small level of impurity, the gadolinium powder batches went under routine screening at three collaboration laboratories at Boulby (UK), Canfranc (Spain), and the Kamioka Observatory. 
 
-Figure \ref{gdloadinghistory} shows the loaded mass of gadolinium powder in Super-Kamiokande at each dissolving cycle. The loaded mass of gadolinium sulphade octahydrate powder increased linearly until the target value of 5426 kg of it dissolved in 44,878,429 kg of water in Super-Kamiokande, resulting in a gadolinium concentration of 0.011\% and a gadolinium sulphate ($\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3}$) concentration of 0.021\%. After the loading of gadolinium sulphate powder into Super-Kamiokande, water transparency and attenuation length were continously monitored. This had also been conducted in EGADS (see previous section), but due to the flow rate of the water and method by which gadolinium is loaded into the detector being different in Super-Kamiokande, it is important to monitor these attributes in the SK-Gd upgrade as well. Figure \ref{gdattenuationlength} shows how the attenuation length of the Cherenkov light in SK-Gd varies with time: this attenuation length is measured using cosmic ray through going muons (as explained in Chapter 3). There is a clear decrease in the attenuation length after the loading of ($
+Figure \ref{fig:gdloadinghistory} shows the loaded mass of gadolinium powder in Super-Kamiokande at each dissolving cycle. The loaded mass of gadolinium sulphade octahydrate powder increased linearly until the target value of 5426 kg of it dissolved in 44,878,429 kg of water in Super-Kamiokande, resulting in a gadolinium concentration of 0.011\% and a gadolinium sulphate ($\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3}$) concentration of 0.021\%. After the loading of gadolinium sulphate powder into Super-Kamiokande, water transparency and attenuation length were continously monitored. This had also been conducted in EGADS (see previous section), but due to the flow rate of the water and method by which gadolinium is loaded into the detector being different in Super-Kamiokande, it is important to monitor these attributes in the SK-Gd upgrade as well. Figure \ref{fig:gdattenuationlength} shows how the attenuation length of the Cherenkov light in SK-Gd varies with time: this attenuation length is measured using cosmic ray through going muons (as explained in Chapter 3). There is a clear decrease in the attenuation length after the loading of ($
 \mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}
 $), reaching a minimum of 75 m in August of 2020, and increasing again to its original pre-Gadolinium loading value of 90 m by the beginning of December 2020.  
 \newline
@@ -162,9 +164,23 @@ There is also great importance in monitoring the concentration of the $\mathrm{G
     \label{fig:gdconcentration}
 \end{figure}
 
-The second method of evaluating the $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$ concentration is using an Am/Be source. This source was placed within a crystal cube made of bismuth germanate (BGO) and the gamma ray released by the decay of the source (shown in Equation \ref{eq:ambe_decay}) can be detected by the scintillation photons which pass through the BGO cube. The data was taken by placing the Am/Be source into the inner detector of Super-Kamiokande using central calibration port and then monitoring the source at three posiitons along the Z-axis. One in the middle of the detector (Z=0 m) and two at Z = +12 and Z = -12 m respectively. As mentioned in Section 2, there are specialised triggers used when looking at events, and those used specificially for looking at neutron capture events at Super-Kamiokande are the SHE (super-high-energy) and AFT (after) triggers. 
+The second method of evaluating the $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$ concentration is using an Am/Be source. This source was placed within a crystal cube made of bismuth germanate (BGO) and the gamma ray released by the decay of the source (shown in Equation \ref{eq:ambe_decay}) can be detected by the scintillation photons which pass through the BGO cube. The data was taken by placing the Am/Be source into the inner detector of Super-Kamiokande using central calibration port and then monitoring the source at three posiitons along the Z-axis. One in the middle of the detector (Z=0 m) and two at Z = +12 and Z = -12 m respectively. As mentioned in Section 2, there are specialised triggers used when looking at events, and those used specificially for looking at neutron capture events at Super-Kamiokande are the SHE (super-high-energy) and AFT (after) triggers. The SHE trigger is generated whenever there is a minimum of one photon detected within a 200 ns timing window. 35 $\mu$s after the SHE trigger is when all the photons from these neutron capture events were recorded, whereas for the AFT trigger, photons detected within a following 500 $\mu$s window were recorded. Neutron captures which happened specificially on Gadolinium were taken from this data by using a 200 ns window within which there were 30 PMTs recieving atleast one photon hit and applying event vertex recontruction using the method outlined in Section 2. Event reconstruction parameters such as timing and hit pattern goodness (a measure of how symmetrical the Cherenkov cone hit pattern is) were used to select events. The selected event vertex also had to be within 4 m from the Am/Be source position, the events during the SHE trigger had to be include 800 to 1300 active PMTs within 1.3 $\mu$s, ensuring the selection of a 4.4 MeV gamma ray from the Am/Be source. 
+
+Figure \ref{fig:ambe_time} shows an example of the time distribution of neutron capture event candidates fit with a function. The Am/Be source position here was Z=0 m and the 0 $\mu$s time value on the x-axis is the time at which the scintillation photons produced by the 4.4 MeV gamma ray from its passing through the BGO cube are detected. 
 
 
+\begin{figure}[H]
+    \includegraphics[width=\textwidth]{Figures/ambe_time.png}
+    \caption{Latest gadolinium concentration measurements against z-position in the detector.}
+    \label{fig:ambe_time}
+\end{figure}
 
+To convert the capture time of the neutron to a value for Gd concentration, GEANT4 Monte Carlo simulations were used. Figure \ref{fig:capturetime_gdconc} shows the neutron capture time constant plotted as a function of the concentration of Gd nuclei. The red points are the values from MC simulation and the black line is a polynomial function which is fitted is fitted to the red points. The horizontal blue stripe is the mean neutron capture lifetime calculated from Figure \ref{fig:ambe_time} (115 $\pm$ 1) $\mu$ s and the vertical blue stripe is the corresponding Gadolinium concentration value of 111 $\pm$ 2 ppm which is consistent with the Gd concentration value of 0.011 \%. \cite{abeFirstGadoliniumLoading2021}.
+
+\begin{figure}[H]
+    \includegraphics[width=\textwidth]{Figures/capturetime_gdconc.png}
+    \caption{Neutron capture time constant ($\mu s$) plotted against gadolinium concentration.}
+    \label{fig:capturetime_gdconc}
+\end{figure}
 
 
