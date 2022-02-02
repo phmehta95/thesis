@@ -281,6 +281,8 @@ INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_introduction
 INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_introduction.aux
 INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_neutrino-physics.aux
 INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_neutrino-physics.aux
+INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_t2k_detector.aux
+INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_t2k_detector.aux
 INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk_detector.aux
 INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk_detector.aux
 INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk-calib.aux
@@ -372,11 +374,14 @@ INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_introduction
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 OUTPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_neutrino-physics.aux
+OUTPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_t2k_detector.aux
+INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_t2k_detector.tex
+INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_t2k_detector.tex
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 OUTPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk_detector.aux
 INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk_detector.tex
 INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk_detector.tex
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
-INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/PMT_schematic.png
 INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/PMT_schematic.PNG
@@ -478,6 +483,8 @@ INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_introduction
 INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_introduction.aux
 INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_neutrino-physics.aux
 INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_neutrino-physics.aux
+INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_t2k_detector.aux
+INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_t2k_detector.aux
 INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk_detector.aux
 INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk_detector.aux
 INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk-calib.aux
