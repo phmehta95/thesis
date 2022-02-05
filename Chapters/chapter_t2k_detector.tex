@@ -23,5 +23,43 @@ The neutrino beam is produced using a primary and a secondary beamline as shown 
 
 A 75 ton volume beam dump made of graphite and iron stops the particles, specifically the protons, secondary hadrons and mesons which have a momentum below 5 GeV/c end up being absorbed by the beam dump. A muon monitor is placed after the beam dump in order to directly measure the the beam intensity and beam direction - muons can be used to monitor the beam properties because along with the neutrinos these are the main particles produced from the pion decay. After the muon monitor, a nucleon emulsion plate detector measures the flux and momentum of the muons. 
 
+\subsection{Near detectors}
+
+\subsubsection{ND280}
+
+ND280 is a near detector which sits 280 m from the graphite target. It is an off-axis detector, meaning that just like Super-Kamiokande, it is placed 2.5 $\degree$ off-axis from the center of the beam. This stems from the relationship between the energy of the neutrinos produced from the decay of the pions, a relationship shown in Equation \ref{eq:piondecay}. 
+
+\begin{equation}
+    E_{\nu}=\frac{m_{\pi}^{2}-m_{\mu}^{2}}{2\left(E_{\pi}-\sqrt{E_{\pi}^{2}-m_{\pi}^{2}} \cos \theta\right)}
+\label{eq:piondecay}
+\end{equation}
+
+where $E_{\pi}$ is the energy of the parent pion and $\theta$ is the scattering angle between the direction of the outgoing neutrino and the direction of the parent pion's momentum. $m_{pi}$ is the parent pion mass and $m_{\mu}$ is the mass of the outgoing muon. Figure \ref{fig:energyangle} shows the neutrino energy from pion decay plotted against the energy of the parent pion for a range of off-axis angles. 
+
+\begin{figure}
+\includegraphics[width=\textwidth]{Figures/energyangle.png}
+\caption{Energy of the neutrino plotted against the energy of the parent pion for multiple different off-axis angles}
+    \label{fig:energyangle}
+\end{figure}
+
+As off-axis angle increases, the intensity of the neutrino beam decreases, and therefore picking an off-axis angle of 2.5 $\degree$ at which to place the ND280 detector complex strikes a good balance between keeping a high beam intensity while ensuring a peak energy of 0.6 GeV in order to have the neutrino oscillation be maximised at 295km. The relationship between muon neutrino oscillation probability and muon neutrino energy is shown at the top in Figure \ref{fig:nuprobosc}, and at the bottom the muon neutrino flux 295 km away from the graphite target can be seen for three different off-axis angles.
+
+\begin{figure}
+    \includegraphics[width=\textwidth]{Figures/nuprobosc.png}
+    \caption{The probability of survival of muon neutrinos (top plot) and neutrino beam flux at the 295km far detector (bottom) Taken from \cite{t2kcollaborationT2KNeutrinoFlux2013}.}
+    \label{fig:nuprobosc}
+\end{figure}
+
+Figure \ref{fig:ND280_schematic} shows a schematic of the ND280 detector complex. It has three main goals: firstly, to measure the cross sections of muon neutrino interactions, so neutrino-nucleus interaction models can reduce their systematic uncertainties. Secondly, measuring the component of the neutrino beam which is made of electron neutrinos, hence being able to better constrain the background to electron neutrino appearance at the far detector. And thirdly, to determine the event rate at Super-Kamiokande by measuring the energy spectrum of the muon neutrinos produced. 
+
+\begin{figure}
+    \includegraphics[width=\textwidth]{Figures/nd280_complex.png}
+    \caption{Near detector ND280 schematic taken from \cite{t2kcollaborationT2KExperiment2011}.}
+    \label{fig:ND280_schematic}
+\end{figure}
+
+N2D280 is made of a neutral pion detector ($P0D$), three Time Projection Chambers (TPCs) and two Fine Grained Detectors (FGDs). These are enclosed within Electromagentic Calorimeters (ECals) and a Side Muon Range Detector (SMRD). These detectors are magnetised using a magnet (UA1). 
+
+The neutral pion detector is important due to its ability to detect a process that can imitate the important signal event of electron neutrino appearance at Super-Kamiokande. Neutral pions are produced during the neutral current interactions on water ($\nu_{\mu} + N \rightarrow \nu_{mu} + N +\pi^{0} + X$) and the purpose of $P0D$ is to measure the cross-section of this interaction. The central part of the $P0D$ detector is made of planes of scintillator, brass and water bags which are placed in alternating layers as shown in Figure \ref{fig:p0d}. There are also two electromagnetic calorimeters which remove events entering the detector from the outside.  Each scintillator plane is made of hollow triangular scintillator bars containting wavelength shifting fibres (WLS) which collect the charged particles which pass through the bars and transport them to multi-pixel photon counters (MPPCs). 
 
 
