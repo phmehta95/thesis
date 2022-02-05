@@ -378,6 +378,16 @@ OUTPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_t2k_detecto
 INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_t2k_detector.tex
 INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_t2k_detector.tex
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/energyangle.png
+INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/energyangle.PNG
+INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/energyangle.PNG
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
+INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/nuprobosc.png
+INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/nuprobosc.PNG
+INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/nuprobosc.PNG
+INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/nd280_complex.png
+INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/nd280_complex.PNG
+INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/nd280_complex.PNG
 OUTPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk_detector.aux
 INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk_detector.tex
 INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk_detector.tex
@@ -386,7 +396,6 @@ INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/PMT_schematic.png
 INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/PMT_schematic.PNG
 INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/PMT_schematic.PNG
-INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
 INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/superk_daq.png
 INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/superk_daq.PNG
 INPUT c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/superk_daq.PNG
