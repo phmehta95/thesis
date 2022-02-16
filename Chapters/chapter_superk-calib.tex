@@ -57,5 +57,18 @@ In order to calculate absolute gain, the single photoelectron distrubution needs
 To measure the relative quantum efficiency, the gamma rays from neutron capture on the nickel source are simulated. Inside this simulation, a common value of QE is used for all the ID PMTs to predict the number of hits for each PMT. Comparing this number of hits to the actual data obtained for each individual PMT by calculating the ratio between them provides us with a value for relative QE for each inner detetor PMT which is then used inside the simulation. 
 
 \subsubsection{Timing information calibration}
+Calibrating the hit timing information of the photomultiplier tubes is essential due to its importance in accurately being able to reconstruct events. Event reconstruction makes use of determining exactly where interaction vertices are and the direction in which particles travel, and to do this the time response needs to be very carefully calibrated. Differences in how quickly the electronics can process the signal, the length of the cables that carry the signal and the differences in the transit time of the PMTs (the time delay between when the PMT recives a light pulse and the time at which an output pulse appears). The response time of the PMT also relates to the amount of charge observed: in order for a hit to be registered, the PMT signal must pass the discriminator value of the hit threshold, and the time in which this happens is dependent on height of the pulse, which is correlated with observed charge. All thsese factors need to be considered when calibrating hit timing information.
+\newline
+To aid the timing calibration, a diffuser ball is placed near the centre of the inner detector, into which a nitrogen laser injects pulsed laser light. By varying the intensity of this light, the laser light can be outputted in flashes, and the timing of the laser pulses is monitored using a 2-inch monitor PMT. The schematic of this timing calibration system is shown in Figure \ref{fig:timecalibsystem}.
+
+\begin{figure}
+    \includegraphics[width=\textwidth]{Figures/timecalibsystem.png}
+\caption{Schematic of timing calibration system, with SK ID PMTs in blue and the diffuser ball in purple. The dye laser shifts the wavelength of the laser light to 398 nm to maximise the quantum efficiency of the PMTs and light absorption.}
+    \label{fig:singlepe}
+\end{figure}
+
+
+The value of these laser pulse timings, and the time-of-flight value from the diffuser ball are subtracted from the PMT hit time. Using the observed charge values and these adjusted hit times, "TQ" (time and charge) distributions can be plotted for each inner detetector PMT. An example TQ distribution is shown for an inner detector PMT (cable number 00010) in Figure \ref{fig:TQdist}, where the vertical axis shows is the TOF corrected and laser pulse time corrected PMT hit time, the horizontal axis shows the observed charge of each hit. Figure taken from \ref{abeCalibrationSuperKamiokandeDetector2014}. 
+
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.17)  15 FEB 2022 16:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.17)  16 FEB 2022 13:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1146,7 +1146,11 @@ File: english.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 
 LaTeX Warning: Label `fig:ND280_schematic' multiply defined.
 
-) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk_detector.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk-calib.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_ukli-system.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superkgd_upgrade.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_ncqe-gd.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_conclusion.aux))
+) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk_detector.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk-calib.aux
+
+LaTeX Warning: Label `fig:singlepe' multiply defined.
+
+) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_ukli-system.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superkgd_upgrade.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_ncqe-gd.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_conclusion.aux))
 \openout1 = `thesis_frontend.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
@@ -1255,7 +1259,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis_frontend.tocpdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.83 ...ction (SI) uncertainties}{52}{section.8.4}
+l.83 ...ction (SI) uncertainties}{53}{section.8.4}
                                                   % [1
 
 ])
@@ -1333,7 +1337,7 @@ Package pdftex.def Info: Figures/ingridmodule.png  used on input line 75.
 
 LaTeX Warning: Reference `fig:ingridevent' on page 9 undefined on input line 80.
 
-) [9] [10 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/ingridcross.PNG>] [11 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/ingridmodule.PNG>]
+[9] [10 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/ingridcross.PNG>]) [11 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/ingridmodule.PNG>]
 \openout2 = `Chapters/chapter_superk_detector.aux'.
 
  (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk_detector.tex
@@ -1408,12 +1412,27 @@ File: Figures/singlepe.png Graphic file (type png)
 <use Figures/singlepe.png>
 Package pdftex.def Info: Figures/singlepe.png  used on input line 48.
 (pdftex.def)             Requested size: 345.0pt x 327.21898pt.
- [26 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/singlepe.PNG>]) [27]
+ [26 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/singlepe.PNG>]
+
+LaTeX Warning: Reference `fig:timecalibsystem' on page 27 undefined on input line 62.
+
+<Figures/timecalibsystem.png, id=407, 228.25275pt x 302.3295pt>
+File: Figures/timecalibsystem.png Graphic file (type png)
+<use Figures/timecalibsystem.png>
+Package pdftex.def Info: Figures/timecalibsystem.png  used on input line 65.
+(pdftex.def)             Requested size: 345.0pt x 456.96684pt.
+
+LaTeX Warning: Reference `fig:TQdist' on page 27 undefined on input line 71.
+
+
+LaTeX Warning: Reference `abeCalibrationSuperKamiokandeDetector2014' on page 27 undefined on input line 71.
+
+) [27] [28 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/timecalibsystem.PNG>]
 \openout2 = `Chapters/chapter_ukli-system.aux'.
 
  (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_ukli-system.tex
 Chapter 5.
-) [28
+) [29
 
 
 
@@ -1432,58 +1451,58 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--9
 
  []
 
-[29
+[30
 
 
 
 ]
-<Figures/schematic.png, id=425, 926.2605pt x 428.19975pt>
+<Figures/schematic.png, id=433, 926.2605pt x 428.19975pt>
 File: Figures/schematic.png Graphic file (type png)
 <use Figures/schematic.png>
 Package pdftex.def Info: Figures/schematic.png  used on input line 21.
 (pdftex.def)             Requested size: 345.0pt x 159.4899pt.
-<Figures/atm_recon_energy.png, id=427, 618.51076pt x 152.9715pt>
+<Figures/atm_recon_energy.png, id=435, 618.51076pt x 152.9715pt>
 File: Figures/atm_recon_energy.png Graphic file (type png)
 <use Figures/atm_recon_energy.png>
 Package pdftex.def Info: Figures/atm_recon_energy.png  used on input line 30.
 (pdftex.def)             Requested size: 345.0pt x 85.32732pt.
- [30 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/schematic.PNG>]
-<Figures/egads_pmt_map.png, id=443, 688.974pt x 348.70274pt>
+ [31 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/schematic.PNG>]
+<Figures/egads_pmt_map.png, id=450, 688.974pt x 348.70274pt>
 File: Figures/egads_pmt_map.png Graphic file (type png)
 <use Figures/egads_pmt_map.png>
 Package pdftex.def Info: Figures/egads_pmt_map.png  used on input line 45.
 (pdftex.def)             Requested size: 345.0pt x 174.61165pt.
- [31 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/atm_recon_energy.png>]
-<Figures/egads_ambe.png, id=455, 511.31026pt x 189.1065pt>
+ [32 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/atm_recon_energy.png>]
+<Figures/egads_ambe.png, id=462, 511.31026pt x 189.1065pt>
 File: Figures/egads_ambe.png Graphic file (type png)
 <use Figures/egads_ambe.png>
 Package pdftex.def Info: Figures/egads_ambe.png  used on input line 63.
 (pdftex.def)             Requested size: 345.0pt x 127.60387pt.
- [32 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/egads_pmt_map.PNG>]
-<Figures/egads_concentration.png, id=465, 508.299pt x 301.72725pt>
+ [33 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/egads_pmt_map.PNG>]
+<Figures/egads_concentration.png, id=472, 508.299pt x 301.72725pt>
 File: Figures/egads_concentration.png Graphic file (type png)
 <use Figures/egads_concentration.png>
 Package pdftex.def Info: Figures/egads_concentration.png  used on input line 71.
 (pdftex.def)             Requested size: 345.0pt x 204.79887pt.
- [33 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/egads_ambe.PNG> <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/egads_concentration.PNG>]
-<Figures/skgd_water_system.png, id=476, 648.62325pt x 516.7305pt>
+ [34 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/egads_ambe.PNG> <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/egads_concentration.PNG>]
+<Figures/skgd_water_system.png, id=483, 648.62325pt x 516.7305pt>
 File: Figures/skgd_water_system.png Graphic file (type png)
 <use Figures/skgd_water_system.png>
 Package pdftex.def Info: Figures/skgd_water_system.png  used on input line 89.
 (pdftex.def)             Requested size: 345.0pt x 274.85144pt.
- [34]
-<Figures/gd_pipes.png, id=484, 475.7775pt x 336.0555pt>
+ [35]
+<Figures/gd_pipes.png, id=491, 475.7775pt x 336.0555pt>
 File: Figures/gd_pipes.png Graphic file (type png)
 <use Figures/gd_pipes.png>
 Package pdftex.def Info: Figures/gd_pipes.png  used on input line 100.
 (pdftex.def)             Requested size: 345.0pt x 243.69296pt.
- [35 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/skgd_water_system.PNG>]
-<Figures/gdloadinghistory.png, id=493, 379.4175pt x 287.8755pt>
+ [36 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/skgd_water_system.PNG>]
+<Figures/gdloadinghistory.png, id=501, 379.4175pt x 287.8755pt>
 File: Figures/gdloadinghistory.png Graphic file (type png)
 <use Figures/gdloadinghistory.png>
 Package pdftex.def Info: Figures/gdloadinghistory.png  used on input line 131.
 (pdftex.def)             Requested size: 345.0pt x 261.76505pt.
- [36 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/gd_pipes.png>]
+ [37 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/gd_pipes.png>]
 Overfull \hbox (1.27844pt too wide) in paragraph at lines 138--142
 []\OT1/cmr/m/n/10 Figure [][]6.8[][] shows the loaded mass of gadolin-ium pow-der in Super-Kamiokande
  []
@@ -1493,40 +1512,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 138--142
 
  []
 
-<Figures/attenuation_length_gd.png, id=504, 418.56375pt x 228.25275pt>
+<Figures/attenuation_length_gd.png, id=511, 418.56375pt x 228.25275pt>
 File: Figures/attenuation_length_gd.png Graphic file (type png)
 <use Figures/attenuation_length_gd.png>
 Package pdftex.def Info: Figures/attenuation_length_gd.png  used on input line 144.
 (pdftex.def)             Requested size: 345.0pt x 188.13669pt.
-[37 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/gdloadinghistory.PNG>]
+[38 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/gdloadinghistory.PNG>]
 Overfull \hbox (18.50063pt too wide) in paragraph at lines 151--152
 []\OT1/cmr/m/n/10 There is also great im-por-tance in mon-i-tor-ing the con-cen-tra-tion of the $[][] [][] \OMS/cmsy/m/n/10 ^^A
  []
 
-<Figures/gd_conductivity.png, id=514, 476.37975pt x 293.29575pt>
+<Figures/gd_conductivity.png, id=521, 476.37975pt x 293.29575pt>
 File: Figures/gd_conductivity.png Graphic file (type png)
 <use Figures/gd_conductivity.png>
 Package pdftex.def Info: Figures/gd_conductivity.png  used on input line 155.
 (pdftex.def)             Requested size: 345.0pt x 212.40794pt.
-[38 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/attenuation_length_gd.PNG>]
-<Figures/gdconcentration.png, id=522, 486.618pt x 249.93375pt>
+[39 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/attenuation_length_gd.PNG>]
+<Figures/gdconcentration.png, id=529, 486.618pt x 249.93375pt>
 File: Figures/gdconcentration.png Graphic file (type png)
 <use Figures/gdconcentration.png>
 Package pdftex.def Info: Figures/gdconcentration.png  used on input line 162.
 (pdftex.def)             Requested size: 345.0pt x 177.2025pt.
- [39 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/gd_conductivity.png> <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/gdconcentration.PNG>]
-<Figures/ambe_time.png, id=531, 314.3745pt x 219.82124pt>
+ [40 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/gd_conductivity.png> <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/gdconcentration.PNG>]
+<Figures/ambe_time.png, id=538, 314.3745pt x 219.82124pt>
 File: Figures/ambe_time.png Graphic file (type png)
 <use Figures/ambe_time.png>
 Package pdftex.def Info: Figures/ambe_time.png  used on input line 173.
 (pdftex.def)             Requested size: 345.0pt x 241.25737pt.
- [40]
-<Figures/capturetime_gdconc.png, id=540, 330.63525pt x 225.2415pt>
+ [41]
+<Figures/capturetime_gdconc.png, id=547, 330.63525pt x 225.2415pt>
 File: Figures/capturetime_gdconc.png Graphic file (type png)
 <use Figures/capturetime_gdconc.png>
 Package pdftex.def Info: Figures/capturetime_gdconc.png  used on input line 181.
 (pdftex.def)             Requested size: 345.0pt x 235.03267pt.
- [41 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/ambe_time.PNG>]) [42 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/capturetime_gdconc.PNG>]
+ [42 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/ambe_time.PNG>]) [43 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/capturetime_gdconc.PNG>]
 \openout2 = `Chapters/chapter_ncqe-gd.aux'.
 
  (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_ncqe-gd.tex
@@ -1546,7 +1565,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
-[43
+[44
 
 
 
@@ -1565,7 +1584,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--31
 
  []
 
-[44]
+[45]
 Underfull \hbox (badness 10000) in paragraph at lines 77--81
 
  []
@@ -1575,17 +1594,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--87
 
  []
 
-[45]
+[46]
 Underfull \hbox (badness 10000) in paragraph at lines 137--141
 
  []
 
-) [46]
+) [47]
 \openout2 = `Chapters/chapter_syst_uncertainty.aux'.
 
  (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.tex
 Chapter 8.
-[47
+[48
 
 
 
@@ -1599,21 +1618,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--41
 
  []
 
-[48]
+[49]
 
-LaTeX Warning: Reference `table:systuncertaintytable' on page 49 undefined on input line 64.
+LaTeX Warning: Reference `table:systuncertaintytable' on page 50 undefined on input line 64.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 62--66
 
  []
 
-<Figures/frac_beam_flux_uncertainty.png, id=608, 527.571pt x 180.07275pt>
+<Figures/frac_beam_flux_uncertainty.png, id=615, 527.571pt x 180.07275pt>
 File: Figures/frac_beam_flux_uncertainty.png Graphic file (type png)
 <use Figures/frac_beam_flux_uncertainty.png>
 Package pdftex.def Info: Figures/frac_beam_flux_uncertainty.png  used on input line 68.
 (pdftex.def)             Requested size: 211.02466pt x 72.02782pt.
-<Figures/flux_uncertainty.png, id=609, 885.90974pt x 522.15076pt>
+<Figures/flux_uncertainty.png, id=616, 885.90974pt x 522.15076pt>
 File: Figures/flux_uncertainty.png Graphic file (type png)
 <use Figures/flux_uncertainty.png>
 Package pdftex.def Info: Figures/flux_uncertainty.png  used on input line 80.
@@ -1623,7 +1642,7 @@ Overfull \hbox (9.35762pt too wide) in paragraph at lines 80--81
 [][] 
  []
 
-[49 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/frac_beam_flux_uncertainty.PNG>]
+[50 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/frac_beam_flux_uncertainty.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
@@ -1633,39 +1652,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--91
 
  []
 
-[50 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/flux_uncertainty.png>]
+[51 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/flux_uncertainty.png>]
 Overfull \hbox (82.81589pt too wide) in paragraph at lines 102--120
 []$[]$ 
  []
 
-<Figures/xsec_uncertainty.png, id=629, 843.15pt x 532.389pt>
+<Figures/xsec_uncertainty.png, id=636, 843.15pt x 532.389pt>
 File: Figures/xsec_uncertainty.png Graphic file (type png)
 <use Figures/xsec_uncertainty.png>
 Package pdftex.def Info: Figures/xsec_uncertainty.png  used on input line 126.
 (pdftex.def)             Requested size: 337.25401pt x 212.95183pt.
-[51]
+[52]
 Underfull \hbox (badness 10000) in paragraph at lines 133--135
 
  []
 
-[52 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/xsec_uncertainty.PNG>]
-<Figures/fsisi_uncertainty.png, id=646, 860.61525pt x 496.254pt>
+[53 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/xsec_uncertainty.PNG>]
+<Figures/fsisi_uncertainty.png, id=653, 860.61525pt x 496.254pt>
 File: Figures/fsisi_uncertainty.png Graphic file (type png)
 <use Figures/fsisi_uncertainty.png>
 Package pdftex.def Info: Figures/fsisi_uncertainty.png  used on input line 171.
 (pdftex.def)             Requested size: 344.24pt x 198.49808pt.
- [53]
+ [54]
 Overfull \hbox (1.44499pt too wide) detected at line 203
 []
  []
 
-[54 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/fsisi_uncertainty.PNG>]
+[55 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/fsisi_uncertainty.PNG>]
 Overfull \hbox (87.88977pt too wide) detected at line 223
 []
  []
 
-[55]
-<Figures/nucleonfsi_uncertainty.png, id=671, 882.29625pt x 525.162pt>
+[56]
+<Figures/nucleonfsi_uncertainty.png, id=678, 882.29625pt x 525.162pt>
 File: Figures/nucleonfsi_uncertainty.png Graphic file (type png)
 <use Figures/nucleonfsi_uncertainty.png>
 Package pdftex.def Info: Figures/nucleonfsi_uncertainty.png  used on input line 238.
@@ -1675,12 +1694,12 @@ Overfull \hbox (7.91225pt too wide) in paragraph at lines 238--239
 [][] 
  []
 
-[56 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/nucleonfsi_uncertainty.PNG>]) [57]
+[57 <c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Figures/nucleonfsi_uncertainty.PNG>]) [58]
 \openout2 = `Chapters/chapter_conclusion.aux'.
 
  (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_conclusion.tex
 Chapter 9.
-) [58
+) [59
 
 
 
@@ -1699,7 +1718,7 @@ Overfull \hbox (12.99559pt too wide) in paragraph at lines 135--135
 \OT1/cmr/m/it/10 De-tec-tor Sys-tems with EGADS\OT1/cmr/m/n/10 . Feb. 26, 2020. arXiv: [][]$\OT1/cmtt/m/n/10 1908 . 11532$ [physics][][]\OT1/cmr/m/n/10 .
  []
 
-[59
+[60
 
 
 ]
@@ -1707,7 +1726,7 @@ Overfull \hbox (4.27834pt too wide) in paragraph at lines 135--135
 \OT1/cmr/m/n/10 Neutrino-Nucleon Neutral-Current In-ter-ac-tions at SK Us-ing the T2K RUN-
  []
 
-[60]
+[61]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 138.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 138.
  (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis_frontend.aux (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_introduction.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_neutrino-physics.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_t2k_detector.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk_detector.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superk-calib.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_ukli-system.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_superkgd_upgrade.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_ncqe-gd.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_syst_uncertainty.aux) (c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_conclusion.aux))
@@ -1727,18 +1746,18 @@ Package logreq Info: Writing requests to 'thesis_frontend.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37723 strings out of 492609
- 732642 string characters out of 6132818
- 1367763 words of memory out of 5000000
- 40871 multiletter control sequences out of 15000+600000
+ 37732 strings out of 492609
+ 732845 string characters out of 6132818
+ 1368009 words of memory out of 5000000
+ 40877 multiletter control sequences out of 15000+600000
  546445 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,15n,69p,2254b,1482s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis_frontend.pdf (61 pages, 2964277 bytes).
+Output written on c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis_frontend.pdf (62 pages, 2997095 bytes).
 PDF statistics:
- 858 PDF objects out of 1000 (max. 8388607)
- 695 compressed objects within 7 object streams
- 188 named destinations out of 1000 (max. 500000)
- 419 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 865 PDF objects out of 1000 (max. 8388607)
+ 699 compressed objects within 7 object streams
+ 190 named destinations out of 1000 (max. 500000)
+ 424 words of extra memory for PDF output out of 10000 (max. 10000000)
 
