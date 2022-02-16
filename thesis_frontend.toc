@@ -1,20 +1,20 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}% 
+\contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}The Tokai-to-Kamioka experiment}{3}{chapter.2}% 
+\contentsline {chapter}{\numberline {2}The Tokai-to-Kamioka experiment}{4}{chapter.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.0.1}Neutrino beam production}{3}{subsection.2.0.1}% 
+\contentsline {subsection}{\numberline {2.0.1}Neutrino beam production}{4}{subsection.2.0.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{JPARC proton beam production}{3}{section*.2}% 
+\contentsline {subsubsection}{JPARC proton beam production}{4}{section*.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Neutrino beam production}{4}{section*.3}% 
+\contentsline {subsubsection}{Neutrino beam production}{5}{section*.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.0.2}Near detectors}{5}{subsection.2.0.2}% 
+\contentsline {subsection}{\numberline {2.0.2}Near detectors}{6}{subsection.2.0.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{ND280}{5}{section*.4}% 
+\contentsline {subsubsection}{ND280}{6}{section*.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{INGRID detector}{6}{section*.8}% 
+\contentsline {subsubsection}{INGRID detector}{9}{section*.8}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}The Super Kamiokande Detector}{12}{chapter.3}% 
 \defcounter {refsection}{0}\relax 
@@ -28,9 +28,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.1}Vertex Reconstruction}{16}{subsection.3.2.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Direction Reconstruction}{17}{subsection.3.2.2}% 
+\contentsline {subsection}{\numberline {3.2.2}Direction Reconstruction}{19}{subsection.3.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}Energy reconstruction}{20}{subsection.3.2.3}% 
+\contentsline {subsection}{\numberline {3.2.3}Energy reconstruction}{19}{subsection.3.2.3}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Super-Kamiokande Detector Calibration}{22}{chapter.4}% 
 \defcounter {refsection}{0}\relax 
@@ -46,44 +46,50 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Timing information calibration}{27}{section*.23}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}The UK Light Injection System}{31}{chapter.5}% 
+\contentsline {subsubsection}{Measurement of the properties of the water in Super-Kamiokande}{29}{section*.28}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Super-Kamiokande Gadolinium Upgrade}{32}{chapter.6}% 
+\contentsline {subsubsection}{Measurement of light reflection on the black sheet and the PMTs}{29}{section*.29}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Physics motivation behind Super-Kamiokande Gadolinium Upgrade}{32}{section.6.1}% 
+\contentsline {section}{\numberline {4.1}Measurement of the properties of the water in Super-Kamiokande}{31}{section.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}The EGADS project}{34}{section.6.2}% 
+\contentsline {chapter}{\numberline {5}The UK Light Injection System}{32}{chapter.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Gadolinium loading into Super-Kamiokande}{37}{section.6.3}% 
+\contentsline {chapter}{\numberline {6}Super-Kamiokande Gadolinium Upgrade}{33}{chapter.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{The SK-Gd water system}{37}{section*.32}% 
+\contentsline {section}{\numberline {6.1}Physics motivation behind Super-Kamiokande Gadolinium Upgrade}{33}{section.6.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Control of water parameters in SK-Gd}{38}{section*.34}% 
+\contentsline {section}{\numberline {6.2}The EGADS project}{35}{section.6.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Gd-powder specification and loading}{39}{section*.36}% 
+\contentsline {section}{\numberline {6.3}Gadolinium loading into Super-Kamiokande}{38}{section.6.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Measurement of Neutral Current Quasielastic Interactions with Super-Kamiokande Gadolinium Upgrade}{46}{chapter.7}% 
+\contentsline {subsubsection}{The SK-Gd water system}{38}{section*.36}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Bonsai output reconstruction quantities}{46}{section.7.1}% 
+\contentsline {subsubsection}{Control of water parameters in SK-Gd}{39}{section*.38}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.1}True neutron tagging information}{48}{subsection.7.1.1}% 
+\contentsline {subsubsection}{Gd-powder specification and loading}{40}{section*.40}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.2}Primary selection criteria}{48}{subsection.7.1.2}% 
+\contentsline {chapter}{\numberline {7}Measurement of Neutral Current Quasielastic Interactions with Super-Kamiokande Gadolinium Upgrade}{47}{chapter.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.3}Secondary selection criteria}{48}{subsection.7.1.3}% 
+\contentsline {section}{\numberline {7.1}Bonsai output reconstruction quantities}{47}{section.7.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Systematic and statistical uncertainty calculations}{50}{chapter.8}% 
+\contentsline {subsection}{\numberline {7.1.1}True neutron tagging information}{49}{subsection.7.1.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}Systematic uncertainty calculation methodology}{50}{section.8.1}% 
+\contentsline {subsection}{\numberline {7.1.2}Primary selection criteria}{49}{subsection.7.1.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}Neutrino beam flux uncertainty}{52}{section.8.2}% 
+\contentsline {subsection}{\numberline {7.1.3}Secondary selection criteria}{49}{subsection.7.1.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.3}Neutrino cross section uncertainty}{53}{section.8.3}% 
+\contentsline {chapter}{\numberline {8}Systematic and statistical uncertainty calculations}{51}{chapter.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.4}Pion final state interaction (FSI) and secondary interaction (SI) uncertainties}{55}{section.8.4}% 
+\contentsline {section}{\numberline {8.1}Systematic uncertainty calculation methodology}{51}{section.8.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.5}Nucleon final state interactions}{58}{section.8.5}% 
+\contentsline {section}{\numberline {8.2}Neutrino beam flux uncertainty}{53}{section.8.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.6}Muon and pion capture on Oxygen-16}{60}{section.8.6}% 
+\contentsline {section}{\numberline {8.3}Neutrino cross section uncertainty}{54}{section.8.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Conclusion}{61}{chapter.9}% 
+\contentsline {section}{\numberline {8.4}Pion final state interaction (FSI) and secondary interaction (SI) uncertainties}{56}{section.8.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.5}Nucleon final state interactions}{59}{section.8.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.6}Muon and pion capture on Oxygen-16}{61}{section.8.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {9}Conclusion}{62}{chapter.9}% 

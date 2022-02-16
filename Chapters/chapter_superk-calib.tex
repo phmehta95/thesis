@@ -84,21 +84,48 @@ ask neil whether this is different to calculating the FWHM of the probability di
 
 *****************************************************
 
-\begin{equation}
-    $f\left(t ; t>T_{\text {peak }}\right) \equiv A_{1} \cdot \exp \left(-\left(t-T_{\text {peak }}\right)^{2} / \sigma_{t}^{2}\right)+B_{1}$
-    $f\left(t ; t \leq T_{\text {peak }}\right) \equiv A_{2} \cdot \exp \left(-\left(t-T_{\text {peak }}\right)^{2} / \sigma_{t}^{\prime 2}\right)+B_{2}$
+\begin{align}
+    f\left(t ; t>T_{\text {peak }}\right) \equiv A_{1} \cdot \exp \left(-\left(t-T_{\text {peak }}\right)^{2} / \sigma_{t}^{2}\right)+B_{1}//
+    f\left(t ; t \leq T_{\text {peak }}\right) \equiv A_{2} \cdot \exp \left(-\left(t-T_{\text {peak }}\right)^{2} / \sigma_{t}^{\prime 2}\right)+B_{2}
     \label{eq:sigmat}
-\end{equation}
+\end{align}
+
+Figure \ref{fig:asygausst} shows an example of the residual timing distribution fitted with an asymetric gaussian for a certain value of binned charge.
+
+\begin{figure}
+    \includegraphics[width=\textwidth]{Figures/asygausst.png}
+\caption{Residual timing distribution summed over all the readout channels in charge bin 14 (QBin in \ref{fig:TQdist}.)}
+    \label{fig:assygaust}
+\end{figure}
+
+
 
 Figure \ref{fig:resolutiont} shows timing resolution  plotted as a function of charge for both before and after the peak time of the residual time distribution (red and blue points respectively) for SK-IV TQ calibration data. 
 
 \begin{figure}
     \includegraphics[width=\textwidth]{Figures/resolutiont.png}
 \caption{Timing resolution as a function of charge for SK-IV}
-    \label{fig:resolutiontt}
+    \label{fig:resolutiont}
 \end{figure}
 
 ******************************************************
 ask neil if there's an updated one for SKV or SKVI or whatever we're in now idk
 ******************************************************
 
+\subsubsection{Measurement of the properties of the water in Super-Kamiokande}
+
+
+\subsubsection{Measurement of light reflection on the black sheet and the PMTs} 
+
+Using the same method as described in \section{Measurement of the properties of the water in Super-Kamiokande} the amount of light reflected at the PMT surface is determined. For SK-IV, four types of material, corresponding to four different refractive indices are taken into account: water, glass, bialkali, and vacuum. Table \ref{table:refractiveindex} shows the values for each of these materials.
+
+Regarding the black sheet used to line the inside of Super-Kamiokande, it can either reflect or absorb Cherenkov photons. The amount of Cherenkov photons measured is measured by a light injector setup, shown in Figure \ref{fig:blacksheetrefsetup}. For three different incident angles of laser light ($30 \degree$, $45 \degree$ and $60 \degree$ and three different laser light wavelengths (337 nm, 400 nm and 420 nm) the charge from the light scattered off the black sheet was measured. The direct charge (i.e. the same setup without the black sheet present) was also measured, with the total black sheet reflectivity being the ratio between the scattered charge and the direct charge.
+************************************************
+Need to include gadolinium refractive index change??
+Check if info has changed for Gd addition
+************************************************
+\begin{figure}
+    \includegraphics[width=\textwidth]{Figures/blacksheetrefsetup.png}
+\caption{Schematic of the laser light reflectivity. Bird's-eye view (left) and setup inside of Super-Kamiokande (right).}
+    \label{fig:blacksheetrefsetup}
+\end{figure}
