@@ -70,5 +70,35 @@ To aid the timing calibration, a diffuser ball is placed near the centre of the 
 
 The value of these laser pulse timings, and the time-of-flight value from the diffuser ball are subtracted from the PMT hit time. Using the observed charge values and these adjusted hit times, "TQ" (time and charge) distributions can be plotted for each inner detetector PMT. An example TQ distribution is shown for an inner detector PMT (cable number 00010) in Figure \ref{fig:TQdist}, where the vertical axis shows is the TOF corrected and laser pulse time corrected PMT hit time, the horizontal axis shows the observed charge of each hit. Figure taken from \ref{abeCalibrationSuperKamiokandeDetector2014}. 
 
+\begin{figure}
+    \includegraphics[width=\textwidth]{Figures/TQdist.png}
+\caption{Example TQ distribution for an inner detetector PMT}
+    \label{fig:TQdist}
+\end{figure}
 
+
+The timing resolution of the PMTs (also known as the transit time spread) is also something that must be calibrated. In photomultiplier tubes, when identical pulses strike the same part of the cathode, there will be fluctuations in the arrival time of the pulse. The timing resolution for a PMT is defined as the full width half maximum of the probability distributions of the fluctuation. This value is proportional to $1/sqrt(n_{k})$ where $n_{k}$ is the number of photoelectrons per pulse. This is calculated by using the same timing and charge data used to produce the TQ distributions. By correcting all the ID PMT hits by their TQ distributions, these residual timing distributions have an asymmetric Gaussian function fitted to them, from which two values of sigma are extracted: $\sigma_{t}$ and $\sigma_{t'}$. These are the values for the timing resolution for before and after the peak time of this distribution. Equation \ref{eq:sigmat} shows how the asymmetric Gaussian is defined. 
+
+***************************************************
+ask neil whether this is different to calculating the FWHM of the probability distribution of the fluctuations (definition from the Photonis PMT manual)
+
+*****************************************************
+
+\begin{equation}
+    $f\left(t ; t>T_{\text {peak }}\right) \equiv A_{1} \cdot \exp \left(-\left(t-T_{\text {peak }}\right)^{2} / \sigma_{t}^{2}\right)+B_{1}$
+    $f\left(t ; t \leq T_{\text {peak }}\right) \equiv A_{2} \cdot \exp \left(-\left(t-T_{\text {peak }}\right)^{2} / \sigma_{t}^{\prime 2}\right)+B_{2}$
+    \label{eq:sigmat}
+\end{equation}
+
+Figure \ref{fig:resolutiont} shows timing resolution  plotted as a function of charge for both before and after the peak time of the residual time distribution (red and blue points respectively) for SK-IV TQ calibration data. 
+
+\begin{figure}
+    \includegraphics[width=\textwidth]{Figures/resolutiont.png}
+\caption{Timing resolution as a function of charge for SK-IV}
+    \label{fig:resolutiontt}
+\end{figure}
+
+******************************************************
+ask neil if there's an updated one for SKV or SKVI or whatever we're in now idk
+******************************************************
 
