@@ -79,10 +79,10 @@ The value of these laser pulse timings, and the time-of-flight value from the di
 
 The timing resolution of the PMTs (also known as the transit time spread) is also something that must be calibrated. In photomultiplier tubes, when identical pulses strike the same part of the cathode, there will be fluctuations in the arrival time of the pulse. The timing resolution for a PMT is defined as the full width half maximum of the probability distributions of the fluctuation. This value is proportional to $1/sqrt(n_{k})$ where $n_{k}$ is the number of photoelectrons per pulse. This is calculated by using the same timing and charge data used to produce the TQ distributions. By correcting all the ID PMT hits by their TQ distributions, these residual timing distributions have an asymmetric Gaussian function fitted to them, from which two values of sigma are extracted: $\sigma_{t}$ and $\sigma_{t'}$. These are the values for the timing resolution for before and after the peak time of this distribution. Equation \ref{eq:sigmat} shows how the asymmetric Gaussian is defined. 
 
-***************************************************
+************************************************************************************************************************************
 ask neil whether this is different to calculating the FWHM of the probability distribution of the fluctuations (definition from the Photonis PMT manual)
 
-*****************************************************
+************************************************************************************************************************************
 
 \begin{align}
     f\left(t ; t>T_{\text {peak }}\right) \equiv A_{1} \cdot \exp \left(-\left(t-T_{\text {peak }}\right)^{2} / \sigma_{t}^{2}\right)+B_{1}//
@@ -108,9 +108,9 @@ Figure \ref{fig:resolutiont} shows timing resolution  plotted as a function of c
     \label{fig:resolutiont}
 \end{figure}
 
-******************************************************
+***********************************************************************************
 ask neil if there's an updated one for SKV or SKVI or whatever we're in now idk
-******************************************************
+***********************************************************************************
 
 \subsubsection{Measurement of the properties of the water in Super-Kamiokande}
 
@@ -120,12 +120,13 @@ ask neil if there's an updated one for SKV or SKVI or whatever we're in now idk
 Using the same method as described in \section{Measurement of the properties of the water in Super-Kamiokande} the amount of light reflected at the PMT surface is determined. For SK-IV, four types of material, corresponding to four different refractive indices are taken into account: water, glass, bialkali, and vacuum. Table \ref{table:refractiveindex} shows the values for each of these materials.
 
 Regarding the black sheet used to line the inside of Super-Kamiokande, it can either reflect or absorb Cherenkov photons. The amount of Cherenkov photons measured is measured by a light injector setup, shown in Figure \ref{fig:blacksheetrefsetup}. For three different incident angles of laser light ($30 \degree$, $45 \degree$ and $60 \degree$ and three different laser light wavelengths (337 nm, 400 nm and 420 nm) the charge from the light scattered off the black sheet was measured. The direct charge (i.e. the same setup without the black sheet present) was also measured, with the total black sheet reflectivity being the ratio between the scattered charge and the direct charge.
-************************************************
+*******************************************************************
 Need to include gadolinium refractive index change??
 Check if info has changed for Gd addition
-************************************************
+******************************************************************
 \begin{figure}
     \includegraphics[width=\textwidth]{Figures/blacksheetrefsetup.png}
 \caption{Schematic of the laser light reflectivity. Bird's-eye view (left) and setup inside of Super-Kamiokande (right).}
     \label{fig:blacksheetrefsetup}
 \end{figure}
+
