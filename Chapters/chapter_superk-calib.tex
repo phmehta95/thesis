@@ -64,11 +64,11 @@ To aid the timing calibration, a diffuser ball is placed near the centre of the 
 \begin{figure}
     \includegraphics[width=\textwidth]{Figures/timecalibsystem.png}
 \caption{Schematic of timing calibration system, with SK ID PMTs in blue and the diffuser ball in purple. The dye laser shifts the wavelength of the laser light to 398 nm to maximise the quantum efficiency of the PMTs and light absorption.}
-    \label{fig:singlepe}
+    \label{fig:timecalibsystem}
 \end{figure}
 
 
-The value of these laser pulse timings, and the time-of-flight value from the diffuser ball are subtracted from the PMT hit time. Using the observed charge values and these adjusted hit times, "TQ" (time and charge) distributions can be plotted for each inner detetector PMT. An example TQ distribution is shown for an inner detector PMT (cable number 00010) in Figure \ref{fig:TQdist}, where the vertical axis shows is the TOF corrected and laser pulse time corrected PMT hit time, the horizontal axis shows the observed charge of each hit. Figure taken from \ref{abeCalibrationSuperKamiokandeDetector2014}. 
+The value of these laser pulse timings, and the time-of-flight value from the diffuser ball are subtracted from the PMT hit time. Using the observed charge values and these adjusted hit times, "TQ" (time and charge) distributions can be plotted for each inner detetector PMT. An example TQ distribution is shown for an inner detector PMT (cable number 00010) in Figure \ref{fig:TQdist}, where the vertical axis shows is the TOF corrected and laser pulse time corrected PMT hit time, the horizontal axis shows the observed charge of each hit. Figure taken from \cite{abeCalibrationSuperKamiokandeDetector2014}. 
 
 \begin{figure}
     \includegraphics[width=\textwidth]{Figures/TQdist.png}
@@ -95,7 +95,7 @@ Figure \ref{fig:asygausst} shows an example of the residual timing distribution 
 \begin{figure}
     \includegraphics[width=\textwidth]{Figures/asygausst.png}
 \caption{Residual timing distribution summed over all the readout channels in charge bin 14 (QBin in \ref{fig:TQdist}.)}
-    \label{fig:assygaust}
+    \label{fig:asygausst}
 \end{figure}
 
 
@@ -120,6 +120,23 @@ ask neil if there's an updated one for SKV or SKVI or whatever we're in now idk
 Using the same method as described in \section{Measurement of the properties of the water in Super-Kamiokande} the amount of light reflected at the PMT surface is determined. For SK-IV, four types of material, corresponding to four different refractive indices are taken into account: water, glass, bialkali, and vacuum. Table \ref{table:refractiveindex} shows the values for each of these materials.
 
 Regarding the black sheet used to line the inside of Super-Kamiokande, it can either reflect or absorb Cherenkov photons. The amount of Cherenkov photons measured is measured by a light injector setup, shown in Figure \ref{fig:blacksheetrefsetup}. For three different incident angles of laser light ($30 \degree$, $45 \degree$ and $60 \degree$ and three different laser light wavelengths (337 nm, 400 nm and 420 nm) the charge from the light scattered off the black sheet was measured. The direct charge (i.e. the same setup without the black sheet present) was also measured, with the total black sheet reflectivity being the ratio between the scattered charge and the direct charge.
+
+\begin{table}[H]
+    $$
+    \begin{array}{ll}
+    \text {Material} & \text { Refractive index }  \\
+    Water & 1.33 \\
+    Glass & 1.472+3670/\lambda^{2} (where \lambda is the wavelength in nm)  \\
+    Bi-alkali & n_{real} + i \dot n_{img} (where n_{real} and n_{img} are the real and imaginary parts of the complex refractive index)   \\
+    Vacuum & 1.00 \\
+    x_{a b s}^{N} & \text { Nucleon absorption probability }  \\
+    x_{\pi}^{N} & \text { Nucleon } \pi \text {-production probability }
+    \end{array}
+    $$
+    \caption{Refractive indices of materials inside the Super-K detector.} 
+    \label{table:refractiveindex}
+    \end{table}
+    
 *******************************************************************
 Need to include gadolinium refractive index change??
 Check if info has changed for Gd addition
