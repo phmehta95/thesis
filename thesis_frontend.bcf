@@ -2022,16 +2022,25 @@
     <bcf:citekey order="25">.</bcf:citekey>
     <bcf:citekey order="26">uenoAnalysisNuclearDeexcitationa</bcf:citekey>
     <bcf:citekey order="27">abeCalibrationSuperKamiokandeDetector2014</bcf:citekey>
-    <bcf:citekey order="28">meoMeasurementNeutronCapture</bcf:citekey>
-    <bcf:citekey order="29">martiEvaluationGadoliniumAction2020</bcf:citekey>
-    <bcf:citekey order="30">martiEvaluationGadoliniumAction2020</bcf:citekey>
-    <bcf:citekey order="31">martiEvaluationGadoliniumAction2020</bcf:citekey>
-    <bcf:citekey order="32">martiEvaluationGadoliniumAction2020a</bcf:citekey>
-    <bcf:citekey order="33">martiEvaluationGadoliniumAction2020a</bcf:citekey>
-    <bcf:citekey order="34">martiEvaluationGadoliniumAction2020a</bcf:citekey>
-    <bcf:citekey order="35">martiEvaluationGadoliniumAction2020a</bcf:citekey>
-    <bcf:citekey order="36">martiEvaluationGadoliniumAction2020a</bcf:citekey>
-    <bcf:citekey order="37">abeFirstGadoliniumLoading2021</bcf:citekey>
+  </bcf:section>
+  <!-- SECTION 1 -->
+  <bcf:bibdata section="1">
+    <bcf:datasource type="file" datatype="bibtex">thesisbib.bib</bcf:datasource>
+  </bcf:bibdata>
+  <bcf:section number="1">
+    <bcf:citekey order="1">meoMeasurementNeutronCapture</bcf:citekey>
+    <bcf:citekey order="2">martiEvaluationGadoliniumAction2020</bcf:citekey>
+    <bcf:citekey order="3">martiEvaluationGadoliniumAction2020</bcf:citekey>
+    <bcf:citekey order="4">martiEvaluationGadoliniumAction2020</bcf:citekey>
+    <bcf:citekey order="5">martiEvaluationGadoliniumAction2020a</bcf:citekey>
+    <bcf:citekey order="6">martiEvaluationGadoliniumAction2020a</bcf:citekey>
+    <bcf:citekey order="7">martiEvaluationGadoliniumAction2020a</bcf:citekey>
+    <bcf:citekey order="8">martiEvaluationGadoliniumAction2020a</bcf:citekey>
+    <bcf:citekey order="9">martiEvaluationGadoliniumAction2020a</bcf:citekey>
+    <bcf:citekey order="10">abeFirstGadoliniumLoading2021</bcf:citekey>
+  </bcf:section>
+  <!-- SECTION 0 (cont.) -->
+  <bcf:section number="0">
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
@@ -2063,7 +2072,7 @@
     </bcf:sort>
   </bcf:sortingtemplate>
   <!-- DATALISTS -->
-  <bcf:datalist section="0"
+  <bcf:datalist section="1"
                 name="nty/global//global/global"
                 type="entry"
                 sortingtemplatename="nty"
