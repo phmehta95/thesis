@@ -2022,6 +2022,7 @@
     <bcf:citekey order="25">.</bcf:citekey>
     <bcf:citekey order="26">uenoAnalysisNuclearDeexcitationa</bcf:citekey>
     <bcf:citekey order="27">abeCalibrationSuperKamiokandeDetector2014</bcf:citekey>
+    <bcf:citekey order="28">abeCalibrationSuperKamiokandeDetector2014</bcf:citekey>
   </bcf:section>
   <!-- SECTION 1 -->
   <bcf:bibdata section="1">
@@ -2032,11 +2033,11 @@
     <bcf:citekey order="2">martiEvaluationGadoliniumAction2020</bcf:citekey>
     <bcf:citekey order="3">martiEvaluationGadoliniumAction2020</bcf:citekey>
     <bcf:citekey order="4">martiEvaluationGadoliniumAction2020</bcf:citekey>
-    <bcf:citekey order="5">martiEvaluationGadoliniumAction2020a</bcf:citekey>
-    <bcf:citekey order="6">martiEvaluationGadoliniumAction2020a</bcf:citekey>
-    <bcf:citekey order="7">martiEvaluationGadoliniumAction2020a</bcf:citekey>
-    <bcf:citekey order="8">martiEvaluationGadoliniumAction2020a</bcf:citekey>
-    <bcf:citekey order="9">martiEvaluationGadoliniumAction2020a</bcf:citekey>
+    <bcf:citekey order="5">martiEvaluationGadoliniumAction2020</bcf:citekey>
+    <bcf:citekey order="6">martiEvaluationGadoliniumAction2020</bcf:citekey>
+    <bcf:citekey order="7">martiEvaluationGadoliniumAction2020</bcf:citekey>
+    <bcf:citekey order="8">martiEvaluationGadoliniumAction2020</bcf:citekey>
+    <bcf:citekey order="9">martiEvaluationGadoliniumAction2020</bcf:citekey>
     <bcf:citekey order="10">abeFirstGadoliniumLoading2021</bcf:citekey>
   </bcf:section>
   <!-- SECTION 0 (cont.) -->
