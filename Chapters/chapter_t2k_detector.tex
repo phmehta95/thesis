@@ -56,12 +56,21 @@ The INGRID (Ineractive Neutrino GRID) detector is a neutrino detector which unli
     \label{fig:ingridmodule}
 \end{figure}
 
-An additional module, called the proton module was added to measure the muons in combination with protons produced by the neutrino beam in INGRID. This module is used to distinguish the quasi-elastic interaction channel in order to compare it with Monte Carlo simulations of the beamline and neutrino interactions. The Proton Module is made of scintillator planes (no alternating iron plates) and is contained by veto planes. The Proton Module was placed in the centre of the INGRID cross at the intersection of the vertical and horizontal modules. Figure \ref{fig:ingridevent} shows what a standard neutrino event looks like inside the INGRID module. A neutrino enters from the left and after interacting with the scintillator cells (shown in green) produces a tracks (shown in red), with the relative size of each circle corresponding to the observed signal in that cell. The blue cells show the position of the veto scintillators, while the gray planes show the iron plates. 
+An additional module, called the proton module was added to measure the muons in combination with protons produced by the neutrino beam in INGRID. This module is used to distinguish the quasi-elastic interaction channel in order to compare it with Monte Carlo simulations of the beamline and neutrino interactions. The Proton Module is made of scintillator planes (no alternating iron plates) and is contained by veto planes. The Proton Module was placed in the centre of the INGRID cross at the intersection of the vertical and horizontal modules. Figure \ref{fig:ingridevent} shows what a standard neutrino event looks like inside the INGRID module. A neutrino enters from the left and after interacting with the scintillator cells (shown in green) produces tracks (shown in red), with the relative size of each circle corresponding to the observed signal in that cell. The blue cells show the position of the veto scintillators, while the gray planes show the iron plates.   
+
+The hit efficiency in INGRID is calculated using muons: the muon track is reconstructed, but not using the hit information, and then channels in the scintillator plane  expected to contain hits from the trajectory of the track are checked.
+Figure \ref{fig:track_angle} shows the hit efficiency as a function of reconstructed track angle measured by cosmic-ray data 
 
 \begin{figure}
     \includegraphics[width=\textwidth]{Figures/ingridevent.png}
     \caption{INGRID event display showing a typical INGRID event, taken from \cite{t2kcollaborationT2KExperiment2011}.}
     \label{fig:ingridevent}
+\end{figure}
+
+\begin{figure}
+    \includegraphics[width=\textwidth]{Figures/track_angle_ingrid.png}
+    \caption{Hit efficiency plotted against reconstructed track angle}
+    \label{fig:track_angle_ingrid}
 \end{figure}
 
 
@@ -90,7 +99,7 @@ As off-axis angle increases, the intensity of the neutrino beam decreases, and t
     \label{fig:nuprobosc}
 \end{figure}
 
-Figure \ref{fig:ND280_schematic} shows a schematic of the ND280 detector complex. It has three main goals: firstly, to measure the cross sections of muon neutrino interactions, so neutrino-nucleus interaction models can reduce their systematic uncertainties. Secondly, measuring the component of the neutrino beam which is made of electron neutrinos, hence being able to better constrain the background to electron neutrino appearance at the far detector. And thirdly, to determine the event rate at Super-Kamiokande by measuring the energy spectrum of the muon neutrinos produced. 
+Figure \ref{fig:ND280_schematic} shows a schematic of the ND280 detector complex. It has five main goals: firstly, to measure the cross sections of muon neutrino interactions, so neutrino-nucleus interaction models can reduce their systematic uncertainties. Secondly, measuring the component of the neutrino beam which is made of electron neutrinos, hence being able to better constrain the background to electron neutrino appearance at the far detector. Thirdly, to predict the event rate at Super-Kamiokande by measuring the energy spectrum of the muon neutrinos produced. It also aims to study non quasi-elastic processes which produce pions below the Super Kamiokande Cherenkov threshold, and to measure the neutral current (NC) pion-nought production rates. 
 
 \begin{figure}
     \includegraphics[width=\textwidth]{Figures/nd280_complex.png}
