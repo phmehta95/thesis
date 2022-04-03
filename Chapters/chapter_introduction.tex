@@ -16,6 +16,46 @@ In the 1960s, the Homestake experiment made the first measurement of solar elect
 The solution to this problem came from the Super-Kamiokande and Sudbury Neutrino Observatory experiments. In 1998, Super Kamiokande showed evidence of neutrino oscillation: where muon neutrinos produced by cosmic rays in the upper atmosphere changed into tau neutrinos within the Earth, pointing to the fact that the deficit in the solar neutrino flux oberved at Homestake, SAGE and GALLEX had to do with neutrino oscillation. In 2001 SNO observed the flux of electron neutrinos but also the flux of all flavours of neutrinos, and found that the fraction of electron neutrinos was found to be 34\%, perfectly concordant with the prediction.
 
 \subsection{Neutrino Oscillation}
+In 1957 Bruno Pontecorvo postulated that neutrinos could transition from neutrinos to antineutrinos and vice versa (similarly to how two kinds of neutral kaons ($\bar{K_{0}}$, and $K_{0}$ were found to oscillate.) Neutrino flavour oscillation theory was then developed by Maki, Nakagawa and Sakata in 1962. The PMNS matrix (Pontecorvo-Maki-Nakagawa-Sakata matrix), the neutrino analogue of the Cabbibo-Kobayashi-Masakawa quark mixing matrix. 
+Equation \ref{eq:neutrino_osc} shows the relationship between the mass and flavour eigenstates for a neutrino with a definite flavour of $\alpha$ and a definite mass of $m_{i}$.
+
+$$
+\begin{aligned}
+&\left|\nu_{\alpha}\right\rangle=\sum_{i} U_{\alpha i}^{*}\left|\nu_{i}\right\rangle \\
+&\left|\nu_{i}\right\rangle=\sum_{\alpha} U_{\alpha i}\left|\nu_{\alpha}\right\rangle
+\end{aligned}
+\label{eq:neutrino_osc}
+$$
+
+
+In Equation \ref{eq:neutrino_osc}, the terms $U_{\alpha i}^{*}$ and $U_{\alpha i}$ are the complex conjugate and normal PMNS matrix. Equation \ref{eq:PMNS_matrix} shows the 3x3 form of the PMNS matrix, where $c_{ij} = cos {\theta_{ij}}$ and $s_{ij} = sin {\theta_{ij}}$.
+
+$$
+\begin{aligned}
+&U=\left(\begin{array}{ccc}
+1 & 0 & 0 \\
+0 & c_{23} & s_{23} \\
+0 & -s_{23} & c_{23}
+\end{array}\right)\left(\begin{array}{ccc}
+c_{13} & 0 & s_{13} e^{-i \delta_{\mathrm{CP}}} \\
+0 & 1 & 0 \\
+-s_{13} e^{i \delta_{\mathrm{CP}}} & 0 & c_{13}
+\end{array}\right)\left(\begin{array}{ccc}
+c_{12} & s_{12} & 0 \\
+-s_{12} & c_{12} & 0 \\
+0 & 0 & 1
+\end{array}\right)\\
+&=\left(\begin{array}{ccc}
+c_{12} s_{13} & s_{12} c_{13} & s_{13} e^{-i \delta_{\mathrm{CP}}} \\
+-s_{12} c_{23}-c_{12} s_{13} s_{23} e^{i \delta_{\mathrm{CP}}} & c_{12} c_{23}-s_{12} s_{13} s_{23} e^{i \delta_{\mathrm{CP}}} & c_{13} s_{23} \\
+s_{12} s_{23}-c_{12} s_{13} c_{23} e^{i \delta_{\mathrm{CP}}} & c_{12} s_{23}-s_{12} s_{13} c_{23} e^{i \delta_{\mathrm{CP}}} & c_{13} c_{23}
+\end{array}\right),
+\end{aligned}
+\label{eq:PMNS_matrix}
+$$
+
+In Equation \ref{eq:PMNS_matrix}, if the sin $\delta_{CP}$ terms are not equal to 0, it means that there will be imaginary terms in the matrix, which will contribute to CP violation. 
+
 
 \subsection{Neutrino-nucleus interactions in Super-Kamiokande Gd}
 
