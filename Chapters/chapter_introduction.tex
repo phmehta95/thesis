@@ -77,6 +77,61 @@ There are two main types of neutrino interaction: charged-current (CC) and neutr
     \label{fig:CC_NC}
 \end{figure}
 
+There are multiple types of neutrino-nucleus interactions that occur which can be either charged current or neutral current interactions, or both. 
+
+One such interaction, and often the simplest interaction is elastic scattering ($$
+\nu+e^{-} \rightarrow \nu+e^{-}
+$$), which occurs when a neutrino scatters off an electron with a virtual vector boson being exchanged. This type of scattering is used in the detection of low energy neutrinos, primarily those from the sun. Figure \ref{fig:elastic_scattering} shows the Feynman diagrams for this kind of interaction.
+
+\begin{figure}
+    \includegraphics[width=\textwidth]{Figures/elastic_scattering.png}
+    \caption{Feynman diagrams of neutral-current (left) and charged-current (right) neutrino-electron scattering}
+    \label{fig:elastic_scattering}
+\end{figure}
+
+Single mesons can also be produced via neutrino-nucleon reactions: these are mostly pions, but also some kaons and eta particles can also be produced. Here a neutrino with a high enough energy, interacts with and excites a nucleon, producing a resonant baryon which decays to a nucleon and a single pion (shown in Equation \ref{eq:resonant_pion}), where $N$ and $N'$ are nucleons.
+
+$$
+\begin{gathered}
+\nu_{l}+N \rightarrow l+N^{*} \\
+N^{*} \rightarrow \pi+N^{\prime}
+\end{gathered}
+\label{eq:resonant_pion}
+$$
+
+The resonant baryon produced during the reaction is usually a $\Delta(1232)$ resonance. 
+
+Single pion final sates can also be priduced by a neutrino which scatters an entire nucleus (X), shown in Equation \ref{eq:single_pion_CC} for the charged current reactions and Equation \ref{eq:single_pion_NC} for neutral current reactions. 
+
+\begin{equation}
+\nu_{l}+X \rightarrow l^{-}+X+\pi^{+}, \quad \bar{\nu}_{l}+X \rightarrow l^{+}+X+\pi^{-}
+\label{eq:single_pion_CC}
+\end{equation}
+
+\begin{equation}
+\nu_{l}+X \rightarrow \nu_{l}+X+\pi^{0}, \quad \bar{\nu}_{l}+X \rightarrow \bar{\nu}_{l}+X+\pi^{0}
+\label{eq:single_pion_NC}
+\end{equation}
+
+At higher energies (above 1 GeV), neutrino interactions can also produce kaons in the final state, due to the higher energies being able to produce strange quarks. 
+
+Deep inelastic scattering is a type of neutrino interaction where the neutrino scatters off a quark inside the proton or neutron involved in the exchange, via a W (CC) or Z (NC) boson (Equation \ref{eq:DIS_eq}), shown in Figure \ref{fig:CC_DIS}.
+
+$$
+\begin{aligned}
+&\nu_{l}+N \rightarrow l^{-}+X, \quad \bar{\nu}_{l}+N \rightarrow l^{+}+X(\mathrm{CC}) \\
+&\nu_{l}+N \rightarrow \nu_{l}+X, \quad \bar{\nu}_{l}+N \rightarrow \bar{\nu}_{l}+X(\mathrm{NC})
+\end{aligned}
+\label{eq:DIS_eq}
+$$
+
+The next two neutrino-nucleus interactions explained here are of particular relevance to the analysis in this thesis: Inverse Beta Decay and Quasi-Elastic scattering. 
+
+\begin{figure}
+    \includegraphics[width=\textwidth]{Figures/CC_DIS.png}
+    \caption{Feynman diagram for a charged current deep inelastic scattering interaction with an incoming muon neutrino}
+    \label{fig:CC_DIS}
+\end{figure}
 
 \subsection{Supernova Relic Neutrinos}
 
