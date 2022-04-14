@@ -1992,47 +1992,43 @@
   <!-- CITATION DATA -->
   <!-- SECTION 0 -->
   <bcf:bibdata section="0">
-    <bcf:datasource type="file" datatype="bibtex">thesisbib.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">thesislibrary.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1">nagakuraNonthermalNeutrinosCreated2021</bcf:citekey>
     <bcf:citekey order="2">chakrabortyObservingSupernovaNeutrino2014</bcf:citekey>
     <bcf:citekey order="3">hirataObservationNeutrinoBurst1987</bcf:citekey>
     <bcf:citekey order="4">betheSupernovaMechanisms1990</bcf:citekey>
-    <bcf:citekey order="5">t2kcollaborationT2KExperiment2011</bcf:citekey>
+    <bcf:citekey order="5">andoRelicNeutrinoBackground2004</bcf:citekey>
     <bcf:citekey order="6">t2kcollaborationT2KExperiment2011</bcf:citekey>
     <bcf:citekey order="7">t2kcollaborationT2KExperiment2011</bcf:citekey>
     <bcf:citekey order="8">t2kcollaborationT2KExperiment2011</bcf:citekey>
     <bcf:citekey order="9">t2kcollaborationT2KExperiment2011</bcf:citekey>
     <bcf:citekey order="10">t2kcollaborationT2KExperiment2011</bcf:citekey>
-    <bcf:citekey order="11">t2kcollaborationT2KNeutrinoFlux2013</bcf:citekey>
+    <bcf:citekey order="11">t2kcollaborationT2KExperiment2011</bcf:citekey>
     <bcf:citekey order="12">t2kcollaborationT2KNeutrinoFlux2013</bcf:citekey>
-    <bcf:citekey order="13">t2kcollaborationT2KExperiment2011</bcf:citekey>
+    <bcf:citekey order="13">t2kcollaborationT2KNeutrinoFlux2013</bcf:citekey>
     <bcf:citekey order="14">t2kcollaborationT2KExperiment2011</bcf:citekey>
     <bcf:citekey order="15">t2kcollaborationT2KExperiment2011</bcf:citekey>
     <bcf:citekey order="16">t2kcollaborationT2KExperiment2011</bcf:citekey>
     <bcf:citekey order="17">t2kcollaborationT2KExperiment2011</bcf:citekey>
     <bcf:citekey order="18">t2kcollaborationT2KExperiment2011</bcf:citekey>
-    <bcf:citekey order="19">suzukiSuperKamiokandeExperiment2019</bcf:citekey>
-    <bcf:citekey order="20">fukudaSuperKamiokandeDetector2003</bcf:citekey>
+    <bcf:citekey order="19">t2kcollaborationT2KExperiment2011</bcf:citekey>
+    <bcf:citekey order="20">suzukiSuperKamiokandeExperiment2019</bcf:citekey>
     <bcf:citekey order="21">fukudaSuperKamiokandeDetector2003</bcf:citekey>
     <bcf:citekey order="22">fukudaSuperKamiokandeDetector2003</bcf:citekey>
-    <bcf:citekey order="23">fernandezmenendezNeutrinoPhysicsPresent2018</bcf:citekey>
-    <bcf:citekey order="24">fernandezmenendezNeutrinoPhysicsPresent2018</bcf:citekey>
+    <bcf:citekey order="23">fukudaSuperKamiokandeDetector2003</bcf:citekey>
+    <bcf:citekey order="24">fernandezStatusGADZOOKSNeutron2016</bcf:citekey>
     <bcf:citekey order="25">nishinoHighspeedChargetotimeConverter2009a</bcf:citekey>
     <bcf:citekey order="26">nishinoHighspeedChargetotimeConverter2009a</bcf:citekey>
     <bcf:citekey order="27">fukudaSuperKamiokandeDetector2003</bcf:citekey>
-    <bcf:citekey order="28">.</bcf:citekey>
-    <bcf:citekey order="29">.</bcf:citekey>
-    <bcf:citekey order="30">.</bcf:citekey>
-    <bcf:citekey order="31">.</bcf:citekey>
-    <bcf:citekey order="32">uenoAnalysisNuclearDeexcitationa</bcf:citekey>
-    <bcf:citekey order="33">abeCalibrationSuperKamiokandeDetector2014</bcf:citekey>
-    <bcf:citekey order="34">abeCalibrationSuperKamiokandeDetector2014</bcf:citekey>
+    <bcf:citekey order="28">uenoAnalysisNuclearDeexcitationa</bcf:citekey>
+    <bcf:citekey order="29">abeCalibrationSuperKamiokandeDetector2014</bcf:citekey>
+    <bcf:citekey order="30">abeCalibrationSuperKamiokandeDetector2014</bcf:citekey>
   </bcf:section>
   <!-- SECTION 1 -->
   <bcf:bibdata section="1">
-    <bcf:datasource type="file" datatype="bibtex">thesisbib.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">thesislibrary.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="1">
     <bcf:citekey order="1">meoMeasurementNeutronCapture</bcf:citekey>
