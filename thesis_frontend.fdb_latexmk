@@ -1,5 +1,5 @@
 # Fdb version 3
-["bibtex thesis_frontend"] 1650059300 "thesis_frontend.aux" "thesis_frontend.bbl" "thesis_frontend" 1650059311
+["bibtex thesis_frontend"] 1650059300 "thesis_frontend.aux" "thesis_frontend.bbl" "thesis_frontend" 1650059628
   "c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_conclusion.aux" 1650059308 1114 58d4fde3692cafda11b3b9317d294776 ""
   "c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_introduction.aux" 1650059304 6362 8758ebfccab139c1080e26e8818d8496 ""
   "c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_ncqe-gd.aux" 1650059308 2526 cae36cb3b00034e1fa9f9f799ccf9821 ""
@@ -12,11 +12,11 @@
   "c:/Users/Pruthvi/git/phmehta95/thesis/thesis/Chapters/chapter_ukli-system.aux" 1650059306 1149 59a519c250b314ee3d006e01e6d64708 ""
   "c:/texlive/2019/texmf-dist/bibtex/bst/base/unsrt.bst" 1566054543 18030 1376b4b231b50c66211e47e42eda2875 ""
   "thesis_frontend.aux" 1650059308 1979 e7380e0766c48dfdec52d22bd507e493 "pdflatex"
-  "thesislibrary2.bib" 1650057020 22235 95b49f4481656f008ec7b941113942cd ""
+  "thesislibrary2.bib" 1650059627 22235 95b49f4481656f008ec7b941113942cd ""
   (generated)
   "thesis_frontend.bbl"
   "thesis_frontend.blg"
-["pdflatex"] 1650059301 "c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis_frontend.tex" "c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis_frontend.pdf" "thesis_frontend" 1650059311
+["pdflatex"] 1650059301 "c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis_frontend.tex" "c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis_frontend.pdf" "thesis_frontend" 1650059628
   "Chapters/chapter_conclusion.aux" 1650059308 1114 58d4fde3692cafda11b3b9317d294776 "pdflatex"
   "Chapters/chapter_conclusion.tex" 1638221712 38 4e61ba941fc32953f58876e83fbd24f2 ""
   "Chapters/chapter_introduction.aux" 1650059304 6362 8758ebfccab139c1080e26e8818d8496 "pdflatex"
@@ -339,20 +339,20 @@
   "thesis_frontend.tex" 1650041826 4404 3bd53ac7953cd2561cfea1a0560d79c3 ""
   "thesis_frontend.toc" 1650059308 5608 599e75e1ccd14833f84f1368ef389ecb "pdflatex"
   (generated)
-  "Chapters/chapter_conclusion.aux"
-  "thesis_frontend.toc"
-  "c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis_frontend.pdf"
-  "Chapters/chapter_introduction.aux"
-  "Chapters/chapter_syst_uncertainty.aux"
-  "Chapters/chapter_superk_detector.aux"
-  "thesis_frontend.aux"
-  "Chapters/chapter_neutrino-physics.aux"
   "thesis_frontend.log"
-  "thesis_frontend.pdf"
+  "thesis_frontend.toc"
+  "Chapters/chapter_introduction.aux"
   "Chapters/chapter_ukli-system.aux"
   "Chapters/chapter_ncqe-gd.aux"
-  "Chapters/chapter_superkgd_upgrade.aux"
+  "Chapters/chapter_conclusion.aux"
   "Chapters/chapter_superk-calib.aux"
-  "thesis_frontend.out"
+  "Chapters/chapter_superk_detector.aux"
   "Chapters/chapter_t2k_detector.aux"
+  "thesis_frontend.out"
+  "thesis_frontend.pdf"
   "c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis_frontend.log"
+  "Chapters/chapter_neutrino-physics.aux"
+  "Chapters/chapter_syst_uncertainty.aux"
+  "Chapters/chapter_superkgd_upgrade.aux"
+  "c:/Users/Pruthvi/git/phmehta95/thesis/thesis/thesis_frontend.pdf"
+  "thesis_frontend.aux"
