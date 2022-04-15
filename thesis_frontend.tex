@@ -60,16 +60,20 @@
   \usepackage{lipsum}                  % Lorem ipsum generator, good for imagining writing
   \usepackage[nohyperlinks]{acronym}   % Acronym support
   \usepackage[displaymath, mathlines]{lineno}
-  \usepackage[backend=biber,
-              style=numeric,
-              backref=true,
-              bibencoding=utf8,
-              url=false,
-              doi=true,
-              isbn=false
-  ]{biblatex}
-  %\usepackage[backend=biber]{biblatex}
-  \addbibresource{thesislibrary.bib}
+  %\usepackage[backend=biber,
+  %            style=numeric,
+  %            backref=true,
+  %            bibencoding=utf8,
+  %            url=false,
+  %            doi=true,
+  %            isbn=false
+  
+  %\usepackage{natbib}
+
+
+  
+  
+  
   %\AtEveryBibitem{\clearfield{note}\clearfield{addendum}\clearfield{annotation}} 
   %\AtEveryCitekey{\clearfield{note}\clearfield{addendum}\clearfield{annotation}}
 
@@ -133,8 +137,10 @@
  
 
     % Include bibliography
+    \bibliographystyle{unsrt}  
+    \bibliography{thesislibrary2}
 
-    \printbibliography
+
 
 
 
