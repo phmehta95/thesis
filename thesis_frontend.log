@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.17)  14 APR 2022 22:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.17)  15 APR 2022 14:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1452,6 +1452,13 @@ Package biblatex Warning: The following entry could not be found
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
+(biblatex)                nagakuraNonthermalNeutrinosCreated2021
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
 (biblatex)                nishinoHighspeedChargetotimeConverter2009a
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
@@ -1541,19 +1548,19 @@ LaTeX Warning: Reference `eq:IBD_eq' on page 4 undefined on input line 12.
 
 
 ] [5] [6] [7]
-<Figures/CC_NC.png, id=272, 465.53925pt x 165.0165pt>
+<Figures/CC_NC.png, id=274, 465.53925pt x 165.0165pt>
 File: Figures/CC_NC.png Graphic file (type png)
 <use Figures/CC_NC.png>
 Package pdftex.def Info: Figures/CC_NC.png  used on input line 75.
 (pdftex.def)             Requested size: 345.0pt x 122.28905pt.
-<Figures/elastic_scattering.png, id=275, 351.11176pt x 289.68225pt>
+<Figures/elastic_scattering.png, id=277, 351.11176pt x 289.68225pt>
 File: Figures/elastic_scattering.png Graphic file (type png)
 <use Figures/elastic_scattering.png>
 Package pdftex.def Info: Figures/elastic_scattering.png  used on input line 87.
 
 (pdftex.def)             Requested size: 345.0pt x 284.65135pt.
  [8 <./Figures/CC_NC.PNG>] [9 <./Figures/elastic_scattering.PNG>]
-<Figures/CC_DIS.png, id=294, 347.49825pt x 255.95625pt>
+<Figures/CC_DIS.png, id=296, 347.49825pt x 255.95625pt>
 File: Figures/CC_DIS.png Graphic file (type png)
 <use Figures/CC_DIS.png>
 Package pdftex.def Info: Figures/CC_DIS.png  used on input line 129.
@@ -1564,7 +1571,7 @@ LaTeX Warning: Reference `fig:IBD_feynman' on page 10 undefined on input line 1
 37.
 
 [10] [11 <./Figures/CC_DIS.PNG>]
-<Figures/QE_feynman.png, id=308, 330.63525pt x 222.23026pt>
+<Figures/QE_feynman.png, id=310, 330.63525pt x 222.23026pt>
 File: Figures/QE_feynman.png Graphic file (type png)
 <use Figures/QE_feynman.png>
 Package pdftex.def Info: Figures/QE_feynman.png  used on input line 152.
@@ -1578,6 +1585,11 @@ on input line 163.
 
 LaTeX Warning: Reference `fig:ccsn_nu_flavor_energy' on page 15 undefined on in
 put line 191.
+
+
+Overfull \hbox (90.20885pt too wide) in paragraph at lines 191--192
+\OT1/cmr/m/n/10 there-fore be-ing emit-ted wih even higher en-er-gies [[]].
+ []
 
 [15] [16]) [17]
 \openout2 = `Chapters/chapter_neutrino-physics.aux'.
@@ -2195,13 +2207,13 @@ Chapter 9.
 
 
 
-] [105
-
-
 ]
+
+LaTeX Warning: Empty bibliography on input line 137.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 141.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 141.
- (./thesis_frontend.aux (./Chapters/chapter_introduction.aux)
+(./thesis_frontend.aux (./Chapters/chapter_introduction.aux)
 (./Chapters/chapter_neutrino-physics.aux) (./Chapters/chapter_t2k_detector.aux)
 (./Chapters/chapter_superk_detector.aux) (./Chapters/chapter_superk-calib.aux)
 (./Chapters/chapter_ukli-system.aux) (./Chapters/chapter_superkgd_upgrade.aux)
@@ -2228,43 +2240,42 @@ Package logreq Info: Writing requests to 'thesis_frontend.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37950 strings out of 492609
- 732257 string characters out of 6132818
- 1243881 words of memory out of 5000000
- 40999 multiletter control sequences out of 15000+600000
- 546445 words of font info for 76 fonts, out of 8000000 for 9000
+ 37927 strings out of 492609
+ 731431 string characters out of 6132818
+ 1243897 words of memory out of 5000000
+ 40981 multiletter control sequences out of 15000+600000
+ 545976 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,15n,69p,2189b,1581s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{cite.0@nagakuraNonthermalNeutrinosCreated2021} ha
-s been referenced but does not exist, replaced by a fixed one
+ 62i,15n,69p,2189b,1559s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{cite.0@brownIdeaNeutrino1978} has been referenced
+ but does not exist, replaced by a fixed one
 
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texli
 ve/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2019/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
-5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/
-texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/20
-19/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2019/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.p
-fb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texl
-ive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2019/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.p
-fb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><
-c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on thesis_frontend.pdf (106 pages, 4423617 bytes).
+e1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.
+pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/te
+xlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2019
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
+<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive
+/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/sym
+bols/msam10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm100
+0.pfb>
+Output written on thesis_frontend.pdf (105 pages, 4399088 bytes).
 PDF statistics:
- 1152 PDF objects out of 1200 (max. 8388607)
- 913 compressed objects within 10 object streams
- 266 named destinations out of 1000 (max. 500000)
+ 1133 PDF objects out of 1200 (max. 8388607)
+ 898 compressed objects within 9 object streams
+ 263 named destinations out of 1000 (max. 500000)
  589 words of extra memory for PDF output out of 10000 (max. 10000000)
 
