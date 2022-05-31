@@ -4,6 +4,28 @@ Interactions with Super-Kamiokande Gadolinium Upgrade}
 
 \section{Event Simulation}
 
+This chapter discusses details about the event simulation, specifically the software used and the way neutrino interactions are simulated in order to produce Monte Carlo. Table \ref{table:software} summarises all the software used in this analysis. 
+
+
+\begin{table}
+$$
+\begin{array}{ll}
+\hline \text { Name } & \text { Version } \\
+\hline \text { Flux } & 13 \text { a tuning v4.0 } \\
+\text { NEUT } & 5.3 .3 \\
+\text { SKDETSIM-SKGd } & \text { ANNRI-Gd model } \\
+\text { Geant } & 4.10.05.p01 \\
+\text { T2KReWeight } & \text { v1r23 } \\
+\text { GENIE } & \text { R2-12-10 } \\
+\hline
+\end{array}
+$$
+\end{table}
+
+The neutrino beam flux used in this analysis is 13a tuning v4.0, taken from the NA61/SHINE fixed target experiment at CERN. 
+
+
+
 
 \section{Event Reconstruction}
 \subsection{Bonsai output reconstruction quantities}
