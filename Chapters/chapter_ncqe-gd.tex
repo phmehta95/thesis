@@ -22,7 +22,15 @@ $$
 $$
 \end{table}
 
-The neutrino beam flux used in this analysis is 13a tuning v4.0, taken from the NA61/SHINE fixed target experiment at CERN. 
+\subsection{Neutrino flux}
+
+The neutrino beam flux used in this analysis is 13a tuning v4.0, taken from the NA61/SHINE fixed target experiment at CERN \cite{vladisavljevic_constraining_2018}.  The NA61/SHINE experiment provides hadron production measurements for T2K and other long baseline experiments, and measures the yield of charged hadrons from a proton beam fired at a thin graphite target (2 cm long) and a T2K replica graphite target (90 cm long). From this experimental data, Monte Carlo simulations of the neutrino flux are predicted. The oscillation effect on the neutrino flux needs to be considered after choosing which flux to use, and although the neutrino-oxygen NCQE cross section does not depend on flavour (and therefore neutrino oscillation affects would have no impact on a fully pure NCQE sample) there is a small amount of charged current events which seep into the NCQE sample, and oscillation weights need to be applied to the charged current events in the sample. Monte Carlo reweighting takes care of this issue by assuming that they are all muon neutrino or muon anti-neutrino events, due to the fact that the number of electron neutrino events in FHC mode would be negligible.
+
+\subsection{Primary interaction}
+
+The interaction between the incoming neutrino event and an Oxygen nucleus, and it's consequent de-excitation is modelled by NEUT, which produces a vector of primary particles. Because these are primary particles, they do not take into consideration all the particles produced from the detector response, i.e. the secondary particles produced from the interactions within the medium of the detector, in our case, water doped with gadolinium sulphate octahydrate. 
+
+
 
 
 
