@@ -43,7 +43,25 @@ Here $\sigma_{p}$ and $\sigma_{n}$ are the neutrino-proton cross section and the
     \label{fig:ncqebenharspectral}
 \end{figure}
 
-The lowest rung of nucleons in Figure \ref{ncqebenharspectral} is the $s_{1/2}$, with $p_{3/2}$ above this level and $p_{1/2}$ above that. The protons in these rungs have removal energies of 12.1 MeV, 18. MeV and 42 MeV respectively, and due to neutron levels being more tightly bound, these have an extra removal of 3.24 MeV compared to their proton counterparts. 
+The lowest rung of nucleons in Figure \ref{ncqebenharspectral} is the $s_{1/2}$, with $p_{3/2}$ above this level and $p_{1/2}$ above that. The protons in these rungs have removal energies of 12.1 MeV, 18.4 MeV and 42 MeV respectively, and due to neutron levels being more tightly bound, these have an extra removal of 3.24 MeV compared to their proton counterparts. The shell model is imperfect due to how it allocates the probablity of $16_{O}$ transitioning to the possible nucleon states. In the shell model, probabilities are allocated by counting the number of nucleons in each energy level and assigning probailities according to how many there are. In Figure \ref{fig:ncqebenharspectral} it can be seen that the $p_{3/2}$ state has double the number of nucleons compared to the $s_{1/2}$ model and therefore double the probability of transition is assigned for the $p_{3/2}$ state, and the probability of transitioning to any other state is assigned to be 0, because in the shell model they don't even exist. The Benhar Spectral Function model however is complex and is tuned using electron-nucleus scattering data. The model used in this analysis is a modified version of the Benhar Spectral Function model, where the case of other transition states is dealt with by merging the "others'' state into the $s_{1/2}$ state. Table \ref{table:transitionprob} gives the probabilities of transition to different states for different models. 
+
+\begin{table}
+$$
+\begin{array}{ccccc}
+\hline & \left(\mathrm{s}_{1 / 2}\right)^{-1} & \left(\mathrm{p}_{3 / 2}\right)^{-1} & \left(\mathrm{p}_{1 / 2}\right)^{-1} & \text { others } \\
+\hline \text { Shell model } & 0.25 & 0.5 & 0.25 & 0 \\
+\text { Spectral Function } & 0.1055 & 0.3515 & 0.158 & 0.385 \\
+\text { This analysis } & 0.4905 & 0.3515 & 0.158 & 0 \\
+\hline
+\end{array}
+$$
+\label{Transition probabilities for different models and states}
+\end{table}
+
+\subsection{Detector response and interactions in the detector medium}
+
+Prior analyses to this used SKDETSIM (Super-Kamiokande Detector Simulator) to simulate the trajectories of particles through the water in Super-Kamiokande and output detector response MC. This analysis uses SKDETSIM-SKGd to propogate the particles
+
 
 
 
