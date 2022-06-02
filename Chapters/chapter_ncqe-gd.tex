@@ -28,10 +28,22 @@ The neutrino beam flux used in this analysis is 13a tuning v4.0, taken from the 
 
 \subsection{Primary interaction}
 
-The interaction between the incoming neutrino event and an Oxygen nucleus, and it's consequent de-excitation is modelled by NEUT, which produces a vector of primary particles. Because these are primary particles, they do not take into consideration all the particles produced from the detector response, i.e. the secondary particles produced from the interactions within the medium of the detector, in our case, water doped with gadolinium sulphate octahydrate. 
+The interaction between the incoming neutrino event and an Oxygen nucleus, and it's consequent de-excitation is modelled by NEUT, which produces a vector of primary particles. Because these are primary particles, they do not take into consideration all the particles produced from the detector response, i.e. the secondary particles produced from the interactions within the medium of the detector, in our case, water doped with gadolinium sulphate octahydrate. The way NEUT treats the interaction between a nucleus and a neutrino for the case of a neutrino interaction with a $16_{O}$ isotope is shown in Equation \ref{eq:neutrinonuc}. 
 
+\begin{equation}
+    \sigma\left(\nu^{16} \mathrm{O}\right)=\sum_{i=1}^{8} \sigma_{\mathrm{p}}\left(p_{i}^{(\mathrm{p})}\right)+\sum_{j=1}^{8} \sigma_{\mathrm{n}}\left(p_{j}^{(\mathrm{n})}\right)+\sigma(2 p 2 h)    
+\label{eq:neutrinonuc}    
+\end{equation}
 
+Here $\sigma_{p}$ and $\sigma_{n}$ are the neutrino-proton cross section and the neutrino-neutron cross section respectively, and these cross-sections are dependent on the momenta of the protons and neutrons in the model, and therefore on the choice on nuclear model. The Benhar Spectral Function (SF) is used by NEUT as the nuclear model for NCQE interactions, and for CCQE interactions the Smith-Moniz relativistic Fermi Gas (RFG) model is used \cite{benhar_electron-_2005}, with 2p2h interactions included for these interactions. 
 
+\begin{figure}
+    \includegraphics[width=\textwidth]{Figures/ncqebenharspectral.png}
+    \caption{Representation of NC neutrino scattering off $16_{O}$ with protons on the left hand side and neutrons on the right arranged according to the shell model. }
+    \label{fig:ncqebenharspectral}
+\end{figure}
+
+The lowest rung of nucleons in Figure \ref{ncqebenharspectral} is the $s_{1/2}$, with $p_{3/2}$ above this level and $p_{1/2}$ above that. The protons in these rungs have removal energies of 12.1 MeV, 18. MeV and 42 MeV respectively, and due to neutron levels being more tightly bound, these have an extra removal of 3.24 MeV compared to their proton counterparts. 
 
 
 

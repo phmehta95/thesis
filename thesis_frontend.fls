@@ -1441,6 +1441,11 @@ INPUT ./Chapters/chapter_ncqe-gd.tex
 INPUT Chapters/chapter_ncqe-gd.tex
 INPUT ./Chapters/chapter_ncqe-gd.tex
 INPUT Chapters/chapter_ncqe-gd.tex
+INPUT ./Figures/ncqebenharspectral.PNG
+INPUT ./Figures/ncqebenharspectral.PNG
+INPUT Figures/ncqebenharspectral.PNG
+INPUT ./Figures/ncqebenharspectral.PNG
+INPUT ./Figures/ncqebenharspectral.PNG
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT ./Chapters/chapter_syst_uncertainty.tex
 INPUT ./Chapters/chapter_syst_uncertainty.tex
