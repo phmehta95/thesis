@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.27)  2 JUN 2022 23:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.27)  3 JUN 2022 11:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -619,7 +619,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 \Hy@SectionHShift=\skip65
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 103.
- (./thesis_frontend.aux (./Chapters/chapter_introduction.aux) (./Chapters/chapter_neutrino-physics.aux) (./Chapters/chapter_t2k_detector.aux) (./Chapters/chapter_superk_detector.aux) (./Chapters/chapter_superk-calib.aux) (./Chapters/chapter_ukli-system.aux) (./Chapters/chapter_superkgd_upgrade.aux) (./Chapters/chapter_ncqe-gd.aux) (./Chapters/chapter_syst_uncertainty.aux) (./Chapters/chapter_conclusion.aux))
+ (./thesis_frontend.aux)
 \openout1 = `thesis_frontend.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 108.
@@ -686,7 +686,6 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 108.
 LaTeX Info: Redefining \pageref on input line 108.
 LaTeX Info: Redefining \nameref on input line 108.
- (./thesis_frontend.out) (./thesis_frontend.out)
 \@outlinefile=\write4
 \openout4 = `thesis_frontend.out'.
 
@@ -699,86 +698,148 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 113.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./thesis_frontend.toc
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.26 ...ergy reconstruction}{48}{subsection.3.2.3}
-                                                  % [1
-
-] [2])
+{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 \tf@toc=\write5
 \openout5 = `thesis_frontend.toc'.
 
- [3]
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.125     \include{Chapters/chapter_introduction}
+                                                  [1
+
+]
 \openout2 = `Chapters/chapter_introduction.aux'.
 
  (./Chapters/chapter_introduction.tex
 Chapter 1.
 
-LaTeX Warning: Citation `brownIdeaNeutrino1978' on page 4 undefined on input line 12.
+LaTeX Warning: Citation `brownIdeaNeutrino1978' on page 2 undefined on input line 12.
 
-[4
+[2
 
 
-] [5] [6] [7]
-<Figures/CC_NC.png, id=297, 465.53925pt x 165.0165pt>
+] [3]
+
+LaTeX Warning: Reference `eq:neutrino_osc' on page 4 undefined on input line 20.
+
+
+LaTeX Warning: Reference `eq:neutrino_osc' on page 4 undefined on input line 31.
+
+
+LaTeX Warning: Reference `eq:PMNS_matrix' on page 4 undefined on input line 31.
+
+[4]
+
+LaTeX Warning: Reference `eq:PMNS_matrix' on page 5 undefined on input line 57.
+
+
+LaTeX Warning: Reference `eq:maj_nu' on page 5 undefined on input line 57.
+
+
+LaTeX Warning: Reference `fig:CC_NC' on page 5 undefined on input line 72.
+
+[5]
+<Figures/CC_NC.png, id=50, 465.53925pt x 165.0165pt>
 File: Figures/CC_NC.png Graphic file (type png)
 <use Figures/CC_NC.png>
 Package pdftex.def Info: Figures/CC_NC.png  used on input line 75.
 (pdftex.def)             Requested size: 345.0pt x 122.28905pt.
-<Figures/elastic_scattering.png, id=300, 351.11176pt x 289.68225pt>
+
+
+LaTeX Warning: Reference `fig:elastic_scattering' on page 6 undefined on input line 84.
+
+<Figures/elastic_scattering.png, id=52, 351.11176pt x 289.68225pt>
 File: Figures/elastic_scattering.png Graphic file (type png)
 <use Figures/elastic_scattering.png>
 Package pdftex.def Info: Figures/elastic_scattering.png  used on input line 87.
 (pdftex.def)             Requested size: 345.0pt x 284.65135pt.
- [8 <./Figures/CC_NC.PNG>] [9 <./Figures/elastic_scattering.PNG>]
-<Figures/CC_DIS.png, id=319, 347.49825pt x 255.95625pt>
+
+LaTeX Warning: Reference `eq:resonant_pion' on page 6 undefined on input line 92.
+
+[6 <./Figures/CC_NC.PNG>] [7 <./Figures/elastic_scattering.PNG>]
+
+LaTeX Warning: Reference `eq:single_pion_CC' on page 8 undefined on input line 104.
+
+
+LaTeX Warning: Reference `eq:single_pion_NC' on page 8 undefined on input line 104.
+
+
+LaTeX Warning: Reference `eq:DIS_eq' on page 8 undefined on input line 118.
+
+
+LaTeX Warning: Reference `fig:CC_DIS' on page 8 undefined on input line 118.
+
+<Figures/CC_DIS.png, id=67, 347.49825pt x 255.95625pt>
 File: Figures/CC_DIS.png Graphic file (type png)
 <use Figures/CC_DIS.png>
 Package pdftex.def Info: Figures/CC_DIS.png  used on input line 129.
 (pdftex.def)             Requested size: 345.0pt x 254.1356pt.
- [10] [11 <./Figures/CC_DIS.PNG>]
-<Figures/IBD_feynman.png, id=334, 279.444pt x 209.583pt>
+
+LaTeX Warning: Reference `fig:IBD_feynman' on page 8 undefined on input line 137.
+
+[8] [9 <./Figures/CC_DIS.PNG>]
+<Figures/IBD_feynman.png, id=80, 279.444pt x 209.583pt>
 File: Figures/IBD_feynman.png Graphic file (type png)
 <use Figures/IBD_feynman.png>
 Package pdftex.def Info: Figures/IBD_feynman.png  used on input line 140.
 (pdftex.def)             Requested size: 345.0pt x 258.75453pt.
- [12 <./Figures/IBD_feynman.PNG>]
-<Figures/QE_feynman.png, id=343, 330.63525pt x 222.23026pt>
+
+
+LaTeX Warning: Reference `eq:QE_reaction' on page 10 undefined on input line 145.
+
+[10 <./Figures/IBD_feynman.PNG>]
+<Figures/QE_feynman.png, id=87, 330.63525pt x 222.23026pt>
 File: Figures/QE_feynman.png Graphic file (type png)
 <use Figures/QE_feynman.png>
 Package pdftex.def Info: Figures/QE_feynman.png  used on input line 158.
 (pdftex.def)             Requested size: 345.0pt x 231.89053pt.
- [13 <./Figures/QE_feynman.PNG>] [14] [15]
-
-LaTeX Warning: Citation `nagakuraNonthermalNeutrinosCreated2021a' on page 16 undefined on input line 198.
 
 
-LaTeX Warning: Citation `chakrabortyObservingSupernovaNeutrino2014a' on page 16 undefined on input line 198.
+LaTeX Warning: Reference `table:supernova_classification' on page 11 undefined on input line 169.
 
-<Figures/ccsn_nu_flavor_energy.png, id=362, 572.73975pt x 434.8245pt>
+[11 <./Figures/QE_feynman.PNG>] [12] [13]
+
+LaTeX Warning: Citation `nagakuraNonthermalNeutrinosCreated2021a' on page 14 undefined on input line 198.
+
+
+LaTeX Warning: Reference `fig:ccsn_nu_flavor_energy' on page 14 undefined on input line 198.
+
+
+LaTeX Warning: Citation `chakrabortyObservingSupernovaNeutrino2014a' on page 14 undefined on input line 198.
+
+<Figures/ccsn_nu_flavor_energy.png, id=106, 572.73975pt x 434.8245pt>
 File: Figures/ccsn_nu_flavor_energy.png Graphic file (type png)
 <use Figures/ccsn_nu_flavor_energy.png>
 Package pdftex.def Info: Figures/ccsn_nu_flavor_energy.png  used on input line 201.
 (pdftex.def)             Requested size: 345.0pt x 261.93173pt.
 
-LaTeX Warning: Citation `chakrabortyObservingSupernovaNeutrino2014a' on page 16 undefined on input line 202.
+LaTeX Warning: Citation `chakrabortyObservingSupernovaNeutrino2014a' on page 14 undefined on input line 202.
 
 
-LaTeX Warning: Citation `chakrabortyObservingSupernovaNeutrino2014a' on page 16 undefined on input line 202.
+LaTeX Warning: Citation `chakrabortyObservingSupernovaNeutrino2014a' on page 14 undefined on input line 202.
 
 
-LaTeX Warning: Citation `hirataObservationNeutrinoBurst1987a' on page 16 undefined on input line 208.
+LaTeX Warning: Citation `hirataObservationNeutrinoBurst1987a' on page 14 undefined on input line 208.
 
 
-LaTeX Warning: Citation `betheSupernovaMechanisms1990a' on page 16 undefined on input line 210.
+LaTeX Warning: Citation `betheSupernovaMechanisms1990a' on page 14 undefined on input line 210.
 
-[16] [17 <./Figures/ccsn_nu_flavor_energy.PNG>]
+[14] [15 <./Figures/ccsn_nu_flavor_energy.PNG>]
 
-LaTeX Warning: Citation `andoRelicNeutrinoBackground2004a' on page 18 undefined on input line 221.
+LaTeX Warning: Reference `eq:SRNflux' on page 16 undefined on input line 214.
 
-[18]) [19]
+
+LaTeX Warning: Reference `eq:friedmann' on page 16 undefined on input line 221.
+
+
+LaTeX Warning: Citation `andoRelicNeutrinoBackground2004a' on page 16 undefined on input line 221.
+
+
+LaTeX Warning: Reference `NCQExsec' on page 16 undefined on input line 232.
+
+[16]) [17]
 \openout2 = `Chapters/chapter_neutrino-physics.aux'.
 
 
@@ -787,7 +848,7 @@ No file Chapters/chapter_neutrino-physics.tex.
 
 (./Chapters/chapter_t2k_detector.tex
 Chapter 2.
-[20
+[18
 
 
 
@@ -795,8 +856,18 @@ Chapter 2.
 
 
 
-] [21]
-<Figures/t2k_magnetic_horns.png, id=404, 268.6035pt x 440.847pt>
+]
+
+LaTeX Warning: Reference `fig:nubeamline' on page 19 undefined on input line 16.
+
+
+LaTeX Warning: Reference `fig:magnetichorns' on page 19 undefined on input line 18.
+
+
+LaTeX Warning: Reference `eq:nubeam' on page 19 undefined on input line 18.
+
+[19]
+<Figures/t2k_magnetic_horns.png, id=145, 268.6035pt x 440.847pt>
 File: Figures/t2k_magnetic_horns.png Graphic file (type png)
 <use Figures/t2k_magnetic_horns.png>
 Package pdftex.def Info: Figures/t2k_magnetic_horns.png  used on input line 21.
@@ -805,269 +876,400 @@ Package pdftex.def Info: Figures/t2k_magnetic_horns.png  used on input line 21.
 
 LaTeX Warning: Float too large for page by 48.24644pt on input line 24.
 
-<Figures/nubeamline.png, id=405, 305.34074pt x 219.219pt>
+<Figures/nubeamline.png, id=146, 305.34074pt x 219.219pt>
 File: Figures/nubeamline.png Graphic file (type png)
 <use Figures/nubeamline.png>
 Package pdftex.def Info: Figures/nubeamline.png  used on input line 27.
 (pdftex.def)             Requested size: 345.0pt x 247.71455pt.
-[22] [23 <./Figures/t2k_magnetic_horns.PNG>] [24 <./Figures/nubeamline.PNG>]
-<Figures/ingridcross.png, id=426, 340.27126pt x 359.54324pt>
+[20] [21 <./Figures/t2k_magnetic_horns.PNG>]
+
+LaTeX Warning: Reference `fig:ingridcross' on page 22 undefined on input line 46.
+
+
+LaTeX Warning: Reference `fig:ingridmodule' on page 22 undefined on input line 46.
+
+[22 <./Figures/nubeamline.PNG>]
+<Figures/ingridcross.png, id=167, 340.27126pt x 359.54324pt>
 File: Figures/ingridcross.png Graphic file (type png)
 <use Figures/ingridcross.png>
 Package pdftex.def Info: Figures/ingridcross.png  used on input line 49.
 (pdftex.def)             Requested size: 345.0pt x 364.55672pt.
 
 
-LaTeX Warning: Citation `t2kcollaborationT2KExperiment2011' on page 25 undefined on input line 50.
+LaTeX Warning: Citation `t2kcollaborationT2KExperiment2011' on page 23 undefined on input line 50.
 
 
-LaTeX Warning: Citation `t2kcollaborationT2KExperiment2011' on page 25 undefined on input line 50.
+LaTeX Warning: Citation `t2kcollaborationT2KExperiment2011' on page 23 undefined on input line 50.
 
-<Figures/ingridmodule.png, id=427, 442.0515pt x 232.4685pt>
+<Figures/ingridmodule.png, id=168, 442.0515pt x 232.4685pt>
 File: Figures/ingridmodule.png Graphic file (type png)
 <use Figures/ingridmodule.png>
 Package pdftex.def Info: Figures/ingridmodule.png  used on input line 54.
 (pdftex.def)             Requested size: 345.0pt x 181.4382pt.
 
-LaTeX Warning: Citation `t2kcollaborationT2KExperiment2011' on page 25 undefined on input line 55.
+LaTeX Warning: Citation `t2kcollaborationT2KExperiment2011' on page 23 undefined on input line 55.
 
 
-LaTeX Warning: Citation `t2kcollaborationT2KExperiment2011' on page 25 undefined on input line 55.
+LaTeX Warning: Citation `t2kcollaborationT2KExperiment2011' on page 23 undefined on input line 55.
 
-<Figures/ingridevent.png, id=430, 308.352pt x 204.16275pt>
+
+LaTeX Warning: Reference `fig:ingridevent' on page 23 undefined on input line 59.
+
+
+LaTeX Warning: Reference `fig:track_angle' on page 23 undefined on input line 62.
+
+<Figures/ingridevent.png, id=169, 308.352pt x 204.16275pt>
 File: Figures/ingridevent.png Graphic file (type png)
 <use Figures/ingridevent.png>
 Package pdftex.def Info: Figures/ingridevent.png  used on input line 65.
 (pdftex.def)             Requested size: 345.0pt x 228.43018pt.
 
-LaTeX Warning: Citation `t2kcollaborationT2KExperiment2011' on page 25 undefined on input line 66.
+LaTeX Warning: Citation `t2kcollaborationT2KExperiment2011' on page 23 undefined on input line 66.
 
 
-LaTeX Warning: Citation `t2kcollaborationT2KExperiment2011' on page 25 undefined on input line 66.
+LaTeX Warning: Citation `t2kcollaborationT2KExperiment2011' on page 23 undefined on input line 66.
 
-<Figures/track_angle_ingrid.png, id=431, 264.99pt x 191.5155pt>
+<Figures/track_angle_ingrid.png, id=170, 264.99pt x 191.5155pt>
 File: Figures/track_angle_ingrid.png Graphic file (type png)
 <use Figures/track_angle_ingrid.png>
 Package pdftex.def Info: Figures/track_angle_ingrid.png  used on input line 71.
 (pdftex.def)             Requested size: 345.0pt x 249.35876pt.
-[25] [26 <./Figures/ingridcross.PNG>] [27 <./Figures/ingridmodule.PNG> <./Figures/ingridevent.PNG>]
-<Figures/energy_angle.PNG, id=454, 582.37575pt x 411.33675pt>
+
+LaTeX Warning: Reference `eq:piondecay' on page 23 undefined on input line 79.
+
+[23] [24 <./Figures/ingridcross.PNG>] [25 <./Figures/ingridmodule.PNG> <./Figures/ingridevent.PNG>]
+
+LaTeX Warning: Reference `fig:energyangle' on page 26 undefined on input line 86.
+
+<Figures/energy_angle.PNG, id=191, 582.37575pt x 411.33675pt>
 File: Figures/energy_angle.PNG Graphic file (type png)
 <use Figures/energy_angle.PNG>
 Package pdftex.def Info: Figures/energy_angle.PNG  used on input line 89.
 (pdftex.def)             Requested size: 345.0pt x 243.68454pt.
- [28 <./Figures/track_angle_ingrid.PNG>] [29 <./Figures/energy_angle.PNG>]
-<Figures/nuprobosc.png, id=469, 361.95226pt x 367.3725pt>
+
+LaTeX Warning: Reference `fig:nuprobosc' on page 26 undefined on input line 94.
+
+[26 <./Figures/track_angle_ingrid.PNG>] [27 <./Figures/energy_angle.PNG>]
+<Figures/nuprobosc.png, id=205, 361.95226pt x 367.3725pt>
 File: Figures/nuprobosc.png Graphic file (type png)
 <use Figures/nuprobosc.png>
 Package pdftex.def Info: Figures/nuprobosc.png  used on input line 97.
 (pdftex.def)             Requested size: 345.0pt x 350.17906pt.
 
 
-LaTeX Warning: Citation `t2kcollaborationT2KNeutrinoFlux2013' on page 30 undefined on input line 98.
+LaTeX Warning: Citation `t2kcollaborationT2KNeutrinoFlux2013' on page 28 undefined on input line 98.
 
 
-LaTeX Warning: Citation `t2kcollaborationT2KNeutrinoFlux2013' on page 30 undefined on input line 98.
+LaTeX Warning: Citation `t2kcollaborationT2KNeutrinoFlux2013' on page 28 undefined on input line 98.
 
-[30 <./Figures/nuprobosc.PNG>]
-<Figures/nd280_complex.png, id=479, 419.76825pt x 370.986pt>
+
+LaTeX Warning: Reference `fig:ND280_schematic' on page 28 undefined on input line 102.
+
+[28 <./Figures/nuprobosc.PNG>]
+<Figures/nd280_complex.png, id=212, 419.76825pt x 370.986pt>
 File: Figures/nd280_complex.png Graphic file (type png)
 <use Figures/nd280_complex.png>
 Package pdftex.def Info: Figures/nd280_complex.png  used on input line 105.
 (pdftex.def)             Requested size: 345.0pt x 304.91808pt.
 
 
-LaTeX Warning: Citation `t2kcollaborationT2KExperiment2011' on page 31 undefined on input line 106.
+LaTeX Warning: Citation `t2kcollaborationT2KExperiment2011' on page 29 undefined on input line 106.
 
 
-LaTeX Warning: Citation `t2kcollaborationT2KExperiment2011' on page 31 undefined on input line 106.
+LaTeX Warning: Citation `t2kcollaborationT2KExperiment2011' on page 29 undefined on input line 106.
 
-[31 <./Figures/nd280_complex.PNG>]
-<Figures/tpc_schematic.png, id=487, 377.61075pt x 330.63525pt>
+[29 <./Figures/nd280_complex.PNG>]
+
+LaTeX Warning: Reference `fig:p0d' on page 30 undefined on input line 112.
+
+
+LaTeX Warning: Reference `fig:TPC_schematic' on page 30 undefined on input line 112.
+
+<Figures/tpc_schematic.png, id=219, 377.61075pt x 330.63525pt>
 File: Figures/tpc_schematic.png Graphic file (type png)
 <use Figures/tpc_schematic.png>
 Package pdftex.def Info: Figures/tpc_schematic.png  used on input line 115.
 (pdftex.def)             Requested size: 345.0pt x 302.08937pt.
 
+LaTeX Warning: Citation `t2kcollaborationT2KExperiment2011' on page 30 undefined on input line 116.
 
-LaTeX Warning: Citation `t2kcollaborationT2KExperiment2011' on page 32 undefined on input line 116.
 
+LaTeX Warning: Citation `t2kcollaborationT2KExperiment2011' on page 30 undefined on input line 116.
 
-LaTeX Warning: Citation `t2kcollaborationT2KExperiment2011' on page 32 undefined on input line 116.
-
-<Figures/p0d.png, id=488, 276.43275pt x 289.08pt>
+<Figures/p0d.png, id=220, 276.43275pt x 289.08pt>
 File: Figures/p0d.png Graphic file (type png)
 <use Figures/p0d.png>
 Package pdftex.def Info: Figures/p0d.png  used on input line 121.
 (pdftex.def)             Requested size: 345.0pt x 360.81537pt.
 
-LaTeX Warning: Citation `t2kcollaborationT2KExperiment2011' on page 32 undefined on input line 122.
+LaTeX Warning: Citation `t2kcollaborationT2KExperiment2011' on page 30 undefined on input line 122.
 
 
-LaTeX Warning: Citation `t2kcollaborationT2KExperiment2011' on page 32 undefined on input line 122.
+LaTeX Warning: Citation `t2kcollaborationT2KExperiment2011' on page 30 undefined on input line 122.
 
-[32] [33 <./Figures/tpc_schematic.PNG>] [34 <./Figures/p0d.PNG>]
-<Figures/FGD_schematic.png, id=507, 316.18124pt x 386.6445pt>
+
+LaTeX Warning: Reference `fig:FGD_schematic' on page 30 undefined on input line 126.
+
+[30] [31 <./Figures/tpc_schematic.PNG>] [32 <./Figures/p0d.PNG>]
+<Figures/FGD_schematic.png, id=239, 316.18124pt x 386.6445pt>
 File: Figures/FGD_schematic.png Graphic file (type png)
 <use Figures/FGD_schematic.png>
 Package pdftex.def Info: Figures/FGD_schematic.png  used on input line 129.
 (pdftex.def)             Requested size: 345.0pt x 421.91792pt.
-<Figures/ECal_schematic.png, id=509, 440.847pt x 319.1925pt>
+
+
+LaTeX Warning: Reference `fig:ECal_schematic' on page 33 undefined on input line 134.
+
+<Figures/ECal_schematic.png, id=240, 440.847pt x 319.1925pt>
 File: Figures/ECal_schematic.png Graphic file (type png)
 <use Figures/ECal_schematic.png>
 Package pdftex.def Info: Figures/ECal_schematic.png  used on input line 137.
 (pdftex.def)             Requested size: 345.0pt x 249.79225pt.
-) [35] [36 <./Figures/FGD_schematic.PNG>] [37 <./Figures/ECal_schematic.PNG>]
+) [33] [34 <./Figures/FGD_schematic.PNG>] [35 <./Figures/ECal_schematic.PNG>]
 \openout2 = `Chapters/chapter_superk_detector.aux'.
 
  (./Chapters/chapter_superk_detector.tex
 Chapter 3.
 
-LaTeX Warning: Citation `suzukiSuperKamiokandeExperiment2019' on page 38 undefined on input line 10.
+LaTeX Warning: Citation `suzukiSuperKamiokandeExperiment2019' on page 36 undefined on input line 10.
 
-[38
+[36
 
 
 
 
 ]
 
-LaTeX Warning: Citation `fukudaSuperKamiokandeDetector2003' on page 39 undefined on input line 12.
+LaTeX Warning: Citation `fukudaSuperKamiokandeDetector2003' on page 37 undefined on input line 12.
 
-[39]
-<Figures/PMT_schematic.png, id=537, 478.1865pt x 321.6015pt>
+
+LaTeX Warning: Reference `fig:PMTdiagram' on page 37 undefined on input line 14.
+
+[37]
+<Figures/PMT_schematic.png, id=269, 478.1865pt x 321.6015pt>
 File: Figures/PMT_schematic.png Graphic file (type png)
 <use Figures/PMT_schematic.png>
 Package pdftex.def Info: Figures/PMT_schematic.png  used on input line 17.
 (pdftex.def)             Requested size: 345.0pt x 232.03871pt.
 
 
-LaTeX Warning: Citation `fukudaSuperKamiokandeDetector2003' on page 40 undefined on input line 18.
+LaTeX Warning: Citation `fukudaSuperKamiokandeDetector2003' on page 38 undefined on input line 18.
 
 
-LaTeX Warning: Citation `fukudaSuperKamiokandeDetector2003' on page 40 undefined on input line 18.
+LaTeX Warning: Citation `fukudaSuperKamiokandeDetector2003' on page 38 undefined on input line 18.
 
 
-LaTeX Warning: Citation `fernandezStatusGADZOOKSNeutron2016' on page 40 undefined on input line 23.
+LaTeX Warning: Citation `fernandezStatusGADZOOKSNeutron2016' on page 38 undefined on input line 23.
 
-[40 <./Figures/PMT_schematic.PNG>] [41]
+[38 <./Figures/PMT_schematic.PNG>]
+
+LaTeX Warning: Reference `table:phasetable' on page 39 undefined on input line 27.
+
+[39]
 Overfull \hbox (74.30055pt too wide) detected at line 41
 []
  []
+
+
+LaTeX Warning: Reference `table:phasetable' on page 40 undefined on input line 50.
+
+
+LaTeX Warning: Reference `fig:superkdaq' on page 40 undefined on input line 50.
+
+
+LaTeX Warning: Reference `fig:superkdaq' on page 40 undefined on input line 50.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 50--52
 
  []
 
-[42]
-<Figures/superk_daq.png, id=558, 416.757pt x 194.52675pt>
+[40]
+<Figures/superk_daq.png, id=286, 416.757pt x 194.52675pt>
 File: Figures/superk_daq.png Graphic file (type png)
 <use Figures/superk_daq.png>
 Package pdftex.def Info: Figures/superk_daq.png  used on input line 54.
 (pdftex.def)             Requested size: 345.0pt x 161.03268pt.
 
 
-LaTeX Warning: Citation `nishinoHighspeedChargetotimeConverter2009' on page 43 undefined on input line 55.
+LaTeX Warning: Citation `nishinoHighspeedChargetotimeConverter2009' on page 41 undefined on input line 55.
 
 
-LaTeX Warning: Citation `nishinoHighspeedChargetotimeConverter2009' on page 43 undefined on input line 55.
+LaTeX Warning: Citation `nishinoHighspeedChargetotimeConverter2009' on page 41 undefined on input line 55.
 
 
-LaTeX Warning: Citation `fukudaSuperKamiokandeDetector2003' on page 43 undefined on input line 59.
+LaTeX Warning: Citation `fukudaSuperKamiokandeDetector2003' on page 41 undefined on input line 59.
 
-[43] [44 <./Figures/superk_daq.PNG>]
-<Figures/bonsai_pdf_res.png, id=570, 282.45525pt x 234.8775pt>
+[41]
+
+LaTeX Warning: Reference `bonsailikelihood' on page 42 undefined on input line 67.
+
+[42 <./Figures/superk_daq.PNG>]
+
+LaTeX Warning: Reference `fig:bonsaivertexres' on page 43 undefined on input line 74.
+
+<Figures/bonsai_pdf_res.png, id=298, 282.45525pt x 234.8775pt>
 File: Figures/bonsai_pdf_res.png Graphic file (type png)
 <use Figures/bonsai_pdf_res.png>
 Package pdftex.def Info: Figures/bonsai_pdf_res.png  used on input line 77.
 (pdftex.def)             Requested size: 345.0pt x 286.90135pt.
- [45]
-<Figures/bonsai_vertex_res.png, id=576, 244.5135pt x 193.9245pt>
+[43]
+<Figures/bonsai_vertex_res.png, id=306, 244.5135pt x 193.9245pt>
 File: Figures/bonsai_vertex_res.png Graphic file (type png)
 <use Figures/bonsai_vertex_res.png>
 Package pdftex.def Info: Figures/bonsai_vertex_res.png  used on input line 83.
 (pdftex.def)             Requested size: 345.0pt x 273.63478pt.
- [46 <./Figures/bonsai_pdf_res.PNG>] [47 <./Figures/bonsai_vertex_res.PNG>] [48]
 
-LaTeX Warning: Citation `uenoAnalysisNuclearDeexcitation' on page 49 undefined on input line 109.
 
-[49]) [50]
+LaTeX Warning: Reference `directionlikelihoodeq' on page 44 undefined on input line 90.
+
+[44 <./Figures/bonsai_pdf_res.PNG>] [45 <./Figures/bonsai_vertex_res.PNG>]
+
+LaTeX Warning: Reference `directionlikelihoodeq' on page 46 undefined on input line 97.
+
+[46]
+
+LaTeX Warning: Reference `effectivePMTs' on page 47 undefined on input line 109.
+
+
+LaTeX Warning: Citation `uenoAnalysisNuclearDeexcitation' on page 47 undefined on input line 109.
+
+
+LaTeX Warning: Reference `eq:correction_factor' on page 47 undefined on input line 116.
+
+[47]
+
+LaTeX Warning: Reference `eq:correction_factor' on page 48 undefined on input line 127.
+
+
+LaTeX Warning: Reference `edark' on page 48 undefined on input line 127.
+
+
+LaTeX Warning: Reference `etail' on page 48 undefined on input line 135.
+
+) [48]
 \openout2 = `Chapters/chapter_superk-calib.aux'.
 
  (./Chapters/chapter_superk-calib.tex
 Chapter 4.
-[51
+
+LaTeX Warning: Reference `fig:hvcalib' on page 49 undefined on input line 13.
+
+[49
 
 
 
 
 ]
-<Figures/hvcalib.png, id=625, 457.71pt x 348.70274pt>
+<Figures/hvcalib.png, id=351, 457.71pt x 348.70274pt>
 File: Figures/hvcalib.png Graphic file (type png)
 <use Figures/hvcalib.png>
 Package pdftex.def Info: Figures/hvcalib.png  used on input line 16.
 (pdftex.def)             Requested size: 345.0pt x 262.84595pt.
 
 
-LaTeX Warning: Citation `abeCalibrationSuperKamiokandeDetector2014' on page 52 undefined on input line 26.
+LaTeX Warning: Citation `abeCalibrationSuperKamiokandeDetector2014' on page 50 undefined on input line 26.
 
-[52] [53 <./Figures/hvcalib.PNG>]
-<Figures/relativegain.png, id=640, 285.4665pt x 254.75175pt>
+[50] [51 <./Figures/hvcalib.PNG>]
+
+LaTeX Warning: Reference `eq:gaineq' on page 52 undefined on input line 28.
+
+
+LaTeX Warning: Reference `fig:relativegain' on page 52 undefined on input line 36.
+
+<Figures/relativegain.png, id=365, 285.4665pt x 254.75175pt>
 File: Figures/relativegain.png Graphic file (type png)
 <use Figures/relativegain.png>
 Package pdftex.def Info: Figures/relativegain.png  used on input line 39.
 (pdftex.def)             Requested size: 345.0pt x 307.90848pt.
- [54] [55 <./Figures/relativegain.PNG>]
-<Figures/singlepe.png, id=656, 338.4645pt x 320.99925pt>
+[52]
+
+LaTeX Warning: Reference `fig:singlepe' on page 53 undefined on input line 46.
+
+[53 <./Figures/relativegain.PNG>]
+<Figures/singlepe.png, id=379, 338.4645pt x 320.99925pt>
 File: Figures/singlepe.png Graphic file (type png)
 <use Figures/singlepe.png>
 Package pdftex.def Info: Figures/singlepe.png  used on input line 49.
 (pdftex.def)             Requested size: 345.0pt x 327.21898pt.
- [56 <./Figures/singlepe.PNG>]
-<Figures/timecalibsystem.png, id=664, 228.25275pt x 302.3295pt>
+ [54 <./Figures/singlepe.PNG>]
+
+LaTeX Warning: Reference `fig:timecalibsystem' on page 55 undefined on input line 63.
+
+<Figures/timecalibsystem.png, id=387, 228.25275pt x 302.3295pt>
 File: Figures/timecalibsystem.png Graphic file (type png)
 <use Figures/timecalibsystem.png>
 Package pdftex.def Info: Figures/timecalibsystem.png  used on input line 66.
 (pdftex.def)             Requested size: 345.0pt x 456.96684pt.
 
+LaTeX Warning: Reference `fig:TQdist' on page 55 undefined on input line 72.
 
-LaTeX Warning: Citation `abeCalibrationSuperKamiokandeDetector2014' on page 57 undefined on input line 72.
 
-[57] [58 <./Figures/timecalibsystem.PNG>]
-<Figures/TQdist.png, id=678, 418.56375pt x 262.581pt>
+LaTeX Warning: Citation `abeCalibrationSuperKamiokandeDetector2014' on page 55 undefined on input line 72.
+
+[55] [56 <./Figures/timecalibsystem.PNG>]
+<Figures/TQdist.png, id=400, 418.56375pt x 262.581pt>
 File: Figures/TQdist.png Graphic file (type png)
 <use Figures/TQdist.png>
 Package pdftex.def Info: Figures/TQdist.png  used on input line 75.
 (pdftex.def)             Requested size: 345.0pt x 216.43164pt.
- [59 <./Figures/TQdist.PNG>]
-<Figures/asygausst.png, id=687, 401.0985pt x 252.945pt>
+
+
+LaTeX Warning: Reference `eq:sigmat' on page 57 undefined on input line 81.
+
+[57 <./Figures/TQdist.PNG>]
+
+LaTeX Warning: Reference `fig:asygausst' on page 58 undefined on input line 93.
+
+<Figures/asygausst.png, id=407, 401.0985pt x 252.945pt>
 File: Figures/asygausst.png Graphic file (type png)
 <use Figures/asygausst.png>
 Package pdftex.def Info: Figures/asygausst.png  used on input line 96.
 (pdftex.def)             Requested size: 345.0pt x 217.56705pt.
-<Figures/resolutiont.png, id=691, 407.121pt x 294.50024pt>
+
+LaTeX Warning: Reference `fig:TQdist' on page 58 undefined on input line 97.
+
+
+LaTeX Warning: Reference `fig:TQdist' on page 58 undefined on input line 97.
+
+
+LaTeX Warning: Reference `fig:resolutiont' on page 58 undefined on input line 103.
+
+<Figures/resolutiont.png, id=408, 407.121pt x 294.50024pt>
 File: Figures/resolutiont.png Graphic file (type png)
 <use Figures/resolutiont.png>
 Package pdftex.def Info: Figures/resolutiont.png  used on input line 106.
 (pdftex.def)             Requested size: 345.0pt x 249.57593pt.
- [60 <./Figures/asygausst.PNG>] [61 <./Figures/resolutiont.PNG>]
-<Figures/blacksheetrefsetup.png, id=711, 481.04718pt x 376.40625pt>
+[58 <./Figures/asygausst.PNG>]
+
+LaTeX Warning: Reference `table:refractiveindex' on page 59 undefined on input line 120.
+
+[59 <./Figures/resolutiont.PNG>]
+
+LaTeX Warning: Reference `fig:blacksheetrefsetup' on page 60 undefined on input line 122.
+
+<Figures/blacksheetrefsetup.png, id=426, 481.04718pt x 376.40625pt>
 File: Figures/blacksheetrefsetup.png Graphic file (type png)
 <use Figures/blacksheetrefsetup.png>
 Package pdftex.def Info: Figures/blacksheetrefsetup.png  used on input line 145.
 (pdftex.def)             Requested size: 345.0pt x 269.96123pt.
-<Figures/watergrad.png, id=713, 310.15875pt x 252.945pt>
+
+LaTeX Warning: Reference `fig:watergrad' on page 60 undefined on input line 151.
+
+<Figures/watergrad.png, id=427, 310.15875pt x 252.945pt>
 File: Figures/watergrad.png Graphic file (type png)
 <use Figures/watergrad.png>
 Package pdftex.def Info: Figures/watergrad.png  used on input line 154.
 (pdftex.def)             Requested size: 345.0pt x 281.35893pt.
- [62] [63 <./Figures/blacksheetrefsetup.png>] [64 <./Figures/watergrad.png>]) [65]
+
+LaTeX Warning: Reference `eq:TBAeq' on page 60 undefined on input line 159.
+
+[60] [61 <./Figures/blacksheetrefsetup.png>] [62 <./Figures/watergrad.png>]) [63]
 \openout2 = `Chapters/chapter_ukli-system.aux'.
 
  (./Chapters/chapter_ukli-system.tex
 Chapter 5.
-) [66
+) [64
 
 
 
@@ -1083,9 +1285,9 @@ Overfull \hbox (13.9462pt too wide) in paragraph at lines 4--4
  []
 
 
-LaTeX Warning: Citation `meoMeasurementNeutronCapture' on page 67 undefined on input line 6.
+LaTeX Warning: Citation `meoMeasurementNeutronCapture' on page 65 undefined on input line 6.
 
-[67
+[65
 
 
 
@@ -1096,203 +1298,332 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--9
  []
 
 
-LaTeX Warning: Citation `martiEvaluationGadoliniumAction2020' on page 68 undefined on input line 17.
+LaTeX Warning: Reference `eq:IBD_equation' on page 66 undefined on input line 10.
 
-[68]
-<Figures/schematic.png, id=755, 926.2605pt x 428.19975pt>
+
+LaTeX Warning: Citation `martiEvaluationGadoliniumAction2020' on page 66 undefined on input line 17.
+
+
+LaTeX Warning: Reference `fig:NCQE_IBD' on page 66 undefined on input line 17.
+
+[66]
+<Figures/schematic.png, id=469, 926.2605pt x 428.19975pt>
 File: Figures/schematic.png Graphic file (type png)
 <use Figures/schematic.png>
 Package pdftex.def Info: Figures/schematic.png  used on input line 21.
 (pdftex.def)             Requested size: 345.0pt x 159.4899pt.
-<Figures/atm_recon_energy.png, id=757, 618.51076pt x 152.9715pt>
+
+
+LaTeX Warning: Reference `fig:atm_nu_energy' on page 67 undefined on input line 27.
+
+<Figures/atm_recon_energy.png, id=470, 618.51076pt x 152.9715pt>
 File: Figures/atm_recon_energy.png Graphic file (type png)
 <use Figures/atm_recon_energy.png>
 Package pdftex.def Info: Figures/atm_recon_energy.png  used on input line 30.
 (pdftex.def)             Requested size: 345.0pt x 85.32732pt.
 
+LaTeX Warning: Citation `martiEvaluationGadoliniumAction2020' on page 67 undefined on input line 31.
 
-LaTeX Warning: Citation `martiEvaluationGadoliniumAction2020' on page 69 undefined on input line 31.
+
+LaTeX Warning: Citation `martiEvaluationGadoliniumAction2020' on page 67 undefined on input line 31.
+
+[67 <./Figures/schematic.PNG>]
+
+LaTeX Warning: Reference `fig:atm_nu_energy' on page 68 undefined on input line 36.
 
 
-LaTeX Warning: Citation `martiEvaluationGadoliniumAction2020' on page 69 undefined on input line 31.
+LaTeX Warning: Reference `fig:EGADS_PMT' on page 68 undefined on input line 42.
 
-[69 <./Figures/schematic.PNG>]
 
-LaTeX Warning: Citation `martiEvaluationGadoliniumAction2020' on page 70 undefined on input line 42.
+LaTeX Warning: Citation `martiEvaluationGadoliniumAction2020' on page 68 undefined on input line 42.
 
-[70 <./Figures/atm_recon_energy.png>]
-<Figures/egads_pmt_map.png, id=772, 688.974pt x 348.70274pt>
+[68 <./Figures/atm_recon_energy.png>]
+<Figures/egads_pmt_map.png, id=485, 688.974pt x 348.70274pt>
 File: Figures/egads_pmt_map.png Graphic file (type png)
 <use Figures/egads_pmt_map.png>
 Package pdftex.def Info: Figures/egads_pmt_map.png  used on input line 45.
 (pdftex.def)             Requested size: 345.0pt x 174.61165pt.
 
 
-LaTeX Warning: Citation `martiEvaluationGadoliniumAction2020' on page 71 undefined on input line 46.
+LaTeX Warning: Citation `martiEvaluationGadoliniumAction2020' on page 69 undefined on input line 46.
 
 
-LaTeX Warning: Citation `martiEvaluationGadoliniumAction2020' on page 71 undefined on input line 46.
+LaTeX Warning: Citation `martiEvaluationGadoliniumAction2020' on page 69 undefined on input line 46.
 
-[71 <./Figures/egads_pmt_map.PNG>]
-<Figures/egads_ambe.png, id=782, 511.31026pt x 189.1065pt>
+
+LaTeX Warning: Reference `eq:ambe_decay' on page 69 undefined on input line 50.
+
+[69 <./Figures/egads_pmt_map.PNG>]
+
+LaTeX Warning: Reference `fig:EGADS_ambe_capture' on page 70 undefined on input line 60.
+
+<Figures/egads_ambe.png, id=492, 511.31026pt x 189.1065pt>
 File: Figures/egads_ambe.png Graphic file (type png)
 <use Figures/egads_ambe.png>
 Package pdftex.def Info: Figures/egads_ambe.png  used on input line 63.
 (pdftex.def)             Requested size: 345.0pt x 127.60387pt.
-<Figures/egads_concentration.png, id=784, 508.299pt x 301.72725pt>
+
+LaTeX Warning: Reference `fig:egads_transparency' on page 70 undefined on input line 68.
+
+<Figures/egads_concentration.png, id=493, 508.299pt x 301.72725pt>
 File: Figures/egads_concentration.png Graphic file (type png)
 <use Figures/egads_concentration.png>
 Package pdftex.def Info: Figures/egads_concentration.png  used on input line 71.
 (pdftex.def)             Requested size: 345.0pt x 204.79887pt.
 
+LaTeX Warning: Citation `martiEvaluationGadoliniumAction2020' on page 70 undefined on input line 72.
 
-LaTeX Warning: Citation `martiEvaluationGadoliniumAction2020' on page 72 undefined on input line 72.
 
+LaTeX Warning: Citation `martiEvaluationGadoliniumAction2020' on page 70 undefined on input line 72.
 
-LaTeX Warning: Citation `martiEvaluationGadoliniumAction2020' on page 72 undefined on input line 72.
+[70 <./Figures/egads_ambe.PNG>] [71 <./Figures/egads_concentration.PNG>]
 
-[72 <./Figures/egads_ambe.PNG>] [73 <./Figures/egads_concentration.PNG>]
-<Figures/skgd_water_system.png, id=799, 648.62325pt x 516.7305pt>
+LaTeX Warning: Reference `fig:skgd_water_system' on page 72 undefined on input line 84.
+
+<Figures/skgd_water_system.png, id=508, 648.62325pt x 516.7305pt>
 File: Figures/skgd_water_system.png Graphic file (type png)
 <use Figures/skgd_water_system.png>
 Package pdftex.def Info: Figures/skgd_water_system.png  used on input line 89.
 (pdftex.def)             Requested size: 345.0pt x 274.85144pt.
- [74]
-<Figures/gd_pipes.png, id=807, 475.7775pt x 336.0555pt>
+[72]
+
+LaTeX Warning: Reference `fig:gd_pipes' on page 73 undefined on input line 96.
+
+<Figures/gd_pipes.png, id=515, 475.7775pt x 336.0555pt>
 File: Figures/gd_pipes.png Graphic file (type png)
 <use Figures/gd_pipes.png>
 Package pdftex.def Info: Figures/gd_pipes.png  used on input line 100.
 (pdftex.def)             Requested size: 345.0pt x 243.69296pt.
- [75 <./Figures/skgd_water_system.PNG>] [76 <./Figures/gd_pipes.png>]
-<Figures/gdloadinghistory.png, id=823, 379.4175pt x 287.8755pt>
+[73 <./Figures/skgd_water_system.PNG>]
+
+LaTeX Warning: Reference `gdpowderradiation' on page 74 undefined on input line 108.
+
+[74 <./Figures/gd_pipes.png>]
+<Figures/gdloadinghistory.png, id=530, 379.4175pt x 287.8755pt>
 File: Figures/gdloadinghistory.png Graphic file (type png)
 <use Figures/gdloadinghistory.png>
 Package pdftex.def Info: Figures/gdloadinghistory.png  used on input line 131.
 (pdftex.def)             Requested size: 345.0pt x 261.76505pt.
 
-Overfull \hbox (1.27844pt too wide) in paragraph at lines 138--142
-[]\OT1/cmr/m/n/10 Figure [][]6.8[][] shows the loaded mass of gadolin-ium pow-der in Super-Kamiokande
- []
+
+LaTeX Warning: Reference `fig:gdloadinghistory' on page 75 undefined on input line 138.
+
+
+LaTeX Warning: Reference `fig:gdattenuationlength' on page 75 undefined on input line 138.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 138--142
 
  []
 
-[77 <./Figures/gdloadinghistory.PNG>]
-<Figures/attenuation_length_gd.png, id=832, 418.56375pt x 228.25275pt>
+[75 <./Figures/gdloadinghistory.PNG>]
+<Figures/attenuation_length_gd.png, id=538, 418.56375pt x 228.25275pt>
 File: Figures/attenuation_length_gd.png Graphic file (type png)
 <use Figures/attenuation_length_gd.png>
 Package pdftex.def Info: Figures/attenuation_length_gd.png  used on input line 144.
 (pdftex.def)             Requested size: 345.0pt x 188.13669pt.
 
+
+LaTeX Warning: Reference `fig:gdconductivity' on page 76 undefined on input line 151.
+
+
+LaTeX Warning: Reference `fig:gdconcentration' on page 76 undefined on input line 151.
+
+
 Overfull \hbox (18.50063pt too wide) in paragraph at lines 151--152
 []\OT1/cmr/m/n/10 There is also great im-por-tance in mon-i-tor-ing the con-cen-tra-tion of the $[][] [][] \OMS/cmsy/m/n/10 ^^A
  []
 
-[78 <./Figures/attenuation_length_gd.PNG>]
-<Figures/gd_conductivity.png, id=842, 476.37975pt x 293.29575pt>
+[76 <./Figures/attenuation_length_gd.PNG>]
+<Figures/gd_conductivity.png, id=545, 476.37975pt x 293.29575pt>
 File: Figures/gd_conductivity.png Graphic file (type png)
 <use Figures/gd_conductivity.png>
 Package pdftex.def Info: Figures/gd_conductivity.png  used on input line 155.
 (pdftex.def)             Requested size: 345.0pt x 212.40794pt.
- [79]
-<Figures/gdconcentration.png, id=849, 486.618pt x 249.93375pt>
+ [77]
+<Figures/gdconcentration.png, id=550, 486.618pt x 249.93375pt>
 File: Figures/gdconcentration.png Graphic file (type png)
 <use Figures/gdconcentration.png>
 Package pdftex.def Info: Figures/gdconcentration.png  used on input line 162.
 (pdftex.def)             Requested size: 345.0pt x 177.2025pt.
- [80 <./Figures/gd_conductivity.png> <./Figures/gdconcentration.PNG>]
-<Figures/ambe_time.png, id=858, 314.3745pt x 219.82124pt>
+
+
+LaTeX Warning: Reference `eq:ambe_decay' on page 78 undefined on input line 167.
+
+[78 <./Figures/gd_conductivity.png> <./Figures/gdconcentration.PNG>]
+
+LaTeX Warning: Reference `fig:ambe_time' on page 79 undefined on input line 169.
+
+<Figures/ambe_time.png, id=560, 314.3745pt x 219.82124pt>
 File: Figures/ambe_time.png Graphic file (type png)
 <use Figures/ambe_time.png>
 Package pdftex.def Info: Figures/ambe_time.png  used on input line 173.
 (pdftex.def)             Requested size: 345.0pt x 241.25737pt.
- [81]
+[79]
 
-LaTeX Warning: Citation `abeFirstGadoliniumLoading2021' on page 82 undefined on input line 178.
+LaTeX Warning: Reference `fig:capturetime_gdconc' on page 80 undefined on input line 178.
 
-<Figures/capturetime_gdconc.png, id=866, 330.63525pt x 225.2415pt>
+
+LaTeX Warning: Reference `fig:ambe_time' on page 80 undefined on input line 178.
+
+
+LaTeX Warning: Citation `abeFirstGadoliniumLoading2021' on page 80 undefined on input line 178.
+
+<Figures/capturetime_gdconc.png, id=565, 330.63525pt x 225.2415pt>
 File: Figures/capturetime_gdconc.png Graphic file (type png)
 <use Figures/capturetime_gdconc.png>
 Package pdftex.def Info: Figures/capturetime_gdconc.png  used on input line 181.
 (pdftex.def)             Requested size: 345.0pt x 235.03267pt.
-[82 <./Figures/ambe_time.PNG>]) [83 <./Figures/capturetime_gdconc.PNG>]
+[80 <./Figures/ambe_time.PNG>]) [81 <./Figures/capturetime_gdconc.PNG>]
 \openout2 = `Chapters/chapter_ncqe-gd.aux'.
 
  (./Chapters/chapter_ncqe-gd.tex
 Chapter 7.
 
-LaTeX Warning: Reference `table:software' on page 84 undefined on input line 7.
-
-[84
+LaTeX Warning: Reference `table:software' on page 82 undefined on input line 7.
 
 
+LaTeX Warning: Citation `vladisavljevic_constraining_2018' on page 82 undefined on input line 27.
+
+[82
 
 
-] [85]
-<Figures/ncqebenharspectral.png, id=893, 445.665pt x 398.6895pt>
+
+
+]
+
+LaTeX Warning: Reference `eq:neutrinonuc' on page 83 undefined on input line 31.
+
+[83]
+
+LaTeX Warning: Citation `benhar_electron-_2005' on page 84 undefined on input line 38.
+
+<Figures/ncqebenharspectral.png, id=591, 445.665pt x 398.6895pt>
 File: Figures/ncqebenharspectral.png Graphic file (type png)
 <use Figures/ncqebenharspectral.png>
 Package pdftex.def Info: Figures/ncqebenharspectral.png  used on input line 41.
 (pdftex.def)             Requested size: 345.0pt x 308.6344pt.
 
+LaTeX Warning: Reference `ncqebenharspectral' on page 84 undefined on input line 46.
 
-LaTeX Warning: Reference `ncqebenharspectral' on page 86 undefined on input line 46.
+
+LaTeX Warning: Reference `fig:ncqebenharspectral' on page 84 undefined on input line 46.
 
 
-LaTeX Warning: Reference `table:transitionprob' on page 86 undefined on input line 46.
+LaTeX Warning: Reference `table:transitionprob' on page 84 undefined on input line 46.
 
-[86] [87 <./Figures/ncqebenharspectral.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
+[84] [85 <./Figures/ncqebenharspectral.PNG>]
+
+LaTeX Warning: Reference `table:gdcapturexsec' on page 86 undefined on input line 63.
+
+
+LaTeX Warning: Reference `table:gdtable' on page 86 undefined on input line 82.
+
+[86]
+
+LaTeX Warning: Reference `eq:gdisotopecaptureeq' on page 87 undefined on input line 82.
+
+
+./Chapters/chapter_ncqe-gd.tex:87: Package amsmath Error: \begin{gathered} allowed only in math mode.
+
+See the amsmath package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.87     \mathrm
+                {n}+{ }^{155} \mathrm{Gd} \rightarrow{ }^{156} \mathrm{Gd}^{...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./Chapters/chapter_ncqe-gd.tex:87: Missing $ inserted.
+<inserted text> 
+                $
+l.87     \mathrm
+                {n}+{ }^{155} \mathrm{Gd} \rightarrow{ }^{156} \mathrm{Gd}^{...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapters/chapter_ncqe-gd.tex:89: Missing $ inserted.
+<inserted text> 
+                $
+l.89     \end{gathered}
+                       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[87]
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
 
 [88]
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
+Underfull \hbox (badness 10000) in paragraph at lines 116--119
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+Underfull \hbox (badness 10000) in paragraph at lines 120--123
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--86
+Underfull \hbox (badness 10000) in paragraph at lines 124--127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--90
+LaTeX Warning: Reference `ovaq' on page 89 undefined on input line 129.
+
+
+LaTeX Warning: Reference `vertex_goodness' on page 89 undefined on input line 136.
+
+[89]
+
+LaTeX Warning: Reference `direction_goodness' on page 90 undefined on input line 143.
+
+[90]
+Underfull \hbox (badness 10000) in paragraph at lines 173--177
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--94
+Underfull \hbox (badness 10000) in paragraph at lines 179--183
 
  []
 
-[89] [90]
-Underfull \hbox (badness 10000) in paragraph at lines 140--144
+[91]
+
+LaTeX Warning: Reference `llrca' on page 92 undefined on input line 211.
+
+
+LaTeX Warning: Reference `beta' on page 92 undefined on input line 222.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--237
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 146--150
-
- []
-
-[91] [92]
-Underfull \hbox (badness 10000) in paragraph at lines 200--204
-
- []
-
-) [93]
+[92]) [93]
 \openout2 = `Chapters/chapter_syst_uncertainty.aux'.
 
  (./Chapters/chapter_syst_uncertainty.tex
 Chapter 8.
+
+LaTeX Warning: Reference `multiplicity' on page 94 undefined on input line 18.
+
 [94
 
 
@@ -1302,6 +1633,9 @@ Chapter 8.
 Underfull \hbox (badness 10000) in paragraph at lines 20--22
 
  []
+
+
+LaTeX Warning: Reference `tageffdiscrep' on page 95 undefined on input line 29.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 25--31
@@ -1314,30 +1648,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--36
  []
 
 
+LaTeX Warning: Reference `mcregengauss' on page 96 undefined on input line 39.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 37--41
 
  []
 
+
+LaTeX Warning: Reference `fig:frac_beam_flux_uncertainty' on page 96 undefined on input line 54.
+
 [96]
+
+LaTeX Warning: Reference `nubeamfluxerror' on page 97 undefined on input line 57.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 57--59
 
  []
 
 
+LaTeX Warning: Reference `fig:fluxuncertainty' on page 97 undefined on input line 64.
+
+
 LaTeX Warning: Reference `table:systuncertaintytable' on page 97 undefined on input line 64.
+
+
+LaTeX Warning: Reference `summingfluxuncertainty' on page 97 undefined on input line 64.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 62--66
 
  []
 
-<Figures/frac_beam_flux_uncertainty.png, id=975, 527.571pt x 180.07275pt>
+<Figures/frac_beam_flux_uncertainty.png, id=679, 527.571pt x 180.07275pt>
 File: Figures/frac_beam_flux_uncertainty.png Graphic file (type png)
 <use Figures/frac_beam_flux_uncertainty.png>
 Package pdftex.def Info: Figures/frac_beam_flux_uncertainty.png  used on input line 68.
 (pdftex.def)             Requested size: 345.0pt x 117.75755pt.
 [97 <./Figures/frac_beam_flux_uncertainty.PNG>]
-<Figures/flux_uncertainty.png, id=985, 885.90974pt x 522.15076pt>
+<Figures/flux_uncertainty.png, id=688, 885.90974pt x 522.15076pt>
 File: Figures/flux_uncertainty.png Graphic file (type png)
 <use Figures/flux_uncertainty.png>
 Package pdftex.def Info: Figures/flux_uncertainty.png  used on input line 80.
@@ -1346,6 +1696,9 @@ Package pdftex.def Info: Figures/flux_uncertainty.png  used on input line 80.
 Overfull \hbox (9.35762pt too wide) in paragraph at lines 80--81
 [][] 
  []
+
+
+LaTeX Warning: Reference `xsectable' on page 98 undefined on input line 87.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 87--88
@@ -1358,12 +1711,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--91
  []
 
 [98 <./Figures/flux_uncertainty.png>]
+
+LaTeX Warning: Reference `xsectageff' on page 99 undefined on input line 92.
+
+
+LaTeX Warning: Reference `fig:xsecuncertainty' on page 99 undefined on input line 99.
+
+
 Overfull \hbox (82.81589pt too wide) in paragraph at lines 103--121
  []$[]$ 
  []
 
 [99]
-<Figures/xsec_uncertainty.png, id=1001, 843.15pt x 532.389pt>
+<Figures/xsec_uncertainty.png, id=702, 843.15pt x 532.389pt>
 File: Figures/xsec_uncertainty.png Graphic file (type png)
 <use Figures/xsec_uncertainty.png>
 Package pdftex.def Info: Figures/xsec_uncertainty.png  used on input line 127.
@@ -1373,24 +1733,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--136
 
  []
 
-[100 <./Figures/xsec_uncertainty.PNG>] [101]
-<Figures/fsisi_uncertainty.png, id=1018, 860.61525pt x 496.254pt>
+[100 <./Figures/xsec_uncertainty.PNG>]
+
+LaTeX Warning: Reference `fsiparameters' on page 101 undefined on input line 145.
+
+[101]
+
+LaTeX Warning: Reference `fsimodelparameters' on page 102 undefined on input line 166.
+
+
+LaTeX Warning: Reference `fsisitageff' on page 102 undefined on input line 166.
+
+
+LaTeX Warning: Reference `fsimodelparameters' on page 102 undefined on input line 166.
+
+
+LaTeX Warning: Reference `fig:fsisiuncertainty' on page 102 undefined on input line 166.
+
+<Figures/fsisi_uncertainty.png, id=715, 860.61525pt x 496.254pt>
 File: Figures/fsisi_uncertainty.png Graphic file (type png)
 <use Figures/fsisi_uncertainty.png>
 Package pdftex.def Info: Figures/fsisi_uncertainty.png  used on input line 174.
 (pdftex.def)             Requested size: 344.24pt x 198.49808pt.
- [102]
+[102]
 Overfull \hbox (1.44499pt too wide) detected at line 206
 []
  []
 
 [103 <./Figures/fsisi_uncertainty.PNG>]
+
+LaTeX Warning: Reference `nucleonfsiuncertainties' on page 104 undefined on input line 213.
+
+
 Overfull \hbox (87.88977pt too wide) detected at line 226
 []
  []
 
 [104]
-<Figures/nucleonfsi_uncertainty.png, id=1041, 882.29625pt x 525.162pt>
+
+LaTeX Warning: Reference `nucleonfsiuncertainties' on page 105 undefined on input line 231.
+
+
+LaTeX Warning: Reference `nucleonfsitageff' on page 105 undefined on input line 231.
+
+
+LaTeX Warning: Reference `fig:nucleonfsiuncertainty' on page 105 undefined on input line 238.
+
+
+LaTeX Warning: Reference `nucleonfsiuncertainties' on page 105 undefined on input line 238.
+
+<Figures/nucleonfsi_uncertainty.png, id=735, 882.29625pt x 525.162pt>
 File: Figures/nucleonfsi_uncertainty.png Graphic file (type png)
 <use Figures/nucleonfsi_uncertainty.png>
 Package pdftex.def Info: Figures/nucleonfsi_uncertainty.png  used on input line 241.
@@ -1400,7 +1792,15 @@ Overfull \hbox (7.91225pt too wide) in paragraph at lines 241--242
 [][] 
  []
 
-[105] [106 <./Figures/nucleonfsi_uncertainty.PNG>]) [107]
+[105]
+
+LaTeX Warning: Reference `muoncap' on page 106 undefined on input line 248.
+
+[106 <./Figures/nucleonfsi_uncertainty.PNG>]
+
+LaTeX Warning: Reference `muoncaptaggingeff' on page 107 undefined on input line 260.
+
+) [107]
 \openout2 = `Chapters/chapter_conclusion.aux'.
 
  (./Chapters/chapter_conclusion.tex
@@ -1410,30 +1810,37 @@ Chapter 9.
 
 
 
-] (./thesis_frontend.bbl) [109
-
-
-
-] (./thesis_frontend.aux (./Chapters/chapter_introduction.aux) (./Chapters/chapter_neutrino-physics.aux) (./Chapters/chapter_t2k_detector.aux) (./Chapters/chapter_superk_detector.aux) (./Chapters/chapter_superk-calib.aux) (./Chapters/chapter_ukli-system.aux) (./Chapters/chapter_superkgd_upgrade.aux) (./Chapters/chapter_ncqe-gd.aux) (./Chapters/chapter_syst_uncertainty.aux) (./Chapters/chapter_conclusion.aux))
+]
+No file thesis_frontend.bbl.
+(./thesis_frontend.aux (./Chapters/chapter_introduction.aux) (./Chapters/chapter_neutrino-physics.aux) (./Chapters/chapter_t2k_detector.aux) (./Chapters/chapter_superk_detector.aux) (./Chapters/chapter_superk-calib.aux) (./Chapters/chapter_ukli-system.aux) (./Chapters/chapter_superkgd_upgrade.aux) (./Chapters/chapter_ncqe-gd.aux) (./Chapters/chapter_syst_uncertainty.aux) (./Chapters/chapter_conclusion.aux))
 
 LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `thesis_frontend.out' has not changed.
-(rerunfilecheck)             Checksum: 382C8DD02E097EA1CD5B9175B3B6E559;10438.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `thesis_frontend.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis_frontend.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  382C8DD02E097EA1CD5B9175B3B6E559;10438.
  ) 
 Here is how much of TeX's memory you used:
- 25896 strings out of 478233
- 508158 string characters out of 5847836
- 852563 words of memory out of 5000000
- 43284 multiletter control sequences out of 15000+600000
- 482897 words of font info for 78 fonts, out of 8000000 for 9000
+ 25815 strings out of 478233
+ 506285 string characters out of 5847836
+ 835704 words of memory out of 5000000
+ 43230 multiletter control sequences out of 15000+600000
+ 483828 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,15n,103p,2187b,429s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on thesis_frontend.pdf (110 pages, 4656998 bytes).
+Output written on thesis_frontend.pdf (109 pages, 4642513 bytes).
 PDF statistics:
- 1234 PDF objects out of 1440 (max. 8388607)
- 964 compressed objects within 10 object streams
- 282 named destinations out of 1000 (max. 500000)
- 644 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 922 PDF objects out of 1000 (max. 8388607)
+ 657 compressed objects within 7 object streams
+ 280 named destinations out of 1000 (max. 500000)
+ 268 words of extra memory for PDF output out of 10000 (max. 10000000)
 

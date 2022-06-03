@@ -60,8 +60,41 @@ $$
 
 \subsection{Detector response and interactions in the detector medium}
 
-Prior analyses to this used SKDETSIM (Super-Kamiokande Detector Simulator) to simulate the trajectories of particles through the water in Super-Kamiokande and output detector response MC. This analysis uses SKDETSIM-SKGd to propogate the particles
+Prior analyses to this used SKDETSIM (Super-Kamiokande Detector Simulator) to simulate the trajectories of particles through the water in Super-Kamiokande and output detector response MC. This analysis uses SKDETSIM-SKGd to propogate the particles, due to the requirement of needing gadolinium sulphate present in the simulation. The particular isotopes of gadolinium used in the simulation are $155_{Gd}$ and $157_{Gd}$ due to their excellent thermal neutron capture cross sections. Table \ref{table:gdcapturexsec} shows the relative abundance of various gadolinium isotopes inside natural gadolinium and their associated thermal neutron capture cross sections.
 
+\begin{table}
+$$
+\begin{array}{rcc}
+\hline \text { Isotope } & \text { Abundance }[\%] & \text { Cross-section[b] } \\
+\hline{ }^{152} \mathrm{Gd} & 0.200 & 735 \\
+{ }^{154} \mathrm{Gd} & 2.18 & 85 \\
+{ }^{155} \mathbf{G d} & \mathbf{1 4 . 8 0} & \mathbf{6 0 9 0 0} \\
+{ }^{156} \mathrm{Gd} & 20.47 & 1.8 \\
+{ }^{157} \mathbf{G d} \mathbf{d} & \mathbf{1 5 . 6 5} & \mathbf{2 5 4 0 0 0} \\
+{ }^{158} \mathrm{Gd} & 24.84 & 2.2 \\
+{ }^{160} \mathrm{Gd} & 21.86 & 1.4 \\
+\hline
+\end{array}
+$$
+\label{table:gdtable}
+\end{table}
+
+As can be seen in Table \ref{table:gdtable}, not only are $${ }^{155} \mathrm{Gd}$$ and $${ }^{157} \mathrm{Gd}$$ the most abundant isotopes, they also have extremely high neutron capture cross sections compared to the other isotopes. Equation \ref{eq:gdisotopecaptureeq} shows the neutron capture on both of these isotopes, and the energy of the subsequent gamma rays.
+
+\begin{equation}
+    $$
+    \begin{gathered}
+    \mathrm{n}+{ }^{155} \mathrm{Gd} \rightarrow{ }^{156} \mathrm{Gd}^{*} \rightarrow{ }^{156} \mathrm{Gd}+\gamma \text { rays }(8.536 \mathrm{MeV} \text { total }) \text {, and } \\
+    \mathrm{n}+{ }^{157} \mathrm{Gd} \rightarrow{ }^{158} \mathrm{Gd}^{*} \rightarrow{ }^{158} \mathrm{Gd}+\gamma \text { rays }(7.937 \mathrm{MeV} \text { total). }
+    \end{gathered}
+    $$
+\label{eq:gdisotopecaptureeq}    
+\end{equation}   
+
+
+
+
+It is important to therefore model the gamma ray emission spectra from both of these isotopes. The model used by SKDETSIM-SKGd is the ANNRI-Gd model. This uses gamma energy spectrum data from the germanium spectrometer at the ANNRI (Accurate Neutron Nucleus Reaction Measurement Instrument) experiment. This experiment uses the incoming pulsed neutron beam from the Japan Spallation Neutron Source (JSNS) at the Material and Life Science Experimental Facility (MLF) of J-PARC. After a 300 kW beam of protons from the JSNS facility hits a target of mercury and produces neutrons, this neutron beam hits an enriched $${ }^{155} \mathrm{Gd}$$ target or a $${ }^{nat} \mathrm{Gd}$$ film. The ANNRI spectrometer is placed 21.5 m away from the neUtron beam source.
 
 
 
