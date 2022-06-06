@@ -20,6 +20,8 @@ $$
 \hline
 \end{array}
 $$
+\caption{Software versions used in analysis}
+\label{table:software}
 \end{table}
 
 \subsection{Neutrino flux}
@@ -43,7 +45,7 @@ Here $\sigma_{p}$ and $\sigma_{n}$ are the neutrino-proton cross section and the
     \label{fig:ncqebenharspectral}
 \end{figure}
 
-The lowest rung of nucleons in Figure \ref{ncqebenharspectral} is the $s_{1/2}$, with $p_{3/2}$ above this level and $p_{1/2}$ above that. The protons in these rungs have removal energies of 12.1 MeV, 18.4 MeV and 42 MeV respectively, and due to neutron levels being more tightly bound, these have an extra removal of 3.24 MeV compared to their proton counterparts. The shell model is imperfect due to how it allocates the probablity of $16_{O}$ transitioning to the possible nucleon states. In the shell model, probabilities are allocated by counting the number of nucleons in each energy level and assigning probailities according to how many there are. In Figure \ref{fig:ncqebenharspectral} it can be seen that the $p_{3/2}$ state has double the number of nucleons compared to the $s_{1/2}$ model and therefore double the probability of transition is assigned for the $p_{3/2}$ state, and the probability of transitioning to any other state is assigned to be 0, because in the shell model they don't even exist. The Benhar Spectral Function model however is complex and is tuned using electron-nucleus scattering data. The model used in this analysis is a modified version of the Benhar Spectral Function model, where the case of other transition states is dealt with by merging the "others'' state into the $s_{1/2}$ state. Table \ref{table:transitionprob} gives the probabilities of transition to different states for different models. 
+The lowest rung of nucleons in Figure \ref{fig:ncqebenharspectral} is the $s_{1/2}$, with $p_{3/2}$ above this level and $p_{1/2}$ above that. The protons in these rungs have removal energies of 12.1 MeV, 18.4 MeV and 42 MeV respectively, and due to neutron levels being more tightly bound, these have an extra removal of 3.24 MeV compared to their proton counterparts. The shell model is imperfect due to how it allocates the probablity of $16_{O}$ transitioning to the possible nucleon states. In the shell model, probabilities are allocated by counting the number of nucleons in each energy level and assigning probailities according to how many there are. In Figure \ref{fig:ncqebenharspectral} it can be seen that the $p_{3/2}$ state has double the number of nucleons compared to the $s_{1/2}$ model and therefore double the probability of transition is assigned for the $p_{3/2}$ state, and the probability of transitioning to any other state is assigned to be 0, because in the shell model they don't even exist. The Benhar Spectral Function model however is complex and is tuned using electron-nucleus scattering data. The model used in this analysis is a modified version of the Benhar Spectral Function model, where the case of other transition states is dealt with by merging the "others'' state into the $s_{1/2}$ state. Table \ref{table:transitionprob} gives the probabilities of transition to different states for different models. 
 
 \begin{table}
 $$
@@ -55,12 +57,13 @@ $$
 \hline
 \end{array}
 $$
-\label{Transition probabilities for different models and states}
+\caption{Transition probabilities for different models and states}
+\label{table:transitionprob}
 \end{table}
 
 \subsection{Detector response and interactions in the detector medium}
 
-Prior analyses to this used SKDETSIM (Super-Kamiokande Detector Simulator) to simulate the trajectories of particles through the water in Super-Kamiokande and output detector response MC. This analysis uses SKDETSIM-SKGd to propogate the particles, due to the requirement of needing gadolinium sulphate present in the simulation. The particular isotopes of gadolinium used in the simulation are $155_{Gd}$ and $157_{Gd}$ due to their excellent thermal neutron capture cross sections. Table \ref{table:gdcapturexsec} shows the relative abundance of various gadolinium isotopes inside natural gadolinium and their associated thermal neutron capture cross sections.
+Prior analyses to this used SKDETSIM (Super-Kamiokande Detector Simulator) to simulate the trajectories of particles through the water in Super-Kamiokande and output detector response MC. This analysis uses SKDETSIM-SKGd to propogate the particles, due to the requirement of needing gadolinium sulphate present in the simulation. The particular isotopes of gadolinium used in the simulation are $155_{Gd}$ and $157_{Gd}$ due to their excellent thermal neutron capture cross sections. Table \ref{table:gdtable} shows the relative abundance of various gadolinium isotopes inside natural gadolinium and their associated thermal neutron capture cross sections.
 
 \begin{table}
 $$
@@ -68,34 +71,63 @@ $$
 \hline \text { Isotope } & \text { Abundance }[\%] & \text { Cross-section[b] } \\
 \hline{ }^{152} \mathrm{Gd} & 0.200 & 735 \\
 { }^{154} \mathrm{Gd} & 2.18 & 85 \\
-{ }^{155} \mathbf{G d} & \mathbf{1 4 . 8 0} & \mathbf{6 0 9 0 0} \\
+{ }^{155} \mathbf{Gd} & \mathbf{1 4 . 8 0} & \mathbf{6 0 9 0 0} \\
 { }^{156} \mathrm{Gd} & 20.47 & 1.8 \\
-{ }^{157} \mathbf{G d} \mathbf{d} & \mathbf{1 5 . 6 5} & \mathbf{2 5 4 0 0 0} \\
+{ }^{157} \mathbf{Gd} \mathbf{d} & \mathbf{1 5 . 6 5} & \mathbf{2 5 4 0 0 0} \\
 { }^{158} \mathrm{Gd} & 24.84 & 2.2 \\
 { }^{160} \mathrm{Gd} & 21.86 & 1.4 \\
 \hline
 \end{array}
 $$
+\caption{Abundance and thermal neutron capture cross section of various isotopes of Gadolinium}
 \label{table:gdtable}
 \end{table}
 
-As can be seen in Table \ref{table:gdtable}, not only are $${ }^{155} \mathrm{Gd}$$ and $${ }^{157} \mathrm{Gd}$$ the most abundant isotopes, they also have extremely high neutron capture cross sections compared to the other isotopes. Equation \ref{eq:gdisotopecaptureeq} shows the neutron capture on both of these isotopes, and the energy of the subsequent gamma rays.
+As can be seen in Table \ref{table:gdtable}, not only are ${ }^{155} \mathrm{Gd}$ and ${ }^{157} \mathrm{Gd}$ the most abundant isotopes, they also have extremely high neutron capture cross sections compared to the other isotopes. Equation \ref{eq:gdisotopecaptureeq} shows the neutron capture on both of these isotopes, and the energy of the subsequent gamma rays.
 
 \begin{equation}
-    $$
-    \begin{gathered}
-    \mathrm{n}+{ }^{155} \mathrm{Gd} \rightarrow{ }^{156} \mathrm{Gd}^{*} \rightarrow{ }^{156} \mathrm{Gd}+\gamma \text { rays }(8.536 \mathrm{MeV} \text { total }) \text {, and } \\
-    \mathrm{n}+{ }^{157} \mathrm{Gd} \rightarrow{ }^{158} \mathrm{Gd}^{*} \rightarrow{ }^{158} \mathrm{Gd}+\gamma \text { rays }(7.937 \mathrm{MeV} \text { total). }
-    \end{gathered}
-    $$
+\begin{split}
+ {n}+{ }^{155} \mathrm{Gd} \rightarrow{ }^{156} \mathrm{Gd}^{*} \rightarrow{ }^{156} \mathrm{Gd}+\gamma  (8.536 MeV)\\
+ {n}+{ }^{157} \mathrm{Gd} \rightarrow{ }^{158} \mathrm{Gd}^{*} \rightarrow{ }^{158} \mathrm{Gd}+\gamma  (7.937 MeV)
+\end{split}
 \label{eq:gdisotopecaptureeq}    
-\end{equation}   
+\end{equation}
 
 
 
 
-It is important to therefore model the gamma ray emission spectra from both of these isotopes. The model used by SKDETSIM-SKGd is the ANNRI-Gd model. This uses gamma energy spectrum data from the germanium spectrometer at the ANNRI (Accurate Neutron Nucleus Reaction Measurement Instrument) experiment. This experiment uses the incoming pulsed neutron beam from the Japan Spallation Neutron Source (JSNS) at the Material and Life Science Experimental Facility (MLF) of J-PARC. After a 300 kW beam of protons from the JSNS facility hits a target of mercury and produces neutrons, this neutron beam hits an enriched $${ }^{155} \mathrm{Gd}$$ target or a $${ }^{nat} \mathrm{Gd}$$ film. The ANNRI spectrometer is placed 21.5 m away from the neUtron beam source.
+It is important to therefore model the gamma ray emission spectra from both of these isotopes. The model used by SKDETSIM-SKGd is the ANNRI-Gd model. This uses gamma energy spectrum data from the germanium spectrometer at the ANNRI (Accurate Neutron Nucleus Reaction Measurement Instrument) experiment. This experiment uses the incoming pulsed neutron beam from the Japan Spallation Neutron Source (JSNS) at the Material and Life Science Experimental Facility (MLF) of J-PARC. After a 300 kW beam of protons from the JSNS facility hits a target of mercury and produces neutrons, this neutron beam hits an enriched ${ }^{155} \mathrm{Gd}$ target or a ${ }^{nat} \mathrm{Gd}$ film. The ANNRI spectrometer is placed 21.5 m away from the neutron beam source, with two cluster detectors on either side of the neutron capture target material, which is 13.4 cm away from each cluster detector. Surrounding the target, there are also 8 co-axial germanium detectors. The schematic for the ANNRI-Gd experiment is shown in Figure \ref{fig:annrigd}.
 
+\begin{figure}
+
+        \includegraphics[width=\textwidth]{Figures/annrigd.png}
+        \caption{Schematic of the ANNRI Ge spectrometer (dimensions in mm). The beam pipe along with one of the Ge cluster detectors (light blue) is shown. The shaded purple area are the anti-coincidence shields made of bismuth-germanium-oxide (BGO) crystals.}
+        \label{fig:annrigd}
+    
+\end{figure}
+
+By defining how many Germanium crystals were hit and how many neighbouring crystal recieved gamma ray hits, values of H (hit number) and M (multiplicity) can be assigned in order to classify the events. After selecting for neutron energy and subtracting the background, the events remaining were seperated into samples based on their H and M vales. Figure \ref{fig:annrigdenergyspectra} shows the energy spectra for different multiplicity values (left) and hit values (right) from one of the germanium crystals in the ANNRI spectrometer. 
+
+\begin{figure}
+\includegraphics[width=\textwidth]{Figures/annrigdenergyspectra.png}
+\caption{Energy spectra for thermal neutron capture on ${ }^{157} \mathrm{Gd}$ energy spectra for different multiplicity values (left) and hit values (right) from one of the germanium crystals in the ANNRI spectrometer.}
+\label{fig:annrigdenergyspectra}
+\end{figure}
+
+One of the key differences between the default Geant4 model for thermal neutron capture on Gadolinium and the ANNRI-Gd model is how it conserves energy: the photon evaporation model conserves only the final sum of energy for the captured event, but performs poorly when modelling the gamma-ray energy on an individual event by event basis. One way the ANNRI-Gd model combats this is by seperately describing the continuous and discrete peaks in Figure \ref{fig:annrigdenergyspectra}, where the discrete peaks are shown as spikes below 1500 keV and above 4500 keV. These come from the different ways in which gadolinium de-excites after thermal neutron capture. The continuous spectrum in the plots in Figure \ref{fig:annrigdenergyspectra} show the de-excitation of ${ }^{158} \mathrm{Gd}^{*}$ in multiple steps, producing multiple low energy gamma rays, which accounts for about 93\% of the spectrum. The discrete spikes in the spectra come from a two-step cascade, which produces a high energy gamma ray instead, accounting for the remaining 7\% of the spectrum.
+Figure \ref{fig:continousdiscrete} shows the continuous and discrete components of the ANNRI-Gd MC, along with data from the experiment. Figure \ref{fig:annrigdmodelcompare} shows ratio plot of data and MC for the GLG4sim model, the default Geant4 photon evaporation model and the ANNRI-Gd model: here it is clear the ANNRI-Gd model fits the data better than the other two models, especially at energies above 3500 keV. 
+
+\begin{figure}
+\includegraphics[width=\textwidth]{Figures/continousdiscrete.png}
+\caption{Energy spectra for the ANNRI-Gd model broken down into its continous and discrete components along with data from the ANNRI-Gd experiment.}
+\label{fig:continousdiscrete}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=\textwidth]{Figures/annrigdmodelcompare.png}
+\caption{Comparison between neutron capture MC models and data.}
+\label{fig:annrigdmodelcompare}
+\end{figure}
 
 
 \section{Event Reconstruction}
