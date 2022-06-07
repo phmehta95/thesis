@@ -1310,10 +1310,19 @@ INPUT ./Figures/relativegain.PNG
 INPUT Figures/relativegain.PNG
 INPUT ./Figures/relativegain.PNG
 INPUT ./Figures/relativegain.PNG
+INPUT ./Figures/nickel_source.PNG
+INPUT ./Figures/nickel_source.PNG
+INPUT Figures/nickel_source.PNG
+INPUT ./Figures/nickel_source.PNG
+INPUT ./Figures/nickel_source.PNG
 INPUT ./Figures/singlepe.PNG
 INPUT ./Figures/singlepe.PNG
 INPUT Figures/singlepe.PNG
 INPUT ./Figures/singlepe.PNG
+INPUT ./Figures/singlepe.PNG
+INPUT ./Figures/singlepe.PNG
+INPUT ./Figures/singlepe.PNG
+INPUT Figures/singlepe.PNG
 INPUT ./Figures/singlepe.PNG
 INPUT ./Figures/timecalibsystem.PNG
 INPUT ./Figures/timecalibsystem.PNG
@@ -1567,6 +1576,7 @@ INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
+INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb

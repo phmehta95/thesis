@@ -1,14 +1,11 @@
 \chapter{Super-Kamiokande Detector Calibration}
 \label{chp:superkcalib}
 
-\section{Motivation behind calibration methods}
-In order to achieve optimal event reconstruction for physics analyses, calibration of the Super-Kamiokande detector is crucial. For example, when constructing Monte Carlo simulations of certain processes in the detector, facets of the experiment such as properties of the water, photomultiplier tube response and the inner detector and outer detector electronics are all calibrated so that input parameters for the Monte Carlo simulations can be obtained. This chapter will concern itself with the inner and outer detector calibration, including photomultiplier tube and electronics calibration, PMT gain calibration, quantum efficiency determination and hit timing and charge information calibration. 
+In order to achieve optimal event reconstruction for physics analyses, calibration of the Super-Kamiokande detector is crucial. For example, when conducting Monte Carlo simulations of certain processes in the detector, facets of the experiment such as properties of the water, photomultiplier tube response and the inner detector and outer detector electronics are all calibrated so that input parameters for the Monte Carlo simulations can be obtained. This chapter will concern itself with the inner and outer detector calibration, including photomultiplier tube and electronics calibration, PMT gain calibration, quantum efficiency determination and hit timing and charge information calibration. 
 
-\subsection{Inner detector calibration}
+\section{Inner detector calibration}
 
-
-
-\subsubsection{High-voltage setting calibration}
+\subsection{PMT High-voltage setting calibration}
 
 The high-voltage (HV) setting for all photomultiplier tubes need to adjusted individually so all the PMTs produce the same amount of charge for a certain light intensity recieved by them. Placing a light source which distributes light isotropically in the centre of the inner detetector to achieve this calibration means that there is no position in the detector from which the inner detector PMTs are equidistant, so each PMT will not recieve the same amount of light from the light source. To avoid this problem, a set of 420 pre-calibrated PMTs inside the detector were used, seperated into groups relating to their geometrical distance from the HV calibration light source (see Figure \ref{fig:hvcalib} for their location with respect to the other photomultiplier tubes.)
 
@@ -21,9 +18,9 @@ The high-voltage (HV) setting for all photomultiplier tubes need to adjusted ind
 
 
 
-\subsubsection{Relative gain calibration}
+\subsection{Relative gain calibration}
 
-Understanding the timing information from the hit photomultiplier tubes depends on how well the charge from the hit PMT is calculated. To conceive charge calibration, a quantity called photomultiplier tube ''gain" must be calculated. ''Gain" is the conversion factor from the number of photoelectrons produced by the hit PMT and charge, and calibration of this quantity is what interpretation of very high energy events (TeV scale) rely on. Quantum efficiency is another quantity used for the calibration of low energy physics events (such as detection of solar neutrinos), due to them consisting of single photoelectron (single-pe) hits: it is the ratio of the number of the number of photoelectrons emitted by the cathode to the number of photons that are incident on the photomultiplier tube window. Quantum efficiency is particularly useful for low energy events because the number of photons arriving at the photomultiplier tube window is small. Super-Kamiokande calibration converts this measure of quantum efficiency into ''QE" by multiplying the quantum efficiency by the collection efficiency of the photoelectrons onto the first dynode inside the PMT \cite{abe_calibration_2014}. Knowing the gain and QE of each PMT in the detector is important in order to accurately measure the output charge from each individual PMT, which is done by first calculating the relative gain difference among all PMTs and then work out the average gain difference over all PMTs in the detector. After this, the variation away from this average gain value can be calculated for each seperate inner detector photomultiplier tube, and the gain value for each can be extracted. 
+Understanding the timing information from the hit photomultiplier tubes depends on how well the charge from the hit PMT is calculated. To conceive charge calibration, a quantity called photomultiplier tube ''gain" must be calculated. ''Gain" is the conversion factor from the number of photoelectrons produced by the hit PMT and charge, and calibration of this quantity is what interpretation of very high energy events (TeV scale) rely on. Quantum efficiency is another quantity used for the calibration of low energy physics events (such as detection of solar neutrinos), due to them consisting of single photoelectron (single-pe) hits: it is the ratio of the number of the number of photoelectrons emitted by the cathode to the number of photons that are incident on the photomultiplier tube window. Super-Kamiokande calibration converts this measure of quantum efficiency into ''QE" by multiplying the quantum efficiency by the collection efficiency of the photoelectrons onto the first dynode inside the PMT \cite{abe_calibration_2014}. Knowing the gain and QE of each PMT in the detector is important in order to accurately measure the output charge from each individual PMT, which is done by first calculating the relative gain difference among all PMTs and then work out the average gain difference over all PMTs in the detector. After this, the variation away from this average gain value can be calculated for each seperate inner detector photomultiplier tube, and the gain value for each can be extracted. 
 
 The relative gain difference is calculated by two measurements using a light source to produce constant-intensity flashes. The first measurement involves using the light source to produce high-intensity flashes so that all photomultiplier tubes in the detctor gets a certain number of photons, and the second measurement has the light source produce low-intensity flashes so that only a few PMTs are hit. The first measurement provides an average charge value ($Q_{o b s}(i)$) for each inner detector PMT, while the second measurement gives single photoelectron hits, providing a number of times ($N_{o b s}(i)$) that a single PMT gives a charge which is greater than the PMT threshold value. Equation \ref{eq:gaineq} shows how these two values are calculated from the the high and low intensity flash values ($I$), the acceptance of the PMT(i) ($a(i)$), the QE value of the PMT ($\varepsilon_{q e}$) and the PMT gain $G$. 
 
@@ -41,24 +38,41 @@ Therefore, by simply dividing these two values of $Q_{o b s}(i)$ and ($N_{o b s}
     \label{fig:relativegain}
 \end{figure}
 
-\subsubsection{Absolute gain calibration}
+\subsection{Absolute gain calibration}
 
-In order to calculate absolute gain, the single photoelectron distrubution needs to be measured, this is because absolute gain relates to the observed charge in the photomultplier tube with the number of photoelectrons produced. A nickel source (which includes a Californium-252 which decays to provides a source of neutrons) emits gamma rays in an isotropic distribution after neutron capture. This nickel source is placed in the centre of the inner detector and the gamma rays produced are detetced by all the inner detector PMTs. On average the observed number of photoelectrons is 0.004 per event per PMT, meaning that single p.e. hits are observed for more than 99\% of the hits. The observed charge distribution of all the hits from this nickel source is used to give the average charge, which is used as a conversion factor from a charge measurement in picoColoumbs and single photo-electrons. The factor is 2.658pC per photoelectron (calculated at the beginning of SK-IV) which is then used to extract the single-p.e. distribution, shown in Figure \ref{fig:singlepe}.
+In order to calculate absolute gain, the single photoelectron distrubution needs to be measured, this is because absolute gain relates to the observed charge in the photomultplier tube with the number of photoelectrons produced. A nickel-californium source (shown in Figure \ref{fig:nickel_source}) is used for this measurement due to it releasing gamma rays isotropically. Thermal neutron capture on nickel is used as the gamma ray source, with the neutrons provided by the spontaneous fission of ${ }^{252} \mathrm{Cf}$. This nickel source is placed in the centre of the inner detector and the gamma rays produced are detetced by all the inner detector PMTs. On average the observed number of photoelectrons is 0.004 per event per PMT, meaning that single p.e. hits are observed for more than 99\% of the hits. The observed charge distribution of all the hits from this nickel source is used to give the average charge, which is used as a conversion factor from a charge measurement in picoColoumbs and single photo-electrons. The factor is 2.658pC per photoelectron (calculated at the beginning of SK-IV) which is then used to extract the single-p.e. distribution, shown in Figure \ref{fig:singlepe}.
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{.5\textwidth}
+      \centering
+      \includegraphics[width=.7\linewidth]{Figures/nickel_source.png}
+      \caption{Photograph of nickel source}
+      \label{fig:nickel_source}
+    \end{subfigure}
+    \hskip -1ex
+    \begin{subfigure}[b]{.5\textwidth}
+      \centering
+      \includegraphics[width=.7\linewidth]{Figures/singlepe.png}
+      \caption{Single p.e distribution of charge in pC}
+      \label{fig:singlepe}
+    \end{subfigure}
+    \end{figure}
+    
 
 \begin{figure}
     \includegraphics[width=\textwidth]{Figures/singlepe.png}
 \caption{Single p.e distribution of charge in pC }
     \label{fig:singlepe}
 \end{figure}
+    
 
-
-
-\subsubsection{Relative quantum efficiency measurement}
+\subsection{Relative quantum efficiency measurement}
 
 To measure the relative quantum efficiency, the gamma rays from neutron capture on the nickel source are simulated. Inside this simulation, a common value of QE is used for all the ID PMTs to predict the number of hits for each PMT. Comparing this number of hits to the actual data obtained for each individual PMT by calculating the ratio between them provides us with a value for relative QE for each inner detetor PMT which is then used inside the simulation. 
 
-\subsubsection{Timing information calibration}
-Calibrating the hit timing information of the photomultiplier tubes is essential due to its importance in accurately being able to reconstruct events. Event reconstruction makes use of determining exactly where interaction vertices are and the direction in which particles travel, and to do this the time response needs to be very carefully calibrated. Differences in how quickly the electronics can process the signal, the length of the cables that carry the signal and the differences in the transit time of the PMTs (the time delay between when the PMT recives a light pulse and the time at which an output pulse appears). The response time of the PMT also relates to the amount of charge observed: in order for a hit to be registered, the PMT signal must pass the discriminator value of the hit threshold, and the time in which this happens is dependent on height of the pulse, which is correlated with observed charge. All thsese factors need to be considered when calibrating hit timing information.
+\subsection{Timing information calibration}
+Calibrating the hit timing information of the photomultiplier tubes is essential due to its importance in accurately being able to reconstruct events. Event reconstruction makes use of determining exactly where interaction vertices are and the direction in which particles travel, and to do this the time response needs to be very carefully calibrated. The response time of the PMT also relates to the amount of charge observed: in order for a hit to be registered, the PMT signal must pass the discriminator value of the hit threshold, and the time in which this happens is dependent on height of the pulse, which is correlated with observed charge. All thsese factors need to be considered when calibrating hit timing information.
 \newline
 To aid the timing calibration, a diffuser ball is placed near the centre of the inner detector, into which a nitrogen laser injects pulsed laser light. By varying the intensity of this light, the laser light can be outputted in flashes, and the timing of the laser pulses is monitored using a 2-inch monitor PMT. The schematic of this timing calibration system is shown in Figure \ref{fig:timecalibsystem}.
 
@@ -78,11 +92,7 @@ The value of these laser pulse timings, and the time-of-flight value from the di
 \end{figure}
 
 
-The timing resolution of the PMTs (also known as the transit time spread) is also something that must be calibrated. In photomultiplier tubes, when identical pulses strike the same part of the cathode, there will be fluctuations in the arrival time of the pulse. The timing resolution for a PMT is defined as the full width half maximum of the probability distributions of the fluctuation. This value is proportional to $1/sqrt(n_{k})$ where $n_{k}$ is the number of photoelectrons per pulse. This is calculated by using the same timing and charge data used to produce the TQ distributions. By correcting all the ID PMT hits by their TQ distributions, these residual timing distributions have an asymmetric Gaussian function fitted to them, from which two values of sigma are extracted: $\sigma_{t}$ and $\sigma_{t'}$. These are the values for the timing resolution for before and after the peak time of this distribution. Equation \ref{eq:sigmat} shows how the asymmetric Gaussian is defined. 
-
-%************************************************************************************************************************************
-%ask neil whether this is different to calculating the FWHM of the probability distribution of the fluctuations (definition from the %Photonis PMT manual)
-%************************************************************************************************************************************
+The timing resolution of the PMTs (also known as the transit time spread) is also something that must be calibrated. This is calculated by using the same timing and charge data used to produce the TQ distributions. By correcting all the ID PMT hits by their TQ distributions, these residual timing distributions have an asymmetric Gaussian function fitted to them, from which two values of sigma are extracted: $\sigma_{t}$ and $\sigma_{t'}$. These are the values for the timing resolution for before and after the peak time of this distribution. Equation \ref{eq:sigmat} shows how the asymmetric Gaussian is defined. 
 
 \begin{align}
     f\left(t ; t>T_{\text {peak }}\right) \equiv A_{1} \cdot \exp \left(-\left(t-T_{\text {peak }}\right)^{2} / \sigma_{t}^{2}\right)+B_{1}\\
@@ -108,14 +118,10 @@ Figure \ref{fig:resolutiont} shows timing resolution  plotted as a function of c
     \label{fig:resolutiont}
 \end{figure}
 
-%***********************************************************************************
-%ask neil if there's an updated one for SKV or SKVI or whatever we're in now idk
-%***********************************************************************************
-
-\subsubsection{Measurement of the properties of the water in Super-Kamiokande}
+\subsection{Measurement of the properties of the water in Super-Kamiokande}
 *to write*
 
-\subsubsection{Measurement of light reflection on the black sheet and the PMTs} 
+\subsection{Measurement of light reflection on the black sheet and the PMTs} 
 
 Using the same method as described in \section{Measurement of the properties of the water in Super-Kamiokande} the amount of light reflected at the PMT surface is determined. For SK-IV, four types of material, corresponding to four different refractive indices are taken into account: water, glass, bialkali, and vacuum. Table \ref{table:refractiveindex} shows the values for each of these materials, $\lambda$ is the wavelength of the light in nm and $n_{real}$ and $n_{img}$ are the real and imaginary parts of the complex refractive index.
 
