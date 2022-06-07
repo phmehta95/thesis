@@ -1204,7 +1204,6 @@ INPUT ./Figures/ingridcross.PNG
 INPUT Figures/ingridcross.PNG
 INPUT ./Figures/ingridcross.PNG
 INPUT ./Figures/ingridcross.PNG
-INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
 INPUT ./Figures/ingridmodule.PNG
 INPUT ./Figures/ingridmodule.PNG
 INPUT Figures/ingridmodule.PNG
@@ -1458,6 +1457,7 @@ INPUT ./Figures/annrigdenergyspectra.PNG
 INPUT Figures/annrigdenergyspectra.PNG
 INPUT ./Figures/annrigdenergyspectra.PNG
 INPUT ./Figures/annrigdenergyspectra.PNG
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
 INPUT ./Figures/continousdiscrete.PNG
 INPUT ./Figures/continousdiscrete.PNG
@@ -1555,7 +1555,6 @@ INPUT ./thesis_frontend.out
 INPUT c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
