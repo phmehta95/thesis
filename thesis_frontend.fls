@@ -1178,7 +1178,6 @@ INPUT ./Figures/ccsn_nu_flavor_energy.PNG
 INPUT Figures/ccsn_nu_flavor_energy.PNG
 INPUT ./Figures/ccsn_nu_flavor_energy.PNG
 INPUT ./Figures/ccsn_nu_flavor_energy.PNG
-INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
 OUTPUT Chapters/chapter_neutrino-physics.aux
 INPUT ./Chapters/chapter_t2k_detector.tex
 INPUT ./Chapters/chapter_t2k_detector.tex
@@ -1205,6 +1204,7 @@ INPUT ./Figures/ingridcross.PNG
 INPUT Figures/ingridcross.PNG
 INPUT ./Figures/ingridcross.PNG
 INPUT ./Figures/ingridcross.PNG
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
 INPUT ./Figures/ingridmodule.PNG
 INPUT ./Figures/ingridmodule.PNG
 INPUT Figures/ingridmodule.PNG
