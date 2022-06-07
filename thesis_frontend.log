@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.27)  7 JUN 2022 13:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.27)  7 JUN 2022 14:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1283,22 +1283,7 @@ Chapter 9.
 
 
 
-] [115] [116] [117] [118] [119] [120]
-Underfull \hbox (badness 2229) in paragraph at lines 210--244
-[]\OT1/cmr/m/n/10 S. Fukuda, Y. Fukuda, T. Hayakawa, E. Ichi-hara, M. Ishit-suka,
- []
-
-
-Underfull \hbox (badness 1389) in paragraph at lines 210--244
-\OT1/cmr/m/n/10 Y. Kobayashi, Y. Koshio, M. Miura, S. Moriyama, M. Naka-hata,
- []
-
-[121] [122]
-Underfull \hbox (badness 3977) in paragraph at lines 298--305
-[]\OT1/cmr/m/n/10 S Lo Meo, C Mas-simi, F Roc-chi, N Colonna, M Barba-gallo,
- []
-
-[123] [124] [125]) [126] (./thesis_frontend.aux (./Chapters/chapter_introduction.aux) (./Chapters/chapter_neutrino-physics.aux) (./Chapters/chapter_t2k_detector.aux) (./Chapters/chapter_superk_detector.aux) (./Chapters/chapter_superk-calib.aux) (./Chapters/chapter_ukli-system.aux) (./Chapters/chapter_superkgd_upgrade.aux) (./Chapters/chapter_ncqe-gd.aux) (./Chapters/chapter_syst_uncertainty.aux) (./Chapters/chapter_conclusion.aux))
+] [115]) [116] (./thesis_frontend.aux (./Chapters/chapter_introduction.aux) (./Chapters/chapter_neutrino-physics.aux) (./Chapters/chapter_t2k_detector.aux) (./Chapters/chapter_superk_detector.aux) (./Chapters/chapter_superk-calib.aux) (./Chapters/chapter_ukli-system.aux) (./Chapters/chapter_superkgd_upgrade.aux) (./Chapters/chapter_ncqe-gd.aux) (./Chapters/chapter_syst_uncertainty.aux) (./Chapters/chapter_conclusion.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -1306,18 +1291,18 @@ Package rerunfilecheck Info: File `thesis_frontend.out' has not changed.
 (rerunfilecheck)             Checksum: 382C8DD02E097EA1CD5B9175B3B6E559;10438.
  ) 
 Here is how much of TeX's memory you used:
- 25995 strings out of 478233
- 510264 string characters out of 5847836
+ 25982 strings out of 478233
+ 510159 string characters out of 5847836
  854214 words of memory out of 5000000
- 43336 multiletter control sequences out of 15000+600000
+ 43333 multiletter control sequences out of 15000+600000
  483828 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,15n,103p,2161b,518s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,15n,103p,2161b,514s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on thesis_frontend.pdf (127 pages, 4948737 bytes).
+Output written on thesis_frontend.pdf (117 pages, 4929693 bytes).
 PDF statistics:
- 1395 PDF objects out of 1440 (max. 8388607)
- 1088 compressed objects within 11 object streams
- 322 named destinations out of 1000 (max. 500000)
+ 1351 PDF objects out of 1440 (max. 8388607)
+ 1054 compressed objects within 11 object streams
+ 312 named destinations out of 1000 (max. 500000)
  664 words of extra memory for PDF output out of 10000 (max. 10000000)
 
