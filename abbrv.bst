@@ -193,10 +193,10 @@
               { namesleft #1 >
                   { ", " * t * }
                   { numnames #2 >
-                      { "," * }
-                      'skip$
-                    if$
-                    t "others" =
+%                      { "," * }
+%                      'skip$
+%                    if$
+%                    t "others" =
                       { " et~al." * }
                       { " and " * t * }
                     if$
