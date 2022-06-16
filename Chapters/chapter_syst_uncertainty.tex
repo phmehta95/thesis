@@ -268,3 +268,31 @@ Because any change in the model can alter the energy spectra of the neutrons, th
         \label{muoncaptaggingeff}
 \end{equation}
 
+Figure \ref{fig:mupicap_uncertainty} shows the fractional uncertainties caused by muon and pion capture on oxygen for each model.
+
+\begin{figure}[H]
+    \includegraphics[scale=0.4]{Figures/mupicap_uncertainty.png}
+\caption{Fractional uncertainties in the tagging efficiency caused by muon and pion capture on the muon capture CHIPS model, pion capture CHIPS model and the pion capture Bertini model.}
+\label{fig:mupicap_uncertainty}
+\end{figure}
+
+\section{Nucleon SI}
+Uncertainties in how Nucleon SI interactions are modelled can affect the tagging efficiency, due to how these uncertainties can affect the final number of nucleons present in the simulation and how far they travel in the detector medium. There are two Monte Carlo code systems used in order to determine how nucleons travel in the simulation, MICAP and HETC. These come as part of GCALOR, used to determine the energy and direction of incident hadrons, leptons and photons. MICAP (Monte-carlo-Ionization-Chamber-Analysis-Program), which simulates interactions based on calculated cross section and angular distributions for secondary particles, and is called for neutrons with a kinetic energy below 20 MeV. HETC on the other hand, is the High-Energy-Transport-Code, and is responsible for transporting charged hadrons above 20 MeV (up to an energy of 10 GeV) through the detector medium. 
+
+\subsection{MICAP uncertainty calculation}
+
+A library of cross-section data called ENDF (Evaluated Nuclear Data Files) are used by MICAP to determine what processes the neutrons go through in the detector medium, and their respective cross sections. There are two versions of libraries which are used in evaluating the uncertainty in the tagging efficiency, version B release V (released in 1978) and version B release VIII, released in 2018. There is very little difference between the total neutron on hydrogen cross sections between the two versions of the code, however, in the energy range of 0.1 MeV to 20 MeV, there are differences of up to 40\% in the cross-sections of neutron on oxygen cross sections. Both an elastic and inelastic part comprise the total cross-section of a nucleus, and these can effect the way neutrons travel in the simulated detector medium and also the way secondary particles from these interactions are distributed. The way these inelastic processes are simulated depend on the nuclei involved: hydrogen nuclei capture the neutrons in the range ($10^{-11}$, $10^{-7}$) MeV, while neutron captures on oxygen mainly happen n the 4 MeV to 20 MeV energy region.  To calculate the way uncertainties arise from the way MICAP simulates neutron captures, the ENDF-V library is replaced by ENDF-VIII, and the tagging efficiency using this library ($T_{VIII}$) is evaluated from regenerated MC. Equation \ref{eq:MICAP_uncertainty} shows the fractional uncertainty $\delta_{MICAP}$ regarding MICAP.  
+
+\begin{equation}
+    \delta_{m c p}=\frac{T_{V I I I}-T_{n o m}}{T_{n o m}}
+\label{MICAP_uncertainty}
+\end{equation}
+
+\subsection{HETC uncertainty calculation}
+
+Due to there being no experimental data for cross-section calculations on nucleon-oxygen scattering in the energy range at which T2K functions, experimental data of proton-carbon scattering is used to assign error on the cross sections. In the proton-carbon scattering analysis, NEUT was used to evaluate the theoretical cross sections of carbon, and this uses cross sections calculated using the Bertini model, which is also used in HETC. The comparison of these calculated cross sections to other theoretical calculations as well as to data, showed that the total cross sections calculated by Bertini need to varied by $\pm$ 30\% in order to be consistent with them. As a result of this, the Monte Carlo is regenerated twice where the free nucleon-nucleon cross sections are scaled by $\pm$ 30\%. Equation \ref{HETC_uncertainty} shows the fractional uncertainty $\delta_{HETC}(\pm)$, related to the corresponding tagging efficiencies ($T_{HETC}(\pm)$. 
+
+\begin{equation}
+    \delta_{HETC }(\pm)=\frac{T_{HETC}(\pm)-T_{nom }}{T_{nom }}
+\label{HETC_uncertainty}
+\end{equation}
