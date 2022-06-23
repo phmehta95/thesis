@@ -101,6 +101,71 @@ $$
 \label{eq:maj_nu}
 $$
 
+\subsubsection{Two-flavour neutrino oscillations in vacuum}
+
+If a neutrino is produced in the flavour state $\left|\nu_{\alpha}\right\rangle$ in a vacuum, using the PMNS matrix for the relationship between the mass eigenstate and the flavour eigenstate, propagating the neutrino according to the time-dependent Schrodinger equation with no potential would yield a solution to this equation as a plane wave, shown in Equation \ref{eq:schro_eq_solution}.
+
+\begin{equation}
+i \frac{\partial}{\partial t}\left|\nu_{i}(x, t)>=E\right| \nu_{i}(x, t)>=-\frac{1}{2 m_{i}} \frac{\partial^{2}}{\partial x^{2}} \mid \nu_{i}(x, t)>
+\label{eq:schro_eq_solution}   
+\end{equation}
+
+The probability of oscillation to flavour state $\left|\nu_{\beta}\right\rangle$ at time $t$ is given by Equation \ref{eq:transition_prob_nu}. 
+
+$$
+\begin{aligned}
+P\left(\nu_{\alpha} \rightarrow \nu_{\beta}\right) &=\left|\left\langle\nu_{\beta} \mid \nu_{\alpha}(t)\right\rangle\right|^{2} \\
+&=\sum_{i, j} U_{\beta i}^{*} U_{\beta i} U_{\alpha j} U_{\beta j}^{*} e^{-i\left(E_{i}-E_{j}\right) t}
+\end{aligned}
+\label{eq:transition_prob_nu}
+$$
+
+For a two-flavour oscillation probability calculation, the matrix which transforms a vector in flavour basis into mass basis is simply a 2x2 rotation matrix (where $\theta$ is the mixing angle) so that:
+
+$$
+\left(\begin{array}{l}
+\nu_{\alpha} \\
+\nu_{\beta}
+\end{array}\right)=\left(\begin{array}{cc}
+\cos \theta & \sin \theta \\
+-\sin \theta & \cos \theta
+\end{array}\right)\left(\begin{array}{l}
+\nu_{1} \\
+\nu_{2}
+\end{array}\right)
+\label{eq:rotation matrix}
+$$
+
+
+One could calculate the probability of a neutrino of flavour $\alpha$ oscillating into a neutrino of flavour $\beta$ by using the formula in Equation \ref{eq:two_flavour_osc_prob}. Here $L$ is the distance travelled by the neutrino in kilometres, $\delta m^{2}$ is the difference between the mass eigenstates, and $E$ is the difference between the energy of the mass eigenstates (where an assumption has been made that the mass eigenstates are the same for both.) The survival probability of a neutrino of flavour $\alpha$ (i.e. the probability of generating $\nu_{\alpha}$ and detecting $\nu_{\alpha}$ is $P\left(\nu_{\alpha} \rightarrow\right.$ $\left.\nu_{\alpha}\right)=1-P\left(\nu_{\alpha} \rightarrow \nu_{\beta}\right)$) for two flavour oscillations. 
+
+\begin{equation}
+P\left(\nu_{\alpha} \rightarrow \nu_{\beta}\right)=\sin ^{2}(2 \theta) \sin ^{2}\left(1.27 \Delta m^{2} \frac{L}{E_{\nu}}\right)
+\label{eq:two_flavour_osc_prob}
+\end{equation}
+
+\subsubsection{Neutrino oscillation matter effects}
+
+The presence of dense matter effects the vaccuum neutrino oscillation probability, since neutrinos interact via the weak interaction with matter. This is called the Mikheyev-Smirnov-Wolfenstein (MSW) effect: due to ordinary matter containing only electrons, and muons and tauons, the charge current interactions only affects electron neutrinos and creates an additional potential which affects the vacuum oscillation probability for electron neutrinos, shown in Equation \ref{eq:msw_vcc}, where $G_{f}$ is the Fermi coupling constant, and $n_{e}$ is the number density of electrons in the matter, where the positive sign applies to neutrinos, and the negative sign applies to anti-neutrinos. 
+
+\begin{equation}
+    V_{\mathrm{CC}}=\pm \sqrt{2} G_{F} n_{e}
+\label{eq:msw_vcc}
+\end{equation}
+
+Replacing $\delta m^{2}$ with $\delta m^{2}_{M}$ and $sin^{2}\theta$ with $sin^{2}\theta_{M}$ (shown in Equation \ref{eq:msw_mod}), where the factor of $A = 2|V_{CC}|E$.
+
+$$
+\begin{aligned}
+\sin 2 \theta_{M} &=\frac{\sin 2 \theta}{\sqrt{\sin ^{2} 2 \theta+\left(\cos 2 \theta-A / \Delta m^{2}\right)^{2}}} \\
+\Delta m_{M}^{2} &=\Delta m^{2} \sqrt{\sin ^{2} 2 \theta+\left(\cos 2 \theta-A / \Delta m^{2}\right)^{2}}
+\end{aligned}
+\label{eq:msw_mod}
+$$
+
+
+
+
 
 \subsection{Neutrino-nucleus interactions in Super-Kamiokande Gd}
 Understanding neutrino interaction modes, and understanding neutrino nucleus interaction modes, in particular the neutral current quasielastic reaction is key to understanding this analysis. 
