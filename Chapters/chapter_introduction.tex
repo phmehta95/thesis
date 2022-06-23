@@ -180,12 +180,11 @@ There are two main types of neutrino interaction: charged-current (CC) and neutr
 
 There are multiple types of neutrino-nucleus interactions that occur which can be either charged current or neutral current interactions, or both. 
 
-One such interaction, and often the simplest interaction is elastic scattering ($$
-\nu+e^{-} \rightarrow \nu+e^{-}
-$$), which occurs when a neutrino scatters off an electron with a virtual vector boson being exchanged. This type of scattering is used in the detection of low energy neutrinos, primarily those from the sun. Figure \ref{fig:elastic_scattering} shows the Feynman diagrams for this kind of interaction.
+One such interaction, and often the simplest interaction is elastic scattering ($\nu+e^{-} \rightarrow \nu+e^{-}$), which occurs when a neutrino scatters off an electron with a virtual vector boson being exchanged. This type of scattering is used in the detection of low energy neutrinos, primarily those from the sun. Figure \ref{fig:elastic_scattering} shows the Feynman diagrams for this kind of interaction.
 
 \begin{figure}
-    \includegraphics[width=\textwidth]{Figures/elastic_scattering.png}
+    \centering
+    \includegraphics[width=0.6\textwidth]{Figures/elastic_scattering.png}
     \caption{Feynman diagrams of neutral-current (left) and charged-current (right) neutrino-electron scattering}
     \label{fig:elastic_scattering}
 \end{figure}
@@ -218,16 +217,16 @@ At higher energies (above 1 GeV), neutrino interactions can also produce kaons i
 
 Deep inelastic scattering is a type of neutrino interaction where the neutrino scatters off a quark inside the proton or neutron involved in the exchange, via a W (CC) or Z (NC) boson (Equation \ref{eq:DIS_eq}), shown in Figure \ref{fig:CC_DIS}.
 
-$$
-\begin{aligned}
-&\nu_{l}+N \rightarrow l^{-}+X, \quad \bar{\nu}_{l}+N \rightarrow l^{+}+X(\mathrm{CC}) \\
-&\nu_{l}+N \rightarrow \nu_{l}+X, \quad \bar{\nu}_{l}+N \rightarrow \bar{\nu}_{l}+X(\mathrm{NC})
-\end{aligned}
-\label{eq:DIS_eq}
-$$
+
+\begin{align}
+&\nu_{l}+N \rightarrow l^{-}+X, \quad \bar{\nu}_{l}+N \rightarrow l^{+}+X(\mathrm{CC}) \label{eq:DIS_eq}\\
+&\nu_{l}+N \rightarrow \nu_{l}+X, \quad \bar{\nu}_{l}+N \rightarrow \bar{\nu}_{l}+X(\mathrm{NC}) \notag
+\end{align}
+
 
 \begin{figure}
-    \includegraphics[width=\textwidth]{Figures/CC_DIS.png}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figures/CC_DIS.png}
     \caption{Feynman diagram for a charged current deep inelastic scattering interaction with an incoming muon neutrino}
     \label{fig:CC_DIS}
 \end{figure}
@@ -238,25 +237,27 @@ The next two neutrino-nucleus interactions explained here are of particular rele
 Inverse beta decay is the reaction by which Cowan and Reines first detected electron antineutrinos: it is important at low energies: from the minimum energy for the reaction to take place ($E_{\nu}$ = 1.806 MeV) to tens of MeV. Diffuse Supernova Neutrino Background and low energy antineutrinos produced from nuclear reactors can be detected via this process. Figure \ref{fig:IBD_feynman} shows the Feynman diagram for this reaction. The neutron produced by this reaction is integral to the motivation behind the Gadolinium-doping upgrade to Super-Kamiokande, which will be explained in the next section.
 
 \begin{figure}
-    \includegraphics[width=\textwidth]{Figures/IBD_feynman.png}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figures/IBD_feynman.png}
     \caption{Feynman diagram for the inverse beta decay reaction}
     \label{fig:IBD_feynman}
 \end{figure}
 
-Finally, we get to the type of interaction investigated in this thesis: quasi-elastic scattering. This makes up the majority of the neutrino-nucleus interaction cross-sections at the energy range from 100 MeV to ~2 Gev, and therefore vital for the study of neutrinos from long baseline neutrino experiments and also low energy atmospheric neutrinos. Equation \ref{eq:QE_reaction} shows the equations for both the charge current (CCQE) and neutral current (NCQE) version of this interaction where the incoming neutrino scatters off a nucleon.
+Finally, we get to the type of interaction investigated in this thesis: quasi-elastic scattering. This makes up the majority of the neutrino-nucleus interaction cross-sections at the energy range from 100 MeV to ~2 GeV, and therefore vital for the study of neutrinos from long baseline neutrino experiments and also low energy atmospheric neutrinos. Equation \ref{eq:QE_reaction} shows the equations for both the charge current (CCQE) and neutral current (NCQE) version of this interaction where the incoming neutrino scatters off a nucleon.
 
-$$
-\begin{aligned}
-\mathrm{CC}: \nu(k)+n(p) & \rightarrow l^{-}\left(k^{\prime}\right)+p\left(p^{\prime}\right) \\
-\bar{\nu}(k)+p(p) & \rightarrow l^{+}\left(k^{\prime}\right)+n\left(p^{\prime}\right) \\
-\mathrm{NC}: \nu(k)+N(p) & \rightarrow \quad \nu\left(k^{\prime}\right)+N\left(p^{\prime}\right) \\
-\bar{\nu}(k)+N(p) & \rightarrow \bar{\nu}\left(k^{\prime}\right)+N\left(p^{\prime}\right)
-\end{aligned}
-\label{eq:QE_reaction}
-$$
+
+\begin{align} 
+\mathrm{CC}: \nu(k)+n(p) & \rightarrow l^{-}\left(k^{\prime}\right)+p\left(p^{\prime}\right) \label{eq:QE_reaction}\\
+\bar{\nu}(k)+p(p) & \rightarrow l^{+}\left(k^{\prime}\right)+n\left(p^{\prime}\right) \notag\\
+\mathrm{NC}: \nu(k)+N(p) & \rightarrow \quad \nu\left(k^{\prime}\right)+N\left(p^{\prime}\right) \notag \\
+\bar{\nu}(k)+N(p) & \rightarrow \bar{\nu}\left(k^{\prime}\right)+N\left(p^{\prime}\right) \notag 
+\end{align}
+
+
 
 \begin{figure}
-    \includegraphics[width=\textwidth]{Figures/QE_feynman.png}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figures/QE_feynman.png}
     \caption{Feynman diagram for a quasi elastic scattering interaction off a nucleon}
     \label{fig:QE_reaction}
 \end{figure}
