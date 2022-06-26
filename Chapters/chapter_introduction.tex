@@ -348,18 +348,26 @@ The energy of the emitted neutrinos depend on their flavour - neutrinos emitted 
 Due to there being no charged current interactions involving muon neutrinos in the medium, they involved instead in neutral current reactions, including Bremsstrahlung, neutrino-pair annhilation, and electron-positron pair annhilation. Due to only undergoing these reactions their neutrinosphere is even smaller than that of their electron neutrino and electron anti-neutrino counterparts, therefore being emitted wih even higher energies \cite{nagakura_non-thermal_2021}. Figure \ref{fig:ccsn_nu_flavor_energy} shows the luminosity (top panels) and average energy (bottom panels) for three different neutrino flavours as a function of time for the neutronisation phase (left), accretion phase (centre) and cooling phase (right). Taken from \cite{chakraborty_observing_2014}.
 
 \begin{figure}
-    \includegraphics[width=\textwidth]{Figures/ccsn_nu_flavor_energy}
+    \includegraphics[width=\textwidth]{Figures/ccsn_nu_flavor_energy.png}
     \caption{Luminosity (top panels) and average energy (bottom panels) for three different neutrino flavours as a function of time for the neutronisation phase (left), accretion phase (centre) and cooling phase (right). Taken from \cite{chakraborty_observing_2014}. }
     \label{fig:ccsn_nu_flavor_energy}
 \end{figure}
 
 
 
-Kamiokande-II observed neutrinos produced from a supernova, later named 1987A in the Large Magellenic Cloud. These neutrinos were also observed by the Irvine-Michigan-Brookhaven detector and the Baskan Neutrino Observatory. \cite{hirata_observation_1987}. 
+Kamiokande-II observed neutrinos produced from a supernova, later named 1987A in the Large Magellenic Cloud. These neutrinos were also observed by the Irvine-Michigan-Brookhaven detector,the Baskan Neutrino Observatory and the Irvine-Michigan-Brookhaven detector (IMB). \cite{hirata_observation_1987}. The neutrinos detcted from 1987A were detected via the inverse beta decay (IBD) interaction (shown in Figure \ref{fig:IBD_feynman}), as opposed to the electron elastic scattering, CC interaction with ${ }^{16} \mathrm{O}$ or NC interaction with  ${ }^{16} \mathrm{O}$ channels. The positron from this reaction is what is searched for, and these positrons are produced isotropically within the detector. A neutrino burst from SN1987A was carried out on the data run which ran continuously between 16:09 21 February 1987 to 07:31 24th February 1987 JST. \cite{Hirata:1988ad}.
+
+The event selection criteria for a supernova neutrino event were as follows: firstly, the total number of photoelectrons per event should be less than 170, as this corresponds to an electron with an energy of 50 MeV, and the neutrinos released from a supernovae have a typical energy of the order of 10 MeV. Secondly, the total number of electrons in the outer detector per event needed to be less than 30, in order for the event to be considered fully contained, and finally, the time between previous events has to be greater than 20 $\mu$sec, in order to avoid electrons produced from Michel electrons. Figure \ref{fig:1987A_events} shows the time-sequence of all low-energy events. If the neutrinos were to show up in Kamiokande-II, they would arive in a cluster lasting of order 10s, so intervals of 10 seconds were used to seacrh for clusters of events. In order to classify the event as a supernova neutrino candidate, the event had to be registered by atleast 30 PMTs, and 6 events were found in the first 10s interval which satisfied this, and 2 events in the next 10s interval. A second search was performed on a larger data sample of 42.9 days, from 9th of January to 25th of February 1987, and no other supernova neutrino burst candidates were found. The first two events shown in Figure \ref{fig:1987A_events} also correlate in angle to the direction of 1987A. As a result, this was considered detection of a genuine supernova neutrino burst, and was the first direct observation of this in neutrino astronomy. 
+
+\begin{figure}
+    \includegraphics[width=\textwidth]{Figures/1987A_events.png}
+    \caption{Events detected centered on 16:35:35 JST,  where the solid lines are the number of hit PMTs and dashed lines are muon events. The zoomed in plot in the top-right shows an expanded version of the 0.0 - 2.0 second time scale.  }
+    \label{fig:}
+\end{figure}
 
 Due to neutrinos carrying away 99\% of the energy produced by supernovae, they are the most important signal a supernova can produce, and can be use for finding out when the supernova explosion actually happened - due to neutrinos leaving the supernovae immediately while gamma rays from the the explosion can only leave the supernova when the shock wave reaches the surface of the star.\cite{bethe_supernova_1990}.
 
-The supernova relic neutrinos emitted from all past CCSN are accumulated and form an everpresent background due to the fact that neutrinos only weakly interact with matter. The total flux of this neutrino background has been theoretically predicted and is called the "diffuse supernova neutrino background" (DSNB). When calculating the total SRN flux, the redshift caused by the expansion of the universe needs to be taken into account.
+The supernova relic neutrinos emitted from all past CCSN are accumulated and form an everpresent background due to the fact that neutrinos only weakly interact with matter. The total flux of this neutrino background has been theoretically predicted and is called the "diffuse supernova neutrino background" (DSNB). When calculating the total DSNB flux, the redshift caused by the expansion of the universe needs to be taken into account.
 
 Equation \ref{eq:SRNflux} gives the differential of the supernova relic neutrino flux with respect to the SRN energy at Earth.
 
@@ -368,7 +376,7 @@ Equation \ref{eq:SRNflux} gives the differential of the supernova relic neutrino
 \label{eq:SRNflux}
 \end{equation}
 
-Here $E_{\nu}^{\prime}=(1+z) E_{\nu}$ is the energy of neutrinos at a certain redshift $z$, $R_{\mathrm{SN}}(z)$ is the supernova rate at a comoving volume at $z$, $\mathrm{d} N_{\nu} / \mathrm{d} E_{\nu}$ is the number spectrum of neutrinos emitted by one supernova explosion, and $(1+z)^{-3}$ is the expansion of the universe factor. $dt/dz$ is the relationship between redshift and time, given by the Friedmann equation (Equation \ref{eq:friedmann}), where $H_{0}$ is the Hubble constant, $\Omega_{m}$ is the matter density and $\Omega_{\Gamma}$ is the cosmological constant \cite{ando_relic_2004}.
+Here $E_{\nu}^{\prime}=(1+z) E_{\nu}$ is the energy of neutrinos at a certain redshift $z$, $R_{\mathrm{SN}}(z)$ is the supernova rate at a comoving volume at $z$, $\mathrm{d} N_{\nu} / \mathrm{d} E_{\nu}$ is the number spectrum of neutrinos emitted by one supernova explosion, and $(1+z)^{-3}$ is the expansion of the universe factor. The relationship between redshift and time ($dt/dz$), is given by the Friedmann equation (Equation \ref{eq:friedmann}), where $H_{0}$ is the Hubble constant, $\Omega_{m}$ is the matter density and $\Omega_{\Lambda}$ is the cosmological constant \cite{ando_relic_2004}.
 
 \begin{equation}
 \frac{\mathrm{d} z}{\mathrm{~d} t}=-H_{0}(1+z) \sqrt{\Omega_{\mathrm{m}}(1+z)^{3}+\Omega_{\Lambda}}
