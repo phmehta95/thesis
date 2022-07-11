@@ -171,6 +171,19 @@ Using the nickel source mentioned in the section in absolute gain calibration, t
 
 \subsubsection{Variation of water transparency over time}
 
-In Super-Kamiokande, the detector medium scatters and absorbs the Cherenkov light, attenuating its wavelength. The amount of light attenuation after the light has travelled distance $l$ is given by $exp(-l/L(\lambda))$.
+In Super-Kamiokande, the detector medium scatters and absorbs the Cherenkov light, attenuating its wavelength. The amount of light attenuation after the light has travelled distance $l$ is given by $exp(-l/L(\lambda))$. Here $L(\lambda)$ is the attenuation length of the detector medium and is shown by Equation \ref{eq:attenuation_length}, 
 
-*to write*
+\begin{equation}
+L(\lambda)=\frac{1}{\alpha_{\text {sym }}(\lambda)+\alpha_{\text {asym }}(\lambda)+\alpha_{a b s}(\lambda)}
+\label{eq:attenuation_length}
+\end{equation}
+
+In Equation \ref{eq:attenuation_length}, the $\alpha_{\text {sym }}$ parameter is consists of two types of scattering: the symmetric component of Mie scattering and Rayleigh scattering, whereas $\alpha_{\text {asym }}$ only consists of asymmetric Mie scattering.   Figure \ref{fig:rayleigh_mie} shows the difference between these two types of scattering:
+
+\begin{figure}
+    \includegraphics[width=0.7\textwidth]{Figures/rayleigh_mie.png}
+    \caption{Schematic of the differences between Rayleigh and Mie scattering}
+    \label{fig:rayleigh_mie}
+\end{figure}
+
+Rayleigh scattering occurs when light is scattered from very small particles, the size of these particles being less than 1/10 of the wavelength of the light. For particles larger than the wavelength of the light being scattered, Mie scattering becomes more dominant, with more asymmetric scattering occuring the larger the particle is (i.e. with a greater forward lobe for larger particles.) As a result of this $\alpha_{\text {sym}}$ has an angular dependance of $1 + cos(\theta)^2$ where $\theta$ is the angle between the incoming and outgoing scattered photon vectors, but $\alpha_{\text {asym}}$ has a $cos\theta$ dependence, only for forward scattering, and an amplitude of zero for backward scattering. The $\alpha_{abs}(\lambda)$ is the amplitude of the light absorption. 

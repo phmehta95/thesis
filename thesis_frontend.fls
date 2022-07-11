@@ -1413,6 +1413,11 @@ INPUT ./Figures/watergrad.png
 INPUT Figures/watergrad.png
 INPUT ./Figures/watergrad.png
 INPUT ./Figures/watergrad.png
+INPUT ./Figures/rayleigh_mie.png
+INPUT ./Figures/rayleigh_mie.png
+INPUT Figures/rayleigh_mie.png
+INPUT ./Figures/rayleigh_mie.png
+INPUT ./Figures/rayleigh_mie.png
 INPUT ./Chapters/chapter_ukli-system.tex
 INPUT ./Chapters/chapter_ukli-system.tex
 INPUT ./Chapters/chapter_ukli-system.tex
