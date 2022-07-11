@@ -1418,6 +1418,11 @@ INPUT ./Figures/rayleigh_mie.png
 INPUT Figures/rayleigh_mie.png
 INPUT ./Figures/rayleigh_mie.png
 INPUT ./Figures/rayleigh_mie.png
+INPUT ./Figures/laser_system.PNG
+INPUT ./Figures/laser_system.PNG
+INPUT Figures/laser_system.PNG
+INPUT ./Figures/laser_system.PNG
+INPUT ./Figures/laser_system.PNG
 INPUT ./Chapters/chapter_ukli-system.tex
 INPUT ./Chapters/chapter_ukli-system.tex
 INPUT ./Chapters/chapter_ukli-system.tex
