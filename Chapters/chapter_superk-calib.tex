@@ -118,9 +118,6 @@ Figure \ref{fig:resolutiont} shows timing resolution  plotted as a function of c
     \label{fig:resolutiont}
 \end{figure}
 
-\subsection{Measurement of the properties of the water in Super-Kamiokande}
-*to write*
-
 \subsection{Measurement of light reflection on the black sheet and the PMTs} 
 
 Using the same method as described in \section{Measurement of the properties of the water in Super-Kamiokande} the amount of light reflected at the PMT surface is determined. For SK-IV, four types of material, corresponding to four different refractive indices are taken into account: water, glass, bialkali, and vacuum. Table \ref{table:refractiveindex} shows the values for each of these materials, $\lambda$ is the wavelength of the light in nm and $n_{real}$ and $n_{img}$ are the real and imaginary parts of the complex refractive index.
@@ -158,7 +155,7 @@ There is a vertical temperature gradient in the Super-Kamiokande tank due to the
 
 \begin{figure}
     \includegraphics[width=\textwidth]{Figures/watergrad.png}
-\caption{Vertical position in the detetector (z), plotted against the temperature of the water.}
+\caption{Vertical position in the detector (z), plotted against the temperature of the water.}
     \label{fig:watergrad}
 \end{figure}
 
@@ -169,7 +166,7 @@ Using the nickel source mentioned in the section in absolute gain calibration, t
 \label{eq:TBAeq}
 \end{equation}
 
-\subsubsection{Variation of water transparency over time}
+\subsubsection{Measurement of absorption and scattering coefficients}
 
 In Super-Kamiokande, the detector medium scatters and absorbs the Cherenkov light, attenuating its wavelength. The amount of light attenuation after the light has travelled distance $l$ is given by $exp(-l/L(\lambda))$. Here $L(\lambda)$ is the attenuation length of the detector medium and is shown by Equation \ref{eq:attenuation_length}, 
 
@@ -181,6 +178,7 @@ L(\lambda)=\frac{1}{\alpha_{\text {sym }}(\lambda)+\alpha_{\text {asym }}(\lambd
 In Equation \ref{eq:attenuation_length}, the $\alpha_{\text {sym }}$ parameter is consists of two types of scattering: the symmetric component of Mie scattering and Rayleigh scattering, whereas $\alpha_{\text {asym }}$ only consists of asymmetric Mie scattering.   Figure \ref{fig:rayleigh_mie} shows the difference between these two types of scattering:
 
 \begin{figure}
+    \centering
     \includegraphics[width=0.7\textwidth]{Figures/rayleigh_mie.png}
     \caption{Schematic of the differences between Rayleigh and Mie scattering}
     \label{fig:rayleigh_mie}
@@ -189,11 +187,58 @@ In Equation \ref{eq:attenuation_length}, the $\alpha_{\text {sym }}$ parameter i
 Rayleigh scattering occurs when light is scattered from very small particles, the size of these particles being less than 1/10 of the wavelength of the light. For particles larger than the wavelength of the light being scattered, Mie scattering becomes more dominant, with more asymmetric scattering occuring the larger the particle is (i.e. with a greater forward lobe for larger particles.) As a result of this $\alpha_{\text {sym}}$ has an angular dependance of $1 + cos(\theta)^2$ where $\theta$ is the angle between the incoming and outgoing scattered photon vectors, but $\alpha_{\text {asym}}$ has a $cos\theta$ dependence, only for forward scattering, and an amplitude of zero for backward scattering. The $\alpha_{abs}(\lambda)$ is the amplitude of the light absorption. The method by which these measurements were made is by using a laser system (shown in Figure \ref{fig:laser_system}),  where laser light is injected at several points in the tank, denoted in Figure \ref{fig:laser_system} by the barrel injectors (B1-B5), the previously used old top injector (OT), the new top injector (NT), and an injector on the tank bottom (BT). 
 
 \begin{figure}
+    \centering
     \includegraphics[width=0.7\textwidth]{Figures/laser_system.png}
     \caption{Schematic of the laser system}
     \label{fig:laser_system}
 \end{figure}
 
-The absorption and scattering coefficients are measured using data from light injected from the new top (NT) injector. A large set of calibration Monte Carlo are generated using laser generation software and the Super-Kamiokande detector simulation (SKDETSIM).
+The absorption and scattering coefficients are measured using data from light injected from the new top (NT) injector. A large set of calibration Monte Carlo are generated using laser generation software and the Super-Kamiokande detector simulation (SKDETSIM). These set of Monte Carlo are generated with different values of absorbtion, symmetric and asymmetric scattering, and their timing distributions are compared to the data from the laser system in order to tune the amount of absorption, symmetric and asymmetric scattering in the calibration Monte Carlo. The way in which the $\alpha_{abs}(\lambda)$, $\alpha_{\text {sym}}$ and $\alpha_{\text {asym}}$ are defined as shown in Equation \ref{eq:P0P8}.
+
+$$
+\begin{gathered}
+\alpha_{a b s}=P_{0} \times \frac{P_{1}}{\lambda^{4}}+C \label{eq:P0P8}\\ 
+\alpha_{s y m}=\frac{P_{1}}{\lambda^{4}} \times\left(1+\frac{P_{5}}{\lambda^{2}}\right) \\
+\alpha_{a s y}=P_{6} \times\left(1+\frac{P_{7}}{\lambda^{4}} \times\left(\lambda-P_{8}\right)^{2}\right)
+\end{gathered}
+$$
+
+The term $C$ in the equation for $\alpha_{abs}(\lambda)$ is based on data from \cite{Pope:97} for laser light with wavelengths greater than 464 nm while Equation \ref{eq:Cformula} is used for wavelengths less than 464 nm. 
+
+\begin{equation}
+C=P_{0} \times P_{2} \times(\lambda / 500)^{P_{3}}
+\label{eq:Cformula}
+\end{equation}
+
+The values of $P_{0}$ to $P_{8}$ in Equations \ref{eq:P0P8} and \ref{eq:Cformula} were taken from fits to laser data taken in April 2009, the water coefficient functions of which are shown in Figure \ref{fig:water_coeff_plot}. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figures/water_coeff_plot.png}
+    \caption{Plot of water coefficient functions used in Monte Carlo production, showing points for symmetric and asymmetric scattering and absorption.}
+    \label{fig:water_coeff_plot}
+\end{figure}
+
+As well as the amount of absorption and scattering in the detector, there is also a dependence with respect to z-position in the detector,defined by Equation \ref{eq:tba}.
+
+\begin{equation}
+    \alpha_{\text {tba }}=\left(\left\langle N_{\text {top }}\right\rangle-\left\langle N_{\text {bottom }}\right\rangle\right) /\left\langle N_{\text {barrel }}\right\rangle
+    \label{eq:tba}   
+\end{equation}
+
+Here $\langle N_{\text {top }}$, $\langle N_{\text {bottom }}$, $\langle N_{\text {top }}$  are the averaged hit probabilities of the tip, bottom and barrel PMTs, where  $\langle N_{\text {top }}$ is about 5\% less than $\langle N_{\text {bottom }}$ due to the temperature gradient in the tank. Figure \ref{fig:temperature_grad} shows this dependence, 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figures/temperature_grad.png}
+    \caption{Dependence of temperature on vertical position in the Super-Kamiokande ID.}
+    \label{fig:temperature_grad}
+\end{figure}
+
+Chapter 5 expands upon this by going into detail about the newly developed UK Light Injection system which improves upon the Korean laser system mentioned here used to make water coefficient measurements. 
+
+
+
+
 
 
