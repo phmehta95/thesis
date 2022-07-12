@@ -226,7 +226,17 @@ As well as the amount of absorption and scattering in the detector, there is als
     \label{eq:tba}   
 \end{equation}
 
-Here $\langle N_{\text {top }}$, $\langle N_{\text {bottom }}$, $\langle N_{\text {top }}$  are the averaged hit probabilities of the tip, bottom and barrel PMTs, where  $\langle N_{\text {top }}$ is about 5\% less than $\langle N_{\text {bottom }}$ due to the temperature gradient in the tank. Figure \ref{fig:temperature_grad} shows this dependence, 
+Here $\langle N_{\text {top }}$, $\langle N_{\text {bottom }}$, $\langle N_{\text {top }}$  are the averaged hit probabilities of the tip, bottom and barrel PMTs, where  $\langle N_{\text {top }}$ is about 5\% less than $\langle N_{\text {bottom }}$ due to the temperature gradient in the tank. Figure \ref{fig:temperature_grad} shows this dependence, and Equation \ref{eq:temp_grad} shows how this is taken into account for the absorption coefficient $\alpha_{abs}$ by the factor $A(z,t)$:
+
+$$
+\begin{aligned}
+A(z, t) &=1+z \cdot \beta(t) \quad \text { for } z \geq-11 \mathrm{~m} \label{eq:temp_grad} \\
+&=1-11 \cdot \beta(t) \quad \text { for } z \leq-11 \mathrm{~m}
+\end{aligned}
+$$
+
+where from Figure \ref{fig:teperature_grad}, the value of $A(z,t)$ is constant below $z = -11 m$, and above $z = -11 m$ this value is determined by the z-position in the tank. The relationship between the value of $\beta$ is related to the top-bottom asymmetry parameter $\alpha_{tba}$, and for the April 2009 data $\alpha_{tba}$ and $\beta$ are -4.91\% and 0.01. 
+
 
 \begin{figure}
     \centering

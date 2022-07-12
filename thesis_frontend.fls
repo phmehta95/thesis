@@ -1428,6 +1428,11 @@ INPUT ./Figures/water_coeff_plot.PNG
 INPUT Figures/water_coeff_plot.PNG
 INPUT ./Figures/water_coeff_plot.PNG
 INPUT ./Figures/water_coeff_plot.PNG
+INPUT ./Figures/temperature_grad.PNG
+INPUT ./Figures/temperature_grad.PNG
+INPUT Figures/temperature_grad.PNG
+INPUT ./Figures/temperature_grad.PNG
+INPUT ./Figures/temperature_grad.PNG
 INPUT ./Chapters/chapter_ukli-system.tex
 INPUT ./Chapters/chapter_ukli-system.tex
 INPUT ./Chapters/chapter_ukli-system.tex
