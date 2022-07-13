@@ -1443,6 +1443,11 @@ INPUT ./Chapters/chapter_ukli-system.tex
 INPUT Chapters/chapter_ukli-system.tex
 INPUT ./Chapters/chapter_ukli-system.tex
 INPUT Chapters/chapter_ukli-system.tex
+INPUT ./Figures/ukli_system_architecture.PNG
+INPUT ./Figures/ukli_system_architecture.PNG
+INPUT Figures/ukli_system_architecture.PNG
+INPUT ./Figures/ukli_system_architecture.PNG
+INPUT ./Figures/ukli_system_architecture.PNG
 INPUT ./Chapters/chapter_superkgd_upgrade.tex
 INPUT ./Chapters/chapter_superkgd_upgrade.tex
 INPUT ./Chapters/chapter_superkgd_upgrade.tex
