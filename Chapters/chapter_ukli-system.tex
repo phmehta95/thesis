@@ -63,7 +63,76 @@ Using a kinematic mount (shown in Figure \ref{fig:mount}) the optics plate was a
 \end{figure}
 
 
-\subsubsection{Soak Testing Components }
+\subsubsection{Soak Testing Components}
 
 All light injector components that would come into contact with the ultra-pure water in Super-Kamiokande and the gadolinium sulphate doped water went under strenous water contamination testing. Samples of the ultra-pure water were taken from the detector, as well as a control sample of the same water and also a solution of pure water from Super-Kamiokande doped with one gram of gadolinium sulphate and put in 500 ml bottles. The component samples under examination were left to soak in the bottles which were kept refrigerated at the same temperature as the water in Super-Kamiokande (approximately 13 degrees Celcius.) After three months of soaking and intermittent checking of the components by eye, the transmittence of the component (namely the stainless steel used in the optical plate and the PMMA used in the diffuser) were checked using a spectrometer. Comparisons with control components showed no degradation of transmittance. 
 
+\subsubsection{Results of optics test stands}
+
+In order to test the collimator and diffuser optics, scans of the angular distributions were made using diffuser and collimator test-stands. These scans would show angular distributions of the light intensity, and details of the setup of each test stand are given here. For the diffuser test-stand the angular distribution of the light output was captured using the setup shown in Figure \ref{fig:diffuser_test_stand}. A birds-eye view schematic of the setup is shown in Figure \ref{fig:schematic_dif}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figures/diffuser_test_stand.png}
+    \caption{Setup of the diffuser test stand provided by Warwick University}
+    \label{fig:diffuser_test_stand}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figures/schematic_dif.png}
+    \caption{Birds-eye view schematic of the diffuser test stand}
+    \label{fig:schematic_dif}
+\end{figure}
+
+The test stand setup for the diffuser optics consists of a test diffuser ball placed inside a diffuser enclosure, a rotation stage which allows for the movement of the diffuser between -40 and 40 degrees, and a PMT used for pulse intensity measurement set up 250 mm away from the diffuser. An optical fibre couples the diffuser under test to a laser set to a wavelength of 450 nm. 
+
+The setup for the collimator test stand at the University of Warwick is shown in Figure \ref{fig:coll_test_stand}.  The setup for the collimator optic captures the beam cross section by moving a CMOS camera along the beam direction. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figures/coll_test_stand.png}
+    \caption{Setup of the collimator test stand provided by Warwick University}
+    \label{fig:coll_test_stand}
+\end{figure}
+
+Figure \ref{fig:diffuser_TF1} shows distributions provided by this test stand data: preliminary TF1 fits made by ROOT to the light profiles for the diffuser.  The x-axis scale shows the polar angle the rotation stand moves through, while the y-axis scale shows the average of the integrated area under all the pulses recorded by the PMT and is not normalised. 
+
+\begin{figure}[!htbp]
+    \centering
+    
+    \caption{Light profiles for the diffuser optics provided by The University of Warwick}\label{fig:diffuser_TF1}
+    
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/B1_diffuser_fit.PNG}}\hfill
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/B2_diffuser_fit.PNG}}\hfill
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/B3_diffuser_fit.PNG}}
+    
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/B4_diffuser_fit.PNG}}%
+    \hspace*{0.005\textwidth}%
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/B5_diffuser_fit.PNG}}
+    
+\end{figure}
+
+Figure \ref{fig:collimator_TF1} shows TF1 fits made by ROOT to the light profiles for the collimator. The angular distributions shown give the distribution of the polar angle in degrees of light intensity which are relative to the virtual position from which the light cone originates, averaged over all the orientations of the azimuthal angle. Figure \ref{fig:collimator_test_schematic} shows the light cone from the collimator and the direction in which the measurements are taken with the CMOS camera.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figures/collimator_test_schematic.png}
+    \caption{Diagram showing the direction in which measurements of the light intensity were taken}
+    \label{fig:collimator_test_schematic}
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    
+    \caption{Light profiles for the collimator optics provided by The University of Warwick}\label{fig:collimator_TF1}
+    
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/B1_collimator_fit.PNG}}\hfill
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/B2_collimator_fit.PNG}}\hfill
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/B3_collimator_fit.PNG}}
+    
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/B4_collimator_fit.PNG}}%
+    \hspace*{0.005\textwidth}%
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/B5_collimator_fit.PNG}}
+    
+\end{figure}
