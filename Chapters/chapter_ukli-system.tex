@@ -137,7 +137,75 @@ Figure \ref{fig:collimator_TF1} shows TF1 fits made by ROOT to the light profile
     
 \end{figure}
 
+\subsubsection{UK Calibration data}
 
+In September of 2019 and November of 2019 two sets of test data were taken of the collimator, the diffuser and the bare fibre optic (the B2 bare fibre). For the September 2019 data, all of the data for the B1-B5 optics was taken with 100,000 events, however due to the B3 and B5 collimator from the September 2019 data showing a very weak signal, 150,000 events were taken with the B3 collimator data for and 200,000 events were taken with the November 2019 data. Using an event display developed by the University of Warwick, occupancy plots of the test data sets were produced. Figure \ref{fig:occupancy_coll} shows the occupancy plots for the collimator optic from the November 2019 dataset showing the beam spot inside the unrolled volume of the Super-Kamiokande detector. Similarly, Figure \ref{fig:occupancy_diffuser} shows the occupancy plots for the diffuser optic from the November 2019 dataset.
+
+\begin{figure}[!htbp]
+    \centering
+    
+    \caption{Occupancy plot for the collimator optics from the UKLI November 2019 test run} \label{fig:occupancy_coll} 
+    
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B1_occupancy_coll.PNG}} \hfill
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B2_occupancy_coll.PNG}} \par
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B3_occupancy_coll.PNG}} \hfill
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B4_occupancy_coll.PNG}} \par
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B5_occupancy_coll.PNG}}
+    
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    
+    \caption{Occupancy plot for the diffuser optics from the UKLI November 2019 test run} \label{fig:occupancy_diffuser} 
+    
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B1_occupancy_diff.PNG}} \hfill
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B2_occupancy_diff.PNG}} \par
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B3_occupancy_diff.PNG}} \hfill
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B4_occupancy_diff.PNG}} \par
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B5_occupancy_diff.PNG}}
+    
+\end{figure}
+
+In addition to test data being taken, there is also an ''autocalib'' system used for long term monitoring of the water parameters in Super-Kamiokande by the Korean laser system. In early 2020 the autocalib scheduler was modified to incorporate data taking by the UKLI system which was very useful for Gadolinium loading calibration purposes (which will be expanded upon in the UKLI monitoring system section) but also in the longer term, it will be useful in the monitoring of daily/weekly water coefficient property measurements, investigation of depth dependence with respect to the water properties and PMT property calibration. Figure \ref{fig:autocalib} shows the schedule for autocalib, and the black dashed lines show the position of the UK barrel collimator and diffusers with respect to the other autocalib data taking streams. The horizontal blue line shows the length of the one autocalib cycle, which is about 4.6 seconds, with each UKLI optic having about 3310 events per day.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figures/autocalib.png}
+    \caption{Schematic showing position of UKLI in autocalib scheduler: the black dashed lines show the UKLI B1-B5 collimator and diffuser optics and the horizontal blue line shows the length of one autocalib cycle.}
+    \label{fig:autocalib}
+\end{figure}
+
+Figures \ref{fig:occupancy_coll_auto} and \ref{fig:occupancy_diff_auto} shows the occupancy plots for autocalib data taken in July 2020: as can be seen in the text in the upper left hand corner, the number of events in the run is a lot less than the 100,000 events or so taken in the test runs, however they are more than sufficient for monitoring purposes.
+
+\begin{figure}[!htbp]
+    \centering
+    
+    \caption{Occupancy plot for the collimator optics from the UKLI Autocalin July 2020 run} \label{fig:occupancy_coll_auto} 
+    
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B1_occupancy_coll_auto.PNG}} \hfill
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B2_occupancy_coll_auto.PNG}} \par
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B3_occupancy_coll_auto.PNG}} \hfill
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B4_occupancy_coll_auto.PNG}} \par
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B5_occupancy_coll_auto.PNG}}
+    
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    
+    \caption{Occupancy plot for the diffuser optics from the UKLI Autocalib July 2020 run} \label{fig:occupancy_diffuser_auto} 
+    
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B1_occupancy_diff_auto.PNG}} \hfill
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B2_occupancy_diff_auto.PNG}} \par
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B3_occupancy_diff_auto.PNG}} \hfill
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B4_occupancy_diff_auto.PNG}} \par
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B5_occupancy_diff_auto.PNG}}
+    
+\end{figure}
+
+
+\subsubsection{UKLI MC production}
 After making these fits to data the next aim was to use these light profiles as an input to SKDETSIM, the Super Kamiokande Detector Simulator. SKDETSIM uses GEANT3 (GEometry ANd Tracking 3) to simulate what the particles in each event would do inside the detector, and tracks the particle's trajectories and energy loss. Simulating the light injection from the UKLI system in SKDETSIM was done in a similar way to the Korean method of producing Monte Carlo: the same versions of the calibration scripts were used however, small modifications were made to them and to the version of SKDETSIM used to simulate the input photons from the system in the detector. The calibration scripts used for the Korean and UKLI systems both allow for the number of events and the number of injected photons to be set. In order to generate many Monte Carlo files with the absorption, Rayleigh and Mie scattering parameters varied, the ratio of these paramaters ''abs'', ''ray'' and ''mie'', to the value of these parameters currently in the detector simulation can also be set, where a value of ''1.0'' is thr SKDETSIM default value. The top-bottom asymmetry ''TBA'', mentioned in Chapter 4, can also be set, along with the wavelength of the injected light.
 \newline
 The first step regarding making UKLI based Monte Carlo was changing the position of the injector locations from the positions of the Korean system (shown in Table \ref{table:korean_loc}) to that of the UKLI system (shown in Table \ref{table:UKLI_loc}), due to the fact that the spacing gap rungs between the UK system and the Korean system is +70.7 cm for the B1, B2, B3 barrel injectors and -70.7 cm for the B4 and B5 injectors. The opening angle of the injectors determined by the simulation also had to be changed because the simulation had to accomodate the fact that the injectors for the UKLI system now consisted of three different opening angles for the collimator, diffuser and bare fibre optics, instead of the just the bare fibre optics used in the Korean system. The way the opening angle for the Korean system was set in the calibration scripts was using the "SIGBM" parameter which stands for the sigma of the input injector beam, however an entirely new method of determining the opening angle of the beam was needed to include the information from the light profiles taken from the test stands at Warwick. In order to understand the SIGBM parameter further however, the relationship between opening angle in degrees and SIGBM was plotted by outputting the SIGBM value and the angle to a text file during laser generation Monte Carlo production (shown in Figure \ref{fig:sigbm_angle}.)
@@ -181,30 +249,4 @@ The first step regarding making UKLI based Monte Carlo was changing the position
     \label{fig:sigbm_angle}
 \end{figure}
 
-In order to validate the positions of the targets for the UKLI system, and the relationship between the SIGBM parameter and output angle, producing charge weighted histograms from UKLI test runs is very helpful. It allows us to explore the shape of the beam profile and intensity. In September of 2019 and November of 2019 two sets of test data were taken of the collimator, the diffuser and the bare fibre optic (the B2 bare fibre). For the September 2019 data, all of the data for the B1-B5 optics was taken with 100,000 events, however due to the B3 and B5 collimator from the September 2019 data showing a very weak signal, 150,000 events were taken with the B3 collimator data for and 200,000 events were taken with the November 2019 data. Using an event display developed by the University of Warwick, occupancy plots of the test data sets were produced. Figure \ref{fig:occupancy_coll} shows the occupancy plots for the collimator optic from the November 2019 dataset showing the beam spot inside the unrolled volume of the Super-Kamiokande detector. Similarly, Figure \ref{fig:occupancy_diffuser} shows the occupancy plots for the diffuser optic from the November 2019 dataset.
-
-\begin{figure}[!htbp]
-    \centering
-    
-    \caption{Occupancy plot for the collimator optics from the UKLI November 2019 test run} \label{fig:occupancy_coll} 
-    
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B1_occupancy_coll.PNG}} \hfill
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B2_occupancy_coll.PNG}} \par
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B3_occupancy_coll.PNG}} \hfill
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B4_occupancy_coll.PNG}} \par
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B5_occupancy_coll.PNG}}
-    
-\end{figure}
-
-\begin{figure}[!htbp]
-    \centering
-    
-    \caption{Occupancy plot for the diffuser optics from the UKLI November 2019 test run} \label{fig:occupancy_diffuser} 
-    
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B1_occupancy_diff.PNG}} \hfill
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B2_occupancy_diff.PNG}} \par
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B3_occupancy_diff.PNG}} \hfill
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B4_occupancy_diff.PNG}} \par
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B5_occupancy_diff.PNG}}
-    
-\end{figure}
+In order to validate the positions of the targets for the UKLI system, and the relationship between the SIGBM parameter and output angle, producing charge weighted histograms from UKLI test runs is very helpful. It allows us to explore the shape of the beam profile and intensity. 
