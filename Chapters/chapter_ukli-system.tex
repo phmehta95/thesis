@@ -139,7 +139,7 @@ Figure \ref{fig:collimator_TF1} shows TF1 fits made by ROOT to the light profile
 
 \subsubsection{UK Calibration data}
 
-In September of 2019 and November of 2019 two sets of test data were taken of the collimator, the diffuser and the bare fibre optic (the B2 bare fibre). For the September 2019 data, all of the data for the B1-B5 optics was taken with 100,000 events, however due to the B3 and B5 collimator from the September 2019 data showing a very weak signal, 150,000 events were taken with the B3 collimator data for and 200,000 events were taken with the November 2019 data. Using an event display developed by the University of Warwick, occupancy plots of the test data sets were produced. Figure \ref{fig:occupancy_coll} shows the occupancy plots for the collimator optic from the November 2019 dataset showing the beam spot inside the unrolled volume of the Super-Kamiokande detector. Similarly, Figure \ref{fig:occupancy_diffuser} shows the occupancy plots for the diffuser optic from the November 2019 dataset.
+In September of 2019 and November of 2019 two sets of test data were taken of the collimator, the diffuser and the bare fibre optic (the B2 bare fibre). For the September 2019 data, all of the data for the B1-B5 optics was taken with 100,000 events, however due to the B3 and B5 collimator from the September 2019 data showing a very weak signal, 150,000 events were taken with the B3 collimator data for and 200,000 events were taken with the November 2019 data. Using an event display developed by the University of Warwick, occupancy plots of the test data sets were produced. Figure \ref{fig:occupancy_coll} shows the occupancy plots for the collimator optic from the November 2019 dataset showing the beam spot inside the unrolled volume of the Super-Kamiokande detector. Similarly, Figure \ref{fig:occupancy_diffuser} shows the occupancy plots for the diffuser optic from the November 2019 dataset. The graph in the bottom right hand corner of the occupancy plots show the corrected time-of-flight plots for the PMT hits from the injector. 
 
 \begin{figure}[!htbp]
     \centering
@@ -249,4 +249,43 @@ The first step regarding making UKLI based Monte Carlo was changing the position
     \label{fig:sigbm_angle}
 \end{figure}
 
-In order to validate the positions of the targets for the UKLI system, and the relationship between the SIGBM parameter and output angle, producing charge weighted histograms from UKLI test runs is very helpful. It allows us to explore the shape of the beam profile and intensity. 
+In order to validate the positions of the targets for the UKLI system, and the relationship between the SIGBM parameter and output angle, producing charge weighted histograms from UKLI test runs is very helpful. It allows us to explore the shape of the beam profile and intensity. Figures \ref{fig:charge_weighted_nov_sept_B1} and \ref{fig:charge_weighted_nov_sept_B4} shows the charge weighted z-profiles for the September and November 2019 datasets for the B1 and B4 collimator injectors, where the blue dashed line shows the expected target position. These are produced by selecting hit PMTs which are greater than 2 m away from the injector (to avoid including PMT hits from backscattered light), and filling the histogram with the z-position of the hit PMT and the number of hits the hit PMT recieves multiplied by the corrected charge from the PMT. The corrected PMT charge is calculated using Equation \ref{eq:gain_correction}, where the gain correction value is taken from official Super-Kamiokande gain tables. 
+
+\begin{equation}
+    q/(1 + gain)
+\label{eq:gain_correction}
+\end{equation}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figures/charge_weighted_nov_sept_B1.PNG}
+    \caption{Charge weighted z profile plots for the B1 collimator UKLI injector optic}
+    \label{fig:charge_weighted_nov_sept_B1}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figures/charge_weighted_nov_sept_B4.PNG}
+    \caption{Charge weighted z profile plots for the B4 collimator UKLI injector optic}
+    \label{fig:charge_weighted_nov_sept_B4}
+\end{figure}
+
+The B1 and B4 collimator optics give the largest peaks in the charge weighted plots, while the B3 and B5 optics give the weakest peaks, practically indistunguishable from the background pedestal (event with the additional number of events taken during the November data taking runs.) The charge weighted plots were used to validate the relationship between the opening angle of the injector beam in the Monte Carlo production calibration scripts by generating Monte Carlo scripts with varying values of the SIGBM parameter (while keeping the absorption and scattering parameters the same). Fitting the charge weighted profile plots with a Gaussian and using the position of the injector target and the edge of the beam spot, the opening angle of the beam in degrees could be determined.
+
+The width of the beam needed to be defined in order to do this however, and the standard beam radius definition is shown as in Figure \ref{fig:beam_width}. This schematic shows that the width of the beam was defined as using $1/e^2$ for the edge of the beam width, so it is taken as the point where the intensity drops to 0.135 of the Gaussian peak value. While there is good agreement at small opening angles, there is a slight discrepancy between this plot and Figure \ref{fig:sigbm_angle} at larger opening angles, where in Figure \ref{fig:sigbm_angle} the angle in degrees is consistently greater than in Figure \ref{fig:sigbm_angle_validation} for the same value of SIGBM, and this is due to SIGBM being defined as the maximum opening angle, however for small opening angles as for the collimator, the comparison is valid.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figures/beam_width.PNG}
+    \caption{Schematic showing how the width of the MC beam was defined}
+    \label{fig:beam_width}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figures/sigbm_angle_validation.PNG}
+    \caption{Plot of the sigbm parameter vs angle in degrees produced using calculation of the opening angle from the beam width}
+    \label{fig:sigbm_angle_validation}
+\end{figure}
+
+After using the charge weighted hit plots to understand the SIGBM parameter and how the opening angle is generated by SKDETSIM more thoroughly, the next step involved using the profiles from the Warwick optic test stands (shown in Figures \ref{fig:collimator_TF1} and \ref{fig:diffuser_TF1}) in the production of this opening angle in the detector simulation. This was done by treating the profiles in Figures \ref{fig:collimator_TF1} and \ref{fig:diffuser_TF1} as Probablity Distribution Functions (PDFs) and using inverse transform sampling to make the detector simulation sample at random from it. 
