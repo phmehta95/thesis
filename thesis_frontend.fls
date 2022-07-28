@@ -1379,10 +1379,6 @@ INPUT ./Figures/singlepe.PNG
 INPUT Figures/singlepe.PNG
 INPUT ./Figures/singlepe.PNG
 INPUT ./Figures/singlepe.PNG
-INPUT ./Figures/singlepe.PNG
-INPUT ./Figures/singlepe.PNG
-INPUT Figures/singlepe.PNG
-INPUT ./Figures/singlepe.PNG
 INPUT ./Figures/timecalibsystem.PNG
 INPUT ./Figures/timecalibsystem.PNG
 INPUT Figures/timecalibsystem.PNG
@@ -1408,11 +1404,6 @@ INPUT ./Figures/blacksheetrefsetup.png
 INPUT Figures/blacksheetrefsetup.png
 INPUT ./Figures/blacksheetrefsetup.png
 INPUT ./Figures/blacksheetrefsetup.png
-INPUT ./Figures/watergrad.png
-INPUT ./Figures/watergrad.png
-INPUT Figures/watergrad.png
-INPUT ./Figures/watergrad.png
-INPUT ./Figures/watergrad.png
 INPUT ./Figures/rayleigh_mie.png
 INPUT ./Figures/rayleigh_mie.png
 INPUT Figures/rayleigh_mie.png
