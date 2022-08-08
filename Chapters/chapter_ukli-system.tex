@@ -361,3 +361,35 @@ After producing the normalised CDFs, the inverse of these CDFs are calculated - 
         \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B5_inv_diff_cdf.png}} 
     
 \end{figure}
+
+After producing the fits to the inverse cumulative distribution functions, these funtions were inputted into the detector simulation, SKDETSIM. Removing the SIGBM parameter from the calibration scripts meant there needed to be a new way with which to generate the angle at which the photons were produced in the simulation, and this is where the inverse transform sampling occurs for the relevant fit for the selected injector and optic type. Using the same event display used to produce the occupancy plots for the autocalib data and the test run data, occupancy plots of the Monte Carlo were produced. These are shown for the B1 - B5 collimators in Figure \ref{fig:ukli_mc_coll}, and for the B1 - B5 diffusers in Figure \ref{fig:ukli_mc_diff}. 
+
+\begin{figure}[!htbp]
+    \centering
+    
+    \caption{Monte Carlo simulations of the B1 -B5 collimator injectors}\label{fig:ukli_mc_coll}
+    
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ukli_mc_B1.PNG}}\hfill
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ukli_mc_B2.PNG}}\hfill
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ukli_mc_B3.PNG}}
+    
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ukli_mc_B4.PNG}}%
+    \hspace*{0.005\textwidth}%
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ukli_mc_B5.PNG}}
+    
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    
+    \caption{Monte Carlo simulations of the B1 -B5 diffuser injectors}\label{fig:ukli_mc_diff}
+    
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ukli_diff_mc_B1.PNG}}\hfill
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ukli_diff_mc_B2.PNG}}\hfill
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ukli_diff_mc_B3.PNG}}
+    
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ukli_diff_mc_B4.PNG}}%
+    \hspace*{0.005\textwidth}%
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ukli_diff_mc_B5.PNG}}
+    
+\end{figure}
