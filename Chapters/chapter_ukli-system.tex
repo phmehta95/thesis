@@ -421,11 +421,27 @@ As shown in Figure \ref{fig:TOF_ray}, the TOF correct timing plots are most affe
 
 After producing time-of-flight corrected plots for the B1 collimator UKLI MC and overlaying it with the Run 82181 November test run data with the abs, ray, mie parameters set to 1.0, and a TBA value of 7.598, it was clear that there were disgreements between the Monte Carlo and data in both the scattered hits region and the reflected hits peak. In order to remedy this, the time dispersion of the reflected hits peak was varied, in order to shift the distribution and better match up the UKLI Monte Carlo and test run data. 
 
-The time dispersion for the injected photons in the laser generation in SKDETSIM is governed by a Gaussian distributed random number generated using a Box-Muller transform, where additional time dispersion added would be the sigma of this Gaussian, and after a random number is passed through it, the output number would be added to the time for each track step of the photon giving the time dispersion. Figure \ref{fig:time_vec} shows the 
+The time dispersion for the injected photons in the laser generation in SKDETSIM is governed by a Gaussian distributed random number generated using a Box-Muller transform, where additional time dispersion added would be the sigma of this Gaussian, and after a random number is passed through it, the output number would be added to the time for each track step of the photon giving the time dispersion.
+
+The Box-Muller transform is a random number sampling method for making pairs of independent, normally distributed random sources from a source of uniformly distributed numbers (from between usually from between 0 and 1). The form of the Box-Muller method implemented to calculate the added time dispersion is the Marsaglia polar method, which works by choosing two independent and uniformly distributed numbers (u,v) between [-1,+1], so that $s = u^{2} + v^{2}$, and if $s=0$, or $s>=1$, another pair of numbers are chosen. Then the standard normal deviate which is given by $$z_{0}=u \cdot \sqrt{\frac{-2 \ln s}{s}}$$ is multiplied by the chosen value of time dispersion in seconds and added to the mean (set to zero) to give the normally dispersed extra track step time for a photon in the distribution. 
+
+Figure \ref{fig:gauss_time_dispersion} shows the effect of implementing this varying time dispersion on the raw hit timing output from the UKLI MC B1 collimator simulation, with the time dispersion shown for 0 ns, 5 ns, 10 ns, 15 ns, 20 ns and 100 ns. 
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.7\textwidth]{Figures/beam_width.PNG}
-    \caption{Schematic showing how the width of the MC beam was defined}
-    \label{fig:beam_width}
+    \includegraphics[width=0.7\textwidth]{Figures/gauss_time_dispersion.PNG}
+    \caption{Gaussian distributed time dispersion plots, with varying amounts of time dispersion}
+    \label{fig:gauss_time_dispersion}
 \end{figure}
+
+Along with implementing the Gaussian distributed time dispersion, introducing a double gaussian for the time dispersion was also looked at, due to the height and sharpness of the reflected peak in the data being something that might be better suited to such a fit. Figure \ref{fig:double_gauss_time_dispersion} shows the raw hit timing output from the UKLI MC B1 collimator simulation with a double gaussian time dispersion, for varying time dispersion values. The x-axis on the plots show the hit time in nanoseconds, the y axis is number of events. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figures/double_gauss_time_dispersion.PNG}
+    \caption{Double gaussian distributed time dispersion plots, with varying amounts of time dispersion}
+    \label{fig:double_gauss_time_dispersion}
+\end{figure}
+
+
+
