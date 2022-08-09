@@ -362,7 +362,7 @@ After producing the normalised CDFs, the inverse of these CDFs are calculated - 
     
 \end{figure}
 
-After producing the fits to the inverse cumulative distribution functions, these funtions were inputted into the detector simulation, SKDETSIM. Removing the SIGBM parameter from the calibration scripts meant there needed to be a new way with which to generate the angle at which the photons were produced in the simulation, and this is where the inverse transform sampling occurs for the relevant fit for the selected injector and optic type. Using the same event display used to produce the occupancy plots for the autocalib data and the test run data, occupancy plots of the Monte Carlo were produced. These are shown for the B1 - B5 collimators in Figure \ref{fig:ukli_mc_coll}, and for the B1 - B5 diffusers in Figure \ref{fig:ukli_mc_diff}. 
+After producing the fits to the inverse cumulative distribution functions, these funtions were inputted into the detector simulation, SKDETSIM. Removing the SIGBM parameter from the calibration scripts meant there needed to be a new way with which to generate the angle at which the photons were produced in the simulation, and this is where the inverse transform sampling occurs for the relevant fit for the selected injector and optic type. Using the same event display used to produce the occupancy plots for the autocalib data and the test run data, occupancy plots of the Monte Carlo were produced. These are shown for the B1 - B5 collimators in Figure \ref{fig:ukli_mc_coll}, and for the B1 - B5 diffusers in Figure \ref{fig:ukli_mc_diff}. These MC were produced with the abs, ray and mie parameters in the calibration scripts set to 1.0, 1.0, and 1.0 (i.e. the current detector simulation values) and the top-bottom asymmetry parameter set to 7.598, which is the most recently tuned value of this parameter. Because the original profiles from the test stands were taken in air, adjustments were made so that the refractive index of the water in the detector was taken into account when implementing the inverse CDFs into the detector simulation. 
 
 \begin{figure}[!htbp]
     \centering
@@ -392,4 +392,40 @@ After producing the fits to the inverse cumulative distribution functions, these
     \hspace*{0.005\textwidth}%
     \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ukli_diff_mc_B5.PNG}}
     
+\end{figure}
+
+After producing the UKLI MC, the next step was to use them to attempt to measure the absorption and scattering parameters in a similar way to the Korean system. As mentioned earlier, this was done by producing time of flight corrected hit timing plots for UKLI MC with multiple different values of absorption, and Rayleigh and Mie scattering parameters and comparing them to the TOF corrected plots for UKLI data. Figures \ref{fig:TOF_abs}, \ref{fig:TOF_ray} and \ref{fig:TOF_mie} show the time-of-flight corrected plots for the UKLI MC B1 collimator, produced with values of the 'abs' and 'ray' calibration script parameter between 0.7 and 1.3 to show the affect that varying these parameters have on the time of flight corrected hits. The y-axis shows the number of hits normalised by the total charge in the detector.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figures:TOF_abs.PNG}
+    \caption{Corrected TOF plot with varied absorption, while rayleigh and mie scattering is set to 1.0}
+    \label{fig:TOF_abs}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figures/TOF_ray.PNG}
+    \caption{Corrected TOF plot with varied Rayleigh scattering, while absorption and Mie scattering is set to 1.0}
+    \label{fig:TOF_ray}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figures/TOF_mie.PNG}
+    \caption{Corrected TOF plot with varied Mie scattering, while absorption and Rayleigh scattering is set to 1.0}
+    \label{fig:TOF_mie}
+\end{figure}
+
+As shown in Figure \ref{fig:TOF_ray}, the TOF correct timing plots are most affected by the Rayleigh scattering parameter, which affects the amount of hits in the scattered hits region, while varying the absorption parameter mostly affects the height of the reflected peak, as the higher the amount of absorption in the tank, the smaller the number of reflected hits. 
+
+After producing time-of-flight corrected plots for the B1 collimator UKLI MC and overlaying it with the Run 82181 November test run data with the abs, ray, mie parameters set to 1.0, and a TBA value of 7.598, it was clear that there were disgreements between the Monte Carlo and data in both the scattered hits region and the reflected hits peak. In order to remedy this, the time dispersion of the reflected hits peak was varied, in order to shift the distribution and better match up the UKLI Monte Carlo and test run data. 
+
+The time dispersion for the injected photons in the laser generation in SKDETSIM is governed by a Gaussian distributed random number generated using a Box-Muller transform, where additional time dispersion added would be the sigma of this Gaussian, and after a random number is passed through it, the output number would be added to the time for each track step of the photon giving the time dispersion. Figure \ref{fig:time_vec} shows the 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figures/beam_width.PNG}
+    \caption{Schematic showing how the width of the MC beam was defined}
+    \label{fig:beam_width}
 \end{figure}
