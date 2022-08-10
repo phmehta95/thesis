@@ -443,5 +443,64 @@ Along with implementing the Gaussian distributed time dispersion, introducing a 
     \label{fig:double_gauss_time_dispersion}
 \end{figure}
 
+Figure \ref{fig:TOF_dispersion_plots} show these time-of-flight corrected plots with both a gaussian and double gaussian time dispersion put in for varying amounts of time dispersion for 5, 10, 15 and 20 ns. 
+
+\begin{figure}[!htbp]
+    \centering
+    
+    \caption{TOF comparison for B1 collimator UKLI MC and Run 82181 test data for both gaussian and double gausian time dispersion for 5 ns, 10ns, 15 ns and 20 ns}\label{fig:TOF_dispersion_plots}
+    
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/time_dispersion_TOF_5ns.PNG}}\hfill
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/time_dispersion_TOF_10ns.PNG}}\hfill
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/time_dispersion_TOF_15ns.PNG}}
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/time_dispersion_TOF_20ns.PNG}}%
+    
+\end{figure}
+
+For the scattered hits region (region between dashed lines), there is now good agreement between the MC and data, with this region giving chi2/ndf values of less than one, and the time dispersion values of 5 ns and 10 ns giving the best agreement. A problem remains regarding the reflected hits peak, where the data continues to have a much higher reflected peak than the Monte Carlo. This points to the amount of charge in the detector for the reflected peak being too large for the Monte Carlo, and further studies will be needed to be done to tune this.
 
 
+\subsection{UKLI work towards Hyper-Kamiokande}
+
+Since the first implementation of the UKLI MC, there have been several improvements made to the diffuser profiles, with a full $\2pi$ diffuser profile produced from UKLI diffusers placed in a test stand in Sheffield. There were two types of diffusers involved in creating the 2D profiles: the "D5'' diffuser (and SK install spare diffuser) and "HP1'', a prototype for Hyper-Kamiokande. Profile measurements for the diffusers were made in both air and water, and Figure \ref{fig:diffuser_tank_sheff} shows the test stand setup at Sheffield, along with Figure \ref{fig:D5_diffuser} and Figure \ref{fig:HP1_diffuser} which show the D5 and HP1 diffusers respectively.
+
+\begin{figure}[!htbp]
+    \centering
+    
+    \caption{The Sheffield test tank setup along with photos of the D5 and HP1 diffusers}
+    
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/D5_diffuser.PNG}}\hfill \label{fig:D5_diffuser}
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/HP1_diffuser.PNG}}\hfill \label{fig:HP1_diffuser}
+ 
+    \hspace*{0.005\textwidth}%
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/diffuser_tank_sheff.PNG}} \label{fig:diffuser_tank_sheff}
+    
+\end{figure}
+
+In Figure \ref{fig:diffuser_tank_sheff}, not only is there a $\theta$ rotational stand about the vertical axis, there is also $\phi$ rotation about a horzontal axis, allowing for a 2D profile instead of the 1D profiles produced by the Warwick test stand previously. Figure \ref{fig:D5_sheff_2D_air} and Figure \ref{fig:D5_sheff_2D_water} show the 2D profiles for the D5 diffuser produced in air and water, with the $\theta$ and $\phi$ rotations labelled. 
+
+\begin{figure}[!htbp]
+    \centering
+    
+    \caption{Monte Carlo simulations of the B1 -B5 diffuser injectors}
+    
+    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/D5_sheff_2D_air.PNG}}\hfill
+    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/D5_sheff_2D_water.PNG}}\hfill
+
+\end{figure}
+
+To investigate the relationship between polar angle, azimuthal angle and the amplitude of the light, plots were made for the D5 and HP1 diffusers of the variation of amplitude vs polar angle, for measurements of azimuthal angle in 30\degree intervals. This would give an indication of how uniform the profile is by seeing how closely the values of amplitude for each azimuthal angle are to each other. This is shown in Figure \ref{fig:HP1_D5_azimuthal}, along with the coefficient of quartile variation (CQV) of the amplitude, to show the spread of the data and used instead of the standard deviation as a more robust measure as it will not be affected by outliers.  This data is shown for both the D5 and HP1 diffusers in air and also water, with three distinct regions (shown by the dashed lines) across which the amplitude varies most. 
+
+\begin{figure}[!htbp]
+    \centering
+    
+    \caption{Amplitude and Amplitude CQV plotted against polar angle (in degrees) for different values of azimuthal angle in air and water for the D5 and HP1 diffusers}\label{fig:HP1_D5_azimuthal}
+    
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/cqv_D5_air.PNG.PNG}}\hfill
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/cqv_D5_water.PNG.PNG}}\hfill
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/CQV_HP1_air.PNG.PNG}}
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/CQV_hp1_water}}%
+    
+\end{figure}
+
+The reason for the largest CQV values for the larger values of polar angle is due to smaller amplitude values showing more variation than for larger amplitude values if there an inherent systematic variation stemming from measurement apparatus or dark noise in the tank. 
