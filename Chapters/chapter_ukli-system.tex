@@ -394,6 +394,23 @@ After producing the fits to the inverse cumulative distribution functions, these
     
 \end{figure}
 
+In order to validate the diffuser MC inverse cumulative distribution function output, a uniform distribution was run through the equation for the diffuser inverse CDF fits and the original PDF fit for each diffuser was used to fit the output points from the distribution, showing that inverse transform sampling was done correctly for the PDFs. These are shown for each diffuser in Figure \ref{fig:inv_cdf_check}. 
+
+\begin{figure}[!htbp]
+    \centering
+    
+    \caption{Plots of the result of running a randomly sampled numbers from a uniform distibution through the inverse CDFs (in black) for each diffuser, along with the original PDF fits (in red) for the B1 - B5 diffusers.}\label{fig:inv_cdf_check}
+    
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/inv_cdf_check_diff_B1.PNG}}\hfill
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/inv_cdf_check_diff_B2.PNG}}\hfill
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/inv_cdf_check_diff_B3.PNG}}
+    
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/inv_cdf_check_diff_B4.PNG}}%
+    \hspace*{0.005\textwidth}%
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/inv_cdf_check_diff_B5.PNG}}
+    
+\end{figure}
+
 After producing the UKLI MC, the next step was to use them to attempt to measure the absorption and scattering parameters in a similar way to the Korean system. As mentioned earlier, this was done by producing time of flight corrected hit timing plots for UKLI MC with multiple different values of absorption, and Rayleigh and Mie scattering parameters and comparing them to the TOF corrected plots for UKLI data. Figures \ref{fig:TOF_abs}, \ref{fig:TOF_ray} and \ref{fig:TOF_mie} show the time-of-flight corrected plots for the UKLI MC B1 collimator, produced with values of the 'abs' and 'ray' calibration script parameter between 0.7 and 1.3 to show the affect that varying these parameters have on the time of flight corrected hits. The y-axis shows the number of hits normalised by the total charge in the detector.
 
 \begin{figure}
@@ -496,9 +513,9 @@ To investigate the relationship between polar angle, azimuthal angle and the amp
     
     \caption{Amplitude and Amplitude CQV plotted against polar angle (in degrees) for different values of azimuthal angle in air and water for the D5 and HP1 diffusers}\label{fig:HP1_D5_azimuthal}
     
-    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/cqv_D5_air.PNG.PNG}}\hfill
-    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/cqv_D5_water.PNG.PNG}}\hfill
-    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/CQV_HP1_air.PNG.PNG}}
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/cqv_D5_air.PNG}}\hfill
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/cqv_D5_water.PNG}}\hfill
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/CQV_HP1_air.PNG}}
     \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/CQV_hp1_water}}%
     
 \end{figure}

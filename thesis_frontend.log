@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.27)  10 AUG 2022 17:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.27)  12 AUG 2022 21:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2061,79 +2061,110 @@ Package pdftex.def Info: Figures/ukli_diff_mc_B5.PNG  used on input line 393.
 (pdftex.def)             Requested size: 113.85063pt x 110.41142pt.
 
 
-LaTeX Warning: Reference `fig:TOF_abs' on page 99 undefined on input line 397.
-
-
-LaTeX Warning: Reference `fig:TOF_ray' on page 99 undefined on input line 397.
-
-
-LaTeX Warning: Reference `fig:TOF_mie' on page 99 undefined on input line 397.
+LaTeX Warning: Reference `fig:inv_cdf_check' on page 99 undefined on input line 397.
 
 [99 <./Figures/ukli_mc_B1.PNG> <./Figures/ukli_mc_B2.PNG> <./Figures/ukli_mc_B3.PNG> <./Figures/ukli_mc_B4.PNG> <./Figures/ukli_mc_B5.PNG>]
-<Figures/TOF_abs.PNG, id=861, 1751.54375pt x 965.6075pt>
+<Figures/inv_cdf_check_diff_B1.PNG, id=861, 867.24pt x 519.1395pt>
+File: Figures/inv_cdf_check_diff_B1.PNG Graphic file (type png)
+<use Figures/inv_cdf_check_diff_B1.PNG>
+Package pdftex.def Info: Figures/inv_cdf_check_diff_B1.PNG  used on input line 404.
+(pdftex.def)             Requested size: 113.85063pt x 68.14798pt.
+<Figures/inv_cdf_check_diff_B2.PNG, id=862, 864.22874pt x 487.22025pt>
+File: Figures/inv_cdf_check_diff_B2.PNG Graphic file (type png)
+<use Figures/inv_cdf_check_diff_B2.PNG>
+Package pdftex.def Info: Figures/inv_cdf_check_diff_B2.PNG  used on input line 405.
+(pdftex.def)             Requested size: 113.85063pt x 64.18094pt.
+<Figures/inv_cdf_check_diff_B3.PNG, id=863, 865.43324pt x 490.83376pt>
+File: Figures/inv_cdf_check_diff_B3.PNG Graphic file (type png)
+<use Figures/inv_cdf_check_diff_B3.PNG>
+Package pdftex.def Info: Figures/inv_cdf_check_diff_B3.PNG  used on input line 406.
+(pdftex.def)             Requested size: 113.85063pt x 64.56706pt.
+<Figures/inv_cdf_check_diff_B4.PNG, id=864, 865.43324pt x 490.83376pt>
+File: Figures/inv_cdf_check_diff_B4.PNG Graphic file (type png)
+<use Figures/inv_cdf_check_diff_B4.PNG>
+Package pdftex.def Info: Figures/inv_cdf_check_diff_B4.PNG  used on input line 408.
+(pdftex.def)             Requested size: 113.85063pt x 64.56706pt.
+<Figures/inv_cdf_check_diff_B5.PNG, id=865, 866.0355pt x 494.44725pt>
+File: Figures/inv_cdf_check_diff_B5.PNG Graphic file (type png)
+<use Figures/inv_cdf_check_diff_B5.PNG>
+Package pdftex.def Info: Figures/inv_cdf_check_diff_B5.PNG  used on input line 410.
+(pdftex.def)             Requested size: 113.85063pt x 64.99713pt.
+
+
+LaTeX Warning: Reference `fig:TOF_abs' on page 100 undefined on input line 414.
+
+
+LaTeX Warning: Reference `fig:TOF_ray' on page 100 undefined on input line 414.
+
+
+LaTeX Warning: Reference `fig:TOF_mie' on page 100 undefined on input line 414.
+
+[100 <./Figures/ukli_diff_mc_B1.PNG> <./Figures/ukli_diff_mc_B2.PNG> <./Figures/ukli_diff_mc_B3.png> <./Figures/ukli_diff_mc_B4.PNG> <./Figures/ukli_diff_mc_B5.PNG>]
+<Figures/TOF_abs.PNG, id=876, 1751.54375pt x 965.6075pt>
 File: Figures/TOF_abs.PNG Graphic file (type png)
 <use Figures/TOF_abs.PNG>
-Package pdftex.def Info: Figures/TOF_abs.PNG  used on input line 401.
+Package pdftex.def Info: Figures/TOF_abs.PNG  used on input line 418.
 (pdftex.def)             Requested size: 241.49895pt x 133.13611pt.
-<Figures/TOF_ray.PNG, id=862, 1793.70125pt x 971.63pt>
+<Figures/TOF_ray.PNG, id=877, 1793.70125pt x 971.63pt>
 File: Figures/TOF_ray.PNG Graphic file (type png)
 <use Figures/TOF_ray.PNG>
-Package pdftex.def Info: Figures/TOF_ray.PNG  used on input line 408.
+Package pdftex.def Info: Figures/TOF_ray.PNG  used on input line 425.
 (pdftex.def)             Requested size: 241.49895pt x 130.80856pt.
-<Figures/TOF_mie.PNG, id=863, 1759.57375pt x 965.6075pt>
+<Figures/TOF_mie.PNG, id=878, 1759.57375pt x 965.6075pt>
 File: Figures/TOF_mie.PNG Graphic file (type png)
 <use Figures/TOF_mie.PNG>
-Package pdftex.def Info: Figures/TOF_mie.PNG  used on input line 415.
+Package pdftex.def Info: Figures/TOF_mie.PNG  used on input line 432.
 (pdftex.def)             Requested size: 241.49895pt x 132.51727pt.
 
 
-LaTeX Warning: Reference `fig:TOF_ray' on page 100 undefined on input line 420.
+LaTeX Warning: Reference `fig:TOF_ray' on page 101 undefined on input line 437.
 
-[100 <./Figures/ukli_diff_mc_B1.PNG> <./Figures/ukli_diff_mc_B2.PNG> <./Figures/ukli_diff_mc_B3.png> <./Figures/ukli_diff_mc_B4.PNG> <./Figures/ukli_diff_mc_B5.PNG>] [101 <./Figures/TOF_abs.png> <./Figures/TOF_ray.png> <./Figures/TOF_mie.png>] [102]
+[101 <./Figures/inv_cdf_check_diff_B1.PNG> <./Figures/inv_cdf_check_diff_B2.PNG> <./Figures/inv_cdf_check_diff_B3.PNG> <./Figures/inv_cdf_check_diff_B4.PNG> <./Figures/inv_cdf_check_diff_B5.PNG>] [102 <./Figures/TOF_abs.png> <./Figures/TOF_ray.png> <./Figures/TOF_mie.png>]
 
-LaTeX Warning: Reference `fig:gauss_time_dispersion' on page 103 undefined on input line 428.
+LaTeX Warning: Reference `fig:gauss_time_dispersion' on page 103 undefined on input line 445.
 
-<Figures/gauss_time_dispersion.PNG, id=889, 1723.43875pt x 954.56625pt>
+<Figures/gauss_time_dispersion.PNG, id=900, 1723.43875pt x 954.56625pt>
 File: Figures/gauss_time_dispersion.PNG Graphic file (type png)
 <use Figures/gauss_time_dispersion.PNG>
-Package pdftex.def Info: Figures/gauss_time_dispersion.PNG  used on input line 432.
+Package pdftex.def Info: Figures/gauss_time_dispersion.PNG  used on input line 449.
 (pdftex.def)             Requested size: 241.49895pt x 133.75488pt.
 
-LaTeX Warning: Reference `fig:double_gauss_time_dispersion' on page 103 undefined on input line 437.
+LaTeX Warning: Reference `fig:double_gauss_time_dispersion' on page 103 undefined on input line 454.
 
-<Figures/double_gauss_time_dispersion.PNG, id=890, 706.43925pt x 357.13425pt>
+<Figures/double_gauss_time_dispersion.PNG, id=901, 706.43925pt x 357.13425pt>
 File: Figures/double_gauss_time_dispersion.PNG Graphic file (type png)
 <use Figures/double_gauss_time_dispersion.PNG>
-Package pdftex.def Info: Figures/double_gauss_time_dispersion.PNG  used on input line 441.
+Package pdftex.def Info: Figures/double_gauss_time_dispersion.PNG  used on input line 458.
 (pdftex.def)             Requested size: 241.49895pt x 122.08342pt.
+[103]
 
-LaTeX Warning: Reference `fig:TOF_dispersion_plots' on page 103 undefined on input line 446.
+LaTeX Warning: Reference `fig:TOF_dispersion_plots' on page 104 undefined on input line 463.
 
-<Figures/time_dispersion_TOF_5ns.PNG, id=891, 682.34924pt x 412.54124pt>
+<Figures/time_dispersion_TOF_5ns.PNG, id=906, 682.34924pt x 412.54124pt>
 File: Figures/time_dispersion_TOF_5ns.PNG Graphic file (type png)
 <use Figures/time_dispersion_TOF_5ns.PNG>
-Package pdftex.def Info: Figures/time_dispersion_TOF_5ns.PNG  used on input line 453.
+Package pdftex.def Info: Figures/time_dispersion_TOF_5ns.PNG  used on input line 470.
 (pdftex.def)             Requested size: 113.85063pt x 68.82803pt.
-<Figures/time_dispersion_TOF_10ns.PNG, id=892, 686.565pt x 399.29175pt>
+<Figures/time_dispersion_TOF_10ns.PNG, id=907, 686.565pt x 399.29175pt>
 File: Figures/time_dispersion_TOF_10ns.PNG Graphic file (type png)
 <use Figures/time_dispersion_TOF_10ns.PNG>
-Package pdftex.def Info: Figures/time_dispersion_TOF_10ns.PNG  used on input line 454.
+Package pdftex.def Info: Figures/time_dispersion_TOF_10ns.PNG  used on input line 471.
 (pdftex.def)             Requested size: 113.85063pt x 66.20929pt.
-<Figures/time_dispersion_TOF_15ns.PNG, id=893, 657.657pt x 392.667pt>
+<Figures/time_dispersion_TOF_15ns.PNG, id=908, 657.657pt x 392.667pt>
 File: Figures/time_dispersion_TOF_15ns.PNG Graphic file (type png)
 <use Figures/time_dispersion_TOF_15ns.PNG>
-Package pdftex.def Info: Figures/time_dispersion_TOF_15ns.PNG  used on input line 455.
+Package pdftex.def Info: Figures/time_dispersion_TOF_15ns.PNG  used on input line 472.
 (pdftex.def)             Requested size: 113.85063pt x 67.9748pt.
-<Figures/time_dispersion_TOF_20ns.PNG, id=894, 668.4975pt x 392.06474pt>
+<Figures/time_dispersion_TOF_20ns.PNG, id=909, 668.4975pt x 392.06474pt>
 File: Figures/time_dispersion_TOF_20ns.PNG Graphic file (type png)
 <use Figures/time_dispersion_TOF_20ns.PNG>
-Package pdftex.def Info: Figures/time_dispersion_TOF_20ns.PNG  used on input line 456.
+Package pdftex.def Info: Figures/time_dispersion_TOF_20ns.PNG  used on input line 473.
 (pdftex.def)             Requested size: 113.85063pt x 66.76976pt.
-[103 <./Figures/gauss_time_dispersion.PNG>] [104 <./Figures/double_gauss_time_dispersion.PNG> <./Figures/time_dispersion_TOF_5ns.PNG> <./Figures/time_dispersion_TOF_10ns.PNG> <./Figures/time_dispersion_TOF_15ns.PNG> <./Figures/time_dispersion_TOF_20ns.PNG>]
-./Chapters/chapter_ukli-system.tex:465: Undefined control sequence.
+[104 <./Figures/gauss_time_dispersion.PNG> <./Figures/double_gauss_time_dispersion.PNG>]
+./Chapters/chapter_ukli-system.tex:482: Undefined control sequence.
 <recently read> \2
                   
-l.465 ...to the diffuser profiles, with a full $\2
+l.482 ...to the diffuser profiles, with a full $\2
                                                   pi$ diffuser profile produ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2142,104 +2173,74 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `fig:diffuser_tank_sheff' on page 105 undefined on input line 465.
+LaTeX Warning: Reference `fig:diffuser_tank_sheff' on page 105 undefined on input line 482.
 
 
-LaTeX Warning: Reference `fig:D5_diffuser' on page 105 undefined on input line 465.
+LaTeX Warning: Reference `fig:D5_diffuser' on page 105 undefined on input line 482.
 
 
-LaTeX Warning: Reference `fig:HP1_diffuser' on page 105 undefined on input line 465.
+LaTeX Warning: Reference `fig:HP1_diffuser' on page 105 undefined on input line 482.
 
-<Figures/D5_diffuser.PNG, id=911, 105.39375pt x 107.65219pt>
+<Figures/D5_diffuser.PNG, id=917, 105.39375pt x 107.65219pt>
 File: Figures/D5_diffuser.PNG Graphic file (type png)
 <use Figures/D5_diffuser.PNG>
-Package pdftex.def Info: Figures/D5_diffuser.PNG  used on input line 472.
+Package pdftex.def Info: Figures/D5_diffuser.PNG  used on input line 489.
 (pdftex.def)             Requested size: 113.85063pt x 116.29219pt.
-<Figures/HP1_diffuser.PNG, id=912, 139.722pt x 105.12pt>
+<Figures/HP1_diffuser.PNG, id=918, 139.722pt x 105.12pt>
 File: Figures/HP1_diffuser.PNG Graphic file (type png)
 <use Figures/HP1_diffuser.PNG>
-Package pdftex.def Info: Figures/HP1_diffuser.PNG  used on input line 473.
+Package pdftex.def Info: Figures/HP1_diffuser.PNG  used on input line 490.
 (pdftex.def)             Requested size: 113.85063pt x 85.65678pt.
-<Figures/diffuser_tank_sheff.PNG, id=913, 407.72325pt x 223.43475pt>
+<Figures/diffuser_tank_sheff.PNG, id=919, 407.72325pt x 223.43475pt>
 File: Figures/diffuser_tank_sheff.PNG Graphic file (type png)
 <use Figures/diffuser_tank_sheff.PNG>
-Package pdftex.def Info: Figures/diffuser_tank_sheff.PNG  used on input line 476.
+Package pdftex.def Info: Figures/diffuser_tank_sheff.PNG  used on input line 493.
 (pdftex.def)             Requested size: 113.85063pt x 62.39082pt.
 
-LaTeX Warning: Reference `fig:diffuser_tank_sheff' on page 105 undefined on input line 480.
+LaTeX Warning: Reference `fig:diffuser_tank_sheff' on page 105 undefined on input line 497.
 
 
-LaTeX Warning: Reference `fig:D5_sheff_2D_air' on page 105 undefined on input line 480.
+LaTeX Warning: Reference `fig:D5_sheff_2D_air' on page 105 undefined on input line 497.
 
 
-LaTeX Warning: Reference `fig:D5_sheff_2D_water' on page 105 undefined on input line 480.
+LaTeX Warning: Reference `fig:D5_sheff_2D_water' on page 105 undefined on input line 497.
 
-[105 <./Figures/D5_diffuser.png> <./Figures/HP1_diffuser.png> <./Figures/diffuser_tank_sheff.PNG>]
-<Figures/D5_sheff_2D_air.PNG, id=923, 189.70876pt x 185.19188pt>
+<Figures/D5_sheff_2D_air.PNG, id=920, 189.70876pt x 185.19188pt>
 File: Figures/D5_sheff_2D_air.PNG Graphic file (type png)
 <use Figures/D5_sheff_2D_air.PNG>
-Package pdftex.def Info: Figures/D5_sheff_2D_air.PNG  used on input line 487.
+Package pdftex.def Info: Figures/D5_sheff_2D_air.PNG  used on input line 504.
 (pdftex.def)             Requested size: 155.24895pt x 151.55594pt.
-<Figures/D5_sheff_2D_water.PNG, id=924, 189.70876pt x 177.66376pt>
+<Figures/D5_sheff_2D_water.PNG, id=921, 189.70876pt x 177.66376pt>
 File: Figures/D5_sheff_2D_water.PNG Graphic file (type png)
 <use Figures/D5_sheff_2D_water.PNG>
-Package pdftex.def Info: Figures/D5_sheff_2D_water.PNG  used on input line 488.
+Package pdftex.def Info: Figures/D5_sheff_2D_water.PNG  used on input line 505.
 (pdftex.def)             Requested size: 155.24895pt x 145.39514pt.
+[105 <./Figures/time_dispersion_TOF_5ns.PNG> <./Figures/time_dispersion_TOF_10ns.PNG> <./Figures/time_dispersion_TOF_15ns.PNG> <./Figures/time_dispersion_TOF_20ns.PNG>]
 
+LaTeX Warning: Reference `fig:HP1_D5_azimuthal' on page 106 undefined on input line 509.
 
-LaTeX Warning: Reference `fig:HP1_D5_azimuthal' on page 106 undefined on input line 492.
-
-
-LaTeX Warning: File `Figures/cqv_D5_air.PNG.PNG' not found on input line 499.
-
-
-./Chapters/chapter_ukli-system.tex:499: Package pdftex.def Error: File `Figures/cqv_D5_air.PNG.PNG' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.499 ...3\textwidth]{Figures/cqv_D5_air.PNG.PNG}}
-                                                  \hfill
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `Figures/cqv_D5_water.PNG.PNG' not found on input line 500.
-
-
-./Chapters/chapter_ukli-system.tex:500: Package pdftex.def Error: File `Figures/cqv_D5_water.PNG.PNG' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.500 ...textwidth]{Figures/cqv_D5_water.PNG.PNG}}
-                                                  \hfill
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `Figures/CQV_HP1_air.PNG.PNG' not found on input line 501.
-
-
-./Chapters/chapter_ukli-system.tex:501: Package pdftex.def Error: File `Figures/CQV_HP1_air.PNG.PNG' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.501 ...\textwidth]{Figures/CQV_HP1_air.PNG.PNG}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-<Figures/CQV_hp1_water.png, id=925, 1044.90375pt x 551.05875pt>
+[106 <./Figures/D5_diffuser.png> <./Figures/HP1_diffuser.png> <./Figures/diffuser_tank_sheff.PNG> <./Figures/D5_sheff_2D_air.png> <./Figures/D5_sheff_2D_water.png>]
+<Figures/cqv_D5_air.PNG, id=943, 981.6675pt x 546.843pt>
+File: Figures/cqv_D5_air.PNG Graphic file (type png)
+<use Figures/cqv_D5_air.PNG>
+Package pdftex.def Info: Figures/cqv_D5_air.PNG  used on input line 516.
+(pdftex.def)             Requested size: 113.85063pt x 63.41547pt.
+<Figures/cqv_D5_water.PNG, id=944, 1027.4385pt x 552.26324pt>
+File: Figures/cqv_D5_water.PNG Graphic file (type png)
+<use Figures/cqv_D5_water.PNG>
+Package pdftex.def Info: Figures/cqv_D5_water.PNG  used on input line 517.
+(pdftex.def)             Requested size: 113.85063pt x 61.19576pt.
+<Figures/CQV_HP1_air.PNG, id=945, 1011.17775pt x 551.05875pt>
+File: Figures/CQV_HP1_air.PNG Graphic file (type png)
+<use Figures/CQV_HP1_air.PNG>
+Package pdftex.def Info: Figures/CQV_HP1_air.PNG  used on input line 518.
+(pdftex.def)             Requested size: 113.85063pt x 62.03767pt.
+<Figures/CQV_hp1_water.png, id=946, 1044.90375pt x 551.05875pt>
 File: Figures/CQV_hp1_water.png Graphic file (type png)
 <use Figures/CQV_hp1_water.png>
-Package pdftex.def Info: Figures/CQV_hp1_water.png  used on input line 502.
+Package pdftex.def Info: Figures/CQV_hp1_water.png  used on input line 519.
 (pdftex.def)             Requested size: 113.85063pt x 60.03645pt.
-) [106 <./Figures/D5_sheff_2D_air.png> <./Figures/D5_sheff_2D_water.png>] [107 <./Figures/CQV_hp1_water.PNG>] [108]
+) [107 <./Figures/cqv_D5_air.PNG> <./Figures/cqv_D5_water.PNG> <./Figures/CQV_HP1_air.PNG> <./Figures/CQV_hp1_water.PNG>]
 \openout2 = `Chapters/chapter_superkgd_upgrade.aux'.
 
  (./Chapters/chapter_superkgd_upgrade.tex
@@ -2250,9 +2251,9 @@ Overfull \hbox (13.9462pt too wide) in paragraph at lines 4--4
  []
 
 
-LaTeX Warning: Citation `meo_measurement_nodate' on page 109 undefined on input line 6.
+LaTeX Warning: Citation `meo_measurement_nodate' on page 108 undefined on input line 6.
 
-[109
+[108
 
 
 
@@ -2263,268 +2264,268 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--9
  []
 
 
-LaTeX Warning: Reference `eq:IBD_equation' on page 110 undefined on input line 10.
+LaTeX Warning: Reference `eq:IBD_equation' on page 109 undefined on input line 10.
 
 
-LaTeX Warning: Citation `marti_evaluation_2020' on page 110 undefined on input line 17.
+LaTeX Warning: Citation `marti_evaluation_2020' on page 109 undefined on input line 17.
 
 
-LaTeX Warning: Reference `fig:NCQE_IBD' on page 110 undefined on input line 17.
+LaTeX Warning: Reference `fig:NCQE_IBD' on page 109 undefined on input line 17.
 
-[110]
-<Figures/schematic.png, id=957, 926.2605pt x 428.19975pt>
+[109]
+<Figures/schematic.png, id=969, 926.2605pt x 428.19975pt>
 File: Figures/schematic.png Graphic file (type png)
 <use Figures/schematic.png>
 Package pdftex.def Info: Figures/schematic.png  used on input line 21.
 (pdftex.def)             Requested size: 345.0pt x 159.4899pt.
 
 
-LaTeX Warning: Reference `fig:atm_nu_energy' on page 111 undefined on input line 27.
+LaTeX Warning: Reference `fig:atm_nu_energy' on page 110 undefined on input line 27.
 
-<Figures/atm_recon_energy.png, id=958, 618.51076pt x 152.9715pt>
+<Figures/atm_recon_energy.png, id=970, 618.51076pt x 152.9715pt>
 File: Figures/atm_recon_energy.png Graphic file (type png)
 <use Figures/atm_recon_energy.png>
 Package pdftex.def Info: Figures/atm_recon_energy.png  used on input line 30.
 (pdftex.def)             Requested size: 345.0pt x 85.32732pt.
 
-LaTeX Warning: Citation `marti_evaluation_2020' on page 111 undefined on input line 31.
+LaTeX Warning: Citation `marti_evaluation_2020' on page 110 undefined on input line 31.
 
 
-LaTeX Warning: Citation `marti_evaluation_2020' on page 111 undefined on input line 31.
+LaTeX Warning: Citation `marti_evaluation_2020' on page 110 undefined on input line 31.
 
-[111 <./Figures/schematic.PNG>]
+[110 <./Figures/schematic.PNG>]
 
-LaTeX Warning: Reference `fig:atm_nu_energy' on page 112 undefined on input line 36.
-
-
-LaTeX Warning: Reference `fig:EGADS_PMT' on page 112 undefined on input line 42.
+LaTeX Warning: Reference `fig:atm_nu_energy' on page 111 undefined on input line 36.
 
 
-LaTeX Warning: Citation `marti_evaluation_2020' on page 112 undefined on input line 42.
+LaTeX Warning: Reference `fig:EGADS_PMT' on page 111 undefined on input line 42.
 
-[112 <./Figures/atm_recon_energy.png>]
-<Figures/egads_pmt_map.png, id=972, 688.974pt x 348.70274pt>
+
+LaTeX Warning: Citation `marti_evaluation_2020' on page 111 undefined on input line 42.
+
+[111 <./Figures/atm_recon_energy.png>]
+<Figures/egads_pmt_map.png, id=984, 688.974pt x 348.70274pt>
 File: Figures/egads_pmt_map.png Graphic file (type png)
 <use Figures/egads_pmt_map.png>
 Package pdftex.def Info: Figures/egads_pmt_map.png  used on input line 45.
 (pdftex.def)             Requested size: 345.0pt x 174.61165pt.
 
 
-LaTeX Warning: Citation `marti_evaluation_2020' on page 113 undefined on input line 46.
+LaTeX Warning: Citation `marti_evaluation_2020' on page 112 undefined on input line 46.
 
 
-LaTeX Warning: Citation `marti_evaluation_2020' on page 113 undefined on input line 46.
+LaTeX Warning: Citation `marti_evaluation_2020' on page 112 undefined on input line 46.
 
 
-LaTeX Warning: Reference `eq:ambe_decay' on page 113 undefined on input line 50.
+LaTeX Warning: Reference `eq:ambe_decay' on page 112 undefined on input line 50.
 
-[113 <./Figures/egads_pmt_map.PNG>]
+[112 <./Figures/egads_pmt_map.PNG>]
 
-LaTeX Warning: Reference `fig:EGADS_ambe_capture' on page 114 undefined on input line 60.
+LaTeX Warning: Reference `fig:EGADS_ambe_capture' on page 113 undefined on input line 60.
 
-<Figures/egads_ambe.png, id=979, 511.31026pt x 189.1065pt>
+<Figures/egads_ambe.png, id=991, 511.31026pt x 189.1065pt>
 File: Figures/egads_ambe.png Graphic file (type png)
 <use Figures/egads_ambe.png>
 Package pdftex.def Info: Figures/egads_ambe.png  used on input line 63.
 (pdftex.def)             Requested size: 345.0pt x 127.60387pt.
 
-LaTeX Warning: Reference `fig:egads_transparency' on page 114 undefined on input line 68.
+LaTeX Warning: Reference `fig:egads_transparency' on page 113 undefined on input line 68.
 
-<Figures/egads_concentration.png, id=980, 508.299pt x 301.72725pt>
+<Figures/egads_concentration.png, id=992, 508.299pt x 301.72725pt>
 File: Figures/egads_concentration.png Graphic file (type png)
 <use Figures/egads_concentration.png>
 Package pdftex.def Info: Figures/egads_concentration.png  used on input line 71.
 (pdftex.def)             Requested size: 345.0pt x 204.79887pt.
 
-LaTeX Warning: Citation `marti_evaluation_2020' on page 114 undefined on input line 72.
+LaTeX Warning: Citation `marti_evaluation_2020' on page 113 undefined on input line 72.
 
 
-LaTeX Warning: Citation `marti_evaluation_2020' on page 114 undefined on input line 72.
+LaTeX Warning: Citation `marti_evaluation_2020' on page 113 undefined on input line 72.
 
-[114 <./Figures/egads_ambe.PNG>] [115 <./Figures/egads_concentration.PNG>]
+[113 <./Figures/egads_ambe.PNG>] [114 <./Figures/egads_concentration.PNG>]
 
-LaTeX Warning: Reference `fig:skgd_water_system' on page 116 undefined on input line 84.
+LaTeX Warning: Reference `fig:skgd_water_system' on page 115 undefined on input line 84.
 
-<Figures/skgd_water_system.png, id=996, 648.62325pt x 516.7305pt>
+<Figures/skgd_water_system.png, id=1008, 648.62325pt x 516.7305pt>
 File: Figures/skgd_water_system.png Graphic file (type png)
 <use Figures/skgd_water_system.png>
 Package pdftex.def Info: Figures/skgd_water_system.png  used on input line 89.
 (pdftex.def)             Requested size: 345.0pt x 274.85144pt.
-[116]
+[115]
 
-LaTeX Warning: Reference `fig:gd_pipes' on page 117 undefined on input line 96.
+LaTeX Warning: Reference `fig:gd_pipes' on page 116 undefined on input line 96.
 
-<Figures/gd_pipes.png, id=1002, 475.7775pt x 336.0555pt>
+<Figures/gd_pipes.png, id=1014, 475.7775pt x 336.0555pt>
 File: Figures/gd_pipes.png Graphic file (type png)
 <use Figures/gd_pipes.png>
 Package pdftex.def Info: Figures/gd_pipes.png  used on input line 100.
 (pdftex.def)             Requested size: 345.0pt x 243.69296pt.
-[117 <./Figures/skgd_water_system.PNG>]
+[116 <./Figures/skgd_water_system.PNG>]
 
-LaTeX Warning: Reference `gdpowderradiation' on page 118 undefined on input line 108.
+LaTeX Warning: Reference `gdpowderradiation' on page 117 undefined on input line 108.
 
-[118 <./Figures/gd_pipes.png>]
-<Figures/gdloadinghistory.png, id=1017, 379.4175pt x 287.8755pt>
+[117 <./Figures/gd_pipes.png>]
+<Figures/gdloadinghistory.png, id=1029, 379.4175pt x 287.8755pt>
 File: Figures/gdloadinghistory.png Graphic file (type png)
 <use Figures/gdloadinghistory.png>
 Package pdftex.def Info: Figures/gdloadinghistory.png  used on input line 131.
 (pdftex.def)             Requested size: 345.0pt x 261.76505pt.
 
 
-LaTeX Warning: Reference `fig:gdloadinghistory' on page 119 undefined on input line 138.
+LaTeX Warning: Reference `fig:gdloadinghistory' on page 118 undefined on input line 138.
 
 
-LaTeX Warning: Reference `fig:gdattenuationlength' on page 119 undefined on input line 138.
+LaTeX Warning: Reference `fig:gdattenuationlength' on page 118 undefined on input line 138.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 138--142
 
  []
 
-[119 <./Figures/gdloadinghistory.PNG>]
-<Figures/attenuation_length_gd.png, id=1025, 418.56375pt x 228.25275pt>
+[118 <./Figures/gdloadinghistory.PNG>]
+<Figures/attenuation_length_gd.png, id=1037, 418.56375pt x 228.25275pt>
 File: Figures/attenuation_length_gd.png Graphic file (type png)
 <use Figures/attenuation_length_gd.png>
 Package pdftex.def Info: Figures/attenuation_length_gd.png  used on input line 144.
 (pdftex.def)             Requested size: 345.0pt x 188.13669pt.
 
 
-LaTeX Warning: Reference `fig:gdconductivity' on page 120 undefined on input line 151.
+LaTeX Warning: Reference `fig:gdconductivity' on page 119 undefined on input line 151.
 
 
-LaTeX Warning: Reference `fig:gdconcentration' on page 120 undefined on input line 151.
+LaTeX Warning: Reference `fig:gdconcentration' on page 119 undefined on input line 151.
 
 
 Overfull \hbox (18.50063pt too wide) in paragraph at lines 151--152
 []\OT1/cmr/m/n/10 There is also great im-por-tance in mon-i-tor-ing the con-cen-tra-tion of the $[][] [][] \OMS/cmsy/m/n/10 ^^A
  []
 
-[120 <./Figures/attenuation_length_gd.PNG>]
-<Figures/gd_conductivity.png, id=1033, 476.37975pt x 293.29575pt>
+[119 <./Figures/attenuation_length_gd.PNG>]
+<Figures/gd_conductivity.png, id=1044, 476.37975pt x 293.29575pt>
 File: Figures/gd_conductivity.png Graphic file (type png)
 <use Figures/gd_conductivity.png>
 Package pdftex.def Info: Figures/gd_conductivity.png  used on input line 155.
 (pdftex.def)             Requested size: 345.0pt x 212.40794pt.
- [121]
-<Figures/gdconcentration.png, id=1038, 486.618pt x 249.93375pt>
+ [120]
+<Figures/gdconcentration.png, id=1050, 486.618pt x 249.93375pt>
 File: Figures/gdconcentration.png Graphic file (type png)
 <use Figures/gdconcentration.png>
 Package pdftex.def Info: Figures/gdconcentration.png  used on input line 162.
 (pdftex.def)             Requested size: 345.0pt x 177.2025pt.
 
 
-LaTeX Warning: Reference `eq:ambe_decay' on page 122 undefined on input line 167.
+LaTeX Warning: Reference `eq:ambe_decay' on page 121 undefined on input line 167.
 
-[122 <./Figures/gd_conductivity.png> <./Figures/gdconcentration.PNG>]
+[121 <./Figures/gd_conductivity.png> <./Figures/gdconcentration.PNG>]
 
-LaTeX Warning: Reference `fig:ambe_time' on page 123 undefined on input line 169.
+LaTeX Warning: Reference `fig:ambe_time' on page 122 undefined on input line 169.
 
-<Figures/ambe_time.png, id=1047, 314.3745pt x 219.82124pt>
+<Figures/ambe_time.png, id=1059, 314.3745pt x 219.82124pt>
 File: Figures/ambe_time.png Graphic file (type png)
 <use Figures/ambe_time.png>
 Package pdftex.def Info: Figures/ambe_time.png  used on input line 173.
 (pdftex.def)             Requested size: 345.0pt x 241.25737pt.
-[123]
+[122]
 
-LaTeX Warning: Reference `fig:capturetime_gdconc' on page 124 undefined on input line 178.
-
-
-LaTeX Warning: Reference `fig:ambe_time' on page 124 undefined on input line 178.
+LaTeX Warning: Reference `fig:capturetime_gdconc' on page 123 undefined on input line 178.
 
 
-LaTeX Warning: Citation `abe_first_2021' on page 124 undefined on input line 178.
+LaTeX Warning: Reference `fig:ambe_time' on page 123 undefined on input line 178.
 
-<Figures/capturetime_gdconc.png, id=1052, 330.63525pt x 225.2415pt>
+
+LaTeX Warning: Citation `abe_first_2021' on page 123 undefined on input line 178.
+
+<Figures/capturetime_gdconc.png, id=1064, 330.63525pt x 225.2415pt>
 File: Figures/capturetime_gdconc.png Graphic file (type png)
 <use Figures/capturetime_gdconc.png>
 Package pdftex.def Info: Figures/capturetime_gdconc.png  used on input line 181.
 (pdftex.def)             Requested size: 345.0pt x 235.03267pt.
-[124 <./Figures/ambe_time.PNG>]) [125 <./Figures/capturetime_gdconc.PNG>]
+[123 <./Figures/ambe_time.PNG>]) [124 <./Figures/capturetime_gdconc.PNG>]
 \openout2 = `Chapters/chapter_ncqe-gd.aux'.
 
  (./Chapters/chapter_ncqe-gd.tex
 Chapter 7.
 
-LaTeX Warning: Reference `table:software' on page 126 undefined on input line 7.
+LaTeX Warning: Reference `table:software' on page 125 undefined on input line 7.
 
 
-LaTeX Warning: Citation `vladisavljevic_constraining_2018' on page 126 undefined on input line 29.
+LaTeX Warning: Citation `vladisavljevic_constraining_2018' on page 125 undefined on input line 29.
 
-[126
+[125
 
 
 
 
 ]
 
-LaTeX Warning: Reference `eq:neutrinonuc' on page 127 undefined on input line 33.
+LaTeX Warning: Reference `eq:neutrinonuc' on page 126 undefined on input line 33.
 
-[127]
+[126]
 
-LaTeX Warning: Citation `benhar_electron-_2005' on page 128 undefined on input line 40.
+LaTeX Warning: Citation `benhar_electron-_2005' on page 127 undefined on input line 40.
 
-<Figures/ncqebenharspectral.png, id=1079, 445.665pt x 398.6895pt>
+<Figures/ncqebenharspectral.png, id=1091, 445.665pt x 398.6895pt>
 File: Figures/ncqebenharspectral.png Graphic file (type png)
 <use Figures/ncqebenharspectral.png>
 Package pdftex.def Info: Figures/ncqebenharspectral.png  used on input line 43.
 (pdftex.def)             Requested size: 345.0pt x 308.6344pt.
 
-LaTeX Warning: Reference `fig:ncqebenharspectral' on page 128 undefined on input line 48.
+LaTeX Warning: Reference `fig:ncqebenharspectral' on page 127 undefined on input line 48.
 
 
-LaTeX Warning: Reference `fig:ncqebenharspectral' on page 128 undefined on input line 48.
+LaTeX Warning: Reference `fig:ncqebenharspectral' on page 127 undefined on input line 48.
 
 
-LaTeX Warning: Reference `table:transitionprob' on page 128 undefined on input line 48.
+LaTeX Warning: Reference `table:transitionprob' on page 127 undefined on input line 48.
 
-[128] [129 <./Figures/ncqebenharspectral.PNG>]
+[127] [128 <./Figures/ncqebenharspectral.PNG>]
 
-LaTeX Warning: Reference `table:gdtable' on page 130 undefined on input line 66.
-
-
-LaTeX Warning: Reference `table:gdtable' on page 130 undefined on input line 86.
+LaTeX Warning: Reference `table:gdtable' on page 129 undefined on input line 66.
 
 
-LaTeX Warning: Reference `eq:gdisotopecaptureeq' on page 130 undefined on input line 86.
+LaTeX Warning: Reference `table:gdtable' on page 129 undefined on input line 86.
 
-[130]
 
-LaTeX Warning: Reference `fig:annrigd' on page 131 undefined on input line 99.
+LaTeX Warning: Reference `eq:gdisotopecaptureeq' on page 129 undefined on input line 86.
 
-<Figures/annrigd.png, id=1098, 347.49825pt x 215.00325pt>
+[129]
+
+LaTeX Warning: Reference `fig:annrigd' on page 130 undefined on input line 99.
+
+<Figures/annrigd.png, id=1110, 347.49825pt x 215.00325pt>
 File: Figures/annrigd.png Graphic file (type png)
 <use Figures/annrigd.png>
 Package pdftex.def Info: Figures/annrigd.png  used on input line 103.
 (pdftex.def)             Requested size: 345.0pt x 213.4739pt.
 
-LaTeX Warning: Reference `fig:annrigdenergyspectra' on page 131 undefined on input line 109.
+LaTeX Warning: Reference `fig:annrigdenergyspectra' on page 130 undefined on input line 109.
 
-[131]
-<Figures/annrigdenergyspectra.png, id=1106, 654.64575pt x 229.45724pt>
+[130]
+<Figures/annrigdenergyspectra.png, id=1118, 654.64575pt x 229.45724pt>
 File: Figures/annrigdenergyspectra.png Graphic file (type png)
 <use Figures/annrigdenergyspectra.png>
 Package pdftex.def Info: Figures/annrigdenergyspectra.png  used on input line 112.
 (pdftex.def)             Requested size: 345.0pt x 120.9255pt.
 
 
-LaTeX Warning: Reference `fig:annrigdenergyspectra' on page 132 undefined on input line 117.
+LaTeX Warning: Reference `fig:annrigdenergyspectra' on page 131 undefined on input line 117.
 
 
-LaTeX Warning: Reference `fig:annrigdenergyspectra' on page 132 undefined on input line 117.
+LaTeX Warning: Reference `fig:annrigdenergyspectra' on page 131 undefined on input line 117.
 
 
-LaTeX Warning: Reference `fig:continousdiscrete' on page 132 undefined on input line 118.
+LaTeX Warning: Reference `fig:continousdiscrete' on page 131 undefined on input line 118.
 
 
-LaTeX Warning: Reference `fig:annrigdmodelcompare' on page 132 undefined on input line 118.
+LaTeX Warning: Reference `fig:annrigdmodelcompare' on page 131 undefined on input line 118.
 
-[132 <./Figures/annrigd.PNG>]
-<Figures/continousdiscrete.png, id=1114, 549.252pt x 256.5585pt>
+[131 <./Figures/annrigd.PNG>]
+<Figures/continousdiscrete.png, id=1125, 549.252pt x 256.5585pt>
 File: Figures/continousdiscrete.png Graphic file (type png)
 <use Figures/continousdiscrete.png>
 Package pdftex.def Info: Figures/continousdiscrete.png  used on input line 121.
 (pdftex.def)             Requested size: 345.0pt x 161.15118pt.
-<Figures/annrigdmodelcompare.png, id=1115, 631.76025pt x 308.95425pt>
+<Figures/annrigdmodelcompare.png, id=1126, 631.76025pt x 308.95425pt>
 File: Figures/annrigdmodelcompare.png Graphic file (type png)
 <use Figures/annrigdmodelcompare.png>
 Package pdftex.def Info: Figures/annrigdmodelcompare.png  used on input line 127.
@@ -2534,7 +2535,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--137
 
  []
 
-[133 <./Figures/annrigdenergyspectra.PNG>] [134 <./Figures/continousdiscrete.PNG> <./Figures/annrigdmodelcompare.PNG>]
+[132 <./Figures/annrigdenergyspectra.PNG>] [133 <./Figures/continousdiscrete.PNG> <./Figures/annrigdmodelcompare.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 138--139
 
  []
@@ -2559,17 +2560,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 156--159
 
  []
 
-[135]
+[134]
 
-LaTeX Warning: Reference `ovaq' on page 136 undefined on input line 161.
-
-
-LaTeX Warning: Reference `vertex_goodness' on page 136 undefined on input line 168.
+LaTeX Warning: Reference `ovaq' on page 135 undefined on input line 161.
 
 
-LaTeX Warning: Reference `direction_goodness' on page 136 undefined on input line 175.
+LaTeX Warning: Reference `vertex_goodness' on page 135 undefined on input line 168.
 
-[136] [137]
+
+LaTeX Warning: Reference `direction_goodness' on page 135 undefined on input line 175.
+
+[135] [136]
 Underfull \hbox (badness 10000) in paragraph at lines 205--209
 
  []
@@ -2580,26 +2581,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 211--215
  []
 
 
-LaTeX Warning: Reference `llrca' on page 138 undefined on input line 243.
+LaTeX Warning: Reference `llrca' on page 137 undefined on input line 243.
 
-[138]
+[137]
 
-LaTeX Warning: Reference `beta' on page 139 undefined on input line 254.
+LaTeX Warning: Reference `beta' on page 138 undefined on input line 254.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 265--269
 
  []
 
-[139]) [140]
+[138]) [139]
 \openout2 = `Chapters/chapter_syst_uncertainty.aux'.
 
  (./Chapters/chapter_syst_uncertainty.tex
 Chapter 8.
 
-LaTeX Warning: Reference `multiplicity' on page 141 undefined on input line 18.
+LaTeX Warning: Reference `multiplicity' on page 140 undefined on input line 18.
 
-[141
+[140
 
 
 
@@ -2610,20 +2611,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--22
  []
 
 
-LaTeX Warning: Reference `tageffdiscrep' on page 142 undefined on input line 29.
+LaTeX Warning: Reference `tageffdiscrep' on page 141 undefined on input line 29.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 25--31
 
  []
 
-[142]
+[141]
 Underfull \hbox (badness 10000) in paragraph at lines 34--36
 
  []
 
 
-LaTeX Warning: Reference `mcregengauss' on page 143 undefined on input line 39.
+LaTeX Warning: Reference `mcregengauss' on page 142 undefined on input line 39.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 37--41
@@ -2631,11 +2632,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--41
  []
 
 
-LaTeX Warning: Reference `fig:frac_beam_flux_uncertainty' on page 143 undefined on input line 54.
+LaTeX Warning: Reference `fig:frac_beam_flux_uncertainty' on page 142 undefined on input line 54.
 
-[143]
+[142]
 
-LaTeX Warning: Reference `nubeamfluxerror' on page 144 undefined on input line 57.
+LaTeX Warning: Reference `nubeamfluxerror' on page 143 undefined on input line 57.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 57--59
@@ -2643,26 +2644,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--59
  []
 
 
-LaTeX Warning: Reference `fig:fluxuncertainty' on page 144 undefined on input line 64.
+LaTeX Warning: Reference `fig:fluxuncertainty' on page 143 undefined on input line 64.
 
 
-LaTeX Warning: Reference `table:systuncertaintytable' on page 144 undefined on input line 64.
+LaTeX Warning: Reference `table:systuncertaintytable' on page 143 undefined on input line 64.
 
 
-LaTeX Warning: Reference `summingfluxuncertainty' on page 144 undefined on input line 64.
+LaTeX Warning: Reference `summingfluxuncertainty' on page 143 undefined on input line 64.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 62--66
 
  []
 
-<Figures/frac_beam_flux_uncertainty.png, id=1190, 527.571pt x 180.07275pt>
+<Figures/frac_beam_flux_uncertainty.png, id=1202, 527.571pt x 180.07275pt>
 File: Figures/frac_beam_flux_uncertainty.png Graphic file (type png)
 <use Figures/frac_beam_flux_uncertainty.png>
 Package pdftex.def Info: Figures/frac_beam_flux_uncertainty.png  used on input line 68.
 (pdftex.def)             Requested size: 345.0pt x 117.75755pt.
-[144 <./Figures/frac_beam_flux_uncertainty.PNG>]
-<Figures/flux_uncertainty.png, id=1200, 885.90974pt x 522.15076pt>
+[143 <./Figures/frac_beam_flux_uncertainty.PNG>]
+<Figures/flux_uncertainty.png, id=1211, 885.90974pt x 522.15076pt>
 File: Figures/flux_uncertainty.png Graphic file (type png)
 <use Figures/flux_uncertainty.png>
 Package pdftex.def Info: Figures/flux_uncertainty.png  used on input line 80.
@@ -2673,7 +2674,7 @@ Overfull \hbox (9.35762pt too wide) in paragraph at lines 80--81
  []
 
 
-LaTeX Warning: Reference `xsectable' on page 145 undefined on input line 87.
+LaTeX Warning: Reference `xsectable' on page 144 undefined on input line 87.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 87--88
@@ -2685,20 +2686,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--91
 
  []
 
-[145 <./Figures/flux_uncertainty.png>]
+[144 <./Figures/flux_uncertainty.png>]
 
-LaTeX Warning: Reference `xsectageff' on page 146 undefined on input line 92.
+LaTeX Warning: Reference `xsectageff' on page 145 undefined on input line 92.
 
 
-LaTeX Warning: Reference `fig:xsecuncertainty' on page 146 undefined on input line 99.
+LaTeX Warning: Reference `fig:xsecuncertainty' on page 145 undefined on input line 99.
 
 
 Overfull \hbox (82.81589pt too wide) in paragraph at lines 103--121
  []$[]$ 
  []
 
-[146]
-<Figures/xsec_uncertainty.png, id=1214, 843.15pt x 532.389pt>
+[145]
+<Figures/xsec_uncertainty.png, id=1226, 843.15pt x 532.389pt>
 File: Figures/xsec_uncertainty.png Graphic file (type png)
 <use Figures/xsec_uncertainty.png>
 Package pdftex.def Info: Figures/xsec_uncertainty.png  used on input line 127.
@@ -2708,56 +2709,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--136
 
  []
 
-[147 <./Figures/xsec_uncertainty.PNG>]
+[146 <./Figures/xsec_uncertainty.PNG>]
 
-LaTeX Warning: Reference `fsiparameters' on page 148 undefined on input line 145.
+LaTeX Warning: Reference `fsiparameters' on page 147 undefined on input line 145.
 
-[148]
+[147]
 
-LaTeX Warning: Reference `fsimodelparameters' on page 149 undefined on input line 166.
-
-
-LaTeX Warning: Reference `fsisitageff' on page 149 undefined on input line 166.
+LaTeX Warning: Reference `fsimodelparameters' on page 148 undefined on input line 166.
 
 
-LaTeX Warning: Reference `fsimodelparameters' on page 149 undefined on input line 166.
+LaTeX Warning: Reference `fsisitageff' on page 148 undefined on input line 166.
 
 
-LaTeX Warning: Reference `fig:fsisiuncertainty' on page 149 undefined on input line 166.
+LaTeX Warning: Reference `fsimodelparameters' on page 148 undefined on input line 166.
 
-<Figures/fsisi_uncertainty.png, id=1227, 860.61525pt x 496.254pt>
+
+LaTeX Warning: Reference `fig:fsisiuncertainty' on page 148 undefined on input line 166.
+
+<Figures/fsisi_uncertainty.png, id=1239, 860.61525pt x 496.254pt>
 File: Figures/fsisi_uncertainty.png Graphic file (type png)
 <use Figures/fsisi_uncertainty.png>
 Package pdftex.def Info: Figures/fsisi_uncertainty.png  used on input line 174.
 (pdftex.def)             Requested size: 344.24pt x 198.49808pt.
-[149]
+[148]
 Overfull \hbox (1.44499pt too wide) detected at line 206
 []
  []
 
-[150 <./Figures/fsisi_uncertainty.PNG>]
+[149 <./Figures/fsisi_uncertainty.PNG>]
 
-LaTeX Warning: Reference `nucleonfsiuncertainties' on page 151 undefined on input line 213.
+LaTeX Warning: Reference `nucleonfsiuncertainties' on page 150 undefined on input line 213.
 
 
 Overfull \hbox (87.88977pt too wide) detected at line 226
 []
  []
 
-[151]
+[150]
 
-LaTeX Warning: Reference `nucleonfsiuncertainties' on page 152 undefined on input line 231.
-
-
-LaTeX Warning: Reference `nucleonfsitageff' on page 152 undefined on input line 231.
+LaTeX Warning: Reference `nucleonfsiuncertainties' on page 151 undefined on input line 231.
 
 
-LaTeX Warning: Reference `fig:nucleonfsiuncertainty' on page 152 undefined on input line 238.
+LaTeX Warning: Reference `nucleonfsitageff' on page 151 undefined on input line 231.
 
 
-LaTeX Warning: Reference `nucleonfsiuncertainties' on page 152 undefined on input line 238.
+LaTeX Warning: Reference `fig:nucleonfsiuncertainty' on page 151 undefined on input line 238.
 
-<Figures/nucleonfsi_uncertainty.png, id=1248, 882.29625pt x 525.162pt>
+
+LaTeX Warning: Reference `nucleonfsiuncertainties' on page 151 undefined on input line 238.
+
+<Figures/nucleonfsi_uncertainty.png, id=1260, 882.29625pt x 525.162pt>
 File: Figures/nucleonfsi_uncertainty.png Graphic file (type png)
 <use Figures/nucleonfsi_uncertainty.png>
 Package pdftex.def Info: Figures/nucleonfsi_uncertainty.png  used on input line 241.
@@ -2767,18 +2768,18 @@ Overfull \hbox (7.91225pt too wide) in paragraph at lines 241--242
 [][] 
  []
 
-[152]
+[151]
 
-LaTeX Warning: Reference `muoncap' on page 153 undefined on input line 248.
+LaTeX Warning: Reference `muoncap' on page 152 undefined on input line 248.
 
-[153 <./Figures/nucleonfsi_uncertainty.PNG>]
+[152 <./Figures/nucleonfsi_uncertainty.PNG>]
 
-LaTeX Warning: Reference `muoncaptaggingeff' on page 154 undefined on input line 260.
+LaTeX Warning: Reference `muoncaptaggingeff' on page 153 undefined on input line 260.
 
 
-LaTeX Warning: Reference `fig:mupicap_uncertainty' on page 154 undefined on input line 271.
+LaTeX Warning: Reference `fig:mupicap_uncertainty' on page 153 undefined on input line 271.
 
-<Figures/mupicap_uncertainty.png, id=1263, 864.22874pt x 414.95026pt>
+<Figures/mupicap_uncertainty.png, id=1275, 864.22874pt x 414.95026pt>
 File: Figures/mupicap_uncertainty.png Graphic file (type png)
 <use Figures/mupicap_uncertainty.png>
 Package pdftex.def Info: Figures/mupicap_uncertainty.png  used on input line 274.
@@ -2788,25 +2789,25 @@ Overfull \hbox (0.68536pt too wide) in paragraph at lines 274--275
 [][] 
  []
 
-[154 <./Figures/mupicap_uncertainty.PNG>]
+[153 <./Figures/mupicap_uncertainty.PNG>]
 
-LaTeX Warning: Reference `eq:MICAP_uncertainty' on page 155 undefined on input line 284.
+LaTeX Warning: Reference `eq:MICAP_uncertainty' on page 154 undefined on input line 284.
 
-[155]
+[154]
 
-LaTeX Warning: Reference `HETC_uncertainty' on page 156 undefined on input line 293.
+LaTeX Warning: Reference `HETC_uncertainty' on page 155 undefined on input line 293.
 
 
 Overfull \hbox (2.9728pt too wide) in paragraph at lines 293--294
 \OT1/cmr/m/n/10 Due to there be-ing no ex-per-i-men-tal data for cross-section cal-cu-la-tions on nucleon-
  []
 
-) [156]
+) [155]
 \openout2 = `Chapters/chapter_conclusion.aux'.
 
  (./Chapters/chapter_conclusion.tex
 Chapter 9.
-) [157
+) [156
 
 
 
@@ -2830,18 +2831,18 @@ Package rerunfilecheck Info: Checksums for `thesis_frontend.out':
 (rerunfilecheck)             After:  C022B0E706E8AC6D364B35FC26C44978;12666.
  ) 
 Here is how much of TeX's memory you used:
- 27077 strings out of 478233
- 539150 string characters out of 5847836
+ 27024 strings out of 478233
+ 537477 string characters out of 5847836
  836640 words of memory out of 5000000
- 44213 multiletter control sequences out of 15000+600000
- 486852 words of font info for 91 fonts, out of 8000000 for 9000
+ 44170 multiletter control sequences out of 15000+600000
+ 486684 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,16n,103p,2675b,531s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on thesis_frontend.pdf (158 pages, 28765961 bytes).
+{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on thesis_frontend.pdf (157 pages, 29463390 bytes).
 PDF statistics:
- 1499 PDF objects out of 1728 (max. 8388607)
- 942 compressed objects within 10 object streams
+ 1507 PDF objects out of 1728 (max. 8388607)
+ 937 compressed objects within 10 object streams
  416 named destinations out of 1000 (max. 500000)
- 848 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 888 words of extra memory for PDF output out of 10000 (max. 10000000)
 
