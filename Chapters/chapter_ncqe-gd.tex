@@ -135,30 +135,35 @@ Figure \ref{fig:continousdiscrete} shows the continuous and discrete components 
 
 Due to this analysis looking specifically at the low energy region, a fitter specific to low energies (called LOWFIT) is used to reconstruct events. Both MC and data neutrino events undergo a reconstruction phase, where the low-energy fitter BONSAI is applied to the event, which is discussed in Chapter 2. This reconstruction is carried out using timing and cable information, however charge information is omitted. The ouput of BONSAI gives information which will be used in the reduction phase of the data and allow for the selection of the NCQE sample. The following quantities comprise the BONSAI output, the first two being helpful spectator variables and the latter five constituting parameters which are used in the reduction phase of the analysis, from which the neutrino NCQE sample is determined.\\
 
-\underline{Neutrino vertex direction}\\
+\noindent
+\underline{1. Neutrino vertex direction}\\
+\noindent
+This vector points towards the direction which is an average over all the Cherenkov cone axes which are produced, due to there being multiple leptons induced in the interaction.
 
-This vector points towards the direction which is an average over all the Cherenkov cone axes which are produced, due to there being multiple leptons induced in the interaction.\\
-
-
-
-\underline{Neutrino vertex position}\\
+\noindent
+\underline{2. Neutrino vertex position}\\
+\noindent 
 The reconstructed location of the neutrino interaction event.
 
+\noindent
+\underline{3. Reconstructed energy}\\
+\noindent 
+In line with the standard SK low energy analysis definition, this energy is simply the reconstructed energy with the 0.511 MeV electron mass omitted. The range for Erec in this variable is 3.49 MeV to 29.49 MeV - the estimated kinetic energy under the hypothesis that the event is a singular electron.
 
- \underline{Reconstructed energy}\\
- In line with the standard SK low energy analysis definition, this energy is simply the reconstructed energy with the 0.511 MeV electron mass omitted. The range for Erec in this variable is 3.49 MeV to 29.49 MeV - the estimated kinetic energy under the hypothesis that the event is a singular electron.
-\newline
+\noindent
+\underline{4. Dwall}\\
+\noindent 
+This variable gives the minimum distance of the neutrino vertex position from the closest wall of the Super-Kamiokande detector.
 
- \underline{Dwall}\\
- This variable gives the minimum distance of the neutrino vertex position from the closest wall of the Super-Kamiokande detector.
-\newline
+\noindent
+\underline{5. Effwall}\\
+\noindent 
+Thus variable gives the distance between the neutrino vertex posiiton and the closest wall, but moving back from the vertex position along the neutrino vertex direction vector.
 
- \underline{Effwall}\\
- Thus variable gives the distance between the neutrino vertex posiiton and the closest wall, but moving back from the vertex position along the neutrino vertex direction vector.
-\newline
-
- \underline{Vertex direction and goodness coefficient}\\
- The coefficient $ovaQ$ (defined in Equation \ref{ovaq}) describes the quality of the vertex reconstruction. It consists of two parameters $g^2_{vtx}$ and $g^2_{dir}$ where the former describes the goodness of the vertex which is based on PMT hit timings, and increases the sharper an event is in time. The latter is the directional goodness and measures the azimuthal uniformity in the ring pattern produced by the Cherenkov cone, which decreases the more uniform an event is in space. As a result of this, $ovaQ$ increases the more uniform and sharp in time an event is.
+\noindent
+\underline{6. Vertex direction and goodness coefficient}\\
+\noindent 
+The coefficient $ovaQ$ (defined in Equation \ref{ovaq}) describes the quality of the vertex reconstruction. It consists of two parameters $g^2_{vtx}$ and $g^2_{dir}$ where the former describes the goodness of the vertex which is based on PMT hit timings, and increases the sharper an event is in time. The latter is the directional goodness and measures the azimuthal uniformity in the ring pattern produced by the Cherenkov cone, which decreases the more uniform an event is in space. As a result of this, $ovaQ$ increases the more uniform and sharp in time an event is.
 
 \begin{equation}
     \text { ova } Q=g_{\text {vtx }}^{2}-g_{\text {dir }}^{2}
@@ -183,9 +188,9 @@ where $\angle_{\mathrm{data}}(i)$ is the azimuthal angle of i-th hit real PMT in
  
 
 
-
- \underline{Cherenkov angle $theta_{C}$}
-
+\noindent
+\underline{7. Cherenkov angle $\theta_{C}$}\\
+\noindent
  For relativistic electrons in water, the value of the Cherenkov opening angle is $\approx 41\degree$, due to the relation: 
 
  \begin{equation}

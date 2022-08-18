@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.27)  17 AUG 2022 15:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.27)  18 AUG 2022 15:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1768,51 +1768,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--137
  []
 
 [132 <./Figures/annrigdenergyspectra.PNG>] [133 <./Figures/continousdiscrete.PNG> <./Figures/annrigdmodelcompare.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 138--139
+Overfull \hbox (6.77827pt too wide) in paragraph at lines 138--142
+\OT1/cmr/m/n/10 This vec-tor points to-wards the di-rec-tion which is an av-er-age over all the Cherenkov
+ []
+
+[134] [135]
+Underfull \hbox (badness 10000) in paragraph at lines 210--214
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
+Underfull \hbox (badness 10000) in paragraph at lines 216--220
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 148--151
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 152--155
+[136] [137]
+Underfull \hbox (badness 10000) in paragraph at lines 270--274
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 156--159
-
- []
-
-[134] [135] [136]
-Underfull \hbox (badness 10000) in paragraph at lines 205--209
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 211--215
-
- []
-
-[137]
-Underfull \hbox (badness 10000) in paragraph at lines 265--269
-
- []
-
-[138]) [139]
+) [138]
 \openout2 = `Chapters/chapter_syst_uncertainty.aux'.
 
  (./Chapters/chapter_syst_uncertainty.tex
 Chapter 8.
-[140
+[139
 
 
 
@@ -1827,7 +1807,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--31
 
  []
 
-[141]
+[140]
 Underfull \hbox (badness 10000) in paragraph at lines 34--36
 
  []
@@ -1837,26 +1817,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--41
 
  []
 
-[142]
+[141]
 Underfull \hbox (badness 10000) in paragraph at lines 57--59
 
  []
 
 
-LaTeX Warning: Reference `table:systuncertaintytable' on page 143 undefined on input line 64.
+LaTeX Warning: Reference `table:systuncertaintytable' on page 142 undefined on input line 64.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 62--66
 
  []
 
-<Figures/frac_beam_flux_uncertainty.png, id=1726, 527.571pt x 180.07275pt>
+<Figures/frac_beam_flux_uncertainty.png, id=1722, 527.571pt x 180.07275pt>
 File: Figures/frac_beam_flux_uncertainty.png Graphic file (type png)
 <use Figures/frac_beam_flux_uncertainty.png>
 Package pdftex.def Info: Figures/frac_beam_flux_uncertainty.png  used on input line 68.
 (pdftex.def)             Requested size: 345.0pt x 117.75755pt.
-[143 <./Figures/frac_beam_flux_uncertainty.PNG>]
-<Figures/flux_uncertainty.png, id=1736, 885.90974pt x 522.15076pt>
+[142 <./Figures/frac_beam_flux_uncertainty.PNG>]
+<Figures/flux_uncertainty.png, id=1732, 885.90974pt x 522.15076pt>
 File: Figures/flux_uncertainty.png Graphic file (type png)
 <use Figures/flux_uncertainty.png>
 Package pdftex.def Info: Figures/flux_uncertainty.png  used on input line 80.
@@ -1876,13 +1856,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--91
 
  []
 
-[144 <./Figures/flux_uncertainty.png>]
+[143 <./Figures/flux_uncertainty.png>]
 Overfull \hbox (82.81589pt too wide) in paragraph at lines 103--121
  []$[]$ 
  []
 
-[145]
-<Figures/xsec_uncertainty.png, id=1753, 843.15pt x 532.389pt>
+[144]
+<Figures/xsec_uncertainty.png, id=1749, 843.15pt x 532.389pt>
 File: Figures/xsec_uncertainty.png Graphic file (type png)
 <use Figures/xsec_uncertainty.png>
 Package pdftex.def Info: Figures/xsec_uncertainty.png  used on input line 127.
@@ -1892,24 +1872,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--136
 
  []
 
-[146 <./Figures/xsec_uncertainty.PNG>] [147]
-<Figures/fsisi_uncertainty.png, id=1769, 860.61525pt x 496.254pt>
+[145 <./Figures/xsec_uncertainty.PNG>] [146]
+<Figures/fsisi_uncertainty.png, id=1765, 860.61525pt x 496.254pt>
 File: Figures/fsisi_uncertainty.png Graphic file (type png)
 <use Figures/fsisi_uncertainty.png>
 Package pdftex.def Info: Figures/fsisi_uncertainty.png  used on input line 174.
 (pdftex.def)             Requested size: 344.24pt x 198.49808pt.
- [148]
+ [147]
 Overfull \hbox (1.44499pt too wide) detected at line 206
 []
  []
 
-[149 <./Figures/fsisi_uncertainty.PNG>]
+[148 <./Figures/fsisi_uncertainty.PNG>]
 Overfull \hbox (87.88977pt too wide) detected at line 226
 []
  []
 
-[150]
-<Figures/nucleonfsi_uncertainty.png, id=1793, 882.29625pt x 525.162pt>
+[149]
+<Figures/nucleonfsi_uncertainty.png, id=1788, 882.29625pt x 525.162pt>
 File: Figures/nucleonfsi_uncertainty.png Graphic file (type png)
 <use Figures/nucleonfsi_uncertainty.png>
 Package pdftex.def Info: Figures/nucleonfsi_uncertainty.png  used on input line 241.
@@ -1919,8 +1899,8 @@ Overfull \hbox (7.91225pt too wide) in paragraph at lines 241--242
 [][] 
  []
 
-[151] [152 <./Figures/nucleonfsi_uncertainty.PNG>]
-<Figures/mupicap_uncertainty.png, id=1810, 864.22874pt x 414.95026pt>
+[150] [151 <./Figures/nucleonfsi_uncertainty.PNG>]
+<Figures/mupicap_uncertainty.png, id=1806, 864.22874pt x 414.95026pt>
 File: Figures/mupicap_uncertainty.png Graphic file (type png)
 <use Figures/mupicap_uncertainty.png>
 Package pdftex.def Info: Figures/mupicap_uncertainty.png  used on input line 274.
@@ -1930,30 +1910,30 @@ Overfull \hbox (0.68536pt too wide) in paragraph at lines 274--275
 [][] 
  []
 
-[153 <./Figures/mupicap_uncertainty.PNG>]
+[152 <./Figures/mupicap_uncertainty.PNG>]
 
-LaTeX Warning: Reference `eq:MICAP_uncertainty' on page 154 undefined on input line 284.
+LaTeX Warning: Reference `eq:MICAP_uncertainty' on page 153 undefined on input line 284.
 
-[154]
+[153]
 Overfull \hbox (2.9728pt too wide) in paragraph at lines 293--294
 \OT1/cmr/m/n/10 Due to there be-ing no ex-per-i-men-tal data for cross-section cal-cu-la-tions on nucleon-
  []
 
-) [155]
+) [154]
 \openout2 = `Chapters/chapter_conclusion.aux'.
 
  (./Chapters/chapter_conclusion.tex
 Chapter 9.
-) [156
+) [155
 
 
 
 
-] (./thesis_frontend.bbl [157
+] (./thesis_frontend.bbl [156
 
 
 
-] [158] [159] [160] [161] [162] [163] [164]) [165] (./thesis_frontend.aux (./Chapters/chapter_introduction.aux) (./Chapters/chapter_t2k_detector.aux) (./Chapters/chapter_superk_detector.aux) (./Chapters/chapter_superk-calib.aux) (./Chapters/chapter_ukli-system.aux) (./Chapters/chapter_superkgd_upgrade.aux) (./Chapters/chapter_ncqe-gd.aux) (./Chapters/chapter_syst_uncertainty.aux) (./Chapters/chapter_conclusion.aux))
+] [157] [158] [159] [160] [161] [162] [163]) [164] (./thesis_frontend.aux (./Chapters/chapter_introduction.aux) (./Chapters/chapter_t2k_detector.aux) (./Chapters/chapter_superk_detector.aux) (./Chapters/chapter_superk-calib.aux) (./Chapters/chapter_ukli-system.aux) (./Chapters/chapter_superkgd_upgrade.aux) (./Chapters/chapter_ncqe-gd.aux) (./Chapters/chapter_syst_uncertainty.aux) (./Chapters/chapter_conclusion.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -1961,18 +1941,18 @@ Package rerunfilecheck Info: File `thesis_frontend.out' has not changed.
 (rerunfilecheck)             Checksum: 5EA614CD363BD0379AB155A34FA8367A;12603.
  ) 
 Here is how much of TeX's memory you used:
- 27164 strings out of 478233
- 540006 string characters out of 5847836
+ 27163 strings out of 478233
+ 539998 string characters out of 5847836
  863502 words of memory out of 5000000
  44247 multiletter control sequences out of 15000+600000
  486684 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,16n,103p,2020b,531s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on thesis_frontend.pdf (166 pages, 30010346 bytes).
+Output written on thesis_frontend.pdf (165 pages, 30010117 bytes).
 PDF statistics:
- 2083 PDF objects out of 2487 (max. 8388607)
- 1487 compressed objects within 15 object streams
- 454 named destinations out of 1000 (max. 500000)
+ 2079 PDF objects out of 2487 (max. 8388607)
+ 1484 compressed objects within 15 object streams
+ 453 named destinations out of 1000 (max. 500000)
  1339 words of extra memory for PDF output out of 10000 (max. 10000000)
 
