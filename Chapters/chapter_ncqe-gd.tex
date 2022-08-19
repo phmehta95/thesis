@@ -163,18 +163,18 @@ Thus variable gives the distance between the neutrino vertex posiiton and the cl
 \noindent
 \underline{6. Vertex direction and goodness coefficient}\\
 \noindent 
-The coefficient $ovaQ$ (defined in Equation \ref{ovaq}) describes the quality of the vertex reconstruction. It consists of two parameters $g^2_{vtx}$ and $g^2_{dir}$ where the former describes the goodness of the vertex which is based on PMT hit timings, and increases the sharper an event is in time. The latter is the directional goodness and measures the azimuthal uniformity in the ring pattern produced by the Cherenkov cone, which decreases the more uniform an event is in space. As a result of this, $ovaQ$ increases the more uniform and sharp in time an event is.
+The coefficient $ovaQ$ (defined in Equation \ref{eq:ovaq}) describes the quality of the vertex reconstruction. It consists of two parameters $g^2_{vtx}$ and $g^2_{dir}$ where the former describes the goodness of the vertex which is based on PMT hit timings, and increases the sharper an event is in time. The latter is the directional goodness and measures the azimuthal uniformity in the ring pattern produced by the Cherenkov cone, which decreases the more uniform an event is in space. As a result of this, $ovaQ$ increases the more uniform and sharp in time an event is.
 
 \begin{equation}
     \text { ova } Q=g_{\text {vtx }}^{2}-g_{\text {dir }}^{2}
-    \label{ovaq}
+    \label{eq:ovaq}
 \end{equation}
 
-$g_{vtx}$ is calculated using a fit of the PMT timing distribution and using the hit times of the PMT it is defined asin Equation\ref{vertex_goodness}.
+$g_{vtx}$ is calculated using a fit of the PMT timing distribution and using the hit times of the PMT it is defined as in Equation\ref{eq:vertex_goodness}.
 
 \begin{equation}
 g_{\mathrm{vtx}}=\frac{\sum_{i} w_{i} \mathrm{e}^{-\frac{1}{2}(\frac{\Delta t_{i}}{\sigma})^{2}}}{\sum_{i} w_{i}} \text { with } w_{i}=-\frac{1}{2}(\frac{\Delta t_{i}}{\omega})^{2}
-\label{vertex_goodness}
+\label{eq:vertex_goodness}
 \end{equation}
 
 Here $\sum_{i} w_{i}$ is the weight given to the i-th hit PMT for the reduction of dark noise, where $\omega$ has a value of 60ns. $\sigma$ has a value of 5ns which is used to test the goodness, and as a result, a sharp timing distribution produces a large vertex goodness. $g_{dir}$ is calculated by looking at how spatially uniform the hit PMTs are around the reconstructed neutrino vertex direction. In order to quantify this uniformity, the Kolmogorov-Smirnov (KS) test is used as in Equation \ref{direction_goodness}.
@@ -199,6 +199,75 @@ where $\angle_{\mathrm{data}}(i)$ is the azimuthal angle of i-th hit real PMT in
 \end{equation}
  
 where $\beta = v/c \approx 1$ and $n$ is the refractive index of water, 1.33. However due to other particles in the simulation, such as protons or muons, the Cherenkov cone is expected to be narrower, or if multiple leptons are present, the Cherenkov cones will be less distinct and more spread out, leading to deviations from the 41\degree value. 
+
+\subsection{Comparison of BONSAI reconstruction output variables between SKDETSIM versions}
+
+The BONSAI reconstruction output variables were compared between three versions of SKDETSIM, the version used in the previous NCQE neutron capture on hydrogen only analysis, with no neutron capture on Gd implemented (black), the SKDETSIM-SKGd photon-evaporation model mentioned in the previous section (red), and the SKDETSIM SK-Gd ANNRI-Gd model (green). Figure \ref{fig:bonsai_reconstruction_compare} shows the comparison of these models for the output BONSAI variables Erec, dwall, effwall, ovaQ, and $\theta_C$, where the y-axis shows the number of events.
+
+\begin{figure}[!htbp]
+    \centering
+    
+    \caption{Comparisons of BONSAI output variables bewteen SKDETSIM versions} \label{fig:bonsai_reconstruction_compare} 
+    
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/erec_compare.PNG}} \hfill
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/dwall_compare.PNG}} \par
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/effwall_compare.PNG}} \hfill
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/ovaQ_compare.PNG}} \par
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/thetaC_compare.PNG}} \hfill    
+\end{figure}
+
+To ensure correct implementation of the ANNRI-Gd model, ensuring the BONSAI output variables were similar between these SKDETSIM versions was important as the Gadolinium model should only effect the neutron capture in the simulation, not the output from event reconstruction of the neutrino interaction vertex. As can be seen in Figure \ref{fig:bonsai_reconstruction_compare}, this holds true for Erec, dwall, effwall and $\theta_C$, but not for the vertex and goodness coefficient ovaQ, where the ANNRI-Gd model differs for ovaQ between -0.05 and 0.15 compared to the SKDETSIM and SKDETSIM photon-evaporation model. To investigate this difference further, distributions of the vertex goodness and the directional goodness which make up ovaQ (according to Equation \ref{eq:ovaq}) were also checked, shown in Figure \ref{fig:ovaq_compare}.
+
+\begin{figure}[!htbp]
+    \centering
+    
+    \caption{Comparisons of vertex goodness and directional goodness between SKDETSIM versions} \label{fig:ovaq_compare} 
+    
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/gvtx_compare.PNG}} \hfill
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/gdir_compare.PNG}} \par
+        
+\end{figure}
+
+The vertex goodness (gvtx) and directional goodness (gdir) comparisons are shown in Figure \ref{fig:ovaq_comapre}. Figure \ref{fig:vertex_goodness} shows a slight discrepancy between the SKDETSIM versions, but not enough to warrant further investigation. In addition to checking the previous BONSAI reduction phase quantities, the distance between the true neutrino vertex from the simulation and the neutrino vertex from the BONSAI reconstruction was also checked for the different SKDETSIM versions, shown in Figure \ref{fig:vertex_resolution}. Table \ref{table:vertex_resolution} shows the value of this distribution which encompasses 1-sigma (68\%) of the number of events. 
+\begin{figure}
+
+    \includegraphics[width=\textwidth]{Figures/vertex_resolution.png}
+    \caption{Distance between true and reconstructed neutrino vertex for different SKDETSIM versions}
+    \label{fig:vertex_resolution}
+
+\end{figure}
+
+\begin{table}
+    $$
+    \begin{array}{rcc}
+    \hline \text { SKDETSIM version } & \text{Value (cm)} \\
+    \text{SKDETSIM-V} & 113.2\\
+    \text{SKDETSIM-SKGd (Photon evaporation model)} & 109.4 \\
+    \text{SKDETSIM-SKGd (ANNRI-Gd model)} & 111.9 \\
+    \hline
+    \end{array}
+    $$
+\caption{Value of the true neutrino vertex - reconstructed neutrino vertex distribution which encompasses 1-sigma (68\%) of the number of events.}
+\label{table:vertex_resolution}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 \subsection{True neutron tagging information}
