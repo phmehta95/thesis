@@ -158,7 +158,7 @@ This variable gives the minimum distance of the neutrino vertex position from th
 \noindent
 \underline{5. Effwall}\\
 \noindent 
-Thus variable gives the distance between the neutrino vertex posiiton and the closest wall, but moving back from the vertex position along the neutrino vertex direction vector.
+Thus variable gives the distance between the neutrino vertex position and the closest wall, but moving back from the vertex position along the neutrino vertex direction vector.
 
 \noindent
 \underline{6. Vertex direction and goodness coefficient}\\
@@ -262,12 +262,39 @@ The following cuts are applied to the Monte Carlo, in order to select the NCQE e
 The energy window for this analysis is set to the 3.49-29.49 MeV range, where the lower value of this range (3.49 MeV) is due to the detection threshold of Super-Kamiokande. In order to limit the background of the Michel electron from charged-current interactions involving muon neutrinos and muon anti-neutrinos, the upper energy window limit is set to 29.49 MeV - above this value the Michel electron background would increase, reducing the NCQE contribution. 
 
 \subsubsection{Fiducial Volume (FV) cut}
-Due to radioactive impurities inside the detector material, specifically the wall of the inner detector, there is a cut involving the distance from the detector wall to the prompt interaction vertex. Events where the distance between the prompt interaction vertex and the detector wall is less than 200 cm are removed. There is a similar cut also used where the distance between the prompt interaction vertex and the distance to the iinner detector wall  This is a standard cut applied in all Super-Kamiokande analyses in order to avoid backgrounds, and when you have events where the energy region is below 6 MeV even more stringent cuts are required to further reduce background from the inner detector wall, described in the next Subsection.
+Due to radioactive impurities inside the detector material, specifically the wall of the inner detector, there is a cut involving the distance from the detector wall to the prompt interaction vertex. Events where the distance between the prompt interaction vertex and the detector wall is less than 200 cm are removed. There is a similar cut also used where events where the distance between the prompt interaction vertex and the distance to the inner detector wall in the neutrino vertex vector direction is less than 200 cm is removed. This is a standard cut applied in all Super-Kamiokande analyses in order to avoid backgrounds, and when you have events where the energy region is below 6 MeV even more stringent cuts are required to further reduce background from the inner detector wall, described in the next Subsection. 
 
 \subsubsection{Low energy background cut}
 
+The variables dwall, effwall and ovaQ are used to tune cuts in the energy region below 6 MeV. There are five energy regions with a width of 0.5 MeV used between the lower end of the visible energy cut region (3.49 MeV) and 5.99 MeV where the cuts on the dwall, effwall and ovaQ variables are optimised. Cuts are applied on the dwall, effwall and ovaQ variables and an event is only accepted if the values of dwall, effwall and ovaQ are only accepted if their values are greater than the threshold cut values. In each 0.5 MeV energy interval, these threshold values are optimised based on the T2K run period due to the beam power and detector conditions being different from run to run, especially since the Gadolinium loading occured in the detector. Equation \ref{eq:FOM} shows how the figure-of-merit (FOM) value is to be maximised for the optimsation of each cut.
+
+\begin{equation}
+    \mathrm{FOM}=\frac{N_{\text {sig }}}{\sqrt{N_{\text {sig }}+N_{\text {bkg }}}} \quad\left(N_{\text {bkg }}=N_{\text {bkg }}^{\mathrm{MC}}+N_{\text {bkg }}^{\text {beam-unrelated }}\right)
+\label{eq:FOM}
+\end{equation}
+
+Here $N_{sig}$ is the number of NCQE neutrino events in the FHC Monte Carlo sample and $N_{bkg}$ is the summation of the background events, and the FOM is calculated seperately in the five energy intervals, and the optimised cut value is taken as the one which maximises the FOM. Then the optimised cut values in each energy interval are fitted with a linear function dependent on the visible energy variables (Erec). Equation \ref{eq:FOM_linear} gives the relation of Erec to the optimised cut values for dwall, effwall and ovaQ.
+
+\begin{align}
+    \text { dwall }^{\text {CUT }} =p_{0}^{\text {dwall }}+p_{1}^{\text {dwall }} \times E_{\text {rec }} \\
+    \text { effwall }^{\text {CUT }}=p_{0}^{\text {effall }}+p_{1}^{\text {effwall }} \times E_{\text {rec }} \\
+    \text { ova } Q^{C U T}=p_{0}^{\text {ovaQ }}+p_{1}^{\text {ovaQ }} \times E_{\text {rec }}
+\label{eq:FOM_linear}
+\end{align}
 
 
+The scan regions and intervals for the dwall, effwall and ovaQ parameters for Equation \ref{eq:FOM_linear} are given in \cite{Abe_2019}. 
+
+\subsection{Charged current event (CC) interaction cut}
+
+In order to reduce the number of charged-current events which may be mistakenly included in the NCQE selection, a cut regarding the reconstructed Cherenkov angle of the prompt event  is also utilised alongside the low energy background cut, where the accepted Cherenkov angle of a prompt event ($theta_{C}$) should be greater than the threshold cut value $\theta_{C}^{CUT}$ where the cut value is determined by the linear equation dependent on Erec as shown in Equation \ref{eq:thetaC_FOM}.
+
+\begin{equation}
+    \theta_{C}^{C U T}=p_{0}^{\theta_{C}}+p_{1}^{\theta_{C}} \times E_{\text {rec }}
+    \label{eq:thetaC_FOM} 
+\end{equation}
+
+Just like for the low energy background cut values, the values of the optimised parameters in Equation \ref{eq:thetaC_FOM} are given in \cite{Abe_2019}.
 
 
 
