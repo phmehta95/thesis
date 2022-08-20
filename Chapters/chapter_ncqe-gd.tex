@@ -252,8 +252,19 @@ The vertex goodness (gvtx) and directional goodness (gdir) comparisons are shown
 \end{table}
 
 
+\subsection{NCQE event selection}
 
+Prior to applying the neutron tagging algorithm which searches for neutron candidates, events which satisfy the neutral current quasi-elastic criteria need to be selected. This selection only involves the neutrino vertex information, no information about the neutron candidates is used in the NCQE selection process. 
+\newline
+The following cuts are applied to the Monte Carlo, in order to select the NCQE events. These include a visible energy cut, a fiducial volume cut, a low energy background cut, and a cut to exclude charged currrent interaction events (CCQE). 
 
+\subsubsection{Visible energy cut}
+The energy window for this analysis is set to the 3.49-29.49 MeV range, where the lower value of this range (3.49 MeV) is due to the detection threshold of Super-Kamiokande. In order to limit the background of the Michel electron from charged-current interactions involving muon neutrinos and muon anti-neutrinos, the upper energy window limit is set to 29.49 MeV - above this value the Michel electron background would increase, reducing the NCQE contribution. 
+
+\subsubsection{Fiducial Volume (FV) cut}
+Due to radioactive impurities inside the detector material, specifically the wall of the inner detector, there is a cut involving the distance from the detector wall to the prompt interaction vertex. Events where the distance between the prompt interaction vertex and the detector wall is less than 200 cm are removed. There is a similar cut also used where the distance between the prompt interaction vertex and the distance to the iinner detector wall  This is a standard cut applied in all Super-Kamiokande analyses in order to avoid backgrounds, and when you have events where the energy region is below 6 MeV even more stringent cuts are required to further reduce background from the inner detector wall, described in the next Subsection.
+
+\subsubsection{Low energy background cut}
 
 
 
