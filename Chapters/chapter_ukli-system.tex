@@ -9,7 +9,7 @@ The electronics setup architecture for the UK Light Injection system is made of 
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.7\textwidth]{Figures/ukli_system_architecture.png}
+    \includegraphics[width=0.8\textwidth]{Figures/ukli_system_architecture.png}
     \caption{UKLI electronics system architecture, showing optical fibre and motherboard couplings and QBEE connections.}
     \label{fig:ukli_system_architecture}
 \end{figure}
@@ -17,11 +17,11 @@ The electronics setup architecture for the UK Light Injection system is made of 
 The light being pulsed has a wavelength of 435 nm and is produced by light emitting diodes which are controlled by Field Programmable Gate Arrays and uses sixteen LED pulser boards placed on two motherboards (8 LED pulser boards on each) which controls which channel to send a signal to. Fifteen of the sixteen channels deliver light into the detector, while the remaining channel sends light to a seperate monitoring system. There are three optical fibres each LED is coupled to: firstly, a channel connected to the monitor PMT, secondly to an optical fibre which sends light into the Super-Kamiokande detector, and finally to the on-board photodiode monitor. The monitor PMT is a very small 2 inch Hamamatsu PMT which has a peak sensitivity to 400 nm wavelength light. A signal is sent from the light emitting diode to the monitor PMT and this information is sent to one of the QBEE (QTC-based electronics with Ethernet) channels for the detector - the charge recorded by the monitor PMT is meant to be used as a normalisation factor for calculations of the absorption and scattering water parameters. 
 \newline
 
-The monitor PMT is contained inside a custom made 3D printed box to make sure there is no external light reaching it. There are nineteen channels which monitor the input of the PMT, and these are kept in place against the PMTs photocathode. Fifteen of these fibres are connected to light emitting diodes which give light to the detector, one channel is coupled to the LED board for monitoring the system and the last three channels are reserve. The channel which is coupled to the LED board for monitoring of the syste is used for calibrating the monitor PMT, where the signal from this channel is inputted into the optical power meter. This fibre and the fifteen fibres that are connected to the LEDs that give light to the detector are linked to a photodiode monitor board (PMD). There are two PMDs per motherboard, therefore four in total, which record the output from the LED channels and can switch off a channel if it is producing light when it is not meant to which stops light leaking into the tank. 
+The monitor PMT is contained inside a custom made 3D printed box to make sure there is no external light reaching it. There are nineteen channels which monitor the input of the PMT, and these are kept in place against the PMT's photocathode. Fifteen of these fibres are connected to light emitting diodes which give light to the detector, one channel is coupled to the LED board for monitoring the system and the last three channels are reserve. The channel which is coupled to the LED board for monitoring of the system is used for calibrating the monitor PMT, where the signal from this channel is inputted into the optical power meter. This fibre and the fifteen fibres that are connected to the LEDs that give light to the detector are linked to a photodiode monitor board (PMD). There are two PMDs per motherboard, therefore four in total, which record the output from the LED channels and can switch off a channel if it is producing light when it is not meant to which stops light leaking into the tank. 
 
 \subsection{UKLI System Optics}
 
-Unlike the Korean laser system mentioned in Chapter 4 that injects light into the detector using an optical fibre which has an opening angle of 4 degrees, the UK Light Injection system contains three different types of light injection optics, with each having a different opening angle: a bare fibre, a collimator and a diffuser. This range of optics can accomadate a larger variety of calibration measurements, and better suit the multiple applications of the light injection system, including it being better more monitoring purposes. 
+Unlike the Korean laser system mentioned in Chapter 4 that injects light into the detector using an optical fibre which has an opening angle of 4 degrees, the UK Light Injection system contains three different types of light injection optics, with each having a different opening angle: a bare fibre, a collimator and a diffuser. This range of optics can accomadate a larger variety of calibration measurements, and better suit the multiple applications of the light injection system, including it being better for monitoring purposes. 
 
 \subsubsection{The Collimator Optic}
 
@@ -29,7 +29,7 @@ A 2-degree opening half angle is achieved by the collimator optic by using a gra
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.7\textwidth]{Figures/collimator_schematic.png}
+    \includegraphics[width=0.8\textwidth]{Figures/collimator_schematic.png}
     \caption{Collimator schematic including the end-cap, lens mount and mounting sleeve structures.}
     \label{fig:collimator_schematic}
 \end{figure}
@@ -38,7 +38,7 @@ Having such a confined beam allows for a very exact target position on the tank 
 
 \subsubsection{The Diffuser Optic}
 
-The diffuser optic is a wide angled beam with a opening half-angle of 40 degrees. It allows for water coefficient measurement calibration and also measurements of PMT gain over time and light attenuation length in water and allows for illumination of several hundred PMTs at once. The diffuser optic is made of a Poly(methyl methacrylate) (PMMA) ball which is a piece of acrylic resin in the shape of a half sphere and it contains PMMA particles suspended in silicone gel, similar to the design of the ''laserball'' used to calibrate the SNO+ detector \cite{Moffat_2005}. As a result of this, the mean free path of light that is injected into the center of the diffuser ball is much shorter than the radius of the ball, so each photon scatters so many times off the PMMA particles at random that the exiting angle of the light is also random. This randomised exit direction of the photons means that the beam timing and intensity would be uniform.  
+The diffuser optic is a wide angled beam with a opening half-angle of 40 degrees. It allows for water coefficient measurement calibration and also measurements of PMT gain over time and light attenuation length in water and allows for illumination of several hundred PMTs at once. The diffuser optic is made of a Poly(methyl methacrylate) (PMMA) ball which is a piece of acrylic resin in the shape of a half sphere and it contains PMMA particles suspended in silicone gel, similar to the design of the ``laserball'' used to calibrate the SNO+ detector \cite{Moffat_2005}. As a result of this, the mean free path of light that is injected into the center of the diffuser ball is much shorter than the radius of the ball, so each photon scatters many times off the PMMA particles at random so that the exiting angle of the light is also random. This randomised exit direction of the photons means that the beam timing and intensity would be uniform.  
 \newline
 The enclosure for the diffuser ball had to be watertight and also able to withstand the pressure of being deployed at the bottom of Super-Kamiokande without the quality of the beam profile being reduced, with the requirement being that it can withstand a maximum pressure of 4 bar. Figure \ref{fig:diffuser_photo} shows a photograph of one of the diffusers used, and one of the diffuser ball enclosures. The enclosure is made of high grade stainless steel and using a chemical and water resistant epoxy resin, all the components were ensured to be watertight. 
 
@@ -53,7 +53,7 @@ The enclosure for the diffuser ball had to be watertight and also able to withst
 
 The bare fibre injector are 1mm step index fibres, and are approximately 20 cm in length and are used for validation purposes with the bare fibres in the Korean optical calibration system. These short fibres are screwed into the back end of the optical plate that the collimator and diffuser optics are mounted on.
 
-Using a kinematic mount (shown in Figure \ref{fig:mount}) the optics plate was attached to the Super-Kamiokande PMT structure - due to the position of the Korean system laser injectors there were two different sizes of optics plates required, as two of the barrel injectors are on a lower PMT rail compared with the other three, meaning that the optical plates on the lower PMT rail include a short piece of metal (known as a ''spacer'') which raises the height of the rail an extra 2.5 inches to remove any interference between the PMTs and the structure.
+Using a kinematic mount (shown in Figure \ref{fig:mount}) the optics plate was attached to the Super-Kamiokande PMT structure - due to the position of the Korean system laser injectors there were two different sizes of optics plates required, as two of the barrel injectors are on a lower PMT rail compared with the other three, meaning that the optical plates on the lower PMT rail include a short piece of metal (known as a ``spacer'') which raises the height of the rail an extra 2.5 inches to remove any interference between the PMTs and the structure.
 
 \begin{figure}
     \centering
@@ -65,7 +65,7 @@ Using a kinematic mount (shown in Figure \ref{fig:mount}) the optics plate was a
 
 \subsubsection{Soak Testing Components}
 
-All light injector components that would come into contact with the ultra-pure water in Super-Kamiokande and the gadolinium sulphate doped water went under strenous water contamination testing. Samples of the ultra-pure water were taken from the detector, as well as a control sample of the same water and also a solution of pure water from Super-Kamiokande doped with one gram of gadolinium sulphate and put in 500 ml bottles. The component samples under examination were left to soak in the bottles which were kept refrigerated at the same temperature as the water in Super-Kamiokande (approximately 13 degrees Celcius.) After three months of soaking and intermittent checking of the components by eye, the transmittence of the component (namely the stainless steel used in the optical plate and the PMMA used in the diffuser) were checked using a spectrometer. Comparisons with control components showed no degradation of transmittance. 
+All UKLI components that would come into contact with the ultra-pure water in Super-Kamiokande and the gadolinium sulphate doped water went under strenous water contamination testing. Samples of the ultra-pure water were taken from the detector, as well as a control sample of the same water and also a solution of pure water from Super-Kamiokande doped with one gram of gadolinium sulphate and put in 500 ml bottles. The component samples under examination were left to soak in the bottles which were kept refrigerated at the same temperature as the water in Super-Kamiokande (approximately 13 degrees Celcius.) After three months of soaking and intermittent checking of the components by eye, the transmittence of the component (namely the stainless steel used in the optical plate and the PMMA used in the diffuser) were checked using a spectrometer. Comparisons with control components showed no degradation of transmittance. 
 
 \subsubsection{Results of optics test stands}
 
@@ -96,7 +96,7 @@ The setup for the collimator test stand at the University of Warwick is shown in
     \label{fig:coll_test_stand}
 \end{figure}
 
-Figure \ref{fig:diffuser_TF1} shows distributions provided by this test stand data: preliminary TF1 fits made by ROOT to the light profiles for the diffuser.  The x-axis scale shows the polar angle the rotation stand moves through, while the y-axis scale shows the average of the integrated area under all the pulses recorded by the PMT and is not normalised. 
+Figure \ref{fig:diffuser_TF1} shows distributions provided by this test stand data which are preliminary TF1 fits made by ROOT to the light profiles for the diffuser.  The x-axis scale shows the polar angle the rotation stand moves through, while the y-axis scale shows the average of the integrated area under all the pulses recorded by the PMT and is not normalised. 
 
 \begin{figure}[!htbp]
     \centering
@@ -139,7 +139,7 @@ Figure \ref{fig:collimator_TF1} shows TF1 fits made by ROOT to the light profile
 
 \subsubsection{UK Calibration data}
 
-In September of 2019 and November of 2019 two sets of test data were taken of the collimator, the diffuser and the bare fibre optic (the B2 bare fibre). For the September 2019 data, all of the data for the B1-B5 optics was taken with 100,000 events, however due to the B3 and B5 collimator from the September 2019 data showing a very weak signal, 150,000 events were taken with the B3 collimator data for and 200,000 events were taken with the November 2019 data. Using an event display developed by the University of Warwick, occupancy plots of the test data sets were produced. Figure \ref{fig:occupancy_coll} shows the occupancy plots for the collimator optic from the November 2019 dataset showing the beam spot inside the unrolled volume of the Super-Kamiokande detector. Similarly, Figure \ref{fig:occupancy_diffuser} shows the occupancy plots for the diffuser optic from the November 2019 dataset. The graph in the bottom right hand corner of the occupancy plots show the corrected time-of-flight plots for the PMT hits from the injector. 
+In September of 2019 and November of 2019 two sets of test data were taken of the collimator, the diffuser and the bare fibre optic (the B2 bare fibre). For the September 2019 data, all of the data for the B1-B5 optics was taken with 100,000 events, however due to the B3 and B5 collimator from the September 2019 data showing a very weak signal, 150,000 events were taken with the B3 collimator data and 200,000 events were taken with the November 2019 data. Using an event display developed by the University of Warwick, occupancy plots of the test data sets were produced. Figure \ref{fig:occupancy_coll} shows the occupancy plots for the collimator optic from the November 2019 dataset showing the beam spot inside the unrolled volume of the Super-Kamiokande detector. Similarly, Figure \ref{fig:occupancy_diffuser} shows the occupancy plots for the diffuser optic from the November 2019 dataset. The graph in the bottom right hand corner of the occupancy plots show the corrected time-of-flight plots for the PMT hits from the injector. 
 
 \begin{figure}[!htbp]
     \centering
@@ -167,12 +167,12 @@ In September of 2019 and November of 2019 two sets of test data were taken of th
     
 \end{figure}
 
-In addition to test data being taken, there is also an ''autocalib'' system used for long term monitoring of the water parameters in Super-Kamiokande by the Korean laser system. In early 2020 the autocalib scheduler was modified to incorporate data taking by the UKLI system which was very useful for Gadolinium loading calibration purposes (which will be expanded upon in the UKLI monitoring system section) but also in the longer term, it will be useful in the monitoring of daily/weekly water coefficient property measurements, investigation of depth dependence with respect to the water properties and PMT property calibration. Figure \ref{fig:autocalib} shows the schedule for autocalib, and the black dashed lines show the position of the UK barrel collimator and diffusers with respect to the other autocalib data taking streams. The horizontal blue line shows the length of the one autocalib cycle, which is about 4.6 seconds, with each UKLI optic having about 3310 events per day.
+In addition to test data being taken, there is also an ``autocalib'' system used for long term monitoring of the water parameters in Super-Kamiokande by the Korean laser system. In early 2020 the autocalib scheduler was modified to incorporate data taking by the UKLI system which was very useful for Gadolinium loading calibration purposes but also in the longer term, it will be useful in the monitoring of daily/weekly water coefficient property measurements, investigation of depth dependence with respect to the water properties and PMT property calibration. Figure \ref{fig:autocalib} shows the schedule for autocalib, and the black dashed lines show the position of the UK barrel collimator and diffusers with respect to the other autocalib data taking streams. The horizontal blue line shows the length of the one autocalib cycle, which is about 4.6 seconds, with each UKLI optic taking about 3310 events per day.
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.7\textwidth]{Figures/autocalib.png}
-    \caption{Schematic showing position of UKLI in autocalib scheduler: the black dashed lines show the UKLI B1-B5 collimator and diffuser optics and the horizontal blue line shows the length of one autocalib cycle.}
+    \includegraphics[width=0.8\textwidth]{Figures/autocalib.png}
+    \caption{Schematic showing position of the UKLI in autocalib scheduler: the black dashed lines show the UKLI B1-B5 collimator and diffuser optics and the horizontal blue line shows the length of one autocalib cycle.}
     \label{fig:autocalib}
 \end{figure}
 
@@ -181,7 +181,7 @@ Figures \ref{fig:occupancy_coll_auto} and \ref{fig:occupancy_diff_auto} shows th
 \begin{figure}[!htbp]
     \centering
     
-    \caption{Occupancy plot for the collimator optics from the UKLI Autocalin July 2020 run} \label{fig:occupancy_coll_auto} 
+    \caption{Occupancy plot for the collimator optics from the UKLI Autocalib July 2020 run} \label{fig:occupancy_coll_auto} 
     
     \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B1_occupancy_coll_auto.PNG}} \hfill
     \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B2_occupancy_coll_auto.PNG}} \par
@@ -206,9 +206,9 @@ Figures \ref{fig:occupancy_coll_auto} and \ref{fig:occupancy_diff_auto} shows th
 
 
 \subsubsection{UKLI MC production}
-After making these fits to data the next aim was to use these light profiles as an input to SKDETSIM, the Super Kamiokande Detector Simulator. SKDETSIM uses GEANT3 (GEometry ANd Tracking 3) to simulate what the particles in each event would do inside the detector, and tracks the particle's trajectories and energy loss. Simulating the light injection from the UKLI system in SKDETSIM was done in a similar way to the Korean method of producing Monte Carlo: the same versions of the calibration scripts were used however, small modifications were made to them and to the version of SKDETSIM used to simulate the input photons from the system in the detector. The calibration scripts used for the Korean and UKLI systems both allow for the number of events and the number of injected photons to be set. In order to generate many Monte Carlo files with the absorption, Rayleigh and Mie scattering parameters varied, the ratio of these paramaters ''abs'', ''ray'' and ''mie'', to the value of these parameters currently in the detector simulation can also be set, where a value of ''1.0'' is thr SKDETSIM default value. The top-bottom asymmetry ''TBA'', mentioned in Chapter 4, can also be set, along with the wavelength of the injected light.
+After making these fits to data the next aim was to use these light profiles as an input to SKDETSIM, the Super Kamiokande Detector Simulator. SKDETSIM uses GEANT3 (GEometry ANd Tracking 3) to simulate what the particles in each event would do inside the detector, and tracks the particle's trajectories and energy loss. Simulating the light injection from the UKLI system in SKDETSIM was done in a similar way to the Korean method of producing Monte Carlo: the same versions of the calibration scripts were used however, small modifications were made to them and to the version of SKDETSIM used to simulate the input photons from the system in the detector. The calibration scripts used for the Korean and UKLI systems both allow for the number of events and the number of injected photons to be set. In order to generate many Monte Carlo files with the absorption, Rayleigh and Mie scattering parameters varied, the ratio of these paramaters ``abs'', ``ray'' and ``mie'', to the value of these parameters currently in the detector simulation can also be set, where a value of ``1.0'' is the SKDETSIM default value. The top-bottom asymmetry ``TBA'', mentioned in Chapter 4, can also be set, along with the wavelength of the injected light.
 \newline
-The first step regarding making UKLI based Monte Carlo was changing the position of the injector locations from the positions of the Korean system (shown in Table \ref{table:korean_loc}) to that of the UKLI system (shown in Table \ref{table:UKLI_loc}), due to the fact that the spacing gap rungs between the UK system and the Korean system is +70.7 cm for the B1, B2, B3 barrel injectors and -70.7 cm for the B4 and B5 injectors. The opening angle of the injectors determined by the simulation also had to be changed because the simulation had to accomodate the fact that the injectors for the UKLI system now consisted of three different opening angles for the collimator, diffuser and bare fibre optics, instead of the just the bare fibre optics used in the Korean system. The way the opening angle for the Korean system was set in the calibration scripts was using the "SIGBM" parameter which stands for the sigma of the input injector beam, however an entirely new method of determining the opening angle of the beam was needed to include the information from the light profiles taken from the test stands at Warwick. In order to understand the SIGBM parameter further however, the relationship between opening angle in degrees and SIGBM was plotted by outputting the SIGBM value and the angle to a text file during laser generation Monte Carlo production (shown in Figure \ref{fig:sigbm_angle}.)
+The first step regarding making UKLI based Monte Carlo was changing the position of the injector locations from the positions of the Korean system (shown in Table \ref{table:korean_loc}) to that of the UKLI system (shown in Table \ref{table:UKLI_loc}), due to the fact that the spacing gap rungs between the UK system and the Korean system is +70.7 cm for the B1, B2, B3 barrel injectors and -70.7 cm for the B4 and B5 injectors. The opening angle of the injectors determined by the simulation also had to be changed because the simulation had to accomodate the fact that the injectors for the UKLI system now consisted of three different opening angles for the collimator, diffuser and bare fibre optics, instead of just the bare fibre optics used in the Korean system. The way the opening angle for the Korean system was set in the calibration scripts was using the``SIGBM" parameter which stands for the sigma of the input injector beam, however an entirely new method of determining the opening angle of the beam was needed to include the information from the light profiles taken from the test stands at Warwick. In order to understand the SIGBM parameter further however, the relationship between opening angle in degrees and SIGBM was plotted by outputting the SIGBM value and the angle to a text file during laser generation Monte Carlo production (shown in Figure \ref{fig:sigbm_angle}.)
 
 \begin{table}[htp]
     $$
@@ -270,7 +270,7 @@ In order to validate the positions of the targets for the UKLI system, and the r
     \label{fig:charge_weighted_nov_sept_B4}
 \end{figure}
 
-The B1 and B4 collimator optics give the largest peaks in the charge weighted plots, while the B3 and B5 optics give the weakest peaks, practically indistunguishable from the background pedestal (event with the additional number of events taken during the November data taking runs.) The charge weighted plots were used to validate the relationship between the opening angle of the injector beam in the Monte Carlo production calibration scripts by generating Monte Carlo scripts with varying values of the SIGBM parameter (while keeping the absorption and scattering parameters the same). Fitting the charge weighted profile plots with a Gaussian and using the position of the injector target and the edge of the beam spot, the opening angle of the beam in degrees could be determined.
+The B1 and B4 collimator optics give the largest peaks in the charge weighted plots, while the B3 and B5 optics give the weakest peaks, practically indistinguishable from the background pedestal (even with the additional number of events taken during the November data taking runs.) The charge weighted plots were used to validate the relationship between the opening angle of the injector beam in the Monte Carlo production calibration scripts by generating Monte Carlo scripts with varying values of the SIGBM parameter (while keeping the absorption and scattering parameters the same). Fitting the charge weighted profile plots with a Gaussian and using the position of the injector target and the edge of the beam spot, the opening angle of the beam in degrees could be determined.
 
 The width of the beam needed to be defined in order to do this however, and the standard beam radius definition is shown as in Figure \ref{fig:beam_width}. This schematic shows that the width of the beam was defined as using $1/e^2$ for the edge of the beam width, so it is taken as the point where the intensity drops to 0.135 of the Gaussian peak value. While there is good agreement at small opening angles, there is a slight discrepancy between this plot and Figure \ref{fig:sigbm_angle} at larger opening angles, where in Figure \ref{fig:sigbm_angle} the angle in degrees is consistently greater than in Figure \ref{fig:sigbm_angle_validation} for the same value of SIGBM, and this is due to SIGBM being defined as the maximum opening angle, however for small opening angles as for the collimator, the comparison is valid.
 
@@ -399,7 +399,7 @@ In order to validate the diffuser MC inverse cumulative distribution function ou
 \begin{figure}[!htbp]
     \centering
     
-    \caption{Plots of the result of running a randomly sampled numbers from a uniform distibution through the inverse CDFs (in black) for each diffuser, along with the original PDF fits (in red) for the B1 - B5 diffusers.}\label{fig:inv_cdf_check}
+    \caption{Plots of the result of running randomly sampled numbers from a uniform distibution through the inverse CDFs (in black) for each diffuser, along with the original PDF fits (in red) for the B1 - B5 diffusers.}\label{fig:inv_cdf_check}
     
     \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/inv_cdf_check_diff_B1.PNG}}\hfill
     \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/inv_cdf_check_diff_B2.PNG}}\hfill
@@ -411,7 +411,7 @@ In order to validate the diffuser MC inverse cumulative distribution function ou
     
 \end{figure}
 
-After producing the UKLI MC, the next step was to use them to attempt to measure the absorption and scattering parameters in a similar way to the Korean system. As mentioned earlier, this was done by producing time of flight corrected hit timing plots for UKLI MC with multiple different values of absorption, and Rayleigh and Mie scattering parameters and comparing them to the TOF corrected plots for UKLI data. Figures \ref{fig:TOF_abs}, \ref{fig:TOF_ray} and \ref{fig:TOF_mie} show the time-of-flight corrected plots for the UKLI MC B1 collimator, produced with values of the 'abs' and 'ray' calibration script parameter between 0.7 and 1.3 to show the affect that varying these parameters have on the time of flight corrected hits. The y-axis shows the number of hits normalised by the total charge in the detector.
+After producing the UKLI MC, the next step was to use them to measure the absorption and scattering parameters in a similar way to the Korean system. As mentioned earlier, this was done by producing time of flight corrected hit timing plots for UKLI MC with multiple different values of absorption, and Rayleigh and Mie scattering parameters and comparing them to the TOF corrected plots for UKLI data. Figures \ref{fig:TOF_abs}, \ref{fig:TOF_ray} and \ref{fig:TOF_mie} show the time-of-flight corrected plots for the UKLI MC B1 collimator, produced with values of the ``abs'' and ``ray'' calibration script parameter between 0.7 and 1.3 to show the affect that varying these parameters have on the time of flight corrected hits. The y-axis shows the number of hits normalised by the total charge in the detector.
 
 \begin{figure}
     \centering
@@ -434,7 +434,7 @@ After producing the UKLI MC, the next step was to use them to attempt to measure
     \label{fig:TOF_mie}
 \end{figure}
 
-As shown in Figure \ref{fig:TOF_ray}, the TOF correct timing plots are most affected by the Rayleigh scattering parameter, which affects the amount of hits in the scattered hits region, while varying the absorption parameter mostly affects the height of the reflected peak, as the higher the amount of absorption in the tank, the smaller the number of reflected hits. 
+As shown in Figure \ref{fig:TOF_ray}, the TOF corrected timing plots are most affected by the Rayleigh scattering parameter, which affects the amount of hits in the scattered hits region, while varying the absorption parameter mostly affects the height of the reflected peak, as the higher the amount of absorption in the tank, the smaller the number of reflected hits. 
 
 After producing time-of-flight corrected plots for the B1 collimator UKLI MC and overlaying it with the Run 82181 November test run data with the abs, ray, mie parameters set to 1.0, and a TBA value of 7.598, it was clear that there were disgreements between the Monte Carlo and data in both the scattered hits region and the reflected hits peak. In order to remedy this, the time dispersion of the reflected hits peak was varied, in order to shift the distribution and better match up the UKLI Monte Carlo and test run data. 
 
@@ -473,12 +473,12 @@ Figure \ref{fig:TOF_dispersion_plots} show these time-of-flight corrected plots 
     \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/time_dispersion_TOF_20ns.PNG}}%
 \end{figure}
 
-For the scattered hits region (region between dashed lines), there is now good agreement between the MC and data, with this region giving chi2/ndf values of less than one, and the time dispersion values of 5 ns and 10 ns giving the best agreement. A problem remains regarding the reflected hits peak, where the data continues to have a much higher reflected peak than the Monte Carlo. This points to the amount of charge in the detector for the reflected peak being too large for the Monte Carlo, and further studies will be needed to be done to tune this.
+For the scattered hits region (region between the dashed lines), there is now good agreement between the MC and data, with this region giving Chi2/NDF values of less than one, and the time dispersion values of 5 ns and 10 ns giving the best agreement. A problem remains regarding the reflected hits peak, where the data continues to have a much higher reflected peak than the Monte Carlo. This points to the amount of charge in the detector for the reflected peak being too large for the Monte Carlo, and further studies will be needed to be done to tune this.
 
 
 \subsection{UKLI work towards Hyper-Kamiokande}
 
-Since the first implementation of the UKLI MC, there have been several improvements made to the diffuser profiles, with a full 2$\pi$ diffuser profile produced from UKLI diffusers placed in a test stand in Sheffield. There were two types of diffusers involved in creating the 2D profiles: the "D5'' diffuser (and SK install spare diffuser) and "HP1'', a prototype for Hyper-Kamiokande. Profile measurements for the diffusers were made in both air and water, and Figure \ref{fig:diffuser_tank_sheff} shows the test stand setup at Sheffield, along with Figure \ref{fig:D5_diffuser} and Figure \ref{fig:HP1_diffuser} which show the D5 and HP1 diffusers respectively.
+Since the first implementation of the UKLI MC, there have been several improvements made to the diffuser profiles, with a full 2$\pi$ diffuser profile produced from UKLI diffusers placed in a test stand in Sheffield. There were two types of diffusers involved in creating the 2D profiles: the ``D5'' diffuser (and SK install spare diffuser) and ``HP1'', a prototype for Hyper-Kamiokande. Profile measurements for the diffusers were made in both air and water, and Figure \ref{fig:diffuser_tank_sheff} shows the test stand setup at Sheffield, along with Figure \ref{fig:D5_diffuser} and Figure \ref{fig:HP1_diffuser} which show the D5 and HP1 diffusers respectively.
 
 
 \begin{figure}
@@ -517,7 +517,7 @@ In Figure \ref{fig:diffuser_tank_sheff}, not only is there a $\theta$ rotational
       \end{subfigure} 
 \end{figure}
 
-To investigate the relationship between polar angle, azimuthal angle and the amplitude of the light, plots were made for the D5 and HP1 diffusers of the variation of amplitude vs polar angle, for measurements of azimuthal angle in 30\degree intervals. This would give an indication of how uniform the profile is by seeing how closely the values of amplitude for each azimuthal angle are to each other. This is shown in Figure \ref{fig:HP1_D5_azimuthal}, along with the coefficient of quartile variation (CQV) of the amplitude, to show the spread of the data and used instead of the standard deviation as a more robust measure as it will not be affected by outliers.  This data is shown for both the D5 and HP1 diffusers in air and also water, with three distinct regions (shown by the dashed lines) across which the amplitude varies most. 
+To investigate the relationship between polar angle, azimuthal angle and the amplitude of the light, plots were made for the D5 and HP1 diffusers of the variation of amplitude vs polar angle, for measurements of azimuthal angle in 30$\degree$ intervals. This would give an indication of how uniform the profile is by seeing how closely the values of amplitude for each azimuthal angle are to each other. This is shown in Figure \ref{fig:HP1_D5_azimuthal}, along with the coefficient of quartile variation (CQV) of the amplitude, to show the spread of the data and used instead of the standard deviation as a more robust measure as it will not be affected by outliers.  This data is shown for both the D5 and HP1 diffusers in air and also water, with three distinct regions (shown by the dashed lines) across which the amplitude varies most. 
 
 \begin{figure}[!htbp]
     \centering
