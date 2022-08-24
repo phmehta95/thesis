@@ -2048,6 +2048,11 @@ INPUT ./Chapters/chapter_ncqe-gd.tex
 INPUT Chapters/chapter_ncqe-gd.tex
 INPUT ./Chapters/chapter_ncqe-gd.tex
 INPUT Chapters/chapter_ncqe-gd.tex
+INPUT ./Figures/analysis_flowchart.png
+INPUT ./Figures/analysis_flowchart.png
+INPUT Figures/analysis_flowchart.png
+INPUT ./Figures/analysis_flowchart.png
+INPUT ./Figures/analysis_flowchart.png
 INPUT ./Figures/ncqebenharspectral.PNG
 INPUT ./Figures/ncqebenharspectral.PNG
 INPUT Figures/ncqebenharspectral.PNG

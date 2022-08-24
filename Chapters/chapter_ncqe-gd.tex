@@ -2,6 +2,20 @@
 Interactions with Super-Kamiokande Gadolinium Upgrade}
 \label{chp:ncqegd}
 
+This chapter is dedicated to the main analysis of this thesis, the motivation for which is to constrain the SRN background by looking at the atmospheric neutral current quasi-elastic (NCQE) interactions of atmospheric neutrinos which form a significant background for this SRN search, as the prompt and delayed signal of the NCQE interaction mimics that of the SRN. Previously the NCQE neutron tag has searched for the 2.2 MeV photon from neutron capture on hydrogen. With the recent addition of 0.026\% gadolinium sulphate octahydrate to Super-Kamiokande, this allows for improved neutron detection due to the higher energy gamma cascade signal of neutron capture on gadolinium of 8 MeV. At energies close to the atmospheric peak, the NCQE interaction cross sections can be evaluated using T2K beam neutrinos. This analysis will present the status of the improved neutron tag from SK-Gd, its impact on the measurement of NCQE in T2K and the improvements to the SRN background measurement.
+
+There are many stages to this analysis, which are shown in Figure \ref{fig:analysis_flowchart}, where the ``neutron tagging'' stage occurs via two methods. Previous NCQE neutron-tagging analyses used a method for neutron tagging which will be referred to as ``legacy NTag code'', but in 2020 the Super-K collaboration decided to proceed to use a new, more compact and streamlined version of the neutron tagging code, which combines most of these stages into one piece of software. This will be referred to As``current NTag code'', and this is shown in Figure \ref{fig:analysis_flowchart} as well. The red arrows in Figure \ref{fig:analysis_flowchart} show the steps in the analysis prcoedure using the legacy NTag code which have been assimilated into the new NTag code.
+
+\begin{figure}
+    \includegraphics[width=\textwidth]{Figures/analysis_flowchart.png}
+    \caption{Flowchart showing the stages in this analysis for both the analysis which used the legacy Ntag code (blue) and the current NTag code (orange).}
+\label{fig:analysis_flowchart}
+\end{figure}
+
+The main differences between the legacy and new NTag code lie in the neutron tagging algorithm stage, especially regarding variables used to classify the tagged neutron candidates which will be discussed in further detail later on. A large part of this analysis was to ensure that the legacy and new NTag code produced the same information regarding the prompt event and also for the Monte Carlo truth information regarding the neutrons. 
+
+
+
 \section{Event Simulation}
 
 This chapter discusses details about the event simulation, specifically the software used and the way neutrino interactions are simulated in order to produce Monte Carlo. Table \ref{table:software} summarises all the software used in this analysis. 
@@ -42,7 +56,7 @@ Here $\sigma_{p}$ and $\sigma_{n}$ are the neutrino-proton cross section and the
 \begin{figure}
     \includegraphics[width=\textwidth]{Figures/ncqebenharspectral.png}
     \caption{Representation of NC neutrino scattering off $16_{O}$ with protons on the left hand side and neutrons on the right arranged according to the shell model. }
-    \label{fig:ncqebenharspectral}
+\label{fig:ncqebenharspectral}
 \end{figure}
 
 The lowest rung of nucleons in Figure \ref{fig:ncqebenharspectral} is the $s_{1/2}$, with $p_{3/2}$ above this level and $p_{1/2}$ above that. The protons in these rungs have removal energies of 12.1 MeV, 18.4 MeV and 42 MeV respectively, and due to neutron levels being more tightly bound, these have an extra removal of 3.24 MeV compared to their proton counterparts. The shell model is imperfect due to how it allocates the probablity of $16_{O}$ transitioning to the possible nucleon states. In the shell model, probabilities are allocated by counting the number of nucleons in each energy level and assigning probailities according to how many there are. In Figure \ref{fig:ncqebenharspectral} it can be seen that the $p_{3/2}$ state has double the number of nucleons compared to the $s_{1/2}$ model and therefore double the probability of transition is assigned for the $p_{3/2}$ state, and the probability of transitioning to any other state is assigned to be 0, because in the shell model they don't even exist. The Benhar Spectral Function model however is complex and is tuned using electron-nucleus scattering data. The model used in this analysis is a modified version of the Benhar Spectral Function model, where the case of other transition states is dealt with by merging the "others'' state into the $s_{1/2}$ state. Table \ref{table:transitionprob} gives the probabilities of transition to different states for different models. 
@@ -251,6 +265,7 @@ The vertex goodness (gvtx) and directional goodness (gdir) comparisons are shown
 \label{table:vertex_resolution}
 \end{table}
 
+\subsection{Two n}
 
 \subsection{NCQE event selection}
 
@@ -297,7 +312,7 @@ In order to reduce the number of charged-current events which may be mistakenly 
 Just like for the low energy background cut values, the values of the optimised parameters in Equation \ref{eq:thetaC_FOM} are given in \cite{Abe_2019}.
 
 
-
+\subsection{Prompt event NCQE reduction cut plots}
 
 
 
