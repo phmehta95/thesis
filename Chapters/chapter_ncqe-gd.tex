@@ -265,7 +265,42 @@ The vertex goodness (gvtx) and directional goodness (gdir) comparisons are shown
 \label{table:vertex_resolution}
 \end{table}
 
-\subsection{Two n}
+\subsubsection{Comparisons of event reconstruction output between NTag versions}
+To ensure that the NCQE event selection and neutron tagging could be carried out using the new NTag code, comparisons of the output BONSAI reconstruction variables between the two versions were made to ensure the validity of the reconstruction output. Figures \ref{fig:energy_recon_compare}, \ref{fig:dwall_recon_compare}, \ref{fig:effwall_recon_compare}, \ref{fig:angle_recon_compare}, \ref{fig:ovaq_recon_compare} show the reconstructed energy, dwall, effwall, Cherenkov angle and ovaQ parameters respectively, with the legacy NTag output in black and the new NTag output in red. 
+
+\begin{figure}[t!] % "[t!]" placement specifier just for this example
+    \begin{subfigure}{0.48\textwidth}
+    \includegraphics[width=\linewidth]{Figures/energy_recon_compare.PNG}
+    \caption{Reconstructed energy (MeV) comparison} \label{fig:energy_recon_compare}
+    \end{subfigure}\hspace*{\fill}
+    \begin{subfigure}{0.48\textwidth}
+    \includegraphics[width=\linewidth]{Figures/dwall_recon_compare.PNG}
+    \caption{DWall (cm) comparison} \label{fig:dwall_recon_compare}
+    \end{subfigure}
+    
+    \medskip
+    \begin{subfigure}{0.48\textwidth}
+    \includegraphics[width=\linewidth]{Figures/effwall_recon_compare.PNG}
+    \caption{Effwall (cm) comparison} \label{fig:effwall_recon_compare}
+    \end{subfigure}\hspace*{\fill}
+    \begin{subfigure}{0.48\textwidth}
+    \includegraphics[width=\linewidth]{Figures/angle_recon_compare.PNG}
+    \caption{Reconstructed Cherenkov angle (degrees) comparison} \label{fig:angle_recon_compare}
+    \end{subfigure}
+    
+    \medskip
+    \begin{subfigure}{0.48\textwidth}
+    \includegraphics[width=\linewidth]{Figures/ovaq_recon_compare.PNG}
+    \caption{OvaQ comparison} \label{fig:ovaq_recon_compare}
+    \end{subfigure}\hspace*{\fill}
+    
+ 
+    \caption{Comparison of the output between the two NTag codes showing legacy (black) and new (red) NTag outputs}
+    
+    \end{figure}
+
+
+
 
 \subsection{NCQE event selection}
 
@@ -313,6 +348,7 @@ Just like for the low energy background cut values, the values of the optimised 
 
 
 \subsection{Prompt event NCQE reduction cut plots}
+
 
 
 
