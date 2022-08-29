@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.27)  26 AUG 2022 17:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.27)  29 AUG 2022 14:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1811,75 +1811,119 @@ File: Figures/thetaC_compare.PNG Graphic file (type png)
 Package pdftex.def Info: Figures/thetaC_compare.PNG  used on input line 230.
 (pdftex.def)             Requested size: 169.0519pt x 93.77293pt.
  [136] [137 <./Figures/erec_compare.PNG> <./Figures/dwall_compare.PNG> <./Figures/effwall_compare.PNG> <./Figures/ovaq_compare.PNG> <./Figures/thetac_compare.PNG>]
-<Figures/gvtx_compare.PNG, id=1727, 1870.99pt x 989.6975pt>
-File: Figures/gvtx_compare.PNG Graphic file (type png)
-<use Figures/gvtx_compare.PNG>
-Package pdftex.def Info: Figures/gvtx_compare.PNG  used on input line 240.
-(pdftex.def)             Requested size: 169.0519pt x 89.41626pt.
-<Figures/gdir_compare.PNG, id=1728, 835.923pt x 538.4115pt>
-File: Figures/gdir_compare.PNG Graphic file (type png)
-<use Figures/gdir_compare.PNG>
-Package pdftex.def Info: Figures/gdir_compare.PNG  used on input line 241.
-(pdftex.def)             Requested size: 169.0519pt x 108.87985pt.
-
-
-LaTeX Warning: Reference `fig:ovaq_comapre' on page 138 undefined on input line 245.
-
-
-LaTeX Warning: Reference `fig:vertex_goodness' on page 138 undefined on input line 245.
-
-<Figures/vertex_resolution.png, id=1731, 788.34525pt x 440.24475pt>
+<Figures/gvtx_squared.JPEG, id=1727, 1893.0725pt x 954.56625pt>
+File: Figures/gvtx_squared.JPEG Graphic file (type jpg)
+<use Figures/gvtx_squared.JPEG>
+Package pdftex.def Info: Figures/gvtx_squared.JPEG  used on input line 240.
+(pdftex.def)             Requested size: 169.0519pt x 85.23724pt.
+<Figures/gdir_squared.JPEG, id=1728, 1903.11pt x 948.54375pt>
+File: Figures/gdir_squared.JPEG Graphic file (type jpg)
+<use Figures/gdir_squared.JPEG>
+Package pdftex.def Info: Figures/gdir_squared.JPEG  used on input line 241.
+(pdftex.def)             Requested size: 169.0519pt x 84.25078pt.
+<Figures/vertex_resolution.png, id=1734, 788.34525pt x 440.24475pt>
 File: Figures/vertex_resolution.png Graphic file (type png)
 <use Figures/vertex_resolution.png>
-Package pdftex.def Info: Figures/vertex_resolution.png  used on input line 248.
+Package pdftex.def Info: Figures/vertex_resolution.png  used on input line 249.
 (pdftex.def)             Requested size: 345.0pt x 192.66707pt.
-[138 <./Figures/gvtx_compare.png> <./Figures/gdir_compare.png>] [139 <./Figures/vertex_resolution.PNG>]
-<Figures/energy_recon_compare.PNG, id=1750, 966.009pt x 563.706pt>
+ [138 <./Figures/gvtx_squared.jpeg> <./Figures/gdir_squared.jpeg>] [139 <./Figures/vertex_resolution.PNG>]
+<Figures/energy_recon_compare.PNG, id=1753, 966.009pt x 563.706pt>
 File: Figures/energy_recon_compare.PNG Graphic file (type png)
 <use Figures/energy_recon_compare.PNG>
-Package pdftex.def Info: Figures/energy_recon_compare.PNG  used on input line 273.
+Package pdftex.def Info: Figures/energy_recon_compare.PNG  used on input line 274.
 (pdftex.def)             Requested size: 165.59853pt x 96.62868pt.
-<Figures/dwall_recon_compare.PNG, id=1751, 969.6225pt x 558.28575pt>
+<Figures/dwall_recon_compare.PNG, id=1754, 969.6225pt x 558.28575pt>
 File: Figures/dwall_recon_compare.PNG Graphic file (type png)
 <use Figures/dwall_recon_compare.PNG>
-Package pdftex.def Info: Figures/dwall_recon_compare.PNG  used on input line 277.
+Package pdftex.def Info: Figures/dwall_recon_compare.PNG  used on input line 278.
 (pdftex.def)             Requested size: 165.59853pt x 95.34177pt.
-<Figures/effwall_recon_compare.PNG, id=1752, 973.83826pt x 555.2745pt>
+<Figures/effwall_recon_compare.PNG, id=1755, 973.83826pt x 555.2745pt>
 File: Figures/effwall_recon_compare.PNG Graphic file (type png)
 <use Figures/effwall_recon_compare.PNG>
-Package pdftex.def Info: Figures/effwall_recon_compare.PNG  used on input line 283.
+Package pdftex.def Info: Figures/effwall_recon_compare.PNG  used on input line 284.
 (pdftex.def)             Requested size: 165.59853pt x 94.42082pt.
-<Figures/angle_recon_compare.PNG, id=1753, 975.04276pt x 562.5015pt>
+<Figures/angle_recon_compare.PNG, id=1756, 975.04276pt x 562.5015pt>
 File: Figures/angle_recon_compare.PNG Graphic file (type png)
 <use Figures/angle_recon_compare.PNG>
-Package pdftex.def Info: Figures/angle_recon_compare.PNG  used on input line 287.
+Package pdftex.def Info: Figures/angle_recon_compare.PNG  used on input line 288.
 (pdftex.def)             Requested size: 165.59853pt x 95.52957pt.
-<Figures/ovaq_recon_compare.PNG, id=1754, 962.3955pt x 559.49025pt>
+<Figures/ovaq_recon_compare.PNG, id=1757, 962.3955pt x 559.49025pt>
 File: Figures/ovaq_recon_compare.PNG Graphic file (type png)
 <use Figures/ovaq_recon_compare.PNG>
-Package pdftex.def Info: Figures/ovaq_recon_compare.PNG  used on input line 293.
+Package pdftex.def Info: Figures/ovaq_recon_compare.PNG  used on input line 294.
 (pdftex.def)             Requested size: 165.59853pt x 96.26459pt.
  [140] [141 <./Figures/energy_recon_compare.PNG> <./Figures/dwall_recon_compare.PNG> <./Figures/effwall_recon_compare.PNG> <./Figures/angle_recon_compare.PNG> <./Figures/ovaq_recon_compare.PNG>] [142] [143]
-Underfull \hbox (badness 10000) in paragraph at lines 368--372
+<Figures/fabio_erec.PNG, id=1808, 364.9635pt x 236.68425pt>
+File: Figures/fabio_erec.PNG Graphic file (type png)
+<use Figures/fabio_erec.PNG>
+Package pdftex.def Info: Figures/fabio_erec.PNG  used on input line 361.
+(pdftex.def)             Requested size: 169.0519pt x 109.63449pt.
+<Figures/erec_reduction.PNG, id=1809, 645.21465pt x 437.34526pt>
+File: Figures/erec_reduction.PNG Graphic file (type png)
+<use Figures/erec_reduction.PNG>
+Package pdftex.def Info: Figures/erec_reduction.PNG  used on input line 362.
+(pdftex.def)             Requested size: 169.0519pt x 114.58797pt.
+<Figures/fabio_dwall.PNG, id=1810, 362.5545pt x 238.491pt>
+File: Figures/fabio_dwall.PNG Graphic file (type png)
+<use Figures/fabio_dwall.PNG>
+Package pdftex.def Info: Figures/fabio_dwall.PNG  used on input line 372.
+(pdftex.def)             Requested size: 169.0519pt x 111.20284pt.
+<Figures/dwall_reduction.PNG, id=1811, 1408.89247pt x 718.97475pt>
+File: Figures/dwall_reduction.PNG Graphic file (type png)
+<use Figures/dwall_reduction.PNG>
+Package pdftex.def Info: Figures/dwall_reduction.PNG  used on input line 373.
+(pdftex.def)             Requested size: 169.0383pt x 119.49239pt.
+<Figures/fabio_effwall.PNG, id=1812, 372.1905pt x 236.082pt>
+File: Figures/fabio_effwall.PNG Graphic file (type png)
+<use Figures/fabio_effwall.PNG>
+Package pdftex.def Info: Figures/fabio_effwall.PNG  used on input line 383.
+(pdftex.def)             Requested size: 169.0519pt x 107.23015pt.
+<Figures/effwall_reduction.PNG, id=1813, 645.21465pt x 440.32547pt>
+File: Figures/effwall_reduction.PNG Graphic file (type png)
+<use Figures/effwall_reduction.PNG>
+Package pdftex.def Info: Figures/effwall_reduction.PNG  used on input line 384.
+(pdftex.def)             Requested size: 169.0519pt x 115.3688pt.
+<Figures/fabio_ovaq.PNG, id=1814, 343.88475pt x 231.86626pt>
+File: Figures/fabio_ovaq.PNG Graphic file (type png)
+<use Figures/fabio_ovaq.PNG>
+Package pdftex.def Info: Figures/fabio_ovaq.PNG  used on input line 394.
+(pdftex.def)             Requested size: 169.0519pt x 113.98694pt.
+<Figures/ovaq_reduction.PNG, id=1815, 637.76413pt x 437.34526pt>
+File: Figures/ovaq_reduction.PNG Graphic file (type png)
+<use Figures/ovaq_reduction.PNG>
+Package pdftex.def Info: Figures/ovaq_reduction.PNG  used on input line 395.
+(pdftex.def)             Requested size: 169.0519pt x 115.92262pt.
+<Figures/fabio_angle.PNG, id=1816, 343.88475pt x 234.27525pt>
+File: Figures/fabio_angle.PNG Graphic file (type png)
+<use Figures/fabio_angle.PNG>
+Package pdftex.def Info: Figures/fabio_angle.PNG  used on input line 405.
+(pdftex.def)             Requested size: 169.0519pt x 115.17122pt.
+<Figures/angle_reduction.PNG, id=1817, 1296.3897pt x 717.48463pt>
+File: Figures/angle_reduction.PNG Graphic file (type png)
+<use Figures/angle_reduction.PNG>
+Package pdftex.def Info: Figures/angle_reduction.PNG  used on input line 406.
+(pdftex.def)             Requested size: 169.05089pt x 119.49654pt.
+ [144 <./Figures/fabio_erec.PNG> <./Figures/erec_reduction.png (PNG copy)> <./Figures/fabio_dwall.PNG> <./Figures/dwall_reduction.png (PNG copy)>] [145 <./Figures/fabio_effwall.PNG> <./Figures/effwall_reduction.png (PNG copy)> <./Figures/fabio_ovaq.PNG> <./Figures/ovaq_reduction.png (PNG copy)> <./Figures/fabio_angle.PNG> <./Figures/angle_reduction.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 422--426
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 374--378
-
- []
-
-[144] [145]
 Underfull \hbox (badness 10000) in paragraph at lines 428--432
 
  []
 
-) [146]
+[146]
+Underfull \hbox (badness 10000) in paragraph at lines 482--486
+
+ []
+
+[147]) [148]
 \openout2 = `Chapters/chapter_syst_uncertainty.aux'.
 
  (./Chapters/chapter_syst_uncertainty.tex
 Chapter 8.
-[147
+[149
 
 
 
@@ -1894,7 +1938,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--31
 
  []
 
-[148]
+[150]
 Underfull \hbox (badness 10000) in paragraph at lines 34--36
 
  []
@@ -1904,26 +1948,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--41
 
  []
 
-[149]
+[151]
 Underfull \hbox (badness 10000) in paragraph at lines 57--59
 
  []
 
 
-LaTeX Warning: Reference `table:systuncertaintytable' on page 150 undefined on input line 64.
+LaTeX Warning: Reference `table:systuncertaintytable' on page 152 undefined on input line 64.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 62--66
 
  []
 
-<Figures/frac_beam_flux_uncertainty.png, id=1840, 527.571pt x 180.07275pt>
+<Figures/frac_beam_flux_uncertainty.png, id=1877, 527.571pt x 180.07275pt>
 File: Figures/frac_beam_flux_uncertainty.png Graphic file (type png)
 <use Figures/frac_beam_flux_uncertainty.png>
 Package pdftex.def Info: Figures/frac_beam_flux_uncertainty.png  used on input line 68.
 (pdftex.def)             Requested size: 345.0pt x 117.75755pt.
-[150 <./Figures/frac_beam_flux_uncertainty.PNG>]
-<Figures/flux_uncertainty.png, id=1851, 885.90974pt x 522.15076pt>
+[152 <./Figures/frac_beam_flux_uncertainty.PNG>]
+<Figures/flux_uncertainty.png, id=1887, 885.90974pt x 522.15076pt>
 File: Figures/flux_uncertainty.png Graphic file (type png)
 <use Figures/flux_uncertainty.png>
 Package pdftex.def Info: Figures/flux_uncertainty.png  used on input line 80.
@@ -1943,13 +1987,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--91
 
  []
 
-[151 <./Figures/flux_uncertainty.png>]
+[153 <./Figures/flux_uncertainty.png>]
 Overfull \hbox (82.81589pt too wide) in paragraph at lines 103--121
  []$[]$ 
  []
 
-[152]
-<Figures/xsec_uncertainty.png, id=1867, 843.15pt x 532.389pt>
+[154]
+<Figures/xsec_uncertainty.png, id=1903, 843.15pt x 532.389pt>
 File: Figures/xsec_uncertainty.png Graphic file (type png)
 <use Figures/xsec_uncertainty.png>
 Package pdftex.def Info: Figures/xsec_uncertainty.png  used on input line 127.
@@ -1959,24 +2003,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--136
 
  []
 
-[153 <./Figures/xsec_uncertainty.PNG>] [154]
-<Figures/fsisi_uncertainty.png, id=1883, 860.61525pt x 496.254pt>
+[155 <./Figures/xsec_uncertainty.PNG>] [156]
+<Figures/fsisi_uncertainty.png, id=1920, 860.61525pt x 496.254pt>
 File: Figures/fsisi_uncertainty.png Graphic file (type png)
 <use Figures/fsisi_uncertainty.png>
 Package pdftex.def Info: Figures/fsisi_uncertainty.png  used on input line 174.
 (pdftex.def)             Requested size: 344.24pt x 198.49808pt.
- [155]
+ [157]
 Overfull \hbox (1.44499pt too wide) detected at line 206
 []
  []
 
-[156 <./Figures/fsisi_uncertainty.PNG>]
+[158 <./Figures/fsisi_uncertainty.PNG>]
 Overfull \hbox (87.88977pt too wide) detected at line 226
 []
  []
 
-[157]
-<Figures/nucleonfsi_uncertainty.png, id=1906, 882.29625pt x 525.162pt>
+[159]
+<Figures/nucleonfsi_uncertainty.png, id=1943, 882.29625pt x 525.162pt>
 File: Figures/nucleonfsi_uncertainty.png Graphic file (type png)
 <use Figures/nucleonfsi_uncertainty.png>
 Package pdftex.def Info: Figures/nucleonfsi_uncertainty.png  used on input line 241.
@@ -1986,8 +2030,8 @@ Overfull \hbox (7.91225pt too wide) in paragraph at lines 241--242
 [][] 
  []
 
-[158] [159 <./Figures/nucleonfsi_uncertainty.PNG>]
-<Figures/mupicap_uncertainty.png, id=1924, 864.22874pt x 414.95026pt>
+[160] [161 <./Figures/nucleonfsi_uncertainty.PNG>]
+<Figures/mupicap_uncertainty.png, id=1960, 864.22874pt x 414.95026pt>
 File: Figures/mupicap_uncertainty.png Graphic file (type png)
 <use Figures/mupicap_uncertainty.png>
 Package pdftex.def Info: Figures/mupicap_uncertainty.png  used on input line 274.
@@ -1997,30 +2041,30 @@ Overfull \hbox (0.68536pt too wide) in paragraph at lines 274--275
 [][] 
  []
 
-[160 <./Figures/mupicap_uncertainty.PNG>]
+[162 <./Figures/mupicap_uncertainty.PNG>]
 
-LaTeX Warning: Reference `eq:MICAP_uncertainty' on page 161 undefined on input line 284.
+LaTeX Warning: Reference `eq:MICAP_uncertainty' on page 163 undefined on input line 284.
 
-[161]
+[163]
 Overfull \hbox (2.9728pt too wide) in paragraph at lines 293--294
 \OT1/cmr/m/n/10 Due to there be-ing no ex-per-i-men-tal data for cross-section cal-cu-la-tions on nucleon-
  []
 
-) [162]
+) [164]
 \openout2 = `Chapters/chapter_conclusion.aux'.
 
  (./Chapters/chapter_conclusion.tex
 Chapter 9.
-) [163
+) [165
 
 
 
 
-] (./thesis_frontend.bbl [164
+] (./thesis_frontend.bbl [166
 
 
 
-] [165] [166] [167] [168] [169] [170] [171] [172] [173]) [174] (./thesis_frontend.aux (./Chapters/chapter_introduction.aux) (./Chapters/chapter_t2k_detector.aux) (./Chapters/chapter_superk_detector.aux) (./Chapters/chapter_superk-calib.aux) (./Chapters/chapter_ukli-system.aux) (./Chapters/chapter_superkgd_upgrade.aux) (./Chapters/chapter_ncqe-gd.aux) (./Chapters/chapter_syst_uncertainty.aux) (./Chapters/chapter_conclusion.aux))
+] [167] [168] [169] [170] [171] [172] [173] [174] [175]) [176] (./thesis_frontend.aux (./Chapters/chapter_introduction.aux) (./Chapters/chapter_t2k_detector.aux) (./Chapters/chapter_superk_detector.aux) (./Chapters/chapter_superk-calib.aux) (./Chapters/chapter_ukli-system.aux) (./Chapters/chapter_superkgd_upgrade.aux) (./Chapters/chapter_ncqe-gd.aux) (./Chapters/chapter_syst_uncertainty.aux) (./Chapters/chapter_conclusion.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -2028,18 +2072,18 @@ Package rerunfilecheck Info: File `thesis_frontend.out' has not changed.
 (rerunfilecheck)             Checksum: 2496FEF619E7575420EE0D30F8D763F0;13802.
  ) 
 Here is how much of TeX's memory you used:
- 27317 strings out of 478233
- 544009 string characters out of 5847836
- 865087 words of memory out of 5000000
- 44357 multiletter control sequences out of 15000+600000
+ 27400 strings out of 478233
+ 546214 string characters out of 5847836
+ 866159 words of memory out of 5000000
+ 44422 multiletter control sequences out of 15000+600000
  486684 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,16n,103p,2020b,531s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on thesis_frontend.pdf (175 pages, 31868408 bytes).
+Output written on thesis_frontend.pdf (177 pages, 32844215 bytes).
 PDF statistics:
- 2212 PDF objects out of 2487 (max. 8388607)
- 1580 compressed objects within 16 object streams
- 483 named destinations out of 1000 (max. 500000)
- 1441 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2249 PDF objects out of 2487 (max. 8388607)
+ 1600 compressed objects within 16 object streams
+ 490 named destinations out of 1000 (max. 500000)
+ 1491 words of extra memory for PDF output out of 10000 (max. 10000000)
 

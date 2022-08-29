@@ -237,12 +237,13 @@ To ensure correct implementation of the ANNRI-Gd model, ensuring the BONSAI outp
     
     \caption{Comparisons of vertex goodness and directional goodness between SKDETSIM versions} \label{fig:ovaq_compare} 
     
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/gvtx_compare.PNG}} \hfill
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/gdir_compare.PNG}} \par
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/gvtx_squared.JPEG}} \label{fig:gvtx_squared} \hfill 
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/gdir_squared.JPEG}} \label{fig:gdir_squared} \par
+    
         
 \end{figure}
 
-The vertex goodness (gvtx) and directional goodness (gdir) comparisons are shown in Figure \ref{fig:ovaq_comapre}. Figure \ref{fig:vertex_goodness} shows a slight discrepancy between the SKDETSIM versions, but not enough to warrant further investigation. In addition to checking the previous BONSAI reduction phase quantities, the distance between the true neutrino vertex from the simulation and the neutrino vertex from the BONSAI reconstruction was also checked for the different SKDETSIM versions, shown in Figure \ref{fig:vertex_resolution}. Table \ref{table:vertex_resolution} shows the value of this distribution which encompasses 1-sigma (68\%) of the number of events: this value was very similar for all SKDETSIM versions.
+The vertex goodness (gvtx) and directional goodness (gdir) squared comparisons are shown in Figures \ref{fig:gvtx_squared} and \ref{fig:gdir_squared}. Figure \ref{fig:gvtx_squared} shows a slight discrepancy between the SKDETSIM versions, but not enough to warrant further investigation. In addition to checking the previous BONSAI reduction phase quantities, the distance between the true neutrino vertex from the simulation and the neutrino vertex from the BONSAI reconstruction was also checked for the different SKDETSIM versions, shown in Figure \ref{fig:vertex_resolution}. Table \ref{table:vertex_resolution} shows the value of this distribution which encompasses 1-sigma (68\%) of the number of events: this value was very similar for all SKDETSIM versions.
 \begin{figure}
 
     \includegraphics[width=\textwidth]{Figures/vertex_resolution.png}
@@ -349,10 +350,63 @@ Just like for the low energy background cut values, the values of the optimised 
 
 \subsection{Prompt event NCQE reduction cut plots}
 
+Before applying the NTag algorithm, either legacy or new, plots were produced of the number of neutrino events and their dependence the reduction cut variables mentioned previously. These are shown in Figures \ref{fig:erec_reduction}, \ref{fig:dwall_reduction}, \ref{fig:effwall_reduction}, \ref{fig:angle_reduction}, \ref{fig:ovaq_reduction}. Each figure shows the corresponding plot for the previous NCQE analysis carried out with neutron tagging on Hydrogen on the left, with the plot from this analysis on the right. 
 
 
+\begin{figure}[!htbp]
+    \centering
+    
+    \caption{Comparisons of stacked histrograms for the Erec variable between NCQE neutron tag on H analysis (left) and this analysis (right)} \label{fig:erec_reduction} 
+    
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/fabio_erec.PNG}}  \hfill 
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/erec_reduction.PNG}} \par
+    
+        
+\end{figure}
 
+\begin{figure}[!htbp]
+    \centering
+    
+    \caption{Comparisons of stacked histrograms for the Dwall variable between NCQE neutron tag on H analysis (left) and this analysis (right)} \label{fig:dwall_reduction} 
+    
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/fabio_dwall.PNG}}  \hfill 
+    \subfloat[]{\includegraphics[width=0.49\textwidth, height=4.2cm]{Figures/dwall_reduction.PNG}}  \par
+    
+        
+\end{figure}
 
+\begin{figure}[!htbp]
+    \centering
+    
+    \caption{Comparisons of stacked histrograms for the Effwall variable between NCQE neutron tag on H analysis (left) and this analysis (right)} \label{fig:effwall_reduction} 
+    
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/fabio_effwall.PNG}}  \hfill 
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/effwall_reduction.PNG}} \par
+    
+        
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    
+    \caption{Comparisons of stacked histrograms for the ovaQ variable between NCQE neutron tag on H analysis (left) and this analysis (right)} \label{fig:ovaq_reduction} 
+    
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/fabio_ovaq.PNG}} \hfill 
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/ovaq_reduction.PNG}} \par
+    
+        
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    
+    \caption{Comparisons of stacked histrograms for the $\theta_C$ variable between NCQE neutron tag on H analysis (left) and this analysis (right)} \label{fig:angle_reduction} 
+    
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/fabio_angle.PNG}} \hfill 
+    \subfloat[]{\includegraphics[width=0.49\textwidth, height=4.2cm ]{Figures/angle_reduction.PNG}} \par
+    
+        
+\end{figure}
 
 
 
