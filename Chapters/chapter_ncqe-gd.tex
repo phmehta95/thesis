@@ -400,7 +400,7 @@ Before applying the NTag algorithm, either legacy or new, plots were produced of
 \begin{figure}[!htbp]
     \centering
     
-    \caption{Comparisons of stacked histrograms for the $\theta_C$ variable between NCQE neutron tag on H analysis (left) and this analysis (right)} \label{fig:angle_reduction} 
+    \caption{Comparisons of stacked histograms for the $\theta_C$ variable between NCQE neutron tag on H analysis (left) and this analysis (right)} \label{fig:angle_reduction} 
     
     \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/fabio_angle.PNG}} \hfill 
     \subfloat[]{\includegraphics[width=0.49\textwidth, height=4.2cm ]{Figures/angle_reduction.PNG}} \par
@@ -408,9 +408,32 @@ Before applying the NTag algorithm, either legacy or new, plots were produced of
         
 \end{figure}
 
+\subsection{Background injection}
+
+Low energy backgrounds play a big role in this analysis because of the captures on neutrons including neutron capture on Hydrogen producing a 2.2 MeV energy signal. The two main sources of background in this analysis come from environmental radioactvity and PMT dark noise. The signal hits are mixed in with the dark noise hits and stem from the PMTs themselves, with no dependence on individual PMTs meaning that the distribution of dark noise in the detector is expected to be uniform. A Poisson distribution represents the dark noise for the PMTs in the detector, and therefore the mean value of dark noise hits $<\#DN>$ in a time window of $T$ nanoseconds for the total number of inner detector PMTs, $N_{ID}$, where the dark noise rate of one PMT averaged over an entire inner detector is $<dark>$ is given in Equation \ref{eq:dark_noise_hits}. 
 
 
 
+\begin{equation}
+        \begin{aligned}
+        \langle \# D N \rangle &=\langle\text { dark }\rangle \times T \times N_{I D} \\
+        &=10.0 \frac{\mathrm{kHz}}{\mathrm{PMT}} \times 14 \mathrm{nsec} \times 11,146 \mathrm{PMT}=1.56
+        \end{aligned}
+        \label{eq:dark_noise_hits} 
+\end{equation}
+
+The previous NCQE analysis with solely neutron capture occuring on Hydrogen used a $T$ = 10 nsec timing window for the neutron capture search (the criteria for which will be detailed in the next section) and a $<dark>$ rate of 5.0 kHz per PMT. However since the addition of gadolinium sulphate octahydrate in the detector medium, the dark rate per PMT has doubled and to accomadate for neutron captures occuring on the gadolinium the neutron capture hit search window has been increased to 14 nsec. 
+
+The dark noise hits from natural radioactivity comes from unstable isotopes from the detector material, PMT covers, the Tyvek lining the tank and the rock from the cavern which Super-Kamiokande resides in. These decaying unstable isotopes can produce enough hits to produce a signal that looks like a neutron capture on Hydrogen, meaning that these hits from natural radioactvity could also get mixed in with the hits in the 14 nsec neutron search timing window. Simulating this combination of dark noise and radioactivity in the tagged neutron candidate search window is not trivial, and therefore it is far easier to inject actual background data into the neutron search window. This background data is collected in the form of ``dummy spills'' which are events which are taken during periods where the T2K beam is switched off, i.e. events in between T2K runs. The neutron tagging window in this analysis starts at 18 microseconds after the reconstructed time of the prompt neutrino interaction, and therefore for each event dummy spill data is injected after 18 microseconds, while before this time the background hits are just simulated in SKDETSIM, with a certain dark rate value. Figure \ref{fig:dark_rate_schematic} shows a schematic of how and when in the analysis dark rate is simulated and injected. 
+
+
+\begin{figure}
+
+    \includegraphics[width=\textwidth]{Figures/dark_rate_schematic.png}
+    \caption{Schematic of how dark noise is simulated in this analysis.}
+    \label{fig:dark_rate_schematic}
+
+\end{figure}
 
 
 \subsection{True neutron tagging information}

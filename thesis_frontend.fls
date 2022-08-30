@@ -2195,6 +2195,11 @@ INPUT ./Figures/angle_reduction.png
 INPUT Figures/angle_reduction.png
 INPUT ./Figures/angle_reduction.png
 INPUT ./Figures/angle_reduction.png
+INPUT ./Figures/dark_rate_schematic.png
+INPUT ./Figures/dark_rate_schematic.png
+INPUT Figures/dark_rate_schematic.png
+INPUT ./Figures/dark_rate_schematic.png
+INPUT ./Figures/dark_rate_schematic.png
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT ./Chapters/chapter_syst_uncertainty.tex
 INPUT ./Chapters/chapter_syst_uncertainty.tex
