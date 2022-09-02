@@ -436,7 +436,15 @@ The dark noise hits from natural radioactivity comes from unstable isotopes from
 \end{figure}
 
 
+\section{NTag algorithm}
+
+As mentioned previously, two neutron tagging algorithms were used in this analysis, the legacy NTag code, used in previous NCQE analyses and modified to work with a version of SKDETSIM which has Gadolinium included and new NTag code which uses a slightly different neutron tagging algorithm specifically with regards to the primary and secondary selection criteria which will be discussed in later subsections.
+
+
 \subsection{True neutron tagging information}
+
+
+
 \subsection{Primary selection criteria}
 \subsection{Secondary selection criteria}
 When the neutron vertex is found by this method, 14 variables which describe different aspects of the neutron candidate are calculated. For each of the neutron candidates the vector of these variables are computed and fed into the neural network and this produces an output value which is between 0 and 1. These variables relate to different features regarding categorising hits from neutron capture on Gd or H, including the number of the hits from neutron capture, the isotropy of these hits, the Cherenkov angles of these hits and the position of the neutron vertex in the detector when capture occurs. A description of these variables are given as follows:
