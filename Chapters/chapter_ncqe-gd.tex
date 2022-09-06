@@ -441,9 +441,40 @@ The dark noise hits from natural radioactivity comes from unstable isotopes from
 As mentioned previously, two neutron tagging algorithms were used in this analysis, the legacy NTag code, used in previous NCQE analyses and modified to work with a version of SKDETSIM which has Gadolinium included and new NTag code which uses a slightly different neutron tagging algorithm specifically with regards to the primary and secondary selection criteria which will be discussed in later subsections.
 
 
+
 \subsection{True neutron tagging information}
 
+Prior to defining the primary and secondary selection criteria for each neutron tagging algorithm, it is important to produce some distributions of basic variables regarding the neutron capture that occur in the simulation, such as neutron capture time, position and number. Figure \ref{fig:NTrueCaptures}, \ref{fig:TrueCaptureTime} show the distribution for the number of neutron captures and the true capture time of the neutrons for both the legacy (green) and new (red) NTag code.  
 
+\begin{figure}
+    \centering
+     \begin{subfigure}[b]{0.45\linewidth}
+      \includegraphics[width=\linewidth]{Figures/NTrueCaptures.PNG}
+      \caption{Number of events (y-axis) plotted against number of true neutron captures}
+      \label{fig:NTrueCaptures} 
+     \end{subfigure}
+     \begin{subfigure}[b]{0.45\linewidth}
+       \includegraphics[width=\linewidth]{Figures/TrueCaptureTime.PNG}
+        \caption{Number of events (y-axis) plotted against time of all neutron captures in microseconds} 
+     \label{fig:TrueCaptureTime}
+      \end{subfigure} 
+\end{figure}
+
+In order to classify the neutron captures on hydrogen and gadolinium seperately, the energy of the gammas produced from the neutron capture were used, along with the number of gammas produced from the neutron capture. If the energy of the gamma produced is 2.22 MeV and only one gamma ray was produced from the neutron capture, the neutron capture was classified as a capture on Hydrogen. If there are a number of gammas produced in quick succession, the group of gammas is classified as a cascade, and if the energy of the gamma cascade is 8.5 MeV in total it is classified as a neutron capture on  ${ }^{155} \mathrm{Gd}$ and if the energy of the gamma cascade is 7.9 MeV, it is classified as a neutron capture on ${ }^{157} \mathrm{Gd}$. Distributions of the number of gammas produced from neutron capture in the simulation, and also the energy of these gammas were plotted, shown for both the legacy (green) and new (red) NTag code.
+
+\begin{figure}
+    \centering
+     \begin{subfigure}[b]{0.45\linewidth}
+      \includegraphics[width=\linewidth]{Figures/NGamma.PNG}
+      \caption{Number of events (y-axis) plotted against the number of gammas produced from neutron capture}
+      \label{fig:NTrueCaptures} 
+     \end{subfigure}
+     \begin{subfigure}[b]{0.45\linewidth}
+       \includegraphics[width=\linewidth]{Figures/TotGammaE.PNG}
+        \caption{Number of events (y-axis) plotted against total gamma energy} 
+     \label{fig:TrueCaptureTime}
+      \end{subfigure} 
+\end{figure}
 
 \subsection{Primary selection criteria}
 \subsection{Secondary selection criteria}
