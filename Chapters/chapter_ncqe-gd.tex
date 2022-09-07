@@ -460,21 +460,29 @@ Prior to defining the primary and secondary selection criteria for each neutron 
       \end{subfigure} 
 \end{figure}
 
-In order to classify the neutron captures on hydrogen and gadolinium seperately, the energy of the gammas produced from the neutron capture were used, along with the number of gammas produced from the neutron capture. If the energy of the gamma produced is 2.22 MeV and only one gamma ray was produced from the neutron capture, the neutron capture was classified as a capture on Hydrogen. If there are a number of gammas produced in quick succession, the group of gammas is classified as a cascade, and if the energy of the gamma cascade is 8.5 MeV in total it is classified as a neutron capture on  ${ }^{155} \mathrm{Gd}$ and if the energy of the gamma cascade is 7.9 MeV, it is classified as a neutron capture on ${ }^{157} \mathrm{Gd}$. Distributions of the number of gammas produced from neutron capture in the simulation, and also the energy of these gammas were plotted, shown for both the legacy (green) and new (red) NTag code.
+In order to classify the neutron captures on hydrogen and gadolinium seperately, the energy of the gammas produced from the neutron capture were used, along with the number of gammas produced from the neutron capture. If the energy of the gamma produced is 2.22 MeV and only one gamma ray was produced from the neutron capture, the neutron capture was classified as a capture on Hydrogen. If there are a number of gammas produced in quick succession, the group of gammas is classified as a cascade, and if the energy of the gamma cascade is 8.5 MeV in total it is classified as a neutron capture on  ${ }^{155} \mathrm{Gd}$ and if the energy of the gamma cascade is 7.9 MeV, it is classified as a neutron capture on ${ }^{157} \mathrm{Gd}$. Distributions of the number of gammas produced from neutron capture in the simulation, and also the energy of these gammas were plotted, shown for both the legacy (green) and new (red) NTag code, shown in Figures \ref{fig:NGamma} and \ref{fig:TotGammaE} respectively. 
 
 \begin{figure}
     \centering
      \begin{subfigure}[b]{0.45\linewidth}
       \includegraphics[width=\linewidth]{Figures/NGamma.PNG}
       \caption{Number of events (y-axis) plotted against the number of gammas produced from neutron capture}
-      \label{fig:NTrueCaptures} 
+      \label{fig:NGamma} 
      \end{subfigure}
      \begin{subfigure}[b]{0.45\linewidth}
        \includegraphics[width=\linewidth]{Figures/TotGammaE.PNG}
         \caption{Number of events (y-axis) plotted against total gamma energy} 
-     \label{fig:TrueCaptureTime}
+     \label{fig:TotGammaE}
       \end{subfigure} 
 \end{figure}
+
+Figure \ref{fig:NGamma} shows that both NTag algorithms have the same number of gammas produced by neutron capture on hydrogen (shown by the peak at 2.22 MeV), and the same number of gammas for the gamma cascade produced by neutron capture on the ${ }^{155} \mathrm{Gd}$ and 
+${ }^{157} \mathrm{Gd}$ isotopes of Gadolinium, where the modal number of gammas in the cascade for both NTag code is five. In addition to checking the number and energy of the gammas, and the number and time of true neutron captures, the neutron capture positions for the x,y and z directions were also plotted for Figure \ref{fig:}
+
+
+
+
+
 
 \subsection{Primary selection criteria}
 \subsection{Secondary selection criteria}
