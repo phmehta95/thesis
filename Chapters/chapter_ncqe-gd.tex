@@ -448,12 +448,12 @@ Prior to defining the primary and secondary selection criteria for each neutron 
 
 \begin{figure}
     \centering
-     \begin{subfigure}[b]{0.45\linewidth}
+     \begin{subfigure}[b]{0.5\linewidth}
       \includegraphics[width=\linewidth]{Figures/NTrueCaptures.PNG}
       \caption{Number of events (y-axis) plotted against number of true neutron captures}
       \label{fig:NTrueCaptures} 
      \end{subfigure}
-     \begin{subfigure}[b]{0.45\linewidth}
+     \begin{subfigure}[b]{0.5\linewidth}
        \includegraphics[width=\linewidth]{Figures/TrueCaptureTime.PNG}
         \caption{Number of events (y-axis) plotted against time of all neutron captures in microseconds} 
      \label{fig:TrueCaptureTime}
@@ -477,9 +477,61 @@ In order to classify the neutron captures on hydrogen and gadolinium seperately,
 \end{figure}
 
 Figure \ref{fig:NGamma} shows that both NTag algorithms have the same number of gammas produced by neutron capture on hydrogen (shown by the peak at 2.22 MeV), and the same number of gammas for the gamma cascade produced by neutron capture on the ${ }^{155} \mathrm{Gd}$ and 
-${ }^{157} \mathrm{Gd}$ isotopes of Gadolinium, where the modal number of gammas in the cascade for both NTag code is five. In addition to checking the number and energy of the gammas, and the number and time of true neutron captures, the neutron capture positions for the x,y and z directions were also plotted for Figure \ref{fig:}
+${ }^{157} \mathrm{Gd}$ isotopes of Gadolinium, where the modal number of gammas in the cascade for both NTag code is five. In addition to checking the number and energy of the gammas, and the number and time of true neutron captures, the neutron capture positions for the x,y and z directions were also plotted for Figures \ref{fig:TrueNCapXPos}, \ref{fig:TrueNCapYPos} and \ref{fig:TrueNCapZPos}.
 
 
+\begin{figure*}
+    \centering
+     \begin{subfigure}[b]{0.33\linewidth}
+      \includegraphics[width=\linewidth]{Figures/TrueNCapXPos.PNG}
+      \caption{True neutron capture x-position (cm)}
+      \label{fig:TrueNCapXPos} 
+     \end{subfigure}%
+     \hfill
+     \begin{subfigure}[b]{0.33\linewidth}
+       \includegraphics[width=\linewidth]{Figures/TrueNCapYpos.PNG}
+        \caption{True neutron capture y-position (cm)} 
+     \label{fig:TrueNCapYPos}
+      \end{subfigure}% 
+      \hfill
+      \begin{subfigure}[b]{0.33\linewidth}
+      \includegraphics[width=\linewidth]{Figures/TrueNCapZPos.PNG}
+      \caption{True neutron capture z-position (cm)}
+      \label{fig:TrueNCapZPos}
+      \end{subfigure}
+\end{figure*}
+
+\subsubsection{Truth information reduction cut plots}
+
+After ensuring that the truth neutron tagging information was the same between the legacy and new NTag versions, the next step was to produce plots with the NCQE reduction cut criteria in order to see the distribution of neutrons for certain variables which satisfy the NCQE criteria. By rewriting aspects of the new NTag code to incorporate the BONSAI variables needed for the NCQE selection, the same reduction cut criteria could be applied to the new NTag code as it was to the new NTag code. Figures \ref{fig:TrueCapTimeReductionLegacy} and \ref{fig:TrueCapTimeReductionNew} show the number of true neutrons plotted against true neutron capture time for the legacy and new NTag respectively, while Figures \ref{fig:TruCapNuNDistanceReductionLegacy} and \ref{fig:TruCapNuNDistanceReductionNew} show the number of true neutrons plotted against the distance between the true neutron and neutrino capture vertices for the legacy and new NTag respectively.
+
+\begin{figure}
+    \centering
+     \begin{subfigure}[b]{0.45\linewidth}
+      \includegraphics[width=\linewidth]{Figures/TrueCapTimeReductionLegacy.PNG}
+      \caption{Number of true neutrons detected plotted against true neutron capture time for the legacy NTag}
+      \label{fig:TrueCapTimeReductionLegacy} 
+     \end{subfigure}
+     \begin{subfigure}[b]{0.45\linewidth}
+       \includegraphics[width=\linewidth]{Figures/TrueCapTimeReductionNew.PNG}
+        \caption{Number of true neutrons detected plotted against true neutron capture time for the new NTag } 
+     \label{fig:TrueCapTimeReductionNew}
+      \end{subfigure} 
+\end{figure}
+
+\begin{figure}
+    \centering
+     \begin{subfigure}[b]{0.45\linewidth}
+      \includegraphics[width=\linewidth]{Figures/TruCapNuNDistanceReductionLegacy.png}
+      \caption{Number of true neutrons detected plotted against the distance between the neutrino and neutron capture vertices for the legacy NTag}
+      \label{fig:TruCapNuNDistanceReductionLegacy} 
+     \end{subfigure}
+     \begin{subfigure}[b]{0.45\linewidth}
+       \includegraphics[width=\linewidth]{Figures/TruCapNuNDistanceReductionNew.png}
+        \caption{Number of true neutrons detected plotted against the distance between the neutrino and neutron capture vertices for the new NTag } 
+     \label{fig:TruCapNuNDistanceReductionNew}
+      \end{subfigure} 
+\end{figure}
 
 
 
