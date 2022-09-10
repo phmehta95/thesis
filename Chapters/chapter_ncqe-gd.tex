@@ -435,6 +435,16 @@ The dark noise hits from natural radioactivity comes from unstable isotopes from
 
 \end{figure}
 
+The reason for the neutron tagging algorithm starting at 18 $\micro$s is in order to take into account the afterpulsing of PMTs, which occurs between 12 $\micro$s and 18 $\micro$s and creates a slight increase in the hit rate, shown in Figure \ref{fig:after_pulsing}, taken from \cite{}. The falling exponential to the left of the after-pulsing peak is caused by decay electrons. 
+
+\begin{figure}
+
+    \includegraphics[width=\textwidth]{Figures/after_pulsing.PNG}
+    \caption{PMT hit rates per event from the average of events during SK-IV. The after-pulsing peak can clearly be seen in the 12 to 18 $\micro$s region, after which the hit rate is flat for the remainder of the hit window. }
+    \label{fig:after_pulsing}
+
+\end{figure}
+
 
 \section{NTag algorithm}
 
@@ -565,6 +575,21 @@ With the level of gadolinium sulphate octahydrate in the simulation, the number 
 
 
 \subsection{Primary selection criteria}
+
+The primary selection criteria are where the differences between the legacy and NTag algorithm come in. What remains constant for both neutron tagging algorithms is firstly, starting the neutron tagging search at 18 $\micro$ s and secondly, the use of calculation of the time of flight corrected PMT hit times as the input into the neutron tagging search window. The reason for calculating the residual time of flight for the gamma hits is because the electrons produced from the Compton scattering of gamma rays produced by the neutron capture on hydrogen and gadolinium appear as a point-like source of Cherenkov radiation. Due to the differing optical path lengths that these photons have, there is a difference in photon hit time. The difference in Cherenkov photon travel length before they hit different PMTs  after the gamma rays from neutron capture Compton scatter off an electron needs to be taken into account via a time-of-flight (TOF) correction. Equation \ref{eq:TOF_correction} gives the equation for the residual hit times $t_{i}^{res}$, where $t_{i}$ is the hit time of the PMTs in the neutron search window and $TOF_{i}$ is given by Equation \ref{eq:TOF_calc}, where $PMT_{i}$ is the position vector of the hit PMT and $VTX_{\nu}$ is the position vector of the reconstructed neutrino vertex and $c_{wt}$ is the speed of light in the medium. The reason $VTX_{\nu}$ is used instead of the Compton scattering vertex is because this vertex is unknown. 
+
+\begin{equation}
+    t_i^{\text {res }} \quad=t_i-T O F_i \quad i \in\{\text { Hit PMTs }\}
+    \label{eq:TOF_correction}
+\end{equation}
+
+\begin{equation}
+T O F_i=\frac{\left\|\overrightarrow{P M T_i}-\overrightarrow{V T X_\nu}\right\|}{c_{w t}}
+\label{eq:TOF_calc}
+\end{equation}
+
+
+
 \subsection{Secondary selection criteria}
 When the neutron vertex is found by this method, 14 variables which describe different aspects of the neutron candidate are calculated. For each of the neutron candidates the vector of these variables are computed and fed into the neural network and this produces an output value which is between 0 and 1. These variables relate to different features regarding categorising hits from neutron capture on Gd or H, including the number of the hits from neutron capture, the isotropy of these hits, the Cherenkov angles of these hits and the position of the neutron vertex in the detector when capture occurs. A description of these variables are given as follows:
 

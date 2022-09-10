@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.27)  9 SEP 2022 16:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.27)  10 SEP 2022 18:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1922,123 +1922,128 @@ File: Figures/dark_rate_schematic.png Graphic file (type png)
 <use Figures/dark_rate_schematic.png>
 Package pdftex.def Info: Figures/dark_rate_schematic.png  used on input line 432.
 (pdftex.def)             Requested size: 345.0pt x 158.97475pt.
- [147 <./Figures/dark_rate_schematic.png>]
-<Figures/NTrueCaptures.PNG, id=1858, 800.39024pt x 426.99525pt>
+<Figures/after_pulsing.PNG, id=1851, 400.49625pt x 325.215pt>
+File: Figures/after_pulsing.PNG Graphic file (type png)
+<use Figures/after_pulsing.PNG>
+Package pdftex.def Info: Figures/after_pulsing.PNG  used on input line 442.
+(pdftex.def)             Requested size: 345.0pt x 280.16576pt.
+ [147 <./Figures/dark_rate_schematic.png>] [148 <./Figures/after_pulsing.PNG>]
+<Figures/NTrueCaptures.PNG, id=1867, 800.39024pt x 426.99525pt>
 File: Figures/NTrueCaptures.PNG Graphic file (type png)
 <use Figures/NTrueCaptures.PNG>
-Package pdftex.def Info: Figures/NTrueCaptures.PNG  used on input line 452.
+Package pdftex.def Info: Figures/NTrueCaptures.PNG  used on input line 462.
 (pdftex.def)             Requested size: 172.5pt x 92.02371pt.
-<Figures/TrueCaptureTime.PNG, id=1859, 824.48026pt x 425.79076pt>
+<Figures/TrueCaptureTime.PNG, id=1868, 824.48026pt x 425.79076pt>
 File: Figures/TrueCaptureTime.PNG Graphic file (type png)
 <use Figures/TrueCaptureTime.PNG>
-Package pdftex.def Info: Figures/TrueCaptureTime.PNG  used on input line 457.
+Package pdftex.def Info: Figures/TrueCaptureTime.PNG  used on input line 467.
 (pdftex.def)             Requested size: 172.5pt x 89.08084pt.
- [148 <./Figures/NTrueCaptures.png> <./Figures/TrueCaptureTime.png>]
-<Figures/NGamma.PNG, id=1869, 730.52925pt x 477.58424pt>
+ [149 <./Figures/NTrueCaptures.png> <./Figures/TrueCaptureTime.png>]
+<Figures/NGamma.PNG, id=1878, 730.52925pt x 477.58424pt>
 File: Figures/NGamma.PNG Graphic file (type png)
 <use Figures/NGamma.PNG>
-Package pdftex.def Info: Figures/NGamma.PNG  used on input line 468.
+Package pdftex.def Info: Figures/NGamma.PNG  used on input line 478.
 (pdftex.def)             Requested size: 155.24895pt x 101.49077pt.
 
-Underfull \hbox (badness 1067) in paragraph at lines 469--469
+Underfull \hbox (badness 1067) in paragraph at lines 479--479
 []\OT1/cmr/m/n/8 (a) |Num-ber of events (y-axis) plot-ted
  []
 
-<Figures/TotGammaE.PNG, id=1870, 782.925pt x 575.751pt>
+<Figures/TotGammaE.PNG, id=1879, 782.925pt x 575.751pt>
 File: Figures/TotGammaE.PNG Graphic file (type png)
 <use Figures/TotGammaE.PNG>
-Package pdftex.def Info: Figures/TotGammaE.PNG  used on input line 473.
+Package pdftex.def Info: Figures/TotGammaE.PNG  used on input line 483.
 (pdftex.def)             Requested size: 155.24895pt x 114.16422pt.
-<Figures/TrueNCapXPos.PNG, id=1875, 811.833pt x 557.6835pt>
+<Figures/TrueNCapXPos.PNG, id=1884, 811.833pt x 557.6835pt>
 File: Figures/TrueNCapXPos.PNG Graphic file (type png)
 <use Figures/TrueNCapXPos.PNG>
-Package pdftex.def Info: Figures/TrueNCapXPos.PNG  used on input line 486.
+Package pdftex.def Info: Figures/TrueNCapXPos.PNG  used on input line 496.
 (pdftex.def)             Requested size: 113.85063pt x 78.20279pt.
-<Figures/TrueNCapYpos.PNG, id=1876, 825.0825pt x 553.46774pt>
+<Figures/TrueNCapYpos.PNG, id=1885, 825.0825pt x 553.46774pt>
 File: Figures/TrueNCapYpos.PNG Graphic file (type png)
 <use Figures/TrueNCapYpos.PNG>
-Package pdftex.def Info: Figures/TrueNCapYpos.PNG  used on input line 492.
+Package pdftex.def Info: Figures/TrueNCapYpos.PNG  used on input line 502.
 (pdftex.def)             Requested size: 113.85063pt x 76.37018pt.
-<Figures/TrueNCapZPos.PNG, id=1877, 797.98125pt x 564.30824pt>
+<Figures/TrueNCapZPos.PNG, id=1886, 797.98125pt x 564.30824pt>
 File: Figures/TrueNCapZPos.PNG Graphic file (type png)
 <use Figures/TrueNCapZPos.PNG>
-Package pdftex.def Info: Figures/TrueNCapZPos.PNG  used on input line 498.
+Package pdftex.def Info: Figures/TrueNCapZPos.PNG  used on input line 508.
 (pdftex.def)             Requested size: 113.85063pt x 80.50948pt.
-[149 <./Figures/NGamma.PNG> <./Figures/TotGammaE.PNG> <./Figures/TrueNCapXpos.PNG> <./Figures/TrueNCapYpos.PNG> <./Figures/TrueNCapZPos.PNG>]
-<Figures/TrueCapTimeReductionLegacy.PNG, id=1893, 377.0085pt x 240.9pt>
+[150 <./Figures/NGamma.PNG> <./Figures/TotGammaE.PNG>]
+<Figures/TrueCapTimeReductionLegacy.PNG, id=1901, 377.0085pt x 240.9pt>
 File: Figures/TrueCapTimeReductionLegacy.PNG Graphic file (type png)
 <use Figures/TrueCapTimeReductionLegacy.PNG>
-Package pdftex.def Info: Figures/TrueCapTimeReductionLegacy.PNG  used on input line 511.
+Package pdftex.def Info: Figures/TrueCapTimeReductionLegacy.PNG  used on input line 521.
 (pdftex.def)             Requested size: 155.24895pt x 99.1997pt.
-<Figures/TrueCapTimeReductionNew.PNG, id=1894, 393.8715pt x 255.354pt>
+<Figures/TrueCapTimeReductionNew.PNG, id=1902, 393.8715pt x 255.354pt>
 File: Figures/TrueCapTimeReductionNew.PNG Graphic file (type png)
 <use Figures/TrueCapTimeReductionNew.PNG>
-Package pdftex.def Info: Figures/TrueCapTimeReductionNew.PNG  used on input line 516.
+Package pdftex.def Info: Figures/TrueCapTimeReductionNew.PNG  used on input line 526.
 (pdftex.def)             Requested size: 155.24895pt x 100.65137pt.
-<Figures/TruCapNuNDistanceReductionLegacy.png, id=1895, 389.65575pt x 257.16075pt>
+<Figures/TruCapNuNDistanceReductionLegacy.png, id=1903, 389.65575pt x 257.16075pt>
 File: Figures/TruCapNuNDistanceReductionLegacy.png Graphic file (type png)
 <use Figures/TruCapNuNDistanceReductionLegacy.png>
-Package pdftex.def Info: Figures/TruCapNuNDistanceReductionLegacy.png  used on input line 525.
+Package pdftex.def Info: Figures/TruCapNuNDistanceReductionLegacy.png  used on input line 535.
 (pdftex.def)             Requested size: 155.24895pt x 102.46222pt.
-<Figures/TruCapNuNDistanceReductionNew.png, id=1896, 390.258pt x 252.34274pt>
+<Figures/TruCapNuNDistanceReductionNew.png, id=1904, 390.258pt x 252.34274pt>
 File: Figures/TruCapNuNDistanceReductionNew.png Graphic file (type png)
 <use Figures/TruCapNuNDistanceReductionNew.png>
-Package pdftex.def Info: Figures/TruCapNuNDistanceReductionNew.png  used on input line 530.
+Package pdftex.def Info: Figures/TruCapNuNDistanceReductionNew.png  used on input line 540.
 (pdftex.def)             Requested size: 155.24895pt x 100.38469pt.
 
 
-LaTeX Warning: Reference `fig:TruCapNuNDistanceReductionNewH' on page 150 undefined on input line 536.
+LaTeX Warning: Reference `fig:TruCapNuNDistanceReductionNewH' on page 151 undefined on input line 546.
 
 
-LaTeX Warning: Reference `fig:TruCapNuNDistanceReductionNewGd' on page 150 undefined on input line 536.
+LaTeX Warning: Reference `fig:TruCapNuNDistanceReductionNewGd' on page 151 undefined on input line 546.
 
 
-LaTeX Warning: Reference `fig:TruCapTimeReductionNewH' on page 150 undefined on input line 536.
+LaTeX Warning: Reference `fig:TruCapTimeReductionNewH' on page 151 undefined on input line 546.
 
 
-LaTeX Warning: Reference `fig:TruCapNuNTimeReductionNewGd' on page 150 undefined on input line 536.
+LaTeX Warning: Reference `fig:TruCapNuNTimeReductionNewGd' on page 151 undefined on input line 546.
 
-<Figures/TruCapNuNDistanceReductionNewH.PNG, id=1899, 414.95026pt x 267.399pt>
+<Figures/TruCapNuNDistanceReductionNewH.PNG, id=1907, 414.95026pt x 267.399pt>
 File: Figures/TruCapNuNDistanceReductionNewH.PNG Graphic file (type png)
 <use Figures/TruCapNuNDistanceReductionNewH.PNG>
-Package pdftex.def Info: Figures/TruCapNuNDistanceReductionNewH.PNG  used on input line 541.
+Package pdftex.def Info: Figures/TruCapNuNDistanceReductionNewH.PNG  used on input line 551.
 (pdftex.def)             Requested size: 155.24895pt x 100.04588pt.
-<Figures/TruCapNuNDistanceReductionNewGd.PNG, id=1900, 414.95026pt x 266.1945pt>
+<Figures/TruCapNuNDistanceReductionNewGd.PNG, id=1908, 414.95026pt x 266.1945pt>
 File: Figures/TruCapNuNDistanceReductionNewGd.PNG Graphic file (type png)
 <use Figures/TruCapNuNDistanceReductionNewGd.PNG>
-Package pdftex.def Info: Figures/TruCapNuNDistanceReductionNewGd.PNG  used on input line 546.
+Package pdftex.def Info: Figures/TruCapNuNDistanceReductionNewGd.PNG  used on input line 556.
 (pdftex.def)             Requested size: 155.24895pt x 99.59523pt.
-<Figures/TruCapTimeReductionNewH.PNG, id=1901, 515.526pt x 349.305pt>
+<Figures/TruCapTimeReductionNewH.PNG, id=1909, 515.526pt x 349.305pt>
 File: Figures/TruCapTimeReductionNewH.PNG Graphic file (type png)
 <use Figures/TruCapTimeReductionNewH.PNG>
-Package pdftex.def Info: Figures/TruCapTimeReductionNewH.PNG  used on input line 555.
+Package pdftex.def Info: Figures/TruCapTimeReductionNewH.PNG  used on input line 565.
 (pdftex.def)             Requested size: 155.24895pt x 105.19205pt.
-<Figures/TruCapTimeReductionNewGd.PNG, id=1902, 518.53725pt x 355.3275pt>
+<Figures/TruCapTimeReductionNewGd.PNG, id=1910, 518.53725pt x 355.3275pt>
 File: Figures/TruCapTimeReductionNewGd.PNG Graphic file (type png)
 <use Figures/TruCapTimeReductionNewGd.PNG>
-Package pdftex.def Info: Figures/TruCapTimeReductionNewGd.PNG  used on input line 560.
+Package pdftex.def Info: Figures/TruCapTimeReductionNewGd.PNG  used on input line 570.
 (pdftex.def)             Requested size: 155.24895pt x 106.38219pt.
-[150 <./Figures/TrueCapTimeReductionLegacy.png> <./Figures/TrueCapTimeReductionNew.png>] [151 <./Figures/TruCapNuNDistanceReductionLegacy.png> <./Figures/TruCapNuNDistanceReductionNew.png> <./Figures/TruCapNuNDistanceReductionNewH.png> <./Figures/TruCapNuNDistanceReductionNewGd.png> <./Figures/TruCapTimeReductionNewH.png> <./Figures/TruCapTimeReductionNewGd.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 572--576
+[151 <./Figures/TrueNCapXpos.PNG> <./Figures/TrueNCapYpos.PNG> <./Figures/TrueNCapZPos.PNG> <./Figures/TrueCapTimeReductionLegacy.png> <./Figures/TrueCapTimeReductionNew.png>] [152 <./Figures/TruCapNuNDistanceReductionLegacy.png> <./Figures/TruCapNuNDistanceReductionNew.png> <./Figures/TruCapNuNDistanceReductionNewH.png> <./Figures/TruCapNuNDistanceReductionNewGd.png> <./Figures/TruCapTimeReductionNewH.png> <./Figures/TruCapTimeReductionNewGd.png>] [153]
+Underfull \hbox (badness 10000) in paragraph at lines 597--601
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 578--582
+Underfull \hbox (badness 10000) in paragraph at lines 603--607
 
  []
 
-[152]
-Underfull \hbox (badness 10000) in paragraph at lines 632--636
+[154]
+Underfull \hbox (badness 10000) in paragraph at lines 657--661
 
  []
 
-[153]) [154]
+[155]) [156]
 \openout2 = `Chapters/chapter_syst_uncertainty.aux'.
 
  (./Chapters/chapter_syst_uncertainty.tex
 Chapter 8.
-[155
+[157
 
 
 
@@ -2053,7 +2058,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--31
 
  []
 
-[156]
+[158]
 Underfull \hbox (badness 10000) in paragraph at lines 34--36
 
  []
@@ -2063,26 +2068,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--41
 
  []
 
-[157]
+[159]
 Underfull \hbox (badness 10000) in paragraph at lines 57--59
 
  []
 
 
-LaTeX Warning: Reference `table:systuncertaintytable' on page 158 undefined on input line 64.
+LaTeX Warning: Reference `table:systuncertaintytable' on page 160 undefined on input line 64.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 62--66
 
  []
 
-<Figures/frac_beam_flux_uncertainty.png, id=1971, 527.571pt x 180.07275pt>
+<Figures/frac_beam_flux_uncertainty.png, id=1988, 527.571pt x 180.07275pt>
 File: Figures/frac_beam_flux_uncertainty.png Graphic file (type png)
 <use Figures/frac_beam_flux_uncertainty.png>
 Package pdftex.def Info: Figures/frac_beam_flux_uncertainty.png  used on input line 68.
 (pdftex.def)             Requested size: 345.0pt x 117.75755pt.
-[158 <./Figures/frac_beam_flux_uncertainty.PNG>]
-<Figures/flux_uncertainty.png, id=1981, 885.90974pt x 522.15076pt>
+[160 <./Figures/frac_beam_flux_uncertainty.PNG>]
+<Figures/flux_uncertainty.png, id=1998, 885.90974pt x 522.15076pt>
 File: Figures/flux_uncertainty.png Graphic file (type png)
 <use Figures/flux_uncertainty.png>
 Package pdftex.def Info: Figures/flux_uncertainty.png  used on input line 80.
@@ -2102,13 +2107,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--91
 
  []
 
-[159 <./Figures/flux_uncertainty.png>]
+[161 <./Figures/flux_uncertainty.png>]
 Overfull \hbox (82.81589pt too wide) in paragraph at lines 103--121
  []$[]$ 
  []
 
-[160]
-<Figures/xsec_uncertainty.png, id=1997, 843.15pt x 532.389pt>
+[162]
+<Figures/xsec_uncertainty.png, id=2015, 843.15pt x 532.389pt>
 File: Figures/xsec_uncertainty.png Graphic file (type png)
 <use Figures/xsec_uncertainty.png>
 Package pdftex.def Info: Figures/xsec_uncertainty.png  used on input line 127.
@@ -2118,24 +2123,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--136
 
  []
 
-[161 <./Figures/xsec_uncertainty.PNG>] [162]
-<Figures/fsisi_uncertainty.png, id=2014, 860.61525pt x 496.254pt>
+[163 <./Figures/xsec_uncertainty.PNG>] [164]
+<Figures/fsisi_uncertainty.png, id=2031, 860.61525pt x 496.254pt>
 File: Figures/fsisi_uncertainty.png Graphic file (type png)
 <use Figures/fsisi_uncertainty.png>
 Package pdftex.def Info: Figures/fsisi_uncertainty.png  used on input line 174.
 (pdftex.def)             Requested size: 344.24pt x 198.49808pt.
- [163]
+ [165]
 Overfull \hbox (1.44499pt too wide) detected at line 206
 []
  []
 
-[164 <./Figures/fsisi_uncertainty.PNG>]
+[166 <./Figures/fsisi_uncertainty.PNG>]
 Overfull \hbox (87.88977pt too wide) detected at line 226
 []
  []
 
-[165]
-<Figures/nucleonfsi_uncertainty.png, id=2036, 882.29625pt x 525.162pt>
+[167]
+<Figures/nucleonfsi_uncertainty.png, id=2053, 882.29625pt x 525.162pt>
 File: Figures/nucleonfsi_uncertainty.png Graphic file (type png)
 <use Figures/nucleonfsi_uncertainty.png>
 Package pdftex.def Info: Figures/nucleonfsi_uncertainty.png  used on input line 241.
@@ -2145,8 +2150,8 @@ Overfull \hbox (7.91225pt too wide) in paragraph at lines 241--242
 [][] 
  []
 
-[166] [167 <./Figures/nucleonfsi_uncertainty.PNG>]
-<Figures/mupicap_uncertainty.png, id=2053, 864.22874pt x 414.95026pt>
+[168] [169 <./Figures/nucleonfsi_uncertainty.PNG>]
+<Figures/mupicap_uncertainty.png, id=2071, 864.22874pt x 414.95026pt>
 File: Figures/mupicap_uncertainty.png Graphic file (type png)
 <use Figures/mupicap_uncertainty.png>
 Package pdftex.def Info: Figures/mupicap_uncertainty.png  used on input line 274.
@@ -2156,30 +2161,30 @@ Overfull \hbox (0.68536pt too wide) in paragraph at lines 274--275
 [][] 
  []
 
-[168 <./Figures/mupicap_uncertainty.PNG>]
+[170 <./Figures/mupicap_uncertainty.PNG>]
 
-LaTeX Warning: Reference `eq:MICAP_uncertainty' on page 169 undefined on input line 284.
+LaTeX Warning: Reference `eq:MICAP_uncertainty' on page 171 undefined on input line 284.
 
-[169]
+[171]
 Overfull \hbox (2.9728pt too wide) in paragraph at lines 293--294
 \OT1/cmr/m/n/10 Due to there be-ing no ex-per-i-men-tal data for cross-section cal-cu-la-tions on nucleon-
  []
 
-) [170]
+) [172]
 \openout2 = `Chapters/chapter_conclusion.aux'.
 
  (./Chapters/chapter_conclusion.tex
 Chapter 9.
-) [171
+) [173
 
 
 
 
-] (./thesis_frontend.bbl [172
+] (./thesis_frontend.bbl [174
 
 
 
-] [173] [174] [175] [176] [177] [178] [179] [180] [181]) [182] (./thesis_frontend.aux (./Chapters/chapter_introduction.aux) (./Chapters/chapter_t2k_detector.aux) (./Chapters/chapter_superk_detector.aux) (./Chapters/chapter_superk-calib.aux) (./Chapters/chapter_ukli-system.aux) (./Chapters/chapter_superkgd_upgrade.aux) (./Chapters/chapter_ncqe-gd.aux) (./Chapters/chapter_syst_uncertainty.aux) (./Chapters/chapter_conclusion.aux))
+] [175] [176] [177] [178] [179] [180] [181] [182] [183]) [184] (./thesis_frontend.aux (./Chapters/chapter_introduction.aux) (./Chapters/chapter_t2k_detector.aux) (./Chapters/chapter_superk_detector.aux) (./Chapters/chapter_superk-calib.aux) (./Chapters/chapter_ukli-system.aux) (./Chapters/chapter_superkgd_upgrade.aux) (./Chapters/chapter_ncqe-gd.aux) (./Chapters/chapter_syst_uncertainty.aux) (./Chapters/chapter_conclusion.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -2190,18 +2195,18 @@ Package rerunfilecheck Info: File `thesis_frontend.out' has not changed.
 (rerunfilecheck)             Checksum: 098C1303C3755B2DACC4B0216F7EB284;14095.
  ) 
 Here is how much of TeX's memory you used:
- 27564 strings out of 478233
- 551279 string characters out of 5847836
- 869758 words of memory out of 5000000
- 44552 multiletter control sequences out of 15000+600000
+ 27579 strings out of 478233
+ 551592 string characters out of 5847836
+ 870123 words of memory out of 5000000
+ 44561 multiletter control sequences out of 15000+600000
  486684 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,16n,103p,2020b,531s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on thesis_frontend.pdf (183 pages, 33668212 bytes).
+{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on thesis_frontend.pdf (185 pages, 33703401 bytes).
 PDF statistics:
- 2348 PDF objects out of 2487 (max. 8388607)
- 1660 compressed objects within 17 object streams
- 508 named destinations out of 1000 (max. 500000)
- 1587 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2370 PDF objects out of 2487 (max. 8388607)
+ 1676 compressed objects within 17 object streams
+ 513 named destinations out of 1000 (max. 500000)
+ 1592 words of extra memory for PDF output out of 10000 (max. 10000000)
 

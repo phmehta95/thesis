@@ -2200,6 +2200,11 @@ INPUT ./Figures/dark_rate_schematic.png
 INPUT Figures/dark_rate_schematic.png
 INPUT ./Figures/dark_rate_schematic.png
 INPUT ./Figures/dark_rate_schematic.png
+INPUT ./Figures/after_pulsing.PNG
+INPUT ./Figures/after_pulsing.PNG
+INPUT Figures/after_pulsing.PNG
+INPUT ./Figures/after_pulsing.PNG
+INPUT ./Figures/after_pulsing.PNG
 INPUT ./Figures/NTrueCaptures.png
 INPUT ./Figures/NTrueCaptures.png
 INPUT Figures/NTrueCaptures.png
@@ -2386,4 +2391,5 @@ INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
+INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb
