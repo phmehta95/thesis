@@ -513,19 +513,19 @@ ${ }^{157} \mathrm{Gd}$ isotopes of Gadolinium, where the modal number of gammas
 
 \subsubsection{Truth information reduction cut plots}
 
-After ensuring that the truth neutron tagging information was the same between the legacy and new NTag versions, the next step was to produce plots with the NCQE reduction cut criteria in order to see the distribution of neutrons for certain variables which satisfy the NCQE criteria. By rewriting aspects of the new NTag code to incorporate the BONSAI variables needed for the NCQE selection, the same reduction cut criteria could be applied to the new NTag code as it was to the new NTag code. Figures \ref{fig:TrueCapTimeReductionLegacy} and \ref{fig:TrueCapTimeReductionNew} show the number of true neutrons plotted against true neutron capture time for the legacy and new NTag respectively, while Figures \ref{fig:TruCapNuNDistanceReductionLegacy} and \ref{fig:TruCapNuNDistanceReductionNew} show the number of true neutrons plotted against the distance between the true neutron and neutrino capture vertices for the legacy and new NTag respectively.
+After ensuring that the truth neutron tagging information was the same between the legacy and new NTag versions, the next step was to produce plots with the NCQE reduction cut criteria in order to see the distribution of neutrons for certain variables which satisfy the NCQE criteria. By rewriting aspects of the new NTag code to incorporate the BONSAI variables needed for the NCQE selection, the same reduction cut criteria could be applied to the new NTag code as it was to the new NTag code. Figures \ref{fig:TruCapTimeReductionLegacy} and \ref{fig:TruCapTimeReductionNew} show the number of true neutrons plotted against true neutron capture time for the legacy and new NTag respectively, while Figures \ref{fig:TruCapNuNDistanceReductionLegacy} and \ref{fig:TruCapNuNDistanceReductionNew} show the number of true neutrons plotted against the distance between the true neutron and neutrino capture vertices for the legacy and new NTag respectively.
 
 \begin{figure}
     \centering
      \begin{subfigure}[b]{0.45\linewidth}
       \includegraphics[width=\linewidth]{Figures/TrueCapTimeReductionLegacy.PNG}
       \caption{Number of true neutrons detected plotted against true neutron capture time for the legacy NTag}
-      \label{fig:TrueCapTimeReductionLegacy} 
+      \label{fig:TruCapTimeReductionLegacy} 
      \end{subfigure}
      \begin{subfigure}[b]{0.45\linewidth}
        \includegraphics[width=\linewidth]{Figures/TrueCapTimeReductionNew.PNG}
         \caption{Number of true neutrons detected plotted against true neutron capture time for the new NTag } 
-     \label{fig:TrueCapTimeReductionNew}
+     \label{fig:TruCapTimeReductionNew}
       \end{subfigure} 
 \end{figure}
 
@@ -543,19 +543,19 @@ After ensuring that the truth neutron tagging information was the same between t
       \end{subfigure} 
 \end{figure}
 
-With the level of gadolinium sulphate octahydrate in the simulation, the number of neutron captures on hydrogen and gadolinium should be about half and half. This is confirmed in the plots where the neutron captures in Figures \ref{fig:TruCapNuNDistanceReductionNew} and \ref{fig:TrueCapTimeReductionNew} are seperated into captures on hydrogen and gadolinium, shown in Figures \ref{fig:TruCapNuNDistanceReductionNewH}, \ref{fig:TruCapNuNDistanceReductionNewGd}, \ref{fig:TruCapTimeReductionNewH}, \ref{fig:TruCapNuNTimeReductionNewGd}.
+With the level of gadolinium sulphate octahydrate in the simulation, the number of neutron captures on hydrogen and gadolinium should be about half and half. This is confirmed in the plots where the neutron captures in Figures \ref{fig:TruCapNuNDistanceReductionNew} and \ref{fig:TruCapTimeReductionNew} are seperated into captures on hydrogen and gadolinium, shown in Figures \ref{fig:TruCapNuNDistanceReductionNewH}, \ref{fig:TruCapNuNDistanceReductionNewGd}, \ref{fig:TruCapTimeReductionNewH}, \ref{fig:TruCapNuNTimeReductionNewGd}.
 
 \begin{figure}
     \centering
      \begin{subfigure}[b]{0.45\linewidth}
       \includegraphics[width=\linewidth]{Figures/TruCapNuNDistanceReductionNewH.PNG}
       \caption{Number of true neutrons detected plotted against the distance between the neutrino and neutron capture vertices for the new NTag, for captures on hydrogen}
-      \label{fig:TrueCapTimeReductionLegacy} 
+      \label{fig:TruCapNuNDistanceReductionNewH} 
      \end{subfigure}
      \begin{subfigure}[b]{0.45\linewidth}
        \includegraphics[width=\linewidth]{Figures/TruCapNuNDistanceReductionNewGd.PNG}
         \caption{Number of true neutrons detected plotted against the distance between the neutrino and neutron capture vertices for the new NTag, for captures on gadolinium} 
-     \label{fig:TrueCapTimeReductionNew}
+     \label{fig:TruCapNuNDistanceReductionNewGd}
       \end{subfigure} 
 \end{figure}
 
@@ -564,12 +564,12 @@ With the level of gadolinium sulphate octahydrate in the simulation, the number 
      \begin{subfigure}[b]{0.45\linewidth}
       \includegraphics[width=\linewidth]{Figures/TruCapTimeReductionNewH.PNG}
       \caption{Number of true neutrons detected plotted against true neutron capture time for the new NTag, for captures on hydrogen}
-      \label{fig:TrueCapTimeReductionNewH} 
+      \label{fig:TruCapTimeReductionNewH} 
      \end{subfigure}
      \begin{subfigure}[b]{0.45\linewidth}
        \includegraphics[width=\linewidth]{Figures/TruCapTimeReductionNewGd.PNG}
         \caption{Number of true neutrons detected plotted against true neutron capture time for the new NTag, for captures on gadolinium} 
-     \label{fig:TrueCapTimeReductionNewGd}
+     \label{fig:TruCapTimeReductionNewGd}
       \end{subfigure} 
 \end{figure}
 
@@ -587,6 +587,28 @@ The primary selection criteria are where the differences between the legacy and 
 T O F_i=\frac{\left\|\overrightarrow{P M T_i}-\overrightarrow{V T X_\nu}\right\|}{c_{w t}}
 \label{eq:TOF_calc}
 \end{equation}
+
+Before the neutron candidate is passed to the secondary selection, other cuts are used to reject candidates which are not neutrons from NCQE interactions. Table \ref{table:legacy_new_selection_criteria} shows the difference between the legacy and new primary selection criteria. The legacy NTag algorithm primary criteria used a 10 nsec sliding window in which hits are searched for a neutron candidate, where the first selection criteria involved making sure the number of hits in the 10 nsec ($N10pvx$) timing window should not exceed 50, and second criteria is that the surrounding window of 200 nsec should not contain more than 100 hits. The third criterion was that in order to avoid double-counting the same 2.2 MeV gamma from neutron capture on hydrogen, each consective neutron candidate must be more than 20 nanoseconds apart. 
+
+
+\begin{table}
+    $$
+    \begin{array}{ccc}
+    \hline \text{Criterion} & \text{Legacy} & \text{New} \\
+    \hline \text { First } & 7 \leq N 10 p v x \leq 50 & 7 \leq NH i t s \leq 400 \\
+    \text { Second } & N 200 p v x \leq 100 & N 200 p v x \leq 1000 \\
+    \text { Third } & \Delta t_0 \geq 20 \mathrm{nsec} & \Delta t_0 \geq 200 \mathrm{nsec}\\
+    \hline
+    \end{array}
+    $$
+    \caption{NTag selection crteria for legacy and new NTag}
+    \label{table:legacy_new_selection_criteria}
+    \end{table}
+
+
+
+
+
 
 
 
