@@ -370,38 +370,38 @@ After producing the UKLI MC, the next step was to use them to measure the absorp
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.7\textwidth]{Figures/TOF_abs.PNG}
+    \includegraphics[width=0.9\textwidth]{Figures/TOF_abs.PNG}
     \caption{Corrected TOF plot with varied absorption, while rayleigh and mie scattering is set to 1.0}
     \label{fig:TOF_abs}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.7\textwidth]{Figures/TOF_ray.PNG}
+    \includegraphics[width=0.9\textwidth]{Figures/TOF_ray.PNG}
     \caption{Corrected TOF plot with varied Rayleigh scattering, while absorption and Mie scattering is set to 1.0}
     \label{fig:TOF_ray}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.7\textwidth]{Figures/TOF_mie.PNG}
+    \includegraphics[width=0.9\textwidth]{Figures/TOF_mie.PNG}
     \caption{Corrected TOF plot with varied Mie scattering, while absorption and Rayleigh scattering is set to 1.0}
     \label{fig:TOF_mie}
 \end{figure}
 
 As shown in Figure \ref{fig:TOF_ray}, the TOF corrected timing plots are most affected by the Rayleigh scattering parameter, which affects the amount of hits in the scattered hits region, while varying the absorption parameter mostly affects the height of the reflected peak, as the higher the amount of absorption in the tank, the smaller the number of reflected hits. 
 
-After producing time-of-flight corrected plots for the B1 collimator UKLI MC and overlaying it with the Run 82181 November test run data with the abs, ray, mie parameters set to 1.0, and a TBA value of 7.598, it was clear that there were disgreements between the Monte Carlo and data in both the scattered hits region and the reflected hits peak. In order to remedy this, the time dispersion of the reflected hits peak was varied, in order to shift the distribution and better match up the UKLI Monte Carlo and test run data. 
+After producing time-of-flight corrected plots for the B1 collimator UKLI MC and overlaying it with the Run 82181 November test run data with the abs, ray, mie parameters set to 1.0, and a TBA value of 7.598, it was clear that there were disgreements between the Monte Carlo and data in both the scattered hits region and the reflected hits peak. In order to change this, the time dispersion of the reflected hits peak was varied, in order to shift the distribution and better match up the UKLI Monte Carlo and test run data. 
 
 The time dispersion for the injected photons in the laser generation in SKDETSIM is governed by a Gaussian distributed random number generated using a Box-Muller transform, where additional time dispersion added would be the sigma of this Gaussian, and after a random number is passed through it, the output number would be added to the time for each track step of the photon giving the time dispersion.
 
-The Box-Muller transform is a random number sampling method for making pairs of independent, normally distributed random sources from a source of uniformly distributed numbers (from between usually from between 0 and 1). The form of the Box-Muller method implemented to calculate the added time dispersion is the Marsaglia polar method, which works by choosing two independent and uniformly distributed numbers (u,v) between [-1,+1], so that $s = u^{2} + v^{2}$, and if $s=0$, or $s>=1$, another pair of numbers are chosen. Then the standard normal deviate which is given by $$z_{0}=u \cdot \sqrt{\frac{-2 \ln s}{s}}$$ is multiplied by the chosen value of time dispersion in seconds and added to the mean (set to zero) to give the normally dispersed extra track step time for a photon in the distribution. 
+The Box-Muller transform is a random number sampling method for making pairs of independent, normally distributed random sources from a source of uniformly distributed numbers (from between usually from between 0 and 1) \cite{10.1214/aoms/1177706645}. The form of the Box-Muller method implemented to calculate the added time dispersion is the Marsaglia polar method \cite{doi:10.1137/1006063}, which works by choosing two independent and uniformly distributed numbers (u,v) between [-1,+1], so that $s = u^{2} + v^{2}$, and if $s=0$, or $s>=1$, another pair of numbers are chosen. Then the standard normal deviate which is given by $$z_{0}=u \cdot \sqrt{\frac{-2 \ln s}{s}}$$ is multiplied by the chosen value of time dispersion in seconds and added to the mean (set to zero) to give the normally dispersed extra track step time for a photon in the distribution. 
 
 Figure \ref{fig:gauss_time_dispersion} shows the effect of implementing this varying time dispersion on the raw hit timing output from the UKLI MC B1 collimator simulation, with the time dispersion shown for 0 ns, 5 ns, 10 ns, 15 ns, 20 ns and 100 ns. 
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.7\textwidth]{Figures/gauss_time_dispersion.PNG}
+    \includegraphics[width=\textwidth]{Figures/gauss_time_dispersion.PNG}
     \caption{Gaussian distributed time dispersion plots, with varying amounts of time dispersion}
     \label{fig:gauss_time_dispersion}
 \end{figure}
@@ -410,23 +410,44 @@ Along with implementing the Gaussian distributed time dispersion, introducing a 
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.7\textwidth]{Figures/double_gauss_time_dispersion.PNG}
+    \includegraphics[width=\textwidth]{Figures/double_gauss_time_dispersion.PNG}
     \caption{Double gaussian distributed time dispersion plots, with varying amounts of time dispersion}
     \label{fig:double_gauss_time_dispersion}
 \end{figure}
 
-Figure \ref{fig:TOF_dispersion_plots} show these time-of-flight corrected plots with both a gaussian and double gaussian time dispersion put in for varying amounts of time dispersion for 5, 10, 15 and 20 ns. 
+Figures \ref{fig:5ns_time_dispersion}, \ref{fig:10ns_time_dispersion}, \ref{fig:15ns_time_dispersion}, \ref{fig:20ns_time_dispersion} show these time-of-flight corrected plots with both a gaussian and double gaussian time dispersion put in for varying amounts of time dispersion for 5, 10, 15 and 20 ns respectively.
 
-\begin{figure}[!htbp]
+
+\begin{figure}
     \centering
-    
-    \caption{TOF comparison for B1 collimator UKLI MC and Run 82181 test data for both gaussian and double gausian time dispersion for 5 ns, 10ns, 15 ns and 20 ns}\label{fig:TOF_dispersion_plots}
-    
-    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/time_dispersion_TOF_5ns.PNG}} 
-    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/time_dispersion_TOF_10ns.PNG}} \\
-    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/time_dispersion_TOF_15ns.PNG}} 
-    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/time_dispersion_TOF_20ns.PNG}}%
+    \includegraphics[width=\textwidth]{Figures/time_dispersion_TOF_5ns.PNG}
+    \caption{Gaussian and double gaussian time dispersion for 5ns for the B1 collimator TOF comparison between UKLI MC and Run 82181 test data}
+    \label{fig:5ns_time_dispersion}
 \end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{Figures/time_dispersion_TOF_10ns.PNG}
+    \caption{Gaussian and double gaussian time dispersion for 10ns for the B1 collimator TOF comparison between UKLI MC and Run 82181 test data}
+    \label{fig:10ns_time_dispersion}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{Figures/time_dispersion_TOF_15ns.PNG}
+    \caption{Gaussian and double gaussian time dispersion for 15ns for the B1 collimator TOF comparison between UKLI MC and Run 82181 test data}
+    \label{fig:15ns_time_dispersion}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{Figures/time_dispersion_TOF_20ns.PNG}
+    \caption{Gaussian and double gaussian time dispersion for 20ns for the B1 collimator TOF comparison between UKLI MC and Run 82181 test data}
+    \label{fig:20ns_time_dispersion}
+\end{figure}
+
+
+
 
 For the scattered hits region (region between the dashed lines), there is now good agreement between the MC and data, with this region giving Chi2/NDF values of less than one, and the time dispersion values of 5 ns and 10 ns giving the best agreement. A problem remains regarding the reflected hits peak, where the data continues to have a much higher reflected peak than the Monte Carlo. This points to the amount of charge in the detector for the reflected peak being too large for the Monte Carlo, and further studies will be needed to be done to tune this.
 

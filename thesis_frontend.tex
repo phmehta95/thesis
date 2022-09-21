@@ -7,7 +7,9 @@
 
 % /////////////////////////////////////////////////////////////////////////////
 % PREAMBLE
-  \documentclass{report}
+  %\documentclass
+\documentclass[11pt,twoside]{report}
+
   % for title page
   \title{*thesis title*}
   \author{Pruthvi Mehta}
@@ -25,7 +27,12 @@
   \usepackage[font=small]{caption}     % Set formatting options for captions
   \usepackage{subcaption}              % Like captions, but for sub-figures
   \usepackage{wrapfig}                 % Wrap text around figures
-  
+  \usepackage[headheight=14pt,inner=4cm,outer=2.5cm]{geometry} % The minimal margins as specified by Code of Practice.
+  \usepackage{setspace}
+  \usepackage{datetime}
+  \usepackage{fancyhdr}
+  \usepackage{tikz}
+
 
   % Tables
   %\usepackage{arydshln}                % dashed version of cline
@@ -48,7 +55,8 @@
   \usepackage{gensymb}
 
   \usepackage{setspace}                % Double spacing for easy reading 
-  \doublespacing{}
+  %\doublespacing{}
+  \onehalfspacing
 
   % Hyperlinks & Colors
   %\usepackage[usenames, dvipsnames, table]{xcolor}
@@ -103,11 +111,39 @@
               urlcolor=blue
   }
 
+  \makeatletter
+  %% Insert your title and name.
+  \title{THESIS TITLE} \let\Title\@title
+  \author{Pruthvi Mehta} \let\Author\@author
+  \makeatother
+
+
   %/////////////////////////////////////////////////////////////////////////////
   % DOCUMENT
 
-  \begin{document}
+\begin{document}
+%% The title page uses the title and author name specified above. No need to edit title.tex. Note that the current month is at the bottom of the title page. Edit it manually, if you want to have some other month there.
+\pagestyle{empty}
+\include{title}
+\cleardoublepage
 
+%% In the preface, pages are numbered by roman numerals (i,ii,...) and in the header Author and Title.
+\pagenumbering{roman}
+%\pagestyle{fancy}
+%\fancyhead{} % clear all header fields
+%\fancyhead[LO,RE]{\Title}
+%\fancyhead[LE,RO]{\Author}
+%\fancyfoot{} % clear all footer fields
+%\fancyfoot[C]{\thepage}
+
+\begin{singlespace}
+
+  
+  
+  %% You might need a similar construction to include the list of algorithms.
+  
+  \end{singlespace}
+  \cleardoublepage
 
     % Typeset title page.
     \maketitle
