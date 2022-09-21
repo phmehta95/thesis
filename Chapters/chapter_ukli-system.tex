@@ -448,66 +448,6 @@ Figures \ref{fig:5ns_time_dispersion}, \ref{fig:10ns_time_dispersion}, \ref{fig:
 
 
 
+For the scattered hits region (region between the dashed lines), there is now good agreement between the MC and data, with this region giving Chi2/NDF values of less than one, and the time dispersion values of 5 ns and 10 ns giving the best agreement. A problem remains regarding the reflected hits peak, where the data continues to have a much higher reflected peak than the Monte Carlo. This points to the amount of charge in the detector for the reflected peak being too large for the Monte Carlo, and further studies will be needed to be done to tune this. These differences are most likely due to hardware issues in Super-Kamiokande, like signal loss in the cables, for example. Future studies will aim to minimise these effects and work towards the installation of a UK Light Injection system in Hyper-Kamiokande with a similar Monte Carlo used to determine absorption and scattering coefficients. 
 
-For the scattered hits region (region between the dashed lines), there is now good agreement between the MC and data, with this region giving Chi2/NDF values of less than one, and the time dispersion values of 5 ns and 10 ns giving the best agreement. A problem remains regarding the reflected hits peak, where the data continues to have a much higher reflected peak than the Monte Carlo. This points to the amount of charge in the detector for the reflected peak being too large for the Monte Carlo, and further studies will be needed to be done to tune this.
-
-
-\subsection{UKLI work towards Hyper-Kamiokande}
-
-Since the first implementation of the UKLI MC, there have been several improvements made to the diffuser profiles, with a full 2$\pi$ diffuser profile produced from UKLI diffusers placed in a test stand in Sheffield. There were two types of diffusers involved in creating the 2D profiles: the ``D5'' diffuser (and SK install spare diffuser) and ``HP1'', a prototype for Hyper-Kamiokande. Profile measurements for the diffusers were made in both air and water, and Figure \ref{fig:diffuser_tank_sheff} shows the test stand setup at Sheffield, along with Figure \ref{fig:D5_diffuser} and Figure \ref{fig:HP1_diffuser} which show the D5 and HP1 diffusers respectively.
-
-
-\begin{figure}
-    \centering
-     \begin{subfigure}[b]{0.9\linewidth}
-      \includegraphics[width=\linewidth]{Figures/diffuser_tank_sheff.PNG}
-      \caption{Diffuser tank setup at Sheffield}
-      \label{fig:diffuser_tank_sheff} 
-     \end{subfigure}
-     \begin{subfigure}[b]{0.3\linewidth}
-       \includegraphics[width=\linewidth]{Figures/D5_diffuser.PNG}
-        \caption{D5 (SK spare) diffuser} 
-     \label{fig:D5_diffuser}
-      \end{subfigure} \hfill%
-      \begin{subfigure}[b]{0.3\linewidth}
-      \includegraphics[width=\linewidth]{Figures/HP1_diffuser.PNG}
-      \caption{HP1 (HK protoype) diffuser}
-      \label{fig:HP1_diffuser}
-      \end{subfigure}
-\end{figure}
-
-In Figure \ref{fig:diffuser_tank_sheff}, not only is there a $\theta$ rotational stand about the vertical axis, there is also $\phi$ rotation about a horzontal axis, allowing for a 2D profile instead of the 1D profiles produced by the Warwick test stand previously. Figure \ref{fig:D5_sheff_2D_air} and Figure \ref{fig:D5_sheff_2D_water} show the 2D profiles for the D5 diffuser produced in air and water, with the $\theta$ and $\phi$ rotations labelled. 
-
-
-\begin{figure}
-    \centering
-     \begin{subfigure}[b]{0.45\linewidth}
-      \includegraphics[width=\linewidth]{Figures/D5_sheff_2D_air.PNG}
-      \caption{2D profile for the D5 diffuser in air}
-      \label{fig:D5_sheff_2D_air} 
-     \end{subfigure}
-     \begin{subfigure}[b]{0.45\linewidth}
-       \includegraphics[width=\linewidth]{Figures/D5_sheff_2D_water.PNG}
-        \caption{2D profile for the D5 diffuser in water} 
-     \label{fig:D5_sheff_2D_water}
-      \end{subfigure} 
-\end{figure}
-
-To investigate the relationship between polar angle, azimuthal angle and the amplitude of the light, plots were made for the D5 and HP1 diffusers of the variation of amplitude vs polar angle, for measurements of azimuthal angle in 30$\degree$ intervals. This would give an indication of how uniform the profile is by seeing how closely the values of amplitude for each azimuthal angle are to each other. This is shown in Figure \ref{fig:HP1_D5_azimuthal}, along with the coefficient of quartile variation (CQV) of the amplitude, to show the spread of the data and used instead of the standard deviation as a more robust measure as it will not be affected by outliers.  This data is shown for both the D5 and HP1 diffusers in air and also water, with three distinct regions (shown by the dashed lines) across which the amplitude varies most. 
-
-\begin{figure}[!htbp]
-    \centering
-    
-    \caption{Amplitude and Amplitude CQV plotted against polar angle (in degrees) for different values of azimuthal angle in air and water for the D5 and HP1 diffusers}\label{fig:HP1_D5_azimuthal}
-    
-    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/cqv_D5_air.PNG}}
-    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/cqv_D5_water.PNG}}\\
-    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/CQV_HP1_air.PNG}}
-    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/CQV_hp1_water}}%
-    
-\end{figure}
-
-The reason for the largest CQV values for the larger values of polar angle is due to smaller amplitude values showing more variation than for larger amplitude values if there an inherent systematic variation stemming from measurement apparatus or dark noise in the tank. 
-
-To conclude, initial 1D light profiles for the collimator and diffuser optics from the test stand at Warwick have been put into the detector simulation and inverse transform sampling has been used to generate the output angle of the outgoing photon according to the input light profile shape. This has been validated by occupancy plots and also running uniformly generated random numbers through the inverse cumulative distribution function to produce the input profile probability distribution function. In addition to this, by generating time-of-flight corrected hit time distributions, the timing region which shows the scattered hits has been adjusted to match up with test run data, by understanding how to tweak the amount of timing dispersion to have different distributions. Future work in order to implement 2D profiles have been started with the help from colleagues at Sheffield, and scans and fits to the polar and azimuthal angle have been made. 
 
