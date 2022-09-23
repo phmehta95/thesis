@@ -123,13 +123,13 @@
 
 \begin{document}
 %% The title page uses the title and author name specified above. No need to edit title.tex. Note that the current month is at the bottom of the title page. Edit it manually, if you want to have some other month there.
-\pagestyle{empty}
+
 \include{title}
 \cleardoublepage
 
 %% In the preface, pages are numbered by roman numerals (i,ii,...) and in the header Author and Title.
-\pagenumbering{roman}
-%\pagestyle{fancy}
+\pagenumbering{arabic}
+%;\pagestyle{fancy}
 %\fancyhead{} % clear all header fields
 %\fancyhead[LO,RE]{\Title}
 %\fancyhead[LE,RO]{\Author}
@@ -166,7 +166,7 @@
     \include{Chapters/chapter_superk_detector}
     \include{Chapters/chapter_superk-calib}
     \include{Chapters/chapter_ukli-system}
-    \include{Chapters/chapter_superkgd_upgrade}
+    %\include{Chapters/chapter_superkgd_upgrade}
     \include{Chapters/chapter_ncqe-gd}
     \include{Chapters/chapter_syst_uncertainty}
     \include{Chapters/chapter_conclusion}

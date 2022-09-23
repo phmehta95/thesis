@@ -151,5 +151,109 @@ $G(i)$ is the gain correction for the quantum efficiency of the photomultiplier 
 
 The average of each $N_{eff}$ distribution is taken, after producing multiple $N_{eff}$ distributions with fixed energies using Monte Carlo. These energies are fitted with a polynomial which is a function of the averaged $N_{eff}$ distribution, so the reconstructed energy is converted from $N_{eff}$.
 
+\section{Super-Kamiokande Gadolinium Upgrade}
 
-To summarise, Super-Kamiokande has undergone a lot of transformations over its lifetime, with modifications made to its data aquisition system and methods of event reconstruction with each successive new phase. The biggest change made to the detector is the upgrade to Super-Kamiokande Gd, where in the summer of 2020 0.02\% of gadolinium sulphate was added to the detector: a long-awaited next step which would enhance sensitivity to the detection of neutrons emitted in inverse beta decay compared to that in water, something discussed in much more detail in Chapter 6.
+In order to be able to observe the diffuse supernova neutrino background (DSNB) flux it was proposed that Gadolinium (Gd) should be added to the the water in Super-Kamiokande. There are two natural isotopes of gadolinium, Gd-155 and Gd-157, which have large thermal neutron capture cross sections of 60740 barns and 253700 barns respectively. As a result of this, when neutrons are captured on them there is a cascade of gamma rays that occurs, with an energy totalling ~8 MeV, whereas neutron capture that occurs on hydrogen produces a single 2.2 MeV gamma ray, as the thermal neutron capture cross-section of hydrogen is just 0.329 barns \cite{meo_measurement_nodate}.  The ultimate aim is to load a total amount of gadolinium in the form of gadolinium sulphate octahydrate ($
+\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$) in Super-Kamiokande which equates to 0.2\% of Gd by mass, which would allow for 90\% neutron capture efficiency. The ability to tag neutrons efficiently in Super-Kamiokande will benefit multiple physics topics, not only for the aforementioned observation of DSNB flux, but also for analyses involving atmospheric neutrinos and proton decay. 
+
+\subsection{The EGADS project}
+
+In 2009, prior to the addition of gadolinium in Super-Kamiokande, the EGADS (Evaluating Gadolinium's Action on Detector Systems) project was used to evaluate how the inclusion of $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$ would affect water quality and detector components inside Super-Kamiokande and their analyses, and also to test the water system circulation. Measurements regarding neutron tagging were also taken using an Americium/Beryllium (Am/Be) source placed inside EGADS. As shown in Figure \ref{eq:ambe_decay}, this is because it produces a prompt 4.4 MeV gamma ray alongside a neutron during its decay process, and as a result the prompt 4.4 MeV signal can serve as a trigger signal, while the following hundreds of microseconds can be used as a timing window within which to scan for the neutron. Due to its similarity to the neutral current quasieleastic events studied in the analysis in this thesis, it can serve as a helpful control sample and is used in the calculation of the detector response uncertainty in Chapter 7. 
+
+\begin{equation}
+\begin{array}{c}
+\alpha^{9} \mathrm{Be} \longrightarrow^{12} \mathrm{C}^{*} \mathrm{n} \\
+{ }^{12} \mathrm{C}^{*} \longrightarrow{ }^{12} \mathrm{C} \gamma(4.4 \mathrm{MeV})
+\end{array}
+\label{eq:ambe_decay}
+\end{equation}
+
+The delayed neutron capture time from an Am/Be source used in EGADS with the gadolinium sulphate concentration of 0.2\% is shown in Figure \ref{fig:EGADS_ambe_capture}. Here, we can see that the neutron capture time from the data is 29$\pm$0.3 $\mu$s and for the Monte Carlo it is 30$\pm$0.8 $\mu$s.
+
+\begin{figure}[H]
+    \includegraphics[width=\textwidth]{Figures/egads_ambe.png}
+\caption{(a) Delayed neutron capture time from prompt event with Am/Be source. (b) Reconstructed energy from gamma rays after neutron capture.}
+\label{fig:EGADS_ambe_capture}
+\end{figure}
+
+
+EGADS represented the most realistic possible soak test, and after two and a half years of running, EGADS was emptied in November 2017 to check the condition of the inner structure and the photomultiplier tubes. There was no deteriation of any of the components, which was an excellent sign for a detector designed to so closely resemble the conditions for the Super-Kamiokande Gadolinium upgrade. 
+
+\subsection{Gadolinium loading into Super-Kamiokande}
+
+After the success of EGADS, the Super-Kamiokande Gadolinium project was formed in 2015 with the final goal of adding 0.2\% $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$ by mass to the detector. The first step of gadolinium loading began with the loading of 13 tons of $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$ into Super-Kamiokande from July 14th to August 17th 2020, which is about 10\% of the target concentration. The work in this thesis focuses on this first Gd loading period, not the second loading period which began in late May of 2022. 
+
+\subsubsection{The SK-Gd water system}
+
+The SK-Gd water system was designed to dissolve $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$ powder into the detector water, pass it through a ``pretreatement" system to remove contaminants from the water, and then to continously circulate it. The design for this treatment system was successfully tested in EGADS and involves treating this solution with ultraviolet light. Positively charged impurites dissolved in the solution (such as radium ions) and negatively charged impurities (such as uranium) are removed using a cation and anion exchange resins respectively, after which a UV steriliser removes bacteria which were introduced in the dissolving process. 
+
+The acceptable background rate after the final value for Gd loading  was set to be less than double that of the background rate for when Super-Kamioknde ran with pure water. As a result, rigorous standards of cleanliness were set for the $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$ powder, which meant setting maximum allowed levels of radioactive impurites which are shown in Table \ref{gdpowderradiation}.
+
+
+\begin{table}[H]
+
+    $$
+    \begin{array}{llll}
+    \hline \text { Chain } & \text { Isotope } & \text { Criterion [mBq/kg] } & \text { Physics target } \\
+        \hline{ }^{238} \mathrm{U} & { }^{238} \mathrm{U} & <5 & \text { SRN } \\
+    & { }^{226} \mathrm{Ra} & <0.5 & \text { Solar } \\
+    \hline{ }^{232} \mathrm{Th} & { }^{232} \mathrm{Th} & <0.05 & \text { Solar } \\
+    & { }^{228} \mathrm{Ra} & <0.05 & \text { Solar } \\
+    \hline{ }^{235} \mathrm{U} & { }^{235} \mathrm{U} & <30 & \text { Solar } \\
+    & { }^{227} \mathrm{Ac} /{ }^{227} \mathrm{Th} & <30 & \text { Solar } \\
+    \hline
+    \end{array}
+    $$
+\caption{Table of impurities in the gadolinium sulphate octahydrate powder}
+\label{gdpowderradiation}
+\end{table}
+
+\subsubsection{SK-Gd attenuation, transparency and concentration monitoring}
+
+After the loading of $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$ into Super-Kamiokande, water transparency and attenuation length were continously monitored. This had also been conducted in EGADS (see previous section), but due to the flow rate of the water and method by which gadolinium is loaded into the detector being different in Super-Kamiokande, it is important to monitor these attributes in the SK-Gd upgrade as well. Figure \ref{fig:gdattenuationlength} shows how the attenuation length of the Cherenkov light in SK-Gd varies with time: this attenuation length is measured using cosmic ray through going muons (as explained in Chapter 3). There is a clear decrease in the attenuation length after the loading of $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$, reaching a minimum of 75 m in August of 2020, and increasing again to its original pre-Gadolinium loading value of 90 m by the beginning of December 2020.  
+
+\begin{figure}[H]
+    \includegraphics[width=\textwidth]{Figures/attenuation_length_gd.png}
+    \caption{The attenuation length of Cherenkov light measured using cosmic ray muons between March of 2020 and March of 2021}
+    \label{fig:gdattenuationlength}
+\end{figure}
+
+It is important to monitor the concentration of the $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$ in the detector - this can be done using either direct sampling via calibration ports or using the Americium/Beryllium neutron source. Using a sampling probe and a conductivity meter to take samples in the inner and outer detector, the conductivity was measured. Figure \ref{fig:gdconductivity} shows the variation of the $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$ concentration in the detector at different depths in the detector during various points in time in the gadolinium loading period. 
+
+\begin{figure}[H]
+    \includegraphics[width=\textwidth]{Figures/gd_conductivity.png}
+    \caption{Conductivity vs. z position during Gd loading inside the inner detector}
+    \label{fig:gdconductivity}
+\end{figure}
+
+
+By placing an Am/Be source into the inner detector of Super-Kamiokande using the central calibration port and then monitoring the source at three posiitons along the Z-axis, the concentration of $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$ could be measured. One measurement position is in the middle of the detector (Z=0 m) and the other two were at Z = +12 and Z = -12 m respectively. By searching for neutron capture events on gadolinium from the Am/Be data, a time distribution of neutron capture candidates could be plotted and fit with a function shown in Figure \ref{fig:ambe_time}. The Am/Be source position here was Z=0 m and the 0 $\mu$s time value on the x-axis is the time at which the scintillation photons produced by the 4.4 MeV gamma ray from its passing through the BGO cube are detected. 
+
+
+\begin{figure}[H]
+    \includegraphics[width=\textwidth]{Figures/ambe_time.png}
+    \caption{Neutron capture time distribution for the Am/Be source placed at Z=0 m.}
+    \label{fig:ambe_time}
+\end{figure}
+
+Using GEANT4 Monte Carlo simulations, the neutron capture time could be converted to a value for Gd concentration, where a mean capture lifetime of $115 \pm 1$ \micro s corresponds to a Gd concentration value of $111 \pm 2$ ppm, consistent with the target concentration value of 0.011\%.
+
+
+To summarise, Super-Kamiokande has undergone a lot of transformations over its lifetime, with modifications made to its data aquisition system and methods of event reconstruction with each successive new phase. The biggest change made to the detector is the upgrade to Super-Kamiokande Gd, where in the summer of 2020 0.026\% of $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$ was added to the detector: a long-awaited next step which would enhance sensitivity to the detection of neutrons emitted in inverse beta decay compared to that in water.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

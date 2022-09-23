@@ -5,27 +5,20 @@ The UK calibration group's efforts have been focussed on improving the data anal
 
 \section{The UK Light Injection System Electronics}
 
-The electronics setup architecture for the UK Light Injection system is made of sixteen light emitting diode boards which are each coupled to three optical fibres, as well as a monitor PMT, an optical power meter and two motherboards as shown in Figure \ref{fig:ukli_system_architecture}. 
+The electronics setup architecture for the UK Light Injection system is made of sixteen light emitting diode boards which are each coupled to three optical fibres, as well as a monitor PMT, an optical power meter and two motherboards.
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.8\textwidth]{Figures/ukli_system_architecture.png}
-    \caption{UKLI electronics system architecture, showing optical fibre and motherboard couplings and QBEE connections.}
-    \label{fig:ukli_system_architecture}
-\end{figure}
-
-The light being pulsed has a wavelength of 435 nm and is produced by light emitting diodes which are controlled by Field Programmable Gate Arrays and uses sixteen LED pulser boards placed on two motherboards (8 LED pulser boards on each) which controls which channel to send a signal to. Fifteen of the sixteen channels deliver light into the detector, while the remaining channel sends light to a seperate monitoring system. Each LED is coupled to three optical fibres, a channel connected to the monitor PMT, secondly to an optical fibre which sends light into the Super-Kamiokande detector, and to a spare. The monitor PMT is a 2 inch Hamamatsu PMT which has a peak sensitivity to 400 nm wavelength light. The monitor PMT is connected to one of the QBEE (QTC-based electronics with Ethernet) channels for the detector to record the monitoring signal into the data stream. 
+The light being pulsed has a wavelength of 435 nm and is produced by light emitting diodes which are controlled by Field Programmable Gate Arrays and uses sixteen LED pulser boards placed on two motherboards (8 LED pulser boards on each) which controls which channel to send a signal to. Fifteen of the sixteen channels deliver light into the detector, while the remaining channel sends light to a seperate monitoring system. Each LED is coupled to three optical fibres, a channel connected to the monitor PMT, secondly to an optical fibre which sends light into the Super-Kamiokande detector, and to a spare. The monitor PMT is a 2 inch Hamamatsu PMT which has a peak sensitivity to 400 nm wavelength light.
 \newline
 
 The monitor PMT is installed inside a custom 3D printed box to make sure there is no external light reaching it. There are nineteen fibres input to the PMT, these are kept in place against the PMT's photocathode. There is one fibre for each of the sixteen LEDs and the last three channels are reserve. The channel which is coupled to the LED board for monitoring of the system is used to calibrate the monitor PMT, where the signal from this channel is inputted into the optical power meter.
 
-\subsection{UKLI System Optics}
+\section{UKLI System Optics}
 
 Unlike the Korean laser system mentioned in Chapter 4 that injects light into the detector using an optical fibre which has an opening angle of 4 degrees, the UK Light Injection system contains three different types of light injection optics, with each having a different opening angle: a bare fibre, a collimator and a diffuser. This range of optics can accomadate a larger variety of calibration measurements, and better suit the multiple applications of the light injection system, including it being better for monitoring purposes. 
 
 \subsubsection{The Collimator Optic}
 
-A 2-degree opening half angle is achieved by the collimator optic by using a graded index lens (GRIN) connected to a bare fibre optic cable - this GRIN lens reduces the opening angle of the light coming from the fibre optic. A schematic of the collimator design can be seen in Figure \ref{fig:collimator_schematic}. The GRIN lens is kept in position within the lens mount where a HAFC connector is drilled in to take a lens through the centre of the hole inside it, and there is a 2.35 mm diameter opening in front of the glass window in front of the GRIN lens in order to reduce background light which is not on-axis. All holes drilled into the collimator setup are filled with epoxy to prevent water from damaging the components. 
+A 2-degree opening half angle is achieved by the collimator optic by using a graded index lens (GRIN) connected to a bare fibre optic cable - this GRIN lens reduces the opening angle of the light coming from the fibre optic. A schematic of the collimator design can be seen in Figure \ref{fig:collimator_schematic}. 
 
 \begin{figure}
     \centering
@@ -51,12 +44,19 @@ The diffuser optic is a wide angled beam with a opening half-angle of 40 degrees
 
 \subsubsection{Bare Fibre and Optical Plate}
 
-The bare fibre injector are 1 mm step index fibres, and are approximately 20 cm in length and are used for validation purposes with the bare fibres in the Korean optical calibration system. These short fibres are screwed into the back end of the optical plate that the collimator and diffuser optics are mounted on.
+The bare fibre injector are 1 mm step index fibres, and are approximately 20 cm in length and are used for validation purposes with the bare fibres in the Korean optical calibration system. These short fibres are screwed into the back end of the optical plate that the collimator and diffuser optics are mounted on, shown in Figure \ref{fig:optical_plate}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figures/optical_plate.jpg}
+    \caption{Photograph of the optical plate which houses the different optics.}
+    \label{fig:optical_plate}
+\end{figure}
 
 
-\subsubsection{Results of optics test stands}
+\section{Results of optics test stands}
 
-In order to test the collimator and diffuser optics, scans of the angular distributions were made using diffuser and collimator test-stands. These scans would show angular distributions of the light intensity, and details of the setup of each test stand are given here. For the diffuser test-stand the angular distribution of the light output was captured using the setup shown in Figure \ref{fig:diffuser_test_stand}. A birds-eye view schematic of the setup is shown in Figure \ref{fig:schematic_dif}.
+In order to test the collimator and diffuser optics, scans of the angular distributions were made using diffuser and collimator test-stands. These scans would show angular distributions of the light intensity, and details of the setup of each test stand are given here. For the diffuser test-stand the angular distribution of the light output was captured using the setup shown in Figure \ref{fig:diffuser_test_stand}. 
 
 \begin{figure}
     \centering
@@ -77,7 +77,7 @@ The setup for the collimator test stand at the University of Warwick is shown in
     \label{fig:coll_test_stand}
 \end{figure}
 
-Figure \ref{fig:diffuser_TF1} shows distributions provided by this test stand data which are preliminary TF1 fits made by ROOT to the light profiles for the diffuser.  The x-axis scale shows the polar angle the rotation stand moves through, while the y-axis scale shows the average of the integrated area under all the pulses recorded by the PMT and is not normalised. 
+Figure \ref{fig:diffuser_TF1} shows distributions provided by this test stand data which are preliminary fits made by ROOT to the light profiles for the diffuser.  The x-axis scale shows the polar angle the rotation stand moves through, while the y-axis scale shows the average of the integrated area under all the pulses recorded by the PMT and is not normalised. 
 
 \begin{figure}[!htbp]
     \centering
@@ -94,7 +94,7 @@ Figure \ref{fig:diffuser_TF1} shows distributions provided by this test stand da
     
 \end{figure}
 
-Figure \ref{fig:collimator_TF1} shows TF1 fits made by ROOT to the light profiles for the collimator. The angular distributions shown give the distribution of the polar angle in degrees of light intensity which are relative to the virtual position from which the light cone originates, averaged over all the orientations of the azimuthal angle. 
+Figure \ref{fig:collimator_TF1} shows fits made by ROOT to the light profiles for the collimator. The angular distributions shown give the distribution of the polar angle in degrees of light intensity which are relative to the virtual position from which the light cone originates, averaged over all the orientations of the azimuthal angle. 
 
 \begin{figure}[!htbp]
     \centering
@@ -111,7 +111,7 @@ Figure \ref{fig:collimator_TF1} shows TF1 fits made by ROOT to the light profile
     
 \end{figure}
 
-\subsubsection{UK Calibration data}
+\section{UK Calibration data}
 
 In September of 2019 and November of 2019 two sets of test data were taken of the collimator, the diffuser and the bare fibre optic (the B2 bare fibre). For the September 2019 data, all of the data for the B1-B5 optics was taken with 100,000 events, however due to the B3 and B5 collimator from the September 2019 data showing a very weak signal, 150,000 events were taken with the B3 collimator data and 200,000 events were taken with the November 2019 data. Using an event display developed by the University of Warwick, occupancy plots of the test data sets were produced. Figure \ref{fig:occupancy_coll} shows the occupancy plots for the collimator optic from the November 2019 dataset showing the beam spot inside the unrolled volume of the Super-Kamiokande detector. Similarly, Figure \ref{fig:occupancy_diffuser} shows the occupancy plots for the diffuser optic from the November 2019 dataset. The graph in the bottom right hand corner of the occupancy plots show the corrected time-of-flight plots for the PMT hits from the injector. 
 
@@ -120,11 +120,11 @@ In September of 2019 and November of 2019 two sets of test data were taken of th
     
     \caption{Occupancy plot for the collimator optics from the UKLI November 2019 test run} \label{fig:occupancy_coll} 
     
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B1_occupancy_coll.PNG}} \hfill
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B2_occupancy_coll.PNG}} \par
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B3_occupancy_coll.PNG}} \hfill
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B4_occupancy_coll.PNG}} \par
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B5_occupancy_coll.PNG}}
+    \subfloat[B1 collimator]{\includegraphics[width=0.49\textwidth]{Figures/B1_occupancy_coll.PNG}} \hfill
+    \subfloat[B2 collimator]{\includegraphics[width=0.49\textwidth]{Figures/B2_occupancy_coll.PNG}} \par
+    \subfloat[B3 collimator]{\includegraphics[width=0.49\textwidth]{Figures/B3_occupancy_coll.PNG}} \hfill
+    \subfloat[B4 collimator]{\includegraphics[width=0.49\textwidth]{Figures/B4_occupancy_coll.PNG}} \par
+    \subfloat[B5 collimator]{\includegraphics[width=0.49\textwidth]{Figures/B5_occupancy_coll.PNG}}
     
 \end{figure}
 
@@ -133,11 +133,11 @@ In September of 2019 and November of 2019 two sets of test data were taken of th
     
     \caption{Occupancy plot for the diffuser optics from the UKLI November 2019 test run} \label{fig:occupancy_diffuser} 
     
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B1_occupancy_diff.PNG}} \hfill
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B2_occupancy_diff.PNG}} \par
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B3_occupancy_diff.PNG}} \hfill
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B4_occupancy_diff.PNG}} \par
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B5_occupancy_diff.PNG}}
+    \subfloat[B1 diffuser]{\includegraphics[width=0.49\textwidth]{Figures/B1_occupancy_diff.PNG}} \hfill
+    \subfloat[B2 diffuser]{\includegraphics[width=0.49\textwidth]{Figures/B2_occupancy_diff.PNG}} \par
+    \subfloat[B3 diffuser]{\includegraphics[width=0.49\textwidth]{Figures/B3_occupancy_diff.PNG}} \hfill
+    \subfloat[B4 diffuser]{\includegraphics[width=0.49\textwidth]{Figures/B4_occupancy_diff.PNG}} \par
+    \subfloat[B5 diffuser]{\includegraphics[width=0.49\textwidth]{Figures/B5_occupancy_diff.PNG}}
     
 \end{figure}
 
@@ -157,11 +157,11 @@ Figures \ref{fig:occupancy_coll_auto} and \ref{fig:occupancy_diff_auto} shows th
     
     \caption{Occupancy plot for the collimator optics from the UKLI Autocalib July 2020 run} \label{fig:occupancy_coll_auto} 
     
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B1_occupancy_coll_auto.PNG}} \hfill
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B2_occupancy_coll_auto.PNG}} \par
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B3_occupancy_coll_auto.PNG}} \hfill
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B4_occupancy_coll_auto.PNG}} \par
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B5_occupancy_coll_auto.PNG}}
+    \subfloat[B1 collimator]{\includegraphics[width=0.49\textwidth]{Figures/B1_occupancy_coll_auto.PNG}} \hfill
+    \subfloat[B2 collimator]{\includegraphics[width=0.49\textwidth]{Figures/B2_occupancy_coll_auto.PNG}} \par
+    \subfloat[B3 collimator]{\includegraphics[width=0.49\textwidth]{Figures/B3_occupancy_coll_auto.PNG}} \hfill
+    \subfloat[B4 collimator]{\includegraphics[width=0.49\textwidth]{Figures/B4_occupancy_coll_auto.PNG}} \par
+    \subfloat[B5 collimator]{\includegraphics[width=0.49\textwidth]{Figures/B5_occupancy_coll_auto.PNG}}
     
 \end{figure}
 
@@ -170,35 +170,19 @@ Figures \ref{fig:occupancy_coll_auto} and \ref{fig:occupancy_diff_auto} shows th
     
     \caption{Occupancy plot for the diffuser optics from the UKLI Autocalib July 2020 run} \label{fig:occupancy_diff_auto} 
     
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B1_occupancy_diff_auto.PNG}} \hfill
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B2_occupancy_diff_auto.PNG}} \par
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B3_occupancy_diff_auto.PNG}} \hfill
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B4_occupancy_diff_auto.PNG}} \par
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B5_occupancy_diff_auto.PNG}}
+    \subfloat[B1 diffuser]{\includegraphics[width=0.49\textwidth]{Figures/B1_occupancy_diff_auto.PNG}} \hfill
+    \subfloat[B2 diffuser]{\includegraphics[width=0.49\textwidth]{Figures/B2_occupancy_diff_auto.PNG}} \par
+    \subfloat[B3 diffuser]{\includegraphics[width=0.49\textwidth]{Figures/B3_occupancy_diff_auto.PNG}} \hfill
+    \subfloat[B4 diffuser]{\includegraphics[width=0.49\textwidth]{Figures/B4_occupancy_diff_auto.PNG}} \par
+    \subfloat[B5 diffuser]{\includegraphics[width=0.49\textwidth]{Figures/B5_occupancy_diff_auto.PNG}}
     
 \end{figure}
 
 
-\subsubsection{Implementation of UKLI MC in SKDETSIM}
-After making these fits to data the next aim was to use these light profiles as an input to SKDETSIM, the Super Kamiokande Detector Simulator. SKDETSIM uses GEANT3 (GEometry ANd Tracking 3) to simulate what the particles in each event would do inside the detector, and tracks the particle's trajectories and energy loss. Simulating the light injection from the UKLI system in SKDETSIM was done in a similar way to the Korean method of producing Monte Carlo: the same versions of the calibration scripts were used however, small modifications were made to them and to the version of SKDETSIM used to simulate the input photons from the system in the detector. The calibration scripts used for the Korean and UKLI systems both allow for the number of events and the number of injected photons to be set, in order to generate many Monte Carlo files with the absorption, Rayleigh and Mie scattering parameters. 
+\section{Implementation of UKLI MC in SKDETSIM}
+After making these fits to data the next aim was to use these light profiles as an input to SKDETSIM, the Super Kamiokande Detector Simulator. SKDETSIM uses GEANT3 (GEometry ANd Tracking 3) to simulate what the particles in each event would do inside the detector, and tracks the particle's trajectories and energy loss. Simulating the light injection from the UKLI system in SKDETSIM was done in a similar way to the Korean method of producing Monte Carlo: the same versions of the calibration scripts were used however, small modifications were made to them and to the version of SKDETSIM used to simulate the input photons from the system in the detector. The calibration software allows for the number of events and the number of injected photons to be set, in order to generate many Monte Carlo files with varying absorption, Rayleigh and Mie scattering parameters. 
 \newline
-The first step regarding making UKLI based Monte Carlo was changing the position of the injector locations from the positions of the Korean system (shown in Table \ref{table:korean_loc}) to that of the UKLI system (shown in Table \ref{table:UKLI_loc}), due to the fact that the spacing gap rungs between the UK system and the Korean system is +70.7 cm for the B1, B2, B3 barrel injectors and -70.7 cm for the B4 and B5 injectors. The opening angle of the injectors determined by the simulation also had to be changed because the simulation had to accomodate the fact that the injectors for the UKLI system now consisted of three different opening angles for the collimator, diffuser and bare fibre optics, instead of just the bare fibre optics used in the Korean system. The way the opening angle for the Korean was set was using the``SIGBM" parameter which stands for the sigma of the input injector beam, and was produced using a Gaussian random number generator to produce the phptpn angle. However an entirely new method of determining the opening angle of the beam was needed to include the information from the light profiles taken from the test stands at Warwick. In order to understand the SIGBM parameter further however, the relationship between opening angle in degrees and SIGBM was plotted by outputting the SIGBM value and the angle to a text file during laser generation Monte Carlo production (shown in Figure \ref{fig:sigbm_angle}.)
-
-\begin{table}[htp]
-    $$
-\begin{array}{|c|c|c|c|c|c|}  
-    \hline \hline{\text {Korean Barrel Injector }} & {\text { x (cm)}} & {\text {y (cm)}} & {\text {z (cm)}}  \tabularnewline
-    \hline \text { B1 } & 1490.73 & 768.14 & 1232.25 \\
-    \hline \text { B2 } & 1490.73 & 768.14 & 595.95 \\
-    \hline \text { B3 } & 1490.73 & 768.14 & -40.35 \\
-    \hline \text { B4 } & 1490.73 & 768.14 & -605.95 \\
-    \hline \text { B5 } & 1490.73 & 768.14 &  -1242.25 \\
-    \hline \hline 
-\end{array}
-    $$
-\caption{Barrel injector positions (x,y,z) of the Korean injectors in cm} 
-\label{table:korean_loc}
-\end{table}
+Along with making sure the position of the injectors was set to that of the UKLI injectors (shown in Table \ref{table:UKLI_loc}), the opening angle of the injectors determined by the simulation had to be set to accomodate the fact that the injectors for the UKLI system now consisted of three different opening angles for the collimator, diffuser and bare fibre optics. Previously, to set the angle of the photons in the beam, the``SIGBM" parameter was used. This stands for the sigma of the input injector beam, and was produced using a Gaussian random number generator to produce the photon angle. However an entirely new method of determining the opening angle of the beam was needed to include the information from the light profiles taken from the test stands at Warwick. In order to understand the SIGBM parameter further however, the relationship between opening angle in degrees and SIGBM was plotted by outputting the SIGBM value and the angle to a text file during laser generation Monte Carlo production (shown in Figure \ref{fig:sigbm_angle}.)
 
 \begin{table}[htp]
     $$
@@ -264,53 +248,55 @@ The width of the beam needed to be defined in order to do this however, and the 
 
 After using the charge weighted hit plots to understand the SIGBM parameter and how the opening angle is generated by SKDETSIM more thoroughly, the next step involved using the profiles from the Warwick optic test stands (shown in Figures \ref{fig:collimator_TF1} and \ref{fig:diffuser_TF1}) in the production of this opening angle in the detector simulation. This was done by treating the profiles in Figures \ref{fig:collimator_TF1} and \ref{fig:diffuser_TF1} as Probablity Distribution Functions (PDFs) and using inverse transform sampling to make the detector simulation sample at random from it. Inverse transform sampling is a method for generating random numbers from any probability distribution by using the inverse of its cumulative distribution $F^{-1}(x)$. For continuous distributions, such as the results from the collimator and diffuser optics test stands, the algorithm for inverse transform sampling is simple. Firstly, a random variable $U$ is uniformly distributed between [0,1], and secondly the relation $X = F^{-1}_{x}(U)$ would then produce a distribution $X$ following the original probability distribution function, i.e. that of the original PDFs from the optics test stands. 
 
-The first step is to produce the CDFs from the PDFs from the optic test stand profile tests. Figure \ref{fig:collimator_TF1} shows that the original fits to the collimator data did not reach 4 degrees, and as a result the PDFs produced needed to be linearly extrapolated from 3.5 degrees where the measurements cut off to reach 4 degrees. Figure \ref{fig:B1_PDF_CDF_coll} shows the PDFs and CDFs produced from the collimator data, and Figure \ref{fig:B1_PDF_CDF_diff} shows the PDFs and CDFs produced from the diffuser data. The CDFs are normalised with a max of one using min-max scaling. The PDFs and CDFs for the B2 - B5 collimators are shown in Figure \ref{appendix:PDF_CDF_coll} and the PDFs and CDFs for the B2 - B5 diffusers are shown in Figure \ref{appendix:PDF_CDF_diff}.
+The first step is to produce the CDFs from the PDFs from the optic test stand profile tests. Figure \ref{fig:collimator_TF1} shows that the original fits to the collimator data did not reach 4 degrees, and as a result the PDFs produced needed to be linearly extrapolated from 3.5 degrees where the measurements cut off to reach 4 degrees. Figure \ref{fig:B1_PDF_CDF_coll} shows the PDFs and CDFs produced from the collimator data, and Figure \ref{fig:B1_PDF_CDF_diff} shows the PDFs and CDFs produced from the diffuser data. The CDFs are normalised with a max of one using min-max scaling. The PDFs and CDFs for the B2 - B5 collimators are shown in Figure \ref{fig:PDF_CDF_coll} and the PDFs and CDFs for the B2 - B5 diffusers are shown in Figure \ref{fig:PDF_CDF_diff}.
 
 
 \begin{figure}
     \centering
-    \label{fig:B1_PDF_CDF_coll}
-    \begin{minipage}{0.45\textwidth}
+    
+    \begin{minipage}{0.5\textwidth}
         \centering
-        \includegraphics[width=0.9\textwidth]{Figures/B1_coll_pdf.png} % first figure itself
+        \includegraphics[width=\textwidth]{Figures/B1_coll_pdf.png} % first figure itself
         \caption{PDF for the B1 collimator}
     \end{minipage}\hfill
-    \begin{minipage}{0.45\textwidth}
+    \begin{minipage}{0.5\textwidth}
         \centering
-        \includegraphics[width=0.9\textwidth]{Figures/B1_coll_cdf.png} % second figure itself
+        \includegraphics[width=\textwidth]{Figures/B1_coll_cdf.png} % second figure itself
         \caption{CDF for the B1 collimator }
+        \label{fig:B1_PDF_CDF_coll}
     \end{minipage}
 \end{figure}
 
 \begin{figure}
     \centering
-    \label{fig:B1_PDF_CDF_diff}
-    \begin{minipage}{0.45\textwidth}
+    
+    \begin{minipage}{0.5\textwidth}
         \centering
-        \includegraphics[width=0.9\textwidth]{Figures/B1_diff_pdf.png} % first figure itself
+        \includegraphics[width=\textwidth]{Figures/B1_diff_pdf.png} % first figure itself
         \caption{PDF for the B1 diffuser}
     \end{minipage}\hfill
-    \begin{minipage}{0.45\textwidth}
+    \begin{minipage}{0.5\textwidth}
         \centering
-        \includegraphics[width=0.9\textwidth]{Figures/B1_diff_cdf.PNG} % second figure itself
+        \includegraphics[width=\textwidth]{Figures/B1_diff_cdf.PNG} % second figure itself
         \caption{CDF for the B1 diffuser}
+        \label{fig:B1_PDF_CDF_diff}
     \end{minipage}
 \end{figure}
 
 
-After producing the normalised CDFs, the inverse of these CDFs are calculated - Figures \ref{fig:B1_PDF_CDF_inv_coll} shows the comparison of the normalised CDF data for the B1 collimator (top sublot, shown in blue) and the polynomial fit to the CDF for the B1 collimator (top subplot, shown in red), and the inverse CDF function (bottom subplot shown in green) and the polynomial fit to this inverse CDF function (bottom subplot shown in purple). Figures \ref{fig:B1_PDF_CDF_inv_diff} shows the same plot for the B1 diffuser. 
+After producing the normalised CDFs, the inverse of these CDFs are calculated - Figure \ref{fig:B1_PDF_CDF_inv_coll} shows the comparison of the normalised CDF data for the B1 collimator (top sublot, shown in blue) and the polynomial fit to the CDF for the B1 collimator (top subplot, shown in red), and the inverse CDF function (bottom subplot shown in green) and the polynomial fit to this inverse CDF function (bottom subplot shown in purple). Figure \ref{fig:B1_PDF_CDF_inv_diff} shows the same plot for the B1 diffuser. The corresponding plots for the B2 - B5 collimators are shown in Figure \label{fig:PDF_CDF_inv_diff} and for the B2 - B5 diffusers they are shown in Figure \ref{fig:PDF_CDF_inv_diff}.
 
 \begin{figure}
     \centering
-    \begin{minipage}{0.45\textwidth}
+    \begin{minipage}{0.5\textwidth}
         \centering
-        \includegraphics[width=0.9\textwidth]{Figures/B1_inv_coll_cdf.png} % first figure itself
+        \includegraphics[width=\textwidth]{Figures/B1_inv_coll_cdf.png} % first figure itself
         \caption{Inverse CDF for the B1 collimator}
         \label{fig:B1_PDF_CDF_inv_coll}
     \end{minipage}\hfill
-    \begin{minipage}{0.45\textwidth}
+    \begin{minipage}{0.5\textwidth}
         \centering
-        \includegraphics[width=0.9\textwidth]{Figures/B1_inv_diff_cdf.png} % second figure itself
+        \includegraphics[width=\textwidth]{Figures/B1_inv_diff_cdf.png} % second figure itself
         \caption{Inverse CDF for the B1 diffuser}
         \label{fig:B1_PDF_CDF_inv_diff}
     \end{minipage}
@@ -319,72 +305,161 @@ After producing the normalised CDFs, the inverse of these CDFs are calculated - 
 
 After producing the fits to the inverse cumulative distribution functions, these funtions were inputted into the detector simulation, SKDETSIM. Removing the SIGBM parameter from the calibration scripts meant there needed to be a new way with which to generate the angle at which the photons were produced in the simulation, and this is where the inverse transform sampling occurs for the relevant fit for the selected injector and optic type. Using the same event display used to produce the occupancy plots for the autocalib data and the test run data, occupancy plots of the Monte Carlo were produced. These are shown for the B1 - B5 collimators in Figure \ref{fig:ukli_mc_coll}, and for the B1 - B5 diffusers in Figure \ref{fig:ukli_mc_diff}. These MC were produced with the abs, ray and mie parameters in the calibration scripts set to 1.0, 1.0, and 1.0 (i.e. the current detector simulation values) and the top-bottom asymmetry parameter set to 7.598, which is the most recently tuned value of this parameter. Because the original profiles from the test stands were taken in air, adjustments were made so that the refractive index of the water in the detector was taken into account when implementing the inverse CDFs into the detector simulation. 
 
-\begin{figure}[!htbp]
+\begin{figure}[htp]
     \centering
+    \caption{Monte Carlo simulations of the B1 - B5 collimator injectors}
+    \label{fig:ukli_mc_coll}
+    \begin{subfigure}{0.49\columnwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{Figures/ukli_mc_B1.PNG}
+    \caption{B1 collimator UKLI MC}
+    \label{fig:time1}
+    \end{subfigure}\hfill
+    \begin{subfigure}{0.49\columnwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{Figures/ukli_mc_B2.PNG}
+    \caption{B2 collimator UKLI MC}
+    \label{fig:time2}
+    \end{subfigure}
     
-    \caption{Monte Carlo simulations of the B1 -B5 collimator injectors}\label{fig:ukli_mc_coll}
+    \medskip
     
-    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ukli_mc_B1.PNG}}\hfill
-    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ukli_mc_B2.PNG}}\hfill
-    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ukli_mc_B3.PNG}}
+    \begin{subfigure}{0.49\columnwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{Figures/ukli_mc_B3.PNG}
+    \caption{B3 collimator UKLI MC}
+    \label{fig:time3}
+    \end{subfigure}\hfill
+    \begin{subfigure}{0.49\columnwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{Figures/ukli_mc_B4.PNG}
+    \caption{B4 collimator UKLI MC}
+    \label{fig:time4}
+    \end{subfigure}
     
-    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ukli_mc_B4.PNG}}%
-    \hspace*{0.005\textwidth}%
-    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ukli_mc_B5.PNG}}
+    \medskip
     
-\end{figure}
+    \begin{subfigure}{0.49\columnwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Figures/ukli_mc_B5.PNG}
+    \caption{B5 collimator UKLI MC}
+    
+    \end{subfigure}
 
-\begin{figure}[!htbp]
-    \centering
+    \end{figure}
+
+    \begin{figure}[htp]
+        \centering
+        \caption{Monte Carlo simulations of the B1 - B5 diffuser injectors}
+        \label{fig:ukli_mc_diff}
+        \begin{subfigure}{0.49\columnwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/ukli_diff_mc_B1.PNG}
+        \caption{B1 diffuser UKLI MC}
+        \label{fig:time1}
+        \end{subfigure}\hfill
+        \begin{subfigure}{0.49\columnwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/ukli_diff_mc_B2.PNG}
+        \caption{B2 diffuser UKLI MC}
+        \label{fig:time2}
+        \end{subfigure}
+        
+        \medskip
+        
+        \begin{subfigure}{0.49\columnwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/ukli_diff_mc_B3.PNG}
+        \caption{B3 diffuser UKLI MC}
+        \label{fig:time3}
+        \end{subfigure}\hfill
+        \begin{subfigure}{0.49\columnwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/ukli_diff_mc_B4.PNG}
+        \caption{B4 diffuser UKLI MC}
+        \label{fig:time4}
+        \end{subfigure}
+        
+        \medskip
+        
+        \begin{subfigure}{0.49\columnwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/ukli_diff_mc_B5.PNG}
+        \caption{B5 diffuser UKLI MC}
+        
+        \end{subfigure}
     
-    \caption{Monte Carlo simulations of the B1 -B5 diffuser injectors}\label{fig:ukli_mc_diff}
+        \end{figure}
     
-    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ukli_diff_mc_B1.PNG}}\hfill
-    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ukli_diff_mc_B2.PNG}}\hfill
-    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ukli_diff_mc_B3.PNG}}
-    
-    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ukli_diff_mc_B4.PNG}}%
-    \hspace*{0.005\textwidth}%
-    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ukli_diff_mc_B5.PNG}}
-    
-\end{figure}
+
 
 In order to validate the diffuser MC inverse cumulative distribution function output, a uniform distribution was run through the equation for the diffuser inverse CDF fits and the original PDF fit for each diffuser was used to fit the output points from the distribution, showing that inverse transform sampling was done correctly for the PDFs. These are shown for each diffuser in Figure \ref{fig:inv_cdf_check}. 
 
-\begin{figure}[!htbp]
+
+
+\begin{figure}[htp]
     \centering
+    \caption{Inverse CDF checks of the B1 - B5 diffusers}
+    \label{fig:inv_cdf_check}
+    \begin{subfigure}{0.49\columnwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Figures/inv_cdf_check_diff_B1.PNG}
+    \caption{B1 diffuser inverse CDF check}
+    \label{fig:time1}
+    \end{subfigure}\hfill
+    \begin{subfigure}{0.49\columnwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Figures/inv_cdf_check_diff_B2.PNG}
+    \caption{B2 diffuser inverse CDF check}
+    \label{fig:time2}
+    \end{subfigure}
     
-    \caption{Plots of the result of running randomly sampled numbers from a uniform distibution through the inverse CDFs (in black) for each diffuser, along with the original PDF fits (in red) for the B1 - B5 diffusers.}\label{fig:inv_cdf_check}
+    \medskip
     
-    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/inv_cdf_check_diff_B1.PNG}}\hfill
-    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/inv_cdf_check_diff_B2.PNG}}\hfill
-    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/inv_cdf_check_diff_B3.PNG}}
+    \begin{subfigure}{0.49\columnwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Figures/inv_cdf_check_diff_B3.PNG}
+    \caption{B3 diffuser inverse CDF check}
+    \label{fig:time3}
+    \end{subfigure}\hfill
+    \begin{subfigure}{0.49\columnwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Figures/inv_cdf_check_diff_B4.PNG}
+    \caption{B4 diffuser inverse CDF check}
+    \label{fig:time4}
+    \end{subfigure}
     
-    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/inv_cdf_check_diff_B4.PNG}}%
-    \hspace*{0.005\textwidth}%
-    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/inv_cdf_check_diff_B5.PNG}}
+    \medskip
     
-\end{figure}
+    \begin{subfigure}{0.49\columnwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Figures/inv_cdf_check_diff_B5.PNG}
+    \caption{B5 diffuser inverse CDF check}
+    
+    \end{subfigure}
+
+    \end{figure}
+
 
 After producing the UKLI MC, the next step was to use them to measure the absorption and scattering parameters in a similar way to the Korean system. As mentioned earlier, this was done by producing time of flight corrected hit timing plots for UKLI MC with multiple different values of absorption, and Rayleigh and Mie scattering parameters and comparing them to the TOF corrected plots for UKLI data. Figures \ref{fig:TOF_abs}, \ref{fig:TOF_ray} and \ref{fig:TOF_mie} show the time-of-flight corrected plots for the UKLI MC B1 collimator, produced with values of the ``abs'' and ``ray'' calibration script parameter between 0.7 and 1.3 to show the affect that varying these parameters have on the time of flight corrected hits. The y-axis shows the number of hits normalised by the total charge in the detector.
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.9\textwidth]{Figures/TOF_abs.PNG}
+    \includegraphics[width=\textwidth]{Figures/TOF_abs.PNG}
     \caption{Corrected TOF plot with varied absorption, while rayleigh and mie scattering is set to 1.0}
     \label{fig:TOF_abs}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.9\textwidth]{Figures/TOF_ray.PNG}
+    \includegraphics[width=\textwidth]{Figures/TOF_ray.PNG}
     \caption{Corrected TOF plot with varied Rayleigh scattering, while absorption and Mie scattering is set to 1.0}
     \label{fig:TOF_ray}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.9\textwidth]{Figures/TOF_mie.PNG}
+    \includegraphics[width=\textwidth]{Figures/TOF_mie.PNG}
     \caption{Corrected TOF plot with varied Mie scattering, while absorption and Rayleigh scattering is set to 1.0}
     \label{fig:TOF_mie}
 \end{figure}
