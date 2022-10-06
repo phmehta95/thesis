@@ -458,12 +458,12 @@ Prior to defining the primary and secondary selection criteria for each neutron 
 
 \begin{figure}
     \centering
-     \begin{subfigure}[b]{0.5\linewidth}
+     \begin{subfigure}[b]{0.45\linewidth}
       \includegraphics[width=\linewidth]{Figures/NTrueCaptures.PNG}
       \caption{Number of events (y-axis) plotted against number of true neutron captures}
       \label{fig:NTrueCaptures} 
      \end{subfigure}
-     \begin{subfigure}[b]{0.5\linewidth}
+     \begin{subfigure}[b]{0.45\linewidth}
        \includegraphics[width=\linewidth]{Figures/TrueCaptureTime.PNG}
         \caption{Number of events (y-axis) plotted against time of all neutron captures in microseconds} 
      \label{fig:TrueCaptureTime}
@@ -605,7 +605,7 @@ Before the neutron candidate is passed to the secondary selection, other cuts ar
     \label{table:legacy_new_selection_criteria}
     \end{table}
 
-
+The primary selection criteria used with the new NTag are different to accomodate for the fact that a gamma cascade from neutron capture on gadolinium leads to a higher number of hits in the detector. These include increasing the maximum number of hits in the sliding window to 400, and increasing the width of the sliding window from 10 nsec (used with the legacy code) to 14 nsec.  
 
 
 
