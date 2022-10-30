@@ -1611,11 +1611,6 @@ INPUT ./Figures/diffuser_test_stand.PNG
 INPUT Figures/diffuser_test_stand.PNG
 INPUT ./Figures/diffuser_test_stand.PNG
 INPUT ./Figures/diffuser_test_stand.PNG
-INPUT ./Figures/coll_test_stand.PNG
-INPUT ./Figures/coll_test_stand.PNG
-INPUT Figures/coll_test_stand.PNG
-INPUT ./Figures/coll_test_stand.PNG
-INPUT ./Figures/coll_test_stand.PNG
 INPUT ./Figures/B1_diffuser_fit.PNG
 INPUT ./Figures/B1_diffuser_fit.PNG
 INPUT Figures/B1_diffuser_fit.PNG
@@ -1641,6 +1636,11 @@ INPUT ./Figures/B5_diffuser_fit.PNG
 INPUT Figures/B5_diffuser_fit.PNG
 INPUT ./Figures/B5_diffuser_fit.PNG
 INPUT ./Figures/B5_diffuser_fit.PNG
+INPUT ./Figures/coll_test_stand.PNG
+INPUT ./Figures/coll_test_stand.PNG
+INPUT Figures/coll_test_stand.PNG
+INPUT ./Figures/coll_test_stand.PNG
+INPUT ./Figures/coll_test_stand.PNG
 INPUT ./Figures/B1_collimator_fit.PNG
 INPUT ./Figures/B1_collimator_fit.PNG
 INPUT Figures/B1_collimator_fit.PNG

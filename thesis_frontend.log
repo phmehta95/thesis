@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.27)  28 OCT 2022 16:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.27)  30 OCT 2022 16:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -702,7 +702,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip74
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 112.
+Package hyperref Info: Option `colorlinks' set `true' on input line 111.
  (./thesis_frontend.aux (./title.aux) (./Chapters/chapter_introduction.aux) (./Chapters/chapter_t2k_detector.aux) (./Chapters/chapter_superk_detector.aux) (./Chapters/chapter_superk-calib.aux) (./Chapters/chapter_ukli-system.aux
 
 LaTeX Warning: Label `fig:time1' multiply defined.
@@ -759,24 +759,24 @@ LaTeX Warning: Label `fig:PDF_CDF_inv_diff' multiply defined.
 ))
 \openout1 = `thesis_frontend.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
  (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count364
@@ -840,15 +840,15 @@ File: fc-english.def 2016/01/12
 )
 \symgns@font=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 124.
-Package gensymb Info: Math companion symbols declared on input line 124.
-LaTeX Info: Redefining \degree on input line 124.
-LaTeX Info: Redefining \celsius on input line 124.
-Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 124.
-LaTeX Info: Redefining \ohm on input line 124.
-Package gensymb Info: Using \textohm for \ohm on input line 124.
-Package gensymb Info: Using \textmu for \micro on input line 124.
-Package hyperref Info: Link coloring ON on input line 124.
+(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 123.
+Package gensymb Info: Math companion symbols declared on input line 123.
+LaTeX Info: Redefining \degree on input line 123.
+LaTeX Info: Redefining \celsius on input line 123.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 123.
+LaTeX Info: Redefining \ohm on input line 123.
+Package gensymb Info: Using \textohm for \ohm on input line 123.
+Package gensymb Info: Using \textmu for \micro on input line 123.
+Package hyperref Info: Link coloring ON on input line 123.
  (c:/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (c:/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
@@ -858,9 +858,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count370
 )
-LaTeX Info: Redefining \ref on input line 124.
-LaTeX Info: Redefining \pageref on input line 124.
-LaTeX Info: Redefining \nameref on input line 124.
+LaTeX Info: Redefining \ref on input line 123.
+LaTeX Info: Redefining \pageref on input line 123.
+LaTeX Info: Redefining \nameref on input line 123.
  (./thesis_frontend.out) (./thesis_frontend.out)
 \@outlinefile=\write4
 \openout4 = `thesis_frontend.out'.
@@ -869,11 +869,11 @@ LaTeX Info: Redefining \nameref on input line 124.
 
 
 No file title.tex.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 150.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 149.
 (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 150.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 149.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -1304,7 +1304,7 @@ Package pdftex.def Info: Figures/temperature_grad.png  used on input line 228.
  (./Chapters/chapter_ukli-system.tex
 Chapter 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--12
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
  []
 
@@ -1317,402 +1317,403 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--12
 <Figures/collimator_schematic.png, id=1081, 455.301pt x 122.25674pt>
 File: Figures/collimator_schematic.png Graphic file (type png)
 <use Figures/collimator_schematic.png>
-Package pdftex.def Info: Figures/collimator_schematic.png  used on input line 25.
+Package pdftex.def Info: Figures/collimator_schematic.png  used on input line 21.
 (pdftex.def)             Requested size: 343.48299pt x 92.23518pt.
- [77 <./Figures/collimator_schematic.PNG>]
-<Figures/diffuser_photo.png, id=1091, 568.524pt x 178.266pt>
+<Figures/diffuser_photo.png, id=1083, 568.524pt x 178.266pt>
 File: Figures/diffuser_photo.png Graphic file (type png)
 <use Figures/diffuser_photo.png>
-Package pdftex.def Info: Figures/diffuser_photo.png  used on input line 40.
+Package pdftex.def Info: Figures/diffuser_photo.png  used on input line 34.
 (pdftex.def)             Requested size: 300.54515pt x 94.24115pt.
- [78 <./Figures/diffuser_photo.PNG>]
-<Figures/optical_plate.jpg, id=1102, 4047.12pt x 3035.34pt>
+ [77 <./Figures/collimator_schematic.PNG>]
+<Figures/optical_plate.jpg, id=1094, 3035.34pt x 2276.505pt>
 File: Figures/optical_plate.jpg Graphic file (type jpg)
 <use Figures/optical_plate.jpg>
-Package pdftex.def Info: Figures/optical_plate.jpg  used on input line 51.
-(pdftex.def)             Requested size: 300.54515pt x 225.37122pt.
-<Figures/diffuser_test_stand.png, id=1104, 460.119pt x 234.27525pt>
+Package pdftex.def Info: Figures/optical_plate.jpg  used on input line 45.
+(pdftex.def)             Requested size: 300.54515pt x 225.40596pt.
+<Figures/diffuser_test_stand.png, id=1096, 460.119pt x 234.27525pt>
 File: Figures/diffuser_test_stand.png Graphic file (type png)
 <use Figures/diffuser_test_stand.png>
-Package pdftex.def Info: Figures/diffuser_test_stand.png  used on input line 63.
+Package pdftex.def Info: Figures/diffuser_test_stand.png  used on input line 58.
 (pdftex.def)             Requested size: 300.54515pt x 153.03137pt.
-<Figures/coll_test_stand.png, id=1106, 389.0535pt x 240.9pt>
-File: Figures/coll_test_stand.png Graphic file (type png)
-<use Figures/coll_test_stand.png>
-Package pdftex.def Info: Figures/coll_test_stand.png  used on input line 75.
-(pdftex.def)             Requested size: 300.54515pt x 186.10374pt.
- [79 <./Figures/optical_plate.jpg>]
-<Figures/B1_diffuser_fit.PNG, id=1116, 352.31625pt x 231.86626pt>
+<Figures/B1_diffuser_fit.PNG, id=1098, 352.31625pt x 231.86626pt>
 File: Figures/B1_diffuser_fit.PNG Graphic file (type png)
 <use Figures/B1_diffuser_fit.PNG>
-Package pdftex.def Info: Figures/B1_diffuser_fit.PNG  used on input line 87.
+Package pdftex.def Info: Figures/B1_diffuser_fit.PNG  used on input line 70.
 (pdftex.def)             Requested size: 141.68697pt x 93.24724pt.
-<Figures/B2_diffuser_fit.PNG, id=1117, 348.70274pt x 229.45724pt>
+<Figures/B2_diffuser_fit.PNG, id=1099, 348.70274pt x 229.45724pt>
 File: Figures/B2_diffuser_fit.PNG Graphic file (type png)
 <use Figures/B2_diffuser_fit.PNG>
-Package pdftex.def Info: Figures/B2_diffuser_fit.PNG  used on input line 88.
+Package pdftex.def Info: Figures/B2_diffuser_fit.PNG  used on input line 71.
 (pdftex.def)             Requested size: 141.68697pt x 93.23776pt.
-<Figures/B3_diffuser_fit.PNG, id=1118, 348.1005pt x 229.45724pt>
+<Figures/B3_diffuser_fit.PNG, id=1100, 348.1005pt x 229.45724pt>
 File: Figures/B3_diffuser_fit.PNG Graphic file (type png)
 <use Figures/B3_diffuser_fit.PNG>
-Package pdftex.def Info: Figures/B3_diffuser_fit.PNG  used on input line 89.
+Package pdftex.def Info: Figures/B3_diffuser_fit.PNG  used on input line 72.
 (pdftex.def)             Requested size: 141.68697pt x 93.39532pt.
-<Figures/B4_diffuser_fit.PNG, id=1119, 345.08925pt x 230.0595pt>
+<Figures/B4_diffuser_fit.PNG, id=1101, 345.08925pt x 230.0595pt>
 File: Figures/B4_diffuser_fit.PNG Graphic file (type png)
 <use Figures/B4_diffuser_fit.PNG>
-Package pdftex.def Info: Figures/B4_diffuser_fit.PNG  used on input line 91.
+Package pdftex.def Info: Figures/B4_diffuser_fit.PNG  used on input line 74.
 (pdftex.def)             Requested size: 141.68697pt x 94.45839pt.
-<Figures/B5_diffuser_fit.PNG, id=1120, 352.31625pt x 228.25275pt>
+<Figures/B5_diffuser_fit.PNG, id=1102, 352.31625pt x 228.25275pt>
 File: Figures/B5_diffuser_fit.PNG Graphic file (type png)
 <use Figures/B5_diffuser_fit.PNG>
-Package pdftex.def Info: Figures/B5_diffuser_fit.PNG  used on input line 93.
+Package pdftex.def Info: Figures/B5_diffuser_fit.PNG  used on input line 76.
 (pdftex.def)             Requested size: 141.68697pt x 91.79404pt.
-<Figures/B1_collimator_fit.PNG, id=1122, 805.20825pt x 441.44925pt>
+<Figures/coll_test_stand.png, id=1104, 389.0535pt x 240.9pt>
+File: Figures/coll_test_stand.png Graphic file (type png)
+<use Figures/coll_test_stand.png>
+Package pdftex.def Info: Figures/coll_test_stand.png  used on input line 84.
+(pdftex.def)             Requested size: 300.54515pt x 186.10374pt.
+ [78 <./Figures/diffuser_photo.PNG>] [79 <./Figures/optical_plate.jpg> <./Figures/diffuser_test_stand.PNG>] [80 <./Figures/B1_diffuser_fit.PNG> <./Figures/B2_diffuser_fit.PNG> <./Figures/B3_diffuser_fit.PNG> <./Figures/B4_diffuser_fit.PNG> <./Figures/B5_diffuser_fit.PNG> <./Figures/coll_test_stand.PNG>]
+<Figures/B1_collimator_fit.PNG, id=1133, 805.20825pt x 441.44925pt>
 File: Figures/B1_collimator_fit.PNG Graphic file (type png)
 <use Figures/B1_collimator_fit.PNG>
-Package pdftex.def Info: Figures/B1_collimator_fit.PNG  used on input line 104.
+Package pdftex.def Info: Figures/B1_collimator_fit.PNG  used on input line 96.
 (pdftex.def)             Requested size: 141.68697pt x 77.6724pt.
-<Figures/B2_collimator_fit.PNG, id=1123, 807.015pt x 449.2785pt>
+<Figures/B2_collimator_fit.PNG, id=1134, 807.015pt x 449.2785pt>
 File: Figures/B2_collimator_fit.PNG Graphic file (type png)
 <use Figures/B2_collimator_fit.PNG>
-Package pdftex.def Info: Figures/B2_collimator_fit.PNG  used on input line 105.
+Package pdftex.def Info: Figures/B2_collimator_fit.PNG  used on input line 97.
 (pdftex.def)             Requested size: 141.68697pt x 78.87856pt.
-<Figures/B3_collimator_fit.PNG, id=1124, 814.242pt x 440.847pt>
+<Figures/B3_collimator_fit.PNG, id=1135, 814.242pt x 440.847pt>
 File: Figures/B3_collimator_fit.PNG Graphic file (type png)
 <use Figures/B3_collimator_fit.PNG>
-Package pdftex.def Info: Figures/B3_collimator_fit.PNG  used on input line 106.
+Package pdftex.def Info: Figures/B3_collimator_fit.PNG  used on input line 98.
 (pdftex.def)             Requested size: 141.68697pt x 76.71213pt.
-<Figures/B4_collimator_fit.PNG, id=1125, 801.59476pt x 449.2785pt>
+<Figures/B4_collimator_fit.PNG, id=1136, 801.59476pt x 449.2785pt>
 File: Figures/B4_collimator_fit.PNG Graphic file (type png)
 <use Figures/B4_collimator_fit.PNG>
-Package pdftex.def Info: Figures/B4_collimator_fit.PNG  used on input line 108.
+Package pdftex.def Info: Figures/B4_collimator_fit.PNG  used on input line 100.
 (pdftex.def)             Requested size: 141.68697pt x 79.41328pt.
-<Figures/B5_collimator_fit.PNG, id=1126, 802.197pt x 446.8695pt>
+<Figures/B5_collimator_fit.PNG, id=1137, 802.197pt x 446.8695pt>
 File: Figures/B5_collimator_fit.PNG Graphic file (type png)
 <use Figures/B5_collimator_fit.PNG>
-Package pdftex.def Info: Figures/B5_collimator_fit.PNG  used on input line 110.
+Package pdftex.def Info: Figures/B5_collimator_fit.PNG  used on input line 102.
 (pdftex.def)             Requested size: 141.68697pt x 78.9261pt.
- [80 <./Figures/diffuser_test_stand.PNG>] [81 <./Figures/coll_test_stand.PNG> <./Figures/B1_diffuser_fit.PNG> <./Figures/B2_diffuser_fit.PNG> <./Figures/B3_diffuser_fit.PNG> <./Figures/B4_diffuser_fit.PNG> <./Figures/B5_diffuser_fit.PNG>]
-<Figures/B1_occupancy_coll.PNG, id=1148, 790.75426pt x 759.43726pt>
+<Figures/B1_occupancy_coll.PNG, id=1140, 790.75426pt x 759.43726pt>
 File: Figures/B1_occupancy_coll.PNG Graphic file (type png)
 <use Figures/B1_occupancy_coll.PNG>
-Package pdftex.def Info: Figures/B1_occupancy_coll.PNG  used on input line 123.
+Package pdftex.def Info: Figures/B1_occupancy_coll.PNG  used on input line 119.
 (pdftex.def)             Requested size: 210.38487pt x 202.04948pt.
-<Figures/B2_occupancy_coll.PNG, id=1149, 782.32275pt x 747.9945pt>
+<Figures/B2_occupancy_coll.PNG, id=1141, 782.32275pt x 747.9945pt>
 File: Figures/B2_occupancy_coll.PNG Graphic file (type png)
 <use Figures/B2_occupancy_coll.PNG>
-Package pdftex.def Info: Figures/B2_occupancy_coll.PNG  used on input line 124.
+Package pdftex.def Info: Figures/B2_occupancy_coll.PNG  used on input line 120.
 (pdftex.def)             Requested size: 210.38487pt x 201.15085pt.
-<Figures/B3_occupancy_coll.PNG, id=1150, 782.32275pt x 754.61925pt>
+<Figures/B3_occupancy_coll.PNG, id=1142, 782.32275pt x 754.61925pt>
 File: Figures/B3_occupancy_coll.PNG Graphic file (type png)
 <use Figures/B3_occupancy_coll.PNG>
-Package pdftex.def Info: Figures/B3_occupancy_coll.PNG  used on input line 125.
+Package pdftex.def Info: Figures/B3_occupancy_coll.PNG  used on input line 121.
 (pdftex.def)             Requested size: 210.38487pt x 202.93239pt.
-<Figures/B4_occupancy_coll.PNG, id=1151, 781.11826pt x 746.79pt>
+<Figures/B4_occupancy_coll.PNG, id=1143, 781.11826pt x 746.79pt>
 File: Figures/B4_occupancy_coll.PNG Graphic file (type png)
 <use Figures/B4_occupancy_coll.PNG>
-Package pdftex.def Info: Figures/B4_occupancy_coll.PNG  used on input line 126.
+Package pdftex.def Info: Figures/B4_occupancy_coll.PNG  used on input line 122.
 (pdftex.def)             Requested size: 210.38487pt x 201.1346pt.
-<Figures/B5_occupancy_coll.PNG, id=1152, 767.86874pt x 755.2215pt>
+<Figures/B5_occupancy_coll.PNG, id=1144, 767.86874pt x 755.2215pt>
 File: Figures/B5_occupancy_coll.PNG Graphic file (type png)
 <use Figures/B5_occupancy_coll.PNG>
-Package pdftex.def Info: Figures/B5_occupancy_coll.PNG  used on input line 127.
+Package pdftex.def Info: Figures/B5_occupancy_coll.PNG  used on input line 123.
 (pdftex.def)             Requested size: 210.38487pt x 206.92023pt.
 
 
-LaTeX Warning: Float too large for page by 130.42554pt on input line 129.
+LaTeX Warning: Float too large for page by 130.42554pt on input line 125.
 
-<Figures/B1_occupancy_diff.PNG, id=1153, 793.16325pt x 761.84625pt>
+<Figures/B1_occupancy_diff.PNG, id=1145, 793.16325pt x 761.84625pt>
 File: Figures/B1_occupancy_diff.PNG Graphic file (type png)
 <use Figures/B1_occupancy_diff.PNG>
-Package pdftex.def Info: Figures/B1_occupancy_diff.PNG  used on input line 136.
+Package pdftex.def Info: Figures/B1_occupancy_diff.PNG  used on input line 132.
 (pdftex.def)             Requested size: 210.38487pt x 202.0743pt.
-<Figures/B2_occupancy_diff.PNG, id=1154, 776.9025pt x 755.2215pt>
+<Figures/B2_occupancy_diff.PNG, id=1146, 776.9025pt x 755.2215pt>
 File: Figures/B2_occupancy_diff.PNG Graphic file (type png)
 <use Figures/B2_occupancy_diff.PNG>
-Package pdftex.def Info: Figures/B2_occupancy_diff.PNG  used on input line 137.
+Package pdftex.def Info: Figures/B2_occupancy_diff.PNG  used on input line 133.
 (pdftex.def)             Requested size: 210.38487pt x 204.51176pt.
-<Figures/B3_occupancy_diff.PNG, id=1155, 781.11826pt x 764.25525pt>
+<Figures/B3_occupancy_diff.PNG, id=1147, 781.11826pt x 764.25525pt>
 File: Figures/B3_occupancy_diff.PNG Graphic file (type png)
 <use Figures/B3_occupancy_diff.PNG>
-Package pdftex.def Info: Figures/B3_occupancy_diff.PNG  used on input line 138.
+Package pdftex.def Info: Figures/B3_occupancy_diff.PNG  used on input line 134.
 (pdftex.def)             Requested size: 210.38487pt x 205.83856pt.
-<Figures/B4_occupancy_diff.PNG, id=1156, 795.57225pt x 752.8125pt>
+<Figures/B4_occupancy_diff.PNG, id=1148, 795.57225pt x 752.8125pt>
 File: Figures/B4_occupancy_diff.PNG Graphic file (type png)
 <use Figures/B4_occupancy_diff.PNG>
-Package pdftex.def Info: Figures/B4_occupancy_diff.PNG  used on input line 139.
+Package pdftex.def Info: Figures/B4_occupancy_diff.PNG  used on input line 135.
 (pdftex.def)             Requested size: 210.38487pt x 199.06934pt.
-<Figures/B5_occupancy_diff.PNG, id=1157, 782.32275pt x 755.82375pt>
+<Figures/B5_occupancy_diff.PNG, id=1149, 782.32275pt x 755.82375pt>
 File: Figures/B5_occupancy_diff.PNG Graphic file (type png)
 <use Figures/B5_occupancy_diff.PNG>
-Package pdftex.def Info: Figures/B5_occupancy_diff.PNG  used on input line 140.
+Package pdftex.def Info: Figures/B5_occupancy_diff.PNG  used on input line 136.
 (pdftex.def)             Requested size: 210.38487pt x 203.2563pt.
 
-LaTeX Warning: Float too large for page by 132.13007pt on input line 142.
+LaTeX Warning: Float too large for page by 132.13007pt on input line 138.
 
-<Figures/autocalib.png, id=1159, 701.019pt x 215.6055pt>
+[81 <./Figures/B1_collimator_fit.PNG> <./Figures/B2_collimator_fit.PNG> <./Figures/B3_collimator_fit.PNG> <./Figures/B4_collimator_fit.PNG> <./Figures/B5_collimator_fit.PNG>] [82 <./Figures/B1_occupancy_coll.PNG> <./Figures/B2_occupancy_coll.PNG> <./Figures/B3_occupancy_coll.PNG> <./Figures/B4_occupancy_coll.PNG> <./Figures/B5_occupancy_coll.PNG>] [83 <./Figures/B1_occupancy_diff.PNG> <./Figures/B2_occupancy_diff.PNG> <./Figures/B3_occupancy_diff.PNG> <./Figures/B4_occupancy_diff.PNG> <./Figures/B5_occupancy_diff.PNG>]
+<Figures/autocalib.png, id=1180, 701.019pt x 215.6055pt>
 File: Figures/autocalib.png Graphic file (type png)
 <use Figures/autocalib.png>
-Package pdftex.def Info: Figures/autocalib.png  used on input line 148.
+Package pdftex.def Info: Figures/autocalib.png  used on input line 144.
 (pdftex.def)             Requested size: 343.48299pt x 105.64104pt.
-<Figures/B1_occupancy_coll_auto.PNG, id=1162, 446.8695pt x 423.38174pt>
+<Figures/B1_occupancy_coll_auto.PNG, id=1183, 446.8695pt x 423.38174pt>
 File: Figures/B1_occupancy_coll_auto.PNG Graphic file (type png)
 <use Figures/B1_occupancy_coll_auto.PNG>
-Package pdftex.def Info: Figures/B1_occupancy_coll_auto.PNG  used on input line 160.
+Package pdftex.def Info: Figures/B1_occupancy_coll_auto.PNG  used on input line 156.
 (pdftex.def)             Requested size: 210.38487pt x 199.32538pt.
-<Figures/B2_occupancy_coll_auto.PNG, id=1163, 455.301pt x 423.984pt>
+<Figures/B2_occupancy_coll_auto.PNG, id=1184, 455.301pt x 423.984pt>
 File: Figures/B2_occupancy_coll_auto.PNG Graphic file (type png)
 <use Figures/B2_occupancy_coll_auto.PNG>
-Package pdftex.def Info: Figures/B2_occupancy_coll_auto.PNG  used on input line 161.
+Package pdftex.def Info: Figures/B2_occupancy_coll_auto.PNG  used on input line 157.
 (pdftex.def)             Requested size: 210.38487pt x 195.91484pt.
-<Figures/B3_occupancy_coll_auto.PNG, id=1164, 422.17725pt x 399.29175pt>
+<Figures/B3_occupancy_coll_auto.PNG, id=1185, 422.17725pt x 399.29175pt>
 File: Figures/B3_occupancy_coll_auto.PNG Graphic file (type png)
 <use Figures/B3_occupancy_coll_auto.PNG>
-Package pdftex.def Info: Figures/B3_occupancy_coll_auto.PNG  used on input line 162.
+Package pdftex.def Info: Figures/B3_occupancy_coll_auto.PNG  used on input line 158.
 (pdftex.def)             Requested size: 210.38487pt x 198.98128pt.
-<Figures/B4_occupancy_coll_auto.PNG, id=1165, 438.438pt x 409.53pt>
+<Figures/B4_occupancy_coll_auto.PNG, id=1186, 438.438pt x 409.53pt>
 File: Figures/B4_occupancy_coll_auto.PNG Graphic file (type png)
 <use Figures/B4_occupancy_coll_auto.PNG>
-Package pdftex.def Info: Figures/B4_occupancy_coll_auto.PNG  used on input line 163.
+Package pdftex.def Info: Figures/B4_occupancy_coll_auto.PNG  used on input line 159.
 (pdftex.def)             Requested size: 210.38487pt x 196.51591pt.
-<Figures/B5_occupancy_coll_auto.PNG, id=1166, 433.01775pt x 403.5075pt>
+<Figures/B5_occupancy_coll_auto.PNG, id=1187, 433.01775pt x 403.5075pt>
 File: Figures/B5_occupancy_coll_auto.PNG Graphic file (type png)
 <use Figures/B5_occupancy_coll_auto.PNG>
-Package pdftex.def Info: Figures/B5_occupancy_coll_auto.PNG  used on input line 164.
+Package pdftex.def Info: Figures/B5_occupancy_coll_auto.PNG  used on input line 160.
 (pdftex.def)             Requested size: 210.38487pt x 196.04568pt.
 
-LaTeX Warning: Float too large for page by 112.87578pt on input line 166.
 
-<Figures/B1_occupancy_diff_auto.PNG, id=1167, 432.4155pt x 392.667pt>
+LaTeX Warning: Float too large for page by 112.87578pt on input line 162.
+
+<Figures/B1_occupancy_diff_auto.PNG, id=1188, 432.4155pt x 392.667pt>
 File: Figures/B1_occupancy_diff_auto.PNG Graphic file (type png)
 <use Figures/B1_occupancy_diff_auto.PNG>
-Package pdftex.def Info: Figures/B1_occupancy_diff_auto.PNG  used on input line 173.
+Package pdftex.def Info: Figures/B1_occupancy_diff_auto.PNG  used on input line 169.
 (pdftex.def)             Requested size: 210.38487pt x 191.04842pt.
-<Figures/B2_occupancy_diff_auto.PNG, id=1168, 477.58424pt x 457.10776pt>
+<Figures/B2_occupancy_diff_auto.PNG, id=1189, 477.58424pt x 457.10776pt>
 File: Figures/B2_occupancy_diff_auto.PNG Graphic file (type png)
 <use Figures/B2_occupancy_diff_auto.PNG>
-Package pdftex.def Info: Figures/B2_occupancy_diff_auto.PNG  used on input line 174.
+Package pdftex.def Info: Figures/B2_occupancy_diff_auto.PNG  used on input line 170.
 (pdftex.def)             Requested size: 210.38487pt x 201.36517pt.
-<Figures/B3_occupancy_diff_auto.PNG, id=1169, 418.56375pt x 391.4625pt>
+<Figures/B3_occupancy_diff_auto.PNG, id=1190, 418.56375pt x 391.4625pt>
 File: Figures/B3_occupancy_diff_auto.PNG Graphic file (type png)
 <use Figures/B3_occupancy_diff_auto.PNG>
-Package pdftex.def Info: Figures/B3_occupancy_diff_auto.PNG  used on input line 175.
+Package pdftex.def Info: Figures/B3_occupancy_diff_auto.PNG  used on input line 171.
 (pdftex.def)             Requested size: 210.38487pt x 196.75815pt.
-<Figures/B4_occupancy_diff_auto.PNG, id=1170, 433.01775pt x 402.90524pt>
+<Figures/B4_occupancy_diff_auto.PNG, id=1191, 433.01775pt x 402.90524pt>
 File: Figures/B4_occupancy_diff_auto.PNG Graphic file (type png)
 <use Figures/B4_occupancy_diff_auto.PNG>
-Package pdftex.def Info: Figures/B4_occupancy_diff_auto.PNG  used on input line 176.
+Package pdftex.def Info: Figures/B4_occupancy_diff_auto.PNG  used on input line 172.
 (pdftex.def)             Requested size: 210.38487pt x 195.75308pt.
-<Figures/B5_occupancy_diff_auto.PNG, id=1171, 464.33475pt x 425.1885pt>
+<Figures/B5_occupancy_diff_auto.PNG, id=1192, 464.33475pt x 425.1885pt>
 File: Figures/B5_occupancy_diff_auto.PNG Graphic file (type png)
 <use Figures/B5_occupancy_diff_auto.PNG>
-Package pdftex.def Info: Figures/B5_occupancy_diff_auto.PNG  used on input line 177.
+Package pdftex.def Info: Figures/B5_occupancy_diff_auto.PNG  used on input line 173.
 (pdftex.def)             Requested size: 210.38487pt x 192.65009pt.
 
-LaTeX Warning: Float too large for page by 109.29684pt on input line 179.
+LaTeX Warning: Float too large for page by 109.29684pt on input line 175.
 
+[84 <./Figures/autocalib.PNG>] [85 <./Figures/B1_occupancy_coll_auto.PNG> <./Figures/B2_occupancy_coll_auto.PNG> <./Figures/B3_occupancy_coll_auto.PNG> <./Figures/B4_occupancy_coll_auto.PNG> <./Figures/B5_occupancy_coll_auto.PNG>] [86 <./Figures/B1_occupancy_diff_auto.PNG> <./Figures/B2_occupancy_diff_auto.PNG> <./Figures/B3_occupancy_diff_auto.PNG> <./Figures/B4_occupancy_diff_auto.PNG> <./Figures/B5_occupancy_diff_auto.PNG>]
+<Figures/sigbm_angle.png, id=1222, 358.941pt x 282.45525pt>
+File: Figures/sigbm_angle.png Graphic file (type png)
+<use Figures/sigbm_angle.png>
+Package pdftex.def Info: Figures/sigbm_angle.png  used on input line 201.
+(pdftex.def)             Requested size: 300.54515pt x 236.50223pt.
+ [87]
+<Figures/charge_weighted_nov_sept_B1.PNG, id=1235, 672.71326pt x 354.123pt>
+File: Figures/charge_weighted_nov_sept_B1.PNG Graphic file (type png)
+<use Figures/charge_weighted_nov_sept_B1.PNG>
+Package pdftex.def Info: Figures/charge_weighted_nov_sept_B1.PNG  used on input line 215.
+(pdftex.def)             Requested size: 386.41426pt x 203.4192pt.
+<Figures/charge_weighted_nov_sept_B4.PNG, id=1236, 648.62325pt x 353.52075pt>
+File: Figures/charge_weighted_nov_sept_B4.PNG Graphic file (type png)
+<use Figures/charge_weighted_nov_sept_B4.PNG>
+Package pdftex.def Info: Figures/charge_weighted_nov_sept_B4.PNG  used on input line 222.
+(pdftex.def)             Requested size: 386.41426pt x 210.61447pt.
+
+Underfull \vbox (badness 3354) has occurred while \output is active []
+
+ [88 <./Figures/sigbm_angle.PNG>] [89 <./Figures/charge_weighted_nov_sept_B1.PNG> <./Figures/charge_weighted_nov_sept_B4.PNG>]
+<Figures/beam_width.PNG, id=1253, 427.5975pt x 466.74374pt>
+File: Figures/beam_width.PNG Graphic file (type png)
+<use Figures/beam_width.PNG>
+Package pdftex.def Info: Figures/beam_width.PNG  used on input line 233.
+(pdftex.def)             Requested size: 300.54515pt x 328.05731pt.
+<Figures/sigbm_angle_validation.PNG, id=1254, 345.08925pt x 261.97874pt>
+File: Figures/sigbm_angle_validation.PNG Graphic file (type png)
+<use Figures/sigbm_angle_validation.PNG>
+Package pdftex.def Info: Figures/sigbm_angle_validation.PNG  used on input line 240.
+(pdftex.def)             Requested size: 300.54515pt x 228.1795pt.
+
+Underfull \vbox (badness 4217) has occurred while \output is active []
+
+ [90 <./Figures/beam_width.png>]
+<Figures/B1_coll_pdf.png, id=1270, 533.5935pt x 417.9615pt>
+File: Figures/B1_coll_pdf.png Graphic file (type png)
+<use Figures/B1_coll_pdf.png>
+Package pdftex.def Info: Figures/B1_coll_pdf.png  used on input line 255.
+(pdftex.def)             Requested size: 214.67604pt x 168.1574pt.
+<Figures/B1_coll_cdf.png, id=1271, 524.55975pt x 428.19975pt>
+File: Figures/B1_coll_cdf.png Graphic file (type png)
+<use Figures/B1_coll_cdf.png>
+Package pdftex.def Info: Figures/B1_coll_cdf.png  used on input line 260.
+(pdftex.def)             Requested size: 214.67604pt x 175.24287pt.
+<Figures/B1_diff_pdf.png, id=1272, 526.3665pt x 432.4155pt>
+File: Figures/B1_diff_pdf.png Graphic file (type png)
+<use Figures/B1_diff_pdf.png>
+Package pdftex.def Info: Figures/B1_diff_pdf.png  used on input line 271.
+(pdftex.def)             Requested size: 214.67604pt x 176.35457pt.
+<Figures/B1_diff_cdf.PNG, id=1273, 528.17325pt x 432.4155pt>
+File: Figures/B1_diff_cdf.PNG Graphic file (type png)
+<use Figures/B1_diff_cdf.PNG>
+Package pdftex.def Info: Figures/B1_diff_cdf.PNG  used on input line 276.
+(pdftex.def)             Requested size: 214.67604pt x 175.75414pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [82 <./Figures/B1_collimator_fit.PNG> <./Figures/B2_collimator_fit.PNG> <./Figures/B3_collimator_fit.PNG> <./Figures/B4_collimator_fit.PNG> <./Figures/B5_collimator_fit.PNG>] [83 <./Figures/B1_occupancy_coll.PNG> <./Figures/B2_occupancy_coll.PNG> <./Figures/B3_occupancy_coll.PNG> <./Figures/B4_occupancy_coll.PNG> <./Figures/B5_occupancy_coll.PNG>] [84 <./Figures/B1_occupancy_diff.PNG> <./Figures/B2_occupancy_diff.PNG> <./Figures/B3_occupancy_diff.PNG> <./Figures/B4_occupancy_diff.PNG> <./Figures/B5_occupancy_diff.PNG>] [85 <./Figures/autocalib.PNG>] [86 <./Figures/B1_occupancy_coll_auto.PNG> <./Figures/B2_occupancy_coll_auto.PNG> <./Figures/B3_occupancy_coll_auto.PNG> <./Figures/B4_occupancy_coll_auto.PNG> <./Figures/B5_occupancy_coll_auto.PNG>] [87 <./Figures/B1_occupancy_diff_auto.PNG> <./Figures/B2_occupancy_diff_auto.PNG> <./Figures/B3_occupancy_diff_auto.PNG> <./Figures/B4_occupancy_diff_auto.PNG> <./Figures/B5_occupancy_diff_auto.PNG>]
-<Figures/sigbm_angle.png, id=1229, 358.941pt x 282.45525pt>
-File: Figures/sigbm_angle.png Graphic file (type png)
-<use Figures/sigbm_angle.png>
-Package pdftex.def Info: Figures/sigbm_angle.png  used on input line 205.
-(pdftex.def)             Requested size: 300.54515pt x 236.50223pt.
- [88 <./Figures/sigbm_angle.PNG>]
-<Figures/charge_weighted_nov_sept_B1.PNG, id=1241, 672.71326pt x 354.123pt>
-File: Figures/charge_weighted_nov_sept_B1.PNG Graphic file (type png)
-<use Figures/charge_weighted_nov_sept_B1.PNG>
-Package pdftex.def Info: Figures/charge_weighted_nov_sept_B1.PNG  used on input line 219.
-(pdftex.def)             Requested size: 386.41426pt x 203.4192pt.
-<Figures/charge_weighted_nov_sept_B4.PNG, id=1242, 648.62325pt x 353.52075pt>
-File: Figures/charge_weighted_nov_sept_B4.PNG Graphic file (type png)
-<use Figures/charge_weighted_nov_sept_B4.PNG>
-Package pdftex.def Info: Figures/charge_weighted_nov_sept_B4.PNG  used on input line 226.
-(pdftex.def)             Requested size: 386.41426pt x 210.61447pt.
-
-Underfull \vbox (badness 1286) has occurred while \output is active []
-
- [89 <./Figures/charge_weighted_nov_sept_B1.PNG>]
-<Figures/beam_width.PNG, id=1254, 427.5975pt x 466.74374pt>
-File: Figures/beam_width.PNG Graphic file (type png)
-<use Figures/beam_width.PNG>
-Package pdftex.def Info: Figures/beam_width.PNG  used on input line 237.
-(pdftex.def)             Requested size: 300.54515pt x 328.05731pt.
-<Figures/sigbm_angle_validation.PNG, id=1255, 345.08925pt x 261.97874pt>
-File: Figures/sigbm_angle_validation.PNG Graphic file (type png)
-<use Figures/sigbm_angle_validation.PNG>
-Package pdftex.def Info: Figures/sigbm_angle_validation.PNG  used on input line 244.
-(pdftex.def)             Requested size: 300.54515pt x 228.1795pt.
-
-Underfull \vbox (badness 7081) has occurred while \output is active []
-
- [90 <./Figures/charge_weighted_nov_sept_B4.PNG>] [91 <./Figures/beam_width.png>]
-<Figures/B1_coll_pdf.png, id=1277, 533.5935pt x 417.9615pt>
-File: Figures/B1_coll_pdf.png Graphic file (type png)
-<use Figures/B1_coll_pdf.png>
-Package pdftex.def Info: Figures/B1_coll_pdf.png  used on input line 259.
-(pdftex.def)             Requested size: 214.67604pt x 168.1574pt.
-<Figures/B1_coll_cdf.png, id=1278, 524.55975pt x 428.19975pt>
-File: Figures/B1_coll_cdf.png Graphic file (type png)
-<use Figures/B1_coll_cdf.png>
-Package pdftex.def Info: Figures/B1_coll_cdf.png  used on input line 264.
-(pdftex.def)             Requested size: 214.67604pt x 175.24287pt.
-<Figures/B1_diff_pdf.png, id=1279, 526.3665pt x 432.4155pt>
-File: Figures/B1_diff_pdf.png Graphic file (type png)
-<use Figures/B1_diff_pdf.png>
-Package pdftex.def Info: Figures/B1_diff_pdf.png  used on input line 275.
-(pdftex.def)             Requested size: 214.67604pt x 176.35457pt.
-<Figures/B1_diff_cdf.PNG, id=1280, 528.17325pt x 432.4155pt>
-File: Figures/B1_diff_cdf.PNG Graphic file (type png)
-<use Figures/B1_diff_cdf.PNG>
-Package pdftex.def Info: Figures/B1_diff_cdf.PNG  used on input line 280.
-(pdftex.def)             Requested size: 214.67604pt x 175.75414pt.
-<Figures/B1_inv_coll_cdf.png, id=1284, 438.438pt x 345.08925pt>
+ [91 <./Figures/sigbm_angle_validation.PNG>] [92 <./Figures/B1_coll_pdf.PNG> <./Figures/B1_coll_cdf.PNG> <./Figures/B1_diff_pdf.png> <./Figures/B1_diff_cdf.PNG>]
+<Figures/B1_inv_coll_cdf.png, id=1295, 438.438pt x 345.08925pt>
 File: Figures/B1_inv_coll_cdf.png Graphic file (type png)
 <use Figures/B1_inv_coll_cdf.png>
-Package pdftex.def Info: Figures/B1_inv_coll_cdf.png  used on input line 293.
+Package pdftex.def Info: Figures/B1_inv_coll_cdf.png  used on input line 289.
 (pdftex.def)             Requested size: 214.67604pt x 168.9741pt.
-<Figures/B1_inv_diff_cdf.png, id=1285, 420.97275pt x 327.624pt>
+<Figures/B1_inv_diff_cdf.png, id=1296, 420.97275pt x 327.624pt>
 File: Figures/B1_inv_diff_cdf.png Graphic file (type png)
 <use Figures/B1_inv_diff_cdf.png>
-Package pdftex.def Info: Figures/B1_inv_diff_cdf.png  used on input line 299.
+Package pdftex.def Info: Figures/B1_inv_diff_cdf.png  used on input line 295.
 (pdftex.def)             Requested size: 214.67604pt x 167.07101pt.
-
-Underfull \vbox (badness 6204) has occurred while \output is active []
-
- [92 <./Figures/sigbm_angle_validation.PNG>] [93 <./Figures/B1_coll_pdf.PNG> <./Figures/B1_coll_cdf.PNG> <./Figures/B1_diff_pdf.png> <./Figures/B1_diff_cdf.PNG>]
-<Figures/ukli_mc_B1.PNG, id=1307, 609.477pt x 590.80725pt>
+<Figures/ukli_mc_B1.PNG, id=1299, 609.477pt x 590.80725pt>
 File: Figures/ukli_mc_B1.PNG Graphic file (type png)
 <use Figures/ukli_mc_B1.PNG>
-Package pdftex.def Info: Figures/ukli_mc_B1.PNG  used on input line 314.
+Package pdftex.def Info: Figures/ukli_mc_B1.PNG  used on input line 310.
 (pdftex.def)             Requested size: 189.3451pt x 183.54501pt.
-<Figures/ukli_mc_B2.PNG, id=1308, 629.9535pt x 596.82974pt>
+<Figures/ukli_mc_B2.PNG, id=1300, 629.9535pt x 596.82974pt>
 File: Figures/ukli_mc_B2.PNG Graphic file (type png)
 <use Figures/ukli_mc_B2.PNG>
-Package pdftex.def Info: Figures/ukli_mc_B2.PNG  used on input line 320.
+Package pdftex.def Info: Figures/ukli_mc_B2.PNG  used on input line 316.
 (pdftex.def)             Requested size: 189.3451pt x 179.38725pt.
-<Figures/ukli_mc_B3.PNG, id=1309, 614.295pt x 590.80725pt>
+<Figures/ukli_mc_B3.PNG, id=1301, 614.295pt x 590.80725pt>
 File: Figures/ukli_mc_B3.PNG Graphic file (type png)
 <use Figures/ukli_mc_B3.PNG>
-Package pdftex.def Info: Figures/ukli_mc_B3.PNG  used on input line 329.
+Package pdftex.def Info: Figures/ukli_mc_B3.PNG  used on input line 325.
 (pdftex.def)             Requested size: 189.3451pt x 182.10262pt.
-<Figures/ukli_mc_B4.PNG, id=1310, 607.67026pt x 591.4095pt>
+<Figures/ukli_mc_B4.PNG, id=1302, 607.67026pt x 591.4095pt>
 File: Figures/ukli_mc_B4.PNG Graphic file (type png)
 <use Figures/ukli_mc_B4.PNG>
-Package pdftex.def Info: Figures/ukli_mc_B4.PNG  used on input line 335.
+Package pdftex.def Info: Figures/ukli_mc_B4.PNG  used on input line 331.
 (pdftex.def)             Requested size: 189.3451pt x 184.27356pt.
-<Figures/ukli_mc_B5.PNG, id=1311, 617.9085pt x 593.8185pt>
+<Figures/ukli_mc_B5.PNG, id=1303, 617.9085pt x 593.8185pt>
 File: Figures/ukli_mc_B5.PNG Graphic file (type png)
 <use Figures/ukli_mc_B5.PNG>
-Package pdftex.def Info: Figures/ukli_mc_B5.PNG  used on input line 344.
+Package pdftex.def Info: Figures/ukli_mc_B5.PNG  used on input line 340.
 (pdftex.def)             Requested size: 210.38487pt x 202.1765pt.
 
 
-LaTeX Warning: Float too large for page by 118.21863pt on input line 349.
+LaTeX Warning: Float too large for page by 118.21863pt on input line 345.
 
-<Figures/ukli_diff_mc_B1.PNG, id=1312, 622.12425pt x 596.2275pt>
+<Figures/ukli_diff_mc_B1.PNG, id=1304, 622.12425pt x 596.2275pt>
 File: Figures/ukli_diff_mc_B1.PNG Graphic file (type png)
 <use Figures/ukli_diff_mc_B1.PNG>
-Package pdftex.def Info: Figures/ukli_diff_mc_B1.PNG  used on input line 357.
+Package pdftex.def Info: Figures/ukli_diff_mc_B1.PNG  used on input line 353.
 (pdftex.def)             Requested size: 210.38487pt x 201.62294pt.
-<Figures/ukli_diff_mc_B2.PNG, id=1313, 620.3175pt x 588.39825pt>
+<Figures/ukli_diff_mc_B2.PNG, id=1305, 620.3175pt x 588.39825pt>
 File: Figures/ukli_diff_mc_B2.PNG Graphic file (type png)
 <use Figures/ukli_diff_mc_B2.PNG>
-Package pdftex.def Info: Figures/ukli_diff_mc_B2.PNG  used on input line 363.
+Package pdftex.def Info: Figures/ukli_diff_mc_B2.PNG  used on input line 359.
 (pdftex.def)             Requested size: 210.38487pt x 199.55896pt.
-<Figures/ukli_diff_mc_B3.PNG, id=1314, 652.23676pt x 601.0455pt>
+<Figures/ukli_diff_mc_B3.PNG, id=1306, 652.23676pt x 601.0455pt>
 File: Figures/ukli_diff_mc_B3.PNG Graphic file (type png)
 <use Figures/ukli_diff_mc_B3.PNG>
-Package pdftex.def Info: Figures/ukli_diff_mc_B3.PNG  used on input line 372.
+Package pdftex.def Info: Figures/ukli_diff_mc_B3.PNG  used on input line 368.
 (pdftex.def)             Requested size: 210.38487pt x 193.87007pt.
-<Figures/ukli_diff_mc_B4.PNG, id=1315, 623.931pt x 601.64775pt>
+<Figures/ukli_diff_mc_B4.PNG, id=1307, 623.931pt x 601.64775pt>
 File: Figures/ukli_diff_mc_B4.PNG Graphic file (type png)
 <use Figures/ukli_diff_mc_B4.PNG>
-Package pdftex.def Info: Figures/ukli_diff_mc_B4.PNG  used on input line 378.
+Package pdftex.def Info: Figures/ukli_diff_mc_B4.PNG  used on input line 374.
 (pdftex.def)             Requested size: 210.38487pt x 202.86833pt.
-<Figures/ukli_diff_mc_B5.PNG, id=1316, 619.113pt x 600.44325pt>
+<Figures/ukli_diff_mc_B5.PNG, id=1308, 619.113pt x 600.44325pt>
 File: Figures/ukli_diff_mc_B5.PNG Graphic file (type png)
 <use Figures/ukli_diff_mc_B5.PNG>
-Package pdftex.def Info: Figures/ukli_diff_mc_B5.PNG  used on input line 387.
+Package pdftex.def Info: Figures/ukli_diff_mc_B5.PNG  used on input line 383.
 (pdftex.def)             Requested size: 210.38487pt x 204.03806pt.
 
-LaTeX Warning: Float too large for page by 156.75288pt on input line 392.
+LaTeX Warning: Float too large for page by 156.75288pt on input line 388.
 
-<Figures/inv_cdf_check_diff_B1.PNG, id=1318, 867.24pt x 519.1395pt>
+[93 <./Figures/B1_inv_coll_cdf.PNG> <./Figures/B1_inv_diff_cdf.PNG>] [94 <./Figures/ukli_mc_B1.PNG> <./Figures/ukli_mc_B2.PNG> <./Figures/ukli_mc_B3.PNG> <./Figures/ukli_mc_B4.PNG> <./Figures/ukli_mc_B5.PNG>] [95 <./Figures/ukli_diff_mc_B1.PNG> <./Figures/ukli_diff_mc_B2.PNG> <./Figures/ukli_diff_mc_B3.png> <./Figures/ukli_diff_mc_B4.PNG> <./Figures/ukli_diff_mc_B5.PNG>]
+<Figures/inv_cdf_check_diff_B1.PNG, id=1338, 867.24pt x 519.1395pt>
 File: Figures/inv_cdf_check_diff_B1.PNG Graphic file (type png)
 <use Figures/inv_cdf_check_diff_B1.PNG>
-Package pdftex.def Info: Figures/inv_cdf_check_diff_B1.PNG  used on input line 406.
+Package pdftex.def Info: Figures/inv_cdf_check_diff_B1.PNG  used on input line 402.
 (pdftex.def)             Requested size: 210.38487pt x 125.93474pt.
-<Figures/inv_cdf_check_diff_B2.PNG, id=1319, 864.22874pt x 487.22025pt>
+<Figures/inv_cdf_check_diff_B2.PNG, id=1339, 864.22874pt x 487.22025pt>
 File: Figures/inv_cdf_check_diff_B2.PNG Graphic file (type png)
 <use Figures/inv_cdf_check_diff_B2.PNG>
-Package pdftex.def Info: Figures/inv_cdf_check_diff_B2.PNG  used on input line 412.
+Package pdftex.def Info: Figures/inv_cdf_check_diff_B2.PNG  used on input line 408.
 (pdftex.def)             Requested size: 210.38487pt x 118.60797pt.
-<Figures/inv_cdf_check_diff_B3.PNG, id=1320, 865.43324pt x 490.83376pt>
+<Figures/inv_cdf_check_diff_B3.PNG, id=1340, 865.43324pt x 490.83376pt>
 File: Figures/inv_cdf_check_diff_B3.PNG Graphic file (type png)
 <use Figures/inv_cdf_check_diff_B3.PNG>
-Package pdftex.def Info: Figures/inv_cdf_check_diff_B3.PNG  used on input line 421.
+Package pdftex.def Info: Figures/inv_cdf_check_diff_B3.PNG  used on input line 417.
 (pdftex.def)             Requested size: 210.38487pt x 119.31538pt.
-<Figures/inv_cdf_check_diff_B4.PNG, id=1321, 865.43324pt x 490.83376pt>
+<Figures/inv_cdf_check_diff_B4.PNG, id=1341, 865.43324pt x 490.83376pt>
 File: Figures/inv_cdf_check_diff_B4.PNG Graphic file (type png)
 <use Figures/inv_cdf_check_diff_B4.PNG>
-Package pdftex.def Info: Figures/inv_cdf_check_diff_B4.PNG  used on input line 427.
+Package pdftex.def Info: Figures/inv_cdf_check_diff_B4.PNG  used on input line 423.
 (pdftex.def)             Requested size: 210.38487pt x 119.31538pt.
-<Figures/inv_cdf_check_diff_B5.PNG, id=1322, 866.0355pt x 494.44725pt>
+<Figures/inv_cdf_check_diff_B5.PNG, id=1342, 866.0355pt x 494.44725pt>
 File: Figures/inv_cdf_check_diff_B5.PNG Graphic file (type png)
 <use Figures/inv_cdf_check_diff_B5.PNG>
-Package pdftex.def Info: Figures/inv_cdf_check_diff_B5.PNG  used on input line 436.
+Package pdftex.def Info: Figures/inv_cdf_check_diff_B5.PNG  used on input line 432.
 (pdftex.def)             Requested size: 210.38487pt x 120.1108pt.
-[94 <./Figures/B1_inv_coll_cdf.PNG> <./Figures/B1_inv_diff_cdf.PNG>] [95 <./Figures/ukli_mc_B1.PNG> <./Figures/ukli_mc_B2.PNG> <./Figures/ukli_mc_B3.PNG> <./Figures/ukli_mc_B4.PNG> <./Figures/ukli_mc_B5.PNG>] [96 <./Figures/ukli_diff_mc_B1.PNG> <./Figures/ukli_diff_mc_B2.PNG> <./Figures/ukli_diff_mc_B3.png> <./Figures/ukli_diff_mc_B4.PNG> <./Figures/ukli_diff_mc_B5.PNG>] [97 <./Figures/inv_cdf_check_diff_B1.PNG> <./Figures/inv_cdf_check_diff_B2.PNG> <./Figures/inv_cdf_check_diff_B3.PNG> <./Figures/inv_cdf_check_diff_B4.PNG> <./Figures/inv_cdf_check_diff_B5.PNG>]
-<Figures/TOF_abs.PNG, id=1363, 1751.54375pt x 965.6075pt>
+<Figures/TOF_abs.PNG, id=1346, 1751.54375pt x 965.6075pt>
 File: Figures/TOF_abs.PNG Graphic file (type png)
 <use Figures/TOF_abs.PNG>
-Package pdftex.def Info: Figures/TOF_abs.PNG  used on input line 448.
+Package pdftex.def Info: Figures/TOF_abs.PNG  used on input line 444.
 (pdftex.def)             Requested size: 429.3521pt x 236.68642pt.
-<Figures/TOF_ray.PNG, id=1364, 1793.70125pt x 971.63pt>
+<Figures/TOF_ray.PNG, id=1347, 1793.70125pt x 971.63pt>
 File: Figures/TOF_ray.PNG Graphic file (type png)
 <use Figures/TOF_ray.PNG>
-Package pdftex.def Info: Figures/TOF_ray.PNG  used on input line 455.
+Package pdftex.def Info: Figures/TOF_ray.PNG  used on input line 451.
 (pdftex.def)             Requested size: 429.3521pt x 232.57327pt.
-<Figures/TOF_mie.PNG, id=1365, 1759.57375pt x 965.6075pt>
+<Figures/TOF_mie.PNG, id=1348, 1759.57375pt x 965.6075pt>
 File: Figures/TOF_mie.PNG Graphic file (type png)
 <use Figures/TOF_mie.PNG>
-Package pdftex.def Info: Figures/TOF_mie.PNG  used on input line 462.
+Package pdftex.def Info: Figures/TOF_mie.PNG  used on input line 458.
 (pdftex.def)             Requested size: 429.3521pt x 235.61082pt.
- [98 <./Figures/TOF_abs.png>] [99 <./Figures/TOF_ray.png> <./Figures/TOF_mie.png>]
-<Figures/gauss_time_dispersion.PNG, id=1384, 1723.43875pt x 954.56625pt>
+ [96] [97 <./Figures/inv_cdf_check_diff_B1.PNG> <./Figures/inv_cdf_check_diff_B2.PNG> <./Figures/inv_cdf_check_diff_B3.PNG> <./Figures/inv_cdf_check_diff_B4.PNG> <./Figures/inv_cdf_check_diff_B5.PNG>] [98 <./Figures/TOF_abs.png> <./Figures/TOF_ray.png>]
+<Figures/gauss_time_dispersion.PNG, id=1379, 1723.43875pt x 954.56625pt>
 File: Figures/gauss_time_dispersion.PNG Graphic file (type png)
 <use Figures/gauss_time_dispersion.PNG>
-Package pdftex.def Info: Figures/gauss_time_dispersion.PNG  used on input line 479.
+Package pdftex.def Info: Figures/gauss_time_dispersion.PNG  used on input line 475.
 (pdftex.def)             Requested size: 429.3521pt x 237.79617pt.
-<Figures/double_gauss_time_dispersion.PNG, id=1386, 706.43925pt x 357.13425pt>
+<Figures/double_gauss_time_dispersion.PNG, id=1381, 706.43925pt x 357.13425pt>
 File: Figures/double_gauss_time_dispersion.PNG Graphic file (type png)
 <use Figures/double_gauss_time_dispersion.PNG>
-Package pdftex.def Info: Figures/double_gauss_time_dispersion.PNG  used on input line 488.
+Package pdftex.def Info: Figures/double_gauss_time_dispersion.PNG  used on input line 484.
 (pdftex.def)             Requested size: 429.3521pt x 217.0505pt.
-<Figures/time_dispersion_TOF_5ns.PNG, id=1391, 682.34924pt x 412.54124pt>
+
+Underfull \vbox (badness 1436) has occurred while \output is active []
+
+ [99 <./Figures/TOF_mie.png>]
+<Figures/time_dispersion_TOF_5ns.PNG, id=1393, 682.34924pt x 412.54124pt>
 File: Figures/time_dispersion_TOF_5ns.PNG Graphic file (type png)
 <use Figures/time_dispersion_TOF_5ns.PNG>
-Package pdftex.def Info: Figures/time_dispersion_TOF_5ns.PNG  used on input line 498.
+Package pdftex.def Info: Figures/time_dispersion_TOF_5ns.PNG  used on input line 494.
 (pdftex.def)             Requested size: 429.3521pt x 259.58131pt.
-<Figures/time_dispersion_TOF_10ns.PNG, id=1392, 686.565pt x 399.29175pt>
+<Figures/time_dispersion_TOF_10ns.PNG, id=1394, 686.565pt x 399.29175pt>
 File: Figures/time_dispersion_TOF_10ns.PNG Graphic file (type png)
 <use Figures/time_dispersion_TOF_10ns.PNG>
-Package pdftex.def Info: Figures/time_dispersion_TOF_10ns.PNG  used on input line 505.
+Package pdftex.def Info: Figures/time_dispersion_TOF_10ns.PNG  used on input line 501.
 (pdftex.def)             Requested size: 429.3521pt x 249.69685pt.
-<Figures/time_dispersion_TOF_15ns.PNG, id=1393, 657.657pt x 392.667pt>
+<Figures/time_dispersion_TOF_15ns.PNG, id=1395, 657.657pt x 392.667pt>
 File: Figures/time_dispersion_TOF_15ns.PNG Graphic file (type png)
 <use Figures/time_dispersion_TOF_15ns.PNG>
-Package pdftex.def Info: Figures/time_dispersion_TOF_15ns.PNG  used on input line 512.
+Package pdftex.def Info: Figures/time_dispersion_TOF_15ns.PNG  used on input line 508.
 (pdftex.def)             Requested size: 429.3521pt x 256.36295pt.
-<Figures/time_dispersion_TOF_20ns.PNG, id=1394, 668.4975pt x 392.06474pt>
+<Figures/time_dispersion_TOF_20ns.PNG, id=1396, 668.4975pt x 392.06474pt>
 File: Figures/time_dispersion_TOF_20ns.PNG Graphic file (type png)
 <use Figures/time_dispersion_TOF_20ns.PNG>
-Package pdftex.def Info: Figures/time_dispersion_TOF_20ns.PNG  used on input line 519.
+Package pdftex.def Info: Figures/time_dispersion_TOF_20ns.PNG  used on input line 515.
 (pdftex.def)             Requested size: 429.3521pt x 251.81793pt.
- [100] [101 <./Figures/gauss_time_dispersion.PNG> <./Figures/double_gauss_time_dispersion.PNG>] [102 <./Figures/time_dispersion_TOF_5ns.PNG>] [103 <./Figures/time_dispersion_TOF_10ns.PNG>] [104 <./Figures/time_dispersion_TOF_15ns.PNG>] [105 <./Figures/time_dispersion_TOF_20ns.PNG>]) [106]
+) [100 <./Figures/gauss_time_dispersion.PNG>] [101 <./Figures/double_gauss_time_dispersion.PNG> <./Figures/time_dispersion_TOF_5ns.PNG>] [102 <./Figures/time_dispersion_TOF_10ns.PNG>] [103 <./Figures/time_dispersion_TOF_15ns.PNG>] [104 <./Figures/time_dispersion_TOF_20ns.PNG>]
 \openout2 = `Chapters/chapter_ncqe-gd.aux'.
 
  (./Chapters/chapter_ncqe-gd.tex
@@ -1720,13 +1721,13 @@ Chapter 6.
 
 Underfull \vbox (badness 2790) has occurred while \output is active []
 
- [107
+ [105
 
 
 
 
 ]
-<Figures/analysis_flowchart.png, id=1445, 870.525pt x 222.942pt>
+<Figures/analysis_flowchart.png, id=1435, 870.525pt x 222.942pt>
 File: Figures/analysis_flowchart.png Graphic file (type png)
 <use Figures/analysis_flowchart.png>
 Package pdftex.def Info: Figures/analysis_flowchart.png  used on input line 10.
@@ -1736,30 +1737,30 @@ Overfull \hbox (3.93391pt too wide) in paragraph at lines 43--44
 \OT1/cmr/m/n/10.95 The neu-trino beam flux used in this anal-y-sis is 13a tun-ing v4.0, taken from the NA61/SHINE
  []
 
-[108 <./Figures/analysis_flowchart.png>] [109]
-<Figures/ncqebenharspectral.png, id=1464, 445.665pt x 398.6895pt>
+[106 <./Figures/analysis_flowchart.png>] [107]
+<Figures/ncqebenharspectral.png, id=1453, 445.665pt x 398.6895pt>
 File: Figures/ncqebenharspectral.png Graphic file (type png)
 <use Figures/ncqebenharspectral.png>
 Package pdftex.def Info: Figures/ncqebenharspectral.png  used on input line 57.
 (pdftex.def)             Requested size: 429.3521pt x 384.10027pt.
- [110] [111 <./Figures/ncqebenharspectral.PNG>]
-<Figures/annrigd.png, id=1485, 347.49825pt x 215.00325pt>
+ [108] [109 <./Figures/ncqebenharspectral.PNG>]
+<Figures/annrigd.png, id=1475, 347.49825pt x 215.00325pt>
 File: Figures/annrigd.png Graphic file (type png)
 <use Figures/annrigd.png>
 Package pdftex.def Info: Figures/annrigd.png  used on input line 117.
 (pdftex.def)             Requested size: 429.3521pt x 265.66626pt.
- [112] [113 <./Figures/annrigd.PNG>]
-<Figures/annrigdenergyspectra.png, id=1498, 654.64575pt x 229.45724pt>
+ [110] [111 <./Figures/annrigd.PNG>]
+<Figures/annrigdenergyspectra.png, id=1488, 654.64575pt x 229.45724pt>
 File: Figures/annrigdenergyspectra.png Graphic file (type png)
 <use Figures/annrigdenergyspectra.png>
 Package pdftex.def Info: Figures/annrigdenergyspectra.png  used on input line 126.
 (pdftex.def)             Requested size: 429.3521pt x 150.4934pt.
-<Figures/continousdiscrete.png, id=1503, 549.252pt x 256.5585pt>
+<Figures/continousdiscrete.png, id=1493, 549.252pt x 256.5585pt>
 File: Figures/continousdiscrete.png Graphic file (type png)
 <use Figures/continousdiscrete.png>
 Package pdftex.def Info: Figures/continousdiscrete.png  used on input line 135.
 (pdftex.def)             Requested size: 429.3521pt x 200.54936pt.
-<Figures/annrigdmodelcompare.png, id=1504, 631.76025pt x 308.95425pt>
+<Figures/annrigdmodelcompare.png, id=1494, 631.76025pt x 308.95425pt>
 File: Figures/annrigdmodelcompare.png Graphic file (type png)
 <use Figures/annrigdmodelcompare.png>
 Package pdftex.def Info: Figures/annrigdmodelcompare.png  used on input line 141.
@@ -1772,69 +1773,69 @@ Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [114 <./Figures/annrigdenergyspectra.PNG>] [115 <./Figures/continousdiscrete.PNG> <./Figures/annrigdmodelcompare.PNG>] [116] [117]
-<Figures/erec_compare.PNG, id=1537, 814.242pt x 465.53925pt>
+ [112 <./Figures/annrigdenergyspectra.PNG>] [113 <./Figures/continousdiscrete.PNG> <./Figures/annrigdmodelcompare.PNG>] [114] [115]
+<Figures/erec_compare.PNG, id=1527, 814.242pt x 465.53925pt>
 File: Figures/erec_compare.PNG Graphic file (type png)
 <use Figures/erec_compare.PNG>
 Package pdftex.def Info: Figures/erec_compare.PNG  used on input line 226.
 (pdftex.def)             Requested size: 210.38487pt x 120.28436pt.
-<Figures/dwall_compare.PNG, id=1538, 825.68475pt x 463.13025pt>
+<Figures/dwall_compare.PNG, id=1528, 825.68475pt x 463.13025pt>
 File: Figures/dwall_compare.PNG Graphic file (type png)
 <use Figures/dwall_compare.PNG>
 Package pdftex.def Info: Figures/dwall_compare.PNG  used on input line 227.
 (pdftex.def)             Requested size: 210.38487pt x 118.00125pt.
-<Figures/effwall_compare.PNG, id=1539, 796.77675pt x 455.301pt>
+<Figures/effwall_compare.PNG, id=1529, 796.77675pt x 455.301pt>
 File: Figures/effwall_compare.PNG Graphic file (type png)
 <use Figures/effwall_compare.PNG>
 Package pdftex.def Info: Figures/effwall_compare.PNG  used on input line 228.
 (pdftex.def)             Requested size: 210.38487pt x 120.2165pt.
-<Figures/ovaQ_compare.PNG, id=1540, 816.651pt x 462.528pt>
+<Figures/ovaQ_compare.PNG, id=1530, 816.651pt x 462.528pt>
 File: Figures/ovaQ_compare.PNG Graphic file (type png)
 <use Figures/ovaQ_compare.PNG>
 Package pdftex.def Info: Figures/ovaQ_compare.PNG  used on input line 229.
 (pdftex.def)             Requested size: 210.38487pt x 119.15344pt.
-<Figures/thetaC_compare.PNG, id=1541, 808.82175pt x 448.67625pt>
+<Figures/thetaC_compare.PNG, id=1531, 808.82175pt x 448.67625pt>
 File: Figures/thetaC_compare.PNG Graphic file (type png)
 <use Figures/thetaC_compare.PNG>
 Package pdftex.def Info: Figures/thetaC_compare.PNG  used on input line 230.
 (pdftex.def)             Requested size: 210.38487pt x 116.70099pt.
-<Figures/gvtx_squared.JPEG, id=1545, 1893.0725pt x 954.56625pt>
+<Figures/gvtx_squared.JPEG, id=1535, 1893.0725pt x 954.56625pt>
 File: Figures/gvtx_squared.JPEG Graphic file (type jpg)
 <use Figures/gvtx_squared.JPEG>
 Package pdftex.def Info: Figures/gvtx_squared.JPEG  used on input line 240.
 (pdftex.def)             Requested size: 210.38487pt x 106.08046pt.
-<Figures/gdir_squared.JPEG, id=1546, 1903.11pt x 948.54375pt>
+<Figures/gdir_squared.JPEG, id=1536, 1903.11pt x 948.54375pt>
 File: Figures/gdir_squared.JPEG Graphic file (type jpg)
 <use Figures/gdir_squared.JPEG>
 Package pdftex.def Info: Figures/gdir_squared.JPEG  used on input line 241.
 (pdftex.def)             Requested size: 210.38487pt x 104.84671pt.
-<Figures/vertex_resolution.png, id=1552, 788.34525pt x 440.24475pt>
+<Figures/vertex_resolution.png, id=1542, 788.34525pt x 440.24475pt>
 File: Figures/vertex_resolution.png Graphic file (type png)
 <use Figures/vertex_resolution.png>
 Package pdftex.def Info: Figures/vertex_resolution.png  used on input line 249.
 (pdftex.def)             Requested size: 429.3521pt x 239.77077pt.
- [118] [119 <./Figures/erec_compare.PNG> <./Figures/dwall_compare.PNG> <./Figures/effwall_compare.PNG> <./Figures/ovaq_compare.PNG> <./Figures/thetac_compare.PNG>] [120 <./Figures/gvtx_squared.jpeg> <./Figures/gdir_squared.jpeg> <./Figures/vertex_resolution.PNG>]
-<Figures/energy_recon_compare.PNG, id=1581, 966.009pt x 563.706pt>
+ [116] [117 <./Figures/erec_compare.PNG> <./Figures/dwall_compare.PNG> <./Figures/effwall_compare.PNG> <./Figures/ovaq_compare.PNG> <./Figures/thetac_compare.PNG>] [118 <./Figures/gvtx_squared.jpeg> <./Figures/gdir_squared.jpeg> <./Figures/vertex_resolution.PNG>]
+<Figures/energy_recon_compare.PNG, id=1571, 966.009pt x 563.706pt>
 File: Figures/energy_recon_compare.PNG Graphic file (type png)
 <use Figures/energy_recon_compare.PNG>
 Package pdftex.def Info: Figures/energy_recon_compare.PNG  used on input line 274.
 (pdftex.def)             Requested size: 206.08716pt x 120.25687pt.
-<Figures/dwall_recon_compare.PNG, id=1582, 969.6225pt x 558.28575pt>
+<Figures/dwall_recon_compare.PNG, id=1572, 969.6225pt x 558.28575pt>
 File: Figures/dwall_recon_compare.PNG Graphic file (type png)
 <use Figures/dwall_recon_compare.PNG>
 Package pdftex.def Info: Figures/dwall_recon_compare.PNG  used on input line 278.
 (pdftex.def)             Requested size: 206.08716pt x 118.65758pt.
-<Figures/effwall_recon_compare.PNG, id=1583, 973.83826pt x 555.2745pt>
+<Figures/effwall_recon_compare.PNG, id=1573, 973.83826pt x 555.2745pt>
 File: Figures/effwall_recon_compare.PNG Graphic file (type png)
 <use Figures/effwall_recon_compare.PNG>
 Package pdftex.def Info: Figures/effwall_recon_compare.PNG  used on input line 284.
 (pdftex.def)             Requested size: 206.08716pt x 117.5092pt.
-<Figures/angle_recon_compare.PNG, id=1584, 975.04276pt x 562.5015pt>
+<Figures/angle_recon_compare.PNG, id=1574, 975.04276pt x 562.5015pt>
 File: Figures/angle_recon_compare.PNG Graphic file (type png)
 <use Figures/angle_recon_compare.PNG>
 Package pdftex.def Info: Figures/angle_recon_compare.PNG  used on input line 288.
 (pdftex.def)             Requested size: 206.08716pt x 118.88411pt.
-<Figures/ovaq_recon_compare.PNG, id=1585, 962.3955pt x 559.49025pt>
+<Figures/ovaq_recon_compare.PNG, id=1575, 962.3955pt x 559.49025pt>
 File: Figures/ovaq_recon_compare.PNG Graphic file (type png)
 <use Figures/ovaq_recon_compare.PNG>
 Package pdftex.def Info: Figures/ovaq_recon_compare.PNG  used on input line 294.
@@ -1842,64 +1843,64 @@ Package pdftex.def Info: Figures/ovaq_recon_compare.PNG  used on input line 294.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [121 <./Figures/energy_recon_compare.PNG> <./Figures/dwall_recon_compare.PNG> <./Figures/effwall_recon_compare.PNG> <./Figures/angle_recon_compare.PNG> <./Figures/ovaq_recon_compare.PNG>] [122] [123]
-<Figures/fabio_erec.PNG, id=1627, 364.9635pt x 236.68425pt>
+ [119 <./Figures/energy_recon_compare.PNG> <./Figures/dwall_recon_compare.PNG> <./Figures/effwall_recon_compare.PNG> <./Figures/angle_recon_compare.PNG> <./Figures/ovaq_recon_compare.PNG>] [120] [121]
+<Figures/fabio_erec.PNG, id=1617, 364.9635pt x 236.68425pt>
 File: Figures/fabio_erec.PNG Graphic file (type png)
 <use Figures/fabio_erec.PNG>
 Package pdftex.def Info: Figures/fabio_erec.PNG  used on input line 361.
 (pdftex.def)             Requested size: 210.38487pt x 136.43909pt.
-<Figures/erec_reduction.PNG, id=1628, 645.21465pt x 437.34526pt>
+<Figures/erec_reduction.PNG, id=1618, 645.21465pt x 437.34526pt>
 File: Figures/erec_reduction.PNG Graphic file (type png)
 <use Figures/erec_reduction.PNG>
 Package pdftex.def Info: Figures/erec_reduction.PNG  used on input line 362.
 (pdftex.def)             Requested size: 210.38487pt x 142.60266pt.
-<Figures/fabio_dwall.PNG, id=1629, 362.5545pt x 238.491pt>
+<Figures/fabio_dwall.PNG, id=1619, 362.5545pt x 238.491pt>
 File: Figures/fabio_dwall.PNG Graphic file (type png)
 <use Figures/fabio_dwall.PNG>
 Package pdftex.def Info: Figures/fabio_dwall.PNG  used on input line 372.
 (pdftex.def)             Requested size: 210.38487pt x 138.394pt.
-<Figures/dwall_reduction.PNG, id=1630, 1408.89247pt x 718.97475pt>
+<Figures/dwall_reduction.PNG, id=1620, 1408.89247pt x 718.97475pt>
 File: Figures/dwall_reduction.PNG Graphic file (type png)
 <use Figures/dwall_reduction.PNG>
 Package pdftex.def Info: Figures/dwall_reduction.PNG  used on input line 373.
 (pdftex.def)             Requested size: 210.37885pt x 119.49239pt.
-<Figures/fabio_effwall.PNG, id=1631, 372.1905pt x 236.082pt>
+<Figures/fabio_effwall.PNG, id=1621, 372.1905pt x 236.082pt>
 File: Figures/fabio_effwall.PNG Graphic file (type png)
 <use Figures/fabio_effwall.PNG>
 Package pdftex.def Info: Figures/fabio_effwall.PNG  used on input line 383.
 (pdftex.def)             Requested size: 210.38487pt x 133.4478pt.
-<Figures/effwall_reduction.PNG, id=1632, 645.21465pt x 440.32547pt>
+<Figures/effwall_reduction.PNG, id=1622, 645.21465pt x 440.32547pt>
 File: Figures/effwall_reduction.PNG Graphic file (type png)
 <use Figures/effwall_reduction.PNG>
 Package pdftex.def Info: Figures/effwall_reduction.PNG  used on input line 384.
 (pdftex.def)             Requested size: 210.38487pt x 143.57439pt.
-<Figures/fabio_ovaq.PNG, id=1633, 343.88475pt x 231.86626pt>
+<Figures/fabio_ovaq.PNG, id=1623, 343.88475pt x 231.86626pt>
 File: Figures/fabio_ovaq.PNG Graphic file (type png)
 <use Figures/fabio_ovaq.PNG>
 Package pdftex.def Info: Figures/fabio_ovaq.PNG  used on input line 394.
 (pdftex.def)             Requested size: 210.38487pt x 141.85568pt.
-<Figures/ovaq_reduction.PNG, id=1634, 637.76413pt x 437.34526pt>
+<Figures/ovaq_reduction.PNG, id=1624, 637.76413pt x 437.34526pt>
 File: Figures/ovaq_reduction.PNG Graphic file (type png)
 <use Figures/ovaq_reduction.PNG>
 Package pdftex.def Info: Figures/ovaq_reduction.PNG  used on input line 395.
 (pdftex.def)             Requested size: 210.38487pt x 144.271pt.
-<Figures/fabio_angle.PNG, id=1635, 343.88475pt x 234.27525pt>
+<Figures/fabio_angle.PNG, id=1625, 343.88475pt x 234.27525pt>
 File: Figures/fabio_angle.PNG Graphic file (type png)
 <use Figures/fabio_angle.PNG>
 Package pdftex.def Info: Figures/fabio_angle.PNG  used on input line 405.
 (pdftex.def)             Requested size: 210.38487pt x 143.32951pt.
-<Figures/angle_reduction.PNG, id=1636, 1296.3897pt x 717.48463pt>
+<Figures/angle_reduction.PNG, id=1626, 1296.3897pt x 717.48463pt>
 File: Figures/angle_reduction.PNG Graphic file (type png)
 <use Figures/angle_reduction.PNG>
 Package pdftex.def Info: Figures/angle_reduction.PNG  used on input line 406.
 (pdftex.def)             Requested size: 210.374pt x 119.49654pt.
- [124 <./Figures/fabio_erec.PNG> <./Figures/erec_reduction.png (PNG copy)>] [125 <./Figures/fabio_dwall.PNG> <./Figures/dwall_reduction.png (PNG copy)> <./Figures/fabio_effwall.PNG> <./Figures/effwall_reduction.png (PNG copy)>] [126 <./Figures/fabio_ovaq.PNG> <./Figures/ovaq_reduction.png (PNG copy)> <./Figures/fabio_angle.PNG> <./Figures/angle_reduction.png (PNG copy)>]
-<Figures/dark_rate_schematic.png, id=1661, 628.311pt x 289.518pt>
+ [122 <./Figures/fabio_erec.PNG> <./Figures/erec_reduction.png (PNG copy)>] [123 <./Figures/fabio_dwall.PNG> <./Figures/dwall_reduction.png (PNG copy)> <./Figures/fabio_effwall.PNG> <./Figures/effwall_reduction.png (PNG copy)>] [124 <./Figures/fabio_ovaq.PNG> <./Figures/ovaq_reduction.png (PNG copy)> <./Figures/fabio_angle.PNG> <./Figures/angle_reduction.png (PNG copy)>]
+<Figures/dark_rate_schematic.png, id=1651, 628.311pt x 289.518pt>
 File: Figures/dark_rate_schematic.png Graphic file (type png)
 <use Figures/dark_rate_schematic.png>
 Package pdftex.def Info: Figures/dark_rate_schematic.png  used on input line 432.
 (pdftex.def)             Requested size: 429.3521pt x 197.84593pt.
-<Figures/after_pulsing.PNG, id=1663, 400.49625pt x 325.215pt>
+<Figures/after_pulsing.PNG, id=1653, 400.49625pt x 325.215pt>
 File: Figures/after_pulsing.PNG Graphic file (type png)
 <use Figures/after_pulsing.PNG>
 Package pdftex.def Info: Figures/after_pulsing.PNG  used on input line 442.
@@ -1907,85 +1908,85 @@ Package pdftex.def Info: Figures/after_pulsing.PNG  used on input line 442.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [127]
-<Figures/NTrueCaptures.PNG, id=1674, 800.39024pt x 426.99525pt>
+ [125]
+<Figures/NTrueCaptures.PNG, id=1663, 800.39024pt x 426.99525pt>
 File: Figures/NTrueCaptures.PNG Graphic file (type png)
 <use Figures/NTrueCaptures.PNG>
 Package pdftex.def Info: Figures/NTrueCaptures.PNG  used on input line 462.
 (pdftex.def)             Requested size: 193.20712pt x 103.07385pt.
-<Figures/TrueCaptureTime.PNG, id=1675, 824.48026pt x 425.79076pt>
+<Figures/TrueCaptureTime.PNG, id=1664, 824.48026pt x 425.79076pt>
 File: Figures/TrueCaptureTime.PNG Graphic file (type png)
 <use Figures/TrueCaptureTime.PNG>
 Package pdftex.def Info: Figures/TrueCaptureTime.PNG  used on input line 467.
 (pdftex.def)             Requested size: 193.20712pt x 99.77496pt.
- [128 <./Figures/dark_rate_schematic.png>] [129 <./Figures/after_pulsing.PNG> <./Figures/NTrueCaptures.png> <./Figures/TrueCaptureTime.png>]
-<Figures/NGamma.PNG, id=1692, 730.52925pt x 477.58424pt>
+ [126 <./Figures/dark_rate_schematic.png>] [127 <./Figures/after_pulsing.PNG> <./Figures/NTrueCaptures.png> <./Figures/TrueCaptureTime.png>]
+<Figures/NGamma.PNG, id=1682, 730.52925pt x 477.58424pt>
 File: Figures/NGamma.PNG Graphic file (type png)
 <use Figures/NGamma.PNG>
 Package pdftex.def Info: Figures/NGamma.PNG  used on input line 478.
 (pdftex.def)             Requested size: 193.20712pt x 126.30415pt.
-<Figures/TotGammaE.PNG, id=1693, 782.925pt x 575.751pt>
+<Figures/TotGammaE.PNG, id=1683, 782.925pt x 575.751pt>
 File: Figures/TotGammaE.PNG Graphic file (type png)
 <use Figures/TotGammaE.PNG>
 Package pdftex.def Info: Figures/TotGammaE.PNG  used on input line 483.
 (pdftex.def)             Requested size: 193.20712pt x 142.07492pt.
-<Figures/TrueNCapXPos.PNG, id=1698, 811.833pt x 557.6835pt>
+<Figures/TrueNCapXPos.PNG, id=1688, 811.833pt x 557.6835pt>
 File: Figures/TrueNCapXPos.PNG Graphic file (type png)
 <use Figures/TrueNCapXPos.PNG>
 Package pdftex.def Info: Figures/TrueNCapXPos.PNG  used on input line 496.
 (pdftex.def)             Requested size: 141.68697pt x 97.32376pt.
-<Figures/TrueNCapYpos.PNG, id=1699, 825.0825pt x 553.46774pt>
+<Figures/TrueNCapYpos.PNG, id=1689, 825.0825pt x 553.46774pt>
 File: Figures/TrueNCapYpos.PNG Graphic file (type png)
 <use Figures/TrueNCapYpos.PNG>
 Package pdftex.def Info: Figures/TrueNCapYpos.PNG  used on input line 502.
 (pdftex.def)             Requested size: 141.68697pt x 95.04257pt.
-<Figures/TrueNCapZPos.PNG, id=1700, 797.98125pt x 564.30824pt>
+<Figures/TrueNCapZPos.PNG, id=1690, 797.98125pt x 564.30824pt>
 File: Figures/TrueNCapZPos.PNG Graphic file (type png)
 <use Figures/TrueNCapZPos.PNG>
 Package pdftex.def Info: Figures/TrueNCapZPos.PNG  used on input line 508.
 (pdftex.def)             Requested size: 141.68697pt x 100.19339pt.
- [130 <./Figures/NGamma.PNG> <./Figures/TotGammaE.PNG>]
-<Figures/TrueCapTimeReductionLegacy.PNG, id=1715, 377.0085pt x 240.9pt>
+ [128 <./Figures/NGamma.PNG> <./Figures/TotGammaE.PNG>]
+<Figures/TrueCapTimeReductionLegacy.PNG, id=1705, 377.0085pt x 240.9pt>
 File: Figures/TrueCapTimeReductionLegacy.PNG Graphic file (type png)
 <use Figures/TrueCapTimeReductionLegacy.PNG>
 Package pdftex.def Info: Figures/TrueCapTimeReductionLegacy.PNG  used on input line 521.
 (pdftex.def)             Requested size: 193.20712pt x 123.45653pt.
-<Figures/TrueCapTimeReductionNew.PNG, id=1716, 393.8715pt x 255.354pt>
+<Figures/TrueCapTimeReductionNew.PNG, id=1706, 393.8715pt x 255.354pt>
 File: Figures/TrueCapTimeReductionNew.PNG Graphic file (type png)
 <use Figures/TrueCapTimeReductionNew.PNG>
 Package pdftex.def Info: Figures/TrueCapTimeReductionNew.PNG  used on input line 526.
 (pdftex.def)             Requested size: 193.20712pt x 125.26093pt.
-<Figures/TruCapNuNDistanceReductionLegacy.png, id=1717, 389.65575pt x 257.16075pt>
+<Figures/TruCapNuNDistanceReductionLegacy.png, id=1707, 389.65575pt x 257.16075pt>
 File: Figures/TruCapNuNDistanceReductionLegacy.png Graphic file (type png)
 <use Figures/TruCapNuNDistanceReductionLegacy.png>
 Package pdftex.def Info: Figures/TruCapNuNDistanceReductionLegacy.png  used on input line 535.
 (pdftex.def)             Requested size: 193.20712pt x 127.51273pt.
-<Figures/TruCapNuNDistanceReductionNew.png, id=1718, 390.258pt x 252.34274pt>
+<Figures/TruCapNuNDistanceReductionNew.png, id=1708, 390.258pt x 252.34274pt>
 File: Figures/TruCapNuNDistanceReductionNew.png Graphic file (type png)
 <use Figures/TruCapNuNDistanceReductionNew.png>
 Package pdftex.def Info: Figures/TruCapNuNDistanceReductionNew.png  used on input line 540.
 (pdftex.def)             Requested size: 193.20712pt x 124.92735pt.
-<Figures/TruCapNuNDistanceReductionNewH.PNG, id=1725, 414.95026pt x 267.399pt>
+<Figures/TruCapNuNDistanceReductionNewH.PNG, id=1715, 414.95026pt x 267.399pt>
 File: Figures/TruCapNuNDistanceReductionNewH.PNG Graphic file (type png)
 <use Figures/TruCapNuNDistanceReductionNewH.PNG>
 Package pdftex.def Info: Figures/TruCapNuNDistanceReductionNewH.PNG  used on input line 551.
 (pdftex.def)             Requested size: 193.20712pt x 124.50653pt.
-<Figures/TruCapNuNDistanceReductionNewGd.PNG, id=1726, 414.95026pt x 266.1945pt>
+<Figures/TruCapNuNDistanceReductionNewGd.PNG, id=1716, 414.95026pt x 266.1945pt>
 File: Figures/TruCapNuNDistanceReductionNewGd.PNG Graphic file (type png)
 <use Figures/TruCapNuNDistanceReductionNewGd.PNG>
 Package pdftex.def Info: Figures/TruCapNuNDistanceReductionNewGd.PNG  used on input line 556.
 (pdftex.def)             Requested size: 193.20712pt x 123.9457pt.
-<Figures/TruCapTimeReductionNewH.PNG, id=1727, 515.526pt x 349.305pt>
+<Figures/TruCapTimeReductionNewH.PNG, id=1717, 515.526pt x 349.305pt>
 File: Figures/TruCapTimeReductionNewH.PNG Graphic file (type png)
 <use Figures/TruCapTimeReductionNewH.PNG>
 Package pdftex.def Info: Figures/TruCapTimeReductionNewH.PNG  used on input line 565.
 (pdftex.def)             Requested size: 193.20712pt x 130.90909pt.
-<Figures/TruCapTimeReductionNewGd.PNG, id=1728, 518.53725pt x 355.3275pt>
+<Figures/TruCapTimeReductionNewGd.PNG, id=1718, 518.53725pt x 355.3275pt>
 File: Figures/TruCapTimeReductionNewGd.PNG Graphic file (type png)
 <use Figures/TruCapTimeReductionNewGd.PNG>
 Package pdftex.def Info: Figures/TruCapTimeReductionNewGd.PNG  used on input line 570.
 (pdftex.def)             Requested size: 193.20712pt x 132.39624pt.
- [131 <./Figures/TrueNCapXpos.PNG> <./Figures/TrueNCapYpos.PNG> <./Figures/TrueNCapZPos.PNG> <./Figures/TrueCapTimeReductionLegacy.png> <./Figures/TrueCapTimeReductionNew.png>] [132 <./Figures/TruCapNuNDistanceReductionLegacy.png> <./Figures/TruCapNuNDistanceReductionNew.png> <./Figures/TruCapNuNDistanceReductionNewH.png> <./Figures/TruCapNuNDistanceReductionNewGd.png> <./Figures/TruCapTimeReductionNewH.png> <./Figures/TruCapTimeReductionNewGd.png>] [133]
+ [129 <./Figures/TrueNCapXpos.PNG> <./Figures/TrueNCapYpos.PNG> <./Figures/TrueNCapZPos.PNG> <./Figures/TrueCapTimeReductionLegacy.png> <./Figures/TrueCapTimeReductionNew.png>] [130 <./Figures/TruCapNuNDistanceReductionLegacy.png> <./Figures/TruCapNuNDistanceReductionNew.png> <./Figures/TruCapNuNDistanceReductionNewH.png> <./Figures/TruCapNuNDistanceReductionNewGd.png> <./Figures/TruCapTimeReductionNewH.png> <./Figures/TruCapTimeReductionNewGd.png>] [131]
 Underfull \hbox (badness 10000) in paragraph at lines 619--623
 
  []
@@ -1995,12 +1996,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 625--629
 
  []
 
-[134]
+[132]
 Underfull \hbox (badness 10000) in paragraph at lines 679--683
 
  []
 
-) [135]
+) [133]
 \openout2 = `Chapters/chapter_syst_uncertainty.aux'.
 
  (./Chapters/chapter_syst_uncertainty.tex
@@ -2010,7 +2011,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--22
 
  []
 
-[136
+[134
 
 
 
@@ -2030,20 +2031,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--41
 
  []
 
-[137]
+[135]
 Underfull \hbox (badness 10000) in paragraph at lines 57--59
 
  []
 
 
-LaTeX Warning: Reference `table:systuncertaintytable' on page 138 undefined on input line 64.
+LaTeX Warning: Reference `table:systuncertaintytable' on page 136 undefined on input line 64.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 62--66
 
  []
 
-<Figures/frac_beam_flux_uncertainty.png, id=1798, 527.571pt x 180.07275pt>
+<Figures/frac_beam_flux_uncertainty.png, id=1788, 527.571pt x 180.07275pt>
 File: Figures/frac_beam_flux_uncertainty.png Graphic file (type png)
 <use Figures/frac_beam_flux_uncertainty.png>
 Package pdftex.def Info: Figures/frac_beam_flux_uncertainty.png  used on input line 68.
@@ -2051,8 +2052,8 @@ Package pdftex.def Info: Figures/frac_beam_flux_uncertainty.png  used on input l
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [138]
-<Figures/flux_uncertainty.png, id=1808, 885.90974pt x 522.15076pt>
+ [136]
+<Figures/flux_uncertainty.png, id=1798, 885.90974pt x 522.15076pt>
 File: Figures/flux_uncertainty.png Graphic file (type png)
 <use Figures/flux_uncertainty.png>
 Package pdftex.def Info: Figures/flux_uncertainty.png  used on input line 80.
@@ -2065,7 +2066,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [139 <./Figures/frac_beam_flux_uncertainty.PNG> <./Figures/flux_uncertainty.png>]
+ [137 <./Figures/frac_beam_flux_uncertainty.PNG> <./Figures/flux_uncertainty.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 89--91
 
  []
@@ -2078,8 +2079,8 @@ Overfull \hbox (34.33167pt too wide) in paragraph at lines 103--121
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [140]
-<Figures/xsec_uncertainty.png, id=1826, 843.15pt x 532.389pt>
+ [138]
+<Figures/xsec_uncertainty.png, id=1815, 843.15pt x 532.389pt>
 File: Figures/xsec_uncertainty.png Graphic file (type png)
 <use Figures/xsec_uncertainty.png>
 Package pdftex.def Info: Figures/xsec_uncertainty.png  used on input line 127.
@@ -2092,11 +2093,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--136
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [141 <./Figures/xsec_uncertainty.PNG>]
+ [139 <./Figures/xsec_uncertainty.PNG>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [142]
-<Figures/fsisi_uncertainty.png, id=1842, 860.61525pt x 496.254pt>
+ [140]
+<Figures/fsisi_uncertainty.png, id=1832, 860.61525pt x 496.254pt>
 File: Figures/fsisi_uncertainty.png Graphic file (type png)
 <use Figures/fsisi_uncertainty.png>
 Package pdftex.def Info: Figures/fsisi_uncertainty.png  used on input line 174.
@@ -2104,7 +2105,7 @@ Package pdftex.def Info: Figures/fsisi_uncertainty.png  used on input line 174.
 
 Underfull \vbox (badness 1953) has occurred while \output is active []
 
- [143 <./Figures/fsisi_uncertainty.PNG>]
+ [141 <./Figures/fsisi_uncertainty.PNG>]
 Overfull \hbox (41.81183pt too wide) detected at line 226
 []
  []
@@ -2112,8 +2113,8 @@ Overfull \hbox (41.81183pt too wide) detected at line 226
 
 Underfull \vbox (badness 7099) has occurred while \output is active []
 
- [144]
-<Figures/nucleonfsi_uncertainty.png, id=1861, 882.29625pt x 525.162pt>
+ [142]
+<Figures/nucleonfsi_uncertainty.png, id=1851, 882.29625pt x 525.162pt>
 File: Figures/nucleonfsi_uncertainty.png Graphic file (type png)
 <use Figures/nucleonfsi_uncertainty.png>
 Package pdftex.def Info: Figures/nucleonfsi_uncertainty.png  used on input line 241.
@@ -2121,33 +2122,33 @@ Package pdftex.def Info: Figures/nucleonfsi_uncertainty.png  used on input line 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [145] [146 <./Figures/nucleonfsi_uncertainty.PNG>]
-<Figures/mupicap_uncertainty.png, id=1879, 864.22874pt x 414.95026pt>
+ [143] [144 <./Figures/nucleonfsi_uncertainty.PNG>]
+<Figures/mupicap_uncertainty.png, id=1867, 864.22874pt x 414.95026pt>
 File: Figures/mupicap_uncertainty.png Graphic file (type png)
 <use Figures/mupicap_uncertainty.png>
 Package pdftex.def Info: Figures/mupicap_uncertainty.png  used on input line 274.
 (pdftex.def)             Requested size: 345.68536pt x 165.97716pt.
- [147 <./Figures/mupicap_uncertainty.PNG>]
+ [145 <./Figures/mupicap_uncertainty.PNG>]
 
-LaTeX Warning: Reference `eq:MICAP_uncertainty' on page 148 undefined on input line 284.
+LaTeX Warning: Reference `eq:MICAP_uncertainty' on page 146 undefined on input line 284.
 
-[148]) [149]
+[146]) [147]
 \openout2 = `Chapters/chapter_conclusion.aux'.
 
  (./Chapters/chapter_conclusion.tex
 Chapter 8.
-) [150
+) [148
 
 
 
 
-] (./thesis_frontend.bbl [151
+] (./thesis_frontend.bbl [149
 
 
 
-] [152] [153]) [154]
+] [150] [151]) [152]
 Appendix A.
-[155
+[153
 
 ]
 \openout2 = `Chapters/appendix_a.aux'.
@@ -2161,22 +2162,22 @@ File: Figures/B1_coll_cdf.png Graphic file (type png)
 <use Figures/B1_coll_cdf.png>
 Package pdftex.def Info: Figures/B1_coll_cdf.png  used on input line 9.
 (pdftex.def)             Requested size: 210.38487pt x 171.74075pt.
-<Figures/B2_coll_pdf.png, id=1928, 531.1845pt x 418.56375pt>
+<Figures/B2_coll_pdf.png, id=1918, 531.1845pt x 418.56375pt>
 File: Figures/B2_coll_pdf.png Graphic file (type png)
 <use Figures/B2_coll_pdf.png>
 Package pdftex.def Info: Figures/B2_coll_pdf.png  used on input line 10.
 (pdftex.def)             Requested size: 210.38487pt x 165.78113pt.
-<Figures/B2_coll_cdf.png, id=1929, 534.19576pt x 417.9615pt>
+<Figures/B2_coll_cdf.png, id=1919, 534.19576pt x 417.9615pt>
 File: Figures/B2_coll_cdf.png Graphic file (type png)
 <use Figures/B2_coll_cdf.png>
 Package pdftex.def Info: Figures/B2_coll_cdf.png  used on input line 11.
 (pdftex.def)             Requested size: 210.38487pt x 164.60509pt.
-<Figures/B3_coll_pdf.png, id=1930, 539.616pt x 415.5525pt>
+<Figures/B3_coll_pdf.png, id=1920, 539.616pt x 415.5525pt>
 File: Figures/B3_coll_pdf.png Graphic file (type png)
 <use Figures/B3_coll_pdf.png>
 Package pdftex.def Info: Figures/B3_coll_pdf.png  used on input line 12.
 (pdftex.def)             Requested size: 210.38487pt x 162.01408pt.
-<Figures/B3_coll_cdf.png, id=1931, 526.3665pt x 415.5525pt>
+<Figures/B3_coll_cdf.png, id=1921, 526.3665pt x 415.5525pt>
 File: Figures/B3_coll_cdf.png Graphic file (type png)
 <use Figures/B3_coll_cdf.png>
 Package pdftex.def Info: Figures/B3_coll_cdf.png  used on input line 13.
@@ -2185,22 +2186,22 @@ Package pdftex.def Info: Figures/B3_coll_cdf.png  used on input line 13.
 
 LaTeX Warning: Float too large for page by 22.13655pt on input line 14.
 
-<Figures/B4_coll_pdf.png, id=1932, 532.99126pt x 419.76825pt>
+<Figures/B4_coll_pdf.png, id=1922, 532.99126pt x 419.76825pt>
 File: Figures/B4_coll_pdf.png Graphic file (type png)
 <use Figures/B4_coll_pdf.png>
 Package pdftex.def Info: Figures/B4_coll_pdf.png  used on input line 17.
 (pdftex.def)             Requested size: 210.38487pt x 165.69455pt.
-<Figures/B4_coll_cdf.png, id=1933, 540.8205pt x 420.97275pt>
+<Figures/B4_coll_cdf.png, id=1923, 540.8205pt x 420.97275pt>
 File: Figures/B4_coll_cdf.png Graphic file (type png)
 <use Figures/B4_coll_cdf.png>
 Package pdftex.def Info: Figures/B4_coll_cdf.png  used on input line 18.
 (pdftex.def)             Requested size: 210.38487pt x 163.76117pt.
-<Figures/B5_coll_pdf.png, id=1934, 534.798pt x 421.575pt>
+<Figures/B5_coll_pdf.png, id=1924, 534.798pt x 421.575pt>
 File: Figures/B5_coll_pdf.png Graphic file (type png)
 <use Figures/B5_coll_pdf.png>
 Package pdftex.def Info: Figures/B5_coll_pdf.png  used on input line 19.
 (pdftex.def)             Requested size: 210.38487pt x 165.84807pt.
-<Figures/B5_coll_cdf.png, id=1935, 530.58224pt x 414.348pt>
+<Figures/B5_coll_cdf.png, id=1925, 530.58224pt x 414.348pt>
 File: Figures/B5_coll_cdf.png Graphic file (type png)
 <use Figures/B5_coll_cdf.png>
 Package pdftex.def Info: Figures/B5_coll_cdf.png  used on input line 20.
@@ -2209,27 +2210,27 @@ File: Figures/B1_diff_pdf.png Graphic file (type png)
 <use Figures/B1_diff_pdf.png>
 Package pdftex.def Info: Figures/B1_diff_pdf.png  used on input line 30.
 (pdftex.def)             Requested size: 210.38487pt x 172.83116pt.
-<Figures/B1_diff_cdf.png, id=1936, 528.17325pt x 432.4155pt>
+<Figures/B1_diff_cdf.png, id=1926, 528.17325pt x 432.4155pt>
 File: Figures/B1_diff_cdf.png Graphic file (type png)
 <use Figures/B1_diff_cdf.png>
 Package pdftex.def Info: Figures/B1_diff_cdf.png  used on input line 31.
 (pdftex.def)             Requested size: 210.38487pt x 172.23734pt.
-<Figures/B2_diff_pdf.png, id=1937, 533.5935pt x 417.9615pt>
+<Figures/B2_diff_pdf.png, id=1927, 533.5935pt x 417.9615pt>
 File: Figures/B2_diff_pdf.png Graphic file (type png)
 <use Figures/B2_diff_pdf.png>
 Package pdftex.def Info: Figures/B2_diff_pdf.png  used on input line 32.
 (pdftex.def)             Requested size: 210.38487pt x 164.79642pt.
-<Figures/B2_diff_cdf.png, id=1938, 527.571pt x 421.575pt>
+<Figures/B2_diff_cdf.png, id=1928, 527.571pt x 421.575pt>
 File: Figures/B2_diff_cdf.png Graphic file (type png)
 <use Figures/B2_diff_cdf.png>
 Package pdftex.def Info: Figures/B2_diff_cdf.png  used on input line 33.
 (pdftex.def)             Requested size: 210.38487pt x 168.11238pt.
-<Figures/B3_diff_pdf.png, id=1939, 536.0025pt x 434.22224pt>
+<Figures/B3_diff_pdf.png, id=1929, 536.0025pt x 434.22224pt>
 File: Figures/B3_diff_pdf.png Graphic file (type png)
 <use Figures/B3_diff_pdf.png>
 Package pdftex.def Info: Figures/B3_diff_pdf.png  used on input line 34.
 (pdftex.def)             Requested size: 210.38487pt x 170.4326pt.
-<Figures/B3_diff_cdf.png, id=1940, 528.7755pt x 419.76825pt>
+<Figures/B3_diff_cdf.png, id=1930, 528.7755pt x 419.76825pt>
 File: Figures/B3_diff_cdf.png Graphic file (type png)
 <use Figures/B3_diff_cdf.png>
 Package pdftex.def Info: Figures/B3_diff_cdf.png  used on input line 35.
@@ -2237,22 +2238,22 @@ Package pdftex.def Info: Figures/B3_diff_cdf.png  used on input line 35.
 
 LaTeX Warning: Float too large for page by 29.89958pt on input line 36.
 
-<Figures/B4_diff_pdf.png, id=1941, 542.62724pt x 431.81325pt>
+<Figures/B4_diff_pdf.png, id=1931, 542.62724pt x 431.81325pt>
 File: Figures/B4_diff_pdf.png Graphic file (type png)
 <use Figures/B4_diff_pdf.png>
 Package pdftex.def Info: Figures/B4_diff_pdf.png  used on input line 39.
 (pdftex.def)             Requested size: 210.38487pt x 167.41814pt.
-<Figures/B4_diff_cdf.png, id=1942, 531.78674pt x 424.58624pt>
+<Figures/B4_diff_cdf.png, id=1932, 531.78674pt x 424.58624pt>
 File: Figures/B4_diff_cdf.png Graphic file (type png)
 <use Figures/B4_diff_cdf.png>
 Package pdftex.def Info: Figures/B4_diff_cdf.png  used on input line 40.
 (pdftex.def)             Requested size: 210.38487pt x 167.9721pt.
-<Figures/B5_diff_pdf.png, id=1943, 529.98pt x 422.17725pt>
+<Figures/B5_diff_pdf.png, id=1933, 529.98pt x 422.17725pt>
 File: Figures/B5_diff_pdf.png Graphic file (type png)
 <use Figures/B5_diff_pdf.png>
 Package pdftex.def Info: Figures/B5_diff_pdf.png  used on input line 41.
 (pdftex.def)             Requested size: 210.38487pt x 167.5924pt.
-<Figures/B5_diff_cdf.png, id=1944, 533.5935pt x 426.393pt>
+<Figures/B5_diff_cdf.png, id=1934, 533.5935pt x 426.393pt>
 File: Figures/B5_diff_cdf.png Graphic file (type png)
 <use Figures/B5_diff_cdf.png>
 Package pdftex.def Info: Figures/B5_diff_cdf.png  used on input line 42.
@@ -2261,22 +2262,22 @@ File: Figures/B1_inv_coll_cdf.png Graphic file (type png)
 <use Figures/B1_inv_coll_cdf.png>
 Package pdftex.def Info: Figures/B1_inv_coll_cdf.png  used on input line 50.
 (pdftex.def)             Requested size: 210.38487pt x 165.59357pt.
-<Figures/B2_inv_coll_cdf.png, id=1945, 419.76825pt x 326.4195pt>
+<Figures/B2_inv_coll_cdf.png, id=1935, 419.76825pt x 326.4195pt>
 File: Figures/B2_inv_coll_cdf.png Graphic file (type png)
 <use Figures/B2_inv_coll_cdf.png>
 Package pdftex.def Info: Figures/B2_inv_coll_cdf.png  used on input line 51.
 (pdftex.def)             Requested size: 210.38487pt x 163.59784pt.
-<Figures/B3_inv_coll_cdf.png, id=1946, 426.99525pt x 328.8285pt>
+<Figures/B3_inv_coll_cdf.png, id=1936, 426.99525pt x 328.8285pt>
 File: Figures/B3_inv_coll_cdf.png Graphic file (type png)
 <use Figures/B3_inv_coll_cdf.png>
 Package pdftex.def Info: Figures/B3_inv_coll_cdf.png  used on input line 52.
 (pdftex.def)             Requested size: 210.38487pt x 162.0205pt.
-<Figures/B4_inv_coll_cdf.png, id=1947, 425.79076pt x 331.2375pt>
+<Figures/B4_inv_coll_cdf.png, id=1937, 425.79076pt x 331.2375pt>
 File: Figures/B4_inv_coll_cdf.png Graphic file (type png)
 <use Figures/B4_inv_coll_cdf.png>
 Package pdftex.def Info: Figures/B4_inv_coll_cdf.png  used on input line 53.
 (pdftex.def)             Requested size: 210.38487pt x 163.66739pt.
-<Figures/B5_inv_coll_cdf.png, id=1948, 442.65375pt x 330.033pt>
+<Figures/B5_inv_coll_cdf.png, id=1938, 442.65375pt x 330.033pt>
 File: Figures/B5_inv_coll_cdf.png Graphic file (type png)
 <use Figures/B5_inv_coll_cdf.png>
 Package pdftex.def Info: Figures/B5_inv_coll_cdf.png  used on input line 54.
@@ -2288,22 +2289,22 @@ File: Figures/B1_inv_diff_cdf.png Graphic file (type png)
 <use Figures/B1_inv_diff_cdf.png>
 Package pdftex.def Info: Figures/B1_inv_diff_cdf.png  used on input line 63.
 (pdftex.def)             Requested size: 210.38487pt x 163.7316pt.
-<Figures/B2_inv_diff_cdf.png, id=1949, 419.166pt x 320.397pt>
+<Figures/B2_inv_diff_cdf.png, id=1939, 419.166pt x 320.397pt>
 File: Figures/B2_inv_diff_cdf.png Graphic file (type png)
 <use Figures/B2_inv_diff_cdf.png>
 Package pdftex.def Info: Figures/B2_inv_diff_cdf.png  used on input line 64.
 (pdftex.def)             Requested size: 210.38487pt x 160.81409pt.
-<Figures/B3_inv_diff_cdf.png, id=1950, 417.9615pt x 324.61275pt>
+<Figures/B3_inv_diff_cdf.png, id=1940, 417.9615pt x 324.61275pt>
 File: Figures/B3_inv_diff_cdf.png Graphic file (type png)
 <use Figures/B3_inv_diff_cdf.png>
 Package pdftex.def Info: Figures/B3_inv_diff_cdf.png  used on input line 65.
 (pdftex.def)             Requested size: 210.38487pt x 163.39566pt.
-<Figures/B4_inv_diff_cdf.png, id=1951, 415.5525pt x 322.20375pt>
+<Figures/B4_inv_diff_cdf.png, id=1941, 415.5525pt x 322.20375pt>
 File: Figures/B4_inv_diff_cdf.png Graphic file (type png)
 <use Figures/B4_inv_diff_cdf.png>
 Package pdftex.def Info: Figures/B4_inv_diff_cdf.png  used on input line 66.
 (pdftex.def)             Requested size: 210.38487pt x 163.12212pt.
-<Figures/B5_inv_diff_cdf.png, id=1952, 423.38174pt x 328.22626pt>
+<Figures/B5_inv_diff_cdf.png, id=1942, 423.38174pt x 328.22626pt>
 File: Figures/B5_inv_diff_cdf.png Graphic file (type png)
 <use Figures/B5_inv_diff_cdf.png>
 Package pdftex.def Info: Figures/B5_inv_diff_cdf.png  used on input line 67.
@@ -2311,9 +2312,9 @@ Package pdftex.def Info: Figures/B5_inv_diff_cdf.png  used on input line 67.
 
 LaTeX Warning: Float too large for page by 8.75172pt on input line 69.
 
-) [156
+) [154
 
-] [157 <./Figures/B2_coll_pdf.png> <./Figures/B2_coll_cdf.png> <./Figures/B3_coll_pdf.png> <./Figures/B3_coll_cdf.png>] [158 <./Figures/B4_coll_pdf.png> <./Figures/B4_coll_cdf.PNG> <./Figures/B5_coll_pdf.png> <./Figures/B5_coll_cdf.PNG>] [159 <./Figures/B1_diff_cdf.PNG> <./Figures/B2_diff_pdf.PNG> <./Figures/B2_diff_cdf.PNG> <./Figures/B3_diff_pdf.PNG> <./Figures/B3_diff_cdf.PNG>] [160 <./Figures/B4_diff_pdf.PNG> <./Figures/B4_diff_cdf.PNG> <./Figures/B5_diff_pdf.PNG> <./Figures/B5_diff_cdf.PNG>] [161 <./Figures/B2_inv_coll_cdf.PNG> <./Figures/B3_inv_coll_cdf.PNG> <./Figures/B4_inv_coll_cdf.PNG> <./Figures/B5_inv_coll_cdf.PNG>] [162 <./Figures/B2_inv_diff_cdf.PNG> <./Figures/B3_inv_diff_cdf.PNG> <./Figures/B4_inv_diff_cdf.PNG> <./Figures/B5_inv_diff_cdf.PNG>] (./thesis_frontend.aux (./title.aux) (./Chapters/chapter_introduction.aux) (./Chapters/chapter_t2k_detector.aux) (./Chapters/chapter_superk_detector.aux) (./Chapters/chapter_superk-calib.aux) (./Chapters/chapter_ukli-system.aux) (./Chapters/chapter_ncqe-gd.aux) (./Chapters/chapter_syst_uncertainty.aux) (./Chapters/chapter_conclusion.aux) (./Chapters/appendix_a.aux))
+] [155 <./Figures/B2_coll_pdf.png> <./Figures/B2_coll_cdf.png> <./Figures/B3_coll_pdf.png> <./Figures/B3_coll_cdf.png>] [156 <./Figures/B4_coll_pdf.png> <./Figures/B4_coll_cdf.PNG> <./Figures/B5_coll_pdf.png> <./Figures/B5_coll_cdf.PNG>] [157 <./Figures/B1_diff_cdf.PNG> <./Figures/B2_diff_pdf.PNG> <./Figures/B2_diff_cdf.PNG> <./Figures/B3_diff_pdf.PNG> <./Figures/B3_diff_cdf.PNG>] [158 <./Figures/B4_diff_pdf.PNG> <./Figures/B4_diff_cdf.PNG> <./Figures/B5_diff_pdf.PNG> <./Figures/B5_diff_cdf.PNG>] [159 <./Figures/B2_inv_coll_cdf.PNG> <./Figures/B3_inv_coll_cdf.PNG> <./Figures/B4_inv_coll_cdf.PNG> <./Figures/B5_inv_coll_cdf.PNG>] [160 <./Figures/B2_inv_diff_cdf.PNG> <./Figures/B3_inv_diff_cdf.PNG> <./Figures/B4_inv_diff_cdf.PNG> <./Figures/B5_inv_diff_cdf.PNG>] (./thesis_frontend.aux (./title.aux) (./Chapters/chapter_introduction.aux) (./Chapters/chapter_t2k_detector.aux) (./Chapters/chapter_superk_detector.aux) (./Chapters/chapter_superk-calib.aux) (./Chapters/chapter_ukli-system.aux) (./Chapters/chapter_ncqe-gd.aux) (./Chapters/chapter_syst_uncertainty.aux) (./Chapters/chapter_conclusion.aux) (./Chapters/appendix_a.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -2321,21 +2322,21 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `thesis_frontend.out' has not changed.
-(rerunfilecheck)             Checksum: 050D388791E956412F66B95AC851DC9F;14820.
+(rerunfilecheck)             Checksum: 45C614F85AA2EB85EEF907B191518121;14901.
  ) 
 Here is how much of TeX's memory you used:
- 29347 strings out of 478233
- 577308 string characters out of 5847836
- 919219 words of memory out of 5000000
- 46330 multiletter control sequences out of 15000+600000
+ 29343 strings out of 478233
+ 577263 string characters out of 5847836
+ 919185 words of memory out of 5000000
+ 46329 multiletter control sequences out of 15000+600000
  487311 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,16n,89p,2008b,615s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on thesis_frontend.pdf (162 pages, 36109159 bytes).
+Output written on thesis_frontend.pdf (160 pages, 36109758 bytes).
 PDF statistics:
- 2219 PDF objects out of 2487 (max. 8388607)
- 1590 compressed objects within 16 object streams
- 484 named destinations out of 1000 (max. 500000)
+ 2209 PDF objects out of 2487 (max. 8388607)
+ 1582 compressed objects within 16 object streams
+ 481 named destinations out of 1000 (max. 500000)
  1534 words of extra memory for PDF output out of 10000 (max. 10000000)
 
