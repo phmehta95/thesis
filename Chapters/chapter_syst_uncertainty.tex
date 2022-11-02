@@ -64,7 +64,7 @@ Each individual bin for the flux is increased/decreased by its error, the Monte 
 Figure \ref{fig:fluxuncertainty} shows the fractional errors calculated from the reweighted Monte Carlo, with the red bars showing the -1$\sigma$ variation and the blue bars showing the +1$\sigma$ variation. Table \ref{table:systuncertaintytable} contains the value for the total uncertainty resulting from the neutrino beam flux, which was calculated using Equation \eqref{summingfluxuncertainty}, where the maximum value between the increased and decreased discrepancy is taken and summed over to produce the final neutrino flux beam uncertainty.
 \newline
 
-\begin{figure}[H]
+\begin{figure}
     \includegraphics[width=\textwidth]{Figures/frac_beam_flux_uncertainty.png}
     \caption{Fractional uncertainties of beam fluxes.}
     \label{fig:frac_beam_flux_uncertainty}
@@ -76,7 +76,7 @@ Figure \ref{fig:fluxuncertainty} shows the fractional errors calculated from the
  \label{summingfluxuncertainty}   
 \end{equation}
 
-\begin{figure}[H]
+\begin{figure}
 \includegraphics[scale=0.4]{Figures/flux_uncertainty.png}
 \caption{Tagging efficiency fractional uncertainties caused by neutrino beam flux discrepancies. From left to right the sections in this plot are comprised of the beam fluxes elements of $\left(\nu_{e} \overline{\nu_{e}} \nu_{\mu} \overline{\nu_{\mu}}\right)$ respectively.}
 \label{fig:fluxuncertainty}
@@ -98,7 +98,7 @@ The Monte Carlo re-weighting method is used to reweight the nominal Monte Carlo 
 
 Figure \ref{fig:xsecuncertainty} shows the reweighted Monte Carlo fractional uncertainty plotted for the FHC sample. Since this sample contains a lot of NCother interactions, the uncertainty for this interaction type is greater than for the others.
 
-\begin{table}[H]
+\begin{table}
     \centering
         $\begin{array}{||cccc||}
         \hline & & & \\
@@ -123,7 +123,7 @@ Figure \ref{fig:xsecuncertainty} shows the reweighted Monte Carlo fractional unc
 \end{table}
 
 
-\begin{figure}[H]
+\begin{figure}
     \includegraphics[scale=0.4]{Figures/xsec_uncertainty.png}
 \caption{Tagging efficiency uncertainty caused by the cross-section parameters variations for the FHC mode}
 \label{fig:xsecuncertainty}
@@ -145,7 +145,7 @@ Absorption occurs when the incident pion is absorbed by the nucleus and no pions
 For pions with a momentum of greater than 500 MeV, a different set of interactions are used. Inelastic interactions (INEL) can now produce hadrons and replace absorption processes, but quasi-elastic scattering (QEH) and charge exchange (CXH) will still occur. The final state interaction parameters and the pion momentum range they are used in can be seen in Table \ref{fsiparameters}. Each parameter scales the relevant very small proabability of the charged pion interaction at every stage of the intra-nuclear cascade, aside from the parameter for charge exchange which scales only the fraction of low momentum QE scattering. 
 
 
-\begin{table}[H]
+\begin{table}
 $$
 \begin{array}{ccc}
 \text { Parameter } & \text { Description } & \begin{array}{c}
@@ -170,13 +170,13 @@ A set of paramater variations which determine a surface in paramater space have 
 \label{fsisitageff}
 \end{equation}
 
-\begin{figure}[H]
+\begin{figure}
     \includegraphics[scale=0.4]{Figures/fsisi_uncertainty.png}
 \caption{Tagging efficiency fractional uncertainty caused by the variation in the FSI/SI model parameters for the FHC mode.}
 \label{fig:fsisiuncertainty}
 \end{figure}
 
-\begin{table}[H]
+\begin{table}
     $$
     \begin{array}{lllllll}
          & & & & & & \\
@@ -212,7 +212,7 @@ A set of paramater variations which determine a surface in paramater space have 
 
 Uncertainties regarding the nucleon final state interactions can change the number of nucleons knocked out of $\ch{^{16}O}$, therefore how the tagging efficiency is changed due to the variation in nucleon final state interactions needs to be investigated. This uncertainty is extracted using GENIE, a Monte Carlo event generator which contains the INTRANUKE (hA) intranuclear transport model. The uncertainties in the in the total scattering probability for hadrons inside the target nuclei ($x_{m f p}^{N}$) and the uncertainties in the likelihood of each hadron rescattering method: (elastic ($x_{e l}^{N}$), inelastic ($x_{i n e l}^{N}$), charge exchange ($x_{c e x}^{N}$), pion production ($x_{\pi}^{N}$) and absorption ($x_{a b s}^{N}$)) are taken into account. The fractional uncertainties for these modes for pions is shown in Table \ref{nucleonfsiuncertainties}. 
 
-\begin{table}[H]
+\begin{table}
 $$
 \begin{array}{llc}
 \text {Abbreviation} & \text { Description of uncertainty }  & \text{Fractional uncertainty} \\
@@ -237,7 +237,7 @@ A nominal GENIE Monte Carlo sample is generated (different from the previously u
 
 The tagging efficiency fractional uncertainties are displayed in Figure \ref{fig:nucleonfsiuncertainty}, showing which parameter from Table \ref{nucleonfsiuncertainties} each uncertainty has arisen from.
 
-\begin{figure}[H]
+\begin{figure}
     \includegraphics[scale=0.4]{Figures/nucleonfsi_uncertainty.png}
 \caption{Tagging efficiency fractional uncertainties caused by the nucleon final state interaction model parameter variation for the FHC mode}
 \label{fig:nucleonfsiuncertainty}
@@ -270,7 +270,7 @@ Because any change in the model can alter the energy spectra of the neutrons, th
 
 Figure \ref{fig:mupicap_uncertainty} shows the fractional uncertainties caused by muon and pion capture on oxygen for each model.
 
-\begin{figure}[H]
+\begin{figure}
     \includegraphics[scale=0.4]{Figures/mupicap_uncertainty.png}
 \caption{Fractional uncertainties in the tagging efficiency caused by muon and pion capture on the muon capture CHIPS model, pion capture CHIPS model and the pion capture Bertini model.}
 \label{fig:mupicap_uncertainty}

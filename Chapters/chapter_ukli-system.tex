@@ -114,17 +114,18 @@ In September of 2019 and November of 2019 two sets of test data were taken of th
 \begin{figure}
     \centering
     
-    \caption{Occupancy plot for the collimator optics from the UKLI November 2019 test run} \label{fig:occupancy_coll} 
-    
+    \caption{Occupancy plot for the collimator optics from the UKLI November 2019 test run}
+    \label{fig:occupancy_coll} 
     \subfloat[B1 collimator]{\includegraphics[width=0.49\textwidth]{Figures/B1_occupancy_coll.PNG}} \hfill
     \subfloat[B2 collimator]{\includegraphics[width=0.49\textwidth]{Figures/B2_occupancy_coll.PNG}} \par
     \subfloat[B3 collimator]{\includegraphics[width=0.49\textwidth]{Figures/B3_occupancy_coll.PNG}} \hfill
     \subfloat[B4 collimator]{\includegraphics[width=0.49\textwidth]{Figures/B4_occupancy_coll.PNG}} \par
     \subfloat[B5 collimator]{\includegraphics[width=0.49\textwidth]{Figures/B5_occupancy_coll.PNG}}
-    
+    \thisfloatpagestyle{empty}
 \end{figure}
 
-\begin{figure}[p]
+
+\begin{figure}
     \centering
     
     \caption{Occupancy plot for the diffuser optics from the UKLI November 2019 test run} \label{fig:occupancy_diffuser} 
@@ -146,39 +147,30 @@ The UKLI was also added to an ``autocalib'' system used for long term monitoring
     \label{fig:autocalib}
 \end{figure}
 
-Figures \ref{fig:occupancy_coll_auto} and \ref{fig:occupancy_diff_auto} shows the occupancy plots for autocalib data taken in July 2020: as can be seen in the text in the upper left hand corner, the number of events in the run is a lot less than the 100,000 events or so taken in the test runs, however they are more than sufficient for monitoring purposes.
+Figures \ref{fig:B1_coll_diff_auto_July} shows the occupancy plots for autocalib data taken in July 2020, for the B1 collimator (left) and the B1 diffuser (right). From this point onwards all plots relating to the B2 - B5 injectors for both the collimators and diffusers will be shown in Appendix A. As can be seen in the text in the upper left hand corner, the number of events in the run is a lot less than the 100,000 events or so taken in the test runs, however they are more than sufficient for monitoring purposes.
+
 
 \begin{figure}
     \centering
     
-    \caption{Occupancy plot for the collimator optics from the UKLI Autocalib July 2020 run} \label{fig:occupancy_coll_auto} 
-    
-    \subfloat[B1 collimator]{\includegraphics[width=0.49\textwidth]{Figures/B1_occupancy_coll_auto.PNG}} \hfill
-    \subfloat[B2 collimator]{\includegraphics[width=0.49\textwidth]{Figures/B2_occupancy_coll_auto.PNG}} \par
-    \subfloat[B3 collimator]{\includegraphics[width=0.49\textwidth]{Figures/B3_occupancy_coll_auto.PNG}} \hfill
-    \subfloat[B4 collimator]{\includegraphics[width=0.49\textwidth]{Figures/B4_occupancy_coll_auto.PNG}} \par
-    \subfloat[B5 collimator]{\includegraphics[width=0.49\textwidth]{Figures/B5_occupancy_coll_auto.PNG}}
-    
-\end{figure}
-
-\begin{figure}
-    \centering
-    
-    \caption{Occupancy plot for the diffuser optics from the UKLI Autocalib July 2020 run} \label{fig:occupancy_diff_auto} 
-    
-    \subfloat[B1 diffuser]{\includegraphics[width=0.49\textwidth]{Figures/B1_occupancy_diff_auto.PNG}} \hfill
-    \subfloat[B2 diffuser]{\includegraphics[width=0.49\textwidth]{Figures/B2_occupancy_diff_auto.PNG}} \par
-    \subfloat[B3 diffuser]{\includegraphics[width=0.49\textwidth]{Figures/B3_occupancy_diff_auto.PNG}} \hfill
-    \subfloat[B4 diffuser]{\includegraphics[width=0.49\textwidth]{Figures/B4_occupancy_diff_auto.PNG}} \par
-    \subfloat[B5 diffuser]{\includegraphics[width=0.49\textwidth]{Figures/B5_occupancy_diff_auto.PNG}}
-    
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/B1_occupancy_coll_auto.PNG} % first figure itself
+        \caption{Occupancy plot for the B1 collimator optic from the UKLI Autocalib July 2020 run}
+    \end{minipage}\hfill
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/B1_occupancy_diff_auto.PNG} % second figure itself
+        \caption{Occupancy plot for the B1 diffuser optic from the UKLI Autocalib July 2020 run}
+        \label{fig:B1_coll_diff_auto_July}
+    \end{minipage}
 \end{figure}
 
 
-\section{Implementation of UKLI MC in SKDETSIM}
+\section{Implementation of UKLI MC in SK Simulation}
 After making these fits to data the next aim was to use these light profiles as an input to SKDETSIM, the Super Kamiokande Detector Simulator. SKDETSIM uses GEANT3 (GEometry ANd Tracking 3) to simulate what the particles in each event would do inside the detector, and tracks the particle's trajectories and energy loss. Simulating the light injection from the UKLI system in SKDETSIM was done in a similar way to the Korean method of producing Monte Carlo: the same versions of the calibration scripts were used however, small modifications were made to them and to the version of SKDETSIM used to simulate the input photons from the system in the detector. The calibration software allows for the number of events and the number of injected photons to be set, in order to generate many Monte Carlo files with varying absorption, Rayleigh and Mie scattering parameters. 
 \newline
-Along with making sure the position of the injectors was set to that of the UKLI injectors (shown in Table \ref{table:UKLI_loc}), the opening angle of the injectors determined by the simulation had to be set to accomodate the fact that the injectors for the UKLI system now consisted of three different opening angles for the collimator, diffuser and bare fibre optics. Previously, to set the angle of the photons in the beam, the``SIGBM" parameter was used. This stands for the sigma of the input injector beam, and was produced using a Gaussian random number generator to produce the photon angle. However an entirely new method of determining the opening angle of the beam was needed to include the information from the light profiles taken from the test stands at Warwick. In order to understand the SIGBM parameter further however, the relationship between opening angle in degrees and SIGBM was plotted by outputting the SIGBM value and the angle to a text file during laser generation Monte Carlo production (shown in Figure \ref{fig:sigbm_angle}.)
+Along with making sure the position of the injectors was set to that of the UKLI injectors (shown in Table \ref{table:UKLI_loc}), the opening angle of the injectors determined by the simulation had to be set to accomodate the fact that the injectors for the UKLI system now consisted of three different opening angles for the collimator, diffuser and bare fibre optics. Previously, to set the angle of the photons in the beam, the sigma of the input injector beam was used, and was produced using a Gaussian random number generator to produce the photon angle. However, an entirely new method of determining the opening angle of the beam was needed to include the information from the light profiles taken from the test stands at Warwick as the previous simulation included an algorithm for a 12\degree opening angle that needed to be rewritten for our purposes for use with multiple optics. In order to understand the SIGBM parameter further however, the relationship between opening angle in degrees and SIGBM was plotted by outputting the SIGBM value and the angle to a text file during laser generation Monte Carlo production (shown in Figure \ref{fig:sigbm_angle}.)
 
 \begin{table}[htp]
     $$
@@ -244,7 +236,7 @@ The width of the beam needed to be defined in order to do this however, and the 
 
 After using the charge weighted hit plots to understand the SIGBM parameter and how the opening angle is generated by SKDETSIM more thoroughly, the next step involved using the profiles from the Warwick optic test stands (shown in Figures \ref{fig:collimator_TF1} and \ref{fig:diffuser_TF1}) in the production of this opening angle in the detector simulation. This was done by treating the profiles in Figures \ref{fig:collimator_TF1} and \ref{fig:diffuser_TF1} as Probablity Distribution Functions (PDFs) and using inverse transform sampling to make the detector simulation sample at random from it. Inverse transform sampling is a method for generating random numbers from any probability distribution by using the inverse of its cumulative distribution $F^{-1}(x)$. For continuous distributions, such as the results from the collimator and diffuser optics test stands, the algorithm for inverse transform sampling is simple. Firstly, a random variable $U$ is uniformly distributed between [0,1], and secondly the relation $X = F^{-1}_{x}(U)$ would then produce a distribution $X$ following the original probability distribution function, i.e. that of the original PDFs from the optics test stands. 
 
-The first step is to produce the CDFs from the PDFs from the optic test stand profile tests. Figure \ref{fig:collimator_TF1} shows that the original fits to the collimator data did not reach 4 degrees, and as a result the PDFs produced needed to be linearly extrapolated from 3.5 degrees where the measurements cut off to reach 4 degrees. Figure \ref{fig:B1_PDF_CDF_coll} shows the PDFs and CDFs produced from the collimator data, and Figure \ref{fig:B1_PDF_CDF_diff} shows the PDFs and CDFs produced from the diffuser data. The CDFs are normalised with a max of one using min-max scaling. The PDFs and CDFs for the B2 - B5 collimators are shown in Figure \ref{fig:PDF_CDF_coll} and the PDFs and CDFs for the B2 - B5 diffusers are shown in Figure \ref{fig:PDF_CDF_diff}.
+The first step is to produce the CDFs from the PDFs from the optic test stand profile tests. Figure \ref{fig:collimator_TF1} shows that the original fits to the collimator data did not reach 4 degrees, and as a result the PDFs produced needed to be linearly extrapolated from 3.5 degrees where the measurements cut off to reach 4 degrees. Figure \ref{fig:B1_PDF_CDF_coll} shows the PDFs and CDFs produced from the collimator data, and Figure \ref{fig:B1_PDF_CDF_diff} shows the PDFs and CDFs produced from the diffuser data. The CDFs are normalised with a max of one using min-max scaling.
 
 
 \begin{figure}
@@ -280,7 +272,7 @@ The first step is to produce the CDFs from the PDFs from the optic test stand pr
 \end{figure}
 
 
-After producing the normalised CDFs, the inverse of these CDFs are calculated - Figure \ref{fig:B1_PDF_CDF_inv_coll} shows the comparison of the normalised CDF data for the B1 collimator (top sublot, shown in blue) and the polynomial fit to the CDF for the B1 collimator (top subplot, shown in red), and the inverse CDF function (bottom subplot shown in green) and the polynomial fit to this inverse CDF function (bottom subplot shown in purple). Figure \ref{fig:B1_PDF_CDF_inv_diff} shows the same plot for the B1 diffuser. The corresponding plots for the B2 - B5 collimators are shown in Figure \label{fig:PDF_CDF_inv_diff} and for the B2 - B5 diffusers they are shown in Figure \ref{fig:PDF_CDF_inv_diff}.
+After producing the normalised CDFs, the inverse of these CDFs are calculated - Figure \ref{fig:B1_PDF_CDF_inv_coll} shows the comparison of the normalised CDF data for the B1 collimator (top sublot, shown in blue) and the polynomial fit to the CDF for the B1 collimator (top subplot, shown in red), and the inverse CDF function (bottom subplot shown in green) and the polynomial fit to this inverse CDF function (bottom subplot shown in purple). Figure \ref{fig:B1_PDF_CDF_inv_diff} shows the same plot for the B1 diffuser. 
 
 \begin{figure}
     \centering
