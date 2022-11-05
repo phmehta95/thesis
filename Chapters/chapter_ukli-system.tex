@@ -67,13 +67,11 @@ Figure \ref{fig:diffuser_TF1} shows distributions provided by this test stand da
     
     \caption{Light profiles for the diffuser optics provided by The University of Warwick}\label{fig:diffuser_TF1}
     
-    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/B1_diffuser_fit.PNG}}\hfill
-    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/B2_diffuser_fit.PNG}}\hfill
-    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/B3_diffuser_fit.PNG}}
-    
-    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/B4_diffuser_fit.PNG}}%
-    \hspace*{0.005\textwidth}%
-    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/B5_diffuser_fit.PNG}}
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B1_diffuser_fit.PNG}}\hfill
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B2_diffuser_fit.PNG}}\par
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B3_diffuser_fit.PNG}}\hfill
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B4_diffuser_fit.PNG}}\par
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B5_diffuser_fit.PNG}}
     
 \end{figure}
 
@@ -93,14 +91,11 @@ Figure \ref{fig:collimator_TF1} shows fits made by ROOT to the light profiles fo
     
     \caption{Light profiles for the collimator optics provided by The University of Warwick}\label{fig:collimator_TF1}
     
-    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/B1_collimator_fit.PNG}}\hfill
-    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/B2_collimator_fit.PNG}}\hfill
-    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/B3_collimator_fit.PNG}}
-    
-    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/B4_collimator_fit.PNG}}%
-    \hspace*{0.005\textwidth}%
-    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/B5_collimator_fit.PNG}}
-    
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B1_collimator_fit.PNG}}\hfill
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B2_collimator_fit.PNG}}\par
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B3_collimator_fit.PNG}}\hfill
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B4_collimator_fit.PNG}}\par
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B5_collimator_fit.PNG}}
 \end{figure}
 
 
@@ -138,7 +133,7 @@ In September of 2019 and November of 2019 two sets of test data were taken of th
     
 \end{figure}
 
-The UKLI was also added to an ``autocalib'' system used for long term monitoring of the water parameters in Super-Kamiokande by the Korean laser system. In early 2020 the autocalib scheduler was modified to incorporate data taking by the UKLI system which was very useful for Gadolinium loading calibration purposes but also in the longer term, it will be useful in the monitoring of daily/weekly water coefficient property measurements, investigation of depth dependence with respect to the water properties and PMT property calibration. Figure \ref{fig:autocalib} shows the schedule for autocalib, and the black dashed lines show the position of the UK barrel collimator and diffusers with respect to the other autocalib data taking streams. The horizontal blue line shows the length of the one autocalib cycle, which is about 4.6 seconds, with each UKLI optic taking about 3310 events per day.
+The UKLI was also added to an ``autocalib'' system used for long term monitoring of the water parameters in Super-Kamiokande by the Korean laser system. In early 2020 the autocalib scheduler was modified to incorporate data taking by the UKLI system which was very useful for gadolinium loading calibration purposes but also in the longer term, it will be useful in the monitoring of daily/weekly water coefficient property measurements, investigation of depth dependence with respect to the water properties and PMT property calibration. Figure \ref{fig:autocalib} shows the schedule for autocalib, and the black dashed lines show the position of the UK barrel collimator and diffusers with respect to the other autocalib data taking streams. The horizontal blue line shows the length of the one autocalib cycle, which is about 4.6 seconds, with each UKLI optic taking about 3310 events per day.
 
 \begin{figure}
     \centering
@@ -170,7 +165,7 @@ Figures \ref{fig:B1_coll_diff_auto_July} shows the occupancy plots for autocalib
 \section{Implementation of UKLI MC in SK Simulation}
 After making these fits to data the next aim was to use these light profiles as an input to SKDETSIM, the Super Kamiokande Detector Simulator. SKDETSIM uses GEANT3 (GEometry ANd Tracking 3) to simulate what the particles in each event would do inside the detector, and tracks the particle's trajectories and energy loss. Simulating the light injection from the UKLI system in SKDETSIM was done in a similar way to the Korean method of producing Monte Carlo: the same versions of the calibration scripts were used however, small modifications were made to them and to the version of SKDETSIM used to simulate the input photons from the system in the detector. The calibration software allows for the number of events and the number of injected photons to be set, in order to generate many Monte Carlo files with varying absorption, Rayleigh and Mie scattering parameters. 
 \newline
-Along with making sure the position of the injectors was set to that of the UKLI injectors (shown in Table \ref{table:UKLI_loc}), the opening angle of the injectors determined by the simulation had to be set to accomodate the fact that the injectors for the UKLI system now consisted of three different opening angles for the collimator, diffuser and bare fibre optics. Previously, to set the angle of the photons in the beam, the sigma of the input injector beam was used, and was produced using a Gaussian random number generator to produce the photon angle. However, an entirely new method of determining the opening angle of the beam was needed to include the information from the light profiles taken from the test stands at Warwick as the previous simulation included an algorithm for a 12\degree opening angle that needed to be rewritten for our purposes for use with multiple optics. In order to understand the SIGBM parameter further however, the relationship between opening angle in degrees and SIGBM was plotted by outputting the SIGBM value and the angle to a text file during laser generation Monte Carlo production (shown in Figure \ref{fig:sigbm_angle}.)
+Along with making sure the position of the injectors was set to that of the UKLI injectors (shown in Table \ref{table:UKLI_loc}), the opening angle of the injectors determined by the simulation had to be set to accomodate the fact that the injectors for the UKLI system now consisted of three different opening angles for the collimator, diffuser and bare fibre optics. Previously, to set the angle of the photons in the beam, a parameter relating to the width of the input injector beam was used ("SIGBM", standing for "sigma of the beam"), and was produced using a Gaussian random number generator to produce the photon angle. However, an entirely new method of determining the opening angle of the beam was needed to include the information from the light profiles taken from the test stands at Warwick as the previous simulation included an algorithm for a 12\degree opening angle that needed to be rewritten for our purposes for use with multiple optics. 
 
 \begin{table}[htp]
     $$
@@ -184,18 +179,11 @@ Along with making sure the position of the injectors was set to that of the UKLI
     \hline \hline 
 \end{array}
     $$
-\caption{Barrel injector positions (x,y,z) of the UKLI injectors in cm} 
+\caption{Theoretical barrel injector positions (x,y,z) of the UKLI injectors in cm} 
 \label{table:UKLI_loc}
 \end{table}
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.7\textwidth]{Figures/sigbm_angle.png}
-    \caption{Relationship between the SIGBM parameter value and the opening angle of the beam in degrees}
-    \label{fig:sigbm_angle}
-\end{figure}
-
-In order to validate the positions of the targets for the UKLI system, and the relationship between the SIGBM parameter and output angle, producing charge weighted histograms from UKLI test runs is very helpful. It allows us to explore the shape of the beam profile and intensity. Figures \ref{fig:charge_weighted_nov_sept_B1} and \ref{fig:charge_weighted_nov_sept_B4} shows the charge weighted z-profiles for the September and November 2019 datasets for the B1 and B4 collimator injectors, where the blue dashed line shows the expected target position. These are produced by selecting hit PMTs which are greater than 2 m away from the injector (to avoid including PMT hits from backscattered light), and filling the histogram with the z-position of the hit PMT and the number of hits the hit PMT recieves multiplied by the corrected charge from the PMT. The corrected PMT charge is calculated using Equation \ref{eq:gain_correction}, where the gain correction value is taken from official Super-Kamiokande gain tables. 
+In order to validate the positions of the targets for the UKLI system, and the relationship between the width of the beam and the output angle, producing charge weighted histograms from UKLI test runs is very helpful. It allows us to explore the shape of the beam profile and intensity. Figures \ref{fig:charge_weighted_nov_sept_B1} and \ref{fig:charge_weighted_nov_sept_B4} shows the charge weighted z-profiles for the September and November 2019 datasets for the B1 and B4 collimator injectors, where the blue dashed line shows the expected target position. These are produced by selecting hit PMTs which are greater than 2 m away from the injector (to avoid including PMT hits from backscattered light), and filling the histogram with the z-position of the hit PMT and the number of hits the hit PMT recieves multiplied by the corrected charge from the PMT. The corrected PMT charge is calculated using Equation \ref{eq:gain_correction}, where the gain correction value is taken from official Super-Kamiokande gain tables. 
 
 \begin{equation}
     q/(1 + gain)
@@ -216,7 +204,25 @@ In order to validate the positions of the targets for the UKLI system, and the r
     \label{fig:charge_weighted_nov_sept_B4}
 \end{figure}
 
-The B1 and B4 collimator optics give the largest peaks in the charge weighted plots, while the B3 and B5 optics give the weakest peaks, practically indistinguishable from the background pedestal (even with the additional number of events taken during the November data taking runs.) The charge weighted plots were used to validate the relationship between the opening angle of the injector beam in the Monte Carlo production calibration scripts by generating Monte Carlo scripts with varying values of the SIGBM parameter (while keeping the absorption and scattering parameters the same). Fitting the charge weighted profile plots with a Gaussian and using the position of the injector target and the edge of the beam spot, the opening angle of the beam in degrees could be determined.
+The B1 and B4 collimator optics give the largest peaks in the charge weighted plots, while the B3 and B5 optics give the weakest peaks, practically indistinguishable from the background pedestal (even with the additional number of events taken during the November data taking runs.) These peaks of the distributions in these plots were used to calculate the actual injector positions, shown in Table \ref{table:actual_UKLI_injector_loc}. 
+
+\begin{table}[htp]
+    $$
+\begin{array}{|c|c|c|c|c|c|}  
+    \hline \hline{\text {UKLI Barrel Injector }} & {\text { x (cm)}} & {\text {y (cm)}} & {\text {z (cm)}}  \tabularnewline
+    \hline \text { B1 } & 1490.73 & 768.14 & 1224 \\
+    \hline \text { B2 } & 1490.73 & 768.14 & 742 \\
+    \hline \text { B3 } & 1490.73 & 768.14 & -200 \\
+    \hline \text { B4 } & 1490.73 & 768.14 & -747 \\
+    \hline \text { B5 } & 1490.73 & 768.14 &  -1413 \\
+    \hline \hline 
+\end{array}
+    $$
+\caption{Actual barrel injector positions (x,y,z) of the UKLI injectors in cm} 
+\label{table:actual_UKLI_loc}
+\end{table}
+
+The charge weighted plots were used to validate the relationship between the opening angle of the injector beam in the Monte Carlo production calibration scripts by generating Monte Carlo scripts with varying values of the SIGBM parameter (while keeping the absorption and scattering parameters the same). Fitting the charge weighted profile plots with a Gaussian and using the position of the injector target and the edge of the beam spot, the opening angle of the beam in degrees could be determined.
 
 The width of the beam needed to be defined in order to do this however, and the standard beam radius definition is shown as in Figure \ref{fig:beam_width}. This schematic shows that the width of the beam was defined as using $1/e^2$ for the edge of the beam width, so it is taken as the point where the intensity drops to 0.135 of the Gaussian peak value. While there is good agreement at small opening angles, there is a slight discrepancy between this plot and Figure \ref{fig:sigbm_angle} at larger opening angles, where in Figure \ref{fig:sigbm_angle} the angle in degrees is consistently greater than in Figure \ref{fig:sigbm_angle_validation} for the same value of SIGBM, and this is due to SIGBM being defined as the maximum opening angle, however for small opening angles as for the collimator, the comparison is valid.
 
@@ -478,6 +484,15 @@ Along with implementing the Gaussian distributed time dispersion, introducing a 
     \label{fig:double_gauss_time_dispersion}
 \end{figure}
 
+Figure \ref{fig:TOF_inj} shows the time-of-flight corrected plots for the hits from the injector, for various amounts of Gaussian distributed time dispersion: for 0 ns, 5 ns, 10 ns, 20 ns and 30 ns. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{Figures/TOF_inj.PNG}
+    \caption{Gaussian distributed time dispersion plots for the injected hits}
+    \label{fig:TOF_inj}
+\end{figure}
+
 Figures \ref{fig:5ns_time_dispersion}, \ref{fig:10ns_time_dispersion}, \ref{fig:15ns_time_dispersion}, \ref{fig:20ns_time_dispersion} show these time-of-flight corrected plots with both a gaussian and double gaussian time dispersion put in for varying amounts of time dispersion for 5, 10, 15 and 20 ns respectively.
 
 
@@ -508,7 +523,6 @@ Figures \ref{fig:5ns_time_dispersion}, \ref{fig:10ns_time_dispersion}, \ref{fig:
     \caption{Gaussian and double gaussian time dispersion for 20ns for the B1 collimator TOF comparison between UKLI MC and Run 82181 test data}
     \label{fig:20ns_time_dispersion}
 \end{figure}
-
 
 
 For the scattered hits region (region between the dashed lines), there is now good agreement between the MC and data, with this region giving Chi2/NDF values of less than one, and the time dispersion values of 5 ns and 10 ns giving the best agreement. A problem remains regarding the reflected hits peak, where the data continues to have a much higher reflected peak than the Monte Carlo. This points to the amount of charge in the detector for the reflected peak being too large for the Monte Carlo, and further studies will be needed to be done to tune this. These differences are most likely due to misunderstanding the optics in Super-Kamiokande. Future studies will aim to minimise these effects and work towards the installation of a UK Light Injection system in Hyper-Kamiokande with a similar Monte Carlo used to determine absorption and scattering coefficients. 
