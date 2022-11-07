@@ -165,7 +165,7 @@ Figures \ref{fig:B1_coll_diff_auto_July} shows the occupancy plots for autocalib
 \section{Implementation of UKLI MC in SK Simulation}
 After making these fits to data the next aim was to use these light profiles as an input to SKDETSIM, the Super Kamiokande Detector Simulator. SKDETSIM uses GEANT3 (GEometry ANd Tracking 3) to simulate what the particles in each event would do inside the detector, and tracks the particle's trajectories and energy loss. Simulating the light injection from the UKLI system in SKDETSIM was done in a similar way to the Korean method of producing Monte Carlo: the same versions of the calibration scripts were used however, small modifications were made to them and to the version of SKDETSIM used to simulate the input photons from the system in the detector. The calibration software allows for the number of events and the number of injected photons to be set, in order to generate many Monte Carlo files with varying absorption, Rayleigh and Mie scattering parameters. 
 \newline
-Along with making sure the position of the injectors was set to that of the UKLI injectors (shown in Table \ref{table:UKLI_loc}), the opening angle of the injectors determined by the simulation had to be set to accomodate the fact that the injectors for the UKLI system now consisted of three different opening angles for the collimator, diffuser and bare fibre optics. Previously, to set the angle of the photons in the beam, a parameter relating to the width of the input injector beam was used ("SIGBM", standing for "sigma of the beam"), and was produced using a Gaussian random number generator to produce the photon angle. However, an entirely new method of determining the opening angle of the beam was needed to include the information from the light profiles taken from the test stands at Warwick as the previous simulation included an algorithm for a 12\degree opening angle that needed to be rewritten for our purposes for use with multiple optics. 
+Along with making sure the position of the injectors was set to that of the UKLI injectors (shown in Table \ref{table:UKLI_loc}), the opening angle of the injectors determined by the simulation had to be set to accomodate the fact that the injectors for the UKLI system now consisted of three different opening angles for the collimator, diffuser and bare fibre optics. Previously, to set the angle of the photons in the beam, a parameter relating to the width of the input injector beam was used (``SIGBM", standing for ``sigma of the beam"), and was produced using a Gaussian random number generator to produce the photon angle. However, an entirely new method of determining the opening angle of the beam was needed to include the information from the light profiles taken from the test stands at Warwick as the previous simulation included an algorithm for a 12$\degree$ opening angle that needed to be rewritten for our purposes for use with multiple optics. 
 
 \begin{table}[htp]
     $$
@@ -219,12 +219,10 @@ The B1 and B4 collimator optics give the largest peaks in the charge weighted pl
 \end{array}
     $$
 \caption{Actual barrel injector positions (x,y,z) of the UKLI injectors in cm} 
-\label{table:actual_UKLI_loc}
+\label{table:actual_UKLI_injector_loc}
 \end{table}
 
-The charge weighted plots were used to validate the relationship between the opening angle of the injector beam in the Monte Carlo production calibration scripts by generating Monte Carlo scripts with varying values of the SIGBM parameter (while keeping the absorption and scattering parameters the same). Fitting the charge weighted profile plots with a Gaussian and using the position of the injector target and the edge of the beam spot, the opening angle of the beam in degrees could be determined.
-
-The width of the beam needed to be defined in order to do this however, and the standard beam radius definition is shown as in Figure \ref{fig:beam_width}. This schematic shows that the width of the beam was defined as using $1/e^2$ for the edge of the beam width, so it is taken as the point where the intensity drops to 0.135 of the Gaussian peak value. While there is good agreement at small opening angles, there is a slight discrepancy between this plot and Figure \ref{fig:sigbm_angle} at larger opening angles, where in Figure \ref{fig:sigbm_angle} the angle in degrees is consistently greater than in Figure \ref{fig:sigbm_angle_validation} for the same value of SIGBM, and this is due to SIGBM being defined as the maximum opening angle, however for small opening angles as for the collimator, the comparison is valid.
+The charge weighted plots were used to validate the relationship between the opening angle of the injector beam in the Monte Carlo production calibration scripts by generating Monte Carlo scripts with varying values of the SIGBM parameter (while keeping the absorption and scattering parameters the same). Fitting the charge weighted profile plots with a Gaussian and using the position of the injector target and the edge of the beam spot, the opening angle of the beam in degrees could be determined. Figure \ref{fig:sigbm_angle_validation} shows the relationship between SIGBM and the opening angle of the beam in degrees. The width of the beam needed to be defined in order to do this however, and the standard beam radius definition is shown as in Figure \ref{fig:beam_width}. This schematic shows that the width of the beam was defined as using $1/e^2$ for the edge of the beam width, so it is taken as the point where the intensity drops to 0.135 of the Gaussian peak value.
 
 \begin{figure}
     \centering
@@ -316,8 +314,7 @@ After producing the fits to the inverse cumulative distribution functions, these
     \label{fig:time2}
     \end{subfigure}
     
-    \medskip
-    
+  
     \begin{subfigure}{0.49\columnwidth}
     \centering
     \includegraphics[width=0.9\textwidth]{Figures/ukli_mc_B3.PNG}
@@ -331,7 +328,7 @@ After producing the fits to the inverse cumulative distribution functions, these
     \label{fig:time4}
     \end{subfigure}
     
-    \medskip
+
     
     \begin{subfigure}{0.49\columnwidth}
     \centering
@@ -359,7 +356,7 @@ After producing the fits to the inverse cumulative distribution functions, these
         \label{fig:time2}
         \end{subfigure}
         
-        \medskip
+ 
         
         \begin{subfigure}{0.49\columnwidth}
         \centering
@@ -374,7 +371,7 @@ After producing the fits to the inverse cumulative distribution functions, these
         \label{fig:time4}
         \end{subfigure}
         
-        \medskip
+     
         
         \begin{subfigure}{0.49\columnwidth}
         \centering
@@ -475,7 +472,7 @@ Figure \ref{fig:gauss_time_dispersion} shows the effect of implementing this var
     \label{fig:gauss_time_dispersion}
 \end{figure}
 
-Along with implementing the Gaussian distributed time dispersion, introducing a double gaussian for the time dispersion was also looked at, due to the height and sharpness of the reflected peak in the data being something that might be better suited to such a fit. Figure \ref{fig:double_gauss_time_dispersion} shows the raw hit timing output from the UKLI MC B1 collimator simulation with a double gaussian time dispersion, for varying time dispersion values. The x-axis on the plots show the hit time in nanoseconds, the y axis is number of events. 
+Along with implementing the Gaussian distributed time dispersion, introducing a double gaussian for the time dispersion was also looked at, due to the height and sharpness of the reflected peak in the data being something that might be better suited to such a fit. Figure \ref{fig:double_gauss_time_dispersion} shows the raw hit timing output from the UKLI MC B1 collimator simulation with a double gaussian time dispersion, for varying time dispersion values. The x-axis on the plots show the hit time in nanoseconds, the y axis is number of hits. 
 
 \begin{figure}
     \centering
@@ -493,7 +490,7 @@ Figure \ref{fig:TOF_inj} shows the time-of-flight corrected plots for the hits f
     \label{fig:TOF_inj}
 \end{figure}
 
-Figures \ref{fig:5ns_time_dispersion}, \ref{fig:10ns_time_dispersion}, \ref{fig:15ns_time_dispersion}, \ref{fig:20ns_time_dispersion} show these time-of-flight corrected plots with both a gaussian and double gaussian time dispersion put in for varying amounts of time dispersion for 5, 10, 15 and 20 ns respectively.
+Figures \ref{fig:5ns_time_dispersion}, \ref{fig:10ns_time_dispersion}, \ref{fig:15ns_time_dispersion}, \ref{fig:20ns_time_dispersion} show time-of-flight corrected time to target hit plots with both a gaussian and double gaussian time dispersion put in for varying amounts of time dispersion for 5, 10, 15 and 20 ns respectively.
 
 
 \begin{figure}
