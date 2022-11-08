@@ -44,22 +44,22 @@ $$
 
 \subsection{Primary interaction}
 
-The interaction between the incoming neutrino event and an Oxygen nucleus, and the de-excitation of the nucleus is modelled by NEUT, which produces a vector of primary particles used for event simulaation in SKDETSIM. Because these are primary particles, they do not take into consideration all the particles produced from the detector response, i.e. the secondary particles produced from the interactions within the medium of the detector, in our case, water doped with gadolinium sulphate octahydrate. The way NEUT treats the interaction between a nucleus and a neutrino for the case of a neutrino interaction with a $16^{O}$ isotope is shown in Equation \ref{eq:neutrinonuc}. 
+The interaction between the incoming neutrino event and an Oxygen nucleus, and the de-excitation of the nucleus is modelled by NEUT, which produces a vector of primary particles used for event simulaation in SKDETSIM. Because these are primary particles, they do not take into consideration all the particles produced from the detector response, i.e. the secondary particles produced from the interactions within the medium of the detector, in our case, water doped with gadolinium sulphate octahydrate. The way NEUT treats the interaction between a nucleus and a neutrino for the case of a neutrino interaction with a ${ }^{16} \mathrm{O}$ isotope is shown in Equation \ref{eq:neutrinonuc}. 
 
 \begin{equation}
     \sigma\left(\nu^{16} \mathrm{O}\right)=\sum_{i=1}^{8} \sigma_{\mathrm{p}}\left(p_{i}^{(\mathrm{p})}\right)+\sum_{j=1}^{8} \sigma_{\mathrm{n}}\left(p_{j}^{(\mathrm{n})}\right)+\sigma(2 p 2 h)    
 \label{eq:neutrinonuc}    
 \end{equation}
 
-Here $\sigma_{p}$ and $\sigma_{n}$ are the neutrino-proton cross section and the neutrino-neutron cross section respectively, and these cross-sections are dependent on the momenta of the protons and neutrons in the model, and therefore on the choice on nuclear model. The Benhar Spectral Function (SF) is used by NEUT as the nuclear model for NCQE interactions, and for CCQE interactions the Smith-Moniz relativistic Fermi Gas (RFG) model is used \cite{benhar_electron-_2005}, with 2p2h interactions included for these interactions. 
+Here $\sigma_{p}$ and $\sigma_{n}$ are the neutrino-proton cross section and the neutrino-neutron cross section respectively, and these cross-sections are dependent on the momenta of the protons and neutrons in the model, and therefore on the choice on nuclear model. The Benhar Spectral Function (SF) is used by NEUT as the nuclear model for NCQE interactions, and for CCQE interactions the Smith-Moniz relativistic Fermi Gas (RFG) model is used \cite{benhar_electron-_2005}, with 2p2h interactions included. 
 
 \begin{figure}
     \includegraphics[width=\textwidth]{Figures/ncqebenharspectral.png}
-    \caption{Representation of NC neutrino scattering off $16_{O}$ with protons on the left hand side and neutrons on the right arranged according to the shell model. }
+    \caption{Representation of NC neutrino scattering off ${ }^{16} \mathrm{O}$ with protons on the left hand side and neutrons on the right arranged according to the shell model. }
 \label{fig:ncqebenharspectral}
 \end{figure}
 
-The lowest rung of nucleons in Figure \ref{fig:ncqebenharspectral} is the $s_{1/2}$, with $p_{3/2}$ above this level and $p_{1/2}$ above that. The protons in these rungs have removal energies of 12.1 MeV, 18.4 MeV and 42 MeV respectively, and due to neutron levels being more tightly bound, these have an extra removal of 3.24 MeV compared to their proton counterparts. The shell model is imperfect due to how it allocates the probablity of $16_{O}$ transitioning to the possible nucleon states. In the shell model, probabilities are allocated by counting the number of nucleons in each energy level and assigning probailities according to how many there are. In Figure \ref{fig:ncqebenharspectral} it can be seen that the $p_{3/2}$ state has double the number of nucleons compared to the $s_{1/2}$ model and therefore double the probability of transition is assigned for the $p_{3/2}$ state, and the probability of transitioning to any other state is assigned to be 0, because in the shell model they don't even exist. The Benhar Spectral Function model however is complex and is tuned using electron-nucleus scattering data. The model used in this analysis is a modified version of the Benhar Spectral Function model, where the case of other transition states is dealt with by merging the "others'' state into the $s_{1/2}$ state. Table \ref{table:transitionprob} gives the probabilities of transition to different states for different models. 
+The lowest rung of nucleons in Figure \ref{fig:ncqebenharspectral} is the $s_{1/2}$, with $p_{3/2}$ above this level and $p_{1/2}$ above that. The protons in these rungs have removal energies of 42 MeV, 18.4 MeV and 12.1 MeV respectively, and due to neutron levels being more tightly bound, these have an extra removal of 3.24 MeV compared to their proton counterparts. The shell model is imperfect due to how it allocates the probablity of $16_{O}$ transitioning to the possible nucleon states. In the shell model, probabilities are allocated by counting the number of nucleons in each energy level and assigning probailities according to how many there are. In Figure \ref{fig:ncqebenharspectral} it can be seen that the $p_{3/2}$ state has double the number of nucleons compared to the $s_{1/2}$ model and therefore double the probability of transition is assigned for the $p_{3/2}$ state, and the probability of transitioning to any other state is assigned to be 0, because in the shell model they don't even exist. The Benhar Spectral Function model however is complex and is tuned using electron-nucleus scattering data. The model used in this analysis is a modified version of the Benhar Spectral Function model, where the case of other transition states is dealt with by merging the "others'' state into the $s_{1/2}$ state. Table \ref{table:transitionprob} gives the probabilities of transition to different states for different models. 
 
 \begin{table}
 $$
@@ -77,7 +77,7 @@ $$
 
 \subsection{Detector response and interactions in the detector medium}
 
-Prior analyses to this used SKDETSIM (Super-Kamiokande Detector Simulator) to simulate the trajectories of particles through the water in Super-Kamiokande and output detector response MC. This analysis uses SKDETSIM-SKGd to propogate the particles, due to the requirement of needing gadolinium sulphate present in the simulation. The particular isotopes of gadolinium used in the simulation are $155_{Gd}$ and $157_{Gd}$ due to their excellent thermal neutron capture cross sections. Table \ref{table:gdtable} shows the relative abundance of various gadolinium isotopes inside natural gadolinium and their associated thermal neutron capture cross sections.
+Prior analyses to this used SKDETSIM (Super-Kamiokande Detector Simulator) to simulate the trajectories of particles through the water in Super-Kamiokande and output detector response MC. This analysis uses SKDETSIM-SKGd to propogate the particles, due to the requirement of needing gadolinium sulphate present in the simulation. The particular isotopes of gadolinium used in the simulation are ${ }^{155} \mathrm{Gd}$ and ${ }^{157} \mathrm{Gd}$ due to their excellent thermal neutron capture cross sections. Table \ref{table:gdtable} shows the relative abundance of various gadolinium isotopes inside natural gadolinium and their associated thermal neutron capture cross sections.
 
 \begin{table}
 $$
@@ -87,7 +87,7 @@ $$
 { }^{154} \mathrm{Gd} & 2.18 & 85 \\
 { }^{155} \mathbf{Gd} & \mathbf{1 4 . 8 0} & \mathbf{6 0 9 0 0} \\
 { }^{156} \mathrm{Gd} & 20.47 & 1.8 \\
-{ }^{157} \mathbf{Gd} \mathbf{d} & \mathbf{1 5 . 6 5} & \mathbf{2 5 4 0 0 0} \\
+{ }^{157} \mathbf{Gd} & \mathbf{1 5 . 6 5} & \mathbf{2 5 4 0 0 0} \\
 { }^{158} \mathrm{Gd} & 24.84 & 2.2 \\
 { }^{160} \mathrm{Gd} & 21.86 & 1.4 \\
 \hline
@@ -110,17 +110,17 @@ As can be seen in Table \ref{table:gdtable}, not only are ${ }^{155} \mathrm{Gd}
 
 
 
-It is important to therefore model the gamma ray emission spectra from both of these isotopes. The model used by SKDETSIM-SKGd is the ANNRI-Gd model. This uses gamma energy spectrum data from the germanium spectrometer at the ANNRI (Accurate Neutron Nucleus Reaction Measurement Instrument) experiment. This experiment uses the incoming pulsed neutron beam from the Japan Spallation Neutron Source (JSNS) at the Material and Life Science Experimental Facility (MLF) of J-PARC. After a 300 kW beam of protons from the JSNS facility hits a target of mercury and produces neutrons, this neutron beam hits an enriched ${ }^{155} \mathrm{Gd}$ target or a ${ }^{nat} \mathrm{Gd}$ film. The ANNRI spectrometer is placed 21.5 m away from the neutron beam source, with two cluster detectors on either side of the neutron capture target material, which is 13.4 cm away from each cluster detector. Surrounding the target, there are also 8 co-axial germanium detectors. The schematic for the ANNRI-Gd experiment is shown in Figure \ref{fig:annrigd}.
+It is important to therefore model the gamma ray emission spectra from both of these isotopes. The model used by SKDETSIM-SKGd is the ANNRI-Gd model, \cite{10.1093/ptep/ptz002}, \cite{tanaka_gamma_2020}. This uses gamma energy spectrum data from the germanium spectrometer at the ANNRI (Accurate Neutron Nucleus Reaction Measurement Instrument) experiment. This experiment uses the incoming pulsed neutron beam from the Japan Spallation Neutron Source (JSNS) at the Material and Life Science Experimental Facility (MLF) of J-PARC. After a 300 kW beam of protons from the JSNS facility hits a target of mercury and produces neutrons, this neutron beam hits an enriched ${ }^{155} \mathrm{Gd}$ target or a ${ }^{nat} \mathrm{Gd}$ film. The ANNRI spectrometer is placed 21.5 m away from the neutron beam source, with two cluster detectors on either side of the neutron capture target material, which is 13.4 cm away from each cluster detector. Surrounding the target, there are also 8 co-axial germanium detectors. The schematic for the ANNRI-Gd experiment is shown in Figure \ref{fig:annrigd}.
 
 \begin{figure}
 
         \includegraphics[width=\textwidth]{Figures/annrigd.png}
-        \caption{Schematic of the ANNRI Ge spectrometer (dimensions in mm). The beam pipe along with one of the Ge cluster detectors (light blue) is shown. The shaded purple area are the anti-coincidence shields made of bismuth-germanium-oxide (BGO) crystals.}
+        \caption{Schematic of the ANNRI Ge spectrometer (dimensions in mm). The beam pipe along with one of the Ge cluster detectors (light blue) is shown. The shaded purple area are the anti-coincidence shields made of bismuth-germanium-oxide (BGO) crystals. \cite{10.1093/ptep/ptz002}.}
         \label{fig:annrigd}
     
 \end{figure}
 
-By defining how many Germanium crystals were hit and how many neighbouring crystal recieved gamma ray hits, values of H (hit number) and M (multiplicity) can be assigned in order to classify the events. After selecting for neutron energy and subtracting the background, the events remaining were seperated into samples based on their H and M vales. Figure \ref{fig:annrigdenergyspectra} shows the energy spectra for different multiplicity values (left) and hit values (right) from one of the germanium crystals in the ANNRI spectrometer. 
+Figure \ref{fig:annrigdenergyspectra} shows the energy spectra for different multiplicity values (left) and hit values (right) from one of the germanium crystals in the ANNRI spectrometer. 
 
 \begin{figure}
 \includegraphics[width=\textwidth]{Figures/annrigdenergyspectra.png}
@@ -129,17 +129,17 @@ By defining how many Germanium crystals were hit and how many neighbouring cryst
 \end{figure}
 
 One of the key differences between the default Geant4 model for thermal neutron capture on Gadolinium and the ANNRI-Gd model is how it conserves energy: the photon evaporation model conserves only the final sum of energy for the captured event, but performs poorly when modelling the gamma-ray energy on an individual event by event basis. One way the ANNRI-Gd model combats this is by seperately describing the continuous and discrete peaks in Figure \ref{fig:annrigdenergyspectra}, where the discrete peaks are shown as spikes below 1500 keV and above 4500 keV. These come from the different ways in which gadolinium de-excites after thermal neutron capture. The continuous spectrum in the plots in Figure \ref{fig:annrigdenergyspectra} show the de-excitation of ${ }^{158} \mathrm{Gd}^{*}$ in multiple steps, producing multiple low energy gamma rays, which accounts for about 93\% of the spectrum. The discrete spikes in the spectra come from a two-step cascade, which produces a high energy gamma ray instead, accounting for the remaining 7\% of the spectrum.
-Figure \ref{fig:continousdiscrete} shows the continuous and discrete components of the ANNRI-Gd MC, along with data from the experiment. Figure \ref{fig:annrigdmodelcompare} shows ratio plot of data and MC for the GLG4sim model, the default Geant4 photon evaporation model and the ANNRI-Gd model: here it is clear the ANNRI-Gd model fits the data better than the other two models, especially at energies above 3500 keV. 
+Figure \ref{fig:continousdiscrete} shows the continuous and discrete components of the ANNRI-Gd MC, along with data from the experiment. Figure \ref{fig:annrigdmodelcompare} shows ratio plot of data and MC for the GLG4sim model, the default Geant4 photon evaporation model and the ANNRI-Gd model: here it is clear the ANNRI-Gd model fits the data better than the other two models, especially at energies above 3500 keV. Due to the Cherenkov threshold in water Cherenkov detectors, there is a varying number of gamma rays released from thermal neutron capture on Gd which would decrease the mean visible energy release to below gadolinium's Q-value. As a result, neutron tagging efficiencies rely heavily on ensuring a precise model for the gamma ray energy spectrum. 
 
 \begin{figure}
 \includegraphics[width=\textwidth]{Figures/continousdiscrete.png}
-\caption{Energy spectra for the ANNRI-Gd model broken down into its continous and discrete components along with data from the ANNRI-Gd experiment.}
+\caption{Energy spectra for the ANNRI-Gd model broken down into its continous and discrete components along with data from the ANNRI-Gd experiment.\cite{10.1093/ptep/ptz002}}
 \label{fig:continousdiscrete}
 \end{figure}
 
 \begin{figure}
 \includegraphics[width=\textwidth]{Figures/annrigdmodelcompare.png}
-\caption{Comparison between neutron capture MC models and data.}
+\caption{Comparison between neutron capture MC models and data, with the ratio of data and MC on the y-axis, the GLG4sim model in blue, Geant4 default model in green and the ANNRI-Gd model in red. \cite{10.1093/ptep/ptz002}}
 \label{fig:annrigdmodelcompare}
 \end{figure}
 
@@ -147,22 +147,24 @@ Figure \ref{fig:continousdiscrete} shows the continuous and discrete components 
 \section{Event Reconstruction}
 \subsection{Bonsai output reconstruction quantities}
 
-Due to this analysis looking specifically at the low energy region, a fitter specific to low energies (called LOWFIT) is used to reconstruct events. Both MC and data neutrino events undergo a reconstruction phase, where the low-energy fitter BONSAI is applied to the event, which is discussed in Chapter 2. This reconstruction is carried out using timing and cable information, however charge information is omitted. The ouput of BONSAI gives information which will be used in the reduction phase of the data and allow for the selection of the NCQE sample. The following quantities comprise the BONSAI output, the first two being helpful spectator variables and the latter five constituting parameters which are used in the reduction phase of the analysis, from which the neutrino NCQE sample is determined.\\
+Due to this analysis looking specifically at the low energy region, a fitter specific to low energies (called LOWFIT) is used to reconstruct events. Both MC and data neutrino events undergo a reconstruction phase, where the low-energy fitter BONSAI is applied to the event, as discussed in Chapter 2. The reconstruction is carried out using timing and PMT position information, however charge information is omitted. The output of BONSAI gives information which will be used in the reduction phase of the data and allow for the selection of the NCQE sample. The following quantities comprise the BONSAI output, the first two being helpful spectator variables and the latter five constituting parameters which are used in the reduction phase of the analysis, from which the neutrino NCQE sample is determined.\\
+
 
 \noindent
-\underline{1. Neutrino vertex direction}\\
-\noindent
-This vector points towards the direction which is an average over all the Cherenkov cone axes which are produced, due to there being multiple leptons induced in the interaction.
-
-\noindent
-\underline{2. Neutrino vertex position}\\
+\underline{1. Neutrino vertex position}\\
 \noindent 
 The reconstructed location of the neutrino interaction event.
 
 \noindent
+\underline{2. Neutrino vertex direction}\\
+\noindent
+This vector points towards the direction which is an average over all the Cherenkov cone axes which are produced, due to there being multiple leptons induced in the interaction.
+
+
+\noindent
 \underline{3. Reconstructed energy}\\
 \noindent 
-In line with the standard SK low energy analysis definition, this energy is simply the reconstructed energy with the 0.511 MeV electron mass omitted. The range for Erec in this variable is 3.49 MeV to 29.49 MeV - the estimated kinetic energy under the hypothesis that the event is a singular electron.
+In line with the standard SK low energy analysis definition, this energy is simply the reconstructed energy with the 0.511 MeV electron mass omitted. The range for Erec in this variable is 3.49 MeV to 29.49 MeV - the estimated kinetic energy under the hypothesis that the event is a singular electron. The upper value for this range is chosen because the background of Michel electrons (electrons from muon decay) from muon neutrino and muon anti-neutrino charged current interactions increase but the NCQE signal decreases above 30 MeV. 
 
 \noindent
 \underline{4. Dwall}\\
@@ -172,7 +174,7 @@ This variable gives the minimum distance of the neutrino vertex position from th
 \noindent
 \underline{5. Effwall}\\
 \noindent 
-Thus variable gives the distance between the neutrino vertex position and the closest wall, but moving back from the vertex position along the neutrino vertex direction vector.
+This variable gives the distance between the neutrino vertex position and the closest wall, but moving back from the vertex position along the neutrino vertex direction vector.
 
 \noindent
 \underline{6. Vertex direction and goodness coefficient}\\
