@@ -129,7 +129,8 @@ Figure \ref{fig:annrigdenergyspectra} shows the energy spectra for different mul
 \end{figure}
 
 One of the key differences between the default Geant4 model for thermal neutron capture on Gadolinium and the ANNRI-Gd model is how it conserves energy: the photon evaporation model conserves only the final sum of energy for the captured event, but performs poorly when modelling the gamma-ray energy on an individual event by event basis. One way the ANNRI-Gd model combats this is by seperately describing the continuous and discrete peaks in Figure \ref{fig:annrigdenergyspectra}, where the discrete peaks are shown as spikes below 1500 keV and above 4500 keV. These come from the different ways in which gadolinium de-excites after thermal neutron capture. The continuous spectrum in the plots in Figure \ref{fig:annrigdenergyspectra} show the de-excitation of ${ }^{158} \mathrm{Gd}^{*}$ in multiple steps, producing multiple low energy gamma rays, which accounts for about 93\% of the spectrum. The discrete spikes in the spectra come from a two-step cascade, which produces a high energy gamma ray instead, accounting for the remaining 7\% of the spectrum.
-Figure \ref{fig:continousdiscrete} shows the continuous and discrete components of the ANNRI-Gd MC, along with data from the experiment. Figure \ref{fig:annrigdmodelcompare} shows ratio plot of data and MC for the GLG4sim model, the default Geant4 photon evaporation model and the ANNRI-Gd model: here it is clear the ANNRI-Gd model fits the data better than the other two models, especially at energies above 3500 keV. Due to the Cherenkov threshold in water Cherenkov detectors, there is a varying number of gamma rays released from thermal neutron capture on Gd which would decrease the mean visible energy release to below gadolinium's Q-value. As a result, neutron tagging efficiencies rely heavily on ensuring a precise model for the gamma ray energy spectrum. 
+Figure \ref{fig:continousdiscrete} shows the continuous and discrete components of the ANNRI-Gd MC, along with data from the experiment. Figure \ref{fig:annrigdmodelcompare} shows ratio plot of data and MC for the GLG4sim model, the default Geant4 photon evaporation model and the ANNRI-Gd model: here it is clear the ANNRI-Gd model fits the data better than the other two models, especially at energies above 3500 keV. The energy from the neutron capture on Gadolinium de-excitation is relased in the form of multiple gamma rays, and liquid scintillator detectors would only have to look for the deposition of the energy from these gamma rays, whereas a water Cherenkov detector such as Super-Kamiokande can only detect part of this deposition due to the Cherenkov threshold energy. As a result, understanding the gamma ray multiplcities and their energies in the range 0.1 MeV to 8 MeV is important in order to predict the efficiency of neutron tagging within Monte Carlo simulation.
+
 
 \begin{figure}
 \includegraphics[width=\textwidth]{Figures/continousdiscrete.png}
@@ -164,7 +165,7 @@ This vector points towards the direction which is an average over all the Cheren
 \noindent
 \underline{3. Reconstructed energy}\\
 \noindent 
-In line with the standard SK low energy analysis definition, this energy is simply the reconstructed energy with the 0.511 MeV electron mass omitted. The range for Erec in this variable is 3.49 MeV to 29.49 MeV - the estimated kinetic energy under the hypothesis that the event is a singular electron. The upper value for this range is chosen because the background of Michel electrons (electrons from muon decay) from muon neutrino and muon anti-neutrino charged current interactions increase but the NCQE signal decreases above 30 MeV. 
+In line with the standard SK low energy analysis definition, this energy is simply the reconstructed energy with the 0.511 MeV electron mass omitted. The range for $E_{rec}$ in this variable is 3.49 MeV to 29.49 MeV - the estimated kinetic energy under the hypothesis that the event is a singular electron. The upper value for this range is chosen because the background of Michel electrons (electrons from muon decay) from muon neutrino and muon anti-neutrino charged current interactions increase but the NCQE signal decreases above 30 MeV. 
 
 \noindent
 \underline{4. Dwall}\\
@@ -207,45 +208,102 @@ where $\angle_{\mathrm{data}}(i)$ is the azimuthal angle of i-th hit real PMT in
 \noindent
 \underline{7. Cherenkov angle $\theta_{C}$}\\
 \noindent
- For relativistic electrons in water, the value of the Cherenkov opening angle is $\approx 41\degree$, due to the relation: 
+
+In order to estimate the Cherenkov opening angle, all the possible combinations of PMT hits of three hit PMTs in a 15 nanosecond timing window are binned. A histogram is produced of these binned angles and divided into 100 bins, and by looking at the seven neighbouring bins with the largest number of entries, peaks in the histogram are located. The middle of the seven bins is chosen to be the Cherenkov angle of the event. Figure \ref{fig:cherenkov_hit_triplet} shows the vertex of the prompt event and three PMT hit vectors which produce the Cherenkov opening angle. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figures/cherenkov_hit_triplet.png}
+    \caption{Schematic of the prompt event vertex and a triplet of independent PMT hits whch make up the Cherenkov angle}
+    \label{fig:cherenkov_hit_triplet}
+
+\end{figure}
+
+
+
+
+ For relativistic electrons in water, the value of the Cherenkov opening angle is $\approx 42\degree$, due to the relation: 
 
  \begin{equation}
 \cos \theta_{\mathrm{Cherenkov}}=\frac{1}{n\beta}
 \label{cherenkov_angle}
 \end{equation}
  
-where $\beta = v/c \approx 1$ and $n$ is the refractive index of water, 1.33. However due to other particles in the simulation, such as protons or muons, the Cherenkov cone is expected to be narrower, or if multiple leptons are present, the Cherenkov cones will be less distinct and more spread out, leading to deviations from the 41\degree value. 
+where $\beta = v/c \approx 1$ and $n$ is the refractive index of water, 1.33. However due to other particles in the simulation, such as protons or muons, the Cherenkov cone is expected to be narrower, or if multiple leptons are present, the Cherenkov cones will be less distinct and more spread out, leading to deviations from the 42\degree value. 
 
 \subsection{Comparison of BONSAI reconstruction output variables between SKDETSIM versions}
 
-The BONSAI reconstruction output variables were compared between three versions of SKDETSIM, the version used in the previous NCQE neutron capture on hydrogen only analysis, with no neutron capture on Gd implemented (black), the SKDETSIM-SKGd photon-evaporation model mentioned in the previous section (red), and the SKDETSIM SK-Gd ANNRI-Gd model (green). Figure \ref{fig:bonsai_reconstruction_compare} shows the comparison of these models for the output BONSAI variables Erec, dwall, effwall, ovaQ, and $\theta_C$, where the y-axis shows the number of events.
+The BONSAI reconstruction output variables were compared between three versions of SKDETSIM, the version used in the previous NCQE neutron capture on hydrogen only analysis, with no neutron capture on Gd implemented (black), the SKDETSIM-SKGd photon-evaporation model mentioned in the previous section (red), and the SKDETSIM SK-Gd ANNRI-Gd model (green). Figure \ref{fig:erec_compare} to Figure \ref{fig:thetaC_compare} shows the comparison of these models for the output BONSAI variables $E_{rec}$, dwall, effwall, ovaQ, and $\theta_C$, where the y-axis shows the number of events.
 
-\begin{figure}[!htbp]
+\begin{figure}
     \centering
-    
-    \caption{Comparisons of BONSAI output variables bewteen SKDETSIM versions} \label{fig:bonsai_reconstruction_compare} 
-    
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/erec_compare.PNG}} \hfill
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/dwall_compare.PNG}} \par
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/effwall_compare.PNG}} \hfill
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/ovaQ_compare.PNG}} \par
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/thetaC_compare.PNG}} \hfill    
+    \includegraphics[width=0.7\textwidth]{Figures/erec_compare.png}
+    \caption{Comparisons of prompt event electron reconstructed energy between versions of SKDETSIM}
+    \label{fig:erec_compare}
+
 \end{figure}
 
-To ensure correct implementation of the ANNRI-Gd model, ensuring the BONSAI output variables were similar between these SKDETSIM versions was important as the Gadolinium model should only effect the neutron capture in the simulation, not the output from event reconstruction of the neutrino interaction vertex. As can be seen in Figure \ref{fig:bonsai_reconstruction_compare}, this holds true for Erec, dwall, effwall and $\theta_C$, but not for the vertex and goodness coefficient ovaQ, where the ANNRI-Gd model differs for ovaQ between -0.05 and 0.15 compared to the SKDETSIM and SKDETSIM photon-evaporation model. To investigate this difference further, distributions of the vertex goodness and the directional goodness which make up ovaQ (according to Equation \ref{eq:ovaq}) were also checked, shown in Figure \ref{fig:ovaq_compare}.
-
-\begin{figure}[!htbp]
+\begin{figure}
     \centering
-    
-    \caption{Comparisons of vertex goodness and directional goodness between SKDETSIM versions} \label{fig:ovaq_compare} 
-    
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/gvtx_squared.JPEG}} \label{fig:gvtx_squared} \hfill 
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/gdir_squared.JPEG}} \label{fig:gdir_squared} \par
-    
-        
+    \includegraphics[width=0.7\textwidth]{Figures/dwall_compare.png}
+    \caption{Comparisons of dwall for the prompt event between versions of SKDETSIM}
+    \label{fig:dwall_compare}
+
 \end{figure}
 
-The vertex goodness (gvtx) and directional goodness (gdir) squared comparisons are shown in Figures \ref{fig:gvtx_squared} and \ref{fig:gdir_squared}. Figure \ref{fig:gvtx_squared} shows a slight discrepancy between the SKDETSIM versions, but not enough to warrant further investigation. In addition to checking the previous BONSAI reduction phase quantities, the distance between the true neutrino vertex from the simulation and the neutrino vertex from the BONSAI reconstruction was also checked for the different SKDETSIM versions, shown in Figure \ref{fig:vertex_resolution}. Table \ref{table:vertex_resolution} shows the value of this distribution which encompasses 1-sigma (68\%) of the number of events: this value was very similar for all SKDETSIM versions.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figures/effwall_compare.png}
+    \caption{Comparisons of effwall for the prompt event between versions of SKDETSIM}
+    \label{fig:effwall_compare}
+
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figures/ovaQ_compare.png}
+    \caption{Comparisons of ovaQ for the prompt event between versions of SKDETSIM }
+    \label{fig:ovaQ_compare}
+
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figures/thetaC_compare.png}
+    \caption{Comparisons of Cherenkov angle for the prompt event between versions of SKDETSIM}
+    \label{fig:thetaC_compare}
+
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figures/cherenkov_hit_triplet.png}
+    \caption{Schematic of the prompt event vertex and a triplet of independent PMT hits whch make up the Cherenkov angle}
+    \label{fig:cherenkov_hit_triplet}
+
+\end{figure}
+
+To ensure correct implementation of the ANNRI-Gd model, ensuring the BONSAI output variables were similar between these SKDETSIM versions was important as the Gadolinium model should only effect the neutron capture in the simulation, not the output from event reconstruction of the neutrino interaction vertex. As can be seen in Figure \ref{fig:bonsai_reconstruction_compare}, this holds true for $E_{rec}$, dwall, effwall and $\theta_C$, but not for the vertex and goodness coefficient ovaQ, where the ANNRI-Gd model differs for ovaQ between -0.05 and 0.15 compared to the SKDETSIM and SKDETSIM photon-evaporation model. To investigate this difference further, distributions of the vertex goodness and the directional goodness which make up ovaQ (according to Equation \ref{eq:ovaq}) were also checked, shown in Figure \ref{fig:ovaq_compare}.
+
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figures/gvtx_squared.jpeg}
+    \caption{Comparisons of vertex goodness for the prompt event between versions of SKDETSIM}
+    \label{fig:gvtx_squared}
+
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figures/gdir_squared.jpeg}
+    \caption{Comparisons of directional goodness for the prompt event between versions of SKDETSIM}
+    \label{fig:gdir_squared}
+
+\end{figure}
+
+The vertex goodness (gvtx) and directional goodness (gdir) squared comparisons are shown in Figures \ref{fig:gvtx_squared} and \ref{fig:gdir_squared} respectively. Figure \ref{fig:gvtx_squared} shows a slight discrepancy between the SKDETSIM versions, but not enough to warrant further investigation. In addition to checking the previous BONSAI reduction phase quantities, the distance between the true neutrino vertex from the simulation and the neutrino vertex from the BONSAI reconstruction was also checked for the different SKDETSIM versions, shown in Figure \ref{fig:vertex_resolution}. Table \ref{table:vertex_resolution} shows the value of this distribution which encompasses 1-sigma (68\%) of the number of events: this value was very similar for all SKDETSIM versions.
 \begin{figure}
 
     \includegraphics[width=\textwidth]{Figures/vertex_resolution.png}
@@ -269,40 +327,49 @@ The vertex goodness (gvtx) and directional goodness (gdir) squared comparisons a
 \end{table}
 
 \subsubsection{Comparisons of event reconstruction output between NTag versions}
-To ensure that the NCQE event selection and neutron tagging could be carried out using the new NTag code, comparisons of the output BONSAI reconstruction variables between the two versions were made to ensure the validity of the reconstruction output. Figures \ref{fig:energy_recon_compare}, \ref{fig:dwall_recon_compare}, \ref{fig:effwall_recon_compare}, \ref{fig:angle_recon_compare}, \ref{fig:ovaq_recon_compare} show the reconstructed energy, dwall, effwall, Cherenkov angle and ovaQ parameters respectively, with the legacy NTag output in black and the new NTag output in red. 
-
-\begin{figure}[t!] % "[t!]" placement specifier just for this example
-    \begin{subfigure}{0.48\textwidth}
-    \includegraphics[width=\linewidth]{Figures/energy_recon_compare.PNG}
-    \caption{Reconstructed energy (MeV) comparison} \label{fig:energy_recon_compare}
-    \end{subfigure}\hspace*{\fill}
-    \begin{subfigure}{0.48\textwidth}
-    \includegraphics[width=\linewidth]{Figures/dwall_recon_compare.PNG}
-    \caption{DWall (cm) comparison} \label{fig:dwall_recon_compare}
-    \end{subfigure}
-    
-    \medskip
-    \begin{subfigure}{0.48\textwidth}
-    \includegraphics[width=\linewidth]{Figures/effwall_recon_compare.PNG}
-    \caption{Effwall (cm) comparison} \label{fig:effwall_recon_compare}
-    \end{subfigure}\hspace*{\fill}
-    \begin{subfigure}{0.48\textwidth}
-    \includegraphics[width=\linewidth]{Figures/angle_recon_compare.PNG}
-    \caption{Reconstructed Cherenkov angle (degrees) comparison} \label{fig:angle_recon_compare}
-    \end{subfigure}
-    
-    \medskip
-    \begin{subfigure}{0.48\textwidth}
-    \includegraphics[width=\linewidth]{Figures/ovaq_recon_compare.PNG}
-    \caption{OvaQ comparison} \label{fig:ovaq_recon_compare}
-    \end{subfigure}\hspace*{\fill}
-    
- 
-    \caption{Comparison of the output between the two NTag codes showing legacy (black) and new (red) NTag outputs}
-    
-    \end{figure}
+To ensure that the NCQE event selection and neutron tagging could be carried out using the new NTag code, comparisons of the output BONSAI reconstruction variables between the two versions were made to ensure the validity of the reconstruction output. Figure \ref{fig:bonsai_output_compare} shows the reconstructed energy, dwall, effwall, Cherenkov angle and ovaQ parameters, with the legacy NTag output in black and the new NTag output in red. 
 
 
+\begin{figure}
+        \centering
+        \includegraphics[width=0.9\textwidth]{Figures/energy_recon_compare.PNG}
+        \caption{Reconstructed energy (MeV) comparison}
+        \label{fig:gvtx_squared}    
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{Figures/dwall_recon_compare.PNG}
+    \caption{DWall (cm) comparison}
+    \label{fig:gvtx_squared}
+
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{Figures/effwall_recon_compare.PNG}
+    \caption{Effwall (cm) comparison}
+    \label{fig:gvtx_squared}
+
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{Figures/angle_recon_compare.PNG}
+    \caption{OvaQ comparison}
+    \label{fig:gvtx_squared}
+
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{Figures/ovaq_recon_compare.PNG}
+    \caption{Comparisons of vertex goodness for the prompt event between versions of SKDETSIM}
+    \label{fig:gvtx_squared}
+
+\end{figure}
+
+From the comparisons of the event reconstruction variables we can conclude that there is no significant variation between the way the different gadolinium implentation models in the detector simulation doesn't affect the way the prompt event is reconstructed. This makes sense as the only difference the neutron capture model should make should relate to the secondary interactions - checking the prompt event distributions remain unchanged is a confirmation of this. Similarly, the comparisons between the two NTag versions, legacy and new show that the change in the neutron tagging algorithm didn't affect the prompt event reconstruction either. 
 
 
 \subsection{NCQE event selection}
@@ -319,14 +386,14 @@ Due to radioactive impurities inside the detector material, specifically the wal
 
 \subsubsection{Low energy background cut}
 
-The variables dwall, effwall and ovaQ are used to tune cuts in the energy region below 6 MeV. There are five energy regions with a width of 0.5 MeV used between the lower end of the visible energy cut region (3.49 MeV) and 5.99 MeV where the cuts on the dwall, effwall and ovaQ variables are optimised. Cuts are applied on the dwall, effwall and ovaQ variables and an event is only accepted if the values of dwall, effwall and ovaQ are only accepted if their values are greater than the threshold cut values. In each 0.5 MeV energy interval, these threshold values are optimised based on the T2K run period due to the beam power and detector conditions being different from run to run, especially since the Gadolinium loading occured in the detector. Equation \ref{eq:FOM} shows how the figure-of-merit (FOM) value is to be maximised for the optimsation of each cut.
+The variables dwall, effwall and ovaQ are used to tune cuts in the energy region below 6 MeV. There are five energy regions with a width of 0.5 MeV used between the lower end of the visible energy cut region (3.49 MeV) and 5.99 MeV where the cuts on the dwall, effwall and ovaQ variables are optimised. Cuts are applied on the dwall, effwall and ovaQ variables and an event is only accepted if the values of dwall, effwall and ovaQ are greater than the threshold cut values. In each 0.5 MeV energy interval, these threshold values are optimised based on the T2K run period due to the beam power and detector conditions being different from run to run, especially since the Gadolinium loading occured in the detector. Equation \ref{eq:FOM} shows how the figure-of-merit (FOM) value is to be maximised for the optimsation of each cut.
 
 \begin{equation}
     \mathrm{FOM}=\frac{N_{\text {sig }}}{\sqrt{N_{\text {sig }}+N_{\text {bkg }}}} \quad\left(N_{\text {bkg }}=N_{\text {bkg }}^{\mathrm{MC}}+N_{\text {bkg }}^{\text {beam-unrelated }}\right)
 \label{eq:FOM}
 \end{equation}
 
-Here $N_{sig}$ is the number of NCQE neutrino events in the FHC Monte Carlo sample and $N_{bkg}$ is the summation of the background events, and the FOM is calculated seperately in the five energy intervals, and the optimised cut value is taken as the one which maximises the FOM. Then the optimised cut values in each energy interval are fitted with a linear function dependent on the visible energy variables (Erec). Equation \ref{eq:FOM_linear} gives the relation of Erec to the optimised cut values for dwall, effwall and ovaQ.
+Here $N_{sig}$ is the number of NCQE neutrino events in the FHC Monte Carlo sample and $N_{bkg}$ is the summation of the background events, and the FOM is calculated seperately in the five energy intervals, and the optimised cut value is taken as the one which maximises the FOM. Then the optimised cut values in each energy interval are fitted with a linear function dependent on the visible energy variables ($E_{rec}$). Equation \ref{eq:FOM_linear} gives the relation of $E_{rec}$ to the optimised cut values for dwall, effwall and ovaQ.
 
 \begin{align}
     \text { dwall }^{\text {CUT }} =p_{0}^{\text {dwall }}+p_{1}^{\text {dwall }} \times E_{\text {rec }} \\
@@ -340,7 +407,7 @@ The scan regions and intervals for the dwall, effwall and ovaQ parameters for Eq
 
 \subsection{Charged current event (CC) interaction cut}
 
-In order to reduce the number of charged-current events which may be mistakenly included in the NCQE selection, a cut regarding the reconstructed Cherenkov angle of the prompt event  is also utilised alongside the low energy background cut, where the accepted Cherenkov angle of a prompt event ($theta_{C}$) should be greater than the threshold cut value $\theta_{C}^{CUT}$ where the cut value is determined by the linear equation dependent on Erec as shown in Equation \ref{eq:thetaC_FOM}.
+In order to reduce the number of charged-current events which may be mistakenly included in the NCQE selection, a cut regarding the reconstructed Cherenkov angle of the prompt event  is also utilised alongside the low energy background cut, where the accepted Cherenkov angle of a prompt event ($theta_{C}$) should be greater than the threshold cut value $\theta_{C}^{CUT}$ where the cut value is determined by the linear equation dependent on $E_{rec}$ as shown in Equation \ref{eq:thetaC_FOM}.
 
 \begin{equation}
     \theta_{C}^{C U T}=p_{0}^{\theta_{C}}+p_{1}^{\theta_{C}} \times E_{\text {rec }}
@@ -358,7 +425,7 @@ Before applying the NTag algorithm, either legacy or new, plots were produced of
 \begin{figure}[!htbp]
     \centering
     
-    \caption{Comparisons of stacked histrograms for the Erec variable between NCQE neutron tag on H analysis (left) and this analysis (right)} \label{fig:erec_reduction} 
+    \caption{Comparisons of stacked histrograms for the $E_{rec}$ variable between NCQE neutron tag on H analysis (left) and this analysis (right)} \label{fig:erec_reduction} 
     
     \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/fabio_erec.PNG}}  \hfill 
     \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/erec_reduction.PNG}} \par
@@ -448,7 +515,7 @@ The reason for the neutron tagging algorithm starting at 18 $\micro$s is in orde
 \end{figure}
 
 
-\section{NTag algorithm}
+\section{Secondary selection}
 
 As mentioned previously, two neutron tagging algorithms were used in this analysis, the legacy NTag code, used in previous NCQE analyses and modified to work with a version of SKDETSIM which has Gadolinium included and new NTag code which uses a slightly different neutron tagging algorithm specifically with regards to the primary and secondary selection criteria which will be discussed in later subsections.
 
