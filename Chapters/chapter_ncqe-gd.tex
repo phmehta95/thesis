@@ -44,7 +44,7 @@ $$
 
 \subsection{Primary interaction}
 
-The interaction between the incoming neutrino event and an Oxygen nucleus, and the de-excitation of the nucleus is modelled by NEUT, which produces a vector of primary particles used for event simulaation in SKDETSIM. Because these are primary particles, they do not take into consideration all the particles produced from the detector response, i.e. the secondary particles produced from the interactions within the medium of the detector, in our case, water doped with gadolinium sulphate octahydrate. The way NEUT treats the interaction between a nucleus and a neutrino for the case of a neutrino interaction with a ${ }^{16} \mathrm{O}$ isotope is shown in Equation \ref{eq:neutrinonuc}. 
+The interaction between the incoming neutrino event and an Oxygen nucleus, and the de-excitation of the nucleus is modelled by NEUT, which produces a vector of primary particles used for event simulaation in SKDETSIM. Because these are primary particles, they do not take into consideration all the particles produced from the detector response, i.e. the secondary particles produced from the interactions within the medium of the detector, in our case, water doped with $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$. The way NEUT treats the interaction between a nucleus and a neutrino for the case of a neutrino interaction with a ${ }^{16} \mathrm{O}$ isotope is shown in Equation \ref{eq:neutrinonuc}. 
 
 \begin{equation}
     \sigma\left(\nu^{16} \mathrm{O}\right)=\sum_{i=1}^{8} \sigma_{\mathrm{p}}\left(p_{i}^{(\mathrm{p})}\right)+\sum_{j=1}^{8} \sigma_{\mathrm{n}}\left(p_{j}^{(\mathrm{n})}\right)+\sigma(2 p 2 h)    
@@ -718,7 +718,7 @@ where the angle at the point of the neutron capture vertex between $\hat{r}_{i}$
 \theta_{i j}=\arccos \left(\hat{p}_{i} \cdot \hat{p}_{j}\right)
 \end{equation}
 
-where the hits are defined as clustered if $\theta_{ij}$ is less than 14
+where the hits are defined as clustered if $\theta_{ij}$ is less than 14$\degree$.
 
 
 \underline{llrca}
@@ -760,7 +760,25 @@ This variable (similar to effwall), gives the distance of the neutron capture ve
 \overrightarrow{\operatorname{dir}}=\sum_{i=1}^{N 10 n v x} \hat{p}_{i}
 \end{equation}
 
+\underline{accepave}
+
+This is a variable that relates to the acceptance of the inner detector PMTs. For every ID PMT the geometric acceptance angle is defined as: 
+
+\begin{equation}
+    \cos \theta=\hat{n} \cdot\left(\overrightarrow{V T X_n}-\overrightarrow{P M T}\right) 
+\end{equation}
+
+where $\cos \theta=\hat{n} \cdot\left(\overrightarrow{V T X_n}-\overrightarrow{P M T}\right)$ is the vector between the neutron capture vertex to the hit PMT, and $hat{n}$ is a unit vector orthogonal to the PMT cover. Using the cosine of these acceptance values, weights are computed using 
 
 
+\begin{equation}
+    w^*=(\cos \theta)_{e f f} \times \frac{e^{-d / \lambda}}{d^2}
+\end{equation}
+
+where $(\cos \theta)_{e f f}$ is $\cos \theta$ corrected for imperfections resulting from PMT geometry and light being reflected and absorbed by the acrylic PMT cases, while the multiplicative term consisting of $d = \left(\overrightarrow{V T X_n}-\overrightarrow{P M T}\right)$, and adjust the weight by looking at the attenuation length of the Cherenkov photon in water ($\lambda$). Min-max normalising the $w^{*}$ weights produces the weights $w$ so that the values of $w$ never exceed 1. The formula for the $accepave$ variable is finally given by:
+
+\begin{equation}
+    \text { accepave }=-\frac{1}{N 10 n v x} \sum_{i=1}^{N 10 n v x} \log _{10}\left(\frac{w_i}{\sum_{i=1}^{N_{P M T}} w_i}\right)
+\end{equation}
 
 
