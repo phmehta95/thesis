@@ -682,12 +682,13 @@ The primary selection criteria used with the new NTag are different to accomodat
 
 
 \subsection{Secondary selection criteria}
-When the neutron vertex is found by this method, 14 variables which describe different aspects of the neutron candidate are calculated. For each of the neutron candidates the vector of these variables are computed and fed into the neural network and this produces an output value which is between 0 and 1. These variables relate to different features regarding categorising hits from neutron capture on Gd or H, including the number of the hits from neutron capture, the isotropy of these hits, the Cherenkov angles of these hits and the position of the neutron vertex in the detector when capture occurs. A description of these variables are given as follows:
+When the neutron vertex is found by this method, 14 variables which describe different aspects of the neutron candidate are calculated, using the legacy NTag. For each of the neutron candidates the vector of these variables are computed and fed into the neural network and this produces an output value which is between 0 and 1. These variables relate to different features regarding categorising hits from neutron capture on Gd or H, including the number of the hits from neutron capture, the isotropy of these hits, the Cherenkov angles of these hits and the position of the neutron vertex in the detector when capture occurs. A description of these variables are given as follows for the legacy NTag, and a further 12 variables used in the new NTag code are descibed below.
 
+\underline{Legacy NTag variables}
 
 \underline{N10nvx}
 \newline
-This is the number of hits in the 10ns sliding window of the neutron candidate
+This is the number of hits in the 10ns sliding window of the neutron candidate.
 \newline
 
 
@@ -788,3 +789,63 @@ This is a variable relating to the timing of the hits, specifically the standard
 \underline{mintaurms6}
 
 This is another variable related to hit timing, and is the minimum value among the values of $\sigma_{res}$ from all possible subsets of six hits taken from the neutron candidate. 
+
+\underline{New NTag variables}
+
+The following twelve variables are fed into the TMVA neural network model for the secondary selection, some of these are similar to their corresponding legacy NTag variables, while some are new additions. 
+
+\underline{NHits}
+
+Similarly to the legacy NTag variable $N10nvx$ this is defined as the number of hits in a sliding timing window for the neutron candidate, however instead of this being set to a value of 10 nsec, this was increased to 14 nsec in order to accomadate for the increased number of hits from gamma cascades from neutron capture on gadolinium.
+
+\underline{Beta-L}
+
+Again, similarly to the $beta-n$ variable of the legacy NTag, this defines the isotropy of the Cherenkov hits according to:
+
+\begin{equation}
+    \beta_l=\frac{2}{N_{H i t s}\left(N_{H i t s}-1\right)} \sum_{i \neq j} P_l\left(\cos \theta_{i j}\right)
+\end{equation}
+
+where the legacy NTag variable $N10nvx$ is replaced by $N_{Hits}$, and $P_{l}$ are the Legendre polynomial's of order $l$ and $\theta_{ij}$ is the angle between hit PMTs relative to the neutron capture vertex.
+
+\underline{DWall}
+
+DWall gives the difference from the fitted neutron vertex to the nearest wall in cm.
+
+\underline{DWallMeanDir}
+
+Similarly to the variable ntowall, this gives the distance from the fitted neutron vertex to the wall in the direction of the mean of the PMT hits for the neutron candidate in cm.
+
+\underline{MeanDirAngleMean}
+
+Unlike the legacy NTag, which uses the variables $accepave$ and $llrca$ relating to hits spacing that involve complicated weighting of PMT acceptance angles and log-likelihood ratios of Cherenkov angles, this variable simply takes the mean of angles between the direction of each hit and the mean of the direction of these hits. 
+
+\underline{MeanDirAngleRMS}
+
+This variable is simply the RMS of angles between each hit directon and mean hit direction.
+
+\underline{OpeningAngleMean}
+
+This calculates the mean of all possible opening angles calculated from 3 PMT hits.
+
+\underline{OpeningAngleStdev}
+
+This is the standard deviation of all possible opening angles calculated from 3 PMT hits.
+
+\underline{OpeningAngleSkew}
+
+This is the skewness of all possible opening angles from 3 PMT hits, calculated using
+
+\begin{equation}
+    \tilde{\mu}_3=\frac{\sum_i^N\left(X_i-\bar{X}\right)^3}{(N-1) * \sigma^1.5}
+\end{equation}
+
+where $X_{i}$ is the hit PMT, $\bar{X}$ is the mean of the 3-hit vector, N is the size of the vector of PMT hits, and $\sigma$ is the standard deviation of the PMT hits.
+
+\underline{TRMS}
+
+Similarly to the legacy NTag variable $taurms$, this calculates the standard deviation of the time-of-flight corrected PMT hit times.
+
+\underline{N1300}
+
+Just like the variable $N300S$ from the legacy NTag, this is a broader range timing window than NHits, 
