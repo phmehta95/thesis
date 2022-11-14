@@ -682,6 +682,18 @@ The primary selection criteria used with the new NTag are different to accomodat
 
 
 \subsection{Secondary selection criteria}
+Due to the contamination of background events still present amongst the true neutron events after primary selection, a boosted decision tree (BDT) or a neural network (NN) is used to efficiently remove these background events, while trying to maximise the number of true neutron events. The output of the BDT or the NN is used to indicate how likely a variable is to be signal/background candidate. Each of the candidates selected during the primary selection process has an associated reconstructed neutron capture vertex calculated for it. In order to produce residual hit times that are less spread out than TOF-corrected hits towards the neutrino vertex, the TOF-corrected hits towards the Compton scattering vertex are used instead. The aim of searching for the neutron capture vertex is to use a method by which the standard deviation of the residual times of the hits is minimised. Therefore the neutron capture vertex $n_{VTX}$ is for the legacy neutron tagging code is defined as in Equation \ref{eq:ncap_vtx}.
+
+\begin{equation}
+    n_{VTX}=\underset{r}{\operatorname{argmin}}\left(\sqrt{\frac{1}{N 10_{p v x}} \sum_{i=1}^{N 10_{p v x}}\left(\tau_i(\boldsymbol{r})-\bar{\tau}(\boldsymbol{r})\right)^2}\right)
+\label{eq:ncap_vtx}
+\end{equation}
+
+Where 
+
+
+
+
 When the neutron vertex is found by this method, 14 variables which describe different aspects of the neutron candidate are calculated, using the legacy NTag. For each of the neutron candidates the vector of these variables are computed and fed into the neural network and this produces an output value which is between 0 and 1. These variables relate to different features regarding categorising hits from neutron capture on Gd or H, including the number of the hits from neutron capture, the isotropy of these hits, the Cherenkov angles of these hits and the position of the neutron vertex in the detector when capture occurs. A description of these variables are given as follows for the legacy NTag, and a further 12 variables used in the new NTag code are descibed below.
 
 \underline{Legacy NTag variables}
@@ -848,4 +860,8 @@ Similarly to the legacy NTag variable $taurms$, this calculates the standard dev
 
 \underline{N1300}
 
-Just like the variable $N300S$ from the legacy NTag, this is a broader range timing window than NHits, 
+Just like the variable $N300S$ from the legacy NTag, this is a broader range timing window than NHits, this is the number of PMT hits in a 1300 ns timing window, specifically between -520 ns and +780 ns from the fitted time relative to the trigger.       
+
+\underline{N200}
+
+his is the number of hits within -100 ns and +100 ns from the fitted time relative to the trigger.
