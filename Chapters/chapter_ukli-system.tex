@@ -165,21 +165,21 @@ Figures \ref{fig:B1_coll_diff_auto_July} shows the occupancy plots for autocalib
 \section{Implementation of UKLI in SK Simulation}
 In order to simulate the data taken with the UKLI, SKDETSIM, the Super Kamiokande Detector Simulator was used. SKDETSIM uses GEANT3 (GEometry ANd Tracking 3) to simulate what the particles in each event would do inside the detector, and tracks the particle's trajectories and energy loss. Simulating the light injection from the UKLI system in SKDETSIM was done in a similar way to the Korean method of producing Monte Carlo: the same versions of the calibration scripts were used however, small modifications were made to them and to the version of SKDETSIM used to simulate the input photons from the system in the detector. The calibration software allows for the number of events and the number of injected photons to be set, in order to generate many Monte Carlo files with varying absorption, Rayleigh and Mie scattering parameters. 
 \newline
-Along with making sure the position of the injectors was set to that of the UKLI injectors (shown in Table \ref{table:UKLI_loc}), the opening angle of the injectors determined by the simulation had to be set to accomodate the fact that the injectors for the UKLI system now consisted of three different opening angles for the collimator, diffuser and bare fibre optics. Previously, to set the angle of the photons in the beam, a parameter relating to the width of the input injector beam was used (``SIGBM", standing for ``sigma of the beam"), and was produced using a Gaussian random number generator to produce the photon angle. However, an entirely new method of determining the opening angle of the beam was needed to include the information from the light profiles taken from the test stands at Warwick as the previous simulation included an algorithm for a 12$\degree$ opening angle that needed to be rewritten for our purposes for use with multiple optics. 
+Along with making sure the position of the injectors was set to that of the UKLI injectors (shown in Table \ref{table:UKLI_loc}), the opening angle of the injectors determined by the simulation had to be set to accomodate the fact that the injectors for the UKLI system now consisted of three different opening angles for the collimator, diffuser and bare fibre optics. Previously, to set the angle of the photons in the beam, a parameter relating to the width of the input injector beam was produced using a Gaussian random number generator to output the photon angle. However, an entirely new method of determining the opening angle of the beam was needed to include the information from the light profiles taken from the test stands at Warwick as the previous simulation included an algorithm for a 12$\degree$ opening angle that needed to be rewritten for our purposes for use with multiple optics. 
 
 \begin{table}[htp]
     $$
 \begin{array}{|c|c|c|c|c|c|}  
-    \hline \hline{\text {UKLI Barrel Injector }} & {\text { x (cm)}} & {\text {y (cm)}} & {\text {z (cm)}}  \tabularnewline
-    \hline \text { B1 } & 1490.73 & 768.14 & 1302.95 \\
-    \hline \text { B2 } & 1490.73 & 768.14 & 666.2 \\
-    \hline \text { B3 } & 1490.73 & 768.14 & -111.05 \\
-    \hline \text { B4 } & 1490.73 & 768.14 & -676.65 \\
-    \hline \text { B5 } & 1490.73 & 768.14 &  -1313.95 \\
+    \hline \hline{\text {UKLI Barrel Injector }} & {\text { x (cm)}} & {\text {y (cm)}} & {\text {z (cm)}} & {\text{Misalignment angle ($\degree$)}}  \tabularnewline
+    \hline \text { B1 } & 1490.73 & 768.14 & 1224.0 & 4.1 \\
+    \hline \text { B2 } & 1490.73 & 768.14 & 742.0 & 3.5 \\
+    \hline \text { B3 } & 1490.73 & 768.14 & -200.0 & 3.4 \\
+    \hline \text { B4 } & 1490.73 & 768.14 & -747.0 & 6.3 \\
+    \hline \text { B5 } & 1490.73 & 768.14 &  -1413.0 & - \\
     \hline \hline 
 \end{array}
     $$
-\caption{Theoretical barrel injector positions (x,y,z) of the UKLI injectors in cm} 
+\caption{Beam spot positions (x,y,z) of the UKLI injectors in cm and misalignment of the injectors in degrees} 
 \label{table:UKLI_loc}
 \end{table}
 
@@ -204,41 +204,8 @@ In order to validate the positions of the targets for the UKLI system, and the r
     \label{fig:charge_weighted_nov_sept_B4}
 \end{figure}
 
-The B1 and B4 collimator optics give the largest peaks in the charge weighted plots, while the B3 and B5 optics give the weakest peaks, practically indistinguishable from the background pedestal (even with the additional number of events taken during the November data taking runs.) These peaks of the distributions in these plots were used to calculate the actual injector positions, shown in Table \ref{table:actual_UKLI_injector_loc}. 
 
-\begin{table}[htp]
-    $$
-\begin{array}{|c|c|c|c|c|c|}  
-    \hline \hline{\text {UKLI Barrel Injector }} & {\text { x (cm)}} & {\text {y (cm)}} & {\text {z (cm)}}  \tabularnewline
-    \hline \text { B1 } & 1490.73 & 768.14 & 1224 \\
-    \hline \text { B2 } & 1490.73 & 768.14 & 742 \\
-    \hline \text { B3 } & 1490.73 & 768.14 & -200 \\
-    \hline \text { B4 } & 1490.73 & 768.14 & -747 \\
-    \hline \text { B5 } & 1490.73 & 768.14 &  -1413 \\
-    \hline \hline 
-\end{array}
-    $$
-\caption{Actual barrel injector positions (x,y,z) of the UKLI injectors in cm} 
-\label{table:actual_UKLI_injector_loc}
-\end{table}
-
-The charge weighted plots were used to validate the relationship between the opening angle of the injector beam in the Monte Carlo production calibration scripts by generating Monte Carlo scripts with varying values of the SIGBM parameter (while keeping the absorption and scattering parameters the same). Fitting the charge weighted profile plots with a Gaussian and using the position of the injector target and the edge of the beam spot, the opening angle of the beam in degrees could be determined. Figure \ref{fig:sigbm_angle_validation} shows the relationship between SIGBM and the opening angle of the beam in degrees. The width of the beam needed to be defined in order to do this however, and the standard beam radius definition is shown as in Figure \ref{fig:beam_width}. This schematic shows that the width of the beam was defined as using $1/e^2$ for the edge of the beam width, so it is taken as the point where the intensity drops to 0.135 of the Gaussian peak value.
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.7\textwidth]{Figures/beam_width.PNG}
-    \caption{Schematic showing how the width of the MC beam was defined}
-    \label{fig:beam_width}
-\end{figure}
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.7\textwidth]{Figures/sigbm_angle_validation.PNG}
-    \caption{Plot of the sigbm parameter vs angle in degrees produced using calculation of the opening angle from the beam width}
-    \label{fig:sigbm_angle_validation}
-\end{figure}
-
-After using the charge weighted hit plots to understand the SIGBM parameter and how the opening angle is generated by SKDETSIM more thoroughly, the next step involved using the profiles from the Warwick optic test stands (shown in Figures \ref{fig:collimator_TF1} and \ref{fig:diffuser_TF1}) in the production of this opening angle in the detector simulation. This was done by treating the profiles in Figures \ref{fig:collimator_TF1} and \ref{fig:diffuser_TF1} as Probablity Distribution Functions (PDFs) and using inverse transform sampling to make the detector simulation sample at random from it. Inverse transform sampling is a method for generating random numbers from any probability distribution by using the inverse of its cumulative distribution $F^{-1}(x)$. For continuous distributions, such as the results from the collimator and diffuser optics test stands, the algorithm for inverse transform sampling is simple. Firstly, a random variable $U$ is uniformly distributed between [0,1], and secondly the relation $X = F^{-1}_{x}(U)$ would then produce a distribution $X$ following the original probability distribution function, i.e. that of the original PDFs from the optics test stands. 
+The profiles from the Warwick optic test stands (shown in Figures \ref{fig:collimator_TF1} and \ref{fig:diffuser_TF1}) are then used in the production of the opening angle of the injectors in the detector simulation. This was done by treating the profiles in Figures \ref{fig:collimator_TF1} and \ref{fig:diffuser_TF1} as Probablity Distribution Functions (PDFs) and using inverse transform sampling to make the detector simulation sample at random from it. Inverse transform sampling is a method for generating random numbers from any probability distribution by using the inverse of its cumulative distribution $F^{-1}(x)$. For continuous distributions, such as the results from the collimator and diffuser optics test stands, the algorithm for inverse transform sampling is simple. Firstly, a random variable $U$ is uniformly distributed between [0,1], and secondly the relation $X = F^{-1}_{x}(U)$ would then produce a distribution $X$ following the original probability distribution function, i.e. that of the original PDFs from the optics test stands. 
 
 The first step is to produce the CDFs from the PDFs from the optic test stand profile tests. Figure \ref{fig:collimator_TF1} shows that the original fits to the collimator data did not reach 4 degrees, and as a result the PDFs produced needed to be linearly extrapolated from 3.5 degrees where the measurements cut off to reach 4 degrees. Figure \ref{fig:B1_PDF_CDF_coll} shows the PDFs and CDFs produced from the collimator data, and Figure \ref{fig:B1_PDF_CDF_diff} shows the PDFs and CDFs produced from the diffuser data. The CDFs are normalised with a max of one using min-max scaling.
 
@@ -246,17 +213,19 @@ The first step is to produce the CDFs from the PDFs from the optic test stand pr
 \begin{figure}
     \centering
     
-    \begin{minipage}{0.5\textwidth}
+    \begin{subfigure}{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/B1_coll_pdf.png} % first figure itself
         \caption{PDF for the B1 collimator}
-    \end{minipage}\hfill
-    \begin{minipage}{0.5\textwidth}
+        \label{sfig:PDF_coll_B1}
+    \end{subfigure}\hfill
+    \begin{subfigure}{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/B1_coll_cdf.png} % second figure itself
-        \caption{CDF for the B1 collimator }
-        \label{fig:B1_PDF_CDF_coll}
-    \end{minipage}
+        \caption{CDF for the B1 collimator}
+        \label{sfig:CDF_coll_B1}
+    \end{subfigure}
+    \caption{PDF for the B1 collimator (\subref{sfig:PDF_coll_B1}) and CDF (\subref{sfig:CDF_coll_B1}) for the B1 collimator }
 \end{figure}
 
 \begin{figure}
