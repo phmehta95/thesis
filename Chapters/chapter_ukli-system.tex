@@ -207,7 +207,7 @@ In order to validate the positions of the targets for the UKLI system, and the r
 
 The profiles from the Warwick optic test stands (shown in Figures \ref{fig:collimator_TF1} and \ref{fig:diffuser_TF1}) are then used in the production of the opening angle of the injectors in the detector simulation. This was done by treating the profiles in Figures \ref{fig:collimator_TF1} and \ref{fig:diffuser_TF1} as Probablity Distribution Functions (PDFs) and using inverse transform sampling to make the detector simulation sample at random from it. Inverse transform sampling is a method for generating random numbers from any probability distribution by using the inverse of its cumulative distribution $F^{-1}(x)$. For continuous distributions, such as the results from the collimator and diffuser optics test stands, the algorithm for inverse transform sampling is simple. Firstly, a random variable $U$ is uniformly distributed between [0,1], and secondly the relation $X = F^{-1}_{x}(U)$ would then produce a distribution $X$ following the original probability distribution function, i.e. that of the original PDFs from the optics test stands. 
 
-The first step is to produce the CDFs from the PDFs from the optic test stand profile tests. Figure \ref{fig:collimator_TF1} shows that the original fits to the collimator data did not reach 4 degrees, and as a result the PDFs produced needed to be linearly extrapolated from 3.5 degrees where the measurements cut off to reach 4 degrees. Figure \ref{fig:B1_PDF_CDF_coll} shows the PDFs and CDFs produced from the collimator data, and Figure \ref{fig:B1_PDF_CDF_diff} shows the PDFs and CDFs produced from the diffuser data. The CDFs are normalised with a max of one using min-max scaling.
+The first step is to produce the CDFs from the PDFs from the optic test stand profile tests. Figure \ref{fig:collimator_TF1} shows that the original fits to the collimator data did not reach 4 degrees, and as a result the PDFs produced needed to be linearly extrapolated from 3.5 degrees where the measurements cut off to reach 4 degrees. Figure \ref{fig:PDF_CDF_coll_B1} shows the PDFs and CDFs produced from the B1 collimator data and the B1 diffuser data. The CDFs are normalised with a max of one using min-max scaling.
 
 
 \begin{figure}
@@ -217,141 +217,67 @@ The first step is to produce the CDFs from the PDFs from the optic test stand pr
         \centering
         \includegraphics[width=\textwidth]{Figures/B1_coll_pdf.png} % first figure itself
         \caption{PDF for the B1 collimator}
-        \label{sfig:PDF_coll_B1}
     \end{subfigure}\hfill
     \begin{subfigure}{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/B1_coll_cdf.png} % second figure itself
         \caption{CDF for the B1 collimator}
-        \label{sfig:CDF_coll_B1}
     \end{subfigure}
-    \caption{PDF for the B1 collimator (\subref{sfig:PDF_coll_B1}) and CDF (\subref{sfig:CDF_coll_B1}) for the B1 collimator }
+    \caption{PDF (left) and CDF (right) the B1 collimator }
+    \label{fig:PDF_CDF_coll_B1}
 \end{figure}
 
 \begin{figure}
     \centering
     
-    \begin{minipage}{0.5\textwidth}
+    \begin{subfigure}{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/B1_diff_pdf.png} % first figure itself
-        \caption{PDF for the B1 diffuser}
-    \end{minipage}\hfill
-    \begin{minipage}{0.5\textwidth}
+        \label{sfig:PDF_diff_B1}
+    \end{subfigure}\hfill
+    \begin{subfigure}{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/B1_diff_cdf.PNG} % second figure itself
-        \caption{CDF for the B1 diffuser}
-        \label{fig:B1_PDF_CDF_diff}
-    \end{minipage}
+        \label{sfig:CDF_diff_B1}
+    \end{subfigure}
+    \caption{PDF (\subref{sfig:PDF_diff_B1}) and CDF (\subref{sfig:CDF_diff_B1}) for the B1 diffuser }
 \end{figure}
 
 
-After producing the normalised CDFs, the inverse of these CDFs are calculated - Figure \ref{fig:B1_PDF_CDF_inv_coll} shows the comparison of the normalised CDF data for the B1 collimator (top sublot, shown in blue) and the polynomial fit to the CDF for the B1 collimator (top subplot, shown in red), and the inverse CDF function (bottom subplot shown in green) and the polynomial fit to this inverse CDF function (bottom subplot shown in purple). Figure \ref{fig:B1_PDF_CDF_inv_diff} shows the same plot for the B1 diffuser. 
+After producing the normalised CDFs, the inverse of these CDFs are calculated - Figure \ref{sfig:B1_PDF_CDF_inv_coll} shows the comparison of the normalised CDF data for the B1 collimator (top sublot, shown in blue) and the polynomial fit to the CDF for the B1 collimator (top subplot, shown in red), and the inverse CDF function (bottom subplot shown in green) and the polynomial fit to this inverse CDF function (bottom subplot shown in purple). Figure \ref{sfig:B1_PDF_CDF_inv_diff} shows the same plot for the B1 diffuser. 
 
 \begin{figure}
     \centering
-    \begin{minipage}{0.5\textwidth}
+    \begin{subfigure}{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/B1_inv_coll_cdf.png} % first figure itself
-        \caption{Inverse CDF for the B1 collimator}
-        \label{fig:B1_PDF_CDF_inv_coll}
-    \end{minipage}\hfill
-    \begin{minipage}{0.5\textwidth}
+        \label{sfig:B1_PDF_CDF_inv_coll}
+    \end{subfigure}\hfill
+    \begin{subfigure}{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/B1_inv_diff_cdf.png} % second figure itself
-        \caption{Inverse CDF for the B1 diffuser}
-        \label{fig:B1_PDF_CDF_inv_diff}
-    \end{minipage}
+        \label{sfig:B1_PDF_CDF_inv_diff}
+    \end{subfigure}
+    \caption{Inverse CDF for the B1 collimator (\subref{sfig:B1_PDF_CDF_inv_coll}) and for the B1 diffuser (\subref{sfig:B1_PDF_CDF_inv_diff})}
 \end{figure}
 
 
-After producing the fits to the inverse cumulative distribution functions, these funtions were inputted into the detector simulation, SKDETSIM. Removing the SIGBM parameter from the calibration scripts meant there needed to be a new way with which to generate the angle at which the photons were produced in the simulation, and this is where the inverse transform sampling occurs for the relevant fit for the selected injector and optic type. Using the same event display used to produce the occupancy plots for the autocalib data and the test run data, occupancy plots of the Monte Carlo were produced. These are shown for the B1 - B5 collimators in Figure \ref{fig:ukli_mc_coll}, and for the B1 - B5 diffusers in Figure \ref{fig:ukli_mc_diff}. These MC were produced with the abs, ray and mie parameters in the calibration scripts set to 1.0, 1.0, and 1.0 (i.e. the current detector simulation values) and the top-bottom asymmetry parameter set to 7.598, which is the most recently tuned value of this parameter. Because the original profiles from the test stands were taken in air, adjustments were made so that the refractive index of the water in the detector was taken into account when implementing the inverse CDFs into the detector simulation. 
+After producing the fits to the inverse cumulative distribution functions, these funtions were inputted into the detector simulation, SKDETSIM. Using the same event display used to produce the occupancy plots for the autocalib data and the test run data, occupancy plots of the Monte Carlo were produced. These are shown for the B1 collimator and B1 diffuser in \subref{sfig:}. These MC were produced with the abs, ray and mie parameters in the calibration scripts set to 1.0, 1.0, and 1.0 (i.e. the current detector simulation values) and the top-bottom asymmetry parameter set to 7.598, which is the most recently tuned value of this parameter. Because the original profiles from the test stands were taken in air, adjustments were made so that the refractive index of the water in the detector was taken into account when implementing the inverse CDFs into the detector simulation. 
 
 \begin{figure}[htp]
-    \centering
-    \caption{Monte Carlo simulations of the B1 - B5 collimator injectors}
-    \label{fig:ukli_mc_coll}
     \begin{subfigure}{0.49\columnwidth}
     \centering
     \includegraphics[width=0.9\textwidth]{Figures/ukli_mc_B1.PNG}
-    \caption{B1 collimator UKLI MC}
-    \label{fig:time1}
+    \label{sfig:ukli_mc_coll}
     \end{subfigure}\hfill
     \begin{subfigure}{0.49\columnwidth}
     \centering
-    \includegraphics[width=0.9\textwidth]{Figures/ukli_mc_B2.PNG}
-    \caption{B2 collimator UKLI MC}
-    \label{fig:time2}
+    \includegraphics[width=0.9\textwidth]{Figures/ukli_diff_mc_B2.PNG}
+    \caption{B2 diffuser UKLI MC}
+    \label{sfig:ukli_mc_diff}
     \end{subfigure}
-    
-  
-    \begin{subfigure}{0.49\columnwidth}
-    \centering
-    \includegraphics[width=0.9\textwidth]{Figures/ukli_mc_B3.PNG}
-    \caption{B3 collimator UKLI MC}
-    \label{fig:time3}
-    \end{subfigure}\hfill
-    \begin{subfigure}{0.49\columnwidth}
-    \centering
-    \includegraphics[width=0.9\textwidth]{Figures/ukli_mc_B4.PNG}
-    \caption{B4 collimator UKLI MC}
-    \label{fig:time4}
-    \end{subfigure}
-    
-
-    
-    \begin{subfigure}{0.49\columnwidth}
-    \centering
-    \includegraphics[width=\textwidth]{Figures/ukli_mc_B5.PNG}
-    \caption{B5 collimator UKLI MC}
-    
-    \end{subfigure}
-
-    \end{figure}
-
-    \begin{figure}[htp]
-        \centering
-        \caption{Monte Carlo simulations of the B1 - B5 diffuser injectors}
-        \label{fig:ukli_mc_diff}
-        \begin{subfigure}{0.49\columnwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/ukli_diff_mc_B1.PNG}
-        \caption{B1 diffuser UKLI MC}
-        \label{fig:time1}
-        \end{subfigure}\hfill
-        \begin{subfigure}{0.49\columnwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/ukli_diff_mc_B2.PNG}
-        \caption{B2 diffuser UKLI MC}
-        \label{fig:time2}
-        \end{subfigure}
-        
- 
-        
-        \begin{subfigure}{0.49\columnwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/ukli_diff_mc_B3.PNG}
-        \caption{B3 diffuser UKLI MC}
-        \label{fig:time3}
-        \end{subfigure}\hfill
-        \begin{subfigure}{0.49\columnwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/ukli_diff_mc_B4.PNG}
-        \caption{B4 diffuser UKLI MC}
-        \label{fig:time4}
-        \end{subfigure}
-        
-     
-        
-        \begin{subfigure}{0.49\columnwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/ukli_diff_mc_B5.PNG}
-        \caption{B5 diffuser UKLI MC}
-        
-        \end{subfigure}
-    
-        \end{figure}
-    
-
+    \caption{Monte Carlo simulations of the B1 - B5 collimator injectors}
+\end{figure}
 
 In order to validate the diffuser MC inverse cumulative distribution function output, a uniform distribution was run through the equation for the diffuser inverse CDF fits and the original PDF fit for each diffuser was used to fit the output points from the distribution, showing that inverse transform sampling was done correctly for the PDFs. These are shown for each diffuser in Figure \ref{fig:inv_cdf_check}. 
 
