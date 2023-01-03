@@ -332,7 +332,7 @@ The time dispersion for the injected photons in the laser generation in SKDETSIM
 
 The Box-Muller transform is a random number sampling method for making pairs of independent, normally distributed random sources from a source of uniformly distributed numbers (from between usually from between 0 and 1) \cite{10.1214/aoms/1177706645}. The form of the Box-Muller method implemented to calculate the added time dispersion is the Marsaglia polar method \cite{doi:10.1137/1006063}, which works by choosing two independent and uniformly distributed numbers (u,v) between [-1,+1], so that $s = u^{2} + v^{2}$, and if $s=0$, or $s>=1$, another pair of numbers are chosen. Then the standard normal deviate which is given by $$z_{0}=u \cdot \sqrt{\frac{-2 \ln s}{s}}$$ is multiplied by the chosen value of time dispersion in seconds and added to the mean (set to zero) to give the normally dispersed extra track step time for a photon in the distribution. 
 
-Figure \ref{fig:gauss_time_dispersion} shows the effect of implementing this varying time dispersion on the raw hit timing output from the UKLI MC B1 collimator simulation, with the time dispersion shown for 0 ns, 5 ns, 10 ns, 15 ns, 20 ns and 100 ns. 
+Figure \ref{fig:gauss_time_dispersion} shows the effect of implementing this varying time dispersion on the raw hit timing output from the UKLI MC B1 collimator simulation, with the time dispersion shown for 0 ns, 5 ns, 10 ns, 15 ns and 20 ns. 
 
 \begin{figure}
     \centering
@@ -341,51 +341,41 @@ Figure \ref{fig:gauss_time_dispersion} shows the effect of implementing this var
     \label{fig:gauss_time_dispersion}
 \end{figure}
 
-Along with implementing the Gaussian distributed time dispersion, introducing a double gaussian for the time dispersion was also looked at, due to the height and sharpness of the reflected peak in the data being something that might be better suited to such a fit. Figure \ref{fig:double_gauss_time_dispersion} shows the raw hit timing output from the UKLI MC B1 collimator simulation with a double gaussian time dispersion, for varying time dispersion values. The x-axis on the plots show the hit time in nanoseconds, the y axis is number of hits. 
+In order to properly compare the timing distributions between data and Monte Carlo, the time-of-flight corrected timing plots are produced. To only select reflected and scattered hits, an exclusion region of hits is set: this is set to be $\pm$ 2 m around the injector (in order to avoid using backscattered hits in the analysis), and also $\pm$ 3.2 m around the injector target region in order to avoid including direct hits to the beam target.
+
+Figures \ref{time_dispersion_TOF_0ns.PNG}, \ref{fig:5ns_time_dispersion}, \ref{fig:10ns_time_dispersion}, \ref{fig:15ns_time_dispersion}, \ref{fig:20ns_time_dispersion} show time-of-flight corrected hit timing distributions for the B1 injector. The region between the blue dashed lines are the region for the scattered hits and the peak on the right shows the reflected hits. The hits from the injector data are shown in black and the MC hits are shown in red. In order to find the closest match for the time dispersion in the data, a gaussian distribution was fit to the B1 collimator data and Monte Carlo reflected peaks and the width of the gaussian was compared - this was only done for the 10 ns, 15 ns and 20 ns dispersion plots because the value for the time dispersion for the LED pulse is known to be in this range and the peak is too narrow and uneven for the 0 ns and 5 ns dispersion plots to fit a gaussian properly. 
 
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{Figures/double_gauss_time_dispersion.PNG}
-    \caption{Double gaussian distributed time dispersion plots, with varying amounts of time dispersion}
-    \label{fig:double_gauss_time_dispersion}
+    \includegraphics[width=\textwidth]{Figures/0ns_gaussian_dispersion_comparison.PNG}
+    \caption{TOF comparison between UKLI MC with no time dispersion and Run 82181 test data for B1 collimator}
+    \label{fig:0ns_time_dispersion}
 \end{figure}
 
-Figure \ref{fig:TOF_inj} shows the time-of-flight corrected plots for the hits from the injector, for various amounts of Gaussian distributed time dispersion: for 0 ns, 5 ns, 10 ns, 20 ns and 30 ns. 
-
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{Figures/TOF_inj.PNG}
-    \caption{Gaussian distributed time dispersion plots for the injected hits}
-    \label{fig:TOF_inj}
-\end{figure}
-
-Figures \ref{fig:5ns_time_dispersion}, \ref{fig:10ns_time_dispersion}, \ref{fig:15ns_time_dispersion}, \ref{fig:20ns_time_dispersion} show time-of-flight corrected time to target hit plots with both a gaussian and double gaussian time dispersion put in for varying amounts of time dispersion for 5, 10, 15 and 20 ns respectively.
-
-
-\begin{figure}
-    \centering
-    \includegraphics[width=\textwidth]{Figures/time_dispersion_TOF_5ns.PNG}
+    \includegraphics[width=\textwidth]{Figures/5ns_gaussian_dispersion_comparison.PNG}
     \caption{Gaussian and double gaussian time dispersion for 5ns for the B1 collimator TOF comparison between UKLI MC and Run 82181 test data}
     \label{fig:5ns_time_dispersion}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{Figures/time_dispersion_TOF_10ns.PNG}
+    \includegraphics[width=\textwidth]{Figures/10ns_gaussian_dispersion_comparison.PNG}
     \caption{Gaussian and double gaussian time dispersion for 10ns for the B1 collimator TOF comparison between UKLI MC and Run 82181 test data}
     \label{fig:10ns_time_dispersion}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{Figures/time_dispersion_TOF_15ns.PNG}
+    \includegraphics[width=\textwidth]{Figures/15ns_gaussian_dispersion_comparison.PNG}
     \caption{Gaussian and double gaussian time dispersion for 15ns for the B1 collimator TOF comparison between UKLI MC and Run 82181 test data}
     \label{fig:15ns_time_dispersion}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{Figures/time_dispersion_TOF_20ns.PNG}
+    \includegraphics[width=\textwidth]{Figures/20ns_gaussian_dispersion_comparison.PNG}
     \caption{Gaussian and double gaussian time dispersion for 20ns for the B1 collimator TOF comparison between UKLI MC and Run 82181 test data}
     \label{fig:20ns_time_dispersion}
 \end{figure}
