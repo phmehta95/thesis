@@ -343,39 +343,39 @@ Figure \ref{fig:gauss_time_dispersion} shows the effect of implementing this var
 
 In order to properly compare the timing distributions between data and Monte Carlo, the time-of-flight corrected timing plots are produced. To only select reflected and scattered hits, an exclusion region of hits is set: this is set to be $\pm$ 2 m around the injector (in order to avoid using backscattered hits in the analysis), and also $\pm$ 3.2 m around the injector target region in order to avoid including direct hits to the beam target.
 
-Figures \ref{time_dispersion_TOF_0ns.PNG}, \ref{fig:5ns_time_dispersion}, \ref{fig:10ns_time_dispersion}, \ref{fig:15ns_time_dispersion}, \ref{fig:20ns_time_dispersion} show time-of-flight corrected hit timing distributions for the B1 injector. The region between the blue dashed lines are the region for the scattered hits and the peak on the right shows the reflected hits. The hits from the injector data are shown in black and the MC hits are shown in red. In order to find the closest match for the time dispersion in the data, a gaussian distribution was fit to the B1 collimator data and Monte Carlo reflected peaks and the width of the gaussian was compared - this was only done for the 10 ns, 15 ns and 20 ns dispersion plots because the value for the time dispersion for the LED pulse is known to be in this range and the peak is too narrow and uneven for the 0 ns and 5 ns dispersion plots to fit a gaussian properly. The reason for the variation in the height of the reflected peaks bwtween the MC and data is due to the detector response, which is why the width is being focussed on here instead.
+Figures \ref{fig:0ns_time_dispersion}, \ref{fig:5ns_time_dispersion}, \ref{fig:10ns_time_dispersion}, \ref{fig:15ns_time_dispersion}, \ref{fig:20ns_time_dispersion} show time-of-flight corrected hit timing distributions for the B1 injector. The region between the blue dashed lines are the region for the scattered hits and the peak on the right shows the reflected hits. The hits from the injector data are shown in black and the MC hits are shown in red. In order to find the closest match for the time dispersion in the data, a gaussian distribution was fit to the B1 collimator data and Monte Carlo reflected peaks and the width of the gaussian was compared - this was only done for the 10 ns, 15 ns and 20 ns dispersion plots because the value for the time dispersion for the LED pulse is known to be in this range and the peak is too narrow and uneven for the 0 ns and 5 ns dispersion plots to fit a gaussian properly. The reason for the variation in the height of the reflected peaks bwtween the MC and data is due to the detector response, which is why the width is being focussed on here instead.
 
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{Figures/0ns_gaussian_dispersion_comparison.PNG}
+    \includegraphics[width=0.8\textwidth]{Figures/0ns_gaussian_dispersion_comparison.PNG}
     \caption{TOF comparison between UKLI MC with no time dispersion and Run 82181 test data for B1 collimator}
     \label{fig:0ns_time_dispersion}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{Figures/5ns_gaussian_dispersion_comparison.PNG}
+    \includegraphics[width=0.8\textwidth]{Figures/5ns_gaussian_dispersion_comparison.PNG}
     \caption{TOF comparison between UKLI MC with 5 ns gaussian time dispersion and Run 82181 test data for B1 collimator}
     \label{fig:5ns_time_dispersion}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{Figures/10ns_gaussian_dispersion_comparison.PNG}
+    \includegraphics[width=0.8\textwidth]{Figures/10ns_gaussian_dispersion_with_fit.PNG}
     \caption{TOF comparison between UKLI MC with 10 ns gaussian time dispersion and Run 82181 test data for B1 collimator, with a gaussian fit to both}
     \label{fig:10ns_time_dispersion}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{Figures/15ns_gaussian_dispersion_comparison.PNG}
+    \includegraphics[width=0.8\textwidth]{Figures/15ns_gaussian_dispersion_with_fit.PNG}
     \caption{TOF comparison between UKLI MC with 15 ns gaussian time dispersion and Run 82181 test data for B1 collimator, with a gaussian fit to both}
     \label{fig:15ns_time_dispersion}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{Figures/20ns_gaussian_dispersion_comparison.PNG}
+    \includegraphics[width=0.8\textwidth]{Figures/20ns_gaussian_dispersion_with_fit.PNG}
     \caption{TOF comparison between UKLI MC with 20 ns gaussian time dispersion and Run 82181 test data for B1 collimator, with a gaussian fit to both}
     \label{fig:20ns_time_dispersion}
 \end{figure}
@@ -383,8 +383,23 @@ Figures \ref{time_dispersion_TOF_0ns.PNG}, \ref{fig:5ns_time_dispersion}, \ref{f
 
 The sigma of the gaussian fit to the data is 14.07 $\pm$ 0.01 ns, while the gaussian fit to the reflected peak for the 10 ns, 15 ns, and 20 ns time dispersed MC distributions is shown in Table \ref{table:reflected_peak_gaussian}. 
 
+\begin{table}[htp]
+$$
+\begin{array}{|c|c|c|}  
+    \hline \hline{\text {Time dispersion value (ns) }} & {\text {Sigma of gaussian (ns)}} & {\text {$\chi^{2}/ndf$ values of scattered hits region}}  \tabularnewline
+    \hline \text { 0 } & - & 8.15 \\
+    \hline \text { 5 } & - & 4.72 \\
+    \hline \text { 10 } & 19.94 \pm 0.39 & 3.45 \\
+    \hline \text { 15 } & 30.30 \pm 0.55 & 13.17 \\
+    \hline \text { 20 } & 38.46 \pm 0.75 & 22.12 \\
+    \hline \hline 
+\end{array}
+ $$   
+\caption{Sigma of gaussian (ns) for each value of time dispersion along wth the $\chi^2/ndf$ value for B1 data and MC comparison between the scattered hits region (blue dashed lines)} 
+\label{table:reflected_peak_gaussian}
+\end{table}
 
+From Table \ref{table:reflected_peak_gaussian} it can be seen that the 10 ns dispersion had the closest value to the B1 data for the sigma of the gaussian fit to the reflected peak, and also the lowest $\chi^2/ndf$ value for the comparison between the data and MC for the scattered hits region, showing that this 10 ns dispersion was the best to use in the MC. 
 
-For the scattered hits region (region between the dashed lines), there is now good agreement between the MC and data, with this region giving Chi2/NDF values of less than one, and the time dispersion values of 5 ns and 10 ns giving the best agreement. A problem remains regarding the reflected hits peak, where the data continues to have a much higher reflected peak than the Monte Carlo. This points to the amount of charge in the detector for the reflected peak being too large for the Monte Carlo, and further studies will be needed to be done to tune this. These differences are most likely due to misunderstanding the optics in Super-Kamiokande. Future studies will aim to minimise these effects and work towards the installation of a UK Light Injection system in Hyper-Kamiokande with a similar Monte Carlo used to determine absorption and scattering coefficients. 
 
 
