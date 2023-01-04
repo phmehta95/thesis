@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.27)  3 JAN 2023 22:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.27)  4 JAN 2023 12:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1547,6 +1547,9 @@ File: Figures/20ns_gaussian_dispersion_comparison.PNG Graphic file (type png)
 <use Figures/20ns_gaussian_dispersion_comparison.PNG>
 Package pdftex.def Info: Figures/20ns_gaussian_dispersion_comparison.PNG  used on input line 378.
 (pdftex.def)             Requested size: 429.3521pt x 260.84676pt.
+
+LaTeX Warning: Reference `table:reflected_peak_gaussian' on page 95 undefined on input line 384.
+
 [95 <./Figures/gauss_time_dispersion.PNG>] [96 <./Figures/0ns_gaussian_dispersion_comparison.PNG>] [97 <./Figures/5ns_gaussian_dispersion_comparison.PNG>] [98 <./Figures/10ns_gaussian_dispersion_comparison.PNG>] [99 <./Figures/15ns_gaussian_dispersion_comparison.PNG>] [100 <./Figures/20ns_gaussian_dispersion_comparison.PNG>]) [101]
 \openout2 = `Chapters/chapter_ncqe-gd.aux'.
 
@@ -2441,15 +2444,15 @@ Package rerunfilecheck Info: File `thesis_frontend.out' has not changed.
 (rerunfilecheck)             Checksum: F9B0BA1BAC6F83A8B3F4A881F2939211;16477.
  ) 
 Here is how much of TeX's memory you used:
- 29463 strings out of 478233
- 579184 string characters out of 5847836
- 925211 words of memory out of 5000000
- 46394 multiletter control sequences out of 15000+600000
+ 29464 strings out of 478233
+ 579215 string characters out of 5847836
+ 925210 words of memory out of 5000000
+ 46395 multiletter control sequences out of 15000+600000
  487664 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,16n,89p,2008b,614s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on thesis_frontend.pdf (178 pages, 35180310 bytes).
+Output written on thesis_frontend.pdf (178 pages, 35180694 bytes).
 PDF statistics:
  2366 PDF objects out of 2487 (max. 8388607)
  1719 compressed objects within 18 object streams
