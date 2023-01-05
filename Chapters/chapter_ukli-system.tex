@@ -25,7 +25,7 @@ A 2-degree opening half angle is achieved by the collimator optic by using a GRI
 
 \subsubsection{The Diffuser Optic}
 
-The diffuser optic is a wide angled beam with a opening half-angle of 40 degrees, allowing for more PMT coverage in the detector, therefore enabling measurements of PMT properties, and measurements of light attenuation length in water. Figure \ref{fig:diffuser_photo} shows a photograph of one of the diffusers used, and one of the diffuser ball enclosures. The enclosure is made of high grade stainless steel and using a chemical and water resistant epoxy resin, all the components were ensured to be watertight. 
+The diffuser optic is a wide angled beam with a opening half-angle of 40 degrees, allowing for more PMT coverage in the detector, therefore enabling measurements of PMT properties, and measurements of light attenuation length in water. Figure \ref{fig:diffuser_photo} shows a photograph of one of the diffusers used, and one of the diffuser ball enclosures. The enclosure is made of high grade stainless steel and using a chemical and water resistant epoxy resin, so all the components were ensured to be watertight. 
 
 \begin{figure}
     \centering
@@ -109,7 +109,7 @@ In September of 2019 and November of 2019 two sets of test data were taken of th
 \begin{figure}
     \centering
     
-    \caption{Occupancy plot for the collimator optics from the UKLI November 2019 test run}
+    \caption{Occupancy plots for the collimator optics from the UKLI November 2019 test run}
     \label{fig:occupancy_coll} 
     \subfloat[B1 collimator]{\includegraphics[width=0.49\textwidth]{Figures/B1_occupancy_coll.PNG}} \hfill
     \subfloat[B2 collimator]{\includegraphics[width=0.49\textwidth]{Figures/B2_occupancy_coll.PNG}} \par
@@ -123,7 +123,7 @@ In September of 2019 and November of 2019 two sets of test data were taken of th
 \begin{figure}
     \centering
     
-    \caption{Occupancy plot for the diffuser optics from the UKLI November 2019 test run} \label{fig:occupancy_diffuser} 
+    \caption{Occupancy plots for the diffuser optics from the UKLI November 2019 test run} \label{fig:occupancy_diffuser} 
     
     \subfloat[B1 diffuser]{\includegraphics[width=0.49\textwidth]{Figures/B1_occupancy_diff.PNG}} \hfill
     \subfloat[B2 diffuser]{\includegraphics[width=0.49\textwidth]{Figures/B2_occupancy_diff.PNG}} \par
@@ -163,9 +163,9 @@ Figures \ref{fig:B1_coll_diff_auto_July} shows the occupancy plots for autocalib
 
 
 \section{Implementation of UKLI in SK Simulation}
-In order to simulate the data taken with the UKLI, SKDETSIM, the Super Kamiokande Detector Simulator was used. SKDETSIM uses GEANT3 (GEometry ANd Tracking 3) to simulate what the particles in each event would do inside the detector, and tracks the particle's trajectories and energy loss. Simulating the light injection from the UKLI system in SKDETSIM was done in a similar way to the Korean method of producing Monte Carlo: the same versions of the calibration scripts were used however, small modifications were made to them and to the version of SKDETSIM used to simulate the input photons from the system in the detector. The calibration software allows for the number of events and the number of injected photons to be set, in order to generate many Monte Carlo files with varying absorption, Rayleigh and Mie scattering parameters. 
+In order to simulate the data taken with the UKLI, SKDETSIM, the Super Kamiokande Detector Simulator was used. SKDETSIM uses GEANT3 (GEometry ANd Tracking 3) to simulate what the particles in each event would do inside the detector, and tracks the particle's trajectories and energy loss. Simulating the light injection from the UKLI system in SKDETSIM was done in a similar way to the Korean method of producing Monte Carlo: the same versions of the calibration scripts were used, however, small modifications were made to them and to the version of SKDETSIM used to simulate the input photons from the system in the detector. The calibration software allows for the number of events and the number of injected photons to be set, in order to generate many Monte Carlo files with varying absorption, Rayleigh and Mie scattering parameters. 
 \newline
-Along with making sure the position of the injectors was set to that of the UKLI injectors (shown in Table \ref{table:UKLI_loc}), the opening angle of the injectors determined by the simulation had to be set to accomodate the fact that the injectors for the UKLI system now consisted of three different opening angles for the collimator, diffuser and bare fibre optics. Previously, to set the angle of the photons in the beam, a parameter relating to the width of the input injector beam was produced using a Gaussian random number generator to output the photon angle. However, an entirely new method of determining the opening angle of the beam was needed to include the information from the light profiles taken from the test stands at Warwick as the previous simulation included an algorithm for a 12$\degree$ opening angle that needed to be rewritten for our purposes for use with multiple optics. 
+Along with making sure the position of the injectors was set to that of the UKLI injectors (shown in Table \ref{table:UKLI_loc}), the opening angle of the injectors determined by the simulation had to be set to accomodate the fact that the injectors for the UKLI system now consisted of three different opening angles for the collimator, diffuser and bare fibre optics. Previously, to set the angle of the photons in the beam, a parameter relating to the width of the input injector beam was produced using a Gaussian random number generator to output the photon angle. However, an entirely new method of determining the opening angle of the beam was needed to include the information from the light profiles taken from the test stands at Warwick, as the previous simulation included an algorithm for a 12$\degree$ opening angle that needed to be rewritten for our purposes for use with multiple optics. 
 
 \begin{table}[htp]
     $$
@@ -326,7 +326,7 @@ In order to validate the diffuser MC inverse cumulative distribution function ou
 
 
 
-After producing the UKLI MC, adjusting the timing distributions in order to match up with the UKLI test run data was the next step. Producing time-of-flight corrected plots for the B1 collimator UKLI MC and overlaying it with the Run 82181 November test run data with the abs, ray, mie parameters set to 1.0, and a TBA value of 7.598, it was clear that there were disgreements between the Monte Carlo and data in both the scattered hits region and the reflected hits peak. In order to change this, the time dispersion of the reflected hits peak was varied, in order to shift the distribution and better match up the UKLI Monte Carlo and test run data. 
+After producing the UKLI MC, adjusting the timing distributions in order to match up with the UKLI test run data was the next step. Producing time-of-flight corrected plots for the B1 collimator UKLI MC and overlaying it with the Run 82181 November test run data with the abs, ray, mie parameters set to 1.0, and a TBA value of 7.598, it was clear that there were disgreements between the Monte Carlo and data in both the scattered hits region and the reflected hits peak. In order to change this, the time dispersion of the injected photons in the MC was varied, in order to match the time dispersion of the injected photons in the data.
 
 The time dispersion for the injected photons in the laser generation in SKDETSIM is governed by a Gaussian distributed random number generated using a Box-Muller transform, where additional time dispersion added would be the sigma of this Gaussian, and after a random number is passed through it, the output number would be added to the time for each track step of the photon giving the time dispersion.
 
@@ -401,5 +401,4 @@ $$
 
 From Table \ref{table:reflected_peak_gaussian} it can be seen that the 10 ns dispersion had the closest value to the B1 data for the sigma of the gaussian fit to the reflected peak, and also the lowest $\chi^2/ndf$ value for the comparison between the data and MC for the scattered hits region, showing that this 10 ns dispersion was the best to use in the MC. 
 
-
-
+To summarise the work in this Chapter, data from test stands using the same optics used in the UKLI in Super-Kamiokande were used to produce probability and cumulative distribution functions of the optic light profiles. These were implemented into the Super-Kamiokande detector simulation, and inverse transform sampled in order to produce UKLI MC beam spot outputs which were fitted with the original PDFs to verify the output. Alongside this, in order to better align the hit timing distributions for the MC and data, modifying the track step of the photon in the simulation was used to vary the time dispersion of the hits from the injector. The width of the reflected hits peak in TOF corrected timing distributions was determined with a gaussian fit, and compared with the B1 collimator data, along with a comparison of the difference in hit times in the scattered hits region, which allowed us to determine the optimal value for time dispersion of injected hits was 10 ns.
