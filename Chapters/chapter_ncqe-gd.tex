@@ -44,22 +44,23 @@ $$
 
 \subsection{Primary interaction}
 
-The interaction between the incoming neutrino event and an Oxygen nucleus, and the de-excitation of the nucleus is modelled by NEUT, which produces a vector of primary particles used for event simulaation in SKDETSIM. Because these are primary particles, they do not take into consideration all the particles produced from the detector response, i.e. the secondary particles produced from the interactions within the medium of the detector, in our case, water doped with $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$. The way NEUT treats the interaction between a nucleus and a neutrino for the case of a neutrino interaction with a ${ }^{16} \mathrm{O}$ isotope is shown in Equation \ref{eq:neutrinonuc}. 
+The interaction between the incoming neutrino event and an Oxygen nucleus, and the de-excitation of the nucleus is modelled by NEUT, which produces a vector of primary particles used for event simulation in SKDETSIM. Because these are primary particles, they do not take into consideration all the particles produced from the detector response, i.e. the secondary particles produced from the interactions within the medium of the detector, in our case, water doped with $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$. The way NEUT treats the interaction between a nucleus and a neutrino for the case of a neutrino interaction with a ${ }^{16} \mathrm{O}$ isotope is shown in Equation \ref{eq:neutrinonuc}. 
 
 \begin{equation}
     \sigma\left(\nu^{16} \mathrm{O}\right)=\sum_{i=1}^{8} \sigma_{\mathrm{p}}\left(p_{i}^{(\mathrm{p})}\right)+\sum_{j=1}^{8} \sigma_{\mathrm{n}}\left(p_{j}^{(\mathrm{n})}\right)+\sigma(2 p 2 h)    
 \label{eq:neutrinonuc}    
 \end{equation}
 
-Here $\sigma_{p}$ and $\sigma_{n}$ are the neutrino-proton cross section and the neutrino-neutron cross section respectively, and these cross-sections are dependent on the momenta of the protons and neutrons in the model, and therefore on the choice on nuclear model. The Benhar Spectral Function (SF) is used by NEUT as the nuclear model for NCQE interactions, and for CCQE interactions the Smith-Moniz relativistic Fermi Gas (RFG) model is used \cite{benhar_electron-_2005}, with 2p2h interactions included. 
+Here $\sigma_{p}$ and $\sigma_{n}$ are the neutrino-proton cross section and the neutrino-neutron cross section respectively, and these cross-sections are dependent on the momenta of the protons and neutrons in the model, and therefore on the choice on nuclear model. NCQE interactions are modelled in NEUT using the Benhar Spectral Function (SF), while CCQE interactions (including 2p2h interactions) are modelled using the Relativistic Fermi-Gas (RFG) model \cite{benhar_electron-_2005}, \cite{rfg_model}.
+
 
 \begin{figure}
-    \includegraphics[width=\textwidth]{Figures/ncqebenharspectral.png}
+    \includegraphics[width=0.7\textwidth]{Figures/ncqebenharspectral.png}
     \caption{Representation of NC neutrino scattering off ${ }^{16} \mathrm{O}$ with protons on the left hand side and neutrons on the right arranged according to the shell model. }
 \label{fig:ncqebenharspectral}
 \end{figure}
 
-The lowest rung of nucleons in Figure \ref{fig:ncqebenharspectral} is the $s_{1/2}$, with $p_{3/2}$ above this level and $p_{1/2}$ above that. The protons in these rungs have removal energies of 42 MeV, 18.4 MeV and 12.1 MeV respectively, and due to neutron levels being more tightly bound, these have an extra removal of 3.24 MeV compared to their proton counterparts. The shell model is imperfect due to how it allocates the probablity of $16_{O}$ transitioning to the possible nucleon states. In the shell model, probabilities are allocated by counting the number of nucleons in each energy level and assigning probailities according to how many there are. In Figure \ref{fig:ncqebenharspectral} it can be seen that the $p_{3/2}$ state has double the number of nucleons compared to the $s_{1/2}$ model and therefore double the probability of transition is assigned for the $p_{3/2}$ state, and the probability of transitioning to any other state is assigned to be 0, because in the shell model they don't even exist. The Benhar Spectral Function model however is complex and is tuned using electron-nucleus scattering data. The model used in this analysis is a modified version of the Benhar Spectral Function model, where the case of other transition states is dealt with by merging the "others'' state into the $s_{1/2}$ state. Table \ref{table:transitionprob} gives the probabilities of transition to different states for different models. 
+The lowest rung of nucleons in Figure \ref{fig:ncqebenharspectral} is the $s_{1/2}$, with $p_{3/2}$ above this level and $p_{1/2}$ above that. The protons in these rungs have removal energies of 42 MeV, 18.4 MeV and 12.1 MeV respectively, and due to neutron levels being more tightly bound, these have an extra removal of 3.24 MeV compared to their proton counterparts. The shell model is imperfect due to how it allocates the probablity of ${ }^{16} \mathrm{O}$ transitioning to the possible nucleon states. In the shell model, probabilities are allocated by counting the number of nucleons in each energy level and assigning probailities according to how many there are. In Figure \ref{fig:ncqebenharspectral} it can be seen that the $p_{3/2}$ state has double the number of nucleons compared to the $s_{1/2}$ model and therefore double the probability of transition is assigned for the $p_{3/2}$ state, and the probability of transitioning to any other state is assigned to be 0, because in the shell model they don't even exist. The Benhar Spectral Function model however is complex and is tuned using electron-nucleus scattering data. The model used in this analysis is a modified version of the Benhar Spectral Function model, where the case of other transition states is dealt with by merging the "others'' state into the $s_{1/2}$ state. Table \ref{table:transitionprob} gives the probabilities of transition to different states for different models. 
 
 \begin{table}
 $$
@@ -77,7 +78,7 @@ $$
 
 \subsection{Detector response and interactions in the detector medium}
 
-Prior analyses to this used SKDETSIM (Super-Kamiokande Detector Simulator) to simulate the trajectories of particles through the water in Super-Kamiokande and output detector response MC. This analysis uses SKDETSIM-SKGd to propogate the particles, due to the requirement of needing gadolinium sulphate present in the simulation. The particular isotopes of gadolinium used in the simulation are ${ }^{155} \mathrm{Gd}$ and ${ }^{157} \mathrm{Gd}$ due to their excellent thermal neutron capture cross sections. Table \ref{table:gdtable} shows the relative abundance of various gadolinium isotopes inside natural gadolinium and their associated thermal neutron capture cross sections.
+Prior analyses to this used SKDETSIM (Super-Kamiokande Detector Simulator) to simulate the trajectories of particles through the water in Super-Kamiokande and output detector response MC. This analysis uses SKDETSIM-SKGd to propogate the particles, due to the requirement of needing gadolinium sulphate present in the simulation. Unlike SKDETSIM, SKDETSIM-SKGd has a GEANT4 function implemented for neutron capture on gadolinium isotopes and its subsequent interactions. The particular isotopes of gadolinium used in the simulation are ${ }^{155} \mathrm{Gd}$ and ${ }^{157} \mathrm{Gd}$ due to their excellent thermal neutron capture cross sections. Table \ref{table:gdtable} shows the relative abundance of various gadolinium isotopes inside natural gadolinium and their associated thermal neutron capture cross sections.
 
 \begin{table}
 $$
@@ -447,7 +448,7 @@ Before applying the NTag algorithm, either legacy or new, plots were produced of
 \begin{figure}[!htbp]
     \centering
     
-    \caption{Comparisons of stacked histrograms for the Effwall variable between NCQE neutron tag on H analysis (left) and this analysis (right)} \label{fig:effwall_reduction} 
+    \caption{Comparisons of stacked histograms for the Effwall variable between NCQE neutron tag on H analysis (left) and this analysis (right)} \label{fig:effwall_reduction} 
     
     \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/fabio_effwall.PNG}}  \hfill 
     \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/effwall_reduction.PNG}} \par
@@ -477,42 +478,6 @@ Before applying the NTag algorithm, either legacy or new, plots were produced of
         
 \end{figure}
 
-\subsection{Background injection}
-
-Low energy backgrounds play a big role in this analysis because of the captures on neutrons including neutron capture on Hydrogen producing a 2.2 MeV energy signal. The two main sources of background in this analysis come from environmental radioactvity and PMT dark noise. The signal hits are mixed in with the dark noise hits and stem from the PMTs themselves, with no dependence on individual PMTs meaning that the distribution of dark noise in the detector is expected to be uniform. A Poisson distribution represents the dark noise for the PMTs in the detector, and therefore the mean value of dark noise hits $<\#DN>$ in a time window of $T$ nanoseconds for the total number of inner detector PMTs, $N_{ID}$, where the dark noise rate of one PMT averaged over an entire inner detector is $<dark>$ is given in Equation \ref{eq:dark_noise_hits}. 
-
-
-
-\begin{equation}
-        \begin{aligned}
-        \langle \# D N \rangle &=\langle\text { dark }\rangle \times T \times N_{I D} \\
-        &=10.0 \frac{\mathrm{kHz}}{\mathrm{PMT}} \times 14 \mathrm{nsec} \times 11,146 \mathrm{PMT}=1.56
-        \end{aligned}
-        \label{eq:dark_noise_hits} 
-\end{equation}
-
-The previous NCQE analysis with solely neutron capture occuring on Hydrogen used a $T$ = 10 nsec timing window for the neutron capture search (the criteria for which will be detailed in the next section) and a $<dark>$ rate of 5.0 kHz per PMT. However since the addition of gadolinium sulphate octahydrate in the detector medium, the dark rate per PMT has doubled and to accomadate for neutron captures occuring on the gadolinium the neutron capture hit search window has been increased to 14 nsec. 
-
-The dark noise hits from natural radioactivity comes from unstable isotopes from the detector material, PMT covers, the Tyvek lining the tank and the rock from the cavern which Super-Kamiokande resides in. These decaying unstable isotopes can produce enough hits to produce a signal that looks like a neutron capture on Hydrogen, meaning that these hits from natural radioactvity could also get mixed in with the hits in the 14 nsec neutron search timing window. Simulating this combination of dark noise and radioactivity in the tagged neutron candidate search window is not trivial, and therefore it is far easier to inject actual background data into the neutron search window. This background data is collected in the form of ``dummy spills'' which are events which are taken during periods where the T2K beam is switched off, i.e. events in between T2K runs. The neutron tagging window in this analysis starts at 18 microseconds after the reconstructed time of the prompt neutrino interaction, and therefore for each event dummy spill data is injected after 18 microseconds, while before this time the background hits are just simulated in SKDETSIM, with a certain dark rate value. Figure \ref{fig:dark_rate_schematic} shows a schematic of how and when in the analysis dark rate is simulated and injected. 
-
-
-\begin{figure}
-
-    \includegraphics[width=\textwidth]{Figures/dark_rate_schematic.png}
-    \caption{Schematic of how dark noise is simulated in this analysis.}
-    \label{fig:dark_rate_schematic}
-
-\end{figure}
-
-The reason for the neutron tagging algorithm starting at 18 $\micro$s is in order to take into account the afterpulsing of PMTs, which occurs between 12 $\micro$s and 18 $\micro$s and creates a slight increase in the hit rate, shown in Figure \ref{fig:after_pulsing}, taken from \cite{}. The falling exponential to the left of the after-pulsing peak is caused by decay electrons. 
-
-\begin{figure}
-
-    \includegraphics[width=\textwidth]{Figures/after_pulsing.PNG}
-    \caption{PMT hit rates per event from the average of events during SK-IV. The after-pulsing peak can clearly be seen in the 12 to 18 $\micro$s region, after which the hit rate is flat for the remainder of the hit window. }
-    \label{fig:after_pulsing}
-
-\end{figure}
 
 
 \section{Secondary selection}
@@ -645,7 +610,7 @@ With the level of gadolinium sulphate octahydrate in the simulation, the number 
 
 \subsection{Primary selection criteria}
 
-The primary selection criteria are where the differences between the legacy and NTag algorithm come in. What remains constant for both neutron tagging algorithms is firstly, starting the neutron tagging search at 18 $\micro$ s and secondly, the use of calculation of the time of flight corrected PMT hit times as the input into the neutron tagging search window. The reason for calculating the residual time of flight for the gamma hits is because the electrons produced from the Compton scattering of gamma rays produced by the neutron capture on hydrogen and gadolinium appear as a point-like source of Cherenkov radiation. Due to the differing optical path lengths that these photons have, there is a difference in photon hit time. The difference in Cherenkov photon travel length before they hit different PMTs  after the gamma rays from neutron capture Compton scatter off an electron needs to be taken into account via a time-of-flight (TOF) correction. Equation \ref{eq:TOF_correction} gives the equation for the residual hit times $t_{i}^{res}$, where $t_{i}$ is the hit time of the PMTs in the neutron search window and $TOF_{i}$ is given by Equation \ref{eq:TOF_calc}, where $PMT_{i}$ is the position vector of the hit PMT and $VTX_{\nu}$ is the position vector of the reconstructed neutrino vertex and $c_{wt}$ is the speed of light in the medium. The reason $VTX_{\nu}$ is used instead of the Compton scattering vertex is because this vertex is unknown. 
+The rest of this Chapter focusses on analysis results from the new NTag algorithm, as this is what is currently being used by the collaboration. As input to searching for acceptable neutron candidates in the search window of 3 to 535 ns, the time of flight corrected PMT hit times is used. The reason for calculating the residual time of flight for the gamma hits is because the electrons produced from the Compton scattering of gamma rays produced by the neutron capture on hydrogen and gadolinium appear as a point-like source of Cherenkov radiation. Due to the differing optical path lengths that these photons have, there is a difference in photon hit time. The difference in Cherenkov photon travel length before they hit different PMTs  after the gamma rays from neutron capture Compton scatter off an electron needs to be taken into account via a time-of-flight (TOF) correction. Equation \ref{eq:TOF_correction} gives the equation for the residual hit times $t_{i}^{res}$, where $t_{i}$ is the hit time of the PMTs in the neutron search window and $TOF_{i}$ is given by Equation \ref{eq:TOF_calc}, where $PMT_{i}$ is the position vector of the hit PMT and $VTX_{\nu}$ is the position vector of the reconstructed neutrino vertex and $c_{wt}$ is the speed of light in the medium. The reason $VTX_{\nu}$ is used instead of the Compton scattering vertex is because this vertex is unknown. 
 
 \begin{equation}
     t_i^{\text {res }} \quad=t_i-T O F_i \quad i \in\{\text { Hit PMTs }\}
@@ -657,151 +622,43 @@ T O F_i=\frac{\left\|\overrightarrow{P M T_i}-\overrightarrow{V T X_\nu}\right\|
 \label{eq:TOF_calc}
 \end{equation}
 
-Before the neutron candidate is passed to the secondary selection, other cuts are used to reject candidates which are not neutrons from NCQE interactions. Table \ref{table:legacy_new_selection_criteria} shows the difference between the legacy and new primary selection criteria. The legacy NTag algorithm primary criteria used a 10 nsec sliding window in which hits are searched for a neutron candidate, where the first selection criteria involved making sure the number of hits in the 10 nsec ($N10pvx$) timing window should not exceed 50, and second criteria is that the surrounding window of 200 nsec should not contain more than 100 hits. The third criterion was that in order to avoid double-counting the same 2.2 MeV gamma from neutron capture on hydrogen, each consective neutron candidate must be more than 20 nanoseconds apart. 
+Before the neutron candidate is passed to the secondary selection, other cuts are used to reject candidates which are not neutrons from NCQE interactions. Table \ref{table:new_selection_criteria} shows the three primary selection criteria. The first involves the width of the sliding window used for the neutron tagging search, which is set to 14 ns. The second is the hit tigger for the neutron candidate selection, which is set to 7 hits, which is the same for the previous NCQE Hydrogen-ntag analysis, with the maximum value of the hits set to 400. Third, the minimum time seperation between the gamma hits is set to 200 ns - the reason for this is to avoid double counting the same gamma hit from the neutron capture candidate. 
 
 
 \begin{table}
     $$
     \begin{array}{ccc}
-    \hline \text{Criterion} & \text{Legacy} & \text{New} \\
-    \hline \text { First } & 7 \leq N 10 p v x \leq 50 & 7 \leq NH i t s \leq 400 \\
-    \text { Second } & N 200 p v x \leq 100 & N 200 p v x \leq 1000 \\
-    \text { Third } & \Delta t_0 \geq 20 \mathrm{nsec} & \Delta t_0 \geq 200 \mathrm{nsec}\\
+    \hline \text{Criterion} & \text{Type} & \text{New} \\
+    \hline \text { First } & \text{Timing window width} & 14 \mathrm{nsec} \\
+    \text { Second } & \text{Hit trigger and max} & 7 \leq NH i t s \leq 400 \\
+    \text { Third } & \text{Minimum hit seperation} & \Delta t_0 \geq 200 \mathrm{nsec}\\
     \hline
     \end{array}
     $$
-    \caption{NTag selection crteria for legacy and new NTag}
-    \label{table:legacy_new_selection_criteria}
+    \caption{NTag primary selection criteria}
+    \label{table:new_selection_criteria}
     \end{table}
-
-The primary selection criteria used with the new NTag are different to accomodate for the fact that a gamma cascade from neutron capture on gadolinium leads to a higher number of hits in the detector. These include increasing the maximum number of hits in the sliding window to 400, and increasing the width of the sliding window from 10 nsec (used with the legacy code) to 14 nsec.  
-
 
 
 
 \subsection{Secondary selection criteria}
-Due to the contamination of background events still present amongst the true neutron events after primary selection, a boosted decision tree (BDT) or a neural network (NN) is used to efficiently remove these background events, while trying to maximise the number of true neutron events. The output of the BDT or the NN is used to indicate how likely a variable is to be signal/background candidate. Each of the candidates selected during the primary selection process has an associated reconstructed neutron capture vertex calculated for it. In order to produce residual hit times that are less spread out than TOF-corrected hits towards the neutrino vertex, the TOF-corrected hits towards the Compton scattering vertex are used instead. The aim of searching for the neutron capture vertex is to use a method by which the standard deviation of the residual times of the hits is minimised. Therefore the neutron capture vertex $n_{VTX}$ is for the legacy neutron tagging code is defined as in Equation \ref{eq:ncap_vtx}.
+Due to the contamination of background events still present amongst the true neutron events after primary selection, a neural network (NN) is used to efficiently remove these background events, while trying to maximise the number of true neutron events. The output of the NN is used to indicate how likely a variable is to be signal/background candidate. Each of the candidates selected during the primary selection process has an associated reconstructed Compton scattering vertex calculated for it. In order to produce residual hit times that are less spread out than TOF-corrected hits towards the neutrino vertex, the TOF-corrected hits towards the Compton scattering vertex are used instead. The aim of searching for the Compton scattering vertex is to use a method by which the standard deviation of the residual times of the hits is minimised. Therefore the Compton scattering vertex $n_{VTX}$ is defined as in Equation \ref{eq:ncap_vtx}, where $r$ is a trial vertex and $t_i^{\text {res }}$ is the TOF-corrected hit time.
 
 \begin{equation}
-    n_{VTX}=\underset{r}{\operatorname{argmin}}\sqrt{\frac{1}{N 10_{p v x}} \sum_{i=1}^{N 10_{p v x}}\left(\tau_i(\boldsymbol{r})-\bar{\tau}(\boldsymbol{r})\right)^2}
+    n_{VTX}=\underset{r}{\operatorname{argmin}}\sqrt{\frac{1}{NHits} \sum_{i=1}^{NHits}\left[t_i^{\text {res }}(\vec{r})-\left\langle t^{\text {res }}(\vec{r})\right\rangle\right]^2}
 \label{eq:ncap_vtx}
 \end{equation}
 
-Where $r$ is a trial vertex, the hit time of the $i$-th hit is $t_{i}$, $TOF_{i}(\boldsymbol(r))$, the time-of-flight of the i-th computed hit from the trial vertex, and $\bar{tau}(r)$ is the mean value of the residual time. 
+ 
 
 By considering a set of trial vertices on a cubic grid and calculating the standard deviatiation of the residual hit times the minimisation process is performed. After this minimization cycle, a new cycle is performed on a finer and smaller grid and carries on until a certain level of precision is reached. 
 
-When the neutron vertex is found by this method, 14 variables which describe different aspects of the neutron candidate are calculated, using the legacy NTag. For each of the neutron candidates the vector of these variables are computed and fed into the neural network and this produces an output value which is between 0 and 1. These variables relate to different features regarding categorising hits from neutron capture on Gd or H, including the number of the hits from neutron capture, the isotropy of these hits, the Cherenkov angles of these hits and the position of the neutron vertex in the detector when capture occurs. A description of these variables are given as follows for the legacy NTag, and a further 12 variables used in the new NTag code are descibed below.
-
-\underline{Legacy NTag variables}
-
-\underline{N10nvx}
-\newline
-This is the number of hits in the 10ns sliding window of the neutron candidate.
-\newline
+When the Compton scattering vertex from neutron capture is found by this method, 12 variables which describe different aspects of the neutron candidate are calculated, using NTag. For each of the neutron candidates the vector of these variables are computed and fed into the neural network and this produces an output value which is between 0 and 1. These variables relate to different features regarding categorising hits from neutron capture on Gd or H, including the number of the hits from neutron capture, the isotropy of these hits, the Cherenkov angles of these hits and the position of the neutron vertex in the detector when capture occurs. A description of these variables are given below.
 
 
-\underline{N300S}
-\newline
-Excluding the number of hits in the 10ns sliding window (N10nvx), this is the number of hits in the extended window of 300ns.
-\newline
+\underline{NTag variables}
 
-
-\underline{NcS}
-\newline
-This variable is defined as:
-\begin{equation}
-\label{ncs}
-    NcS = N10nvx - Nclushit
-\end{equation}
-
-    Where $Nclushit$ is the number of clusterised hits: if hit \textit{i} and \textit{j} are hits on PMTs, then for hit \textit{i} and hit \textit{j} the hit vector $\hat{r}_i$ can be written as:
-
-\begin{equation}
-\label{hit}
-    \hat{r}_{i}=\frac{\overrightarrow{P M T_{i}}-\overrightarrow{V T X_{n}}}{\left\|\overrightarrow{P M T_{i}}-\overrightarrow{V T X_{n}}\right\|}
-\end{equation}
-
-where the angle at the point of the neutron capture vertex between $\hat{r}_{i}$ and $\hat{r}_{j}$ of the PMT hits is defined as:
-
-\begin{equation}
-\theta_{i j}=\arccos \left(\hat{p}_{i} \cdot \hat{p}_{j}\right)
-\end{equation}
-
-where the hits are defined as clustered if $\theta_{ij}$ is less than 14$\degree$.
-
-
-\underline{llrca}
-\newline
-This variable is the log likelihood ratio calculated using triplets of hits from N10nvx that make up a rudimentary Cherenkov cone, from which the opening angle $\theta$ is calculated. Two PDFs ($\theta_{Ci}$) and ($\theta_{Ci}$) are calculated from each $\theta_{Ci}$ where p\_s and p\_b are the probability density functions of $\theta_{C}$ depending on whether the hits come from a true neutron capture on Gd or H or a false neutron capture which makes up the background. The log likelihood ratio variable is computed using Equation {\ref{llrca}}.
-
-\begin{equation}
-\label{llrca}
-\newline
-  llrca =\sum_{i \in\{ { triplets }\}} \log \left(\frac{f_{B}\left(\theta_{C i}\right)}{f_{S}\left(\theta_{C i}\right)}\right)
-\end{equation}
-
-
-\underline{beta-n}
-\newline
-These variables (where n = 1,2,3,4,5) are defined using Legendre polynomials, shown in Equation \ref{beta}, which gives the isotropy of the Cherenkov hits.
-
-\begin{equation}
-\label{beta}
- beta- n=\frac{2}{N 10 {nvx}(N 10 {nvx}-1)} \sum_{i \neq j}  { Legendre }_{n}\left(\cos \theta_{i j}\right)
-\end{equation}
-
-where $Legendre_n$ gives the Legendre polynomial of order $n$ and $theta_{ij}$ is the angle between hit PMTs relative to the neutron capture vertex.
-
-
-
-\underline{ndwall}
-\newline
-This parameter, similar to dwall, gives the shortest distance of the neutron capture vertex from the wall of the Super-Kamiokande tank.
-\newline
-
-
-
-\underline{ntowall}
-\newline
-This variable (similar to effwall), gives the distance of the neutron capture vertex from the wall, however, unlike ndwall it gives the direction of the neutron capture specifically along the direction of the centre of the hits. The direction ($\overrightarrow{R}$) is given by:
-
-\begin{equation}
-\overrightarrow{\operatorname{dir}}=\sum_{i=1}^{N 10 n v x} \hat{p}_{i}
-\end{equation}
-
-\underline{accepave}
-
-This is a variable that relates to the acceptance of the inner detector PMTs. For every ID PMT the geometric acceptance angle is defined as: 
-
-\begin{equation}
-    \cos \theta=\hat{n} \cdot\left(\overrightarrow{V T X_n}-\overrightarrow{P M T}\right) 
-\end{equation}
-
-where $\cos \theta=\hat{n} \cdot\left(\overrightarrow{V T X_n}-\overrightarrow{P M T}\right)$ is the vector between the neutron capture vertex to the hit PMT, and $hat{n}$ is a unit vector orthogonal to the PMT cover. Using the cosine of these acceptance values, weights are computed using 
-
-
-\begin{equation}
-    w^*=(\cos \theta)_{e f f} \times \frac{e^{-d / \lambda}}{d^2}
-\end{equation}
-
-where $(\cos \theta)_{e f f}$ is $\cos \theta$ corrected for imperfections resulting from PMT geometry and light being reflected and absorbed by the acrylic PMT cases, while the multiplicative term consisting of $d = \left(\overrightarrow{V T X_n}-\overrightarrow{P M T}\right)$, and adjust the weight by looking at the attenuation length of the Cherenkov photon in water ($\lambda$). Min-max normalising the $w^{*}$ weights produces the weights $w$ so that the values of $w$ never exceed 1. The formula for the $accepave$ variable is finally given by:
-
-\begin{equation}
-    \text { accepave }=-\frac{1}{N 10 n v x} \sum_{i=1}^{N 10 n v x} \log _{10}\left(\frac{w_i}{\sum_{i=1}^{N_{P M T}} w_i}\right)
-\end{equation}
-
-\underline{taurms}
-
-This is a variable relating to the timing of the hits, specifically the standard deviation of the time-of-flight corrected hit times of the candidate event ($\sigma_{res}$).
-
-\underline{mintaurms6}
-
-This is another variable related to hit timing, and is the minimum value among the values of $\sigma_{res}$ from all possible subsets of six hits taken from the neutron candidate. 
-
-\underline{New NTag variables}
-
-The following twelve variables are fed into the TMVA neural network model for the secondary selection, some of these are similar to their corresponding legacy NTag variables, while some are new additions. 
+The following twelve variables are fed into the TMVA neural network model for the secondary selection:
 
 \underline{NHits}
 
@@ -809,13 +666,13 @@ Similarly to the legacy NTag variable $N10nvx$ this is defined as the number of 
 
 \underline{Beta-L}
 
-Again, similarly to the $beta-n$ variable of the legacy NTag, this defines the isotropy of the Cherenkov hits according to:
+This defines the isotropy of the Cherenkov hits according to:
 
 \begin{equation}
     \beta_l=\frac{2}{N_{H i t s}\left(N_{H i t s}-1\right)} \sum_{i \neq j} P_l\left(\cos \theta_{i j}\right)
 \end{equation}
 
-where the legacy NTag variable $N10nvx$ is replaced by $N_{Hits}$, and $P_{l}$ are the Legendre polynomial's of order $l$ and $\theta_{ij}$ is the angle between hit PMTs relative to the neutron capture vertex.
+where $P_{l}$ are the Legendre polynomial's of order $l$ and $\theta_{ij}$ is the angle between hit PMTs relative to the neutron capture vertex.
 
 \underline{DWall}
 
@@ -823,11 +680,11 @@ DWall gives the difference from the fitted neutron vertex to the nearest wall in
 
 \underline{DWallMeanDir}
 
-Similarly to the variable ntowall, this gives the distance from the fitted neutron vertex to the wall in the direction of the mean of the PMT hits for the neutron candidate in cm.
+This gives the distance from the fitted neutron vertex to the wall in the direction of the mean of the PMT hits for the neutron candidate in cm.
 
 \underline{MeanDirAngleMean}
 
-Unlike the legacy NTag, which uses the variables $accepave$ and $llrca$ relating to hits spacing that involve complicated weighting of PMT acceptance angles and log-likelihood ratios of Cherenkov angles, this variable simply takes the mean of angles between the direction of each hit and the mean of the direction of these hits. 
+This variable takes the mean of angles between the direction of each hit and the mean of the direction of these hits. 
 
 \underline{MeanDirAngleRMS}
 
@@ -853,11 +710,11 @@ where $X_{i}$ is the hit PMT, $\bar{X}$ is the mean of the 3-hit vector, N is th
 
 \underline{TRMS}
 
-Similarly to the legacy NTag variable $taurms$, this calculates the standard deviation of the time-of-flight corrected PMT hit times.
+This calculates the standard deviation of the time-of-flight corrected PMT hit times.
 
 \underline{N1300}
 
-Just like the variable $N300S$ from the legacy NTag, this is a broader range timing window than NHits, this is the number of PMT hits in a 1300 ns timing window, specifically between -520 ns and +780 ns from the fitted time relative to the trigger.       
+This is the number of PMT hits in a 1300 ns timing window, specifically between -520 ns and +780 ns from the fitted time relative to the trigger.       
 
 \underline{N200}
 
