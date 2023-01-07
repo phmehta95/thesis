@@ -276,21 +276,14 @@ The BONSAI reconstruction output variables were compared between three versions 
 
 \end{figure}
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.7\textwidth]{Figures/cherenkov_hit_triplet.png}
-    \caption{Schematic of the prompt event vertex and a triplet of independent PMT hits whch make up the Cherenkov angle}
-    \label{fig:cherenkov_hit_triplet}
 
-\end{figure}
-
-To ensure correct implementation of the ANNRI-Gd model, ensuring the BONSAI output variables were similar between these SKDETSIM versions was important as the Gadolinium model should only effect the neutron capture in the simulation, not the output from event reconstruction of the neutrino interaction vertex. As can be seen in Figure \ref{fig:bonsai_reconstruction_compare}, this holds true for $E_{rec}$, dwall, effwall and $\theta_C$, but not for the vertex and goodness coefficient ovaQ, where the ANNRI-Gd model differs for ovaQ between -0.05 and 0.15 compared to the SKDETSIM and SKDETSIM photon-evaporation model. To investigate this difference further, distributions of the vertex goodness and the directional goodness which make up ovaQ (according to Equation \ref{eq:ovaq}) were also checked, shown in Figure \ref{fig:ovaq_compare}.
+To ensure correct implementation of the ANNRI-Gd model, ensuring the BONSAI output variables were similar between these SKDETSIM versions was important as the Gadolinium model should only effect the neutron capture in the simulation, not the output from event reconstruction of the neutrino interaction vertex. As can be seen in the SKDETSIM/SKDETSIM-SKGd BONSAI reconstruction variable comparison plots, this holds true for $E_{rec}$, dwall, effwall and $\theta_C$, but not for the vertex and goodness coefficient ovaQ, where the ANNRI-Gd model differs for ovaQ between -0.05 and 0.15 compared to the SKDETSIM and SKDETSIM photon-evaporation model. To investigate this difference further, distributions of the vertex goodness and the directional goodness which make up ovaQ (according to Equation \ref{eq:ovaq}) were also checked, shown in Figure \ref{fig:ovaQ_compare}.
 
 
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.7\textwidth]{Figures/gvtx_squared.jpeg}
+    \includegraphics[width=0.8\textwidth]{Figures/gvtx_squared.jpeg}
     \caption{Comparisons of vertex goodness for the prompt event between versions of SKDETSIM}
     \label{fig:gvtx_squared}
 
@@ -298,7 +291,7 @@ To ensure correct implementation of the ANNRI-Gd model, ensuring the BONSAI outp
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.7\textwidth]{Figures/gdir_squared.jpeg}
+    \includegraphics[width=0.8\textwidth]{Figures/gdir_squared.jpeg}
     \caption{Comparisons of directional goodness for the prompt event between versions of SKDETSIM}
     \label{fig:gdir_squared}
 
@@ -307,7 +300,7 @@ To ensure correct implementation of the ANNRI-Gd model, ensuring the BONSAI outp
 The vertex goodness (gvtx) and directional goodness (gdir) squared comparisons are shown in Figures \ref{fig:gvtx_squared} and \ref{fig:gdir_squared} respectively. Figure \ref{fig:gvtx_squared} shows a slight discrepancy between the SKDETSIM versions, but not enough to warrant further investigation. In addition to checking the previous BONSAI reduction phase quantities, the distance between the true neutrino vertex from the simulation and the neutrino vertex from the BONSAI reconstruction was also checked for the different SKDETSIM versions, shown in Figure \ref{fig:vertex_resolution}. Table \ref{table:vertex_resolution} shows the value of this distribution which encompasses 1-sigma (68\%) of the number of events: this value was very similar for all SKDETSIM versions.
 \begin{figure}
 
-    \includegraphics[width=\textwidth]{Figures/vertex_resolution.png}
+    \includegraphics[width=0.8\textwidth]{Figures/vertex_resolution.png}
     \caption{Distance between true and reconstructed neutrino vertex for different SKDETSIM versions}
     \label{fig:vertex_resolution}
 
@@ -328,21 +321,21 @@ The vertex goodness (gvtx) and directional goodness (gdir) squared comparisons a
 \end{table}
 
 \subsubsection{Comparisons of event reconstruction output between NTag versions}
-To ensure that the NCQE event selection and neutron tagging could be carried out using the new NTag code, comparisons of the output BONSAI reconstruction variables between the two versions were made to ensure the validity of the reconstruction output. Figure \ref{fig:bonsai_output_compare} shows the reconstructed energy, dwall, effwall, Cherenkov angle and ovaQ parameters, with the legacy NTag output in black and the new NTag output in red. 
+To ensure that the NCQE event selection and neutron tagging could be carried out using the new NTag code, comparisons of the output BONSAI reconstruction variables between the two versions were made to ensure the validity of the reconstruction output. Figures \ref{fig:energy_recon_compare}, \ref{fig:dwall_recon_compare}, \ref{fig:effwall_recon_compare}, \ref{fig:angle_recon_compare} and \ref{fig:ovaq_recon_compare}  shows the reconstructed energy, dwall, effwall, Cherenkov angle and ovaQ parameters, with the legacy NTag output in black and the new NTag output in red. 
 
 
 \begin{figure}
         \centering
         \includegraphics[width=0.9\textwidth]{Figures/energy_recon_compare.PNG}
         \caption{Reconstructed energy (MeV) comparison}
-        \label{fig:gvtx_squared}    
+        \label{fig:energy_recon_compare}    
 \end{figure}
 
 \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{Figures/dwall_recon_compare.PNG}
     \caption{DWall (cm) comparison}
-    \label{fig:gvtx_squared}
+    \label{fig:dwall_recon_compare}
 
 \end{figure}
 
@@ -350,7 +343,7 @@ To ensure that the NCQE event selection and neutron tagging could be carried out
     \centering
     \includegraphics[width=0.9\textwidth]{Figures/effwall_recon_compare.PNG}
     \caption{Effwall (cm) comparison}
-    \label{fig:gvtx_squared}
+    \label{fig:effwall_recon_compare}
 
 \end{figure}
 
@@ -358,7 +351,7 @@ To ensure that the NCQE event selection and neutron tagging could be carried out
     \centering
     \includegraphics[width=0.9\textwidth]{Figures/angle_recon_compare.PNG}
     \caption{OvaQ comparison}
-    \label{fig:gvtx_squared}
+    \label{fig:angle_recon_compare}
 
 \end{figure}
 
@@ -366,7 +359,7 @@ To ensure that the NCQE event selection and neutron tagging could be carried out
     \centering
     \includegraphics[width=0.9\textwidth]{Figures/ovaq_recon_compare.PNG}
     \caption{Comparisons of vertex goodness for the prompt event between versions of SKDETSIM}
-    \label{fig:gvtx_squared}
+    \label{fig:ovaq_recon_compare}
 
 \end{figure}
 
@@ -658,11 +651,11 @@ When the Compton scattering vertex from neutron capture is found by this method,
 
 \underline{NTag variables}
 
-The following twelve variables are fed into the TMVA neural network model for the secondary selection:
+The following twelve variables are fed into the TMVA neural network model for the secondary selection, and the TMVA reader and the input variables to get the classifier output:
 
 \underline{NHits}
 
-Similarly to the legacy NTag variable $N10nvx$ this is defined as the number of hits in a sliding timing window for the neutron candidate, however instead of this being set to a value of 10 nsec, this was increased to 14 nsec in order to accomadate for the increased number of hits from gamma cascades from neutron capture on gadolinium.
+This is defined as the number of hits in a sliding timing window for the neutron candidate, however instead of this being set to a value of 10 nsec as it was for the neutron capture on hydrogen NCQE analyses, this was increased to 14 nsec in order to accomadate for the increased number of hits from gamma cascades from neutron capture on gadolinium.
 
 \underline{Beta-L}
 
@@ -720,4 +713,33 @@ This is the number of PMT hits in a 1300 ns timing window, specifically between 
 
 This is the number of hits within -100 ns and +100 ns from the fitted time relative to the trigger.
 
+Seeing the signal from neutron captures on hydrogen and gadolinium pre and post neural network is also important: these are shown in Figure \ref{fig:pre_NN_signal} and Figure \ref{fig:post_NN_signal}. Figure \ref{fig:tagout} shows the neural network likelihood signal between 0 and 1, for all events, neutron capture on hydrogen candidates and neutron capture on gadolinium candidates. 
 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figures/pre_nn_var.png}
+    \caption{Number of events plotted against various neural network input variables prior to the neural network }
+    \label{fig:pre_NN_signal}
+
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figures/post_nn_var.png}
+    \caption{Number of events plotted against various neural network input variables after neural network output }
+    \label{fig:post_NN_signal}
+
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figures/tagout.png}
+    \caption{Neural network output signal likelihood }
+    \label{fig:tagout}
+
+\end{figure}
+
+
+Figure \ref{fig:tagout} shows that the signal likelihood output is closer to 0 for far more neutron capture on hydrogen candidates than neutron capture on gadolinium candidates - this is also shown in Figure \ref{fig:pre_NN_signal} and Figure \ref{fig:post_NN_signal}, where the peaks for the neutron capture on hydrogen candidates are significantly more reduced in the post-NN plots than in the pre-NN plots, showing that noise events were more likely to be misidentified as neutron captures on hydrogen. These distributions also show that the value of NHits and also N200 for a neutron capture candidate is more likely to be greater for neutron candidates which are candidates on gadolinium than on hydrogen. These plots also show that the opening Cherenkov angle related distributions were skewed towards greater values for gadolinium capture canddiates than for hydrogen, due to the presence of the hits from the gamma cascade associated with neutron captures on gadolinium. 
+
+After investigating the neutron candidates pre and post neural network to see the candidate signal distributions, it makes sense to evaluate how efficient the neutron tagging algorithm is. 
