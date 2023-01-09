@@ -717,7 +717,7 @@ Seeing the signal from neutron captures on hydrogen and gadolinium pre and post 
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.7\textwidth]{Figures/pre_nn_var.png}
+    \includegraphics[width=0.95\textwidth]{Figures/pre_nn_var.png}
     \caption{Number of events plotted against various neural network input variables prior to the neural network }
     \label{fig:pre_NN_signal}
 
@@ -725,7 +725,7 @@ Seeing the signal from neutron captures on hydrogen and gadolinium pre and post 
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.7\textwidth]{Figures/post_nn_var.png}
+    \includegraphics[width=0.95\textwidth]{Figures/post_nn_var.png}
     \caption{Number of events plotted against various neural network input variables after neural network output }
     \label{fig:post_NN_signal}
 
@@ -733,13 +733,22 @@ Seeing the signal from neutron captures on hydrogen and gadolinium pre and post 
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.7\textwidth]{Figures/tagout.png}
+    \includegraphics[width=0.8\textwidth]{Figures/tagout.png}
     \caption{Neural network output signal likelihood }
     \label{fig:tagout}
 
 \end{figure}
 
 
-Figure \ref{fig:tagout} shows that the signal likelihood output is closer to 0 for far more neutron capture on hydrogen candidates than neutron capture on gadolinium candidates - this is also shown in Figure \ref{fig:pre_NN_signal} and Figure \ref{fig:post_NN_signal}, where the peaks for the neutron capture on hydrogen candidates are significantly more reduced in the post-NN plots than in the pre-NN plots, showing that noise events were more likely to be misidentified as neutron captures on hydrogen. These distributions also show that the value of NHits and also N200 for a neutron capture candidate is more likely to be greater for neutron candidates which are candidates on gadolinium than on hydrogen. These plots also show that the opening Cherenkov angle related distributions were skewed towards greater values for gadolinium capture canddiates than for hydrogen, due to the presence of the hits from the gamma cascade associated with neutron captures on gadolinium. 
+Figure \ref{fig:tagout} shows that the signal likelihood output is closer to 0 for far more neutron capture on hydrogen candidates than neutron capture on gadolinium candidates - this is also shown in Figure \ref{fig:pre_NN_signal} and Figure \ref{fig:post_NN_signal}, where the peaks for the neutron capture on hydrogen candidates are significantly more reduced in the post-NN plots than in the pre-NN plots, showing that noise events were more likely to be misidentified as neutron captures on hydrogen. These distributions also show that the value of NHits and also N200 for a neutron capture candidate is more likely to be greater for neutron candidates which are candidates on gadolinium than on hydrogen. These plots also show that the opening Cherenkov angle related distributions were skewed towards greater values for gadolinium capture candidates than for hydrogen, due to the presence of the hits from the gamma cascade associated with neutron captures on gadolinium. 
 
-After investigating the neutron candidates pre and post neural network to see the candidate signal distributions, it makes sense to evaluate how efficient the neutron tagging algorithm is. 
+After investigating the neutron candidates pre and post neural network to see the candidate signal distributions, it makes sense to evaluate how efficient the neutron tagging algorithm is. There are three stages at which the efficiency is calculated, pre-NN selection (i.e. seaching all the truth candidates prior to NN selection), after the NN classification (to show the efficiency of the classifier), and then the combination of these (the total tagging efficiency). Equation \ref{eq:efficiency_equations} shows how these three stages, $\varepsilon_{\text {Pre }}$, $\varepsilon_{\text {NN }}$, $\varepsilon_{\text {NTag }}$, are defined.
+
+\begin{equation}
+    \varepsilon_{\text {Pre }}=\frac{\# \text { of truth candidates at pre }-\text { selection }}{\# \text { of truth neutrons }}
+    \varepsilon_{\mathrm{NN}}=\frac{\# \text { of tagged truth neutrons }}{\# \text { of truth candidates at pre }-\text { selection }}
+    \varepsilon_{\mathrm{NTag}}=\varepsilon_{\mathrm{Pre}} \times \varepsilon_{\mathrm{NN}}=\frac{\# \text { of tagged truth neutrons }}{\# \text { of truth neutrons }}
+\label{eq:efficiency_equations}
+\end{equation}
+
+The values of these efficiencies and their associated statistical uncertainties are shown in Table \ref{table:NTag_efficiency}. 
