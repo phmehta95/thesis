@@ -630,7 +630,7 @@ Before the neutron candidate is passed to the secondary selection, other cuts ar
     $$
     \caption{NTag primary selection criteria}
     \label{table:new_selection_criteria}
-    \end{table}
+\end{table}
 
 
 
@@ -742,13 +742,39 @@ Seeing the signal from neutron captures on hydrogen and gadolinium pre and post 
 
 Figure \ref{fig:tagout} shows that the signal likelihood output is closer to 0 for far more neutron capture on hydrogen candidates than neutron capture on gadolinium candidates - this is also shown in Figure \ref{fig:pre_NN_signal} and Figure \ref{fig:post_NN_signal}, where the peaks for the neutron capture on hydrogen candidates are significantly more reduced in the post-NN plots than in the pre-NN plots, showing that noise events were more likely to be misidentified as neutron captures on hydrogen. These distributions also show that the value of NHits and also N200 for a neutron capture candidate is more likely to be greater for neutron candidates which are candidates on gadolinium than on hydrogen. These plots also show that the opening Cherenkov angle related distributions were skewed towards greater values for gadolinium capture candidates than for hydrogen, due to the presence of the hits from the gamma cascade associated with neutron captures on gadolinium. 
 
-After investigating the neutron candidates pre and post neural network to see the candidate signal distributions, it makes sense to evaluate how efficient the neutron tagging algorithm is. There are three stages at which the efficiency is calculated, pre-NN selection (i.e. seaching all the truth candidates prior to NN selection), after the NN classification (to show the efficiency of the classifier), and then the combination of these (the total tagging efficiency). Equation \ref{eq:efficiency_equations} shows how these three stages, $\varepsilon_{\text {Pre }}$, $\varepsilon_{\text {NN }}$, $\varepsilon_{\text {NTag }}$, are defined.
+After investigating the neutron candidates pre and post neural network to see the candidate signal distributions, it makes sense to evaluate how efficient the neutron tagging algorithm is. There are three stages at which the efficiency is calculated, pre-NN selection (i.e. seaching all the truth candidates prior to NN selection), after the NN classification (to show the efficiency of the classifier), and then the combination of these (the total tagging efficiency). Equation \ref{eq:efficiency_equations} shows how these three stages, $\varepsilon_{\text {Pre }}$, $\varepsilon_{\text {NN }}$ and $\varepsilon_{\text {NTag }}$ are defined.
 
 \begin{equation}
-    \varepsilon_{\text {Pre }}=\frac{\# \text { of truth candidates at pre }-\text { selection }}{\# \text { of truth neutrons }}
-    \varepsilon_{\mathrm{NN}}=\frac{\# \text { of tagged truth neutrons }}{\# \text { of truth candidates at pre }-\text { selection }}
-    \varepsilon_{\mathrm{NTag}}=\varepsilon_{\mathrm{Pre}} \times \varepsilon_{\mathrm{NN}}=\frac{\# \text { of tagged truth neutrons }}{\# \text { of truth neutrons }}
+\begin{aligned}
+    & \varepsilon_{\text {Pre }}=\frac{\# \text { of truth candidates at pre }-\text { selection }}{\# of truth neutrons} \\
+    & \varepsilon_{\mathrm{NN}}=\frac{\# \text { of tagged truth neutrons }}{\# \text { of truth candidates at pre-selection }} \\
+    & \varepsilon_{\mathrm{NTag}}=\varepsilon_{\text {Pre }} \times \varepsilon_{\mathrm{NN}}=\frac{\# \text { of tagged truth neutrons }}{\# \text { of truth neutrons }}
+\end{aligned}
 \label{eq:efficiency_equations}
 \end{equation}
 
-The values of these efficiencies and their associated statistical uncertainties are shown in Table \ref{table:NTag_efficiency}. 
+The values of these efficiencies and their associated statistical uncertainties are shown in Table \ref{table:NTag_efficiency}, and are calculated seperately for captures on hydrogen and gadolinium and for both. 
+
+\begin{table}
+    $$
+    \begin{array}{|l|l|}
+    \hline & \text { Pre-selection efficiency } \\
+    \hline \text { H + Gd } &50.0 \pm 0.10 \% \\
+    \hline H & 13.4 \pm 0.19 \% \\
+    \hline \text { Gd } & 85.0 \pm 0.10 \% \\
+    \hline & \text { NN classification efficiency } \\
+    \hline \text { H + Gd } & 80.3 \pm 0.21 \% \\
+    \hline \text { H } & 19.0 \pm 1.26 \% \\
+    \hline \text { Gd } & 89.6 \pm 0.26 \% \\
+    \hline & \text { Total efficiency } \\
+    \hline \text { H + Gd } & 40.2 \pm 0.21 \% \\
+    \hline \text { H } & 2.5 \pm 0.16 \% \\
+    \hline \text { Gd } & 76.2 \pm 0.20 \% \\
+    \hline
+    \end{array}
+    $$
+    \caption{NTag pre-selection, NN classification and total efficiencies}
+    \label{table:NTag_efficiency}
+\end{table}
+
+These efficiencies are as expected, with the efficiency of neutrons captured on gadolinium being much greater than that of captures on hydrogen, due to the gamma cascade better being able to differentiate it 
