@@ -760,7 +760,7 @@ The values of these efficiencies and their associated statistical uncertainties 
     \begin{array}{|l|l|}
     \hline & \text { Pre-selection efficiency } \\
     \hline \text { H + Gd } &50.0 \pm 0.10 \% \\
-    \hline H & 13.4 \pm 0.19 \% \\
+    \hline \text{ H } & 13.4 \pm 0.19 \% \\
     \hline \text { Gd } & 85.0 \pm 0.10 \% \\
     \hline & \text { NN classification efficiency } \\
     \hline \text { H + Gd } & 80.3 \pm 0.21 \% \\
@@ -777,4 +777,67 @@ The values of these efficiencies and their associated statistical uncertainties 
     \label{table:NTag_efficiency}
 \end{table}
 
-These efficiencies are as expected, with the efficiency of neutrons captured on gadolinium being much greater than that of captures on hydrogen, due to the gamma cascade better being able to differentiate it 
+These efficiencies are as expected, with the efficiency of neutrons captured on gadolinium being much greater than that of captures on hydrogen, due to the gamma cascade making it better able to be differentiated than from the 2.2 MeV from the neutron capture on hydrogen. However, as the errors on the efficiency in Table \ref{table:NTag_efficiency} are purely statistical (i.e.produced from the number of neutrons in the MC), it is beneficial to do a comparison with an efficiency measurement from actual neutron capture data. In order to assess the validity of the efficiencies from the Monte Carlo, a comparison of the efficiency with data taken from an Am/Be neutron source is used. As mentioned in Chapter 3, the Am/Be source produces a prompt 4.4 MeV gamma ray along with a neutron, with the same prompt and delay signal pattern as NCQE interactions, and similarly to the MC, a timing distribution of hits relative to the 4.4 MeV trigger can be produced for the Am/Be data. As shown in Figure \ref{fig:efficiency_dwall}, the efficiency of the neutron capture changes relative to the DWall cut value, and as a result it was advisable to check the efficiency of neutron capture using Am/Be data at different positions in the detector. Table \ref{table:ambe_positions} shows the runs and positions (x,y,z) of Am/Be data used in this analysis.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{Figures/efficiency_dwall.png}
+    \caption{Neural network output signal likelihood }
+    \label{fig:efficiency_dwall}
+
+\end{figure}
+
+
+\begin{table}
+    $$
+    \begin{array}{|l|l|l|l|l|}
+    \hline \text{Run} & \text {Data taking time } & \text{Position (m)} \\
+    \hline 85622 & \text { 1 hour} & \text{(0,0,0)} \\
+    \hline 85617 & \text { 30 min} & \text{(0,0,+12)} \\
+    \hline 85586 & \text { 30 min} & \text{(-12,0,0)} \\
+    \hline
+    \end{array}
+    $$
+    \caption{Am/Be data run numbers, data taking time and Am/Be source positions}
+    \label{table:ambe_positions}
+\end{table}
+
+First, comparison was done between the MC and the Am/Be data from Run 85622, the 1 hour measurement taken in the central (0,0,0) source position, by looking at the timing distribution from the 4.4 MeV trigger signal. The following event cuts were used in order to select neutron capture events using this data: the total event charge deposit for the inner detector PMTs to be between 850 and 1150 photoelectrons, the time difference from the previous event should be greater than 1 millisecond, and the number of outer detector PMT hits should be less than 10. In order to find the efficiency of the neutron captures with this Am/Be data, an exponential fit was made to the timing distribution, and this is shown in Figure \ref{fig:ambe_centre}. Similar plots were made for the Am/Be source data taken for the (0,0,+12 m) and (-12 m,0,0) positions.
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{Figures/ambe_centre.png}
+    \caption{Fitted time relative to the trigger signal with exponential fit (red) for the Am/Be data taken in the centre position (0,0,0)}
+    \label{fig:ambe_centre}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{Figures/ambe_data_+12z.png}
+    \caption{Fitted time relative to the trigger signal with exponential fit (red) for the Am/Be data taken at (0,0,+12 )}
+    \label{fig:ambe_+12z}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{Figures/ambe_data_-12x.png}
+    \caption{Fitted time relative to the trigger signal with exponential fit (red) for the Am/Be data taken at (-12,0,0).}
+    \label{fig:ambe_-12}
+\end{figure}
+
+Table \ref{table:ambe_tau_chi2} shows the value of tau for each of these positions, along with the $\chi^{2}$/ndf value for the exponential fit.
+
+\begin{table}
+    $$
+    \begin{array}{|l|l|l|l|l|}
+    \hline \text{Position (m)} & \text {Time constant (tau) value ($\mu$ s) } & \text{$chi^{2}$/ndf} \\
+    \hline \text{Centre (0,0,0)} & 114.8 \pm 2.5  & 1.01 \\
+    \hline \text{(0,0,+12 )} & 118 \pm 3.5 & 1.27 \\
+    \hline \text{(-12,0,0)} & 110 \pm 3.7 & 1.17 \\
+    \hline
+    \end{array}
+    $$
+    \caption{Am/Be time constant value and $chi^{2}$/ndf value of exponential fit}
+    \label{table:ambe_tau_chi2}
+\end{table}
