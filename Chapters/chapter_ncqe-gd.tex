@@ -826,18 +826,26 @@ First, comparison was done between the MC and the Am/Be data from Run 85622, the
     \label{fig:ambe_-12}
 \end{figure}
 
-Table \ref{table:ambe_tau_chi2} shows the value of tau for each of these positions, along with the $\chi^{2}$/ndf value for the exponential fit.
+Table \ref{table:ambe_tau_chi2} shows the value of tau for each of these positions, along with the $\chi^{2}$/ndf value for the exponential fit and the value of the neutron capture efficiency calculated from the Am/Be data at each of these positions. Equation \ref{eq:efficiency_ambe_calculation} shows the method by which the efficiency for the neutron capture on Am/Be data is calculated, where $B$ is the fitted constant background value, and $NTag TMAX$ and $NTag TMIN$ are the end and start times of the neutron tagging algorithm.  
+
+
+
+\begin{equation}
+    \text { Efficiency }=\frac{(\text {# of neutron captures } - (\text{B} \cdot \text {# of bins }  \cdot (\text{NTag TMAX - NTag TMIN}) / (\text{Exponential fit time range})))  }{\# \text { Number of events }}
+\end{equation}
 
 \begin{table}
     $$
     \begin{array}{|l|l|l|l|l|}
-    \hline \text{Position (m)} & \text {Time constant (tau) value ($\mu$ s) } & \text{$chi^{2}$/ndf} \\
-    \hline \text{Centre (0,0,0)} & 114.8 \pm 2.5  & 1.01 \\
-    \hline \text{(0,0,+12 )} & 118 \pm 3.5 & 1.27 \\
-    \hline \text{(-12,0,0)} & 110 \pm 3.7 & 1.17 \\
+    \hline \text{Position (m)} & \text {Time constant (tau) value ($\mu$ s) } & \text{$\chi^{2}$/ndf} & \text{Efficiency (\%)} \\
+    \hline \text{Centre (0,0,0)} & 114.8 \pm 2.5  & 1.01 & 40.7 \\
+    \hline \text{(0,0,+12 )} & 118 \pm 3.5 & 1.27 & 39.4 \\
+    \hline \text{(-12,0,0)} & 110 \pm 3.7 & 1.17 & 40.7 \\
     \hline
     \end{array}
     $$
-    \caption{Am/Be time constant value and $chi^{2}$/ndf value of exponential fit}
+    \caption{Am/Be time constant value and $\chi^{2}$/ndf value of exponential fit}
     \label{table:ambe_tau_chi2}
 \end{table}
+
+This level of variation for the time constant is within normal limits, especially considering the associated errors, and the $\chi^{2}$/ndf values for each shows that the exponential fit to the data is good. Figure \ref{fig:MC_time_constant} shows the equivalent fitted time from the prompt event for the NCQE MC, which has a corresponding time constant value of 
