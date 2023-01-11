@@ -826,12 +826,13 @@ First, comparison was done between the MC and the Am/Be data from Run 85622, the
     \label{fig:ambe_-12}
 \end{figure}
 
-Table \ref{table:ambe_tau_chi2} shows the value of tau for each of these positions, along with the $\chi^{2}$/ndf value for the exponential fit and the value of the neutron capture efficiency calculated from the Am/Be data at each of these positions. Equation \ref{eq:efficiency_ambe_calculation} shows the method by which the efficiency for the neutron capture on Am/Be data is calculated, where $B$ is the fitted constant background value, and $NTag TMAX$ and $NTag TMIN$ are the end and start times of the neutron tagging algorithm.  
+Table \ref{table:ambe_tau_chi2} shows the value of tau for each of these positions, along with the $\chi^{2}$/ndf value for the exponential fit and the value of the neutron capture efficiency calculated from the Am/Be data at each of these positions. Equation \ref{eq:efficiency_ambe_calculation} shows the method by which the efficiency for the neutron capture on Am/Be data is calculated, where $N$ is the number of neutron captures, $B$ is the fitted constant background value, and NTag TMAX and NTag TMIN are the end and start times of the neutron tagging algorithm.  
 
 
 
 \begin{equation}
-    \text { Efficiency }=\frac{(\text {# of neutron captures } - (\text{B} \cdot \text {# of bins }  \cdot (\text{NTag TMAX - NTag TMIN}) / (\text{Exponential fit time range})))  }{\# \text { Number of events }}
+    \text { Efficiency }=\frac{(\text {N } - (\text{B} \cdot \text {no. of bins }  \cdot (\text{NTag TMAX - NTag TMIN}) / (\text{fit time range})))  }{\text { no. of events }}
+    \label{eq:efficiency_ambe_calculation}
 \end{equation}
 
 \begin{table}
@@ -848,4 +849,13 @@ Table \ref{table:ambe_tau_chi2} shows the value of tau for each of these positio
     \label{table:ambe_tau_chi2}
 \end{table}
 
-This level of variation for the time constant is within normal limits, especially considering the associated errors, and the $\chi^{2}$/ndf values for each shows that the exponential fit to the data is good. Figure \ref{fig:MC_time_constant} shows the equivalent fitted time from the prompt event for the NCQE MC, which has a corresponding time constant value of 
+This level of variation for the time constant is within normal limits, especially considering the associated errors, and the $\chi^{2}$/ndf values for each shows that the exponential fit to the data is good. Figure \ref{fig:MC_time_constant} shows the equivalent fitted time from the prompt event for the NCQE MC, which has a corresponding time constant value of 115.6 $\pm$ 0.8 $\mu$ s, and a neutron tagging efficiency, as shown in Table \ref{table:NTag_efficiency} of 40.2\%: these values are in good agreement with the values shown in Table \ref{table:ambe_tau_chi2}. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{Figures/MC_fitT.png}
+    \caption{Fitted time relative to the trigger signal with exponential fit (red) for the NCQE MC}
+    \label{fig:MC_time_constant}
+\end{figure}
+
+

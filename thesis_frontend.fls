@@ -2121,6 +2121,11 @@ INPUT ./Figures/ambe_data_-12x.PNG
 INPUT Figures/ambe_data_-12x.PNG
 INPUT ./Figures/ambe_data_-12x.PNG
 INPUT ./Figures/ambe_data_-12x.PNG
+INPUT ./Figures/MC_fitT.PNG
+INPUT ./Figures/MC_fitT.PNG
+INPUT Figures/MC_fitT.PNG
+INPUT ./Figures/MC_fitT.PNG
+INPUT ./Figures/MC_fitT.PNG
 INPUT ./Chapters/chapter_syst_uncertainty.tex
 INPUT ./Chapters/chapter_syst_uncertainty.tex
 INPUT ./Chapters/chapter_syst_uncertainty.tex
