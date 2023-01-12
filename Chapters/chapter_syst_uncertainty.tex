@@ -6,6 +6,50 @@
 \section{Systematic uncertainty calculation methodology}
 
 
+
+\section{Gamma production from neutron capture detector response}
+
+Prior to the addition of gadolinium in the detector, a 2.2 MeV gamma ray from neutron capture on a hydrogen nucleus would Compton scatter off an electron and emit very fair Cherenkov light. Due to no definite Cherenkov cone being recorded in Super-Kamiokande, the ability of the photomultiplier tubes to detect a single photon was a very important factor and was something which characterised the Super-Kamiokande detector response. After the addition of 0.026\% $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$, while 50\% of the neutron captures occur on gadolinium and therefore produce a far more easily detectable gamma cascade, the other 50\% of neutron captures occur on hydrogen nuclei and therefore evaluating this single-photon PMT response is still very important. In order to simplify matters, for the calculation of this uncertainty, the single-photon response of the PMT and the quantum efficiency will be treated as the same. In order for SKDETSIM-SKGd to have the correct quantum efficiency tuning, data collected from Americium/Beryllium source is used. By doing a comparison of the quantum efficiency values close to the one used in the simulation and use a $chi^{2}$ comparison to compare these values to the data.
+
+As mentioned previously, the Americium/Beryllium source produces a prompt 4.4 MeV gamma ray along with a neutron via Equation \ref{eq:ambe_decay_2}            
+
+
+\begin{equation}
+\begin{aligned}
+\alpha{ }^9 \mathrm{Be} \longrightarrow{ }^{12} \mathrm{C}^* \mathrm{n} \\
+{ }^{12} \mathrm{C}^* \longrightarrow{ }^{12} \mathrm{C} \gamma(4.4 \mathrm{MeV})
+\end{aligned}
+\label{eq:ambe_decay_2}
+\end{equation}
+
+In Chapter 6, the tagging efficiency of the Am/Be neutron source was calculated for the source in three different positions, and are shown in Table \ref{table:ambe_tau_chi2}. As mentioned previously, the systematic uncertainties in this Chapter are evaluated by calculating the difference between the nominal tagging efficiency and the tagging efficiency arising from a different process, either a different type of simulation, a different model, or in the case of this uncertainty, a difference in the source of neutrons for neutron capture. Equation \ref{eq:ambe_efficiency_systematic} shows how this systematic is quantified, $\delta_{Detector}$ is the fractional discrepancy arising from variation in tagging efficiency, where $T_{AmBe}$ is the neutron tagging efficiency from the Am/Be data, and $T_{nom}$ is the nominal tagging efficiency of the NCQE MC. 
+
+\begin{equation}
+\delta_{Detector}=\frac{T_{AmBe}-T_{n o m}}{T_{n o m}}
+\label{eq:ambe_efficiency_systematic}
+\end{equation}
+
+However, due to Table \ref{table:ambe_tau_chi2} showing three neutron capture uncertainties for the Am/Be data dependent on position, it makes sense to calculate the deviation of each of these from the norminal, and then calculate the total fractional uncertainty. Equation \ref{eq:total_ambe_deviation} shows the calculation for the total Am/Be uncertainty.
+
+\begin{equation}
+    (T_{AmBe}-T_{n o m})_{total} = \sqrt{(T_{Centre} - T_{nom})^{2} + (T_{+12} - T_{nom})^{2} +(T_{-12} - T_{nom})^{2}}
+\label{eq:total_ambe_deviation}
+\end{equation}
+
+Equation \ref{eq:total_ambe_deviation} gives a total Am/Be neutron tagging deviation from the nominal of $\pm 1.07$\%, and when this is used with Equation \ref{eq:ambe_efficiency_systematic}, this results in a fractional discrepancy of $\pm 0.03$ for the gamma production from the neutron capture detector response.
+
+
+
+
+
+
+
+
+
+
+
+
+
 The systematic uncertainities for this analysis are calculated using the probablity distribution functions of each quantity appearing in the formula for the mean neutron multiplicity, which is given by:
 
 \begin{equation}
@@ -424,21 +468,3 @@ The fractional tagging uncertainties are shown in Figure \ref{fig:nu_detector_re
 \end{equation}
 
 
-\section{Gamma production from neutron capture detector response}
-
-Prior to the addition of gadolinium in the detector, a 2.2 MeV gamma ray from neutron capture on a hydrogen nucleus would Compton scatter off an electron and emit very fair Cherenkov light. Due to no definite Cherenkov cone being recorded in Super-Kamiokande, the ability of the photomultiplier tubes to detect a single photon was a very important factor and was something which characterised the Super-Kamiokande detector response. After the addition of 0.026\% $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$, while 50\% of the neutron captures occur on gadolinium and therefore produce a far more easily detectable gamma cascade, the other 50\% of neutron captures occur on hydrogen nuclei and therefore evaluating this single-photon PMT response is still very important. In order to simplify matters, for the calculation of this uncertainty, the single-photon response of the PMT and the quantum efficiency will be treated as the same. In order for SKDETSIM-SKGd to have the correct quantum efficiency tuning, data collected from Americium/Beryllium source is used. By doing a comparison of the quantum efficiency values close to the one used in the simulation and use a $chi^{2}$ comparison to compare these values to the data.
-
-As mentioned previously, the Americium/Beryllium source produces a prompt 4.4 MeV gamma ray along with a neutron via Equation \ref{eq:ambe_decay_2}            
-
-
-\begin{equation}
-\begin{aligned}
-\alpha{ }^9 \mathrm{Be} \longrightarrow{ }^{12} \mathrm{C}^* \mathrm{n} \\
-{ }^{12} \mathrm{C}^* \longrightarrow{ }^{12} \mathrm{C} \gamma(4.4 \mathrm{MeV})
-\end{aligned}
-\label{eq:ambe_decay_2}
-\end{equation}
-
-
-
-The most recent Am/Be data was taken during the "calibration campaign" of September 2022. *insert information here on positions data was taken and the background taken with that data. When defining the efficiency of the Americium-Beryllium source, it differs from the usual definition of the neutron tagging efficiency 
