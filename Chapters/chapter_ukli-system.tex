@@ -278,46 +278,14 @@ After producing the fits to the inverse cumulative distribution functions, these
     \label{fig:ukli_mc_diff_coll}
 \end{figure}
 
-In order to validate the diffuser MC inverse cumulative distribution function output, a uniform distribution was run through the equation for the diffuser inverse CDF fits and the original PDF fit for each diffuser was used to fit the output points from the distribution, showing that inverse transform sampling was done correctly for the PDFs. This is shown for the B1 - B5 diffusers in Figure \ref{fig:inv_cdf_check}. 
+In order to validate the diffuser MC inverse cumulative distribution function output, a uniform distribution was run through the equation for the diffuser inverse CDF fits and the original PDF fit for each diffuser was used to fit the output points from the distribution, showing that inverse transform sampling was done correctly for the PDFs. This is shown for the B1 diffuser in Figure \ref{fig:inv_cdf_check}. 
 
-\begin{figure}[htp]
+\begin{figure}
     \centering
-    \caption{Inverse CDF checks of the B1 - B5 diffusers}
-    \label{fig:inv_cdf_check}
-    \begin{subfigure}{0.49\columnwidth}
-    \centering
-    \includegraphics[width=\textwidth]{Figures/inv_cdf_check_diff_B1.PNG}
+    \includegraphics[width=0.9\textwidth]{Figures/inv_cdf_check_diff_B1.PNG}
     \caption{B1 diffuser inverse CDF check}
-    \end{subfigure}\hfill
-    \begin{subfigure}{0.49\columnwidth}
-    \centering
-    \includegraphics[width=\textwidth]{Figures/inv_cdf_check_diff_B2.PNG}
-    \caption{B2 diffuser inverse CDF check}
-    \end{subfigure}
-    
-    \medskip
-    
-    \begin{subfigure}{0.49\columnwidth}
-    \centering
-    \includegraphics[width=\textwidth]{Figures/inv_cdf_check_diff_B3.PNG}
-    \caption{B3 diffuser inverse CDF check}
-    \end{subfigure}\hfill
-    \begin{subfigure}{0.49\columnwidth}
-    \centering
-    \includegraphics[width=\textwidth]{Figures/inv_cdf_check_diff_B4.PNG}
-    \caption{B4 diffuser inverse CDF check}
-    \end{subfigure}
-    
-    \medskip
-    
-    \begin{subfigure}{0.49\columnwidth}
-    \centering
-    \includegraphics[width=\textwidth]{Figures/inv_cdf_check_diff_B5.PNG}
-    \caption{B5 diffuser inverse CDF check}
-    
-    \end{subfigure}
-
-    \end{figure}    
+    \label{fig:inv_cdf_check}
+\end{figure}
 
 
 After producing the UKLI MC, adjusting the timing distributions in order to match up with the UKLI test run data was the next step. Producing time-of-flight corrected plots for the B1 collimator UKLI MC and overlaying it with the Run 82181 November test run data with the standard optical parameters, it was clear that there are disgreements between the Monte Carlo and data in both the scattered hits region and the reflected hits peak. In order to change this, the time dispersion of the injected photons in the MC was varied, in order to match the time dispersion of the injected photons in the data.
@@ -335,7 +303,14 @@ Figure \ref{fig:gauss_time_dispersion} shows the effect of implementing this var
     \label{fig:gauss_time_dispersion}
 \end{figure}
 
-In order to properly compare the timing distributions between data and Monte Carlo, the time-of-flight corrected timing plots are produced. To only select reflected and scattered hits, an exclusion region of hits is set: this is set to be $\pm$ 2 m around the injector (in order to avoid using backscattered hits in the analysis), and also $\pm$ 3.2 m around the injector target region in order to avoid including direct hits to the beam target.
+In order to properly compare the timing distributions between data and Monte Carlo, the time-of-flight corrected timing plots are produced. To only select reflected and scattered hits, an exclusion region of hits is set: this is set to be $\pm$ 2 m around the injector (in order to avoid using backscattered hits in the analysis), and also $\pm$ 3.2 m around the injector target region in order to avoid including direct hits to the beam target. Figure \ref{fig:exclusion_region} shows the regions for the hits which are included and excluded in order to produce the TOF corrected timing distributions.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{Figures/exclusion_region.PNG}
+    \caption{The included (green) and excluded (red) regions for the TOF timing distributions}
+    \label{fig:exclusion_region}
+\end{figure}
 
 Figures \ref{fig:0ns_time_dispersion}, \ref{fig:5ns_time_dispersion}, \ref{fig:10ns_time_dispersion}, \ref{fig:15ns_time_dispersion}, \ref{fig:20ns_time_dispersion} show time-of-flight corrected hit timing distributions for the B1 injector. The region between the blue dashed lines are the region for the scattered hits and the peak on the right shows the reflected hits. The hits from the injector data are shown in black and the MC hits are shown in red. In order to find the closest match for the time dispersion in the data, a gaussian distribution was fit to the B1 collimator data and Monte Carlo reflected peaks and the width of the gaussian was compared - this was only done for the 10 ns, 15 ns and 20 ns dispersion plots because the value for the time dispersion for the LED pulse is known to be in this range and the peak is too narrow and uneven for the 0 ns and 5 ns dispersion plots to fit a gaussian properly. The reason for the variation in the height of the reflected peaks bwtween the MC and data is due to the detector response, which is why the width is being focussed on here instead.
 
@@ -393,6 +368,6 @@ $$
 \label{table:reflected_peak_gaussian}
 \end{table}
 
-From Table \ref{table:reflected_peak_gaussian} it can be seen that the 10 ns dispersion had the closest value to the B1 data for the sigma of the gaussian fit to the reflected peak, and also the lowest $\chi^2/ndf$ value for the comparison between the data and MC for the scattered hits region, showing that this 10 ns dispersion was the best to use in the MC. 
+From Table \ref{table:reflected_peak_gaussian} it can be seen that the 10 ns dispersion had the closest value to the B1 data for the sigma of the gaussian fit to the reflected peak, and also the lowest $\chi^2/ndf$ value for the comparison between the data and MC for the scattered hits region, showing that this 10 ns dispersion was the best to use in the MC. In order to improve this part of the analysis, the scale of the time dispersion values could be more granular, for example, zooming into the 5 - 10 ns range when producing MC in order to more accurately determine the value of the time dispersion for the collimator data.
 
 To summarise the work in this Chapter, data from test stands using the same optics used in the UKLI in Super-Kamiokande were used to produce probability and cumulative distribution functions of the optic light profiles. These were implemented into the Super-Kamiokande detector simulation, and inverse transform sampled in order to produce UKLI MC beam spot outputs which were fitted with the original PDFs to verify the output. Alongside this, in order to better align the hit timing distributions for the MC and data, modifying the track step of the photon in the simulation was used to vary the time dispersion of the hits from the injector. The width of the reflected hits peak in TOF corrected timing distributions was determined with a gaussian fit, and compared with the B1 collimator data, along with a comparison of the difference in hit times in the scattered hits region, which allowed us to determine the optimal value for time dispersion of injected hits was 10 ns.
