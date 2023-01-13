@@ -1,8 +1,8 @@
-\chapter{Measurement of Neutral Current Quasielastic
-Interactions with Super-Kamiokande Gadolinium Upgrade}
+\chapter{Measurement of NCQE
+Interactions with the SK-Gd Upgrade}
 \label{chp:ncqegd}
 
-This chapter is dedicated to the main analysis of this thesis, the motivation for which is to constrain the SRN background by looking at the atmospheric neutral current quasi-elastic (NCQE) interactions of atmospheric neutrinos. The prompt and delayed signal of the NCQE interaction mimics that of the SRN, due to the positron providing the Cherenkov light of the prompt signal for SRN, while the prompt signal for NCQE is yielded by a gamma ray. The delayed capture process is the same for NCQE and SRN for captures on hydrogen, and prior to the Gd-loading, the NCQE neutron tag has searched for the 2.2 MeV photon from neutron capture on hydrogen. With the recent addition of 0.026\% $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$ to Super-Kamiokande, neutron detection has improved due to the higher energy gamma cascade signal of neutron capture on gadolinium of 8 MeV. This At energies close to the atmospheric peak, the NCQE interaction cross sections can be evaluated using T2K beam neutrinos. This chapter will present the status of the improved neutron tag from SK-Gd, its impact on the measurement of NCQE in T2K and the improvements to the SRN background measurement.
+This chapter is dedicated to the main analysis of this thesis, the motivation for which is to constrain the SRN background by looking at the atmospheric neutral current quasi-elastic (NCQE) interactions of atmospheric neutrinos. The prompt and delayed signal of the NCQE interaction mimics that of the SRN, due to the positron providing the Cherenkov light of the prompt signal for SRN, while the prompt signal for NCQE is yielded by a gamma ray. The delayed capture process is the same for NCQE and SRN for captures on hydrogen, and prior to the Gd-loading, the NCQE neutron tag has searched for the 2.2 MeV photon from neutron capture on hydrogen. With the recent addition of 0.026\% $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$ to Super-Kamiokande, neutron detection has improved due to the higher energy gamma cascade signal of neutron capture on gadolinium of 8 MeV. At energies close to the atmospheric peak, the NCQE interaction cross sections can be evaluated using T2K beam neutrinos. This chapter will present the status of the improved neutron tag from SK-Gd, its impact on the measurement of NCQE in T2K and the improvements to the SRN background measurement.
 
 There are many stages to this analysis, shown in Figure \ref{fig:analysis_flowchart}, where the ``neutron tagging'' stage occurs via two methods. Previously the NCQE neutron-tagging analyses used a method for neutron tagging which will be referred to as ``legacy NTag code'', but in 2020 the Super-K collaboration decided to proceed to use a new, more compact and streamlined version, which combines most of these stages into one piece of software. This will be referred to as``current NTag code'', and this is shown in Figure \ref{fig:analysis_flowchart} as well. The red arrows in Figure \ref{fig:analysis_flowchart} show the steps in the analysis prcoedure using the legacy NTag code which have been assimilated into the new NTag code.
 
@@ -40,7 +40,7 @@ $$
 
 \subsection{Neutrino flux}
 
- The NA61/SHINE experiment provides hadron production measurements for T2K and other long baseline experiments, and measures the yield of charged hadrons from a proton beam fired at a thin graphite target (2 cm long) and a T2K replica graphite target (90 cm long). From this experimental data, Monte Carlo simulations of the neutrino flux are predicted. In the beam MC, protons which have 30 GeV of kinetic energy are focused onto a graphite target and and after the secondary particles are focused using the horn magnets, the neutrino tracks they decay into are ascertained at the near detectors and at Super-Kamiokande to produce the flux and energy spectra at both of these locations. The oscillation effect on the neutrino flux needs to be considered after choosing which flux to use, and although the neutrino-oxygen NCQE cross section does not depend on flavour (and therefore neutrino oscillation affects would have no impact on a fully pure NCQE sample) there is a small fraction of charged current events which seep into the NCQE sample, and oscillation weights need to be applied to the charged current events in the sample. Monte Carlo reweighting takes care of this issue by assuming that they are all muon neutrino or muon anti-neutrino events, due to the fact that the number of electron neutrino events in FHC mode would be negligible.
+ The NA61/SHINE experiment provides hadron production measurements for T2K and other long baseline experiments, and measures the yield of charged hadrons from a proton beam fired at a thin graphite target (2 cm long) and a T2K replica graphite target (90 cm long). From this experimental data, Monte Carlo simulations of the neutrino flux are predicted. In the beam MC, protons which have 30 GeV of kinetic energy are focused onto a graphite target and after the secondary particles are focused using the horn magnets, the neutrino tracks they decay into are ascertained at the near detectors and at Super-Kamiokande to produce the flux and energy spectra at both of these locations. The oscillation effect on the neutrino flux needs to be considered after choosing which flux to use, and although the neutrino-oxygen NCQE cross section does not depend on flavour (and therefore neutrino oscillation affects would have no impact on a fully pure NCQE sample) there is a small fraction of charged current events which seep into the NCQE sample, and oscillation weights need to be applied to the charged current events in the sample. Monte Carlo reweighting takes care of this issue by assuming that they are all muon neutrino or muon anti-neutrino events, due to the fact that the number of electron neutrino events in FHC mode would be negligible.
 
 \subsection{Primary interaction}
 
@@ -214,13 +214,11 @@ In order to estimate the Cherenkov opening angle, all the possible combinations 
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.7\textwidth]{Figures/cherenkov_hit_triplet.png}
+    \includegraphics[width=0.5\textwidth]{Figures/cherenkov_hit_triplet.png}
     \caption{Schematic of the prompt event vertex and a triplet of independent PMT hits whch make up the Cherenkov angle}
     \label{fig:cherenkov_hit_triplet}
 
 \end{figure}
-
-
 
 
  For relativistic electrons in water, the value of the Cherenkov opening angle is $\approx 42\degree$, due to the relation: 
@@ -230,7 +228,7 @@ In order to estimate the Cherenkov opening angle, all the possible combinations 
 \label{cherenkov_angle}
 \end{equation}
  
-where $\beta = v/c \approx 1$ and $n$ is the refractive index of water, 1.33. However due to other particles in the simulation, such as protons or muons, the Cherenkov cone is expected to be narrower, or if multiple leptons are present, the Cherenkov cones will be less distinct and more spread out, leading to deviations from the 42\degree value. 
+where $\beta = v/c \approx 1$ and $n$ is the refractive index of water, 1.33. However due to other particles in the simulation, such as protons or muons, the Cherenkov cone is expected to be narrower, or if multiple leptons are present, the Cherenkov cones will be less distinct and more spread out, leading to deviations from the 42$\degree$ value. 
 
 \subsection{Comparison of BONSAI reconstruction output variables between SKDETSIM versions}
 
@@ -238,7 +236,7 @@ The BONSAI reconstruction output variables were compared between three versions 
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.7\textwidth]{Figures/erec_compare.png}
+    \includegraphics[width=0.8\textwidth]{Figures/erec_compare.png}
     \caption{Comparisons of prompt event electron reconstructed energy between versions of SKDETSIM}
     \label{fig:erec_compare}
 
@@ -246,7 +244,7 @@ The BONSAI reconstruction output variables were compared between three versions 
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.7\textwidth]{Figures/dwall_compare.png}
+    \includegraphics[width=0.8\textwidth]{Figures/dwall_compare.png}
     \caption{Comparisons of dwall for the prompt event between versions of SKDETSIM}
     \label{fig:dwall_compare}
 
@@ -401,7 +399,7 @@ The scan regions and intervals for the dwall, effwall and ovaQ parameters for Eq
 
 \subsection{Charged current event (CC) interaction cut}
 
-In order to reduce the number of charged-current events which may be mistakenly included in the NCQE selection, a cut regarding the reconstructed Cherenkov angle of the prompt event  is also utilised alongside the low energy background cut, where the accepted Cherenkov angle of a prompt event ($theta_{C}$) should be greater than the threshold cut value $\theta_{C}^{CUT}$ where the cut value is determined by the linear equation dependent on $E_{rec}$ as shown in Equation \ref{eq:thetaC_FOM}.
+In order to reduce the number of charged-current events which may be mistakenly included in the NCQE selection, a cut regarding the reconstructed Cherenkov angle of the prompt event  is also utilised alongside the low energy background cut, where the accepted Cherenkov angle of a prompt event ($\theta_{C}$) should be greater than the threshold cut value $\theta_{C}^{CUT}$ where the cut value is determined by the linear equation dependent on $E_{rec}$ as shown in Equation \ref{eq:thetaC_FOM}.
 
 \begin{equation}
     \theta_{C}^{C U T}=p_{0}^{\theta_{C}}+p_{1}^{\theta_{C}} \times E_{\text {rec }}
@@ -413,7 +411,7 @@ Just like for the low energy background cut values, the values of the optimised 
 
 \subsection{Prompt event NCQE reduction cut plots}
 
-Before applying the NTag algorithm, either legacy or new, plots were produced of the number of neutrino events and their dependence the reduction cut variables mentioned previously. These are shown in Figures \ref{fig:erec_reduction}, \ref{fig:dwall_reduction}, \ref{fig:effwall_reduction}, \ \ref{fig:ovaq_reduction}, \ref{fig:angle_reduction}. Each figure shows the corresponding plot for the previous NCQE analysis carried out with neutron tagging on Hydrogen on the left, with the plot from this analysis on the right. 
+Before applying the NTag algorithm, either legacy or new, plots were produced of the number of neutrino events and their dependence the reduction cut variables mentioned previously. These are shown in Figures \ref{fig:erec_reduction} to \ref{fig:angle_reduction}. Each figure shows the corresponding plot for the previous NCQE analysis carried out with neutron tagging on Hydrogen on the left, with the plot from this analysis on the right. 
 
 
 \begin{figure}[!htbp]
@@ -570,7 +568,7 @@ After ensuring that the truth neutron tagging information was the same between t
       \end{subfigure} 
 \end{figure}
 
-With the level of gadolinium sulphate octahydrate in the simulation, the number of neutron captures on hydrogen and gadolinium should be about half and half. This is confirmed in the plots where the neutron captures in Figures \ref{fig:TruCapNuNDistanceReductionNew} and \ref{fig:TruCapTimeReductionNew} are seperated into captures on hydrogen and gadolinium, shown in Figures \ref{fig:TruCapNuNDistanceReductionNewH}, \ref{fig:TruCapNuNDistanceReductionNewGd}, \ref{fig:TruCapTimeReductionNewH}, \ref{fig:TruCapTimeReductionNewGd}.
+With the level of $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$ in the simulation, the number of neutron captures on hydrogen and gadolinium should be approximately equal. This is confirmed in the plots where the neutron captures in Figures \ref{fig:TruCapNuNDistanceReductionNew} and \ref{fig:TruCapTimeReductionNew} are seperated into captures on hydrogen and gadolinium, shown in Figures \ref{fig:TruCapNuNDistanceReductionNewH}, \ref{fig:TruCapNuNDistanceReductionNewGd}, \ref{fig:TruCapTimeReductionNewH}, \ref{fig:TruCapTimeReductionNewGd}.
 
 \begin{figure}
     \centering
@@ -696,7 +694,7 @@ This is the standard deviation of all possible opening angles calculated from 3 
 This is the skewness of all possible opening angles from 3 PMT hits, calculated using
 
 \begin{equation}
-    \tilde{\mu}_3=\frac{\sum_i^N\left(X_i-\bar{X}\right)^3}{(N-1) * \sigma^1.5}
+    \tilde{\mu}_3=\frac{\sum_i^N\left(X_i-\bar{X}\right)^3}{(N-1) * \sigma^{1.5}}
 \end{equation}
 
 where $X_{i}$ is the hit PMT, $\bar{X}$ is the mean of the 3-hit vector, N is the size of the vector of PMT hits, and $\sigma$ is the standard deviation of the PMT hits.
@@ -740,7 +738,7 @@ Seeing the signal from neutron captures on hydrogen and gadolinium pre and post 
 \end{figure}
 
 
-Figure \ref{fig:tagout} shows that the signal likelihood output is closer to 0 for far more neutron capture on hydrogen candidates than neutron capture on gadolinium candidates - this is also shown in Figure \ref{fig:pre_NN_signal} and Figure \ref{fig:post_NN_signal}, where the peaks for the neutron capture on hydrogen candidates are significantly more reduced in the post-NN plots than in the pre-NN plots, showing that noise events were more likely to be misidentified as neutron captures on hydrogen. These distributions also show that the value of NHits and also N200 for a neutron capture candidate is more likely to be greater for neutron candidates which are candidates on gadolinium than on hydrogen. These plots also show that the opening Cherenkov angle related distributions were skewed towards greater values for gadolinium capture candidates than for hydrogen, due to the presence of the hits from the gamma cascade associated with neutron captures on gadolinium. 
+Figure \ref{fig:tagout} shows that the signal likelihood output is closer to 0 for far more neutron capture on hydrogen candidates than neutron capture on gadolinium candidates - this is also shown in Figure \ref{fig:pre_NN_signal} and Figure \ref{fig:post_NN_signal}, where the peaks for the neutron capture on hydrogen candidates are significantly more reduced in the post-NN plots than in the pre-NN plots, showing that noise events were more likely to be misidentified as neutron captures on hydrogen. These distributions also show that the value of NHits and also N200 for a neutron capture candidate is more likely to be greater for neutron candidates which are candidates on gadolinium than on hydrogen. Additionally, these plots also show that the opening Cherenkov angle related distributions were skewed towards greater values for gadolinium capture candidates than for hydrogen, due to the presence of the hits from the gamma cascade associated with neutron captures on gadolinium. 
 
 After investigating the neutron candidates pre and post neural network to see the candidate signal distributions, it makes sense to evaluate how efficient the neutron tagging algorithm is. There are three stages at which the efficiency is calculated, pre-NN selection (i.e. seaching all the truth candidates prior to NN selection), after the NN classification (to show the efficiency of the classifier), and then the combination of these (the total tagging efficiency). Equation \ref{eq:efficiency_equations} shows how these three stages, $\varepsilon_{\text {Pre }}$, $\varepsilon_{\text {NN }}$ and $\varepsilon_{\text {NTag }}$ are defined.
 

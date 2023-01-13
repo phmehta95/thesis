@@ -8,11 +8,11 @@ The UK calibration group's efforts have been focussed on improving the data anal
 The electronics setup architecture for the UK Light Injection system is made of sixteen light emitting diode boards, where the light being pulsed by the LEDs has a wavelength of 435 nm and there is 1 LED per injector. Each LED is coupled to three optical fibres: one channel connected to a monitor PMT, one connected to an optical fibre that sends light into the Super-Kamiokande detector, and one is a spare.
 \newline
 
-Unlike the Korean laser system mentioned in Chapter 4 that injects light into the detector using an optical fibre which has an opening angle of 12 degrees, the UK Light Injection system contains three different types of light injection optics, with each having a different opening angle: a bare fibre, a collimator and a diffuser. This range of optics can accomadate a larger variety of calibration measurements, and better suit the multiple applications of the light injection system, including it being better for monitoring purposes. 
+Unlike the Korean laser system mentioned in Chapter 4 which injects light into the detector using an optical fibre which has an opening angle of 12 degrees, the UK Light Injection system contains three different types of light injection optics, with each having a different opening angle: a bare fibre, a collimator and a diffuser. This range of optics can accomadate a larger variety of calibration measurements, and better suit the multiple applications of the light injection system. 
 
 \subsubsection{The Collimator Optic}
 
-A 2-degree opening half angle is achieved by the collimator optic by using a GRIN lens to reduce the opening angle of the light coming from the fibre optic. A schematic of the collimator design can be seen in Figure \ref{fig:collimator_schematic}. 
+A 2-degree opening half angle is achieved by the collimator optic by using a GRIN (gradient-index) lens \cite{grin_lens} to reduce the opening angle of the light coming from the fibre optic. A schematic of the collimator design can be seen in Figure \ref{fig:collimator_schematic}. 
 
 \begin{figure}
     \centering
@@ -21,7 +21,6 @@ A 2-degree opening half angle is achieved by the collimator optic by using a GRI
     \label{fig:collimator_schematic}
 \end{figure}
 
- Because the collimated beams mean that there is no overlap of beam spots, there can be measurements of the water scattering and absorption coefficients made that are position dependent, allowing for an observation of how the water parameters depend on depth in the tank. A narrow beam spot means that more direct light is excluded from the analysis, allowing for better measurements of scattered light.
 
 \subsubsection{The Diffuser Optic}
 
@@ -40,7 +39,7 @@ The bare fibre injector are 1 mm step index fibres, and are approximately 20 cm 
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.7\textwidth, angle =270]{Figures/optical_plate.jpg}
+    \includegraphics[width=0.7\textwidth, angle =270]{Figures/optical_plate.png}
     \caption{Photograph of the optical plate which houses the different optics.}
     \label{fig:optical_plate}
 \end{figure}
@@ -48,32 +47,7 @@ The bare fibre injector are 1 mm step index fibres, and are approximately 20 cm 
 
 \section{Optics test stand measurements}
 
-In order to test the collimator and diffuser optics, measurements of the angular distributions were made using diffuser and collimator test-stands. These would measure angular distributions of the light intensity. For the diffuser test-stand the angular distribution of the light output was measured using the setup shown in Figure \ref{fig:diffuser_test_stand}. This test stand setup for the diffuser optics consists of a test diffuser ball placed inside a diffuser enclosure, a rotation stage which allows for the movement of the diffuser between -40 and 40 degrees, and a PMT used for pulse intensity measurement set up 250 mm away from the diffuser. An optical fibre couples the diffuser under test to a laser set to a wavelength of 450 nm. 
-
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.7\textwidth]{Figures/diffuser_test_stand.png}
-    \caption{Setup of the diffuser test stand provided by Warwick University}
-    \label{fig:diffuser_test_stand}
-\end{figure}
-
-Figure \ref{fig:diffuser_TF1} shows distributions provided by this test stand data which are preliminary fits made by ROOT to the light profiles for the diffuser. 
-
-\begin{figure}[!htbp]
-    \centering
-    
-    \caption{Light profiles for the diffuser optics provided by The University of Warwick}\label{fig:diffuser_TF1}
-    
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B1_diffuser_fit.PNG}}\hfill
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B2_diffuser_fit.PNG}}\par
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B3_diffuser_fit.PNG}}\hfill
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B4_diffuser_fit.PNG}}\par
-    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B5_diffuser_fit.PNG}}
-    
-\end{figure}
-
-The setup for the collimator test stand at the University of Warwick is shown in Figure \ref{fig:coll_test_stand} and captures the beam cross section by moving a CMOS camera along the beam width. 
+In order to test the collimator and diffuser optics, measurements of the angular distributions were made using diffuser and collimator test-stands and would measure angular distributions of the light intensity. The setup for the collimator test stand at the University of Warwick is shown in Figure \ref{fig:coll_test_stand} and captures the beam cross section by moving a CMOS camera along the beam width. For the diffuser test-stand the angular distribution of the light output was measured using the setup shown in Figure \ref{fig:diffuser_test_stand}. This test stand setup for the diffuser optics consists of a test diffuser ball placed inside a diffuser enclosure, a rotation stage which allows for the movement of the diffuser between -40 and 40 degrees, and a PMT used for pulse intensity measurement set up 250 mm away from the diffuser. An optical fibre couples the diffuser under test to a laser set to a wavelength of 450 nm. 
 
 \begin{figure}
     \centering
@@ -98,11 +72,36 @@ Figure \ref{fig:collimator_TF1} shows fits made by ROOT to the light profiles fo
 
 
 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figures/diffuser_test_stand.png}
+    \caption{Setup of the diffuser test stand provided by Warwick University}
+    \label{fig:diffuser_test_stand}
+\end{figure}
+
+Figure \ref{fig:diffuser_TF1} shows distributions provided by this test stand data which are preliminary fits made by ROOT to the light profiles for the diffuser. These distributions are not phi-averaged, and instead are scans across the front of the diffuser.
+
+\begin{figure}[!htbp]
+    \centering
+    
+    \caption{Light profiles for the diffuser optics provided by The University of Warwick}\label{fig:diffuser_TF1}
+    
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B1_diffuser_fit.PNG}}\hfill
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B2_diffuser_fit.PNG}}\par
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B3_diffuser_fit.PNG}}\hfill
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B4_diffuser_fit.PNG}}\par
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/B5_diffuser_fit.PNG}}
+    
+\end{figure}
+
+
+
+
 
 
 \section{First commissioning data from UKLI}
 
-In September of 2019 and November of 2019 two sets of test data were taken of the collimator, the diffuser and the bare fibre optic (the B2 bare fibre) and using an event display developed by the University of Warwick, occupancy plots of the test data sets were produced. Figure \ref{fig:occupancy_coll} shows the occupancy plots for the collimator optic from the November 2019 dataset showing the beam spot inside the unrolled volume of the Super-Kamiokande detector. Similarly, Figure \ref{fig:occupancy_diffuser} shows the occupancy plots for the diffuser optic from the November 2019 dataset. The graph in the bottom right hand corner of the occupancy plots show the corrected time-of-flight plots for the PMT hits from the injector. Bare fibre data was taken, but used simply as a comparison to the output from the Korean system. 
+In September of 2019 and November of 2019 two sets of test data were taken of the collimator, the diffuser and the bare fibre optic (the B2 bare fibre) and using an event display developed by the University of Warwick, occupancy plots of the test data sets were produced. Figure \ref{fig:occupancy_coll} shows the occupancy plots for the collimator optic from the November 2019 dataset showing the beam spot inside the unrolled volume of the Super-Kamiokande detector. Similarly, Figure \ref{fig:occupancy_diffuser} shows the occupancy plots for the diffuser optic from the November 2019 dataset. The graph in the bottom right hand corner of the occupancy plots show the corrected time-of-flight plots for the PMT hits from the injector. 
 
 
 
@@ -133,7 +132,7 @@ In September of 2019 and November of 2019 two sets of test data were taken of th
     
 \end{figure}
 
-The UKLI was also added to an ``autocalib'' system used for long term monitoring of the water parameters in Super-Kamiokande by the Korean laser system. In early 2020 the autocalib scheduler was modified to incorporate data taking by the UKLI system which was very useful for gadolinium loading calibration purposes but also in the longer term, it will be useful in the monitoring of daily/weekly water coefficient property measurements, investigation of depth dependence with respect to the water properties and PMT property calibration. Figure \ref{fig:autocalib} shows the schedule for autocalib, and the black dashed lines show the position of the UK barrel collimator and diffusers with respect to the other autocalib data taking streams. The horizontal blue line shows the length of the one autocalib cycle, which is about 4.6 seconds, with each UKLI optic taking about 3310 events per day.
+The UKLI was also added to the ``autocalib'' system used for long term monitoring of the water parameters in Super-Kamiokande by the Korean laser system. In early 2020 the autocalib scheduler was modified to incorporate data taking by the UKLI system which was very useful for gadolinium loading calibration purposes but also in the longer term, it will be useful in the monitoring of daily/weekly water coefficient property measurements, investigation of depth dependence with respect to the water properties and PMT property calibration. Figure \ref{fig:autocalib} shows the schedule for autocalib, and the black dashed lines show the position of the UK barrel collimator and diffusers with respect to the other autocalib data taking streams. The horizontal blue line shows the length of the one autocalib cycle, which is about 4.6 seconds, with each UKLI optic taking about 3310 events per day.
 
 \begin{figure}
     \centering
