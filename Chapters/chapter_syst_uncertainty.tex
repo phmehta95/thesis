@@ -1,4 +1,4 @@
-\chapter{Systematic and statistical uncertainty calculations}
+\chapter{Systematic uncertainty calculations}
 \label{chp:syst}
 
 
@@ -6,15 +6,34 @@
 \section{Systematic uncertainty calculation methodology}
 
 
+The two ways in which the systematic error for this analysis are estimated are either using MC re-weighting or MC regeneration.
+\newline
+For the MC-reweighting approach, weights are applied to a quantity and the tagging efficiency of the re-weighted MC is extracted. The general methodology is to have the input of a model (given by a set of parameters) and to vary them one by one and then calculate the reweighted tagging efficiencies - the set of relative discrepancies $\delta_{i}$ are computed from this set of reweighted tagging efficiencies $T_{i}$ and the nominal tagging efficiency $T_{nom}$ using Equation \eqref{tageffdiscrep}.
+\newline
+\begin{equation}
+    \delta_{i}=\frac{T_{i}-T_{\text {nom }}}{T_{\text {nom }}} \quad i \in\{\text { parameters }\}
+\label{tageffdiscrep}
+\end{equation}
+\newline
+
+These relative discrepancies $\delta_{i}$ are used to calculate the one indivdual discrepancy $\delta_{reweighted}$ that would describe the final deviation from the nominal tagging efficiency $T_{nom}$ due to the systematic error. The parameter $\delta_{reweighted}$ describes the model which has been produced through 1$\sigma$ variations of these parameters, therefore the final probability distribution function which describes the deviation from the nominal MC has a Gaussian distribution with the standard deviation being equal to $\delta_{reweighted}$. 
+\newline
+The other method to estimate the systematic error on the tagging efficiency is the method of Monte Carlo regeneration. This is carried out by varying a parameter then regenerating the whole Monte Carlo and then extracting the tagging efficiency - therefore unlike with MC re-weighting there is no set of discrepancies $\delta_{i}$ but instead two single discrepancies $\delta_{min}$ and $\delta_{max}$. The resulting probability distribution which describes the deviation from the nominal Monte Carlo is a Gaussian which has the mean and standard deviation relating to the discrepancies shown in Equation \ref{eq:mcregengauss}.
+\newline
+
+\begin{equation}
+\left\{\begin{array}{l}
+\mu=\frac{\delta_{\max }+\delta_{\min }}{2} \\
+\sigma=\frac{\delta_{\max }-\delta_{\min }}{2}
+\end{array}\right.
+\label{eq:mcregengauss}
+\end{equation}
+
+
 
 \section{Gamma production from neutron capture detector response}
 
-Prior to the addition of gadolinium in the detector, a 2.2 MeV gamma ray from neutron capture on a hydrogen nucleus would Compton scatter off an electron and emit very fair Cherenkov light. Due to no definite Cherenkov cone being recorded in Super-Kamiokande, the ability of the photomultiplier tubes to detect a single photon was a very important factor and was something which characterised the Super-Kamiokande detector response. After the addition of 0.026\% $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$, while 50\% of the neutron captures occur on gadolinium and therefore produce a far more easily detectable gamma cascade, the other 50\% of neutron captures occur on hydrogen nuclei and therefore evaluating this single-photon PMT response is still very important. In order to simplify matters, for the calculation of this uncertainty, the single-photon response of the PMT and the quantum efficiency will be treated as the same. In order for SKDETSIM-SKGd to have the correct quantum efficiency tuning, data collected from Americium/Beryllium source is used. By doing a comparison of the quantum efficiency values close to the one used in the simulation and use a $\chi^{2}$ comparison to compare these values to the data. 
-
-As mentioned previously, the Americium/Beryllium source produces a prompt 4.4 MeV gamma ray along with a neutron via Equation \ref{eq:ambe_decay_2}. 
-
-
-
+As mentioned previously, the Americium/Beryllium (Am/Be) source produces a prompt 4.4 MeV gamma ray along with a neutron via Equation \ref{eq:ambe_decay_2}. 
 
 \begin{equation}
 \begin{aligned}
@@ -46,54 +65,6 @@ Equation \ref{eq:total_ambe_deviation} gives a total Am/Be neutron tagging devia
 
 
 
-
-
-
-
-
-
-The systematic uncertainities for this analysis are calculated using the probablity distribution functions of each quantity appearing in the formula for the mean neutron multiplicity, which is given by:
-
-\begin{equation}
-    M=\frac{\# n_{\text {det }}-R \times \# \nu_{\text {det }}}{T} \frac{1}{\# \nu_{\text {det }}}
- \label{multiplicity}
-\end{equation}
-
-
-
-By random sampling the probability distribution functions for each of the terms in Equation \eqref{multiplicity} one can calculate the multiplicity probability distribution functions for both the statistical uncertainty and the systematic uncertainty. The statistical uncertainty for the value for the multiplicity is related to the variation in the number of detected neutrons, while the systematic uncertainty is related to the variation on the tagging efficiency and the background rate. The total search time for the tagged neutrons is dependent on the number of "windows" in which the neutron is searched for in, and therefore the term for the number of detected neutrinos. Because any variation on the number of neutrinos which are detected is unrelated to the value for the mean neutron multiplicity, calculating a probability mass function for the number of neutrinos is uneccessary. 
-
-A Poissonian distribution is used to model the distribution for the number of detected neutrons, due to its value being approximated by counting the positives in the timing window that the neutron tagging search is carried out in. The mean value of this Poisson distribution is the number of detected neutrons $\left\langle \# n_{\text {detected}}\right\rangle$.
-\newline
-\begin{equation}
-    P M F\left(\# n_{\text {detected}}\right)=\frac{1}{\left(\# n_{\text {detected}}\right) !}\left\langle \# n_{\text{detected }}\right\rangle^{\# n_{\text {detected}}} e^{-\left\langle \# n_{\text {detected}}\right\rangle}
-\label{poissonuncertainty}
-\end{equation}
-\newline
-Regarding the background rate, this is estimated from dummy spill data. The background rate error is associated with the statistical variation of the Monte Carlo size that the backround rate is associated with, and secondly the change of the background rate value during the SK-V period. The statistical variation of the MC is modelled using a Poisson, but the statistics are high enough so that it appears Gaussian, while the uncertainty relating to time variation is characterised by its own probability distribution function. In contrast, the tagging efficiency is model dependent and has systematic uncertainties relating to this. The two ways in which the systematic error are estimated are either using MC re-weighting or MC regeneration.
-\newline
-For the MC-reweighting approach, weights are applied to a quantity and the tagging efficiency of the re-weighted MC is extracted. The general methodology is to have the input of a model (given by a set of parameters) and to vary them one by one and then calculate the reweighted tagging efficiencies - the set of relative discrepancies $\delta_{i}$ are computed from this set of reweighted tagging efficiencies $T_{i}$ and the nominal tagging efficiency $T_{nom}$ using Equation \eqref{tageffdiscrep}.
-\newline
-\begin{equation}
-    \delta_{i}=\frac{T_{i}-T_{\text {nom }}}{T_{\text {nom }}} \quad i \in\{\text { parameters }\}
-\label{tageffdiscrep}
-\end{equation}
-\newline
-
-These relative discrepancies $\delta_{i}$ are used to calculate the one indivdual discrepancy $\delta_{reweighted}$ that would describe the final deviation from the nominal tagging efficiency $T_{nom}$ due to the systematic error. The parameter $\delta_{reweighted}$ describes the model which has been produced through 1$\sigma$ variations of these parameters, therefore the final probability distribution function which describes the deviation from the nominal MC has a Gaussian distribution with the standard deviation being equal to $\delta_{reweighted}$. 
-\newline
-The other method to estimate the systematic error on the tagging efficiency is the method of Monte Carlo regeneration. This is carried out by varying a parameter then regenerating the whole Monte Carlo and then extracting the tagging efficiency - therefore unlike with MC re-weighting there is no set of discrepancies $\delta_{i}$ but instead two single discrepancies $\delta_{min}$ and $\delta_{max}$. The resulting probability distribution which describes the deviation from the nominal Monte Carlo is a Gaussian which has the mean and standard deviation relating to the discrepancies shown in Equation \eqref{mcregengauss}.
-\newline
-
-\begin{equation}
-\left\{\begin{array}{l}
-\mu=\frac{\delta_{\max }+\delta_{\min }}{2} \\
-\sigma=\frac{\delta_{\max }-\delta_{\min }}{2}
-\end{array}\right.
-\label{mcregengauss}
-\end{equation}
-
-
 \section{Neutrino beam flux uncertainty}
 
 The uncertainty on neutrino beam fluxes can be evaluated by looking at the dependence of the tagging efficiency on the flux variations. The beam fluxes for the four flavour modes 
@@ -107,7 +78,7 @@ Each individual bin for the flux is increased/decreased by its error, the Monte 
 \label{nubeamfluxerror}
 \end{equation}
 \newline
-Figure \ref{fig:fluxuncertainty} shows the fractional errors calculated from the reweighted Monte Carlo, with the red bars showing the -1$\sigma$ variation and the blue bars showing the +1$\sigma$ variation. Table \ref{table:systuncertaintytable} contains the value for the total uncertainty resulting from the neutrino beam flux, which was calculated using Equation \eqref{summingfluxuncertainty}, where the maximum value between the increased and decreased discrepancy is taken and summed over to produce the final neutrino flux beam uncertainty.
+Figure \ref{fig:fluxuncertainty} shows the fractional errors calculated from the reweighted Monte Carlo, with the red bars showing the -1$\sigma$ variation and the blue bars showing the +1$\sigma$ variation. Table \ref{table:systuncertaintytable} contains the value for the total uncertainty resulting from the neutrino beam flux, which was calculated using Equation \ref{eq:summingfluxuncertainty}, where the maximum value between the increased and decreased discrepancy is taken and summed over to produce the final neutrino flux beam uncertainty.
 \newline
 
 \begin{figure}
@@ -119,11 +90,11 @@ Figure \ref{fig:fluxuncertainty} shows the fractional errors calculated from the
 
 \begin{equation}
     \delta_{\nu \text { flux }}=\sum_{i \in\{\text { bins }\}} \max \left[\left|\delta_{i}(+\sigma)\right|,\left|\delta_{i}(-\sigma)\right|\right]
- \label{summingfluxuncertainty}   
+ \label{eq:summingfluxuncertainty}   
 \end{equation}
 
 \begin{figure}
-\includegraphics[scale=0.4]{Figures/flux_uncertainty.png}
+\includegraphics[width=0.7\textwidth]{Figures/flux_uncertainty.png}
 \caption{Tagging efficiency fractional uncertainties caused by neutrino beam flux discrepancies. From left to right the sections in this plot are comprised of the beam fluxes elements of $\left(\nu_{e} \overline{\nu_{e}} \nu_{\mu} \overline{\nu_{\mu}}\right)$ respectively.}
 \label{fig:fluxuncertainty}
 \end{figure}
@@ -170,7 +141,7 @@ Figure \ref{fig:xsecuncertainty} shows the reweighted Monte Carlo fractional unc
 
 
 \begin{figure}
-    \includegraphics[scale=0.4]{Figures/xsec_uncertainty.png}
+    \includegraphics[width=0.7\textwidth]{Figures/xsec_uncertainty.png}
 \caption{Tagging efficiency uncertainty caused by the cross-section parameters variations for the FHC mode}
 \label{fig:xsecuncertainty}
 \end{figure}
@@ -217,7 +188,7 @@ A set of paramater variations which determine a surface in paramater space have 
 \end{equation}
 
 \begin{figure}
-    \includegraphics[scale=0.4]{Figures/fsisi_uncertainty.png}
+    \includegraphics[width=0.7\textwidth]{Figures/fsisi_uncertainty.png}
 \caption{Tagging efficiency fractional uncertainty caused by the variation in the FSI/SI model parameters for the FHC mode.}
 \label{fig:fsisiuncertainty}
 \end{figure}
@@ -284,7 +255,7 @@ A nominal GENIE Monte Carlo sample is generated (different from the previously u
 The tagging efficiency fractional uncertainties are displayed in Figure \ref{fig:nucleonfsiuncertainty}, showing which parameter from Table \ref{nucleonfsiuncertainties} each uncertainty has arisen from.
 
 \begin{figure}
-    \includegraphics[scale=0.4]{Figures/nucleonfsi_uncertainty.png}
+    \includegraphics[width=0.7\textwidth]{Figures/nucleonfsi_uncertainty.png}
 \caption{Tagging efficiency fractional uncertainties caused by the nucleon final state interaction model parameter variation for the FHC mode}
 \label{fig:nucleonfsiuncertainty}
 \end{figure}
@@ -328,21 +299,62 @@ Uncertainties in how Nucleon SI interactions are modelled can affect the tagging
 
 \subsection{MICAP uncertainty calculation}
 
-A library of cross-section data called ENDF (Evaluated Nuclear Data Files) are used by MICAP to determine what processes the neutrons go through in the detector medium, and their respective cross sections. There are two versions of libraries which are used in evaluating the uncertainty in the tagging efficiency, version B release V (released in 1978) and version B release VIII, released in 2018. There is very little difference between the total neutron on hydrogen cross sections between the two versions of the code, however, in the energy range of 0.1 MeV to 20 MeV, there are differences of up to 40\% in the cross-sections of neutron on oxygen cross sections. Both an elastic and inelastic part comprise the total cross-section of a nucleus, and these can effect the way neutrons travel in the simulated detector medium and also the way secondary particles from these interactions are distributed. The way these inelastic processes are simulated depend on the nuclei involved: hydrogen nuclei capture the neutrons in the range ($10^{-11}$, $10^{-7}$) MeV, while neutron captures on oxygen mainly happen n the 4 MeV to 20 MeV energy region.  To calculate the way uncertainties arise from the way MICAP simulates neutron captures, the ENDF-V library is replaced by ENDF-VIII, and the tagging efficiency using this library ($T_{VIII}$) is evaluated from regenerated MC. Equation \ref{eq:MICAP_uncertainty} shows the fractional uncertainty $\delta_{MICAP}$ regarding MICAP.  
+A library of cross-section data called ENDF (Evaluated Nuclear Data Files) are used by MICAP to determine what processes the neutrons go through in the detector medium, and their respective cross sections. There are two versions of libraries which are used in evaluating the uncertainty in the tagging efficiency, version B release V (released in 1978) and version B release VIII, released in 2018. There is very little difference between the total neutron on hydrogen cross sections between the two versions of the code, however, in the energy range of 0.1 MeV to 20 MeV, there are differences of up to 40\% in the cross-sections of neutron on oxygen, as shown in Figures \ref{fig:neutron_cross_section_H} and \ref{fig:neutron_cross_section_O}. Both an elastic and inelastic part comprise the total cross-section of a nucleus, and these can effect the way neutrons travel in the simulated detector medium and also the way secondary particles from these interactions are distributed. The way these inelastic processes are simulated depend on the nuclei involved: hydrogen nuclei capture the neutrons in the range ($10^{-11}$, $10^{-7}$) MeV, while neutron captures on oxygen mainly happen n the 4 MeV to 20 MeV energy region.  To calculate the way uncertainties arise from the way MICAP simulates neutron captures, the ENDF-V library is replaced by ENDF-VIII, and the tagging efficiency using this library ($T_{VIII}$) is evaluated from regenerated MC. Equation \ref{eq:MICAP_uncertainty} shows the fractional uncertainty $\delta_{MICAP}$ regarding MICAP.  
 
 \begin{equation}
     \delta_{m c p}=\frac{T_{V I I I}-T_{n o m}}{T_{n o m}}
-\label{MICAP_uncertainty}
+\label{eq:MICAP_uncertainty}
 \end{equation}
+
+\begin{figure}
+    \includegraphics[width=0.7\textwidth]{Figures/neutron_cross_section_endf_H.PNG}
+\caption{Left:Fraction of inelastic cross-section for hydrogen for both the ENDF-V and ENDF-VIII libraries. Rght: Difference of the fraction of the inelastic cross-section between the two libraries. Taken from \cite{tn415_fiacob}}
+\label{fig:neutron_cross_section_H}
+\end{figure}
+
+\begin{figure}
+    \includegraphics[width=0.7\textwidth]{Figures/neutron_cross_section_endf_O.PNG}
+\caption{Left:Fraction of inelastic cross-section for $\ch{^{16}O}$ for both the ENDF-V and ENDF-VIII libraries. Rght: Difference of the fraction of the inelastic cross-section between the two libraries. Taken from \cite{tn415_fiacob}}
+\label{fig:neutron_cross_section_O}
+\end{figure}
+
+A difference in the inelastic component can change the neutron travel distance, so looking at how changing the Nucleon SI changes the distance between the prompt vertex and the neutron capture vertex is important: this is shown in Figure \ref{fig:ENDF8_syst_error}.
+
+\begin{figure}
+    \includegraphics[width=0.7\textwidth]{Figures/endf8_tageff_plot.PNG}
+\caption{Tagging efficiency dependence of the true distance between the neutrino and neutron capture vertices between the ENDF V library (used in the nominal MC, shown in cyan) and the ENDF/B VIII library shown in red.}
+\label{fig:ENDF8_syst_error}
+\end{figure}
 
 \subsection{HETC uncertainty calculation}
 
-Due to there being no experimental data for cross-section calculations on nucleon-oxygen scattering in the energy range at which T2K functions, experimental data of proton-carbon scattering is used to assign error on the cross sections. In the proton-carbon scattering analysis, NEUT was used to evaluate the theoretical cross sections of carbon, and this uses cross sections calculated using the Bertini model, which is also used in HETC. The comparison of these calculated cross sections to other theoretical calculations as well as to data, showed that the total cross sections calculated by Bertini need to varied by $\pm$ 30\% in order to be consistent with them. As a result of this, the Monte Carlo is regenerated twice where the free nucleon-nucleon cross sections are scaled by $\pm$ 30\%. Equation \ref{HETC_uncertainty} shows the fractional uncertainty $\delta_{HETC}(\pm)$, related to the corresponding tagging efficiencies ($T_{HETC}(\pm)$. 
+Due to there being no experimental data for cross-section calculations on nucleon-oxygen scattering in the energy range at which T2K functions, experimental data of proton-carbon scattering is used to assign error on the cross sections. In the proton-carbon scattering analysis, NEUT was used to evaluate the theoretical cross sections of carbon, and this uses cross sections calculated using the Bertini model, which is also used in HETC. The comparison of these calculated cross sections to other theoretical calculations as well as to data, showed that the total cross sections calculated by Bertini need to varied by $\pm$ 30\% in order to be consistent with them. As a result of this, the Monte Carlo is regenerated twice where the free nucleon-nucleon cross sections are scaled by $\pm$ 30\%. Figure \ref{fig:pp_nn_xsec} shows the proton-proton(neutron-neutron) and proton-neutron cross-sections with the shaded area around the line representing the values when the cross sections are scaled by $\pm$ 30\%. Equation \ref{eq:HETC_uncertainty} shows the fractional uncertainty $\delta_{HETC}(\pm)$, related to the corresponding tagging efficiencies ($T_{HETC}(\pm))$. 
+
+
+\begin{figure}
+    \includegraphics[width=0.7\textwidth]{Figures/pp_nn_xsec.PNG}
+\caption{Left: proton-proton (neutron-neutron) cross sections, where the shaded area covers the values which are scaled by $\pm$ 30\%. Right: proton-neutron cross sections, where the shaded area covers the values which are scaled by $\pm$ 30\%. Taken from \cite{tn415_fiacob}.}
+\label{fig:pp_nn_xsec}
+\end{figure}
+
+
 
 \begin{equation}
     \delta_{HETC }(\pm)=\frac{T_{HETC}(\pm)-T_{nom }}{T_{nom }}
-\label{HETC_uncertainty}
+\label{eq:HETC_uncertainty}
 \end{equation}
+
+Figure \ref{fig:HETC_taggeff_syst} shows the dpendence of tagging efficiency on the distance between the prompt vertex and neutron capture vertex for the nominal MC and the scaled cross section by $\pm$ 30\%. 
+
+
+
+\begin{figure}
+    \includegraphics[width=0.7\textwidth]{Figures/hetc_han_syst.PNG}
+\caption{Tagging efficiency dependence of the true distance between the prompt vertex and the neutron capture vertex for the nominal MC (cyan) and the $\pm$ 30\% cross section cases.}
+\label{fig:HETC_taggeff_syst}
+\end{figure}
+
+
 
 \section{Uncertainty due to PMT gain simulation}
 
