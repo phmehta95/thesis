@@ -68,7 +68,7 @@ Equation \ref{eq:total_ambe_deviation} gives a total Am/Be neutron tagging devia
 \section{Neutrino beam flux uncertainty}
 
 The uncertainty on neutrino beam fluxes can be evaluated by looking at the dependence of the tagging efficiency on the flux variations. The beam fluxes for the four flavour modes 
-$\left(\nu_{e} \overline{\nu_{e}} \nu_{\mu} \overline{\nu_{\mu}}\right)$ have the fractional uncertainties given for each mode, FHC and RHC. The binned uncertainties are shown in Figure \ref{fig:frac_beam_flux_uncertainty}.
+$\left(\nu_{e}, \overline{\nu_{e}}, \nu_{\mu}, \overline{\nu_{\mu}}\right)$ have the fractional uncertainties given for each mode, FHC and RHC. The binned uncertainties are shown in Figure \ref{fig:frac_beam_flux_uncertainty}.
 
 
 Each individual bin for the flux is increased/decreased by its error, the Monte Carlo re-weighting method is then used to extract the taggging efficiency for each flux bin, and Equation \ref{eq:nubeamfluxerror} is used to calculate the fractional uncertainty.
@@ -83,7 +83,7 @@ Each individual bin for the flux is increased/decreased by its error, the Monte 
 Figure \ref{fig:fluxuncertainty} shows the fractional errors calculated from the reweighted Monte Carlo, with the red bars showing the -1$\sigma$ variation and the blue bars showing the +1$\sigma$ variation. Table \ref{table:systuncertaintytable} contains the value for the total uncertainty resulting from the neutrino beam flux, which was calculated using Equation \ref{eq:summingfluxuncertainty}, where the maximum value between the increased and decreased discrepancy is taken and summed over to produce the final neutrino flux beam uncertainty.
 \newline
 
-\begin{figure}
+\begin{figure}[!htb]
     \includegraphics[width=\textwidth]{Figures/frac_beam_flux_uncertainty.png}
     \caption{Fractional uncertainties of beam fluxes, taken from \cite{tn415_fiacob}. }
     \label{fig:frac_beam_flux_uncertainty}
@@ -95,9 +95,9 @@ Figure \ref{fig:fluxuncertainty} shows the fractional errors calculated from the
  \label{eq:summingfluxuncertainty}   
 \end{equation}
 
-\begin{figure}
+\begin{figure}[!htb]
     \centering
-\includegraphics[width=0.8\textwidth]{Figures/flux_uncertainty.png}
+\includegraphics[width=\textwidth]{Figures/flux_uncertainty.png}
 \caption{Tagging efficiency fractional uncertainties caused by neutrino beam flux discrepancies. From left to right the sections in this plot are comprised of the beam fluxes elements of $\left(\nu_{e} \overline{\nu_{e}} \nu_{\mu} \overline{\nu_{\mu}}\right)$ respectively.}
 \label{fig:fluxuncertainty}
 \end{figure}
@@ -143,9 +143,9 @@ Figure \ref{fig:xsecuncertainty} shows the reweighted Monte Carlo fractional unc
 \end{table}
 
 
-\begin{figure}
+\begin{figure}[!htb]
 \centering
-\includegraphics[width=0.7\textwidth]{Figures/xsec_uncertainty.png}
+\includegraphics[width=0.8\textwidth]{Figures/xsec_uncertainty.png}
 \caption{Tagging efficiency uncertainty caused by the cross-section parameters variations for the FHC mode}
 \label{fig:xsecuncertainty}
 \end{figure}
@@ -163,7 +163,7 @@ Depending on the momentum of the pions, different interaction types occur in the
 Absorption occurs when the incident pion is absorbed by the nucleus and no pions remain in the final state. Quasi-elastic (QE) scattering occurs when there is only one pion observed in the final state and it has the same charge as the incident beam. Charge exchange occurs when the charged pion interacts wtht he nucleus and a single $\pi_{0}$ can be seen in the final state.
 
 
-For pions with a momentum of greater than 500 MeV, a different set of interactions are used. Inelastic interactions (INEL) can now produce hadrons and replace absorption processes, but quasi-elastic scattering (QEH) and charge exchange (CXH) will still occur. The final state interaction parameters and the pion momentum range they are used in can be seen in Table \ref{fsiparameters}. Each parameter scales the relevant very small proabability of the charged pion interaction at every stage of the intra-nuclear cascade, aside from the parameter for charge exchange which scales only the fraction of low momentum QE scattering. 
+For pions with a momentum of greater than 500 MeV, a different set of interactions are used. Inelastic interactions (INEL) can now produce hadrons and replace absorption processes, but quasi-elastic scattering (QEH) and charge exchange (CXH) will still occur. The final state interaction parameters and the pion momentum range they are used in can be seen in Table \ref{table:fsiparameters}. Each parameter scales the relevant very small proabability of the charged pion interaction at every stage of the intra-nuclear cascade, aside from the parameter for charge exchange which scales only the fraction of low momentum QE scattering. 
 
 
 \begin{table}
@@ -191,9 +191,17 @@ A set of paramater variations which determine a surface in paramater space have 
 \label{eq:fsisitageff}
 \end{equation}
 
-\begin{figure}
+The pion FSI/SI uncertainty is then calculated using Equation \ref{eq:std_dev_fsisi}, which calculated the standard deviation of the fractional uncertainties for each model.
+
+\begin{equation}
+\delta_{\pi f s i / s i}=\sqrt{\frac{\sum_i\left(\delta_i-\bar{\delta}\right)^2}{15}} \quad \bar{\delta}=\frac{1}{16} \sum_i \delta_i
+\label{eq:std_dev_fsisi}
+\end{equation}
+
+
+\begin{figure}[!htb]
 \centering 
-    \includegraphics[width=0.7\textwidth]{Figures/fsisi_uncertainty.png}
+    \includegraphics[width=0.8\textwidth]{Figures/fsisi_uncertainty.png}
 \caption{Tagging efficiency fractional uncertainty caused by the variation in the FSI/SI model parameters for the FHC mode.}
 \label{fig:fsisiuncertainty}
 \end{figure}
@@ -232,7 +240,7 @@ A set of paramater variations which determine a surface in paramater space have 
 
 \section{Nucleon final state interactions}
 
-Uncertainties regarding the nucleon final state interactions can change the number of nucleons knocked out of $\ch{^{16}O}$, therefore how the tagging efficiency is changed due to the variation in nucleon final state interactions needs to be investigated. This uncertainty is extracted using GENIE, a Monte Carlo event generator which contains the INTRANUKE (hA) intranuclear transport model. The uncertainties in the in the total scattering probability for hadrons inside the target nuclei ($x_{m f p}^{N}$) and the uncertainties in the likelihood of each hadron rescattering method: (elastic ($x_{e l}^{N}$), inelastic ($x_{i n e l}^{N}$), charge exchange ($x_{c e x}^{N}$), pion production ($x_{\pi}^{N}$) and absorption ($x_{a b s}^{N}$)) are taken into account. The fractional uncertainties for these modes for pions is shown in Table \ref{nucleonfsiuncertainties}. 
+Uncertainties regarding the nucleon final state interactions can change the number of nucleons knocked out of $\ch{^{16}O}$, therefore how the tagging efficiency is changed due to the variation in nucleon final state interactions needs to be investigated. This uncertainty is extracted using GENIE, a Monte Carlo event generator which contains the INTRANUKE (hA) intranuclear transport model. The uncertainties in the in the total scattering probability for hadrons inside the target nuclei ($x_{m f p}^{N}$) and the uncertainties in the likelihood of each hadron rescattering method: elastic ($x_{e l}^{N}$), inelastic ($x_{i n e l}^{N}$), charge exchange ($x_{c e x}^{N}$), pion production ($x_{\pi}^{N}$) and absorption ($x_{a b s}^{N}$) are taken into account. The fractional uncertainties for these modes for pions is shown in Table \ref{table:nucleonfsiuncertainties}. 
 
 \begin{table}
 $$
@@ -247,19 +255,27 @@ x_{\pi}^{N} & \text { Nucleon } \pi \text {-production probability } & \pm 20 \%
 \end{array}
 $$
 \caption{Nucleon final state interaction parameters of the hA model executed inside GENIE.} 
-\label{nucleonfsiuncertainties}
+\label{table:nucleonfsiuncertainties}
 \end{table}
 
-A nominal GENIE Monte Carlo sample is generated (different from the previously used NEUT Monte Carlo) and this shifted using the re-weighting method to a varied GENIE Monte Carlo by individually increasing and decreasing the parameters in Table \ref{nucleonfsiuncertainties} by its error. For each shifted Monte Carlo produced, the fractional uncertainty can be written as in Equation \ref{nucleonfsitageff}.
+A nominal GENIE Monte Carlo sample is generated (different from the previously used NEUT Monte Carlo) and this shifted using the re-weighting method to a varied GENIE Monte Carlo by individually increasing and decreasing the parameters in Table \ref{table:nucleonfsiuncertainties} by its error. For each shifted Monte Carlo produced, the fractional uncertainty can be written as in Equation \ref{eq:nucleonfsitageff}.
 
 \begin{equation}
 \delta_{i}(\pm \sigma)=\frac{T_{i}(\pm \sigma)-T_{\text {nom }}}{T_{\text {nom }}} \quad i \in\{\text { parameters }\}
-\label{nucleonfsitageff}
+\label{eq:nucleonfsitageff}
 \end{equation}
 
-The tagging efficiency fractional uncertainties are displayed in Figure \ref{fig:nucleonfsiuncertainty}, showing which parameter from Table \ref{nucleonfsiuncertainties} each uncertainty has arisen from.
+The tagging efficiency fractional uncertainties are displayed in Figure \ref{fig:nucleonfsiuncertainty}, showing which parameter from Table \ref{table:nucleonfsiuncertainties} each uncertainty has arisen from.
 
-\begin{figure}
+Because the parameters in Table \ref{table:nucleonfsiuncertainties} are independent, the total uncertainty on the nucleon FSI is calculated by summing the fractional uncertainties on the parameters in quadrature, and the maximum difference betwwen each $\pm \sigma$ pair, as shown in Equation \ref{eq:totalnucleonfsi}.
+
+\begin{equation}
+    \delta_{\text{Nucleon FSI}}=\sqrt{\sum_i \max \left[\delta_i^2(+\sigma), \delta_i^2(-\sigma)\right]}
+\label{eq:totalnucleonfsi}
+\end{equation}
+
+\begin{figure}[!htb]
+\centering 
     \includegraphics[width=0.7\textwidth]{Figures/nucleonfsi_uncertainty.png}
 \caption{Tagging efficiency fractional uncertainties caused by the nucleon final state interaction model parameter variation for the FHC mode}
 \label{fig:nucleonfsiuncertainty}
@@ -292,7 +308,7 @@ Because any change in the model can alter the energy spectra of the neutrons, th
 
 Figure \ref{fig:mupicap_uncertainty} shows the fractional uncertainties caused by muon and pion capture on oxygen for each model.
 
-\begin{figure}
+\begin{figure}[!htb]
 \centering
     \includegraphics[width=0.7\textwidth]{Figures/mupicap_uncertainty.png}
 \caption{Fractional uncertainties in the tagging efficiency caused by muon and pion capture on the muon capture CHIPS model, pion capture CHIPS model and the pion capture Bertini model.}
@@ -304,29 +320,31 @@ Uncertainties in how Nucleon SI interactions are modelled can affect the tagging
 
 \subsection{MICAP uncertainty calculation}
 
-A library of cross-section data called ENDF (Evaluated Nuclear Data Files) are used by MICAP to determine what processes the neutrons go through in the detector medium, and their respective cross sections. There are two versions of libraries which are used in evaluating the uncertainty in the tagging efficiency, version B release V (released in 1978) and version B release VIII, released in 2018. There is very little difference between the total neutron on hydrogen cross sections between the two versions of the code, however, in the energy range of 0.1 MeV to 20 MeV, there are differences of up to 40\% in the cross-sections of neutron on oxygen, as shown in Figures \ref{fig:neutron_cross_section_H} and \ref{fig:neutron_cross_section_O}. Both an elastic and inelastic part comprise the total cross-section of a nucleus, and these can effect the way neutrons travel in the simulated detector medium and also the way secondary particles from these interactions are distributed. The way these inelastic processes are simulated depend on the nuclei involved: hydrogen nuclei capture the neutrons in the range ($10^{-11}$, $10^{-7}$) MeV, while neutron captures on oxygen mainly happen n the 4 MeV to 20 MeV energy region.  To calculate the way uncertainties arise from the way MICAP simulates neutron captures, the ENDF-V library is replaced by ENDF-VIII, and the tagging efficiency using this library ($T_{VIII}$) is evaluated from regenerated MC. Equation \ref{eq:MICAP_uncertainty} shows the fractional uncertainty $\delta_{MICAP}$ regarding MICAP.  
+A library of cross-section data called ENDF (Evaluated Nuclear Data Files) are used by MICAP to determine what processes the neutrons go through in the detector medium, and their respective cross sections. There are two versions of libraries which are used in evaluating the uncertainty in the tagging efficiency, version B release V (released in 1978) and version B release VIII, released in 2018. There is very little difference between the total neutron on hydrogen cross sections between the two versions of the code, however, in the energy range of 0.1 MeV to 20 MeV, there are differences of up to 40\% in the cross-sections of neutron on oxygen, as shown in Figures \ref{fig:neutron_cross_section_H} and \ref{fig:neutron_cross_section_O}. Both an elastic and inelastic part comprise the total cross-section of a nucleus, and these can effect the way neutrons travel in the simulated detector medium and also the way secondary particles from these interactions are distributed. The way these inelastic processes are simulated depend on the nuclei involved: hydrogen nuclei capture the neutrons in the range ($10^{-11}$, $10^{-7}$) MeV, while neutron captures on oxygen mainly happen on the 4 MeV to 20 MeV energy region.  To calculate the way uncertainties arise from the way MICAP simulates neutron captures, the ENDF-V library is replaced by ENDF-VIII, and the tagging efficiency using this library ($T_{VIII}$) is evaluated from regenerated MC. Equation \ref{eq:MICAP_uncertainty} shows the fractional uncertainty $\delta_{MICAP}$ regarding MICAP.  
 
 \begin{equation}
     \delta_{m c p}=\frac{T_{V I I I}-T_{n o m}}{T_{n o m}}
 \label{eq:MICAP_uncertainty}
 \end{equation}
 
-\begin{figure}
+\begin{figure}[!htb]
     \centering
-    \includegraphics[width=0.8\textwidth]{Figures/neutron_cross_section_endf_H.PNG}
-\caption{Left:Fraction of inelastic cross-section for hydrogen for both the ENDF-V and ENDF-VIII libraries. Rght: Difference of the fraction of the inelastic cross-section between the two libraries. Taken from \cite{tn415_fiacob}}
+    \includegraphics[width=\textwidth]{Figures/neutron_cross_section_endf_H.PNG}
+\caption{Left:Fraction of inelastic cross-section for hydrogen for both the ENDF-V and ENDF-VIII libraries. Rght: Difference of the fraction of the inelastic cross-section between the two libraries. Taken from \cite{tn415_fiacob}.}
 \label{fig:neutron_cross_section_H}
 \end{figure}
 
-\begin{figure}
-    \includegraphics[width=0.8\textwidth]{Figures/neutron_cross_section_endf_O.PNG}
-\caption{Left:Fraction of inelastic cross-section for $\ch{^{16}O}$ for both the ENDF-V and ENDF-VIII libraries. Rght: Difference of the fraction of the inelastic cross-section between the two libraries. Taken from \cite{tn415_fiacob}}
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=\textwidth]{Figures/neutron_cross_section_endf_O.PNG}
+\caption{Left:Fraction of inelastic cross-section for $\ch{^{16}O}$ for both the ENDF-V and ENDF-VIII libraries. Rght: Difference of the fraction of the inelastic cross-section between the two libraries. Taken from \cite{tn415_fiacob}.}
 \label{fig:neutron_cross_section_O}
 \end{figure}
 
 A difference in the inelastic component can change the neutron travel distance, so looking at how changing the Nucleon SI changes the distance between the prompt vertex and the neutron capture vertex is important: this is shown in Figure \ref{fig:ENDF8_syst_error}.
 
-\begin{figure}
+\begin{figure}[!htb]
+\centering
     \includegraphics[width=0.7\textwidth]{Figures/endf8_tageff_plot.PNG}
 \caption{Tagging efficiency dependence of the true distance between the neutrino and neutron capture vertices between the ENDF V library (used in the nominal MC, shown in cyan) and the ENDF/B VIII library shown in red.}
 \label{fig:ENDF8_syst_error}
@@ -337,8 +355,9 @@ A difference in the inelastic component can change the neutron travel distance, 
 Due to there being no experimental data for cross-section calculations on nucleon-oxygen scattering in the energy range at which T2K functions, experimental data of proton-carbon scattering is used to assign error on the cross sections. In the proton-carbon scattering analysis, NEUT was used to evaluate the theoretical cross sections of carbon, and this uses cross sections calculated using the Bertini model, which is also used in HETC. The comparison of these calculated cross sections to other theoretical calculations as well as to data, showed that the total cross sections calculated by Bertini need to varied by $\pm$ 30\% in order to be consistent with them. As a result of this, the Monte Carlo is regenerated twice where the free nucleon-nucleon cross sections are scaled by $\pm$ 30\%. Figure \ref{fig:pp_nn_xsec} shows the proton-proton(neutron-neutron) and proton-neutron cross-sections with the shaded area around the line representing the values when the cross sections are scaled by $\pm$ 30\%. Equation \ref{eq:HETC_uncertainty} shows the fractional uncertainty $\delta_{HETC}(\pm)$, related to the corresponding tagging efficiencies ($T_{HETC}(\pm))$. 
 
 
-\begin{figure}
-    \includegraphics[width=0.7\textwidth]{Figures/pp_nn_xsec.PNG}
+\begin{figure}[!htb]
+\centering
+    \includegraphics[width=\textwidth]{Figures/pp_nn_xsec.PNG}
 \caption{Left: proton-proton (neutron-neutron) cross sections, where the shaded area covers the values which are scaled by $\pm$ 30\%. Right: proton-neutron cross sections, where the shaded area covers the values which are scaled by $\pm$ 30\%. Taken from \cite{tn415_fiacob}.}
 \label{fig:pp_nn_xsec}
 \end{figure}
@@ -354,7 +373,8 @@ Figure \ref{fig:HETC_taggeff_syst} shows the dpendence of tagging efficiency on 
 
 
 
-\begin{figure}
+\begin{figure}[!htb]
+\centering
     \includegraphics[width=0.7\textwidth]{Figures/hetc_han_syst.PNG}
 \caption{Tagging efficiency dependence of the true distance between the prompt vertex and the neutron capture vertex for the nominal MC (cyan) and the $\pm$ 30\% cross section cases.}
 \label{fig:HETC_taggeff_syst}
