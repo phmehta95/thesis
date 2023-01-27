@@ -46,14 +46,14 @@ As mentioned previously, the Americium/Beryllium (Am/Be) source produces a promp
 In Chapter 6, the tagging efficiency of the Am/Be neutron source was calculated for the source in three different positions, and are shown in Table \ref{table:ambe_tau_chi2}. As mentioned previously, the systematic uncertainties in this Chapter are evaluated by calculating the difference between the nominal tagging efficiency and the tagging efficiency arising from a different process, either a different type of simulation, a different model, or in the case of this uncertainty, a difference in the source of neutrons for neutron capture. Equation \ref{eq:ambe_efficiency_systematic} shows how this systematic is quantified, $\delta_{Detector}$ is the fractional discrepancy arising from variation in tagging efficiency, where $T_{AmBe}$ is the neutron tagging efficiency from the Am/Be data, and $T_{nom}$ is the nominal tagging efficiency of the NCQE MC. 
 
 \begin{equation}
-\delta^{i}_{Detector}=\frac{T_^{i}_{AmBe}}-T_{n o m}{T_{n o m}}
+\delta_{Detector}^{i}=\frac{T_{AmBe}^{i}}-T_{n o m}{T_{n o m}}
 \label{eq:ambe_efficiency_systematic}
 \end{equation}
 
 However, due to Table \ref{table:ambe_tau_chi2} showing three neutron capture uncertainties for the Am/Be data dependent on position, it makes sense to calculate the deviation of each of these from the norminal, using Equation \ref{eq:ambe_efficiency_systematic} where $i$ denotes the position of the Am/Be source. Equation \ref{eq:total_ambe_deviation} gives the total deviation of the Am/Be tagging efficiency from the nominal, i.e. the total detector response systematic.
 
 \begin{equation}
-    \delta_{Detector}= T_^{Centre}_{AmBe} + T_^{+12z}_{AmBe} + T_^{-12x}_{AmBe} 
+    \delta_{Detector}^{i}= T_{AmBe}^{Centre} + T_{AmBe}^{+12z} + T_{AmBe}^{-12z} 
 \label{eq:total_ambe_deviation}
 \end{equation}
 
