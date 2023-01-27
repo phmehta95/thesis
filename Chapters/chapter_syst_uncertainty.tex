@@ -46,23 +46,18 @@ As mentioned previously, the Americium/Beryllium (Am/Be) source produces a promp
 In Chapter 6, the tagging efficiency of the Am/Be neutron source was calculated for the source in three different positions, and are shown in Table \ref{table:ambe_tau_chi2}. As mentioned previously, the systematic uncertainties in this Chapter are evaluated by calculating the difference between the nominal tagging efficiency and the tagging efficiency arising from a different process, either a different type of simulation, a different model, or in the case of this uncertainty, a difference in the source of neutrons for neutron capture. Equation \ref{eq:ambe_efficiency_systematic} shows how this systematic is quantified, $\delta_{Detector}$ is the fractional discrepancy arising from variation in tagging efficiency, where $T_{AmBe}$ is the neutron tagging efficiency from the Am/Be data, and $T_{nom}$ is the nominal tagging efficiency of the NCQE MC. 
 
 \begin{equation}
-\delta_{Detector}=\frac{T_{AmBe}-T_{n o m}}{T_{n o m}}
+\delta^{i}_{Detector}=\frac{T_^{i}_{AmBe}}-T_{n o m}{T_{n o m}}
 \label{eq:ambe_efficiency_systematic}
 \end{equation}
 
-However, due to Table \ref{table:ambe_tau_chi2} showing three neutron capture uncertainties for the Am/Be data dependent on position, it makes sense to calculate the deviation of each of these from the norminal, and then calculate the total fractional uncertainty. Equation \ref{eq:total_ambe_deviation} shows the calculation for the total Am/Be uncertainty.
+However, due to Table \ref{table:ambe_tau_chi2} showing three neutron capture uncertainties for the Am/Be data dependent on position, it makes sense to calculate the deviation of each of these from the norminal, using Equation \ref{eq:ambe_efficiency_systematic} where $i$ denotes the position of the Am/Be source. Equation \ref{eq:total_ambe_deviation} gives the total deviation of the Am/Be tagging efficiency from the nominal, i.e. the total detector response systematic.
 
 \begin{equation}
-    (T_{AmBe}-T_{n o m})_{total} = \sqrt{(T_{Centre} - T_{nom})^{2} + (T_{+12} - T_{nom})^{2} +(T_{-12} - T_{nom})^{2}}
+    \delta_{Detector}= T_^{Centre}_{AmBe} + T_^{+12z}_{AmBe} + T_^{-12x}_{AmBe} 
 \label{eq:total_ambe_deviation}
 \end{equation}
 
-Equation \ref{eq:total_ambe_deviation} gives a total Am/Be neutron tagging deviation from the nominal of $\pm 1.07$\%, and when this is used with Equation \ref{eq:ambe_efficiency_systematic}, this results in a fractional discrepancy of $\pm 0.03$ for the gamma production from the neutron capture detector response.
-
-
-
-
-
+Equation \ref{eq:total_ambe_deviation} gives a total Am/Be neutron tagging deviation from the nominal of $\pm$ 4.47\% shown in Table \ref{table:systuncertaintytable}. 
 
 
 \section{Neutrino beam flux uncertainty}
@@ -517,16 +512,15 @@ The fractional tagging uncertainties are shown in Figure \ref{fig:nu_detector_re
     \hline \text { Systematic error} & \text{Value} \\
     \hline
     \text { MC statistics } & \pm 0.56 \\  
-    \text { PMT gain simulation } & { }_{-0.00}^{+1.56} \\ 
-    \nu \text { cross section } & \pm 0.34 \\ 
-    \nu \text { beam flux } & \pm 1.00 \\ 
-    \pi \text { FSI/SI } & \pm 0.42  \\ 
-    \text { Nucleon FSI } & \pm 0.90  \\ 
-    \text { Nucleon SI } & { }_{-8.58}^{+2.49} \\ 
-    \mu \text { capture on }{ }^{16} \mathrm{O} & { }_{-0.11}\\ 
-    \pi \text { capture on }{ }^{16} \mathrm{O} & { }_{-3.47}^{+0.00} \\ 
-    \text { Oscillation } & \pm 0.015  \\ 
-    \text { Det. resp. for } \nu & \pm 1.16 \\ 
+    \text { PMT gain simulation } & \pm 3.00 \\ 
+    \nu \text { cross section } & \pm 0.003 \\ 
+    \nu \text { beam flux } & \pm 0.006 \\ 
+    \pi \text { FSI/SI } & \pm 0.001  \\ 
+    \text { Nucleon FSI } & \pm 0.002  \\ 
+    \text { Nucleon SI } & { }_{-5.40}^{+5.40} \\ 
+    \mu \text { capture on }{ }^{16} \mathrm{O} & \pm 0.01\\ 
+    \pi \text { capture on }{ }^{16} \mathrm{O} & \pm 0.33\\  
+    \text { Det. resp. for gamma cascade }& \pm 1.16 \\ 
     \end{array}$
 \caption{Final systematic uncertainties for the tagging efficiency} 
 \label{table:systuncertaintytable}
