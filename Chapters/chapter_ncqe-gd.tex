@@ -48,7 +48,33 @@ $$
 \end{figure}
  
  
- The oscillation effect on the neutrino flux needs to be considered after choosing which flux to use, and although the neutrino-oxygen NCQE cross section does not depend on flavour (and therefore neutrino oscillation affects would have no impact on a fully pure NCQE sample) there is a small fraction of charged current events which seep into the NCQE sample, and oscillation weights need to be applied to the charged current events in the sample. Instead of introducing a  Monte Carlo reweighting takes care of this issue by assuming that they are all muon neutrino or muon anti-neutrino events, due to the fact that the number of electron neutrino events in FHC mode would be negligible.
+ The oscillation effect on the neutrino flux also needs to be considered after choosing which flux to use: the neutrino-oxygen NCQE cross section does not depend on flavour, and therefore neutrino oscillation affects would have no impact on a fully pure NCQE sample. However, there is a small fraction of charged current events which seep into the NCQE sample, and oscillation weights need to be applied to the charged current events in the sample. The entire Monte Carlo is reweighted as if it was fully comprised of muon and muon anti-neutrinos, due to the very small presence of electron neutrinos. Equation \ref{eq:flux_reweighting} shows the event weight applied to charge current events for the 2-flavour (electron neutrino and muon neutrino) scenario.
+
+ \begin{equation}
+ \begin{aligned}
+ \text { weight }\left(E_\nu\right) & =P_{\nu_\mu \rightarrow \nu_\mu}\left(E_\nu\right)+P_{\nu_\mu \rightarrow \nu_e}\left(E_\nu\right) \times \underbrace{\frac{\sigma_{\nu_e C C}\left(E_\nu\right)}{\sigma_{\nu_\mu C C}\left(E_\nu\right)}}_{\approx 1} \\
+ & \approx P_{\nu_\mu \rightarrow \nu_\mu}\left(E_\nu\right)+P_{\nu_\mu \rightarrow \nu_e}\left(E_\nu\right) \\
+ & =1-\cos ^4 \theta_{13} \times \sin ^2 2 \theta_{23} \times \sin ^2\left(1.267 \frac{\Delta m_{32}^2\left[\mathrm{eV}^2\right] \cdot L[\mathrm{~km}]}{E_\nu[\mathrm{GeV}]}\right)
+ \label{eq:flux_reweighting}
+ \end{aligned}
+\end{equation}
+
+where the cross-section ratio term is simplified to 1 due to the kinematic difference between $e^{\pm}$ and $mu^{\pm}$ not being considered. Table \ref{table:osc_param} shows the oscillation parameters used in Equation \ref{table:osc_param} which are estimated with the reactor constraint taken from \cite{tn_osc_param}.
+
+\begin{table}
+\centering
+\begin{tabular}{cc}
+    \hline \text{Osc Parameter} & \text{Value} \\
+    \hline $\sin ^2 \theta_{13}$ & $0.0211 \pm 0.0008$ \\
+    $\sin ^2 \theta_{23}$ & $0.541_{-0.037}^{+0.027}$ \\
+    $\left|\Delta m_{32}^2\right|$ & $2.469_{-0.071}^{+0.073} \times 10^{-3} \mathrm{eV}^2$ \\
+    \hline
+\end{tabular}
+\caption{Oscillation parameters estimated with the reactor constraint.}
+\label{table:osc_param}
+\end{table}
+
+
 
 \subsection{Primary interaction}
 
