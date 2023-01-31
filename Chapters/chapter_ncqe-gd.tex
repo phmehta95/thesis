@@ -167,7 +167,7 @@ Figure \ref{fig:annrigdenergyspectra} shows the energy spectra for different mul
 \end{figure}
 
 One of the key differences between the default Geant4 model for thermal neutron capture on Gadolinium and the ANNRI-Gd model is how it conserves energy: the photon evaporation model conserves only the final sum of energy for the captured event, but performs poorly when modelling the gamma-ray energy on an individual event by event basis. One way the ANNRI-Gd model combats this is by seperately describing the continuous and discrete peaks in Figure \ref{fig:annrigdenergyspectra}, where the discrete peaks are shown as spikes below 1500 keV and above 4500 keV. These come from the different ways in which gadolinium de-excites after thermal neutron capture. The continuous spectrum in the plots in Figure \ref{fig:annrigdenergyspectra} show the de-excitation of ${ }^{158} \mathrm{Gd}^{*}$ in multiple steps, producing multiple low energy gamma rays, which accounts for about 93\% of the spectrum. The discrete spikes in the spectra come from a two-step cascade, which produces a high energy gamma ray instead, accounting for the remaining 7\% of the spectrum.
-Figure \ref{fig:continousdiscrete} shows the continuous and discrete components of the ANNRI-Gd MC, along with data from the experiment. Figure \ref{fig:annrigdmodelcompare} shows ratio plot of data and MC for the GLG4sim model, the default Geant4 photon evaporation model and the ANNRI-Gd model: here it is clear the ANNRI-Gd model fits the data better than the other two models, especially at energies above 3500 keV. The energy from the neutron capture on Gadolinium de-excitation is relased in the form of multiple gamma rays, and liquid scintillator detectors would only have to look for the deposition of the energy from these gamma rays, whereas a water Cherenkov detector such as Super-Kamiokande can only detect part of this deposition due to the Cherenkov threshold energy. As a result, understanding the gamma ray multiplcities and their energies in the range 0.8 MeV to 8 MeV is important in order to predict the efficiency of neutron tagging within Monte Carlo simulation.
+Figure \ref{fig:continousdiscrete} shows the continuous and discrete components of the ANNRI-Gd MC, along with data from the experiment. Figure \ref{fig:annrigdmodelcompare} shows ratio plot of data and MC for the GLG4sim model, the default Geant4 photon evaporation model and the ANNRI-Gd model: here it is clear the ANNRI-Gd model fits the data better than the other two models, especially at energies above 3500 keV. The energy from the neutron capture on Gadolinium de-excitation is released in the form of multiple gamma rays, and liquid scintillator detectors would only have to look for the deposition of the energy from these gamma rays, whereas a water Cherenkov detector such as Super-Kamiokande can only detect part of this deposition due to the Cherenkov threshold energy. As a result, understanding the gamma ray multiplcities and their energies in the range 0.8 MeV to 8 MeV is important in order to predict the efficiency of neutron tagging within Monte Carlo simulation.
 
 
 \begin{figure}
@@ -203,7 +203,14 @@ This vector points towards the direction which is an average over all the Cheren
 \noindent
 \underline{3. Reconstructed energy}\\
 \noindent 
-In line with the standard SK low energy analysis definition, this energy is simply the reconstructed energy with the 0.511 MeV electron mass omitted. The range for $E_{rec}$ in this variable is 3.49 MeV to 29.49 MeV - the estimated kinetic energy under the hypothesis that the event is a singular electron. The upper value for this range is chosen because the background of Michel electrons (electrons from muon decay) from muon neutrino and muon anti-neutrino charged current interactions increase but the NCQE signal decreases above 30 MeV. 
+In line with the standard SK low energy analysis definition, this energy is simply the reconstructed kinetic energy of the electrons. The range for $E_{rec}$ in this variable is 3.49 MeV to 29.49 MeV - the estimated kinetic energy under the hypothesis that the event is a singular electron. The upper value for this range is chosen because the background of Michel electrons from muon neutrino and muon anti-neutrino charged current interactions increase but the NCQE signal decreases above 30 MeV. This is shown in Figure \ref{fig:michel_electron}, where the NC elastic (and therefore NCQE) signal decreases significantly above 30 MeV but the decay-e events and electron neutrino charged current events increase.
+
+\begin{figure}
+\includegraphics[width=\textwidth]{Figures/michel_electron.png}
+\caption{Spectra of NCQE backgrounds where the $\nu_{\mu}$ charged current channel is from decay electron data, whereas the other three are from Monte Carlo. A clear decrease of NC elastic events are shown after 30 MeV. Taken from \cite{michel_electron}. }
+\label{fig:michel_electron}
+\end{figure}
+
 
 \noindent
 \underline{4. Dwall}\\
@@ -225,14 +232,14 @@ The coefficient $ovaQ$ (defined in Equation \ref{eq:ovaq}) describes the quality
     \label{eq:ovaq}
 \end{equation}
 
-$g_{vtx}$ is calculated using a fit of the PMT timing distribution and using the hit times of the PMT it is defined as in Equation\ref{eq:vertex_goodness}.
+$g_{vtx}$ is calculated using a fit of the PMT timing distribution and using the hit times of the PMT it is defined as in Equation \ref{eq:vertex_goodness}.
 
 \begin{equation}
 g_{\mathrm{vtx}}=\frac{\sum_{i} w_{i} \mathrm{e}^{-\frac{1}{2}(\frac{\Delta t_{i}}{\sigma})^{2}}}{\sum_{i} w_{i}} \text { with } w_{i}=-\frac{1}{2}(\frac{\Delta t_{i}}{\omega})^{2}
 \label{eq:vertex_goodness}
 \end{equation}
 
-Here $\sum_{i} w_{i}$ is the weight given to the i-th hit PMT for the reduction of dark noise, where $\omega$ has a value of 60ns. $\sigma$ has a value of 5ns which is used to test the goodness, and as a result, a sharp timing distribution produces a large vertex goodness. $g_{dir}$ is calculated by looking at how spatially uniform the hit PMTs are around the reconstructed neutrino vertex direction. In order to quantify this uniformity, the Kolmogorov-Smirnov (KS) test is used as in Equation \ref{direction_goodness}.
+Here $\sum_{i} w_{i}$ is the weight given to the i-th hit PMT for the reduction of dark noise, where $\omega$ has a value of 60ns. $\sigma$ has a value of 5ns which is used to test the goodness, and as a result, a sharp timing distribution produces a large vertex goodness. $g_{dir}$ is calculated by looking at how spatially uniform the PMT hits are in the azimuthal angle around the reconstructed neutrino vertex direction. The hits are ordered from 0 to 2$\pi$ and compared to a uniform distribution of angles. Equation \ref{direction_goodness} shows how the minimum difference between the uniform distribution and the data is subtracted from the maximum difference and normalized to produce $g_{dir}$ .
 
 \begin{equation}
     \mathrm{g}_{\mathrm{dir}}=\frac{\max _{i}\{\angle_{\mathrm{uni}}(i)-\angle_{\mathrm{data}}(i)\}-\min _{i}\{\angle_{\mathrm{uni}}(i)-\angle_{\mathrm{data}}(i)\}}{2 \pi}
@@ -252,7 +259,7 @@ In order to estimate the Cherenkov opening angle, all the possible combinations 
 \begin{figure}
     \centering
     \includegraphics[width=0.5\textwidth]{Figures/cherenkov_hit_triplet.png}
-    \caption{Schematic of the prompt event vertex and a triplet of independent PMT hits whch make up the Cherenkov angle}
+    \caption{Schematic of the prompt event vertex and a triplet of independent PMT hits whch make up the Cherenkov angle, taken from \cite{malek_thesis}.}
     \label{fig:cherenkov_hit_triplet}
 
 \end{figure}
