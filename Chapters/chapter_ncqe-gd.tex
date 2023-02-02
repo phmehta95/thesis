@@ -203,13 +203,7 @@ This vector points towards the direction which is an average over all the Cheren
 \noindent
 \underline{3. Reconstructed energy}\\
 \noindent 
-In line with the standard SK low energy analysis definition, this energy is simply the reconstructed kinetic energy of the electrons. The range for $E_{rec}$ in this variable is 3.49 MeV to 29.49 MeV - the estimated kinetic energy under the hypothesis that the event is a singular electron. The upper value for this range is chosen because the background of Michel electrons from muon neutrino and muon anti-neutrino charged current interactions increase but the NCQE signal decreases above 30 MeV. This is shown in Figure \ref{fig:michel_electron}, where the NC elastic (and therefore NCQE) signal decreases significantly above 30 MeV but the decay-e events and electron neutrino charged current events increase.
-
-\begin{figure}
-\includegraphics[width=\textwidth]{Figures/michel_electron.png}
-\caption{Spectra of NCQE backgrounds where the $\nu_{\mu}$ charged current channel is from decay electron data, whereas the other three are from Monte Carlo. A clear decrease of NC elastic events are shown after 30 MeV. Taken from \cite{michel_electron}. }
-\label{fig:michel_electron}
-\end{figure}
+In line with the standard SK low energy analysis definition, this energy is simply the reconstructed kinetic energy of the electrons. 
 
 
 \noindent
@@ -415,10 +409,27 @@ Prior to applying the neutron tagging algorithm which searches for neutron candi
 The following cuts are applied to the Monte Carlo, in order to select the NCQE events. These include a visible energy cut, a fiducial volume cut, a low energy background cut, and a cut to exclude charged currrent interaction events (CCQE). 
 
 \subsubsection{Visible energy cut}
-The energy window for this analysis is set to the 3.49-29.49 MeV range, where the lower value of this range (3.49 MeV) is due to the detection threshold of Super-Kamiokande. In order to limit the background of the Michel electron from charged-current interactions involving muon neutrinos and muon anti-neutrinos, the upper energy window limit is set to 29.49 MeV - above this value the Michel electron background would increase, reducing the NCQE contribution. 
+The range for $E_{rec}$ in this variable is 3.49 MeV to 29.49 MeV - the estimated kinetic energy under the hypothesis that the event is a singular electron. The upper value for this range is chosen because the background of Michel electrons from muon neutrino and muon anti-neutrino charged current interactions increase but the NCQE signal decreases above 30 MeV. This is shown in Figure \ref{fig:michel_electron}, where the NC elastic (and therefore NCQE) signal decreases significantly above 30 MeV but the decay-e events and electron neutrino charged current events increase.
 
-\subsubsection{Fiducial Volume (FV) cut}
-Due to radioactive impurities inside the detector material, specifically the wall of the inner detector, there is a cut involving the distance from the detector wall to the prompt interaction vertex. Events where the distance between the prompt interaction vertex and the detector wall is less than 200 cm are removed. There is a similar cut also used where events where the distance between the prompt interaction vertex and the distance to the inner detector wall in the neutrino vertex vector direction is less than 200 cm is removed. This is a standard cut applied in all Super-Kamiokande analyses in order to avoid backgrounds, and when you have events where the energy region is below 6 MeV even more stringent cuts are required to further reduce background from the inner detector wall, described in the next Subsection. 
+\begin{figure}
+\includegraphics[width=\textwidth]{Figures/michel_electron.png}
+\caption{Spectra of NCQE backgrounds where the $\nu_{\mu}$ charged current channel is from decay electron data, whereas the other three are from Monte Carlo. A clear decrease of NC elastic events are shown after 30 MeV. Taken from \cite{michel_electron}. }
+\label{fig:michel_electron}
+\end{figure} 
+
+\subsubsection{Radioactivity background cut}
+
+Due to radioactive impurities inside the detector material, specifically the wall of the inner detector, there is a cut involving the distance from the detector wall to the prompt interaction vertex - this is the fiducial volume (FV) cut. Events where the distance between the prompt interaction vertex and the detector wall is less than 200 cm are removed.
+
+There are two more cuts used and these involve the distance to the inner detector wall. The variable dWall is defined as the distance from the reconstructed event vertex to the nearest inner detector wall inside the FV, and is set to dWall needing to be less than 200 cm.  A similar cut is also used where events where the distance between the prompt interaction vertex and the distance to the inner detector wall in the neutrino vertex vector direction (effWall) is less than 200 cm is removed. Figure \ref{fig:dwall_effwall_fv} shows an illustration of how the variables FV, dWall and effWall are defined. 
+
+\begin{figure}
+    \includegraphics[width=0.7\textwidth]{Figures/dwall_effwall_fv.png}
+    \caption{Schematic defining the fiducial volume (FV) and the dWall and effWall variables.}
+    \label{fig:dwall_effwall_fv}
+\end{figure} 
+                                                                                        
+These are standard cuts applied in all Super-Kamiokande analyses in order to avoid backgrounds, and when you have events where the energy region is below 6 MeV even more stringent cuts are required to further reduce background from the inner detector wall, described in the next Subsection. 
 
 \subsubsection{Low energy background cut}
 
