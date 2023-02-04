@@ -424,7 +424,7 @@ Due to radioactive impurities inside the detector material, specifically the wal
 There are two more cuts used and these involve the distance to the inner detector wall. The variable dWall is defined as the distance from the reconstructed event vertex to the nearest inner detector wall inside the FV, and is set to dWall needing to be less than 200 cm.  A similar cut is also used where events where the distance between the prompt interaction vertex and the distance to the inner detector wall in the neutrino vertex vector direction (effWall) is less than 200 cm is removed. Figure \ref{fig:dwall_effwall_fv} shows an illustration of how the variables FV, dWall and effWall are defined. 
 
 \begin{figure}
-    \includegraphics[width=0.7\textwidth]{Figures/dwall_effwall_fv.png}
+    \includegraphics[width=0.7\textwidth]{Figures/fv_dwall_effwall.png}
     \caption{Schematic defining the fiducial volume (FV) and the dWall and effWall variables.}
     \label{fig:dwall_effwall_fv}
 \end{figure} 
@@ -880,6 +880,8 @@ First, comparison was done between the MC and the Am/Be data from Run 85622, the
 \end{figure}
 
 Table \ref{table:ambe_tau_chi2} shows the value of tau for each of these positions, along with the $\chi^{2}$/ndf value for the exponential fit and the value of the neutron capture efficiency calculated from the Am/Be data at each of these positions. Equation \ref{eq:efficiency_ambe_calculation} shows the method by which the efficiency for the neutron capture on Am/Be data is calculated, where $N$ is the number of neutron captures, $B$ is the fitted constant background value, and NTag TMAX and NTag TMIN are the end and start times of the neutron tagging algorithm.  
+
+
 
 
 
