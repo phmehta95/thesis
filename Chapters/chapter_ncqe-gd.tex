@@ -386,7 +386,7 @@ To ensure that the NCQE event selection and neutron tagging could be carried out
 \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{Figures/angle_recon_compare.PNG}
-    \caption{OvaQ comparison}
+    \caption{Reconstructed Cherenkov angle (degrees)}
     \label{fig:angle_recon_compare}
 
 \end{figure}
@@ -478,7 +478,7 @@ Just like for the low energy background cut values, the values of the optimised 
     \centering
     \subfloat[]{\label{main:c}\includegraphics[scale=.5]{Figures/ovaq_cut.PNG}}
     
-    \caption{Optimised cut values for dwall (top), effwall (bottom left) and ovaQ (bottom right) for Run 8 FHC mode. The red lines are linear fits to the values for these distributions, where events which have values above the lines are used in the analysis.}
+    \caption{Optimised cut values for dwall (top), effwall (bottom left) and ovaQ (bottom right) for Run 8 FHC mode. The red lines are linear fits to the values for these distributions, where events which have values above the lines are used in the analysis. \cite{Abe_2019}.}
     \label{fig:optimised_dwall_effwall_ovaq}
 \end{figure}
     
@@ -574,55 +574,51 @@ In order to classify the neutron captures on hydrogen and gadolinium seperately,
 
 \begin{figure}
     \centering
-     \begin{subfigure}[b]{0.45\linewidth}
+     \begin{subfigure}[b]{0.49\linewidth}
       \includegraphics[width=\linewidth]{Figures/NGamma.PNG}
-      \caption{Number of events (y-axis) plotted against the number of gammas produced from neutron capture}
+      \caption{Number of events plotted against the number of gammas produced from neutron capture}
       \label{fig:NGamma} 
      \end{subfigure}
-     \begin{subfigure}[b]{0.45\linewidth}
+     \begin{subfigure}[b]{0.49\linewidth}
        \includegraphics[width=\linewidth]{Figures/TotGammaE.PNG}
-        \caption{Number of events (y-axis) plotted against total gamma energy} 
+        \caption{Number of events plotted against total gamma energy} 
      \label{fig:TotGammaE}
       \end{subfigure} 
 \end{figure}
 
 Figure \ref{fig:NGamma} shows that both NTag algorithms have the same number of gammas produced by neutron capture on hydrogen (shown by the peak at 2.22 MeV), and the same number of gammas for the gamma cascade produced by neutron capture on the ${ }^{155} \mathrm{Gd}$ and 
-${ }^{157} \mathrm{Gd}$ isotopes of Gadolinium, where the modal number of gammas in the cascade for both NTag code is five. In addition to checking the number and energy of the gammas, and the number and time of true neutron captures, the neutron capture positions for the x,y and z directions were also plotted for Figures \ref{fig:TrueNCapXPos}, \ref{fig:TrueNCapYPos} and \ref{fig:TrueNCapZPos}.
+${ }^{157} \mathrm{Gd}$ isotopes of Gadolinium, where the modal number of gammas in the cascade for both NTag code is five. In addition to checking the number and energy of the gammas, and the number and time of true neutron captures, the neutron capture positions for the x,y and z directions were also plotted as shown in \ref{fig:TrueNCapPos}.
 
-
-\begin{figure*}
+\begin{figure}
+\centering
+    \begin{minipage}{0.5\linewidth}
+    \subfloat[]{\label{main:a}\includegraphics[scale=0.3]{Figures/xTrueCapturePos.png}}
+    \end{minipage}%
+    \begin{minipage}{0.5\linewidth}
     \centering
-     \begin{subfigure}[b]{0.33\linewidth}
-      \includegraphics[width=\linewidth]{Figures/TrueNCapXPos.PNG}
-      \caption{True neutron capture x-position (cm)}
-      \label{fig:TrueNCapXPos} 
-     \end{subfigure}%
-     \hfill
-     \begin{subfigure}[b]{0.33\linewidth}
-       \includegraphics[width=\linewidth]{Figures/TrueNCapYpos.PNG}
-        \caption{True neutron capture y-position (cm)} 
-     \label{fig:TrueNCapYPos}
-      \end{subfigure}% 
-      \hfill
-      \begin{subfigure}[b]{0.33\linewidth}
-      \includegraphics[width=\linewidth]{Figures/TrueNCapZPos.PNG}
-      \caption{True neutron capture z-position (cm)}
-      \label{fig:TrueNCapZPos}
-      \end{subfigure}
-\end{figure*}
+    \subfloat[]{\label{main:b}\includegraphics[scale=0.3]{Figures/yTrueCapturePos.png}}
+    \end{minipage}\par\medskip
+    \centering
+    \subfloat[]{\label{main:c}\includegraphics[width=0.5\linewidth]{Figures/zTrueCapturePos.png}}
+    
+    \caption{True neutron capture x-position (cm) (top left), true neutron capture y-position (cm) (top right) and true neutron capture z-position (cm)(bottom) }
+    \label{fig:TrueNCapPos}
+\end{figure}
 
+
+    
 \subsubsection{Truth information reduction cut plots}
 
 After ensuring that the truth neutron tagging information was the same between the legacy and new NTag versions, the next step was to produce plots with the NCQE reduction cut criteria in order to see the distribution of neutrons for certain variables which satisfy the NCQE criteria. By rewriting aspects of the new NTag code to incorporate the BONSAI variables needed for the NCQE selection, the same reduction cut criteria could be applied to the new NTag code as it was to the new NTag code. Figures \ref{fig:TruCapTimeReductionLegacy} and \ref{fig:TruCapTimeReductionNew} show the number of true neutrons plotted against true neutron capture time for the legacy and new NTag respectively, while Figures \ref{fig:TruCapNuNDistanceReductionLegacy} and \ref{fig:TruCapNuNDistanceReductionNew} show the number of true neutrons plotted against the distance between the true neutron and neutrino capture vertices for the legacy and new NTag respectively.
 
 \begin{figure}
     \centering
-     \begin{subfigure}[b]{0.45\linewidth}
+     \begin{subfigure}[b]{0.49\linewidth}
       \includegraphics[width=\linewidth]{Figures/TrueCapTimeReductionLegacy.PNG}
       \caption{Number of true neutrons detected plotted against true neutron capture time for the legacy NTag}
       \label{fig:TruCapTimeReductionLegacy} 
      \end{subfigure}
-     \begin{subfigure}[b]{0.45\linewidth}
+     \begin{subfigure}[b]{0.49\linewidth}
        \includegraphics[width=\linewidth]{Figures/TrueCapTimeReductionNew.PNG}
         \caption{Number of true neutrons detected plotted against true neutron capture time for the new NTag } 
      \label{fig:TruCapTimeReductionNew}
@@ -631,12 +627,12 @@ After ensuring that the truth neutron tagging information was the same between t
 
 \begin{figure}
     \centering
-     \begin{subfigure}[b]{0.45\linewidth}
+     \begin{subfigure}[b]{0.49\linewidth}
       \includegraphics[width=\linewidth]{Figures/TruCapNuNDistanceReductionLegacy.png}
       \caption{Number of true neutrons detected plotted against the distance between the neutrino and neutron capture vertices for the legacy NTag}
       \label{fig:TruCapNuNDistanceReductionLegacy} 
      \end{subfigure}
-     \begin{subfigure}[b]{0.45\linewidth}
+     \begin{subfigure}[b]{0.49\linewidth}
        \includegraphics[width=\linewidth]{Figures/TruCapNuNDistanceReductionNew.png}
         \caption{Number of true neutrons detected plotted against the distance between the neutrino and neutron capture vertices for the new NTag } 
      \label{fig:TruCapNuNDistanceReductionNew}
@@ -647,12 +643,12 @@ With the level of $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \math
 
 \begin{figure}
     \centering
-     \begin{subfigure}[b]{0.45\linewidth}
+     \begin{subfigure}[b]{0.49\linewidth}
       \includegraphics[width=\linewidth]{Figures/TruCapNuNDistanceReductionNewH.PNG}
       \caption{Number of true neutrons detected plotted against the distance between the neutrino and neutron capture vertices for the new NTag, for captures on hydrogen}
       \label{fig:TruCapNuNDistanceReductionNewH} 
      \end{subfigure}
-     \begin{subfigure}[b]{0.45\linewidth}
+     \begin{subfigure}[b]{0.49\linewidth}
        \includegraphics[width=\linewidth]{Figures/TruCapNuNDistanceReductionNewGd.PNG}
         \caption{Number of true neutrons detected plotted against the distance between the neutrino and neutron capture vertices for the new NTag, for captures on gadolinium} 
         \label{fig:TruCapNuNDistanceReductionNewGd}
@@ -661,12 +657,12 @@ With the level of $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \math
 
 \begin{figure}
     \centering
-     \begin{subfigure}[b]{0.45\linewidth}
+     \begin{subfigure}[b]{0.49\linewidth}
       \includegraphics[width=\linewidth]{Figures/TruCapTimeReductionNewH.PNG}
       \caption{Number of true neutrons detected plotted against true neutron capture time for the new NTag, for captures on hydrogen}
       \label{fig:TruCapTimeReductionNewH} 
      \end{subfigure}
-     \begin{subfigure}[b]{0.45\linewidth}
+     \begin{subfigure}[b]{0.49\linewidth}
        \includegraphics[width=\linewidth]{Figures/TruCapTimeReductionNewGd.PNG}
         \caption{Number of true neutrons detected plotted against true neutron capture time for the new NTag, for captures on gadolinium} 
      \label{fig:TruCapTimeReductionNewGd}
