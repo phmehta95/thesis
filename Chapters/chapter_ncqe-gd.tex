@@ -705,7 +705,7 @@ Before the neutron candidate is passed to the secondary selection, other cuts ar
     \label{table:new_selection_criteria}
 \end{table}
 
-
+Figure \ref{fig:vertex_resolution} shows the distance between the true and reconstructed neutron capture vertices. One of the benefits of the addition of 
 
 \subsection{Secondary selection criteria}
 Due to the contamination of background events still present amongst the true neutron events after primary selection, a neural network (NN) is used to efficiently remove these background events, while trying to maximise the number of true neutron events. The output of the NN is used to indicate how likely a variable is to be signal/background candidate. Each of the candidates selected during the primary selection process has an associated reconstructed Compton scattering vertex calculated for it. In order to produce residual hit times that are less spread out than TOF-corrected hits towards the neutrino vertex, the TOF-corrected hits towards the Compton scattering vertex are used instead. The aim of searching for the Compton scattering vertex is to use a method by which the standard deviation of the residual times of the hits is minimised. Therefore the Compton scattering vertex $n_{VTX}$ is defined as in Equation \ref{eq:ncap_vtx}, where $r$ is a trial vertex and $t_i^{\text {res }}$ is the TOF-corrected hit time.
