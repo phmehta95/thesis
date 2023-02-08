@@ -486,7 +486,23 @@ Just like for the low energy background cut values, the values of the optimised 
 
 \subsection{Prompt event NCQE reduction cut plots}
 
-Before applying the NTag algorithm, either legacy or new, plots were produced of the number of neutrino events and their dependence the reduction cut variables mentioned previously. These are shown in Figures \ref{fig:erec_reduction} to \ref{fig:angle_reduction}. Each figure shows the corresponding plot for the previous NCQE analysis carried out with neutron tagging on Hydrogen on the left, with the plot from this analysis on the right. 
+Before applying the NTag algorithm, either legacy or new, plots were produced of the number of neutrino events and their dependence the reduction cut variables mentioned previously. These are shown in Figures \ref{fig:erec_reduction} to \ref{fig:angle_reduction}. Each figure shows the corresponding plot for the previous NCQE analysis carried out with neutron tagging on Hydrogen on the left, with the plot from this analysis on the right. Due to the FHC sample not purely consisting of neutrino and antineutrino NCQE interactions, Table \ref{table:nu_FHC_mc} gives the expected number of neutrino events for each type of interaction including neutral current and charged current interactions.
+
+\begin{table}
+    $$
+    \begin{array}{ccc}
+    \hline \text { FHC sample } & \text { MC } \# \boldsymbol{\nu}_{\text {det }} & \text { MC } \# \nu_{\text {det }} \text { fraction (\%) } \\
+    \hline \nu-N C Q E & 204.1 & 76.6 \\
+    \bar{\nu}-\text { NCQE } & 5.6 & 2.1 \\
+    N C-\text { other } & 47.8 & 17.9 \\
+    C C & 8.8 & 3.3 \\
+    \hline \text { Total } & 266.3 & 100 \\
+    \hline
+    \end{array}
+    $$
+    \caption{FHC MC expectation values for each interaction type}
+    \label{table:nu_FHC_mc}
+\end{table}
 
 
 \begin{figure}[!htbp]
@@ -554,39 +570,35 @@ As mentioned previously, two neutron tagging algorithms were used in this analys
 
 \subsection{True neutron tagging information}
 
-Prior to defining the primary and secondary selection criteria for each neutron tagging algorithm, it is important to produce some distributions of basic variables regarding the neutron capture that occur in the simulation, such as neutron capture time, position and number. Figure \ref{fig:NTrueCaptures}, \ref{fig:TrueCaptureTime} show the distribution for the number of neutron captures and the true capture time of the neutrons for both the legacy (green) and new (red) NTag code.  
+Prior to defining the primary and secondary selection criteria for each neutron tagging algorithm, it is important to produce some distributions of basic variables regarding the neutron capture that occur in the simulation, such as neutron capture time, position and number. Figure \ref{fig:NCapTime} shows the distribution for the number of neutron captures and the true capture time of the neutrons for both the legacy (green) and new (red) NTag code.  
 
 \begin{figure}
     \centering
      \begin{subfigure}[b]{0.49\linewidth}
       \includegraphics[width=\linewidth]{Figures/NTrueCaptures.PNG}
-      \caption{Number of events (y-axis) plotted against number of true neutron captures}
-      \label{fig:NTrueCaptures} 
      \end{subfigure}
      \begin{subfigure}[b]{0.49\linewidth}
        \includegraphics[width=\linewidth]{Figures/TrueCaptureTime.PNG}
-        \caption{Number of events (y-axis) plotted against time of all neutron captures in microseconds} 
-     \label{fig:TrueCaptureTime}
       \end{subfigure} 
+      \caption{Number of events plotted against number of true neutron captures (left) and number of events plotted against the time of all neutron captures ($\mu$s) (right). }
+      \label{fig:NCapTime}
 \end{figure}
 
-In order to classify the neutron captures on hydrogen and gadolinium seperately, the energy of the gammas produced from the neutron capture were used, along with the number of gammas produced from the neutron capture. If the energy of the gamma produced is 2.22 MeV and only one gamma ray was produced from the neutron capture, the neutron capture was classified as a capture on Hydrogen. If there are a number of gammas produced in quick succession, the group of gammas is classified as a cascade, and if the energy of the gamma cascade is 8.5 MeV in total it is classified as a neutron capture on  ${ }^{155} \mathrm{Gd}$ and if the energy of the gamma cascade is 7.9 MeV, it is classified as a neutron capture on ${ }^{157} \mathrm{Gd}$. Distributions of the number of gammas produced from neutron capture in the simulation, and also the energy of these gammas were plotted, shown for both the legacy (green) and new (red) NTag code, shown in Figures \ref{fig:NGamma} and \ref{fig:TotGammaE} respectively. 
+In order to classify the neutron captures on hydrogen and gadolinium seperately, the energy of the gammas produced from the neutron capture were used, along with the number of gammas produced from the neutron capture. If the energy of the gamma produced is 2.22 MeV and only one gamma ray was produced from the neutron capture, the neutron capture was classified as a capture on a proton. If there are multiple gamma rays produced and if the energy of the gamma cascade is 8.5 MeV in total it is classified as a neutron capture on ${ }^{155} \mathrm{Gd}$ and if the energy of the gamma cascade is 7.9 MeV, it is classified as a neutron capture on ${ }^{157} \mathrm{Gd}$. Distributions of the number of gammas produced from neutron capture in the simulation, and also the energy of these gammas were plotted, shown for both the legacy (green) and new (red) NTag code, shown in Figure \ref{fig:GammaPlots}. 
 
 \begin{figure}
     \centering
      \begin{subfigure}[b]{0.49\linewidth}
       \includegraphics[width=\linewidth]{Figures/NGamma.PNG}
-      \caption{Number of events plotted against the number of gammas produced from neutron capture}
-      \label{fig:NGamma} 
      \end{subfigure}
      \begin{subfigure}[b]{0.49\linewidth}
        \includegraphics[width=\linewidth]{Figures/TotGammaE.PNG}
-        \caption{Number of events plotted against total gamma energy} 
-     \label{fig:TotGammaE}
       \end{subfigure} 
+      \caption{Number of gamma rays produced by neutron capture (left) and total energy of gamma rays produced by neutron capture (right) in the Monte Carlo}
+      \label{fig:GammaPlots}
 \end{figure}
 
-Figure \ref{fig:NGamma} shows that both NTag algorithms have the same number of gammas produced by neutron capture on hydrogen (shown by the peak at 2.22 MeV), and the same number of gammas for the gamma cascade produced by neutron capture on the ${ }^{155} \mathrm{Gd}$ and 
+Figure \ref{fig:GammaPlots} shows that both NTag algorithms have the same number of gammas produced by neutron capture on hydrogen (shown by the peak at 2.22 MeV), and the same number of gammas for the gamma cascade produced by neutron capture on the ${ }^{155} \mathrm{Gd}$ and 
 ${ }^{157} \mathrm{Gd}$ isotopes of Gadolinium, where the modal number of gammas in the cascade for both NTag code is five. In addition to checking the number and energy of the gammas, and the number and time of true neutron captures, the neutron capture positions for the x,y and z directions were also plotted as shown in \ref{fig:TrueNCapPos}.
 
 \begin{figure}
@@ -609,70 +621,62 @@ ${ }^{157} \mathrm{Gd}$ isotopes of Gadolinium, where the modal number of gammas
     
 \subsubsection{Truth information reduction cut plots}
 
-After ensuring that the truth neutron tagging information was the same between the legacy and new NTag versions, the next step was to produce plots with the NCQE reduction cut criteria in order to see the distribution of neutrons for certain variables which satisfy the NCQE criteria. By rewriting aspects of the new NTag code to incorporate the BONSAI variables needed for the NCQE selection, the same reduction cut criteria could be applied to the new NTag code as it was to the new NTag code. Figures \ref{fig:TruCapTimeReductionLegacy} and \ref{fig:TruCapTimeReductionNew} show the number of true neutrons plotted against true neutron capture time for the legacy and new NTag respectively, while Figures \ref{fig:TruCapNuNDistanceReductionLegacy} and \ref{fig:TruCapNuNDistanceReductionNew} show the number of true neutrons plotted against the distance between the true neutron and neutrino capture vertices for the legacy and new NTag respectively.
+After ensuring that the truth neutron tagging information was the same between the legacy and new NTag versions, the next step was to produce plots with the NCQE reduction cut criteria in order to see the distribution of neutrons for certain variables which satisfy the NCQE criteria. By rewriting aspects of the new NTag code to incorporate the BONSAI variables needed for the NCQE selection, the same reduction cut criteria could be applied to the new NTag code as it was to the legacy NTag code. Figure \ref{fig:TruCapTimeReduction} shows the number of true neutrons plotted against true neutron capture time for the legacy and new NTag, while Figure \ref{fig:TruCapNuNDistanceReduction} shows the number of true neutrons plotted against the distance between the true neutron and neutrino capture vertices for the legacy and new NTag.
 
 \begin{figure}
     \centering
      \begin{subfigure}[b]{0.49\linewidth}
       \includegraphics[width=\linewidth]{Figures/TrueCapTimeReductionLegacy.PNG}
-      \caption{Number of true neutrons detected plotted against true neutron capture time for the legacy NTag}
-      \label{fig:TruCapTimeReductionLegacy} 
      \end{subfigure}
      \begin{subfigure}[b]{0.49\linewidth}
        \includegraphics[width=\linewidth]{Figures/TrueCapTimeReductionNew.PNG}
-        \caption{Number of true neutrons detected plotted against true neutron capture time for the new NTag } 
-     \label{fig:TruCapTimeReductionNew}
-      \end{subfigure} 
+      \end{subfigure}
+      \caption{Number of true neutrons detected plotted against true neutron capture time for the legacy NTag (left) and the new NTag (right).}
+      \label{fig:TruCapTimeReduction}
 \end{figure}
 
 \begin{figure}
     \centering
      \begin{subfigure}[b]{0.49\linewidth}
       \includegraphics[width=\linewidth]{Figures/TruCapNuNDistanceReductionLegacy.png}
-      \caption{Number of true neutrons detected plotted against the distance between the neutrino and neutron capture vertices for the legacy NTag}
-      \label{fig:TruCapNuNDistanceReductionLegacy} 
      \end{subfigure}
      \begin{subfigure}[b]{0.49\linewidth}
        \includegraphics[width=\linewidth]{Figures/TruCapNuNDistanceReductionNew.png}
-        \caption{Number of true neutrons detected plotted against the distance between the neutrino and neutron capture vertices for the new NTag } 
-     \label{fig:TruCapNuNDistanceReductionNew}
       \end{subfigure} 
+      \caption{Number of true neutrons detected plotted against the distance between the neutrino and neutron capture vertices for the legacy NTag (left) and the new NTag (right).} 
+      \label{fig:TruCapNuNDistanceReduction}
 \end{figure}
 
-With the level of $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$ in the simulation, the number of neutron captures on hydrogen and gadolinium should be approximately equal. This is confirmed in the plots where the neutron captures in Figures \ref{fig:TruCapNuNDistanceReductionNew} and \ref{fig:TruCapTimeReductionNew} are seperated into captures on hydrogen and gadolinium, shown in Figures \ref{fig:TruCapNuNDistanceReductionNewH}, \ref{fig:TruCapNuNDistanceReductionNewGd}, \ref{fig:TruCapTimeReductionNewH}, \ref{fig:TruCapTimeReductionNewGd}.
+With the level of $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$ in the simulation being 0.026\%, the number of neutron captures on hydrogen and gadolinium should be approximately equal \cite{Sekiya_2020}. Figure \ref{fig:TruCapTimeReductionNewHGd} shows the the true capture time for the neutrons in the Monte Carlo seperated into captures on hydrogen and captures on gadolinium, and the distributions and the number of events look very similar, confirming this. Similarly, Figure \ref{fig:fig:TruCapNuNDistanceReductionNewHGd} shows the distance between the neutrino interaction vertex and the true neutron capture vertex for captures on hydrogen and gadolinium. Once again the distributions are very similar, showing agreement with the equal number of captures.
 
-\begin{figure}
-    \centering
-     \begin{subfigure}[b]{0.49\linewidth}
-      \includegraphics[width=\linewidth]{Figures/TruCapNuNDistanceReductionNewH.PNG}
-      \caption{Number of true neutrons detected plotted against the distance between the neutrino and neutron capture vertices for the new NTag, for captures on hydrogen}
-      \label{fig:TruCapNuNDistanceReductionNewH} 
-     \end{subfigure}
-     \begin{subfigure}[b]{0.49\linewidth}
-       \includegraphics[width=\linewidth]{Figures/TruCapNuNDistanceReductionNewGd.PNG}
-        \caption{Number of true neutrons detected plotted against the distance between the neutrino and neutron capture vertices for the new NTag, for captures on gadolinium} 
-        \label{fig:TruCapNuNDistanceReductionNewGd}
-      \end{subfigure} 
-\end{figure}
 
 \begin{figure}
     \centering
      \begin{subfigure}[b]{0.49\linewidth}
       \includegraphics[width=\linewidth]{Figures/TruCapTimeReductionNewH.PNG}
-      \caption{Number of true neutrons detected plotted against true neutron capture time for the new NTag, for captures on hydrogen}
-      \label{fig:TruCapTimeReductionNewH} 
      \end{subfigure}
      \begin{subfigure}[b]{0.49\linewidth}
        \includegraphics[width=\linewidth]{Figures/TruCapTimeReductionNewGd.PNG}
-        \caption{Number of true neutrons detected plotted against true neutron capture time for the new NTag, for captures on gadolinium} 
-     \label{fig:TruCapTimeReductionNewGd}
       \end{subfigure} 
+      \caption{Number of true neutrons detected plotted against true neutron capture time for the new NTag, for captures on hydrogen (left) and gadolinium (right).}
+      \label{fig:TruCapTimeReductionNewHGd} 
 \end{figure}
 
+\begin{figure}
+    \centering
+     \begin{subfigure}[b]{0.49\linewidth}
+      \includegraphics[width=\linewidth]{Figures/TruCapNuNDistanceReductionNewH.PNG}
+     \end{subfigure}
+     \begin{subfigure}[b]{0.49\linewidth}
+       \includegraphics[width=\linewidth]{Figures/TruCapNuNDistanceReductionNewGd.PNG}
+      \end{subfigure} 
+      \caption{Number of true neutrons detected plotted against the distance between the neutrino and neutron capture vertices for the new NTag, for captures on hydrogen (left) and gadolinium (right)}
+      \label{fig:TruCapNuNDistanceReductionNewHGd} 
+\end{figure}
 
 \subsection{Primary selection criteria}
 
-The rest of this Chapter focusses on analysis results from the new NTag algorithm, as this is what is currently being used by the collaboration. As input to searching for acceptable neutron candidates in the search window of 3 to 535 ns, the time of flight corrected PMT hit times is used. The reason for calculating the residual time of flight for the gamma hits is because the electrons produced from the Compton scattering of gamma rays produced by the neutron capture on hydrogen and gadolinium appear as a point-like source of Cherenkov radiation. Due to the differing optical path lengths that these photons have, there is a difference in photon hit time. The difference in Cherenkov photon travel length before they hit different PMTs  after the gamma rays from neutron capture Compton scatter off an electron needs to be taken into account via a time-of-flight (TOF) correction. Equation \ref{eq:TOF_correction} gives the equation for the residual hit times $t_{i}^{res}$, where $t_{i}$ is the hit time of the PMTs in the neutron search window and $TOF_{i}$ is given by Equation \ref{eq:TOF_calc}, where $PMT_{i}$ is the position vector of the hit PMT and $VTX_{\nu}$ is the position vector of the reconstructed neutrino vertex and $c_{wt}$ is the speed of light in the medium. The reason $VTX_{\nu}$ is used instead of the Compton scattering vertex is because this vertex is unknown. 
+The rest of this Chapter focusses on analysis results from the new NTag algorithm, as this is what is currently being used by the collaboration. As input to searching for acceptable neutron candidates in the search window of 3 to 535 ns, the time of flight corrected PMT hit times is used. The reason for calculating the residual time of flight for the gamma hits is because the electrons produced from the Compton scattering of gamma rays produced by the neutron capture on hydrogen and gadolinium appear as a point-like source of Cherenkov radiation. Due to the differing optical path lengths that these photons have, there is a difference in PMT hit time. The difference in Cherenkov photon travel length before they hit different PMTs after the gamma rays from neutron capture Compton scatter off an electron needs to be taken into account via a time-of-flight (TOF) correction. Equation \ref{eq:TOF_correction} gives the equation for the residual hit times $t_{i}^{res}$, where $t_{i}$ is the hit time of the PMTs in the neutron search window and $TOF_{i}$ is given by Equation \ref{eq:TOF_calc}, where $PMT_{i}$ is the position vector of the hit PMT and $VTX_{\nu}$ is the position vector of the reconstructed neutrino vertex and $c_{wt}$ is the speed of light in the medium. The reason $VTX_{\nu}$ is used instead of the Compton scattering vertex is because this vertex is unknown. 
 
 \begin{equation}
     t_i^{\text {res }} \quad=t_i-T O F_i \quad i \in\{\text { Hit PMTs }\}
@@ -684,7 +688,7 @@ T O F_i=\frac{\left\|\overrightarrow{P M T_i}-\overrightarrow{V T X_\nu}\right\|
 \label{eq:TOF_calc}
 \end{equation}
 
-Before the neutron candidate is passed to the secondary selection, other cuts are used to reject candidates which are not neutrons from NCQE interactions. Table \ref{table:new_selection_criteria} shows the three primary selection criteria. The first involves the width of the sliding window used for the neutron tagging search, which is set to 14 ns. The second is the hit tigger for the neutron candidate selection, which is set to 7 hits, which is the same for the previous NCQE Hydrogen-ntag analysis, with the maximum value of the hits set to 400. Third, the minimum time seperation between the gamma hits is set to 200 ns - the reason for this is to avoid double counting the same gamma hit from the neutron capture candidate. 
+Before the neutron candidate is passed to the secondary selection, other cuts are used to reject candidates which are not neutrons from NCQE interactions. Table \ref{table:new_selection_criteria} shows the three primary selection criteria. The first involves the width of the sliding window used for the neutron tagging search, which is set to 14 ns. The second is the hit tigger for the neutron candidate selection, which is set to 7 hits, which is the same for the previous NCQE Hydrogen-ntag analysis, with the maximum value of the hits set to 400. Third, the minimum time seperation between the gamma hits is set to 200 ns - the reason for this is to avoid double counting the same hit from the neutron capture candidate. 
 
 
 \begin{table}
