@@ -705,7 +705,20 @@ Before the neutron candidate is passed to the secondary selection, other cuts ar
     \label{table:new_selection_criteria}
 \end{table}
 
-Figure \ref{fig:vertex_resolution} shows the distance between the true and reconstructed neutron capture vertices. One of the benefits of the addition of 
+ One of the benefits of the addition of $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$ is that the higher visible energy improves the neutron capture vertex resolution. Figure \ref{fig:vertex_resolution_ncap} shows the distance between the true and reconstructed neutron capture vertices for neutron capture in water Monte Carlo (taken from \cite{akutsu_thesis}) on the left, and from the Monte Carlo in this analysis on the right. It is clear that the resolution has improved, being reduced from 132.4 cm prior to the addition of gadolinium to 111.5 cm in this analysis.
+
+ \begin{figure}
+    \centering
+     \begin{subfigure}[b]{0.49\linewidth}
+      \includegraphics[width=\linewidth]{Figures/resolution_ncap_akutsu.PNG}
+     \end{subfigure}
+     \begin{subfigure}[b]{0.49\linewidth}
+       \includegraphics[width=\linewidth]{Figures/resolution_ncap_hgd.png}
+      \end{subfigure} 
+      \caption{Distance between true and reconstructed neutron capture vertex in water Monte Carlo \cite{akutsu_thesis} (left) and from this analysis (right). The pink arrow on the left plot and the dashed blue line on the right plot shows the 68th percentile of the distributions.}
+      \label{fig:vertex_resolution_ncap} 
+\end{figure}
+
 
 \subsection{Secondary selection criteria}
 Due to the contamination of background events still present amongst the true neutron events after primary selection, a neural network (NN) is used to efficiently remove these background events, while trying to maximise the number of true neutron events. The output of the NN is used to indicate how likely a variable is to be signal/background candidate. Each of the candidates selected during the primary selection process has an associated reconstructed Compton scattering vertex calculated for it. In order to produce residual hit times that are less spread out than TOF-corrected hits towards the neutrino vertex, the TOF-corrected hits towards the Compton scattering vertex are used instead. The aim of searching for the Compton scattering vertex is to use a method by which the standard deviation of the residual times of the hits is minimised. Therefore the Compton scattering vertex $n_{VTX}$ is defined as in Equation \ref{eq:ncap_vtx}, where $r$ is a trial vertex and $t_i^{\text {res }}$ is the TOF-corrected hit time.
@@ -719,7 +732,7 @@ Due to the contamination of background events still present amongst the true neu
 
 By considering a set of trial vertices on a cubic grid and calculating the standard deviatiation of the residual hit times the minimisation process is performed. After this minimization cycle, a new cycle is performed on a finer and smaller grid and carries on until a certain level of precision is reached. 
 
-When the Compton scattering vertex from neutron capture is found by this method, 12 variables which describe different aspects of the neutron candidate are calculated, using NTag. For each of the neutron candidates the vector of these variables are computed and fed into the neural network and this produces an output value which is between 0 and 1. These variables relate to different features regarding categorising hits from neutron capture on Gd or H, including the number of the hits from neutron capture, the isotropy of these hits, the Cherenkov angles of these hits and the position of the neutron vertex in the detector when capture occurs. A description of these variables are given below.
+When the Compton scattering vertex from neutron capture is found by this method, 12 variables which describe different aspects of the neutron candidate are calculated, using NTag. For each of the neutron candidates the vector of these variables are computed and fed into the neural network and this produces an output value which is between 0 and 1. These variables relate to different features regarding categorising hits from neutron capture on Gd or H, including the number of the hits from neutron capture, the isotropy of these hits, the Cherenkov angles of these hits and the position of the neutron vertex in the detector when capture occurs. The purpose of these variables is to tag the neutrons and better seperate tagged neutrons from accidentals and to distinguish when a capture occurs on hydrogen or gadolinium. A description of these variables are given below.
 
 
 \underline{NTag variables}
@@ -730,27 +743,28 @@ The following twelve variables are fed into the TMVA neural network model for th
 
 This is defined as the number of hits in a sliding timing window for the neutron candidate, however instead of this being set to a value of 10 nsec as it was for the neutron capture on hydrogen NCQE analyses, this was increased to 14 nsec in order to accomadate for the increased number of hits from gamma cascades from neutron capture on gadolinium.
 
-\underline{Beta-L}
+\underline{$\beta_{l}$}
 
-This defines the isotropy of the Cherenkov hits according to:
+This variable is used because the signal and background events have a variation in the angular distribution of the hit PMTs. 
+The $\beta_{l}$ variable defines the isotropy of the Cherenkov hits according to:
 
 \begin{equation}
-    \beta_l=\frac{2}{N_{H i t s}\left(N_{H i t s}-1\right)} \sum_{i \neq j} P_l\left(\cos \theta_{i j}\right)
+    \beta_{l}=\frac{2}{N_{H i t s}\left(N_{H i t s}-1\right)} \sum_{i \neq j} P_l\left(\cos \theta_{i j}\right)
 \end{equation}
 
-where $P_{l}$ are the Legendre polynomial's of order $l$ and $\theta_{ij}$ is the angle between hit PMTs relative to the neutron capture vertex.
+where $P_{l}$ are the Legendre polynomial's of order $l$ and $\theta_{ij}$ is the angle between hit PMTs relative to the neutron capture vertex. $\beta_{1}$, $\beta_{2}$, $\beta_{3}$,$\beta_{4}$, $\beta_{5}$ are all used as input variables to the NN in order to investigate the geometry of the neutron candidate hits related to spherical harmonics.
 
 \underline{DWall}
 
-DWall gives the difference from the fitted neutron vertex to the nearest wall in cm.
+DWall gives the difference from the fitted neutron vertex to the nearest wall in cm. This variable is used because the reconstructed vertex of background events are more likely to be near the inner detector wall, and therefore DWall can help distinguish background from signal events.
 
 \underline{DWallMeanDir}
 
-This gives the distance from the fitted neutron vertex to the wall in the direction of the mean of the PMT hits for the neutron candidate in cm.
+This gives the distance from the fitted neutron vertex to the wall in the direction of the mean of the PMT hits for the neutron candidate in cm. The reason this variable is used alongside DWall is that there is also the aspect of the directionality of the hits to consider. Background hits do not have directionality due to them being a product of noise hits but signal events do have directionality due to these hits being produced by Compton scattered electrons originating from gammas produced by neutron capture.
 
 \underline{MeanDirAngleMean}
 
-This variable takes the mean of angles between the direction of each hit and the mean of the direction of these hits. 
+This variable takes the mean of angles between the direction of each hit from neutron capture and the mean of the direction of these hits. 
 
 \underline{MeanDirAngleRMS}
 
@@ -758,15 +772,15 @@ This variable is simply the RMS of angles between each hit directon and mean hit
 
 \underline{OpeningAngleMean}
 
-This calculates the mean of all possible opening angles calculated from 3 PMT hits.
+This calculates the mean of all possible opening angles calculated from 3 PMT hits from the neutron captures.
 
 \underline{OpeningAngleStdev}
 
-This is the standard deviation of all possible opening angles calculated from 3 PMT hits.
+This is the standard deviation of all possible opening angles calculated from 3 PMT hits from the neutron captures.
 
 \underline{OpeningAngleSkew}
 
-This is the skewness of all possible opening angles from 3 PMT hits, calculated using
+This is the skewness of all possible opening angles from 3 PMT hits from the neutron captures, calculated using
 
 \begin{equation}
     \tilde{\mu}_3=\frac{\sum_i^N\left(X_i-\bar{X}\right)^3}{(N-1) * \sigma^{1.5}}
@@ -776,18 +790,29 @@ where $X_{i}$ is the hit PMT, $\bar{X}$ is the mean of the 3-hit vector, N is th
 
 \underline{TRMS}
 
-This calculates the standard deviation of the time-of-flight corrected PMT hit times.
-
-\underline{N1300}
-
-This is the number of PMT hits in a 1300 ns timing window, specifically between -520 ns and +780 ns from the fitted time relative to the trigger.       
+This calculates the standard deviation of the time-of-flight corrected PMT hit times from NHits.
 
 \underline{N200}
 
-This is the number of hits within -100 ns and +100 ns from the fitted time relative to the trigger.
+This is the number of hits within -100 ns and +100 ns from the fitted time relative to the trigger. Signal events produce PMT hits which are close in time, while background events are more spread out. Therefore alongside having the NHits variable, N200 is also used to create a wider timing window arounf the capture time of the candidate event.
 
-Seeing the signal from neutron captures on hydrogen and gadolinium pre and post neural network is also important: these are shown in Figure \ref{fig:pre_NN_signal} and Figure \ref{fig:post_NN_signal}. Figure \ref{fig:tagout} shows the neural network likelihood signal between 0 and 1, for all events, neutron capture on hydrogen candidates and neutron capture on gadolinium candidates. 
+\underline{N1300}
 
+This is the number of PMT hits in a 1300 ns timing window, specifically between -520 ns and +780 ns from the fitted time relative to the trigger. Similarly to N200 this is a much broader timing window than NHits.        
+
+
+Figure \ref{fig:tagout} shows the neural network likelihood signal between 0 and 1, for all events, neutron capture on hydrogen candidates and neutron capture on gadolinium candidates. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{Figures/tagout.png}
+    \caption{Neural network output signal likelihood }
+    \label{fig:tagout}
+
+\end{figure}
+
+
+Seeing the signal from neutron captures on hydrogen and gadolinium pre and post neural network is also important: these are shown in Figure \ref{fig:pre_NN_signal} and Figure \ref{fig:post_NN_signal}. 
 \begin{figure}
     \centering
     \includegraphics[width=0.95\textwidth]{Figures/pre_nn_var.png}
@@ -804,13 +829,6 @@ Seeing the signal from neutron captures on hydrogen and gadolinium pre and post 
 
 \end{figure}
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.8\textwidth]{Figures/tagout.png}
-    \caption{Neural network output signal likelihood }
-    \label{fig:tagout}
-
-\end{figure}
 
 
 Figure \ref{fig:tagout} shows that the signal likelihood output is closer to 0 for far more neutron capture on hydrogen candidates than neutron capture on gadolinium candidates - this is also shown in Figure \ref{fig:pre_NN_signal} and Figure \ref{fig:post_NN_signal}, where the peaks for the neutron capture on hydrogen candidates are significantly more reduced in the post-NN plots than in the pre-NN plots, showing that noise events were more likely to be misidentified as neutron captures on hydrogen. These distributions also show that the value of NHits and also N200 for a neutron capture candidate is more likely to be greater for neutron candidates which are candidates on gadolinium than on hydrogen. Additionally, these plots also show that the opening Cherenkov angle related distributions were skewed towards greater values for gadolinium capture candidates than for hydrogen, due to the presence of the hits from the gamma cascade associated with neutron captures on gadolinium. 
