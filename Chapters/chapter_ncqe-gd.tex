@@ -647,7 +647,7 @@ After ensuring that the truth neutron tagging information was the same between t
       \label{fig:TruCapNuNDistanceReduction}
 \end{figure}
 
-With the level of $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$ in the simulation being 0.026\%, the number of neutron captures on hydrogen and gadolinium should be approximately equal \cite{Sekiya_2020}. Figure \ref{fig:TruCapTimeReductionNewHGd} shows the the true capture time for the neutrons in the Monte Carlo seperated into captures on hydrogen and captures on gadolinium, and the distributions and the number of events look very similar, confirming this. Similarly, Figure \ref{fig:fig:TruCapNuNDistanceReductionNewHGd} shows the distance between the neutrino interaction vertex and the true neutron capture vertex for captures on hydrogen and gadolinium. Once again the distributions are very similar, showing agreement with the equal number of captures.
+With the level of $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$ in the simulation being 0.026\%, the number of neutron captures on hydrogen and gadolinium should be approximately equal \cite{Sekiya_2020}. Figure \ref{fig:TruCapTimeReductionNewHGd} shows the the true capture time for the neutrons in the Monte Carlo seperated into captures on hydrogen and captures on gadolinium, and the distributions and the number of events look very similar, confirming this. Similarly, Figure \ref{fig:TruCapNuNDistanceReductionNewHGd} shows the distance between the neutrino interaction vertex and the true neutron capture vertex for captures on hydrogen and gadolinium. Once again the distributions are very similar, showing agreement with the equal number of captures.
 
 
 \begin{figure}
@@ -790,18 +790,18 @@ where $X_{i}$ is the hit PMT, $\bar{X}$ is the mean of the 3-hit vector, N is th
 
 \underline{TRMS}
 
-This calculates the standard deviation of the time-of-flight corrected PMT hit times from NHits.
+This calculates the standard deviation of the time-of-flight corrected PMT hit times from NHits. The spread of hit times varies between signal and background events, due to background events 
 
 \underline{N200}
 
-This is the number of hits within -100 ns and +100 ns from the fitted time relative to the trigger. Signal events produce PMT hits which are close in time, while background events are more spread out. Therefore alongside having the NHits variable, N200 is also used to create a wider timing window arounf the capture time of the candidate event.
+This is the number of hits within -100 ns and +100 ns from the fitted time relative to the trigger. Signal events produce PMT hits which are close in time, while background events are more spread out, therefore alongside having the NHits variable, N200 is also used to create a wider timing window around the capture time of the candidate event. This spread of background events is clearly visible for the N200 variable both in Figure \ref{fig:pre_NN_signal} and Figure \ref{fig:post_NN_signal}: the distributions associated with neutron captures on hydrogen and gadolinium (red and green lines respectively) have distinct peaks, while the background events (magenta) have a more diffuse distribution. 
 
 \underline{N1300}
 
 This is the number of PMT hits in a 1300 ns timing window, specifically between -520 ns and +780 ns from the fitted time relative to the trigger. Similarly to N200 this is a much broader timing window than NHits.        
 
 
-Figure \ref{fig:tagout} shows the neural network likelihood signal between 0 and 1, for all events, neutron capture on hydrogen candidates and neutron capture on gadolinium candidates. 
+Figure \ref{fig:tagout} shows the neural network likelihood signal between 0 and 1 (TagOut), for all events, neutron capture on hydrogen candidates and neutron capture on gadolinium candidates. The blue arrow shows the cut on this variable (0.7), so that a neutron candidate that has been analysed is determined to be a signal neutron candidate if its value of TagOut > 0.7, and background if it is < 0.7. The value of 0.7 was chosen due to the amount of background events being sufficiently low enough past this value, while ensuring a substantial amount of neutron capture candidate signals on hydrogen and gadolinium.
 
 \begin{figure}
     \centering
@@ -812,22 +812,26 @@ Figure \ref{fig:tagout} shows the neural network likelihood signal between 0 and
 \end{figure}
 
 
-Seeing the signal from neutron captures on hydrogen and gadolinium pre and post neural network is also important: these are shown in Figure \ref{fig:pre_NN_signal} and Figure \ref{fig:post_NN_signal}. 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.95\textwidth]{Figures/pre_nn_var.png}
-    \caption{Number of events plotted against various neural network input variables prior to the neural network }
-    \label{fig:pre_NN_signal}
+Seeing the signal from neutron captures on hydrogen and gadolinium pre and post neural network is also important along with the background events: these are shown in Figure \ref{fig:pre_NN_signal} and Figure \ref{fig:post_NN_signal}. 
 
-\end{figure}
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.95\textwidth]{Figures/post_nn_var.png}
-    \caption{Number of events plotted against various neural network input variables after neural network output }
-    \label{fig:post_NN_signal}
+\begin{landscape}
+    \begin{figure}[t]
+        \centering
+        \hbox{\hspace{-0.5em}\includegraphics[width=\pdfpagewidth]{Figures/preNNvariablesbkg.PNG}}
+        \caption{Number of events plotted against various neural network input variables prior to the neural network}
+        \label{fig:pre_NN_signal}
+    \end{figure}
+\end{landscape}
 
-\end{figure}
+\begin{landscape}
+    \begin{figure}[t]
+        \centering
+        \hbox{\hspace{-0.5em}\includegraphics[width=\pdfpagewidth]{Figures/postNNvariablesbkg.PNG}}
+        \caption{Number of events plotted against various neural network input variables after neural network output}
+        \label{fig:post_NN_signal}
+    \end{figure}
+\end{landscape}
 
 
 
