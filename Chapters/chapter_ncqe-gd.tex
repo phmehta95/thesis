@@ -757,11 +757,11 @@ This calculates the standard deviation of the time-of-flight corrected PMT hit t
 
 \underline{DWall}
 
-DWall gives the difference from the fitted neutron vertex to the nearest wall in cm. This variable is used because the reconstructed vertex of background events are more likely to be near the inner detector wall, and therefore DWall can help distinguish background from signal events. 
+DWall gives the difference from the fitted neutron vertex to the nearest wall in cm. This variable is used because the reconstructed vertex of background events are more likely to be near the inner detector wall, and therefore DWall can help distinguish background from signal events. As shown in Figure \ref{fig:pre_NN_signal} and Figure \ref{fig:post_NN_signal}, the fitted neutron vertex of the background events and signal events follow this pattern, with background events being close to tbe detector wall and signal events away from it.
 
 \underline{DWallMeanDir}
 
-This gives the distance from the fitted neutron vertex to the wall in the direction of the mean of the PMT hits for the neutron candidate in cm. The reason this variable is used alongside DWall is that there is also the aspect of the directionality of the hits to consider. Background hits do not have directionality due to them being a product of noise hits but signal events do have directionality due to these hits being produced by Compton scattered electrons originating from gammas produced by neutron capture. This is shown in the DWallMeanDir distribution in Figure \ref{fig:pre_NN_signal}, where the background events have a larger spread and also larger peak value than signal events.
+This gives the distance from the fitted neutron vertex to the wall in the direction of the mean of the PMT hits for the neutron candidate in cm. The reason this variable is used alongside DWall is that there is also the aspect of the directionality of the hits to consider. Background hits do not have directionality due to them being a product of noise hits but signal events do have directionality due to these hits being produced by Compton scattered electrons originating from gammas produced by neutron capture. This is shown in the DWallMeanDir distribution in Figure \ref{fig:pre_NN_signal}, where the background events have a larger spread than signal events.
 
 \underline{OpeningAngleMean}
 The next set of variables a related to the Cherenkov angle produced from a neutron candidate event: the first of these is OpeningAngleMean.
@@ -779,7 +779,7 @@ This is the skewness of all possible opening angles from 3 PMT hits from the neu
     \tilde{\mu}_3=\frac{\sum_i^N\left(X_i-\bar{X}\right)^3}{(N-1) * \sigma^{1.5}}
 \end{equation}
 
-where $X_{i}$ is the hit PMT, $\bar{X}$ is the mean of the 3-hit vector, N is the size of the vector of PMT hits, and $\sigma$ is the standard deviation of the PMT hits.
+where $X_{i}$ is the hit PMT, $\bar{X}$ is the mean of the 3-hit vector, N is the size of the vector of PMT hits, and $\sigma$ is the standard deviation of the PMT hits. Signal events are shown to have more skewed opening angle distribution than background events, especially if they are neutron capture on gadolinium event.
 
 \underline{MeanDirAngleMean}
 
