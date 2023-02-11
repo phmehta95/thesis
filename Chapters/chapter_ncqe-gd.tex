@@ -743,40 +743,33 @@ The following twelve variables are fed into the TMVA neural network model for th
 
 This is defined as the number of hits in a sliding timing window for the neutron candidate, however instead of this being set to a value of 10 nsec as it was for the neutron capture on hydrogen NCQE analyses, this was increased to 14 nsec in order to accomadate for the increased number of hits from gamma cascades from neutron capture on gadolinium.
 
-\underline{$\beta_{l}$}
+\underline{N200}
 
-This variable is used because the signal and background events have a variation in the angular distribution of the hit PMTs. 
-The $\beta_{l}$ variable defines the isotropy of the Cherenkov hits according to:
+This is the number of hits within -100 ns and +100 ns from the fitted time relative to the trigger. Signal events produce PMT hits which are close in time, while background events are more spread out, therefore alongside having the NHits variable, N200 is also used to create a wider timing window around the capture time of the candidate event. This spread of background events is clearly visible for the N200 variable both in Figure \ref{fig:pre_NN_signal} and Figure \ref{fig:post_NN_signal}: the distributions associated with neutron captures on hydrogen and gadolinium (red and green lines respectively) have distinct peaks, while the background events (magenta) have a more diffuse distribution. 
 
-\begin{equation}
-    \beta_{l}=\frac{2}{N_{H i t s}\left(N_{H i t s}-1\right)} \sum_{i \neq j} P_l\left(\cos \theta_{i j}\right)
-\end{equation}
+\underline{N1300}
 
-where $P_{l}$ are the Legendre polynomial's of order $l$ and $\theta_{ij}$ is the angle between hit PMTs relative to the neutron capture vertex. $\beta_{1}$, $\beta_{2}$, $\beta_{3}$,$\beta_{4}$, $\beta_{5}$ are all used as input variables to the NN in order to investigate the geometry of the neutron candidate hits related to spherical harmonics.
+This is the number of PMT hits in a 1300 ns timing window, specifically between -520 ns and +780 ns from the fitted time relative to the trigger. Similarly to N200 this is a much broader timing window than NHits.    
+
+\underline{TRMS}
+
+This calculates the standard deviation of the time-of-flight corrected PMT hit times from NHits. The spread of hit times varies between signal and background events, due to background events having a larger residual time spread than signal events: this is shown for the TRMS plot in Figure \ref{fig:pre_NN_signal}.
 
 \underline{DWall}
 
-DWall gives the difference from the fitted neutron vertex to the nearest wall in cm. This variable is used because the reconstructed vertex of background events are more likely to be near the inner detector wall, and therefore DWall can help distinguish background from signal events.
+DWall gives the difference from the fitted neutron vertex to the nearest wall in cm. This variable is used because the reconstructed vertex of background events are more likely to be near the inner detector wall, and therefore DWall can help distinguish background from signal events. 
 
 \underline{DWallMeanDir}
 
-This gives the distance from the fitted neutron vertex to the wall in the direction of the mean of the PMT hits for the neutron candidate in cm. The reason this variable is used alongside DWall is that there is also the aspect of the directionality of the hits to consider. Background hits do not have directionality due to them being a product of noise hits but signal events do have directionality due to these hits being produced by Compton scattered electrons originating from gammas produced by neutron capture.
-
-\underline{MeanDirAngleMean}
-
-This variable takes the mean of angles between the direction of each hit from neutron capture and the mean of the direction of these hits. 
-
-\underline{MeanDirAngleRMS}
-
-This variable is simply the RMS of angles between each hit directon and mean hit direction.
+This gives the distance from the fitted neutron vertex to the wall in the direction of the mean of the PMT hits for the neutron candidate in cm. The reason this variable is used alongside DWall is that there is also the aspect of the directionality of the hits to consider. Background hits do not have directionality due to them being a product of noise hits but signal events do have directionality due to these hits being produced by Compton scattered electrons originating from gammas produced by neutron capture. This is shown in the DWallMeanDir distribution in Figure \ref{fig:pre_NN_signal}, where the background events have a larger spread and also larger peak value than signal events.
 
 \underline{OpeningAngleMean}
-
-This calculates the mean of all possible opening angles calculated from 3 PMT hits from the neutron captures.
+The next set of variables a related to the Cherenkov angle produced from a neutron candidate event: the first of these is OpeningAngleMean.
+This calculates the mean of all possible opening angles calculated from 3 PMT hits from the neutron captures. Signal events which have PMT hits originating from Compton scattered electrons from 2.2 Mev gamma rays from neutron captures on hydrogen have Cherenkov opening angles which are centered around 42\degree, while neutron captures on gadolinium produce multiple gamma rays which would skew the value of OpeningAngleMean to be centered around higher values. This is reflected in Figure \ref{fig:pre_NN_signal}, where the background events have a slightly higher spread and therefore not such a strict angular depedence.
 
 \underline{OpeningAngleStdev}
 
-This is the standard deviation of all possible opening angles calculated from 3 PMT hits from the neutron captures.
+This is the standard deviation of all possible opening angles calculated from 3 PMT hits from the neutron captures. This variable emphasises what is seen in the OpeningAngleMean distribution, where background events have a larger spread than signal events, shown in Figure \ref{fig:pre_NN_signal} and Figure \ref{fig:post_NN_signal}. 
 
 \underline{OpeningAngleSkew}
 
@@ -788,18 +781,26 @@ This is the skewness of all possible opening angles from 3 PMT hits from the neu
 
 where $X_{i}$ is the hit PMT, $\bar{X}$ is the mean of the 3-hit vector, N is the size of the vector of PMT hits, and $\sigma$ is the standard deviation of the PMT hits.
 
-\underline{TRMS}
+\underline{MeanDirAngleMean}
 
-This calculates the standard deviation of the time-of-flight corrected PMT hit times from NHits. The spread of hit times varies between signal and background events, due to background events 
+This variable takes the mean of angles between the direction of each hit from neutron capture and the mean of the direction of these hits. 
 
-\underline{N200}
+\underline{MeanDirAngleRMS}
 
-This is the number of hits within -100 ns and +100 ns from the fitted time relative to the trigger. Signal events produce PMT hits which are close in time, while background events are more spread out, therefore alongside having the NHits variable, N200 is also used to create a wider timing window around the capture time of the candidate event. This spread of background events is clearly visible for the N200 variable both in Figure \ref{fig:pre_NN_signal} and Figure \ref{fig:post_NN_signal}: the distributions associated with neutron captures on hydrogen and gadolinium (red and green lines respectively) have distinct peaks, while the background events (magenta) have a more diffuse distribution. 
+This variable is simply the RMS of angles between each hit directon and mean hit direction.
 
-\underline{N1300}
 
-This is the number of PMT hits in a 1300 ns timing window, specifically between -520 ns and +780 ns from the fitted time relative to the trigger. Similarly to N200 this is a much broader timing window than NHits.        
 
+\underline{$\beta_{l}$}
+
+This variable is used because the signal and background events have a variation in the angular distribution of the hit PMTs. 
+The $\beta_{l}$ variable defines the isotropy of the Cherenkov hits according to:
+
+\begin{equation}
+    \beta_{l}=\frac{2}{N_{H i t s}\left(N_{H i t s}-1\right)} \sum_{i \neq j} P_l\left(\cos \theta_{i j}\right)
+\end{equation}
+
+where $P_{l}$ are the Legendre polynomial's of order $l$ and $\theta_{ij}$ is the angle between hit PMTs relative to the neutron capture vertex. $\beta_{1}$, $\beta_{2}$, $\beta_{3}$,$\beta_{4}$, $\beta_{5}$ are all used as input variables to the NN in order to investigate the geometry of the neutron candidate hits related to spherical harmonics.
 
 Figure \ref{fig:tagout} shows the neural network likelihood signal between 0 and 1 (TagOut), for all events, neutron capture on hydrogen candidates and neutron capture on gadolinium candidates. The blue arrow shows the cut on this variable (0.7), so that a neutron candidate that has been analysed is determined to be a signal neutron candidate if its value of TagOut > 0.7, and background if it is < 0.7. The value of 0.7 was chosen due to the amount of background events being sufficiently low enough past this value, while ensuring a substantial amount of neutron capture candidate signals on hydrogen and gadolinium.
 
