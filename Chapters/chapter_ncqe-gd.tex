@@ -757,7 +757,7 @@ This calculates the standard deviation of the time-of-flight corrected PMT hit t
 
 \underline{DWall}
 
-DWall gives the difference from the fitted neutron vertex to the nearest wall in cm. This variable is used because the reconstructed vertex of background events are more likely to be near the inner detector wall, and therefore DWall can help distinguish background from signal events. As shown in Figure \ref{fig:pre_NN_signal} and Figure \ref{fig:post_NN_signal}, the fitted neutron vertex of the background events and signal events follow this pattern, with background events being close to tbe detector wall and signal events away from it.
+DWall gives the difference from the fitted neutron vertex to the nearest wall in cm. This variable is used because the reconstructed vertex of background events are more likely to be near the inner detector wall, and therefore DWall can help distinguish background from signal events. As shown in Figure \ref{fig:pre_NN_signal} and Figure \ref{fig:post_NN_signal}, the fitted neutron vertex of the background events and signal events follow this pattern, with background events being close to the detector wall and signal events away from it.
 
 \underline{DWallMeanDir}
 
@@ -765,7 +765,7 @@ This gives the distance from the fitted neutron vertex to the wall in the direct
 
 \underline{OpeningAngleMean}
 The next set of variables a related to the Cherenkov angle produced from a neutron candidate event: the first of these is OpeningAngleMean.
-This calculates the mean of all possible opening angles calculated from 3 PMT hits from the neutron captures. Signal events which have PMT hits originating from Compton scattered electrons from 2.2 Mev gamma rays from neutron captures on hydrogen have Cherenkov opening angles which are centered around 42\degree, while neutron captures on gadolinium produce multiple gamma rays which would skew the value of OpeningAngleMean to be centered around higher values. This is reflected in Figure \ref{fig:pre_NN_signal}, where the background events have a slightly higher spread and therefore not such a strict angular depedence.
+This calculates the mean of all possible opening angles calculated from 3 PMT hits from the neutron captures. Signal events which have PMT hits originating from Compton scattered electrons from 2.2 Mev gamma rays from neutron captures on hydrogen have Cherenkov opening angles which are centered around 42\degree, while neutron captures on gadolinium produce multiple gamma rays which would skew the value of OpeningAngleMean to be centered around higher values. This is reflected in Figure \ref{fig:pre_NN_signal}, where the background events have a slightly larger spread and therefore not such a strict angular dependence.
 
 \underline{OpeningAngleStdev}
 
@@ -783,11 +783,11 @@ where $X_{i}$ is the hit PMT, $\bar{X}$ is the mean of the 3-hit vector, N is th
 
 \underline{MeanDirAngleMean}
 
-This variable takes the mean of angles between the direction of each hit from neutron capture and the mean of the direction of these hits. 
+This variable takes the mean of angles between the direction of each hit and the mean of the direction of these hits. Again this will be generally shifted to larger values for neutron captures on gadolinium compared to captures on hydrogen, shown in Figure \ref{fig:pre_NN_signal} and Figure \ref{fig:post_NN_signal}. 
 
 \underline{MeanDirAngleRMS}
 
-This variable is simply the RMS of angles between each hit directon and mean hit direction.
+This variable is simply the RMS of angles between each hit directon and mean hit direction, here we can see from Figure \ref{fig:pre_NN_signal} that background events will have a larger spread for this variable compared to signal events. 
 
 
 
@@ -800,7 +800,10 @@ The $\beta_{l}$ variable defines the isotropy of the Cherenkov hits according to
     \beta_{l}=\frac{2}{N_{H i t s}\left(N_{H i t s}-1\right)} \sum_{i \neq j} P_l\left(\cos \theta_{i j}\right)
 \end{equation}
 
-where $P_{l}$ are the Legendre polynomial's of order $l$ and $\theta_{ij}$ is the angle between hit PMTs relative to the neutron capture vertex. $\beta_{1}$, $\beta_{2}$, $\beta_{3}$,$\beta_{4}$, $\beta_{5}$ are all used as input variables to the NN in order to investigate the geometry of the neutron candidate hits related to spherical harmonics.
+where $P_{l}$ are the Legendre polynomial's of order $l$ and $\theta_{ij}$ is the angle between hit PMTs relative to the neutron capture vertex. $\beta_{1}$, $\beta_{2}$, $\beta_{3}$,$\beta_{4}$, $\beta_{5}$ are all used as input variables to the NN in order to investigate the geometry of the neutron candidate hits related to spherical harmonics. For the sake of brevity only $\beta_{1}$ and $\beta_{5}$ are shown here in Figure \ref{fig:pre_NN_signal} and Figure \ref{fig:post_NN_signal}. Because this variable is related to the angular distribution, just like the previous angle related variables, background events have a larger spread compared to signal events.
+
+
+
 
 Figure \ref{fig:tagout} shows the neural network likelihood signal between 0 and 1 (TagOut), for all events, neutron capture on hydrogen candidates and neutron capture on gadolinium candidates. The blue arrow shows the cut on this variable (0.7), so that a neutron candidate that has been analysed is determined to be a signal neutron candidate if its value of TagOut > 0.7, and background if it is < 0.7. The value of 0.7 was chosen due to the amount of background events being sufficiently low enough past this value, while ensuring a substantial amount of neutron capture candidate signals on hydrogen and gadolinium.
 
@@ -809,7 +812,6 @@ Figure \ref{fig:tagout} shows the neural network likelihood signal between 0 and
     \includegraphics[width=0.8\textwidth]{Figures/tagout.png}
     \caption{Neural network output signal likelihood }
     \label{fig:tagout}
-
 \end{figure}
 
 
@@ -842,7 +844,7 @@ After investigating the neutron candidates pre and post neural network to see th
 
 \begin{equation}
 \begin{aligned}
-    & \varepsilon_{\text {Pre }}=\frac{\# \text { of truth candidates at pre }-\text { selection }}{\# of truth neutrons} \\
+    & \varepsilon_{\text {Pre }}=\frac{\# \text { of truth candidates at pre }-\text { selection }}{\# \text{of truth neutrons}} \\
     & \varepsilon_{\mathrm{NN}}=\frac{\# \text { of tagged truth neutrons }}{\# \text { of truth candidates at pre-selection }} \\
     & \varepsilon_{\mathrm{NTag}}=\varepsilon_{\text {Pre }} \times \varepsilon_{\mathrm{NN}}=\frac{\# \text { of tagged truth neutrons }}{\# \text { of truth neutrons }}
 \end{aligned}
@@ -855,17 +857,17 @@ The values of these efficiencies and their associated statistical uncertainties 
     $$
     \begin{array}{|l|l|}
     \hline & \text { Pre-selection efficiency } \\
-    \hline \text { H + Gd } &50.0 \pm 0.10 \% \\
-    \hline \text{ H } & 13.4 \pm 0.19 \% \\
-    \hline \text { Gd } & 85.0 \pm 0.10 \% \\
+    \hline \text { H + Gd } &50.00 \pm 0.10 \% \\
+    \hline \text{ H } & 13.43 \pm 0.19 \% \\
+    \hline \text { Gd } & 84.87 \pm 0.10 \% \\
     \hline & \text { NN classification efficiency } \\
-    \hline \text { H + Gd } & 80.3 \pm 0.21 \% \\
-    \hline \text { H } & 19.0 \pm 1.26 \% \\
-    \hline \text { Gd } & 89.6 \pm 0.26 \% \\
+    \hline \text { H + Gd } & 80.30 \pm 0.21 \% \\
+    \hline \text { H } & 18.96 \pm 1.26 \% \\
+    \hline \text { Gd } & 89.64 \pm 0.26 \% \\
     \hline & \text { Total efficiency } \\
-    \hline \text { H + Gd } & 40.2 \pm 0.21 \% \\
-    \hline \text { H } & 2.5 \pm 0.16 \% \\
-    \hline \text { Gd } & 76.2 \pm 0.20 \% \\
+    \hline \text { H + Gd } & 40.16 \pm 0.21 \% \\
+    \hline \text { H } & 2.55 \pm 0.16 \% \\
+    \hline \text { Gd } & 76.17 \pm 0.20 \% \\
     \hline
     \end{array}
     $$
@@ -873,14 +875,25 @@ The values of these efficiencies and their associated statistical uncertainties 
     \label{table:NTag_efficiency}
 \end{table}
 
-These efficiencies are as expected, with the efficiency of neutrons captured on gadolinium being much greater than that of captures on hydrogen, due to the gamma cascade making it better able to be differentiated than from the 2.2 MeV from the neutron capture on hydrogen. However, as the errors on the efficiency in Table \ref{table:NTag_efficiency} are purely statistical (i.e.produced from the number of neutrons in the MC), it is beneficial to do a comparison with an efficiency measurement from actual neutron capture data. In order to assess the validity of the efficiencies from the Monte Carlo, a comparison of the efficiency with data taken from an Am/Be neutron source is used. As mentioned in Chapter 3, the Am/Be source produces a prompt 4.4 MeV gamma ray along with a neutron, with the same prompt and delay signal pattern as NCQE interactions, and similarly to the MC, a timing distribution of hits relative to the 4.4 MeV trigger can be produced for the Am/Be data. As shown in Figure \ref{fig:efficiency_dwall}, the efficiency of the neutron capture changes relative to the DWall cut value, and as a result it was advisable to check the efficiency of neutron capture using Am/Be data at different positions in the detector. Table \ref{table:ambe_positions} shows the runs and positions (x,y,z) of Am/Be data used in this analysis.
+These efficiencies are as expected, with the efficiency of neutrons captured on gadolinium being much greater than that of captures on hydrogen, due to the gamma cascade making it better able to be differentiated than from the 2.2 MeV from the neutron capture on hydrogen. However, as the errors on the efficiency in Table \ref{table:NTag_efficiency} are purely statistical (i.e.produced from the number of neutrons in the MC), it is beneficial to do a comparison with an efficiency measurement from actual neutron capture data. In order to assess the validity of the efficiencies from the Monte Carlo, a comparison of the efficiency with data taken from an Am/Be + 8BGO neutron source is used. As mentioned in Chapter 3, the Am/Be + 8BGO source produces a prompt 4.4 MeV gamma ray along with a neutron, with the same prompt and delay signal pattern as NCQE interactions, and similarly to the MC, a timing distribution of hits relative to the 4.4 MeV trigger can be produced for the Am/Be + 8BGO data. Figure \ref{fig:ambe_picture} shows the Am/Be source container and the BGO scintillator that it is enclosed within. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{Figures/ambe_picture.PNG}
+    \caption{Am/Be + 8BGO source: the Am/Be source is housed at the centre of the 8 BGO crystals, which are 2.5 x 2.5 x 2.5 cm each and themselves placed inside an acrylic case. The edge of each crystal is cut so there is an inner place for the Am/Be source to be kept.}
+    \label{fig:ambe_picture}
+\end{figure}
+
+
+
+
+As shown in Figure \ref{fig:efficiency_dwall}, the efficiency of the neutron capture changes relative to the DWall cut value, and as a result it was advisable to check the efficiency of neutron capture using Am/Be + 8BGO data at different positions in the detector. Table \ref{table:ambe_positions} shows the runs and positions (x,y,z) of Am/Be + 8BGO data used in this analysis.
 
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{Figures/efficiency_dwall.png}
     \caption{Neural network output signal likelihood }
     \label{fig:efficiency_dwall}
-
 \end{figure}
 
 
