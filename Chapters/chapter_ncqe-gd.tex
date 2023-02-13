@@ -1,4 +1,4 @@
-\chapter{Measurement of NCQE
+\chapter{Neutron Tagging and NCQE
 Interactions with the SK-Gd Upgrade}
 \label{chp:ncqegd}
 
@@ -875,13 +875,23 @@ The values of these efficiencies and their associated statistical uncertainties 
     \label{table:NTag_efficiency}
 \end{table}
 
-These efficiencies are as expected, with the efficiency of neutrons captured on gadolinium being much greater than that of captures on hydrogen, due to the gamma cascade making it better able to be differentiated than from the 2.2 MeV from the neutron capture on hydrogen. However, as the errors on the efficiency in Table \ref{table:NTag_efficiency} are purely statistical (i.e.produced from the number of neutrons in the MC), it is beneficial to do a comparison with an efficiency measurement from actual neutron capture data. In order to assess the validity of the efficiencies from the Monte Carlo, a comparison of the efficiency with data taken from an Am/Be + 8BGO neutron source is used. As mentioned in Chapter 3, the Am/Be + 8BGO source produces a prompt 4.4 MeV gamma ray along with a neutron, with the same prompt and delay signal pattern as NCQE interactions, and similarly to the MC, a timing distribution of hits relative to the 4.4 MeV trigger can be produced for the Am/Be + 8BGO data. Figure \ref{fig:ambe_picture} shows the Am/Be source container and the BGO scintillator that it is enclosed within. 
+These efficiencies are as expected, with the efficiency of neutrons captured on gadolinium being much greater than that of captures on hydrogen, due to the gamma cascade making it better able to be differentiated than from the 2.2 MeV from the neutron capture on hydrogen. However, as the errors on the efficiency in Table \ref{table:NTag_efficiency} are purely statistical (i.e.produced from the number of neutrons in the MC), it is beneficial to do a comparison with an efficiency measurement from actual neutron capture data. In order to assess the validity of the efficiencies from the Monte Carlo, a comparison of the efficiency with data taken from an Am/Be + 8BGO neutron source is used. As mentioned in Chapter 3, the Am/Be + 8BGO source produces a prompt 4.4 MeV gamma ray along with a neutron, with the same prompt and delay signal pattern as NCQE interactions, and similarly to the MC, a timing distribution of hits relative to the 4.4 MeV trigger can be produced for the Am/Be + 8BGO data. Figure \ref{fig:ambe_picture} shows the Am/Be source container and the BGO scintillator that it is enclosed within, and Figure \ref{fig:ambe_NHits} shows the distribution of hits (NHits) within the 14 ns sliding timing window. 
+
+
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.8\textwidth]{Figures/ambe_picture.PNG}
+    \includegraphics[width=0.5\textwidth]{Figures/ambe_picture.PNG}
     \caption{Am/Be + 8BGO source: the Am/Be source is housed at the centre of the 8 BGO crystals, which are 2.5 x 2.5 x 2.5 cm each and themselves placed inside an acrylic case. The edge of each crystal is cut so there is an inner place for the Am/Be source to be kept.}
     \label{fig:ambe_picture}
+\end{figure}
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{Figures/NHits_ambe_distribution.PNG}
+    \caption{Distribution of hits from Am/Be + 8 BGO data within the 14 ns sliding timing window.}
+    \label{fig:ambe_NHits}
 \end{figure}
 
 
@@ -911,8 +921,15 @@ As shown in Figure \ref{fig:efficiency_dwall}, the efficiency of the neutron cap
     \label{table:ambe_positions}
 \end{table}
 
-First, comparison was done between the MC and the Am/Be data from Run 85622, the 1 hour measurement taken in the central (0,0,0) source position, by looking at the timing distribution from the 4.4 MeV trigger signal. The following event cuts were used in order to select neutron capture events using this data: the total event charge deposit for the inner detector PMTs to be between 850 and 1150 photoelectrons, the time difference from the previous event should be greater than 1 millisecond, and the number of outer detector PMT hits should be less than 10. In order to find the efficiency of the neutron captures with this Am/Be data, an exponential fit was made to the timing distribution, and this is shown in Figure \ref{fig:ambe_centre}. Similar plots were made for the Am/Be source data taken for the (0,0,+12 m) and (-12 m,0,0) positions.
+First, comparison was done between the MC and the Am/Be data from Run 85622, the 1 hour measurement taken in the central (0,0,0) source position, by looking at the timing distribution from the 4.4 MeV trigger signal. The same neutron tagging algorithm was used as for the tagging of neutrons from the MC, with the exact same primary and secondary selection criteria. In addition to this, the following event cuts were used in order to select neutron capture events using this data: the total event charge deposit for the inner detector PMTs to be between 850 and 1150 photoelectrons, the time difference from the previous event should be greater than 1 millisecond, and the number of outer detector PMT hits should be less than 10. In order to find the efficiency of the neutron captures and to find the fitted background with this Am/Be data, an exponential fit was made to the timing distribution (shown in Equation \ref{eq:AmBe_fit_eq}), and this is shown in Figure \ref{fig:ambe_centre} by the red curve. Similar plots were made for the Am/Be source data taken for the (0,0,+12 m) and (-12 m,0,0) positions. 
 
+
+\begin{equation}
+\text{Fit equation: } A e^{-t / \tau}+B
+\label{eq:AmBe_fit_eq}
+\end{equation}
+
+In Equation \ref{eq:AmBe_fit_eq}, $t$ is the time from the event trigger in microseconds, $\tau$ is the exponential time constant and $b$ is the background pedestal. 
 
 \begin{figure}
     \centering
@@ -935,7 +952,7 @@ First, comparison was done between the MC and the Am/Be data from Run 85622, the
     \label{fig:ambe_-12}
 \end{figure}
 
-Table \ref{table:ambe_tau_chi2} shows the value of tau for each of these positions, along with the $\chi^{2}$/ndf value for the exponential fit and the value of the neutron capture efficiency calculated from the Am/Be data at each of these positions. Equation \ref{eq:efficiency_ambe_calculation} shows the method by which the efficiency for the neutron capture on Am/Be data is calculated, where $N$ is the number of neutron captures, $B$ is the fitted constant background value, and NTag TMAX and NTag TMIN are the end and start times of the neutron tagging algorithm.  
+Table \ref{table:ambe_tau_chi2} shows the value of tau for each of these positions, along with the $\chi^{2}$/ndf value for the exponential fit and the value of the neutron capture efficiency calculated from the Am/Be data at each of these positions. Equation \ref{eq:efficiency_ambe_calculation} shows the method by which the efficiency for the neutron capture on Am/Be data is calculated, by subtracting the number of fitted background events from the number of tagged neutron capture events, and dividing this value by the total number of events. Here $N$ is the number of neutron captures, $B$ is the fitted constant background value, and NTag TMAX and NTag TMIN are the end and start times of the neutron tagging algorithm.   
 
 
 
@@ -948,15 +965,15 @@ Table \ref{table:ambe_tau_chi2} shows the value of tau for each of these positio
 
 \begin{table}
     $$
-    \begin{array}{|l|l|l|l|l|}
-    \hline \text{Position (m)} & \text {Time constant (tau) value ($\mu$ s) } & \text{$\chi^{2}$/ndf} & \text{Efficiency (\%)} \\
-    \hline \text{Centre (0,0,0)} & 114.8 \pm 2.5  & 1.01 & 40.7 \\
-    \hline \text{(0,0,+12 )} & 118 \pm 3.5 & 1.27 & 39.4 \\
-    \hline \text{(-12,0,0)} & 110 \pm 3.7 & 1.17 & 40.7 \\
+    \begin{array}{|l|l|l|l|l|l|l|}
+    \hline \text{Position (m)} & \text {($\tau$) value ($\mu$ s) } & \text{B} & \text{$\chi^{2}$/ndf} & \text{Efficiency (\%)} & \text{No. tagged neutrons} \\
+    \hline \text{Centre (0,0,0)} & 114.8 \pm 2.5 & 49.3 \pm 3.6 & 1.01 & 40.7 & 15082 \\
+    \hline \text{(0,0,+12 )} & 118.3 \pm 3.5 & 19.9 \pm 2.6 & 1.27 & 39.4 & 7991\\
+    \hline \text{(-12,0,0)} & 109.6 \pm 3.7 & 21.7 \pm 2.2 & 1.17 & 40.7 & 6438 \\
     \hline
     \end{array}
     $$
-    \caption{Am/Be time constant value and $\chi^{2}$/ndf value of exponential fit}
+    \caption{Am/Be time constant value and efficiency values along with the $\chi^{2}$/ndf value of the exponential fit, the value of the background pedestal (B) events and the number of tagged neutrons from the Am/Be source at different positions.}
     \label{table:ambe_tau_chi2}
 \end{table}
 
@@ -969,3 +986,8 @@ This level of variation for the time constant is within normal limits, especiall
     \label{fig:MC_time_constant}
 \end{figure}
 
+In conclusion, the work in this chapter involved investigating NCQE interactions via looking at the distributions of neutrons using Monte Carlo simulations post the addition of $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$ to the Super-Kamiokande detector. Previous NCQE analyses have used pure water based Monte Carlo simulations, however my analysis extended beyond that due to the inclusion of gadolinium in the detector simulator, with neutron captures on it being modelled by the previously unused ANNRI-Gd model. Comparisons of prompt event reconstruction were carried out between pure-water and gadolinium simulation to ensure minimal changes to the prompt event as only the neutron capture in the simulation should be affected. Additionally, my analysis was the first to use a new NTag algorithm for NCQE interactions and comparisons between the legacy and new NTag algorithm were done to ensure that prompt event reconstruction and neutron truth information were consistent between the two algorithms, both prior to and after NCQE sample selection. The new NTag algorithm primary selection criteria were defined along with the algorithm method of neutron capture vertex reconstruction, and a definite improvement to the neutron capture vertex resolution in MC was seen as a result of the addition of gadolinium to the simulation. 
+\newline
+To better improve sensitivity to signal events and to reduce background events an artificial neural network was used on neutron candidates that passed the primary selection process. These variables were related to the number of hits, neutron capture vertex position, residual hit time and angular distribution. For many of these variables background events had a distribution that differed greatly from signal events, as well as neutron capture on hydrogen events varying from neutron capture on gadolinium events, and being able to better isolate these different types of captures was interesting. The efficiency of the neutron tagging algorithm was also calculated both before and after the neural network, with the neutron captures on gadolinium having a greater efficiency as expected. 
+\newline
+Finally in order to validate the efficiency of the NCQE MC, comparisons were made with Am/Be + 8BGO calibration data. By comparing the timing distributions fitted with an exponential, the neutron capture efficiency was calculated for the Am/Be + 8BGO data at different positions in the tank, with the values for the time constant and the efficiencies being very compatible with the NCQE MC, proving the efficiencies to be valid.
