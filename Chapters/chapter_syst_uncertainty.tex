@@ -7,9 +7,9 @@ Placing systematic uncertainties on the neutron tagging efficiency is important,
 
 \section{Systematic uncertainty calculation methodology}
 
-The two ways in which the systematic error for this analysis are estimated are either using MC re-weighting or MC regeneration.
+Systematic uncertainties are calculated in one of two ways: MC re-weighting or MC regeneration.
 \newline
-For the MC-reweighting approach, weights are applied to a quantity and the tagging efficiency of the re-weighted MC is extracted. The general methodology is to have the input of a model (given by a set of parameters) and to vary them one by one and then calculate the reweighted tagging efficiencies - the set of relative discrepancies $\delta_{i}$ are computed from this set of reweighted tagging efficiencies $T_{i}$ and the nominal tagging efficiency $T_{nom}$ using Equation \ref{eq:tageffdiscrep}.
+In the MC-reweighting approach, weights are applied to a quantity and the tagging efficiency of the re-weighted MC is extracted. The general methodology is to have the input of a model, defined by a set of parameters, and to vary them one by one and then calculate the reweighted tagging efficiencies. The set of relative discrepancies $\delta_{i}$ are computed from this set of reweighted tagging efficiencies $T_{i}$ and the nominal tagging efficiency $T_{nom}$ using Equation \ref{eq:tageffdiscrep}.
 \newline
 \begin{equation}
     \delta_{i}=\frac{T_{i}-T_{\text {nom }}}{T_{\text {nom }}} \quad i \in\{\text { parameters }\}
