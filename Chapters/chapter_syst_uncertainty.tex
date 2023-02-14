@@ -1,18 +1,19 @@
 \chapter{Systematic uncertainty calculations}
 \label{chp:syst}
 
+\section{Introduction}
 
+Placing systematic uncertainties on the neutron tagging efficiency is important, because even though the value has been validated against Americium-Beryllium calibration data there are still sources of systematic uncertainty that could affect this value that need to be taken into account. Due to the neutron tagging algorithm using the reconstructed neutrino interaction vertex in order to find neutron candidates, it means that there is an association between the neutrino interaction vertex and the neutron capture vertex which is introduced into the neutron tagging efficiency. This is utilised when calculating the systematic uncertainties stemming from secondary interactions (SI), shown later in this Chapter. Therefore unertainties involving the neutrino interactions, such as neutrino interaction cross section uncertainties and the uncertainty stemming from neutrino flux are calculated. Uncertainties in how particle interactions occur in the simulation are also calculated such as pion final state and secondary interaction uncertainties, nucleon final state interaction and secondary interaction uncertainties and uncertainties on how pions and muons are captured upon $\ch{^{16}O}$. There are also uncertainties stemming from the detector itself which need to be taken into account, such as the uncertainty in PMT gain, detector response from neutrino interaction uncertainties and uncertainties from gamma production from neutron capture detector response. 
 
 \section{Systematic uncertainty calculation methodology}
 
-
 The two ways in which the systematic error for this analysis are estimated are either using MC re-weighting or MC regeneration.
 \newline
-For the MC-reweighting approach, weights are applied to a quantity and the tagging efficiency of the re-weighted MC is extracted. The general methodology is to have the input of a model (given by a set of parameters) and to vary them one by one and then calculate the reweighted tagging efficiencies - the set of relative discrepancies $\delta_{i}$ are computed from this set of reweighted tagging efficiencies $T_{i}$ and the nominal tagging efficiency $T_{nom}$ using Equation \eqref{tageffdiscrep}.
+For the MC-reweighting approach, weights are applied to a quantity and the tagging efficiency of the re-weighted MC is extracted. The general methodology is to have the input of a model (given by a set of parameters) and to vary them one by one and then calculate the reweighted tagging efficiencies - the set of relative discrepancies $\delta_{i}$ are computed from this set of reweighted tagging efficiencies $T_{i}$ and the nominal tagging efficiency $T_{nom}$ using Equation \ref{eq:tageffdiscrep}.
 \newline
 \begin{equation}
     \delta_{i}=\frac{T_{i}-T_{\text {nom }}}{T_{\text {nom }}} \quad i \in\{\text { parameters }\}
-\label{tageffdiscrep}
+\label{eq:tageffdiscrep}
 \end{equation}
 \newline
 
