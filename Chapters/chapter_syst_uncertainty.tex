@@ -20,8 +20,8 @@ In the MC-reweighting approach, weights are applied to a quantity and the taggin
 These relative discrepancies $\delta_{i}$ are used to calculate the one indivdual discrepancy $\delta_{reweighted}$ that would describe the final deviation from the nominal tagging efficiency $T_{nom}$ due to the systematic error. The parameter $\delta_{reweighted}$ describes the model which has been produced through 1$\sigma$ variations of these parameters, therefore the final probability distribution function which describes the deviation from the nominal MC has an assumed Gaussian distribution with the standard deviation being equal to $\delta_{reweighted}$. 
 
 
-
-\section{Gamma production from neutron capture detector response}
+\section{Systematic uncertainties}
+\subsection{Gamma production from neutron capture detector response}
 
 As mentioned previously, the Americium/Beryllium (Am/Be) source produces a prompt 4.4 MeV gamma ray along with a neutron via Equation \ref{eq:ambe_decay_2}. 
 
@@ -50,7 +50,7 @@ However, due to Table \ref{table:ambe_tau_chi2} showing three neutron capture un
 Equation \ref{eq:total_ambe_deviation} gives a total Am/Be neutron tagging deviation from the nominal of $\pm$ 4.47\% shown in Table \ref{table:systuncertaintytable}. 
 
 
-\section{Neutrino beam flux uncertainty}
+\subsection{Neutrino beam flux uncertainty}
 
 The uncertainty on neutrino beam fluxes can be evaluated by looking at the dependence of the tagging efficiency on the flux variations. The beam fluxes for the four flavour modes 
 $\left(\nu_{e}, \overline{\nu_{e}}, \nu_{\mu}, \overline{\nu_{\mu}}\right)$ have the fractional uncertainties given for each mode, FHC and RHC. The binned uncertainties are shown in Figure \ref{fig:frac_beam_flux_uncertainty}.
@@ -87,7 +87,7 @@ Figure \ref{fig:fluxuncertainty} shows the fractional errors calculated from the
 \label{fig:fluxuncertainty}
 \end{figure}
 
-\section{Neutrino cross section uncertainty}
+\subsection{Neutrino cross section uncertainty}
 
 A group of default neutrino cross section values are used to make up the nominal Monte Carlo from which the tagging efficiency is calculated. The values of the parameters that determine the cross sections are shown in Table \ref{table:xsectable}. Each of the parameter values relate to a specific interaction type and are either a normalisation parameter or a paramater which shows a kinematic dependence. \newline
 
@@ -135,7 +135,7 @@ Figure \ref{fig:xsecuncertainty} shows the reweighted Monte Carlo fractional unc
 \label{fig:xsecuncertainty}
 \end{figure}
 
-\section{Pion final state interaction (FSI) and secondary interaction (SI) uncertainties}
+\subsection{Pion final state interaction (FSI) and secondary interaction (SI) uncertainties}
 
 Even though this is an analysis concerned with neutral current quasi elastic interactions, pion events are a significant contribution to the background, and as a result it is important to examine the pion interaction uncertainties both for final state interactions and secondary interactions as their trajectories span the detector. 
 \newline
@@ -223,7 +223,7 @@ The pion FSI/SI uncertainty is then calculated using Equation \ref{eq:std_dev_fs
 \label{table:fsimodelparameters}
 \end{table}
 
-\section{Nucleon final state interactions}
+\subsection{Nucleon final state interactions}
 
 Uncertainties regarding the nucleon final state interactions can change the number of nucleons knocked out of $\ch{^{16}O}$, therefore how the tagging efficiency is changed due to the variation in nucleon final state interactions needs to be investigated. This uncertainty is extracted using GENIE, a Monte Carlo event generator which contains the INTRANUKE (hA) intranuclear transport model. The uncertainties in the in the total scattering probability for hadrons inside the target nuclei ($x_{m f p}^{N}$) and the uncertainties in the likelihood of each hadron rescattering method: elastic ($x_{e l}^{N}$), inelastic ($x_{i n e l}^{N}$), charge exchange ($x_{c e x}^{N}$), pion production ($x_{\pi}^{N}$) and absorption ($x_{a b s}^{N}$) are taken into account. The fractional uncertainties for these modes for pions is shown in Table \ref{table:nucleonfsiuncertainties}. 
 
@@ -311,7 +311,7 @@ The final muon and pion capture errors are summarised in Equation \ref{eq:total_
 \end{equation}
 
 
-\section{Nucleon SI}
+\subsection{Nucleon SI}
 Uncertainties in how Nucleon SI interactions are modelled can affect the tagging efficiency, due to how these uncertainties can affect the final number of nucleons present in the simulation and how far they travel in the detector medium. There are two Monte Carlo code systems used in order to determine how nucleons travel in the simulation, MICAP and HETC. These come as part of GCALOR, used to determine the energy and direction of incident hadrons, leptons and photons. MICAP (Monte-Carlo-Ionization-Chamber-Analysis-Program), which simulates interactions based on calculated cross section and angular distributions for secondary particles, and is called for neutrons with a kinetic energy below 20 MeV. HETC on the other hand, is the High-Energy-Transport-Code, and is responsible for transporting charged hadrons above 20 MeV (up to an energy of 10 GeV) through the detector medium. 
 
 \subsection{MICAP uncertainty calculation}
@@ -387,7 +387,7 @@ The fractional discrepancies regarding the HETC codes are not inherently symmetr
 \end{equation}
 
 
-\section{Uncertainty due to PMT gain simulation}
+\subsection{Uncertainty due to PMT gain simulation}
 
 The change in PMT gain over time in the Super-K detector provides a systematic uncertainty for the simulations in this analysis. In SKDETSIM-SKGd the PMT gain drift is modelled by scaling the charge recieved by the PMT according to Equation \ref{eq:PMT_drift_gain}, where $G_{0}$ is the amount of average PMT gain value from June 2017. 
 
@@ -412,10 +412,12 @@ The discrepancies in tagging efficiency for this systematic uncertainty are prod
 \end{equation}
 
 
-
-\section{Detector response for neutrino events}
+\subsection{Detector response for neutrino events}
  
-\begin{equation}
+The Bonsai fitter output produces parameters that encapsulate the detector repsonse to neutrino events: namely the parameters $E_{rec}$, dwall, effwall, ovaQ, and $\theta_C$. During the selection of NCQE events, cuts are made on these variables in order to give the most plentiful NCQE sample. However, uncertainties on these parameters can modify the amount of NCQE events and affect the position vector of the reconstructed neutrino vertex, and therefore the NTag algorithm, which could have an impact on the tagging efficiency. The errors on these variables are shown in Table \ref{table:det_resp_nu_errors}, and are also provided in TN-374 \cite{tn_374}.
+
+\begin{table}
+    $$
 \begin{array}{ll}
 \hline \text { Reduction parameter }  & \text { Uncertainty } \\
 \hline E_{\text {rec }}  & \pm 5 \% \\
@@ -423,11 +425,34 @@ The discrepancies in tagging efficiency for this systematic uncertainty are prod
 \theta_C & \pm 2 \text { degree } \\
 \text{Effwall} & \pm 50 \text {cm} \\
 \text{DWall} & \pm 5 \text{cm}  \\
-
 \hline
 \end{array}
+$$
+\caption{Uncertainties on Bonsai output parameters (taken from \cite{tn_374}).}
+\label{table:det_resp_nu_errors}
+\end{table}
+
+The nominal Monte Carlo is re-weighted to produce two new Monte Carlo ($\pm$) for each of the Bonsai fitter output parameters, $i$, and the respective tagging efficiencies $T_{i}(\pm\sigma$) are calculated. The fractional uncertainties are shown in Equation \ref{eq:nu_det_resp_uncertainties}.
+
+
+\begin{equation}
+    \delta_i(\pm \sigma)=\frac{T_i(\pm \sigma)-T_{\text {nom }}}{T_{\text {nom }}} \quad i \in\{\text { Bonsai output parameters }\}
+\label{eq:nu_det_resp_uncertainties}
 \end{equation}
 
+Figure \ref{fig:nu_det_syst_error} shows the fractional uncertainties for each parameter. Due to these variables being considered independent of one another, their uncertainties can be summed in quadrature where as usual the maximum is taken between the $\delta(\pm\sigma)$ pairs, shown in Equation \ref{eq:total_nu_det_syst}.
+
+\begin{equation}
+    \delta_{\text {$\nu$ response }}=\sqrt{\sum_i \max \left[\delta_i^2(+\sigma), \delta_i^2(-\sigma)\right]}
+\label{eq:total_nu_det_syst}
+\end{equation}
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=\textwidth]{Figures/nu_det_response.png}
+    \caption{Variation in tagging efficiency produced by the error in neutrino detector response parameters (Bonsai output variables). Red: -1$\sigma$ discrepancy. Blue: +1$\sigma$ discrepancy. }
+    \label{fig:nu_det_syst_error}
+\end{figure}
 
 \newpage
 
@@ -446,7 +471,8 @@ The discrepancies in tagging efficiency for this systematic uncertainty are prod
     \text { Nucleon FSI } & \pm 0.20  \\ 
     \text { Nucleon SI } & { }_{-5.40}^{+5.40} \\ 
     \mu \text { capture on }{ }^{16} \mathrm{O} & \pm 0.01\\ 
-    \pi \text { capture on }{ }^{16} \mathrm{O} & \pm 0.33\\  
+    \pi \text { capture on }{ }^{16} \mathrm{O} & \pm 0.33\\
+    \text{Det. resp. for $\nu$} & \pm 0.60\\
     \text { Det. resp. for gamma cascade }& \pm 4.47 \\ 
     \end{array}$
 \caption{Final systematic uncertainties for the tagging efficiency} 
