@@ -18,10 +18,17 @@ In the MC-reweighting approach, weights are applied to a quantity and the taggin
 \newline
 
 These relative discrepancies $\delta_{i}$ are used to calculate the one indivdual discrepancy $\delta_{reweighted}$ that would describe the final deviation from the nominal tagging efficiency $T_{nom}$ due to the systematic error. The parameter $\delta_{reweighted}$ describes the model which has been produced through 1$\sigma$ variations of these parameters, therefore the final probability distribution function which describes the deviation from the nominal MC has an assumed Gaussian distribution with the standard deviation being equal to $\delta_{reweighted}$. 
+\newline
+The other method of estimating a systematic error on the tagging efficiency is Monte Carlo regeneration. This methodology is used when a single variable is changed, instead of the entire parameter space as with MC re-weighting. Monte Carlo regeneration involves changing a parameter and then re-producing the entrie Monte Carlo, and then recalculating the associated tagging efficiency. The deviation of this re-generated Monte Carlo tagging efficiency from the nominal Monte Carlo tagging efficiency is then calculated using Equation \ref{eq:MC_regen_error}.
 
+\begin{equation}
+    \delta_{regen}(\pm)=\frac{T_{regen} -T_{n o m}}{T_{n o m}}
+\label{eq:MC_regen_error}
+\end{equation}
 
-\section{Systematic uncertainties}
-\subsection{Gamma production from neutron capture detector response}
+The list of systematic errors that effect the tagging efficiency are shown in Table \ref{table:systuncertaintytable}. 
+
+\subsection{Gamma ray detector response}
 
 As mentioned previously, the Americium/Beryllium (Am/Be) source produces a prompt 4.4 MeV gamma ray along with a neutron via Equation \ref{eq:ambe_decay_2}. 
 
@@ -33,21 +40,21 @@ As mentioned previously, the Americium/Beryllium (Am/Be) source produces a promp
 \label{eq:ambe_decay_2}
 \end{equation}
 
-In Chapter 6, the tagging efficiency of the Am/Be neutron source was calculated for the source in three different positions, and are shown in Table \ref{table:ambe_tau_chi2}. The systematic uncertainties in this Chapter are evaluated by calculating the difference between the nominal tagging efficiency and the tagging efficiency arising from a different process, either a different type of simulation, a different model, or in the case of this uncertainty, a difference in the source of neutrons for neutron capture. Equation \ref{eq:ambe_efficiency_systematic} shows how this systematic is quantified; where $\delta_{Detector}$ is the fractional discrepancy arising from variation in tagging efficiency, $T_{AmBe}$ is the neutron tagging efficiency from the Am/Be data, and $T_{nom}$ is the nominal tagging efficiency of the NCQE MC. 
+In Chapter 6, in order to validate the neutron tagging efficiencies calculated, the tagging efficiency of neutron captures from Am/Be + 8BGO data were also calculated and compared to the Monte Carlo prediction. These efficiencies are shown in Table \ref{table:ambe_tau_chi2} and it is important to understand the errors stemming from the Am/Be + 8BGO neutron capture efficiencies as well. The systematic uncertainties in this Chapter are evaluated by calculating the difference between the nominal tagging efficiency and the tagging efficiency arising from a different process, either a different type of simulation, a different model, or in the case of this uncertainty, a difference in the source of neutrons for neutron capture. Equation \ref{eq:ambe_efficiency_systematic} shows how this systematic is quantified; where $\delta_{AmBe}$ is the fractional discrepancy arising from variation in tagging efficiency, $T_{AmBe}$ is the neutron tagging efficiency from the Am/Be + 8BGO data, and $T_{nom}$ is the nominal tagging efficiency of the NCQE MC. 
 
 \begin{equation}
-\delta_{Detector}^{i}=\frac{T_{AmBe}^{i}-T_{n o m}}{T_{n o m}}
+\delta_{AmBe}^{i}=\frac{T_{AmBe}^{i}-T_{n o m}}{T_{n o m}}
 \label{eq:ambe_efficiency_systematic}
 \end{equation}
 
 However, due to Table \ref{table:ambe_tau_chi2} showing three neutron capture uncertainties for the Am/Be data dependent on position, it makes sense to calculate the deviation of each of these from the norminal, using Equation \ref{eq:ambe_efficiency_systematic} where $i$ denotes the position of the Am/Be source. Equation \ref{eq:total_ambe_deviation} gives the total deviation of the Am/Be tagging efficiency from the nominal, i.e. the total detector response systematic.
 
 \begin{equation}
-    \delta_{Detector}^{i}= T_{AmBe}^{Centre} + T_{AmBe}^{+12z} + T_{AmBe}^{-12x} 
+    {\delta_{AmBe}}^2= \frac{{\delta_{AmBe}^{Centre}}^2 + {\delta_{AmBe}^{+12z}}^2 + {\delta_{AmBe}^{-12x}}^2}{3} 
 \label{eq:total_ambe_deviation}
 \end{equation}
 
-Equation \ref{eq:total_ambe_deviation} gives a total Am/Be neutron tagging deviation from the nominal of $\pm$ 4.47\% shown in Table \ref{table:systuncertaintytable}. 
+
 
 
 \subsection{Neutrino beam flux uncertainty}
@@ -66,11 +73,12 @@ Each individual bin for the flux is increased/decreased by its error, the Monte 
 
 
 Figure \ref{fig:fluxuncertainty} shows the fractional errors calculated from the reweighted Monte Carlo, with the red bars showing the -1$\sigma$ variation and the blue bars showing the +1$\sigma$ variation. Table \ref{table:systuncertaintytable} contains the value for the total uncertainty resulting from the neutrino beam flux, which was calculated using Equation \ref{eq:summingfluxuncertainty}, where the maximum value between the increased and decreased discrepancy is taken and summed over to produce the final neutrino flux beam uncertainty.
+Although there are known correlations between the flux parameters, these are not taken into account, because the impact on the neutron tagging efficiencies are extremely small \cite{akutsu_thesis}.
 \newline
 
 \begin{figure}[!htb]
     \includegraphics[width=\textwidth]{Figures/frac_beam_flux_uncertainty.png}
-    \caption{Fractional uncertainties of beam fluxes, taken from \cite{tn415_fiacob}. }
+    \caption{Fractional uncertainties of beam fluxes, taken from \cite{tn415_fiacob}, for FHC mode. }
     \label{fig:frac_beam_flux_uncertainty}
 \end{figure}
 
@@ -83,7 +91,7 @@ Figure \ref{fig:fluxuncertainty} shows the fractional errors calculated from the
 \begin{figure}[!htb]
     \centering
 \includegraphics[width=\textwidth]{Figures/flux_uncertainty.png}
-\caption{Tagging efficiency fractional uncertainties caused by neutrino beam flux discrepancies. From left to right the sections in this plot are comprised of the beam fluxes elements of $\left(\nu_{e} \overline{\nu_{e}} \nu_{\mu} \overline{\nu_{\mu}}\right)$ respectively.}
+\caption{Tagging efficiency fractional uncertainties caused by neutrino beam flux discrepancies associated with neutrino energy in the 0.1 - 10 GeV range. From left to right the sections in this plot are comprised of the beam fluxes elements of $\left(\nu_{e} \overline{\nu_{e}} \nu_{\mu} \overline{\nu_{\mu}}\right)$ respectively.}
 \label{fig:fluxuncertainty}
 \end{figure}
 
@@ -91,17 +99,17 @@ Figure \ref{fig:fluxuncertainty} shows the fractional errors calculated from the
 
 A group of default neutrino cross section values are used to make up the nominal Monte Carlo from which the tagging efficiency is calculated. The values of the parameters that determine the cross sections are shown in Table \ref{table:xsectable}. Each of the parameter values relate to a specific interaction type and are either a normalisation parameter or a paramater which shows a kinematic dependence. \newline
 
-For charged current quasi-elastic interactions, the uncertainty is described by the Fermi momentum of the oxygen nucleus, ($p_{F}^{O}$), the binding energy of the oxygen nucleus,($E_{B}^{O}$) and the axial mass $M_{A}^{C C Q E}$. The axial mass for CCQE interactions relates to the axial form factor which along with vector form factors is proportional to the cross section of the interactions. For neutrino interactions where two nucleons produce two holes (2p2h), an overall normalisation parameter takes the uncertainty of these interactions into account. For $CC$ and $NC1\pi$ interactions, the uncertainty is described by the isospin background, the axial form factor $C_{A 5}^{R E S}$ which just like for CCQE interactions relates to the axial mass $M_{A}^{R E S}$. For neutral current and charged current interactions (both elastic and inelastic) there are normalisation parameters and energy dependent parameters for the uncertainty to take into account. Finally, for charged current interactions with electron neutrinos, the braking radiation from the lepton in the final state is also considered when calculating the uncertainty and is treated using a normalisation parameter.
+For charged current quasi-elastic interactions, the uncertainty is described by the Fermi momentum of the oxygen nucleus, ($p_{F}^{O}$), the binding energy of the oxygen nucleus,($E_{B}^{O}$) and the axial mass $M_{A}^{C C Q E}$. The axial mass for CCQE interactions relates to the axial form factor which along with vector form factors is proportional to the cross section of the interactions. For neutrino interactions with correlated nucleons (2p2h), an overall normalisation parameter takes the uncertainty of these interactions into account. For $CC$ and $NC1\pi$ interactions, the uncertainty is described by the isospin background, the axial form factor $C_{A 5}^{R E S}$ which just like for CCQE interactions relates to the axial mass $M_{A}^{R E S}$. For neutral current and charged current interactions (both elastic and inelastic) there are normalisation parameters and energy dependent parameters for the uncertainty to take into account. Finally, for charged current interactions with electron neutrinos, the braking radiation from the lepton in the final state is also considered when calculating the uncertainty and is treated using a normalisation parameter.
 \newline
 
-The Monte Carlo re-weighting method is used to reweight the nominal Monte Carlo on an event by event basis with each parameter value being increased and decreased by its uncertainty, and for each reweighted Monte Carlo the equivalent tagging efficiency value is extracted. Equation \ref{eq:xsectageff} shows how the fractional discrepancies are extracted from the nominal and reweighted tagging efficiency values.
+The Monte Carlo re-weighting method is used to reweight the nominal Monte Carlo on an event by event basis with each parameter value being increased and decreased by its uncertainty, where the weights applied are produced by T2KReWeight v1r23, and for each reweighted Monte Carlo the equivalent tagging efficiency value is extracted. Equation \ref{eq:xsectageff} shows how the fractional discrepancies are extracted from the nominal and reweighted tagging efficiency values.
 
 \begin{equation}
 \delta_{i}(\pm \sigma)=\frac{T_{i}(\pm \sigma)-T_{\text {nom }}}{T_{\text {nom }}} \quad i \in\{\text { parameters }\}
 \label{eq:xsectageff}
 \end{equation}
 
-Figure \ref{fig:xsecuncertainty} shows the reweighted Monte Carlo fractional uncertainty plotted for the FHC sample. Since this sample contains a lot of NCother interactions, the uncertainty for this interaction type is greater than for the others.
+Figure \ref{fig:xsecuncertainty} shows the reweighted Monte Carlo fractional uncertainty plotted for the FHC sample. Since this sample contains a lot of NCother interactions, the uncertainty for this interaction type is greater than for the others, however compared to the rest of the systematics in this Chapter, the neutrino cross section uncertainty is very small.
 
 \begin{table}
     \centering
@@ -152,23 +160,25 @@ For pions with a momentum of greater than 500 MeV, a different set of interactio
 
 
 \begin{table}
-$$
-\begin{array}{ccc}
-\text { Parameter } & \text { Description } & \begin{array}{c}
-\text { Momentum } \\
-\text { Region }(\mathrm{MeV} / c)
-\end{array} \\
-f_{\mathrm{ABS}} & \text { Absorption } & <500 \\
-f_{\mathrm{QE}} & \text { Quasi-elastic scatter } & <500 \\
-f_{\mathrm{CX}} & \text { Single charge exchange } & <500 \\
-f_{\mathrm{QEH}} & \text { Quasi-elastic scatter } & >500 \\
-f_{\mathrm{CXH}} & \text { Single charge exchange } & >500 \\
-f_{\mathrm{INEL}} & \text { Hadron }(\mathrm{N}+\mathrm{n} \pi) \text { production } & >500 \\
-\end{array}
-$$
+\centering
+\begin{tabular}{||ccc||}
+\hline
+$\text { Parameter }$ & $\text { Description }$ & $\text{Momentum Region (MeV/c)}$\\
+\hline
+$f_{\text{ABS}}$ & $\text{Absorption}$ & $<$ 500 \\
+$f_{\text{QE}}$ & $\text { Quasi-elastic scatter }$ & $<$ 500 \\
+$f_{\text{CX}}$ & $\text { Single charge exchange }$ & $<$ 500 \\
+$f_{\text{QEH}}$ & $\text { Quasi-elastic scatter }$ & $>$ 500 \\
+$f_{\text{CXH}}$ & $\text { Single charge exchange }$ & $>$ 500 \\
+$f_{\text{INEL}}$ & $\text { Hadron }(\text{N}+\text{n}\pi)$ $\text {production}$ & $>$ 500 \\
+\hline
+\end{tabular}
 \caption{Table showing the pion final state interaction parameters in NEUT and the pion momentum range they are used in, taken from \cite{tn_32}.}
 \label{table:fsiparameters}
 \end{table}
+
+
+
 A set of parameter variations which determine a surface in paramater space have been estimated by pion scattering experiments, the values for which are shown in Table \ref{table:fsimodelparameters}. The 1$\sigma$ surface has been explored using the nominal Monte Carlo re-weighting method and the analagous tagging efficiency uncertainty is shown in Equation \ref{eq:fsisitageff}, and the uncertainty stemming from the models shown in Table \ref{table:fsimodelparameters} is shown in Figure \ref{fig:fsisiuncertainty}
 
 \begin{equation}
@@ -192,17 +202,16 @@ The pion FSI/SI uncertainty is then calculated using Equation \ref{eq:std_dev_fs
 \end{figure}
 
 \begin{table}
-    $$
-    \begin{array}{lllllll}
-         & & & & & & \\
-        \text { Set } & \text { ABS } & \text { QE } & \text { CX } & \text { INEL } & \text { QEH } & \text { CXH } \\
- %       \hline
-    %\begin{array}{ccccccc}
-    \text { Nominal } & 1.1 & 1.0 & 1.0 & 1.0 & 1.8 & 1.8 \\
+\centering
+\begin{tabular}{||ccccccc||}
+\hline
+$\text { Set }$ & $\text { ABS }$ & $\text { QE }$ & $\text { CX }$ & $\text { INEL }$ & $\text { QEH }$ & $\text { CXH }$ \\
+\hline
+    $\text { Nominal }$ & 1.1 & 1.0 & 1.0 & 1.0 & 1.8 & 1.8 \\
     & & & & & & \\
     & 0.7 & 0.6 & 0.5 & 1.5 & 1.1 & 2.3 \\
     & 0.7 & 0.6 & 1.6 & 1.5 & 1.1 & 2.3 \\
-    \text { Hadron production Up } & 1.6 & 0.7 & 0.4 & 1.5 & 1.1 & 2.3 \\
+    $\text { Hadron production Up }$ & 1.6 & 0.7 & 0.4 & 1.5 & 1.1 & 2.3 \\
     & 1.6 & 0.7 & 1.6 & 1.5 & 1.1 & 2.3 \\
     & 0.6 & 1.4 & 0.6 & 1.5 & 1.1 & 2.3 \\
     & 0.7 & 1.3 & 1.6 & 1.5 & 1.1 & 2.3 \\
@@ -212,13 +221,13 @@ The pion FSI/SI uncertainty is then calculated using Equation \ref{eq:std_dev_fs
     & 0.7 & 0.6 & 0.5 & 0.5 & 2.3 & 1.3 \\
     & 0.7 & 0.6 & 1.6 & 0.5 & 2.3 & 1.3 \\
     & 1.6 & 0.7 & 0.4 & 0.5 & 2.3 & 1.3 \\
-    \text { Hadron production Down } & 1.6 & 0.7 & 1.6 & 0.5 & 2.3 & 1.3 \\
+    $\text { Hadron production Down }$ & 1.6 & 0.7 & 1.6 & 0.5 & 2.3 & 1.3 \\
     & 0.6 & 1.4 & 0.6 & 0.5 & 2.3 & 1.3 \\
     & 0.7 & 1.3 & 1.6 & 0.5 & 2.3 & 1.3 \\
     & 1.5 & 1.5 & 0.4 & 0.5 & 2.3 & 1.3 \\
-    & 1.6 & 1.6 & 1.6 & 0.5 & 2.3 & 1.3
-    \end{array}
-    $$
+    & 1.6 & 1.6 & 1.6 & 0.5 & 2.3 & 1.3\\
+\hline
+\end{tabular}
 \caption{Pion FSI/SI model parameter nominal value and variations grouped according to inelastic hadron production value, taken from \cite{tn_32}.}
 \label{table:fsimodelparameters}
 \end{table}
@@ -228,17 +237,18 @@ The pion FSI/SI uncertainty is then calculated using Equation \ref{eq:std_dev_fs
 Uncertainties regarding the nucleon final state interactions can change the number of nucleons knocked out of $\ch{^{16}O}$, therefore how the tagging efficiency is changed due to the variation in nucleon final state interactions needs to be investigated. This uncertainty is extracted using GENIE, a Monte Carlo event generator which contains the INTRANUKE (hA) intranuclear transport model. The uncertainties in the in the total scattering probability for hadrons inside the target nuclei ($x_{m f p}^{N}$) and the uncertainties in the likelihood of each hadron rescattering method: elastic ($x_{e l}^{N}$), inelastic ($x_{i n e l}^{N}$), charge exchange ($x_{c e x}^{N}$), pion production ($x_{\pi}^{N}$) and absorption ($x_{a b s}^{N}$) are taken into account. The fractional uncertainties for these modes for pions is shown in Table \ref{table:nucleonfsiuncertainties}. 
 
 \begin{table}
-$$
-\begin{array}{llc}
-\text {Abbreviation} & \text { Description of uncertainty }  & \text{Fractional uncertainty} \\
- x_{m f p}^{N} & \text { Nucleon mean free path (total rescattering probability) } & \pm 20 \% \\
-x_{c e x}^{N} & \text { Nucleon charge exchange probability } & \pm 50 \% \\
-x_{e l}^{N} & \text { Nucleon elastic reaction probability } & \pm 30 \% \\
-x_{i n e l}^{N} & \text { Nucleon inelastic reaction probability } & \pm 40 \% \\
-x_{a b s}^{N} & \text { Nucleon absorption probability } & \pm 20 \% \\
-x_{\pi}^{N} & \text { Nucleon } \pi \text {-production probability } & \pm 20 \%
-\end{array}
-$$
+\begin{tabular}{||ccc||}
+\hline
+$\text {Abbreviation}$ & $\text { Description of uncertainty }$  & $\text{Fractional uncertainty}$ \\
+\hline
+$ x_{m f p}^{N}$ & $\text { Nucleon mean free path (total rescattering probability) }$ & $\pm 20 \%$ \\
+$x_{c e x}^{N}$ & $\text { Nucleon charge exchange probability }$ & $\pm 50 \%$ \\
+$x_{e l}^{N}$ & $\text { Nucleon elastic reaction probability }$ & $\pm 30 \%$ \\
+$x_{i n e l}^{N}$ & $\text { Nucleon inelastic reaction probability }$ & $\pm 40 \%$ \\
+$x_{a b s}^{N}$ & $\text { Nucleon absorption probability }$ & $\pm 20 \%$ \\
+$x_{\pi}^{N}$ & $\text { Nucleon pion-production probability }$ & $\pm 20 \%$\\
+\hline
+\end{tabular}
 \caption{Nucleon final state interaction parameters of the hA model executed inside GENIE.} 
 \label{table:nucleonfsiuncertainties}
 \end{table}
@@ -284,9 +294,9 @@ Because any change in the model can alter the energy spectra of the neutrons, th
 
 \begin{equation}
     \begin{aligned}
-        \delta_{muon C H I P S} &=\frac{T_{muon C H I P S}-T_{n o m}}{T_{\text {nom }}} \\
-        \delta_{pion C H I P S} &=\frac{T_{pion C H I P S}-T_{n o m}}{T_{\text {nom }}} \\
-        \delta_{pion B e r t} &=\frac{T_{pion B e r t}-T_{n o m}}{T_{\text {nom }}}
+        \delta_{\text{muon CHIPS}} &=\frac{T_{\text{muon CHIPS}}-T_{n o m}}{T_{nom}} \\
+        \delta_{\text{pion CHIPS}} &=\frac{T_{\text{pion CHIPS}}-T_{n o m}}{T_{nom}} \\
+        \delta_{\text{pion Bertini}} &=\frac{T_{\text{pion Bertini}}-T_{n o m}}{T_{nom}}
         \end{aligned}
         \label{eq:muoncaptaggingeff}
 \end{equation}
@@ -300,7 +310,7 @@ Figure \ref{fig:mupicap_uncertainty} shows the fractional uncertainties caused b
 \label{fig:mupicap_uncertainty}
 \end{figure}
 
-The final muon and pion capture errors are summarised in Equation \ref{eq:total_mupicap_error} and are presented in Table \ref{table:systuncertaintytable}.
+The final muon and pion capture errors are summarised in Equation \ref{eq:total_mupicap_error}.
 
 \begin{equation}
 \begin{aligned}
@@ -421,7 +431,7 @@ The Bonsai fitter output produces parameters that encapsulate the detector repso
 \begin{array}{ll}
 \hline \text { Reduction parameter }  & \text { Uncertainty } \\
 \hline E_{\text {rec }}  & \pm 5 \% \\
-\text { ova } Q  & \pm 1.5 \% \\
+\text { ovaQ } & \pm 1.5 \% \\
 \theta_C & \pm 2 \text { degree } \\
 \text{Effwall} & \pm 50 \text {cm} \\
 \text{DWall} & \pm 5 \text{cm}  \\
@@ -472,7 +482,7 @@ Figure \ref{fig:nu_det_syst_error} shows the fractional uncertainties for each p
     \text { Nucleon SI } & { }_{-5.40}^{+5.40} \\ 
     \mu \text { capture on }{ }^{16} \mathrm{O} & \pm 0.01\\ 
     \pi \text { capture on }{ }^{16} \mathrm{O} & \pm 0.33\\
-    \text{Det. resp. for $\nu$} & \pm 0.60\\
+    \text{Det. resp. for $\nu$} & \pm 1.36\\
     \text { Det. resp. for gamma cascade }& \pm 4.47 \\ 
     \end{array}$
 \caption{Final systematic uncertainties for the tagging efficiency} 
