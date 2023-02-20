@@ -1,0 +1,11 @@
+\chapter{NCQE cross section extraction}
+\label{chp:ncqe_xsec}
+
+The number of observed neutrino events for a neutrino ($\nu$) produced with flavour $\alpha$ which oscillates and is detected at Super-Kamiokande with flavour $\beta$, as a function of some observable such as reconstructed neutrino energy $N_{\nu}(\Theta)$ is given in Equation \ref{eq:nu_number}.
+
+\begin{equation}
+    N_\nu(\Theta)=\mathcal{C} \int \Phi\left(E_\nu\right) \sigma\left(E_\nu\right) P_{\nu_\alpha \rightarrow \nu_\beta}\left(E_\nu\right) \epsilon\left(E_\nu\right) d E_\nu
+\label{eq:nu_number}
+\end{equation}
+
+Here, $\mathcal{C}$ is the target volume, $E_{\nu}$ is the true incoming neutrino energy, $\phi(E_{\nu})$ is the flux of the incoming neutrino, $\sigma(E_{\nu})$ is the cross section for the neutrino interaction, $P_{\nu_\alpha \rightarrow \nu_\beta}(E_{\nu})$ is the probability of the neutrino oscillating, $\epsilon (E_{\nu})$ is the detection efficiency of the neutrino by the far detector. However when actually calculating this number of events, the Monte Carlo simulations are produced without the neutrino oscillation effect and neutrino cross sections. Instead, later on the oscillation effect and beam flux tunings and other corrections are carried out by assigning a weight that takes these into account on an individual event basis, in order to save computational time. The number of neutrino events from Monte Carlo for each interaction type is shown in Equation \ref{eq:events_number_MC}, where a breakdown of each of the interactions is shown in Equation \ref{eq:monte_carlo} 
