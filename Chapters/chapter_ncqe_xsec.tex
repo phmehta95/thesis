@@ -1,6 +1,7 @@
 \chapter{NCQE cross section extraction}
 \label{chp:ncqe_xsec}
 
+\section{Scale factor calculation}
 The number of observed neutrino events for a neutrino ($\nu$) produced with flavour $\alpha$ which oscillates and is detected at Super-Kamiokande with flavour $\beta$, as a function of some observable such as reconstructed neutrino energy $N_{\nu}(\Theta)$ is given in Equation \ref{eq:nu_number}.
 
 \begin{equation}
@@ -8,4 +9,109 @@ The number of observed neutrino events for a neutrino ($\nu$) produced with flav
 \label{eq:nu_number}
 \end{equation}
 
-Here, $\mathcal{C}$ is the target volume, $E_{\nu}$ is the true incoming neutrino energy, $\phi(E_{\nu})$ is the flux of the incoming neutrino, $\sigma(E_{\nu})$ is the cross section for the neutrino interaction, $P_{\nu_\alpha \rightarrow \nu_\beta}(E_{\nu})$ is the probability of the neutrino oscillating, $\epsilon (E_{\nu})$ is the detection efficiency of the neutrino by the far detector. However when actually calculating this number of events, the Monte Carlo simulations are produced without the neutrino oscillation effect and neutrino cross sections. Instead, later on the oscillation effect and beam flux tunings and other corrections are carried out by assigning a weight that takes these into account on an individual event basis, in order to save computational time. The number of neutrino events from Monte Carlo for each interaction type is shown in Equation \ref{eq:events_number_MC}, where a breakdown of each of the interactions is shown in Equation \ref{eq:monte_carlo} 
+Here, $\mathcal{C}$ is the target volume, $E_{\nu}$ is the true incoming neutrino energy, $\phi(E_{\nu})$ is the flux of the incoming neutrino, $\sigma(E_{\nu})$ is the cross section for the neutrino interaction, $P_{\nu_\alpha \rightarrow \nu_\beta}(E_{\nu})$ is the probability of the neutrino oscillating, $\epsilon (E_{\nu})$ is the detection efficiency of the neutrino by the far detector. However when actually calculating this number of events, the Monte Carlo simulations are produced without the neutrino oscillation effect and neutrino cross sections. Instead, later on the oscillation effect and beam flux tunings and other corrections are carried out by assigning a weight that takes these into account on an individual event basis, in order to save computational time. The number of neutrino events from Monte Carlo for each interaction type is shown in Equation \ref{eq:events_number_MC}, where a breakdown of the number of events for each of the interactions is shown in Equation \ref{eq:monte_carlo_events}.
+
+\begin{equation}
+    N_{\text {obs }}^{\text {mode }} = f_{\nu \text {-NCQE }} M_{\nu \text {-NCQE }}^{\text {mode }}+f_{\bar{\nu}-\mathrm{NCQE}} M_{\bar{\nu} \text {-NCQE }}^{\text {mode }}+M_{\mathrm{NC} \text {-other }}^{\text {mode }}+M_{\mathrm{CC}}^{\text {mode }}
+\label{eq:events_number_MC}
+\end{equation}
+
+where $N_{\text {obs }}^{\text {mode }}$ is the number of observed events, mode is either FHC or RHC, $M_{\nu-\mathrm{NCQE}}^{\text {mode }}$ and $M_{\bar{\nu} \text {-NCQE }}^{\text {mode }}$ are the number of neutrino and antineutrino NCQE interactions, and $M_{\mathrm{NC} \text {-other }}^{\text {mode }}$ and  $M_{\mathrm{CC}}^{\text {mode }}$ are the number of NC-other and CC-other interactions interactively. $f_{\nu \text {-NCQE }}$ and $f_{\bar{\nu}-\mathrm{NCQE}}$ are scale factors which scale the NCQE cross section predictions.
+
+\begin{equation}
+    \begin{aligned}
+    M_{\nu-\mathrm{NCQE}}^{\text {mode }} & =\sum_{\nu=\nu_\mu, \nu_e} \int \sigma_{\nu-\mathrm{NCQE}}^{\mathrm{NEUT}}\left(E_\nu\right) \phi_\nu^{\text {mode }}\left(E_\nu\right) \epsilon_{\nu-\mathrm{NCQE}}^{\text {mode }}\left(E_\nu\right) T d E_\nu, \\
+    M_{\nu-\mathrm{NCQE}}^{\text {mode }} & =\sum_{\nu=D_\mu, D_e} \int \sigma_{\nu-\mathrm{NCQE}}^{\mathrm{NEUT}}\left(E_\nu\right) \phi_\nu^{\text {mode }}\left(E_\nu\right) \epsilon_{\nu-\mathrm{NCQE}}^{\text {mode }}\left(E_\nu\right) T d E_\nu, \\
+    M_{\mathrm{NC} \text {-other }}^{\text {mode }} & =\sum_{\nu=\nu_\mu, \nu_e, D_\mu, D_e} \int \sigma_{\nu-\mathrm{NC}-\text { other }}^{\mathrm{NEUT}}\left(E_\nu\right) \phi_\nu^{\text {mode }}\left(E_\nu\right) \epsilon_{\nu-\mathrm{NC}-\text { other }}^{\text {mode }}\left(E_\nu\right) T d E_\nu, \\
+    M_{\mathrm{CC}}^{\text {mode }} & =\sum_{\nu=\nu_\mu, \nu_e, \nu_\mu, \nu_e} \int \sigma_{\nu-\mathrm{CC}}^{\mathrm{NEUT}}\left(E_\nu\right) \phi_\nu^{\text {mode }}\left(E_\nu\right) \epsilon_{\nu-\mathrm{CC}}^{\text {mode }}\left(E_\nu\right) T d E_\nu .
+    \end{aligned}
+\label{eq:monte_carlo_events}
+\end{equation}
+
+
+ $\sigma^{NEUT}$ is the NEUT cross section, $\phi$ is the neutrino flux, $\epsilon$ is the selection efficiency for the interaction mode, $T$ is the target nucleon number and $E_{\nu}$ is the energy of the neutrinos. Equation \ref{eq:nu_number} can be rearranged in order to produce equations which give the scale factors for each mode FHC and RHC, shown in Equation \ref{eq:scale_factor_mode} . 
+
+ \begin{equation}
+    \begin{aligned}
+    & N_{\mathrm{obs}}^{\mathrm{FHC}}-M_{\mathrm{NC}-\text { other }}^{\mathrm{FHC}}-M_{\mathrm{CC}}^{\mathrm{FHC}}=f_{\nu-\mathrm{NCQE}} M_{\nu-\mathrm{NCQE}}^{\mathrm{FHC}}+f_{\bar{\nu}-\mathrm{NCQE}} M_{\bar{\nu}-\mathrm{NCQE}}^{\mathrm{FHC}} \\
+    & N_{\mathrm{obs}}^{\mathrm{RHC}}-M_{\mathrm{NC}-\mathrm{other}}^{\mathrm{RHC}}-M_{\mathrm{CC}}^{\mathrm{RHC}}=f_{\nu-\mathrm{NCQE}} M_{\nu-\mathrm{NCQE}}^{\mathrm{RHC}}+f_{\bar{\nu}-\mathrm{NCQE}} M_{\bar{\nu}-\mathrm{NCQE}}^{\mathrm{RHC}}
+    \end{aligned}
+\label{eq:scale_factor_mode}
+\end{equation}
+
+
+Equation \ref{eq:scale_factor_mode} gives the scale factors for neutrino and anti-neutrino events for FHC and RHC modes and by rearranging and transforming these two equations, the scale factors for the number of neutrino and antineutrino NCQE events can be extracted instead, as shown in Equation \ref{eq:scale_factor_nu}. 
+
+\begin{equation}
+    \begin{aligned}
+    f_{\nu-\mathrm{NCQE}}= & \frac{X M_{\bar{\nu} \mathrm{N} \mathrm{NCQE}}^{\mathrm{RHC}}-Y M_{\bar{\nu}-\mathrm{NCQE}}^{\mathrm{FHC}}}{M_{\nu-\mathrm{NCQE}}^{\mathrm{FHC}} M_{\bar{\nu}-\mathrm{NCQE}}^{\mathrm{RHC}}-M_{\nu-\mathrm{NCQE}}^{\mathrm{RHC}} M_{\bar{\nu}-\mathrm{NCQE}}^{\mathrm{FHC}}} \\
+    f_{\bar{\nu}-\mathrm{NCQE}}= & \frac{X M_{\nu-\mathrm{NCQE}}^{\mathrm{RHC}}-Y M_{\nu-\mathrm{NCQE}}^{\mathrm{FHC}}}{M_{\bar{\nu}-\mathrm{NCQE}}^{\mathrm{FHC}} M_{\nu-\mathrm{NCQE}}^{\mathrm{RHC}}-M_{\bar{\nu}-\mathrm{NCQE}}^{\mathrm{RHC}} M_{\nu-\mathrm{NCQE}}^{\mathrm{FHC}}}
+    \end{aligned}
+\label{eq:scale_factor_nu}
+\end{equation}
+
+where the coefficients $X$ and $Y$ are given in Equation \ref{eq:scale_factor_coeff}.
+
+
+\begin{equation}
+    \begin{aligned}
+    X & =N_{\mathrm{obs}}^{\mathrm{FHC}}-M_{\mathrm{NC}-o t h e r}^{\mathrm{FHC}}-M_{\mathrm{CC}}^{\mathrm{FHC}} \\
+    Y & =N_{\mathrm{obs}}^{\mathrm{RHC}}-M_{\mathrm{NC}-o t h e r}^{\mathrm{RHC}}-M_{\mathrm{CC}}^{\mathrm{RHC}}
+    \end{aligned}
+\label{eq:scale_factor_coeff}
+\end{equation}
+
+
+Table \ref{table:nu_FHC_mc} shows the gives the expected number of neutrino events for each type of interaction including neutral current and charged current interactions for FHC mode (same as mentioned in Chapter 6), and Table \ref{table:nu_RHC_mc} shows the same information for RHC mode.
+
+
+\begin{table}
+    $$
+    \begin{array}{ccc}
+    \hline \text { FHC sample } & \text { MC } \# \boldsymbol{\nu}_{\text {det }} & \text { MC } \# \nu_{\text {det }} \text { fraction (\%) } \\
+    \hline \nu-N C Q E & 204.1 & 76.6 \\
+    \bar{\nu}-\text { NCQE } & 5.6 & 2.1 \\
+    N C-\text { other } & 47.8 & 17.9 \\
+    C C & 8.8 & 3.3 \\
+    \hline \text { Total } & 266.3 & 100 \\
+    \hline
+    \end{array}
+    $$
+    \caption{FHC MC expectation values for each interaction type}
+    \label{table:nu_FHC_mc}
+\end{table}
+
+
+\begin{table}
+    $$
+    \begin{array}{ccc}
+    \hline \text { RHC sample } & \text { MC } \# \boldsymbol{\nu}_{\text {det }} & \text { MC } \# \nu_{\text {det }} \text { fraction (\%) } \\
+    \hline \nu-N C Q E & 18.9 & 19.1 \\
+    \bar{\nu}-\text { NCQE } & 60.1 & 60.8 \\
+    N C-\text { other } & 17.4 & 17.6 \\
+    C C & 2.4 & 2.5 \\
+    \hline \text { Total } & 98.8 & 100 \\
+    \hline
+    \end{array}
+    $$
+    \caption{RHC MC expectation values for each interaction type}
+    \label{table:nu_RHC_mc}
+\end{table}
+
+
+
+
+\section{Flux averaged NCQE cross-section}
+
+NEUT's cross section prediciton for the interaction of neutrinos and antineutrinos with ${ }^{16} \mathrm{O}$ is shown in Equation \ref{eq:NEUT_xsec_prediction}. Here $\langle\sigma_{\nu \text {-NCQE }}^{\text {NEUT }}\rangle$ gives the flux-averaged cross section prediction for neutrinos and $\langle\sigma_{\bar{\nu}-\mathrm{NEUCQ}}^{\mathrm{NEUT}}\rangle$ gives the flux-averaged cross section for antineutrinos. 
+
+
+\begin{equation}
+    \begin{aligned}
+    &\left\langle\sigma_{\nu \text {-NCQE }}^{\mathrm{NEUT}}\right\rangle= \frac{\sum_{\nu=\nu_\mu, \nu_e} \int \sigma_{\nu-\mathrm{NCQE}}^{\mathrm{NEUT}}\left(E_\nu\right) \phi_\nu\left(E_\nu\right) d E_\nu}{\sum_{\nu=\nu_\mu, \nu_e} \int \phi_\nu\left(E_\nu\right) d E_\nu}=2.13 \times 10^{-38} \mathrm{~cm}^2 / \text { oxygen } \\
+    &\left\langle\sigma_{\bar{\nu} \text {-NCQE }}^{\mathrm{NEUT}}\right\rangle=\frac{\sum_{\nu=\bar{\nu}_\mu, \bar{\nu}_e} \int \sigma_{\bar{\nu} \text {-NCQE }}^{\mathrm{NEUT}}\left(E_\nu\right) \phi_\nu\left(E_\nu\right) d E_\nu}{\sum_{\nu=\bar{\nu}_\mu, \bar{\nu}_e} \int \phi_\nu\left(E_\nu\right) d E_\nu}=0.88 \times 10^{-38} \mathrm{~cm}^2 / \text { oxygen. }
+    \end{aligned}
+\label{eq:NEUT_xsec_prediction}
+\end{equation}
+
+
