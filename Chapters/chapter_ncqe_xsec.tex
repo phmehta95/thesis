@@ -98,7 +98,16 @@ Table \ref{table:nu_FHC_mc} shows the gives the expected number of neutrino even
     \label{table:nu_RHC_mc}
 \end{table}
 
+Using the number of events for each interaction type in Table \ref{table:nu_FHC_mc} and Table \ref{table:nu_RHC_mc} and Equation \ref{eq:scale_factor_nu} and Equation \ref{eq:scale_factor_coeff}, along with the number of observed events (204 in FHC and 97 in RHC, taken from \cite{Abe_2019}), the scale factors are calculated and shown in Equation \ref{eq:scale_factors_value}.
 
+\begin{equation}
+    \begin{aligned}
+    & f_{\nu-\mathrm{NCQE}}=0.710 \pm 0.001 \text { (stat.) } \\
+    & f_{\bar{\nu}-\mathrm{NCQE}}=1.067 \pm 0.004 (\text { stat. })
+    \end{aligned}
+\label{eq:scale_factors_value}
+\end{equation}
+    
 
 
 \section{Flux averaged NCQE cross-section}
@@ -113,5 +122,17 @@ NEUT's cross section prediciton for the interaction of neutrinos and antineutrin
     \end{aligned}
 \label{eq:NEUT_xsec_prediction}
 \end{equation}
+
+The flux averaged NEUT cross section values in Equation \ref{eq:NEUT_xsec_prediction} is taken from \cite{Abe_2019}, and the integrations are taken up to an energy of 10 GeV. These NEUT cross sections are multiplied by the scale factors in order to obtain the flux-averaged NCQE cross sections, shown in Equation \ref{eq:xsec_value}. The systematic error on the final cross-section values are taken from Table \ref{table:systuncertaintytable} by summing up all the percentages and using the final percentage to calculate the systematic error on the values.
+
+
+\begin{equation}
+    \begin{aligned}
+    & \left\langle\sigma_{\nu \text {-NCQE }}\right\rangle=f_{\nu \text {-NCQE }} \cdot\left\langle\sigma_{\nu \text {-NCQE }}^{\mathrm{NEUT}}\right\rangle=1.512 \pm 0.004 \text {(stat.)} \pm 0.191 \text {(syst.)} \times 10^{-38} \mathrm{~cm}^2 / \text { oxygen }, \\
+    & \left\langle\sigma_{\bar{\nu} \text {-NCQE }}\right\rangle=f_{\bar{\nu} \text {-NCQE }} \cdot\left\langle\sigma_{\bar{\nu} \text {-NCQE }}^{\mathrm{NEUT}}\right\rangle=0.939 \pm 0.001 \text {(stat.)} \pm 0.119 \text {(syst.)} \times 10^{-38} \mathrm{~cm}^2 / \text { oxygen }
+    \end{aligned}
+\label{eq:xsec_value}
+\end{equation}
+
 
 

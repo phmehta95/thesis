@@ -719,6 +719,66 @@ Before the neutron candidate is passed to the secondary selection, other cuts ar
       \label{fig:vertex_resolution_ncap} 
 \end{figure}
 
+After finding acceptable neutron candidates it is once again worth looking at the NCQE reduction plots which plot distributions against number of neutron captures, especially distributions that would differ depending on whether the neutron were captured on hydrogen or gadolinium. This is shown in Figure \ref{fig:cherenkov_h_gd} which shows the number of neutron candidates plotted against the reconstructed Cherenkov angle of hits from neutron captures for both hydrogen and gadolinium (bottom), and then hydrogen (top left) and gadolinium (top right).
+
+
+\begin{figure}[htp]% 
+    \centering
+    \begin{minipage}{0.49\textwidth}
+    \includegraphics[width=\textwidth]{Figures/cherenkov_angle_neutron_capture_H.png}
+    \caption{Number of candidate neutrons plotted against the reconstructed Cherenkov opening angle from hits from neutron captures on H}
+    \end{minipage}\hfill
+    \begin{minipage}{0.49\textwidth}
+    \includegraphics[width=\textwidth]{Figures/cherenkov_angle_neutron_capture_Gd.png}
+    \caption{Number of candidate neutrons plotted against the reconstructed Cherenkov opening angle from hits from neutron captures on Gd}
+    \end{minipage}\par
+    \vskip\floatsep% normal separation between figures
+    \includegraphics[width=0.45\textwidth]{Figures/cherenkov_angle_neutron_capture.png}
+    \caption{Number of candidate neutrons plotted against the reconstructed Cherenkov opening angle from hits from neutron captures on both H and Gd}
+    \label{fig:cherenkov_h_gd}
+\end{figure}
+
+Figure \ref{fig:cherenkov_h_gd} clearly shows that the reconstructed Cherenkov angle skews higher for neutron captures on gadolinium compared to neutron captures on hydrogen due to the cascade of multiple gammas causing the Cherenkov angle to be reconstructed with a large opening angle. This is something paralleled when looking at the neural network input variables later on in the Chapter. Examining the distributions of neutron captures that have been classified as a true neutron signal is also important, and similarly to Figure \ref{fig:TruCapTimeReduction} and Figure \ref{fig:TruCapNuNDistanceReduction}, NCQE reduction plots have been produced for neutron capture time and distance between neutrino interaction vertex and neutron capture vertex, but this time, for tagged signal neutrons. These are shown in Figure \ref{fig:tagged_neutrons_plot}.
+
+\begin{figure}
+    \centering
+     \begin{subfigure}[b]{0.49\linewidth}
+      \includegraphics[width=\linewidth]{Figures/tds_tagged_neutrons.PNG}
+     \end{subfigure}
+     \begin{subfigure}[b]{0.49\linewidth}
+       \includegraphics[width=\linewidth]{Figures/distposvtrunvcx_tagged_neutrons.PNG}
+      \end{subfigure} 
+      \caption{Number of tagged signal neutrons plotted against neutron capture time (left) and distance between neutrino interaction vertex and neutron capture vertex (right)}
+      \label{fig:tagged_neutrons_plot} 
+\end{figure}
+
+Figure \ref{fig:tagged_neutrons_plot} shows that for both distributions the number of tagged neutron captures is a little less than 50\% of the distributions shown in Figure \ref{fig:TruCapTimeReduction} and Figure \ref{fig:TruCapNuNDistanceReduction}. Comparisons between the number of true neutron captures and the number of neutron captures identified as signal can give you the efficiency of the NTag algorithm, calculated later on in this Chapter. Figure \ref{fig:tds_tagged_H_Gd} gives the number of tagged neutrons in Figure \ref{fig:tagged_neutrons_plot} but seperated into neutron captures identified as captures on hydrogen (left) and those captured on gadolinium (right). Figure \ref{fig:distposvtrunvx_tagged_H_Gd} does the same but for the distance between the neutrino interaction vertex and the neutron capture vertex.
+
+\begin{figure}
+    \centering
+     \begin{subfigure}[b]{0.49\linewidth}
+      \includegraphics[width=\linewidth]{Figures/tds_tagged_H.PNG}
+     \end{subfigure}
+     \begin{subfigure}[b]{0.49\linewidth}
+       \includegraphics[width=\linewidth]{Figures/tds_tagged_Gd.PNG}
+      \end{subfigure} 
+      \caption{Number of tagged signal neutrons plotted against neutron capture time seperated into captures on hydrogen (left) and gadolinium (right).}
+      \label{fig:tds_tagged_H_Gd} 
+\end{figure}
+
+\begin{figure}
+    \centering
+     \begin{subfigure}[b]{0.49\linewidth}
+      \includegraphics[width=\linewidth]{Figures/distposvtrunvx_tagged_neutrons_H.PNG}
+     \end{subfigure}
+     \begin{subfigure}[b]{0.49\linewidth}
+       \includegraphics[width=\linewidth]{Figures/distposvtrunvx_tagged_neutrons_Gd.PNG}
+      \end{subfigure} 
+      \caption{Number of tagged signal neutrons plotted against distance between neutrino interaction vertex and neutron capture vertex seperated into captures on hydrogen (left) and gadolinium (right).}
+      \label{fig:distposvtrunvx_tagged_H_Gd} 
+\end{figure}
+
+Figure \ref{fig:tds_tagged_H_Gd} and Figure \ref{fig:distposvtrunvx_tagged_H_Gd} shows that the number of tagged signal neutron captures are a lot less for neutron captures on hydrogen than for the truth distributions, showing that the neutron tagging algorithm is much more likely to identify neutorn captures on hydrogen as noise, due to the low number of tagged neutron captures on hydrogen showing a lower efficiency, verified in Table \ref{table:NTag_efficiency}. However, the neutron tagging algorithm is much more likely to identify true neutron captures on gadolinium as signal, and doing so with a high efficiency, again verified in Table \ref{table:NTag_efficiency}, improving the overall tagging efficiency of the algorithm. 
 
 \subsection{Secondary selection criteria}
 Due to the contamination of background events still present amongst the true neutron events after primary selection, a neural network (NN) is used to efficiently remove these background events, while trying to maximise the number of true neutron events. The output of the NN is used to indicate how likely a variable is to be signal/background candidate. Each of the candidates selected during the primary selection process has an associated reconstructed Compton scattering vertex calculated for it. In order to produce residual hit times that are less spread out than TOF-corrected hits towards the neutrino vertex, the TOF-corrected hits towards the Compton scattering vertex are used instead. The aim of searching for the Compton scattering vertex is to use a method by which the standard deviation of the residual times of the hits is minimised. Therefore the Compton scattering vertex $n_{VTX}$ is defined as in Equation \ref{eq:ncap_vtx}, where $r$ is a trial vertex and $t_i^{\text {res }}$ is the TOF-corrected hit time.
@@ -875,7 +935,10 @@ The values of these efficiencies and their associated statistical uncertainties 
     \label{table:NTag_efficiency}
 \end{table}
 
-These efficiencies are as expected, with the efficiency of neutrons captured on gadolinium being much greater than that of captures on hydrogen, due to the gamma cascade making it better able to be differentiated than from the 2.2 MeV from the neutron capture on hydrogen. However, as the errors on the efficiency in Table \ref{table:NTag_efficiency} are purely statistical (i.e.produced from the number of neutrons in the MC), it is beneficial to do a comparison with an efficiency measurement from actual neutron capture data. In order to assess the validity of the efficiencies from the Monte Carlo, a comparison of the efficiency with data taken from an Am/Be + 8BGO neutron source is used. As mentioned in Chapter 3, the Am/Be + 8BGO source produces a prompt 4.4 MeV gamma ray along with a neutron, with the same prompt and delay signal pattern as NCQE interactions, and similarly to the MC, a timing distribution of hits relative to the 4.4 MeV trigger can be produced for the Am/Be + 8BGO data. Figure \ref{fig:ambe_picture} shows the Am/Be source container and the BGO scintillator that it is enclosed within, and Figure \ref{fig:ambe_NHits} shows the distribution of hits (NHits) within the 14 ns sliding timing window. 
+These efficiencies are as expected, with the efficiency of neutrons captured on gadolinium being much greater than that of captures on hydrogen, due to the gamma cascade making it better able to be differentiated than from the 2.2 MeV from the neutron capture on hydrogen. Making comparisons to tagging efficiencies calculated in prior analyses where neutron are captured solely on hydrogen (\cite{tn415_fiacob}, \cite{tn_374}), where the total tagging efficiency is evaluated at ~20\%, making the efficiency of 50\% evaluated in this analysis a marked improvement in the efficiency of the tagging algorithm. 
+
+
+However, as the errors on the tagging efficiencies in Table \ref{table:NTag_efficiency} are purely statistical (i.e.produced from the number of neutrons in the MC), it is beneficial to do a comparison with an efficiency measurement from actual neutron capture data. In order to assess the validity of the efficiencies from the Monte Carlo, a comparison of the efficiency with data taken from an Am/Be + 8BGO neutron source is used. As mentioned in Chapter 3, the Am/Be + 8BGO source produces a prompt 4.4 MeV gamma ray along with a neutron, with the same prompt and delay signal pattern as NCQE interactions, and similarly to the MC, a timing distribution of hits relative to the 4.4 MeV trigger can be produced for the Am/Be + 8BGO data. Figure \ref{fig:ambe_picture} shows the Am/Be source container and the BGO scintillator that it is enclosed within, and Figure \ref{fig:ambe_NHits} shows the distribution of hits (NHits) within the 14 ns sliding timing window. 
 
 
 
