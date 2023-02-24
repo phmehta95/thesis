@@ -127,7 +127,9 @@
 %% The title page uses the title and author name specified above. No need to edit title.tex. Note that the current month is at the bottom of the title page. Edit it manually, if you want to have some other month there.
 
 \include{title}
-\cleardoublepage
+
+
+
 
 %% In the preface, pages are numbered by roman numerals (i,ii,...) and in the header Author and Title.
 \pagenumbering{arabic}
@@ -146,15 +148,16 @@
   
   \end{singlespace}
   \cleardoublepage
+  \thispagestyle{empty}
 
     % Typeset title page.
     %\maketitle
 
 
     % Include front matter
-    %\include{Frontmatter/dedication}
-    %\include{Frontmatter/acknowledgements}
-    %\include{Frontmatter/abstract}
+    \include{Frontmatter/dedication}
+    \include{Frontmatter/acknowledgement}
+    \include{Frontmatter/abstract}
     % \include{acronyms}
 
     \tableofcontents
