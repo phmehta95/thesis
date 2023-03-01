@@ -1,35 +1,24 @@
-\chapter{NCQE cross section extraction}
+\chapter{DSNB NCQE background calculation}
 \label{chp:ncqe_xsec}
 
-\section{Scale factor calculation}
-The number of observed neutrino events for a neutrino ($\nu$) produced with flavour $\alpha$ which oscillates and is detected at Super-Kamiokande with flavour $\beta$, as a function of some observable such as reconstructed neutrino energy $N_{\nu}(\Theta)$ is given in Equation \ref{eq:nu_number}.
+
+\section{Introduction}
+
+As mentioned in Chapter 1, NCQE interactions form the main background to the DSNB signal, and therefore calculating the number of events that form this background concludes the work of this analysis. 
+
+The number of observed neutrino events which are detected at Super-Kamiokande as a function of some observable such as reconstructed neutrino energy $N_{\nu}(E_{\nu})$ is given in Equation \ref{eq:nu_number}.
 
 \begin{equation}
-    N_\nu(\Theta)=\mathcal{C} \int \Phi\left(E_\nu\right) \sigma\left(E_\nu\right) P_{\nu_\alpha \rightarrow \nu_\beta}\left(E_\nu\right) \epsilon\left(E_\nu\right) d E_\nu
+    N_\nu(E_\nu)=\mathcal{C} \int \Phi\left(E_\nu\right) \sigma\left(E_\nu\right) \epsilon d E_\nu
 \label{eq:nu_number}
 \end{equation}
 
-Here, $\mathcal{C}$ is the target volume, $E_{\nu}$ is the true incoming neutrino energy, $\phi(E_{\nu})$ is the flux of the incoming neutrino, $\sigma(E_{\nu})$ is the cross section for the neutrino interaction, $P_{\nu_\alpha \rightarrow \nu_\beta}(E_{\nu})$ is the probability of the neutrino oscillating, $\epsilon (E_{\nu})$ is the detection efficiency of the neutrino by the far detector. However when actually calculating this number of events, the Monte Carlo simulations are produced without the neutrino oscillation effect and neutrino cross sections. Instead, later on the oscillation effect and beam flux tunings and other corrections are carried out by assigning a weight that takes these into account on an individual event basis, in order to save computational time. The number of neutrino events from Monte Carlo for each interaction type is shown in Equation \ref{eq:events_number_MC}, where a breakdown of the number of events for each of the interactions is shown in Equation \ref{eq:monte_carlo_events}.
-
-\begin{equation}
-    N_{\text {obs }}^{\text {mode }} = f_{\nu \text {-NCQE }} M_{\nu \text {-NCQE }}^{\text {mode }}+f_{\bar{\nu}-\mathrm{NCQE}} M_{\bar{\nu} \text {-NCQE }}^{\text {mode }}+M_{\mathrm{NC} \text {-other }}^{\text {mode }}+M_{\mathrm{CC}}^{\text {mode }}
-\label{eq:events_number_MC}
-\end{equation}
-
-where $N_{\text {obs }}^{\text {mode }}$ is the number of observed events, mode is either FHC or RHC, $M_{\nu-\mathrm{NCQE}}^{\text {mode }}$ and $M_{\bar{\nu} \text {-NCQE }}^{\text {mode }}$ are the number of neutrino and antineutrino NCQE interactions, and $M_{\mathrm{NC} \text {-other }}^{\text {mode }}$ and  $M_{\mathrm{CC}}^{\text {mode }}$ are the number of NC-other and CC-other interactions interactively. $f_{\nu \text {-NCQE }}$ and $f_{\bar{\nu}-\mathrm{NCQE}}$ are scale factors which scale the NCQE cross section predictions.
-
-\begin{equation}
-    \begin{aligned}
-    M_{\nu-\mathrm{NCQE}}^{\text {mode }} & =\sum_{\nu=\nu_\mu, \nu_e} \int \sigma_{\nu-\mathrm{NCQE}}^{\mathrm{NEUT}}\left(E_\nu\right) \phi_\nu^{\text {mode }}\left(E_\nu\right) \epsilon_{\nu-\mathrm{NCQE}}^{\text {mode }}\left(E_\nu\right) T d E_\nu, \\
-    M_{\nu-\mathrm{NCQE}}^{\text {mode }} & =\sum_{\nu=D_\mu, D_e} \int \sigma_{\nu-\mathrm{NCQE}}^{\mathrm{NEUT}}\left(E_\nu\right) \phi_\nu^{\text {mode }}\left(E_\nu\right) \epsilon_{\nu-\mathrm{NCQE}}^{\text {mode }}\left(E_\nu\right) T d E_\nu, \\
-    M_{\mathrm{NC} \text {-other }}^{\text {mode }} & =\sum_{\nu=\nu_\mu, \nu_e, D_\mu, D_e} \int \sigma_{\nu-\mathrm{NC}-\text { other }}^{\mathrm{NEUT}}\left(E_\nu\right) \phi_\nu^{\text {mode }}\left(E_\nu\right) \epsilon_{\nu-\mathrm{NC}-\text { other }}^{\text {mode }}\left(E_\nu\right) T d E_\nu, \\
-    M_{\mathrm{CC}}^{\text {mode }} & =\sum_{\nu=\nu_\mu, \nu_e, \nu_\mu, \nu_e} \int \sigma_{\nu-\mathrm{CC}}^{\mathrm{NEUT}}\left(E_\nu\right) \phi_\nu^{\text {mode }}\left(E_\nu\right) \epsilon_{\nu-\mathrm{CC}}^{\text {mode }}\left(E_\nu\right) T d E_\nu .
-    \end{aligned}
-\label{eq:monte_carlo_events}
-\end{equation}
+Here, $\mathcal{C}$ is the target volume, $E_{\nu}$ is the true incoming neutrino energy, $\phi(E_{\nu})$ is the flux of the incoming neutrino, $\sigma(E_{\nu})$ is the cross section for the neutrino interaction and $\epsilon$ is the detection efficiency of the neutrino by the far detector. The number of neutrino events from Monte Carlo for each interaction type is given by the summing the number of NCQE events for neutrinos and anti-neutrinos, and charged-current and NC-other interactions, where the numbers of the neutrino and antineutrino NCQE events are multiplied by scale factors which scale the simulated NCQE cross section prediction.
 
 
- $\sigma^{NEUT}$ is the NEUT cross section, $\phi$ is the neutrino flux, $\epsilon$ is the selection efficiency for the interaction mode, $T$ is the target nucleon number and $E_{\nu}$ is the energy of the neutrinos. Equation \ref{eq:nu_number} can be rearranged in order to produce equations which give the scale factors for each mode FHC and RHC, shown in Equation \ref{eq:scale_factor_mode} . 
+\section{NCQE prediction scale factors}
+
+
 
  \begin{equation}
     \begin{aligned}
