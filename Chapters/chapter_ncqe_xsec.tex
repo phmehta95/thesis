@@ -30,7 +30,7 @@ The number of events $N_{obs}$ are made up of the sum of the signal ($S$) and ba
 \end{equation}
 
 
-Table \ref{table:nu_FHC_mc} shows the gives the expected number of neutrino events for each type of interaction including neutral current and charged current interactions for FHC mode (same as mentioned in Chapter 6), and Table \ref{table:nu_RHC_mc} shows the same information for RHC mode. These have been calculated with the 21bv2 flux uncertainty with a total SK POT of $21.4 x 10^{20}$ with Run 11 POT included which was taken between March 9th and April 22nd 2021. This was the T2K run with a concentration of $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$ in SK, which matches the amount in the SKDETSIM Monte Carlo. 
+Table \ref{table:nu_FHC_mc} shows the gives the expected number of neutrino events for each type of interaction including neutral current and charged current interactions for FHC mode for a predicted future POT of $10 \times 10^{21}$ starting Japanese Fiscal Year 2026 \cite{Abe:2016tii}, and Table \ref{table:nu_RHC_mc} shows the same information for RHC mode. These have been calculated with the 21bv2 flux uncertainty tuning. 
 
 
 \begin{table}
@@ -66,16 +66,23 @@ Table \ref{table:nu_FHC_mc} shows the gives the expected number of neutrino even
     \label{table:nu_RHC_mc}
 \end{table}
 
-Although the analysis in this thesis with regards to the work done in Chapter 6 and 7 used FHC mode events, for the purpose of this cross-section extraction, the number of events for each interaction type in RHC mode have been calculated as well. Using the number of events for each interaction type in Table \ref{table:nu_FHC_mc} and Table \ref{table:nu_RHC_mc} and Equation \ref{eq:scale_factor_nu} and Equation \ref{eq:scale_factor_coeff}, along with the number of observed events (204 in FHC and 97 in RHC, taken from \cite{Abe_2019}), the scale factors are calculated and shown in Equation \ref{eq:scale_factors_value}.
+Due to this being a future prediction of the background rate using MC and not data, $N_{obs}$ is the total number of events in the MC, meaning that the value of the scale factor is 1.00. However, the uncertainty on the scale factor is not trivial, and Equation \ref{eq:scale_factor_uncertainty} shows how it is calculated.
+
+\begin{equation}
+    \delta_{f} = \left({\frac{\sqrt{N_{\text{obs}}}}{N_{\text{obs}}}}\right)^{2} + \left({\frac{\delta_{\epsilon}}{\epsilon}}\right)^{2}
+\label{eq:scale_factor_uncertainty}
+\end{equation}
+
+The values for the scale factors for FHC and RHC mode and their uncertainties are shown in Equation \ref{eq:scale_factors}.
+
 
 \begin{equation}
     \begin{aligned}
-    & f_{\nu-\mathrm{NCQE}}=0.710 \pm 0.001 \text { (stat.) } \\
-    & f_{\bar{\nu}-\mathrm{NCQE}}=1.067 \pm 0.004 (\text { stat. })
+    & f_{\nu-\mathrm{NCQE}}= 1.000 \pm 0.197 \\
+    & f_{\bar{\nu}-\mathrm{NCQE}}=1.000 \pm 0.198
+    \label{eq:scale_factors}
     \end{aligned}
-\label{eq:scale_factors_value}
 \end{equation}
-    
 
 
 \section{Flux averaged NCQE cross-section}
