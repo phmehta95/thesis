@@ -13,10 +13,10 @@ The number of observed neutrino events which are detected at Super-Kamiokande as
 \label{eq:nu_number}
 \end{equation}
 
-Here, $\mathcal{C}$ is the target volume, $E_{\nu}$ is the true incoming neutrino energy, $\phi(E_{\nu})$ is the flux of the incoming neutrino, $\sigma(E_{\nu})$ is the cross section for the neutrino interaction and $\epsilon$ is the detection efficiency of the neutrino by the far detector. The number of neutrino events from Monte Carlo for each interaction type is given by the summing the number of NCQE events for neutrinos and anti-neutrinos, and charged-current and NC-other interactions, where the numbers of the neutrino and antineutrino NCQE events are multiplied by scale factors which scale the simulated NCQE cross section prediction.
+Here, $\mathcal{C}$ is the target volume, $E_{\nu}$ is the true incoming neutrino energy, $\Phi(E_{\nu})$ is the flux of the incoming neutrino, $\sigma(E_{\nu})$ is the cross section for the neutrino interaction and $\epsilon$ is the detection efficiency of the neutrino by the far detector. The number of neutrino events from Monte Carlo for each interaction type is given by the summing the number of NCQE events for neutrinos and anti-neutrinos, and charged-current and NC-other interactions, where the numbers of the neutrino and antineutrino NCQE events are multiplied by scale factors which scale the simulated NCQE cross section prediction.
 
 
-\section{NCQE prediction scale factors}
+\section{NCQE scale factor prediction}
 
 
 The number of events $N_{obs}$ are made up of the sum of the signal ($S$) and background ($B$) events, i.e: $N_{obs} = S + B$. The signal events are described by the summation of the number of neutrino and antineutrino NCQE events multiplied by their scale factors: $S  = f_{\nu-\mathrm{NCQE}} M_{\nu-\mathrm{NCQE}}^{\mathrm{FHC}}+f_{\bar{\nu}-\mathrm{NCQE}} M_{\bar{\nu}-\mathrm{NCQE}}^{\mathrm{FHC}}$ for FHC mode. By having a similar equation for RHC mode, one can produce the Equations in \ref{eq:scale_factor_nu}, where $X$ and $Y$ are the number of background events for FHC and RHC mode respectively, which give the scale factor values for neutrino and antineutrino NCQE interactions. 
@@ -85,29 +85,16 @@ The values for the scale factors for FHC and RHC mode and their uncertainties ar
 \end{equation}
 
 
-\section{Flux averaged NCQE cross-section}
+\section{Number of DSNB NCQE background events}
 
-NEUT's cross section prediciton for the interaction of neutrinos and antineutrinos with ${ }^{16} \mathrm{O}$ is shown in Equation \ref{eq:NEUT_xsec_prediction}. Here $\langle\sigma_{\nu \text {-NCQE }}^{\text {NEUT }}\rangle$ gives the flux-averaged cross section prediction for neutrinos and $\langle\sigma_{\bar{\nu}-\mathrm{NEUCQ}}^{\mathrm{NEUT}}\rangle$ gives the flux-averaged cross section for antineutrinos. 
-
-
-\begin{equation}
-    \begin{aligned}
-    &\left\langle\sigma_{\nu \text {-NCQE }}^{\mathrm{NEUT}}\right\rangle= \frac{\sum_{\nu=\nu_\mu, \nu_e} \int \sigma_{\nu-\mathrm{NCQE}}^{\mathrm{NEUT}}\left(E_\nu\right) \phi_\nu\left(E_\nu\right) d E_\nu}{\sum_{\nu=\nu_\mu, \nu_e} \int \phi_\nu\left(E_\nu\right) d E_\nu}=2.13 \times 10^{-38} \mathrm{~cm}^2 / \text { oxygen } \\
-    &\left\langle\sigma_{\bar{\nu} \text {-NCQE }}^{\mathrm{NEUT}}\right\rangle=\frac{\sum_{\nu=\bar{\nu}_\mu, \bar{\nu}_e} \int \sigma_{\bar{\nu} \text {-NCQE }}^{\mathrm{NEUT}}\left(E_\nu\right) \phi_\nu\left(E_\nu\right) d E_\nu}{\sum_{\nu=\bar{\nu}_\mu, \bar{\nu}_e} \int \phi_\nu\left(E_\nu\right) d E_\nu}=0.88 \times 10^{-38} \mathrm{~cm}^2 / \text { oxygen. }
-    \end{aligned}
-\label{eq:NEUT_xsec_prediction}
-\end{equation}
-
-The flux averaged NEUT cross section values in Equation \ref{eq:NEUT_xsec_prediction} is taken from \cite{Abe_2019}, and the integrations are taken up to an energy of 10 GeV. These NEUT cross sections are multiplied by the scale factors in order to obtain the flux-averaged NCQE cross sections, shown in Equation \ref{eq:xsec_value}. The systematic error on the final cross-section values are taken from Table \ref{table:systuncertaintytable} by summing up all the percentages and using the final percentage to calculate the systematic error on the values.
-
+The number of DSNB NCQE background events is given by Equation \ref{eq:background_events}. 
 
 \begin{equation}
-    \begin{aligned}
-    & \left\langle\sigma_{\nu \text {-NCQE }}\right\rangle=f_{\nu \text {-NCQE }} \cdot\left\langle\sigma_{\nu \text {-NCQE }}^{\mathrm{NEUT}}\right\rangle=1.512 \pm 0.004 \text {(stat.)} \pm 0.191 \text {(syst.)} \times 10^{-38} \mathrm{~cm}^2 / \text { oxygen }, \\
-    & \left\langle\sigma_{\bar{\nu} \text {-NCQE }}\right\rangle=f_{\bar{\nu} \text {-NCQE }} \cdot\left\langle\sigma_{\bar{\nu} \text {-NCQE }}^{\mathrm{NEUT}}\right\rangle=0.939 \pm 0.001 \text {(stat.)} \pm 0.119 \text {(syst.)} \times 10^{-38} \mathrm{~cm}^2 / \text { oxygen }
-    \end{aligned}
-\label{eq:xsec_value}
+N_{B} = \mathcal{C} \epsilon f\int \Phi(E_{\nu}) \sigma(E_{\nu}) d E_{\nu} 
+\label{eq:background_events}
 \end{equation}
+
+Where $\mathcal{C}$ is the target volume, $\Phi$ is the neutrino flux, $\sigma$ is the neutrino interaction cross section and $\epsilon$ is the neutron tagging efficiency. 
 
 
 
