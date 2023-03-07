@@ -603,11 +603,11 @@ ${ }^{157} \mathrm{Gd}$ isotopes of Gadolinium, where the modal number of gammas
 \begin{figure}
 \centering
     \begin{minipage}{0.5\linewidth}
-    \subfloat[]{\label{main:a}\includegraphics[scale=0.3]{Figures/xTrueCapturePos.png}}
+    \subfloat[]{\label{main:a}\includegraphics[width=\linewidth]{Figures/xTrueCapturePos.png}}
     \end{minipage}%
     \begin{minipage}{0.5\linewidth}
     \centering
-    \subfloat[]{\label{main:b}\includegraphics[scale=0.3]{Figures/yTrueCapturePos.png}}
+    \subfloat[]{\label{main:b}\includegraphics[width=\linewidth]{Figures/yTrueCapturePos.png}}
     \end{minipage}\par\medskip
     \centering
     \subfloat[]{\label{main:c}\includegraphics[width=0.5\linewidth]{Figures/zTrueCapturePos.png}}
@@ -780,7 +780,7 @@ Figure \ref{fig:tagged_neutrons_plot} shows that for both distributions the numb
 Figure \ref{fig:tds_tagged_H_Gd} and Figure \ref{fig:distposvtrunvx_tagged_H_Gd} shows that the number of tagged signal neutron captures are a lot less for neutron captures on hydrogen than gadolinum for the truth distributions, showing that the neutron tagging algorithm is much more likely to identify neutorn captures on hydrogen as noise, due to the low number of tagged neutron captures on hydrogen showing a lower efficiency, verified in Table \ref{table:NTag_efficiency}. However, the neutron tagging algorithm is much more likely to identify true neutron captures on gadolinium as signal, and doing so with a high efficiency, again verified in Table \ref{table:NTag_efficiency}, improving the overall tagging efficiency of the algorithm. 
 
 \subsection{Secondary selection criteria}
-Due to the contamination of background events still present amongst the true neutron events after primary selection, a neural network (NN) is used to efficiently remove these background events, while trying to maximise the number of true neutron events. The output of the NN is used to indicate how likely a variable is to be signal/background candidate. Each of the candidates selected during the primary selection process has an associated reconstructed Compton scattering vertex calculated for it. In order to produce residual hit times that are less spread out than TOF-corrected hits towards the neutrino vertex, the TOF-corrected hits towards the Compton scattering vertex are used instead. The aim of searching for the Compton scattering vertex is to use a method by which the standard deviation of the residual times of the hits is minimised. Therefore the Compton scattering vertex $n_{VTX}$ is defined as in Equation \ref{eq:ncap_vtx}, where $r$ is a trial vertex and $t_i^{\text {res }}$ is the TOF-corrected hit time.
+Due to the contamination of background events still present amongst the true neutron events after primary selection, a neural network (NN) is used to efficiently remove these background events, while trying to maximise the number of true neutron events. The output of the NN is used to indicate how likely an event is to be signal/background candidate. Each of the candidates selected during the primary selection process has an associated reconstructed Compton scattering vertex calculated for it. In order to produce residual hit times that are less spread out than TOF-corrected hits towards the neutrino vertex, the TOF-corrected hits towards the Compton scattering vertex are used instead. The aim of searching for the Compton scattering vertex is to use a method by which the standard deviation of the residual times of the hits is minimised. Therefore the Compton scattering vertex $n_{VTX}$ is defined as in Equation \ref{eq:ncap_vtx}, where $r$ is a trial vertex and $t_i^{\text {res }}$ is the TOF-corrected hit time.
 
 \begin{equation}
     n_{VTX}=\underset{r}{\operatorname{argmin}}\sqrt{\frac{1}{NHits} \sum_{i=1}^{NHits}\left[t_i^{\text {res }}(\vec{r})-\left\langle t^{\text {res }}(\vec{r})\right\rangle\right]^2}
@@ -880,7 +880,7 @@ Seeing the signal from neutron captures on hydrogen and gadolinium pre and post 
 \begin{landscape}
     \begin{figure}[t]
         \centering
-        \hbox{\hspace{-0.5em}\includegraphics[width=\pdfpagewidth]{Figures/preNNvariablesbkg.PNG}}
+        \hbox{\hspace{-0.5em}\includegraphics[width=24cm,height=21cm,keepaspectratio]{Figures/preNNvariablesbkg.PNG}}
         \caption{Number of events plotted against various neural network input variables prior to the neural network}
         \label{fig:pre_NN_signal}
     \end{figure}
@@ -889,7 +889,7 @@ Seeing the signal from neutron captures on hydrogen and gadolinium pre and post 
 \begin{landscape}
     \begin{figure}[t]
         \centering
-        \hbox{\hspace{-0.5em}\includegraphics[width=\pdfpagewidth]{Figures/postNNvariablesbkg.PNG}}
+        \hbox{\hspace{-0.5em}\includegraphics[width=24cm,height=21cm,keepaspectratio]{Figures/postNNvariablesbkg.PNG}}
         \caption{Number of events plotted against various neural network input variables after neural network output}
         \label{fig:post_NN_signal}
     \end{figure}
