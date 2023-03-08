@@ -869,7 +869,7 @@ Figure \ref{fig:tagout} shows the neural network likelihood signal between 0 and
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{Figures/tagout.png}
-    \caption{Neural network output signal likelihood }
+    \caption{Neural network output signal likelihood. Total signal neutron capture candidates are shown in the distribution with a blue line, whereas candidates that capture on hydrogen are shown in red, and gadolinium in green, and the distribution of background candidates are shown in pink.}
     \label{fig:tagout}
 \end{figure}
 
@@ -983,7 +983,7 @@ As shown in Figure \ref{fig:efficiency_dwall}, the efficiency of the neutron cap
     \label{table:ambe_positions}
 \end{table}
 
-First, comparison was done between the MC and the Am/Be data from Run 85622, the 1 hour measurement taken in the central (0,0,0) source position, by looking at the timing distribution from the 4.4 MeV trigger signal. The same neutron tagging algorithm was used as for the tagging of neutrons from the MC, with the exact same primary and secondary selection criteria. In addition to this, the following event cuts were used in order to select neutron capture events using this data: the total event charge deposit for the inner detector PMTs to be between 850 and 1150 photoelectrons, the time difference from the previous event should be greater than 1 millisecond, and the number of outer detector PMT hits should be less than 10. In order to find the efficiency of the neutron captures and to find the fitted background with this Am/Be data, an exponential fit was made to the timing distribution (shown in Equation \ref{eq:AmBe_fit_eq}), and this is shown in Figure \ref{fig:ambe_centre} by the red curve. Similar plots were made for the Am/Be source data taken for the (0,0,+12 m) and (-12 m,0,0) positions. 
+First, comparison was done between the MC and the Am/Be data from Run 85622, the 1 hour measurement taken in the central (0,0,0) source position, by looking at the timing distribution from the 4.4 MeV trigger signal. The same neutron tagging algorithm was used as for the tagging of neutrons from the MC, with the exact same primary and secondary selection criteria. In addition to this, the following event cuts were used in order to select neutron capture events using this data: the total event charge deposit for the inner detector PMTs to be between 850 and 1150 photoelectrons, the time difference from the previous event should be greater than 1 millisecond, and the number of outer detector PMT hits should be less than 10. In order to find the efficiency of the neutron captures and to find the fitted background with this Am/Be data, an exponential fit was made to the timing distribution (shown in Equation \ref{eq:AmBe_fit_eq}), and this is shown in Figure \ref{fig:ambe_centre} by the red curve. Similar fits were made for the Am/Be source data taken for the (0,0,+12 m) and (-12 m,0,0) positions. 
 
 
 \begin{equation}
@@ -991,25 +991,25 @@ First, comparison was done between the MC and the Am/Be data from Run 85622, the
 \label{eq:AmBe_fit_eq}
 \end{equation}
 
-In Equation \ref{eq:AmBe_fit_eq}, $t$ is the time from the event trigger in microseconds, $\tau$ is the exponential time constant and $b$ is the background pedestal. 
+In Equation \ref{eq:AmBe_fit_eq}, $t$ is the time from the event trigger in microseconds, $\tau$ is the exponential time constant and $b$ is the background. 
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.8\textwidth]{Figures/ambe_centre.png}
+    \includegraphics[width=0.7\textwidth]{Figures/ambe_centre.png}
     \caption{Fitted time relative to the trigger signal with exponential fit (red) for the Am/Be data taken in the centre position (0,0,0)}
     \label{fig:ambe_centre}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.8\textwidth]{Figures/ambe_data_+12z.png}
+    \includegraphics[width=0.7\textwidth]{Figures/ambe_data_+12z.png}
     \caption{Fitted time relative to the trigger signal with exponential fit (red) for the Am/Be data taken at (0,0,+12 )}
     \label{fig:ambe_+12z}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.8\textwidth]{Figures/ambe_data_-12x.png}
+    \includegraphics[width=0.7\textwidth]{Figures/ambe_data_-12x.png}
     \caption{Fitted time relative to the trigger signal with exponential fit (red) for the Am/Be data taken at (-12,0,0).}
     \label{fig:ambe_-12}
 \end{figure}
@@ -1043,7 +1043,7 @@ This level of variation for the time constant is within normal limits, especiall
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.8\textwidth]{Figures/MC_fitT.png}
+    \includegraphics[width=0.7\textwidth]{Figures/MC_fitT.png}
     \caption{Fitted time relative to the trigger signal with exponential fit (red) for the NCQE MC}
     \label{fig:MC_time_constant}
 \end{figure}
