@@ -46,7 +46,7 @@ Therefore, by simply dividing these two values of $Q_{o b s}(i)$ and ($N_{o b s}
 
 \subsection{Absolute gain calibration}
 
-In order to calculate absolute gain, the single photoelectron distrubution needs to be measured, this is because absolute gain relates to the observed charge in the photomultplier tube with the number of photoelectrons produced. A nickel-californium source (shown in Figure \ref{fig:nickel_source}) is used for this measurement due to it releasing gamma rays isotropically, with a total gamma ray cascade energy of 9 MeV. Thermal neutron capture on nickel is used as the gamma ray source, with the neutrons provided by the spontaneous fission of ${ }^{252} \mathrm{Cf}$. This nickel source is placed in the centre of the inner detector and the gamma rays produced are detetced by all the inner detector PMTs. On average the observed number of photoelectrons is 0.004 per event per PMT, meaning that single p.e. hits are observed for more than 99\% of the hits. The observed charge distribution of all the hits from this nickel source is used to give the average charge, which is used as a conversion factor from a charge measurement in picoColoumbs and single photo-electrons. The factor is 2.658 pC per photoelectron (calculated at the beginning of SK-IV) which is then used to extract the single-p.e. distribution, shown in Figure \ref{fig:singlepe}.
+In order to calculate absolute gain, the single photoelectron distrubution needs to be measured, this is because absolute gain relates to the observed charge in the photomultplier tube with the number of photoelectrons produced. A nickel-californium source (shown in Figure \ref{fig:nickel_source}) is used for this measurement due to it releasing gamma rays isotropically, with a total gamma ray cascade energy of 9 MeV \cite{koshio1998study}. Thermal neutron capture on nickel is used as the gamma ray source, with the neutrons provided by the spontaneous fission of ${ }^{252} \mathrm{Cf}$. This nickel source is placed in the centre of the inner detector and the gamma rays produced are detetced by all the inner detector PMTs. On average the observed number of photoelectrons is 0.004 per event per PMT, meaning that single p.e. hits are observed for more than 99\% of the hits. The observed charge distribution of all the hits from this nickel source is used to give the average charge, which is used as a conversion factor from a charge measurement in picoColoumbs and single photo-electrons. The factor is 2.658 pC per photoelectron (calculated at the beginning of SK-IV) which is then used to extract the single-p.e. distribution, shown in Figure \ref{fig:singlepe}.
 
 \begin{figure}
     \centering
@@ -90,7 +90,7 @@ The value of these laser pulse timings, and the time-of-flight value from the di
 \end{figure}
 
 
-The timing resolution of the PMTs (also known as the transit time spread) is also something that must be calibrated. This is calculated by using the same timing and charge data used to produce the TQ distributions. By correcting all the ID PMT hits by their TQ distributions, these residual timing distributions have an asymmetric Gaussian function fitted to them, from which two values of sigma are extracted: $\sigma_{t}$ and $\sigma_{t'}$. These are the values for the timing resolution for before and after the peak time of this distribution. Equation \ref{eq:sigmat} shows how the asymmetric Gaussian is defined. 
+The timing resolution of the PMTs (also known as the transit time spread) is also something that must be calibrated. This is calculated by using the same timing and charge data used to produce the TQ distributions \cite{dziomba2012study}. By correcting all the ID PMT hits by their TQ distributions, these residual timing distributions have an asymmetric Gaussian function fitted to them, from which two values of sigma are extracted: $\sigma_{t}$ and $\sigma_{t'}$. These are the values for the timing resolution for before and after the peak time of this distribution. Equation \ref{eq:sigmat} shows how the asymmetric Gaussian is defined. 
 
 \begin{align}
     f\left(t ; t>T_{\text {peak }}\right) \equiv A_{1} \cdot \exp \left(-\left(t-T_{\text {peak }}\right)^{2} / \sigma_{t}^{2}\right)+B_{1}\\
@@ -122,7 +122,7 @@ Figure \ref{fig:resolutiont} shows timing resolution  plotted as a function of c
 
  For SK-IV, four types of material, corresponding to four different refractive indices are taken into account: water, glass, bialkali, and vacuum. Table \ref{table:refractiveindex} shows the values for each of these materials, $\lambda$ is the wavelength of the light in nm and $n_{real}$ and $n_{img}$ are the real and imaginary parts of the complex refractive index.
 
-Regarding the black sheet used to line the inside of Super-Kamiokande, it can either reflect or absorb Cherenkov photons. The amount of Cherenkov photons dtected is measured by a light injector setup, shown in Figure \ref{fig:blacksheetrefsetup}. For three different incident angles of laser light ($30 \degree$, $45 \degree$ and $60 \degree$) and three different laser light wavelengths (337 nm, 400 nm and 420 nm) the charge from the light scattered off the black sheet was measured. The direct charge (i.e. the same setup without the black sheet present) was also measured, with the total black sheet reflectivity being the ratio between the scattered charge and the direct charge.
+Regarding the black sheet used to line the inside of Super-Kamiokande, it can either reflect or absorb Cherenkov photons. The amount of Cherenkov photons detected is measured by a light injector setup, shown in Figure \ref{fig:blacksheetrefsetup}. For three different incident angles of laser light ($30 \degree$, $45 \degree$ and $60 \degree$) and three different laser light wavelengths (337 nm, 400 nm and 420 nm) the charge from the light scattered off the black sheet was measured \cite{hosaka2006solar}. The direct charge (i.e. the same setup without the black sheet present) was also measured, with the total black sheet reflectivity being the ratio between the scattered charge and the direct charge.
 
 \begin{table}
     $$
@@ -220,7 +220,7 @@ A(z, t) &=1+z \cdot \beta(t) \quad \text { for } z \geq-11 \mathrm{~m} \label{eq
 \end{aligned}
 $$
 
-where from Figure \ref{fig:temperature_grad}, the value of $A(z,t)$ is constant below $z = -11 m$, and above $z = -11 m$ this value is determined by the z-position in the tank. The relationship between the value of $\beta$ is related to the top-bottom asymmetry parameter $\alpha_{tba}$, and for the April 2009 data $\alpha_{tba}$ and $\beta$ are -4.91\% and 0.01. 
+where from Figure \ref{fig:temperature_grad}, the value of $A(z,t)$ is constant below $z = -11 m$, and above $z = -11 m$ this value is determined by the z-position in the tank \cite{RENSHAW2015345}. The relationship between the value of $\beta$ is related to the top-bottom asymmetry parameter $\alpha_{tba}$, and for the April 2009 data $\alpha_{tba}$ and $\beta$ are -4.91\% and 0.01. 
 
 
 \begin{figure}
