@@ -1,10 +1,9 @@
 \chapter{Appendix A}
-
 \section{Occupancy Plots for the UKLI MC B1 - B5 injector Autocalib data}
 
 As mentioned in Chapter 5, this Appendix gives all the relevant calibration plots for the B1-B5 injectors for the purposes of completeness. Figure \ref{fig:occupancy_coll_auto} shows the occupancy plots for the B1 - B5 collimators from the UKLI Autocalib July 2020 run, while  Figure \ref{fig:occupancy_diff_auto} shows the occupancy plots for the B1 - B5 diffusers from the UKLI Autocalib July 2020 run.
 
-\begin{figure}
+\begin{figure}[!htb]
     \centering
     
     \caption{Occupancy plot for the collimator optics from the UKLI Autocalib July 2020 run} \label{fig:occupancy_coll_auto} 
@@ -16,9 +15,9 @@ As mentioned in Chapter 5, this Appendix gives all the relevant calibration plot
     \subfloat[B5 collimator]{\includegraphics[width=0.49\textwidth]{Figures/B5_occupancy_coll_auto.PNG}}
     
 \end{figure}
+\FloatBarrier
 
-
-\begin{figure}
+\begin{figure}[!htb]
     \centering
     
     \caption{Occupancy plot for the diffuser optics from the UKLI Autocalib July 2020 run} \label{fig:occupancy_diff_auto} 
@@ -30,7 +29,7 @@ As mentioned in Chapter 5, this Appendix gives all the relevant calibration plot
     \subfloat[B5 diffuser]{\includegraphics[width=0.49\textwidth]{Figures/B5_occupancy_diff_auto.PNG}}
     
 \end{figure}
-
+\FloatBarrier
 
 \section{Probability distribution functions and cumulative distribution functions for the B1 - B5 injectors}
 
@@ -57,7 +56,7 @@ Figure \ref{fig:PDF_CDF_coll} shows the complete PDFs and CDFs for the B1 - B5 c
     
     
 \end{figure}
-
+\FloatBarrier
 \begin{figure}[!htbp]
     \centering
     
@@ -77,7 +76,7 @@ Figure \ref{fig:PDF_CDF_coll} shows the complete PDFs and CDFs for the B1 - B5 c
     \subfloat[B5 diffuser PDF]{\includegraphics[width=0.49\textwidth]{Figures/B5_diff_pdf.png}} \hfill
     \subfloat[B5 diffuser CDF]{\includegraphics[width=0.49\textwidth]{Figures/B5_diff_cdf.png}}      
 \end{figure}
-
+\FloatBarrier
 \section{Fits to the cumulative distribution functions and their inverse for the B1-B5 injectors}
 
 \begin{figure}[!htbp]
@@ -92,7 +91,7 @@ Figure \ref{fig:PDF_CDF_coll} shows the complete PDFs and CDFs for the B1 - B5 c
         \subfloat[B5 inverse collimator CDF]{\includegraphics[width=0.49\textwidth]{Figures/B5_inv_coll_cdf.png}} 
     
     \end{figure}
-
+    \FloatBarrier
     \begin{figure}[!htbp]
         \centering
             
@@ -105,13 +104,13 @@ Figure \ref{fig:PDF_CDF_coll} shows the complete PDFs and CDFs for the B1 - B5 c
             \subfloat[B5 inverse diffuser CDF]{\includegraphics[width=0.49\textwidth]{Figures/B5_inv_diff_cdf.png}} 
         
     \end{figure}
-
+    \FloatBarrier
 \section{Monte Carlo simulations of the light profiles for the B1-B5 injectors}
     
 
 Figure \ref{fig:UKLI_MC_coll} shows the Monte Carlo simulations of the B1 - B5 collimators and Figure \ref{fig:UKLI_MC_diff} shows the Monte Carlo simulations of the B1 - B5 diffusers.
 
-    \begin{figure}
+    \begin{figure}[!htb]
         \centering
         
         \caption{MC simulations of the B1 - B5 collimators} \label{fig:UKLI_MC_coll} 
@@ -123,7 +122,7 @@ Figure \ref{fig:UKLI_MC_coll} shows the Monte Carlo simulations of the B1 - B5 c
         \subfloat[B5 diffuser]{\includegraphics[width=0.49\textwidth]{Figures/ukli_mc_B5.PNG}}
         
     \end{figure}
-
+    \FloatBarrier
     \begin{figure}
         \centering
         
@@ -136,12 +135,12 @@ Figure \ref{fig:UKLI_MC_coll} shows the Monte Carlo simulations of the B1 - B5 c
         \subfloat[B5 diffuser]{\includegraphics[width=0.49\textwidth]{Figures/ukli_diff_mc_B5.PNG}}
         
     \end{figure}
-
+    \FloatBarrier
 
 \section{Validation check to the fits for the inverse cumulative distribution functions}
 Figure \ref{fig:inv_cdf_check} shows the inverse CDF checks for the B1 - B5 diffusers.
 
-    \begin{figure}[htp]
+    \begin{figure}[!htb]
         \centering
         \caption{Inverse CDF checks of the B1 - B5 diffusers}
         \label{fig:inv_cdf_check}
@@ -179,3 +178,5 @@ Figure \ref{fig:inv_cdf_check} shows the inverse CDF checks for the B1 - B5 diff
         \end{subfigure}
     
         \end{figure}    
+
+        \FloatBarrier
