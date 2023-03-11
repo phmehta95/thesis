@@ -9,7 +9,7 @@
 % PREAMBLE
   %\documentclass
 \documentclass[11pt,twoside]{report}
-
+\renewcommand{\appendixname}{}%
   % for title page
   %\title{Neutral-Current Quasi-Elastic events with neutron tagging at Super-Kamiokande}
   \author{Pruthvi Mehta}
@@ -36,6 +36,7 @@
   \usepackage{lscape}
   \usepackage[compact]{titlesec}
   \raggedbottom
+  \usepackage[titletoc]{appendix}
   
   % Tables
   %\usepackage{arydshln}                % dashed version of cline
@@ -174,10 +175,9 @@
 
 % include appendix
 
-\appendix
-\chapter{Appendix A}
+\begin{appendices}
 \include{Chapters/appendix_a}
-
+\end{appendices}
 
 
 \end{document}
