@@ -79,8 +79,8 @@ The values for the scale factors for FHC and RHC mode and their uncertainties ar
 
 \begin{equation}
     \begin{aligned}
-    & f_{\nu-\mathrm{NCQE}}= 1.000 \pm 0.099 \\
-    & f_{\bar{\nu}-\mathrm{NCQE}}=1.000 \pm 0.100
+    & f_{\nu-\mathrm{NCQE}}= 1.000 \pm 0.129 \\
+    & f_{\bar{\nu}-\mathrm{NCQE}}=1.000 \pm 0.133
     \label{eq:scale_factors}
     \end{aligned}
 \end{equation}
@@ -91,11 +91,19 @@ The values for the scale factors for FHC and RHC mode and their uncertainties ar
 The number of DSNB NCQE background events is given by Equation \ref{eq:background_events}. 
 
 \begin{equation}
-N_{B} = \mathcal{C} \epsilon f\int \Phi(E_{\nu}) \sigma(E_{\nu}) d E_{\nu} 
+N_{B} = \mathcal{C} \epsilon_{N} f\int \Phi(E_{\nu}) \epsilon_{\nu} \sigma(E_{\nu}) d E_{\nu} 
 \label{eq:background_events}
 \end{equation}
 
-Where $\mathcal{C}$ is the target volume, $\Phi$ is the neutrino flux, $\sigma$ is the neutrino interaction cross section and $\epsilon$ is the neutron tagging efficiency and $f$ is the value of the scale factors.
+Where $\mathcal{C}$ is the target volume, $\Phi$ is the neutrino flux, $\sigma$ is the neutrino interaction cross section, $\epsilon_{\nu}$, $\epsilon_{N}$ is the neutron tagging efficiency and $f$ is the value of the scale factors. In the calculation of the number of events in Table \ref{table:nu_FHC_mc} and Table \ref{table:nu_RHC_mc}, the neutrino detection efficiency is already taken into account. As a result, all that remains is to multiply the number of NCQE events by the neutron tagging efficiency, and this produces the number of DSNB NCQE background events shown in Equation \ref{eq:DSNB_NCQE}.
+
+\begin{equation}
+    \begin{aligned}
+        & N_{\nu-\mathrm{DSNB}_{NCQE}}= 499.1 \pm 91.1 \\
+        & N_{\bar{\nu}-\mathrm{DSNB}_{NCQE}}= 76.0 \pm 14.3
+    \label{eq:DSNB_NCQE}
+    \end{aligned}
+\end{equation}
 
 
 

@@ -152,7 +152,7 @@ As can be seen in Table \ref{table:gdtable}, ${ }^{155} \mathrm{Gd}$ and ${ }^{1
 It is therefore important to model the gamma ray emission spectra from both of these isotopes. The model used by SKDETSIM-SKGd is the ANNRI-Gd model, \cite{annri_gd_energy}, \cite{tanaka_gamma_2020}. This uses gamma energy spectrum data from the germanium spectrometer at the ANNRI (Accurate Neutron Nucleus Reaction Measurement Instrument) experiment. This experiment uses the incoming pulsed neutron beam from the Japan Spallation Neutron Source (JSNS) at the Material and Life Science Experimental Facility (MLF) of J-PARC. After a 300 kW beam of protons from the JSNS facility hits a target of mercury and produces neutrons, this neutron beam hits an enriched ${ }^{155} \mathrm{Gd}$ target or a ${ }^{nat} \mathrm{Gd}$ film. The ANNRI spectrometer is placed 21.5 m away from the neutron beam source, with two cluster detectors on either side of the neutron capture target material, which is 13.4 cm away from each cluster detector. Surrounding the target, there are also 8 co-axial germanium detectors. The schematic for the ANNRI-Gd experiment is shown in Figure \ref{fig:annrigd}.
 
 \begin{figure}[htp]
-
+    \centering
         \includegraphics[width=\textwidth]{Figures/annrigd.png}
         \caption{Schematic of the ANNRI Ge spectrometer (dimensions in mm). The beam pipe along with one of the Ge cluster detectors (light blue) is shown. The shaded purple area are the anti-coincidence shields made of bismuth-germanium-oxide (BGO) crystals \cite{annri_gd_energy}.}
         \label{fig:annrigd}
@@ -172,12 +172,14 @@ Figure \ref{fig:continousdiscrete} shows the continuous and discrete components 
 
 
 \begin{figure}[htp]
+    \centering
 \includegraphics[width=\textwidth]{Figures/continousdiscrete.png}
 \caption{Energy spectra for the ANNRI-Gd model broken down into its continous and discrete components along with data from the ANNRI-Gd experiment \cite{annri_gd_energy}.}
 \label{fig:continousdiscrete}
 \end{figure}
 
 \begin{figure}[htp]
+    \centering
 \includegraphics[width=\textwidth]{Figures/annrigdmodelcompare.png}
 \caption{Comparison between neutron capture MC models and ANNRI-Gd data, with the ratio of data and MC on the y-axis, the GLG4sim model in blue, Geant4 default model in green and the ANNRI-Gd model in red \cite{annri_gd_energy}.}
 \label{fig:annrigdmodelcompare}
