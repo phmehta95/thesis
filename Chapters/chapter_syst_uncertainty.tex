@@ -51,8 +51,12 @@ However, due to Table \ref{table:ambe_tau_chi2} showing three neutron capture un
 \subsection{Neutrino beam flux uncertainty}
 
 The uncertainty on neutrino beam fluxes can be evaluated by looking at the dependence of the tagging efficiency on the flux variations. The beam fluxes for the four flavour modes 
-$\left(\nu_{e}, \overline{\nu_{e}}, \nu_{\mu}, \overline{\nu_{\mu}}\right)$ have the fractional uncertainties given for each mode, FHC and RHC. The binned uncertainties are shown in Figure \ref{fig:frac_beam_flux_uncertainty}, and the fractional error on the flux (y-axis) is given by the difference between the replica-target tuned flux and the nominal flux divided by the nominal flux \cite{vladisavljevic_constraining_2018}.
+$\left(\nu_{e}, \overline{\nu_{e}}, \nu_{\mu}, \overline{\nu_{\mu}}\right)$ have the fractional uncertainties given for each mode, FHC and RHC. The binned uncertainties are shown in Figure \ref{fig:frac_beam_flux_uncertainty}, and the fractional error on the flux (y-axis) is given by the difference between the replica-target tuned flux and the nominal flux divided by the nominal flux \cite{vladisavljevic_constraining_2018}. The replica tuned flux predictions the uncertainties are derived from were simulated with 1000 JNUBEAM files and the fluxes for Runs 1-9d are combined as shown in Equation \ref{eq:flux_comb}:
 
+\begin{equation}
+    \Phi_{\text {combined }}^{\mathrm{SK}}=\frac{1}{\mathrm{~N}_{\text {P.O.T. total }}^{\text {SK }}} \times \sum_{\text {run i }} \mathrm{N}_{\text {P.O.T. run i }}^{\mathrm{SK}} \times \Phi_{\text {run i }}^{\mathrm{SK}}
+\label{eq:flux_comb}
+\end{equation}
 
 Each individual bin for the flux is increased/decreased by its error, the Monte Carlo re-weighting method is then used to extract the taggging efficiency for each flux bin, and Equation \ref{eq:tageffdiscrep} is used to calculate the fractional uncertainty.
 
@@ -83,7 +87,7 @@ Although there are known correlations between the flux parameters, these are not
 
 \subsection{Neutrino cross section uncertainty}
 
-A group of default neutrino cross section values are used to make up the nominal Monte Carlo from which the tagging efficiency is calculated. The values of the parameters that determine the cross sections are shown in Table \ref{table:xsectable}. Each of the parameter values relate to a specific interaction type and are either a normalisation parameter or a paramater which shows a kinematic dependence. \newline
+A group of default neutrino cross section values are used to make up the nominal Monte Carlo from which the tagging efficiency is calculated. The values of the parameters that determine the cross sections are shown in Table \ref{table:xsectable}. Each of the parameter values relate to a specific interaction type and are either a normalisation parameter or a paramater which shows a kinematic dependence. These have been taken from the NIWG model and uncertainties for 2017 oscillation analysis \cite{NIWG_xsec}. \newline
 
 For charged current quasi-elastic interactions, the uncertainty is described by the Fermi momentum of the oxygen nucleus, ($p_{F}^{O}$), the binding energy of the oxygen nucleus,($E_{B}^{O}$) and the axial mass $M_{A}^{C C Q E}$. The axial mass for CCQE interactions relates to the axial form factor which along with vector form factors is proportional to the cross section of the interactions. For neutrino interactions with correlated nucleons (2p2h), an overall normalisation parameter takes the uncertainty of these interactions into account. For $CC$ and $NC1\pi$ interactions, the uncertainty is described by the isospin background, the axial form factor $C_{A 5}^{R E S}$ which just like for CCQE interactions relates to the axial mass $M_{A}^{R E S}$. For neutral current and charged current interactions (both elastic and inelastic) there are normalisation parameters and energy dependent parameters for the uncertainty to take into account. Finally, for charged current interactions with electron neutrinos, the braking radiation from the lepton in the final state is also considered when calculating the uncertainty and is treated using a normalisation parameter.
 \newline
@@ -112,7 +116,7 @@ Figure \ref{fig:xsecuncertainty} shows the reweighted Monte Carlo fractional unc
         \text{FS} e^{-} \text {Bremsstrahlung } & \text{CC} \nu_{e} & \text { Normalization par. } & 1.00 \pm 0.03 \\
         \hline
         \end{array}$
-        \caption{Neutrino cross section parameters. Taken from \cite{nu_xsec}.}
+        \caption{Neutrino cross section parameters. Taken from \cite{nu_xsec} and \cite{NIWG_xsec}.}
         \label{table:xsectable}
 \end{table}
 

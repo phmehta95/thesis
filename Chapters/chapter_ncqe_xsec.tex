@@ -17,7 +17,9 @@ The number of observed neutrino events which are detected at Super-Kamiokande as
 Here, $\mathcal{C}$ is the target volume, $E_{\nu}$ is the true incoming neutrino energy, $\Phi(E_{\nu})$ is the flux of the incoming neutrino, $\sigma(E_{\nu})$ is the cross section for the neutrino interaction and $\epsilon$ is the detection efficiency of the neutrino by the far detector. The number of neutrino events from Monte Carlo for each interaction type is given by summing the number of NCQE events for neutrinos and anti-neutrinos, and charged-current and NC-other interactions, where the numbers of the neutrino and antineutrino NCQE events are multiplied by scale factors which scale the simulated NCQE cross section prediction.
 
 
-\section{NCQE scale factor prediction}
+
+
+\section{NCQE cross-section uncertainty prediction}
 
 
 The number of events $N_{obs}$ are made up of the sum of the signal ($S$) and background ($B$) events, i.e: $N_{obs} = S + B$. The signal events are described by the summation of the number of neutrino and antineutrino NCQE events multiplied by their scale factors: $S  = f_{\nu-\mathrm{NCQE}} M_{\nu-\mathrm{NCQE}}^{\mathrm{FHC}}+f_{\bar{\nu}-\mathrm{NCQE}} M_{\bar{\nu}-\mathrm{NCQE}}^{\mathrm{FHC}}$ for FHC mode. These scale factors are used to scale the NCQE cross section predictions made by NEUT. By having a similar equation for RHC mode, one can produce the Equations in \ref{eq:scale_factor_nu}, where $X$ and $Y$ are the number of background events for FHC and RHC mode respectively, which give the scale factor values for neutrino and antineutrino NCQE interactions. 
@@ -31,7 +33,23 @@ The number of events $N_{obs}$ are made up of the sum of the signal ($S$) and ba
 \end{equation}
 
 
-Table \ref{table:nu_FHC_mc} shows the gives the expected number of neutrino events for each type of interaction including neutral current and charged current interactions for FHC mode for a predicted future POT of $10 \times 10^{21}$ starting Japanese Fiscal Year 2026 \cite{Abe:2016tii}, and Table \ref{table:nu_RHC_mc} shows the same information for RHC mode. These have been calculated with the 21bv2 flux uncertainty tuning. 
+Table \ref{table:nu_FHC_mc} shows the gives the expected number of neutrino events for each type of interaction including neutral current and charged current interactions for FHC mode for a predicted future POT of $10 \times 10^{21}$ starting Japanese Fiscal Year 2026 \cite{Abe:2016tii}, and Table \ref{table:nu_RHC_mc} shows the same information for RHC mode. These have been calculated with the 21bv2 flux uncertainty tuning. Figure \ref{fig:erec_fhc_rhc_2728} shows the number of events plotted against the reconstructed energy ($E_{rec}$) of the event for FHC and RHC mode.
+
+\begin{figure}
+    \centering
+    
+    \begin{minipage}{0.47\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/erec_2728_POT_FHC.PNG} % first figure itself
+        \caption{Number of events plotted against $E_{rec}$ for FHC mode }
+    \end{minipage}\hfill
+    \begin{minipage}{0.47\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/erec_2728_POT_RHC.PNG} % second figure itself
+        \caption{Number of events plotted against $E_{rec}$ for RHC mode}
+        \label{fig:erec_fhc_rhc_2728}
+    \end{minipage}
+\end{figure}
 
 
 \begin{table}
@@ -74,13 +92,13 @@ Due to this being a future prediction of the background rate using MC and not da
 \label{eq:scale_factor_uncertainty}
 \end{equation}
 
-The values for the scale factors for FHC and RHC mode and their uncertainties are shown in Equation \ref{eq:scale_factors}.
+The values for the uncertainty on the scale factors for FHC and RHC mode is shown in Equation \ref{eq:scale_factors}.
 
 
 \begin{equation}
     \begin{aligned}
-    & f_{\nu-\mathrm{NCQE}}= 1.000 \pm 0.129 \\
-    & f_{\bar{\nu}-\mathrm{NCQE}}=1.000 \pm 0.133
+    & \delta{f_{\nu-\mathrm{NCQE}}}= \pm 0.129 \\
+    & \delta{f_{\bar{\nu}-\mathrm{NCQE}}}= \pm 0.133
     \label{eq:scale_factors}
     \end{aligned}
 \end{equation}
