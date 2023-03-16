@@ -38,12 +38,12 @@ Table \ref{table:nu_FHC_mc} shows the gives the expected number of neutrino even
 \begin{figure}
     \centering
     
-    \begin{minipage}{0.47\textwidth}
+    \begin{minipage}{0.49\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/erec_2728_POT_FHC.PNG} % first figure itself
         \caption{Number of events plotted against $E_{rec}$ for FHC mode }
     \end{minipage}\hfill
-    \begin{minipage}{0.47\textwidth}
+    \begin{minipage}{0.49\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/erec_2728_POT_RHC.PNG} % second figure itself
         \caption{Number of events plotted against $E_{rec}$ for RHC mode}
@@ -109,16 +109,48 @@ The values for the uncertainty on the scale factors for FHC and RHC mode is show
 The number of DSNB NCQE background events is given by Equation \ref{eq:background_events}. 
 
 \begin{equation}
-N_{B} = \mathcal{C} \epsilon_{N} f\int \Phi(E_{\nu}) \epsilon_{\nu} \sigma(E_{\nu}) d E_{\nu} 
+N_{B} = \mathcal{C} \epsilon_{N} f\int \Phi(ATM) \epsilon_{\nu} \sigma(E_{\nu}) d E_{\nu} 
 \label{eq:background_events}
 \end{equation}
 
-Where $\mathcal{C}$ is the target volume, $\Phi$ is the neutrino flux, $\sigma$ is the neutrino interaction cross section, $\epsilon_{\nu}$, $\epsilon_{N}$ is the neutron tagging efficiency and $f$ is the value of the scale factors. In the calculation of the number of events in Table \ref{table:nu_FHC_mc} and Table \ref{table:nu_RHC_mc}, the neutrino detection efficiency is already taken into account. As a result, all that remains is to multiply the number of NCQE events by the neutron tagging efficiency, and this produces the number of DSNB NCQE background events shown in Equation \ref{eq:DSNB_NCQE}.
+Where $\mathcal{C}$ is the target volume, $\Phi(ATM)$ is the atmospheric neutrino flux, $\sigma$ is the neutrino interaction cross section, $\epsilon_{\nu}$, $\epsilon_{N}$ is the neutron tagging efficiency and $f$ is the value of the scale factors. In 2021 the Super-Kamiokande DSNB analysis working group released results showing the number of low energy inverse beta decay events in MC and data for 552.2 days of SK-VI data. Table \ref{table:DSNB_analysis} shows the number of events for MC and data for each energy bin of 2 MeV in the 8-30 MeV signal region. Figure \ref{fig:DSNB_hist} shows the energy spectrum of these events in the signal region after data reduction and neutron tagging, along with the associated backgrounds.
+
+\begin{table}[!htb]
+\centering
+\begin{tabular}{ccc}
+\hline
+$\text{ Energy (MeV)}$ & $\text{ Obs. (/bin) }$ & $\text{ Exp. (/bin) }$\\
+\hline 
+8-10 & 7 & 9.18 $\pm$ 3.58 \\
+10-12 & 4 & 2.78 $\pm$ 0.93 \\
+12-16 & 0 & 1.05 $\pm$ 0.21 \\
+16-24 & 2 & 0.41 $\pm$ 0.09 \\
+24-30 & 1 & 0.41 $\pm$ 0.07 \\
+\hline
+\end{tabular}
+\caption{Number of low energy IBD events for each 2 MeV energy bin from 8 - 30 MeV for data and MC}
+\label{table:DSNB_analysis}
+\end{table}
+
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Figures/DSNB_hist.png}
+    \caption{Reconstructed energy spectra after data reduction for the backgrounds and the observed data taken with 552.2 days of SK-VI data.}
+    \label{fig:DSNB_hist}
+\end{figure}
+
+Scaling the total number of events found from the data (14 events) found in the 552.2 days of taking data to 2028 gives 67 events in FHC mode. Using Equation \ref{eq:background_events}, the number of predicted DSNB NCQE background events for FHC mode is given in Equation \ref{eq:DSNB_NCQE}, with the combined systematic and statistical error on this value calculated as in Equation \ref{eq:DSNB_NCQE_error}.
+
+\begin{equation}
+    \left(\frac{\delta_{N_{\nu-\mathrm{DSNB}_{NCQE}}}}{N_{\nu-\mathrm{DSNB}_{NCQE}}}\right)^{2} = \left({\frac{\sqrt{N_{\text{obs}}}}{N_{\text{obs}}}}\right)^{2} + \left({\frac{\delta_{\epsilon_{N}}}{\epsilon_{N}}}\right)^{2} + \left({\frac{\delta_{f}}{f}}\right)^{2}
+\label{eq:DSNB_NCQE_error}
+\end{equation}
+
 
 \begin{equation}
     \begin{aligned}
-        & N_{\nu-\mathrm{DSNB}_{NCQE}}= 499.1 \pm 91.1 \\
-        & N_{\bar{\nu}-\mathrm{DSNB}_{NCQE}}= 76.0 \pm 14.3
+        & N_{\nu-\mathrm{DSNB}_{NCQE}}= 26.9 \pm 8.7 \\
     \label{eq:DSNB_NCQE}
     \end{aligned}
 \end{equation}
