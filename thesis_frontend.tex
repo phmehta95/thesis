@@ -132,19 +132,19 @@
   % DOCUMENT
 
 \begin{document}
-\pagestyle{empty}
+%\pagestyle{empty}
 
 \include{title}
-\cleardoublepage
+%\cleardoublepage
 
 
 
 %% In the preface, pages are numbered by roman numerals (i,ii,...) and in the header Author and Title.
-%\pagenumbering{roman}
+\pagenumbering{roman}
 %\pagestyle{fancy}
 
-\cleardoublepage
-\thispagestyle{empty}
+%\cleardoublepage
+%\thispagestyle{empty}
 
     % Typeset title page.
     %\maketitle
@@ -160,6 +160,7 @@
 \tableofcontents
 
 \cleardoublepage
+\pagenumbering{arabic}
     % Include body text
   \include{Chapters/chapter_introduction}
 
