@@ -41,12 +41,12 @@ Table \ref{table:nu_FHC_mc} shows the gives the expected number of neutrino even
     \begin{minipage}{0.49\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/erec_2728_POT_FHC.PNG} % first figure itself
-        \caption{Number of events plotted against $E_{rec}$ for FHC mode }
+        \caption{Number of events plotted against $E_{rec}$ for T2K FHC mode }
     \end{minipage}\hfill
     \begin{minipage}{0.49\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/erec_2728_POT_RHC.PNG} % second figure itself
-        \caption{Number of events plotted against $E_{rec}$ for RHC mode}
+        \caption{Number of events plotted against $E_{rec}$ for T2K RHC mode}
         \label{fig:erec_fhc_rhc_2728}
     \end{minipage}
 \end{figure}
@@ -140,7 +140,7 @@ $\text{ Energy (MeV)}$ & $\text{ Obs. (/bin) }$ & $\text{ Exp. (/bin) }$\\
     \label{fig:DSNB_hist}
 \end{figure}
 
-Scaling the total number of events found from the data (14 events) found in the 552.2 days of taking data to 2028 gives 67 events in FHC mode. Using Equation \ref{eq:background_events}, the number of predicted DSNB NCQE background events for FHC mode is given in Equation \ref{eq:DSNB_NCQE}, with the combined systematic and statistical error on this value calculated as in Equation \ref{eq:DSNB_NCQE_error}.
+Scaling the total number of events found from the MC in Figure \ref{fig:DSNB_hist}, (2.04 events) from the 552.2 days of taking data to 2028 gives 9.88 events in FHC mode. Using Equation \ref{eq:background_events}, the number of predicted DSNB NCQE background events for FHC mode is given in Equation \ref{eq:DSNB_NCQE}, with the combined systematic and statistical error on this value calculated as in Equation \ref{eq:DSNB_NCQE_error}.
 
 \begin{equation}
     \left(\frac{\delta_{N_{\nu-\mathrm{DSNB}_{NCQE}}}}{N_{\nu-\mathrm{DSNB}_{NCQE}}}\right)^{2} = \left({\frac{\sqrt{N_{\text{obs}}}}{N_{\text{obs}}}}\right)^{2} + \left({\frac{\delta_{\epsilon_{N}}}{\epsilon_{N}}}\right)^{2} + \left({\frac{\delta_{f}}{f}}\right)^{2}
@@ -150,10 +150,10 @@ Scaling the total number of events found from the data (14 events) found in the 
 
 \begin{equation}
     \begin{aligned}
-        & N_{\nu-\mathrm{DSNB}_{NCQE}}= 26.9 \pm 8.7 \\
+        & N_{\nu-\mathrm{DSNB}_{NCQE}}= 9.88 \pm 3.62 \\
     \label{eq:DSNB_NCQE}
     \end{aligned}
 \end{equation}
 
-
+To summarise, as shown in Figure \ref{fig:DSNB_hist}, the dominant atmospheric neutrino background comes from NCQE interactions, and cross section measurements from T2K can be used to estimate this background. Monte Carlo simulations of neutrino and anti-neutrino NCQE interactions can be renormalised using scaling factors from data, while the error on these scale factors are taken as cross-section uncertainties. Values of these scale-factor errors are given in Equation \ref{eq:scale_factors} and these have been calculated from the expected number of neutrino events for a future POT of $10 \times 10^{21}$ starting JFY 2028, shown in Table \ref{table:nu_FHC_mc} and Table \ref{table:nu_RHC_mc}. The number of DSNB NCQE background events in MC are taken from results from SK-Gd in 2021 and scaled up to the JFY 2028 prediction, with the error on the scale factor used to produce the total uncertainty (Equation \ref{eq:eq:DSNB_NCQE_error}) on this measurement. 
 
