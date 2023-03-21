@@ -21,6 +21,7 @@ In 2000 the DONUT collaboration (Direct Observation of NU Tau) at Fermilab detec
 The Standard Solar Model predicts that most of the solar neutrino flux (about 90\%) come from the proton-proton chain reaction \cite{borexino2018comprehensive}, where the solar neutrinos produced have energies below 0.4 MeV. Figure \ref{fig:ppchain} shows the processes which make up the pp chain, along with the branching percentages where it produces a neutrino. 
 
 \begin{figure}
+    \centering
     \includegraphics[width=\textwidth]{Figures/ppchain.png}
     \caption{Proton-proton chain cycle with branching percentages shown}
     \label{fig:ppchain}
@@ -29,6 +30,7 @@ The Standard Solar Model predicts that most of the solar neutrino flux (about 90
 Only experiments that use Gallium can detect neutrinos with this energy, whereas experiments whose detector medium is Chlorine can observe neutrinos from ${ }^{7} \mathrm{Be}$ (production equation of which is shown in Figure \ref{fig:ppchain}). Experiments whose detector medium is water (such as Super-Kamiokande and SNO) can only see the ${ }^{8} \mathrm{B}$ neutrinos, as shown in Figure \ref{fig:nu_energy_bachall}.
 
 \begin{figure}
+    \centering
     \includegraphics[width=\textwidth]{Figures/nu_energy_bachall.png}
     \caption{Solar neutrino fluxes predicted by Bachall's Standard Solar Model, and which experiments are able to detect them \cite{Bahcall_2003}.}
     \label{fig:nu_energy_bachall}
@@ -168,6 +170,7 @@ Understanding neutrino interaction modes, and understanding neutrino nucleus int
 There are two main types of neutrino interaction: charged-current (CC) and neutral current (NC). The former occurs when a W $\pm$ boson is involved in a nuclear exchange, and the latter occurs when a $Z^{0}$ is nvolved (see Figure \ref{fig:CC_NC}).
 
 \begin{figure}
+    \centering
     \includegraphics[width=\textwidth]{Figures/CC_NC.png}
     \caption{Feynman diagrams of charged-current (left) and neutral-current (right) neutrino interactions}
     \label{fig:CC_NC}
@@ -288,9 +291,9 @@ There are stages to neutrino-nucleus reactions, and for the CCQE reaction shown 
 
 
 
-\subsection{Supernova Relic Neutrinos}
+\subsection{Diffuse Supernova Neutrino Background}
 
-A key feature of the analysis presented in this thesis is that it is an investigation into the significant background of the signal for SRN \cite{malek2003search}. It is therefore important to state and understand the process behind the production of supernova relic neutrinos in order to get a firm handle on the motivation behind this analysis. 
+A key feature of the analysis presented in this thesis is that it is an investigation into the significant background of the signal for DSNB \cite{malek2003search}. It is therefore important to state and understand the process behind the production of supernova relic neutrinos in order to get a firm handle on the motivation behind this analysis. 
 
 \subsubsection{Supernovae Classification}
 Supernovae occur when a star with a mass around eight times the mass of our sun explodes, and in a galaxy these occur only a few times in a century \cite{van1991supernova}. Supernovae are classified into different types: Type 1a, Type 1b, Type 1c and Type II \cite{turatto2003classification}. The classification of supernovae are determined by looking at the spectral lines in the light emitted from these supernovae. Table \ref{table:supernova_classification} shows how these supernovae are classed and which spectral line elements are associated with each class. 
@@ -393,14 +396,14 @@ It is worth reviewing the lastest searches from Super-Kamiokande for DSNB neutri
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.6\textwidth]{Figures/DSNB_energy.png}
+    \includegraphics[width=0.5\textwidth]{Figures/DSNB_energy.png}
     \caption{DSNB flux against neutrino energy for various theoretical models, "NH'' and "IH'' are the normal and inverted mass hierchies respectively}
     \label{fig:DSNBenergy}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.6\textwidth]{Figures/DSNBlimit.png}
+    \includegraphics[width=0.5\textwidth]{Figures/DSNBlimit.png}
     \caption{The 90\% C.L. for observed and expected upper limits on the electron antineutrino flux from SK-I - SK-IV and KamLAND, with the theoretical predictions in Figure \ref{fig:DSNBenergy} shown in grey.}
     \label{fig:DSNBlimit}
 \end{figure}
@@ -418,10 +421,11 @@ where $E_{\nu}$ is the initial neutrino or antineutrino energy, $M$ is the mass 
 
 \subsection{Physics motivation behind Super-Kamiokande Gadolinium Upgrade}
 
-Due to the large cross section of the IBD interaction, IBD events constitute about 88\% of the total number of events in the detector \cite{marti_evaluation_2020}. With efficient neutron tagging in Super-Kamiokande, the backgrounds (charged current interactions and muon spallation) in the search for SRN flux neutrinos would be largely reduced. The neutral current quasielastic (NCQE) background would still remain due to the way the gamma rays arising from neutron capture mimic the signal of the inverse beta decay (IBD) reactions: a schematic of both NCQE and IBD reactions are shown in Figure \ref{fig:NCQE_IBD}. The measurement of the NCQE interactions using T2K beam flux can aid in understanding this background more due to the T2K flux peak being near the atmospheric neutrino flux peak (~600 MeV). 
+Due to the large cross section of the IBD interaction, IBD events constitute about 88\% of the total number of events in the detector \cite{marti_evaluation_2020}. With efficient neutron tagging in Super-Kamiokande, the backgrounds (charged current interactions and muon spallation) in the search for DSNB flux neutrinos would be largely reduced. The neutral current quasielastic (NCQE) background would still remain due to the way the gamma rays arising from neutron capture mimic the signal of the inverse beta decay (IBD) reactions: a schematic of both NCQE and IBD reactions are shown in Figure \ref{fig:NCQE_IBD}. The measurement of the NCQE interactions using T2K beam flux can aid in understanding this background more due to the T2K flux peak being near the atmospheric neutrino flux peak (~600 MeV). 
 
 
 \begin{figure}
+    \centering
     \includegraphics[width=\textwidth]{Figures/schematic.png}
 \caption{Schematic showing the IBD and NCQE interaction mechanisms}
 \label{fig:NCQE_IBD}
@@ -438,6 +442,6 @@ Efficient neutron tagging aids information about neutrino energy and neutrino in
 
 
 
-The ideal goal of this analysis is to complement prior analyses which investigate the NCQE cross-section and analyses which produce neutron multiplicity distributions for NCQE interactions, with the added benefit of comparisons to Run 11 T2K data, which brings with it the first beam events with gadolinium in the far detector. The emphasis on the distributions of neutrons in this thesis and the methods of neutron tagging used are of increasing interest due to the fact that the main purpose behind adding Gadolinium to the detector is to make these neutron captures more visible. 
+The ideal goal of this analysis is to complement prior analyses which investigate the NCQE cross-section and analyses which produce neutron multiplicity distributions for NCQE interactions, with the added benefit of comparisons to Run 11 T2K data, which brings with it the first beam events with gadolinium in the far detector. The emphasis on the distributions of neutrons in this thesis and the methods of neutron tagging used are of increasing interest due to the fact that the main purpose behind adding Gadolinium to the detector is to make these neutron captures more visible. Futhermore, in Chapter 8, an estimate of the DSNB NCQE background is made, with an error stemming from the value of the neutron tagging efficiency and systematic error on this efficiency calculated in Chapter 6 and Chapter 7 of this thesis.
 
 
