@@ -101,7 +101,8 @@ Figure \ref{fig:xsecuncertainty} shows the reweighted Monte Carlo fractional unc
         $\begin{array}{||cccc||}
         \hline & & & \\
         \text { Parameter } & \text { Interaction } & \text { Type } & \text { Value } \\
-        \hline & & & \\
+        \hline
+        \hline
         p_{F}^{O} & \text{CCQE} & { }^{16} \text{O} \text { Fermi momentum } & 225 \pm 31 \text{MeV} / \text{c} \\
         E_{B}^{O} & \text{CCQE} & { }^{16} \text{O} \text { binding energy } & 27 \pm 9 \text{MeV} \\
         M_{A}^{C C Q E} & \text{CCQE} & \text { Axial mass } & 1.2 \pm 0.41 \text{GeV} / \text{c}^{2}\\
@@ -148,6 +149,7 @@ For pions with a momentum of greater than 500 MeV, a different set of interactio
 \centering
 \begin{tabular}{||ccc||}
 \hline
+\hline
 $\text { Parameter }$ & $\text { Description }$ & $\text{Momentum Region (MeV/c)}$\\
 \hline
 $f_{\text{ABS}}$ & $\text{Absorption}$ & $<$ 500 \\
@@ -158,7 +160,7 @@ $f_{\text{CXH}}$ & $\text { Single charge exchange }$ & $>$ 500 \\
 $f_{\text{INEL}}$ & $\text { Hadron }(\text{N}+\text{n}\pi)$ $\text {production}$ & $>$ 500 \\
 \hline
 \end{tabular}
-\caption{Table showing the pion final state interaction parameters in NEUT and the pion momentum range they are used in, taken from \cite{tn_32}.}
+\caption{Table showing the pion final state interaction parameters in NEUT and the pion momentum range they are used in, taken from \cite{tn_32}}
 \label{table:fsiparameters}
 \end{table}
 
@@ -178,13 +180,14 @@ The pion FSI/SI uncertainty is then calculated using Equation \ref{eq:std_dev_fs
 \begin{figure}[!htb]
 \centering 
     \includegraphics[width=0.8\textwidth]{Figures/fsisi_uncertainty.png}
-\caption{Tagging efficiency fractional uncertainty caused by the variation in the FSI/SI model parameters for the FHC mode.}
+\caption{Tagging efficiency fractional uncertainty caused by the variation in the FSI/SI model parameters for the FHC mode}
 \label{fig:fsisiuncertainty}
 \end{figure}
 
 \begin{table}
 \centering
 \begin{tabular}{||ccccccc||}
+\hline
 \hline
 $\text { Set }$ & $\text { ABS }$ & $\text { QE }$ & $\text { CX }$ & $\text { INEL }$ & $\text { QEH }$ & $\text { CXH }$ \\
 \hline
@@ -391,17 +394,16 @@ The discrepancies in tagging efficiency for this systematic uncertainty are prod
 The Bonsai fitter output produces parameters that encapsulate the detector repsonse to neutrino events: namely the parameters $E_{rec}$, dwall, effwall, ovaQ, and $\theta_C$. During the selection of NCQE events, cuts are made on these variables in order to give the most plentiful NCQE sample. However, uncertainties on these parameters can modify the amount of NCQE events and affect the position vector of the reconstructed neutrino vertex, and therefore the NTag algorithm, which could have an impact on the tagging efficiency. The errors on these variables are shown in Table \ref{table:det_resp_nu_errors}, and are also provided in TN-374 \cite{tn_374}.
 
 \begin{table}
-    $$
-\begin{array}{ll}
-\hline \text { Reduction parameter }  & \text { Uncertainty } \\
-\hline E_{\text {rec }}  & \pm 5 \% \\
-\text { ovaQ } & \pm 1.5 \% \\
-\theta_C & \pm 2 \text { degree } \\
-\text{Effwall} & \pm 50 \text {cm} \\
-\text{DWall} & \pm 5 \text{cm}  \\
-\hline
-\end{array}
-$$
+    \centering
+    \begin{tabular}{||cc||}
+        \hline Reduction parameter & Uncertainty \\
+        \hline$E_{\text {rec }}$ & $\pm 5 \%$ \\
+        ovaQ & $\pm 1.5 \%$ \\
+        $\theta_C$ & $\pm$ 2 degree \\
+        Effwall & $\pm 50 \mathrm{~cm}$ \\
+        DWall & $\pm 5 \mathrm{~cm}$ \\
+        \hline
+        \end{tabular}
 \caption{Uncertainties on Bonsai output parameters (taken from \cite{tn_374}).}
 \label{table:det_resp_nu_errors}
 \end{table}
@@ -431,19 +433,19 @@ Figure \ref{fig:nu_det_syst_error} shows the fractional uncertainties for each p
 
 \begin{table}[htb!]
 \centering
-    $\begin{array}{lll}
-    \hline \text { Systematic error} & \text{Value (\%)} \\
-    \hline 
-    \text { PMT gain simulation } & \pm 3.00 \\ 
-    \nu \text { cross section } & \pm 0.30 \\ 
-    \nu \text { beam flux } & \pm 0.60 \\ 
-    \pi \text { FSI/SI } & \pm 0.10  \\ 
-    \text { Nucleon FSI } & \pm 0.20  \\ 
-    \text { Nucleon SI } & { }_{-5.40}^{+5.40} \\ 
-    \mu \text{ and } \pi \text { capture on }{ }^{16} \mathrm{O} & \pm 0.29\\ 
-    \text{Det. resp. for $\nu$} & \pm 1.36\\
-    \text { Det. resp. for gamma rays }& \pm 1.36 \\ 
-    \end{array}$
+\begin{tabular}{||cc||}
+    \hline Systematic error & Value $(\%)$ \\
+    \hline PMT gain simulation & $\pm$ 3.00 \\
+    $\nu$ cross section & $\pm$ 0.30 \\
+    $\nu$ beam flux & $\pm$ 0.60 \\
+    $\pi$ FSI/SI & $\pm$ 0.10 \\
+    Nucleon FSI & $\pm$ 0.20 \\
+    Nucleon SI & ${ }_{-5.40}^{+5.40}$ \\
+    $\mu$ and $\pi$ capture on ${ }^{16} \mathrm{O}$ & $\pm$ 0.29 \\
+    Det. resp. for $\nu$ & $\pm$ 1.36 \\
+    Det. resp. for gamma rays & $\pm$ 1.36 \\
+    \hline
+    \end{tabular}
 \caption{Final systematic uncertainties for the tagging efficiency} 
 \label{table:systuncertaintytable}
 \end{table}
