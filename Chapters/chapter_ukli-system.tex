@@ -168,19 +168,19 @@ In order to simulate the data taken with the UKLI, SKDETSIM \cite{harada2019deve
 \newline
 Along with making sure the position of the injectors was set to that of the UKLI injectors (shown in Table \ref{table:UKLI_loc}), the opening angle of the injectors determined by the simulation had to be set to accomodate the fact that the injectors for the UKLI system now consisted of three different opening angles for the collimator, diffuser and bare fibre optics. Previously, to set the angle of the photons in the beam, a parameter relating to the width of the input injector beam was produced using a Gaussian random number generator to output the photon angle. However, an entirely new method of determining the opening angle of the beam was needed to include the information from the light profiles taken from the test stands at Warwick. 
 
-\begin{table}[htp]
-    $$
-\begin{array}{|c|c|c|c|c|c|}  
-    \hline \hline{\text {UKLI Barrel Injector }} & {\text { x (cm)}} & {\text {y (cm)}} & {\text {z (cm)}} & {\text{Misalignment angle ($\degree$)}}  \tabularnewline
-    \hline \text { B1 } & 1490.73 & 768.14 & 1224.0 & 4.1 \\
-    \hline \text { B2 } & 1490.73 & 768.14 & 742.0 & 3.5 \\
-    \hline \text { B3 } & 1490.73 & 768.14 & -200.0 & 3.4 \\
-    \hline \text { B4 } & 1490.73 & 768.14 & -747.0 & 6.3 \\
-    \hline \text { B5 } & 1490.73 & 768.14 &  -1413.0 & - \\
-    \hline \hline 
-\end{array}
-    $$
-\caption{Beam spot positions (x,y,z) of the UKLI injectors in cm and misalignment of the injectors in degrees} 
+\begin{table}
+\centering
+\begin{tabular}{||c|c|c|c|c||}
+    \hline \hline UKLI Barrel Injector & $\mathrm{x}(\mathrm{cm})$ & $\mathrm{y}(\mathrm{cm})$ & $\mathrm{z}(\mathrm{cm})$ & Misalignment angle $\left({ }^{\circ}\right)$ \\
+    \hline
+    \hline B1 & 1490.73 & 768.14 & 1224.0 & 4.1 \\
+    \hline B2 & 1490.73 & 768.14 & 742.0 & 3.5 \\
+    \hline B3 & 1490.73 & 768.14 & -200.0 & 3.4 \\
+    \hline B4 & 1490.73 & 768.14 & -747.0 & 6.3 \\
+    \hline B5 & 1490.73 & 768.14 & -1413.0 & - \\
+    \hline \hline
+\end{tabular}
+\caption{Beam spot positions (x,y,z) of the UKLI injectors in cm and misalignment of the injectors in degrees.} 
 \label{table:UKLI_loc}
 \end{table}
 
@@ -355,18 +355,18 @@ Figures \ref{fig:0ns_time_dispersion}, \ref{fig:5ns_time_dispersion}, \ref{fig:1
 The sigma of the gaussian fit to the data is 14.07 $\pm$ 0.01 ns, while the gaussian fit to the reflected peak for the 10 ns, 15 ns, and 20 ns time dispersed MC distributions is shown in Table \ref{table:reflected_peak_gaussian}. 
 
 \begin{table}[htp]
-$$
-\begin{array}{|c|c|c|}  
-    \hline \hline{\text {Time dispersion value (ns) }} & {\text {Sigma of gaussian (ns)}} & {\text {$\chi^{2}/ndf$ values of scattered hits region}}  \tabularnewline
-    \hline \text { 0 } & - & 8.15 \\
-    \hline \text { 5 } & - & 4.72 \\
-    \hline \text { 10 } & 19.94 \pm 0.39 & 3.45 \\
-    \hline \text { 15 } & 30.30 \pm 0.55 & 13.17 \\
-    \hline \text { 20 } & 38.46 \pm 0.75 & 22.12 \\
-    \hline \hline 
-\end{array}
- $$   
-\caption{Sigma of gaussian (ns) for each value of time dispersion along wth the $\chi^2/ndf$ value for B1 data and MC comparison between the scattered hits region (blue dashed lines)} 
+\centering
+\begin{tabular}{||c|c|c||}
+    \hline \hline Time dispersion value $(\mathrm{ns})$ & Sigma of gaussian $(\mathrm{ns})$ & $\chi^2 / n d f$ values of scattered hits region \\
+    \hline
+    \hline 0 & - & 8.15 \\
+    \hline 5 & - & 4.72 \\
+    \hline 10 & $19.94 \pm 0.39$ & 3.45 \\
+    \hline 15 & $30.30 \pm 0.55$ & 13.17 \\
+    \hline 20 & $38.46 \pm 0.75$ & 22.12 \\
+    \hline \hline
+\end{tabular}   
+\caption{Sigma of gaussian (ns) for each value of time dispersion along wth the $\chi^2/ndf$ value for B1 data and MC comparison between the scattered hits region (blue dashed lines).} 
 \label{table:reflected_peak_gaussian}
 \end{table}
 

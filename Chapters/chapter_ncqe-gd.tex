@@ -22,18 +22,18 @@ This section discusses details about the event simulation, specifically the way 
 
 
 \begin{table}
-$$
-\begin{array}{ll}
-\hline \text { Name } & \text { Version } \\
-\hline \text { Flux } & 13 \text { a tuning v4.0 } \\
-\text { NEUT } & 5.3 .3 \\
-\text { SKDETSIM-SKGd } & \text { ANNRI-Gd model } \\
-\text { Geant } & 4.10.05.p01 \\
-\text { T2KReWeight } & \text { v1r23 } \\
-\text { GENIE } & \text { R2-12-10 } \\
-\hline
-\end{array}
-$$
+\centering
+    \begin{tabular}{||cc||}
+        \hline Name & Version \\
+        \hline
+        \hline Flux & 13a tuning v4.0 \\
+        NEUT & 5.3.3 \\
+        SKDETSIM-SKGd & ANNRI-Gd model \\
+        Geant & 4.10.05.p01 \\
+        T2KReWeight & v1r23 \\
+        GENIE & R2-12-10 \\
+        \hline
+        \end{tabular}
 \caption{Software versions used in analysis from \cite{tn415_fiacob}.}
 \label{table:software}
 \end{table}
@@ -64,8 +64,9 @@ where the cross-section ratio term is simplified to 1 due to the kinematic diffe
 
 \begin{table}
 \centering
-\begin{tabular}{cc}
+\begin{tabular}{||cc||}
     \hline \text{Osc Parameter} & \text{Value} \\
+    \hline
     \hline $\sin ^2 \theta_{13}$ & $0.0211 \pm 0.0008$ \\
     $\sin ^2 \theta_{23}$ & $0.541_{-0.037}^{+0.027}$ \\
     $\left|\Delta m_{32}^2\right|$ & $2.469_{-0.071}^{+0.073} \times 10^{-3} \mathrm{eV}^2$ \\
@@ -101,16 +102,16 @@ The interaction between the incoming neutrino event and an Oxygen nucleus, and t
 The lowest rung of nucleons in Figure \ref{fig:ncqebenharspectral} is the $s_{1/2}$, with $p_{3/2}$ above this level and $p_{1/2}$ above that. The protons in these rungs have removal energies of 42 MeV, 18.4 MeV and 12.1 MeV respectively, and due to neutron levels being more tightly bound, these have an extra removal energy of 3.24 MeV compared to their proton counterparts. The shell model is imperfect due to how it allocates the probablity of ${ }^{16} \mathrm{O}$ transitioning to the possible nucleon states. In the shell model, probabilities are allocated by counting the number of nucleons in each energy level and assigning probailities according to how many there are. In Figure \ref{fig:ncqebenharspectral} it can be seen that the $p_{3/2}$ state has double the number of nucleons compared to the $s_{1/2}$ model and therefore double the probability of transition is assigned for the $p_{3/2}$ state, and the probability of transitioning to any other state is assigned to be 0, because in the shell model they don't even exist. The Benhar Spectral Function model however is complex and is tuned using electron-nucleus scattering data. The model used in this analysis is a modified version of the Benhar Spectral Function model, where the case of other transition states is dealt with by merging the ``others'' state into the $s_{1/2}$ state. Table \ref{table:transitionprob} gives the probabilities of transition to different states for different models. 
 
 \begin{table}
-$$
-\begin{array}{ccccc}
-\hline & \left(\mathrm{s}_{1 / 2}\right)^{-1} & \left(\mathrm{p}_{3 / 2}\right)^{-1} & \left(\mathrm{p}_{1 / 2}\right)^{-1} & \text { others } \\
-\hline \text { Shell model } & 0.25 & 0.5 & 0.25 & 0 \\
-\text { Spectral Function } & 0.1055 & 0.3515 & 0.158 & 0.385 \\
-\text { This analysis } & 0.4905 & 0.3515 & 0.158 & 0 \\
-\hline
-\end{array}
-$$
-\caption{Transition probabilities for different models and states}
+    \centering
+    \begin{tabular}{||ccccc||}
+        \hline Model & $\left(\mathrm{s}_{1 / 2}\right)^{-1}$ & $\left(\mathrm{p}_{3 / 2}\right)^{-1}$ & $\left(\mathrm{p}_{1 / 2}\right)^{-1}$ & others \\
+        \hline
+        \hline Shell model & 0.25 & 0.5 & 0.25 & 0 \\
+        Spectral Function & 0.1055 & 0.3515 & 0.158 & 0.385 \\
+        This analysis & 0.4905 & 0.3515 & 0.158 & 0 \\
+        \hline
+        \end{tabular}
+\caption{Transition probabilities for different models and states.}
 \label{table:transitionprob}
 \end{table}
 
@@ -119,19 +120,19 @@ $$
 Prior analyses to this used SKDETSIM (Super-Kamiokande Detector Simulator) to simulate the trajectories of particles through the water in Super-Kamiokande and output detector response MC. This analysis uses SKDETSIM-SKGd to propogate the particles, due to the requirement of needing gadolinium sulphate present in the simulation. Unlike SKDETSIM, SKDETSIM-SKGd has a GEANT4 function implemented for neutron capture on gadolinium isotopes and its subsequent interactions. The particular isotopes of gadolinium used in the simulation are ${ }^{155} \mathrm{Gd}$ and ${ }^{157} \mathrm{Gd}$ due to their excellent thermal neutron capture cross sections. Table \ref{table:gdtable} shows the relative abundance of various gadolinium isotopes inside natural gadolinium and their associated thermal neutron capture cross sections.
 
 \begin{table}
-$$
-\begin{array}{rcc}
-\hline \text { Isotope } & \text { Abundance }[\%] & \text { Cross-section[b] } \\
-\hline{ }^{152} \mathrm{Gd} & 0.200 & 735 \\
-{ }^{154} \mathrm{Gd} & 2.18 & 85 \\
-{ }^{155} \mathbf{Gd} & \mathbf{1 4 . 8 0} & \mathbf{6 0 9 0 0} \\
-{ }^{156} \mathrm{Gd} & 20.47 & 1.8 \\
-{ }^{157} \mathbf{Gd} & \mathbf{1 5 . 6 5} & \mathbf{2 5 4 0 0 0} \\
-{ }^{158} \mathrm{Gd} & 24.84 & 2.2 \\
-{ }^{160} \mathrm{Gd} & 21.86 & 1.4 \\
-\hline
-\end{array}
-$$
+    \centering
+    \begin{tabular}{||ccc||}
+        \hline Isotope & Abundance [\%] & Cross-section $[\mathrm{b}]$ \\
+        \hline
+        \hline${ }^{152} \mathrm{Gd}$ & 0.200 & 735 \\
+        ${ }^{154} \mathrm{Gd}$ & 2.18 & 85 \\
+        ${ }^{155} \mathrm{Gd}$ & $\mathbf{1 4 . 8 0}$ & $\mathbf{6 0 9 0 0}$ \\
+        ${ }^{156} \mathrm{Gd}$ & 20.47 & 1.8 \\
+        ${ }^{157} \mathrm{Gd}$ & $\mathbf{1 5 . 6 5}$ & $\mathbf{2 5 4 0 0 0}$ \\
+        ${ }^{158} \mathrm{Gd}$ & 24.84 & 2.2 \\
+        ${ }^{160} \mathrm{Gd}$ & 21.86 & 1.4 \\
+        \hline
+        \end{tabular}
 \caption{Abundance and thermal neutron capture cross section of various isotopes of Gadolinium}
 \label{table:gdtable}
 \end{table}
@@ -153,10 +154,9 @@ It is therefore important to model the gamma ray emission spectra from both of t
 
 \begin{figure}[htp]
     \centering
-        \includegraphics[width=\textwidth]{Figures/annrigd.png}
-        \caption{Schematic of the ANNRI Ge spectrometer (dimensions in mm). The beam pipe along with one of the Ge cluster detectors (light blue) is shown. The shaded purple area are the anti-coincidence shields made of bismuth-germanium-oxide (BGO) crystals \cite{annri_gd_energy}.}
-        \label{fig:annrigd}
-    
+    \includegraphics[width=\textwidth]{Figures/annrigd.png}
+    \caption{Schematic of the ANNRI Ge spectrometer (dimensions in mm). The beam pipe along with one of the Ge cluster detectors (light blue) is shown. The shaded purple area are the anti-coincidence shields made of bismuth-germanium-oxide (BGO) crystals \cite{annri_gd_energy}.}
+    \label{fig:annrigd}
 \end{figure}
 
 Figure \ref{fig:annrigdenergyspectra} shows the energy spectra for different multiplicity values (left) and hit values (right) from one of the germanium crystals in the ANNRI spectrometer. 
@@ -344,15 +344,15 @@ The vertex goodness (gvtx) and directional goodness (gdir) squared comparisons a
 \end{figure}
 
 \begin{table}
-    $$
-    \begin{array}{rcc}
+    \centering
+    \begin{tabular}{||cc||}
     \hline \text { SKDETSIM version } & \text{Value (cm)} \\
+    \hline
     \text{SKDETSIM-V} & 113.2\\
     \text{SKDETSIM-SKGd (Photon evaporation model)} & 109.4 \\
     \text{SKDETSIM-SKGd (ANNRI-Gd model)} & 111.9 \\
     \hline
-    \end{array}
-    $$
+    \end{tabular}
 \caption{Value of the true neutrino vertex - reconstructed neutrino vertex distribution which encompasses 1-sigma (68\%) of the number of events.}
 \label{table:vertex_resolution}
 \end{table}
@@ -491,17 +491,17 @@ Just like for the low energy background cut values, the values of the optimised 
 Before applying the NTag algorithm, either legacy or new, plots were produced of the number of neutrino events and their dependence the reduction cut variables mentioned previously. These are shown in Figures \ref{fig:erec_reduction} to \ref{fig:angle_reduction}. Each figure shows the corresponding plot for the previous NCQE analysis carried out with neutron tagging on Hydrogen on the left, with the plot from this analysis on the right. Due to the FHC sample not purely consisting of neutrino and antineutrino NCQE interactions, Table \ref{table:nu_FHC_mc_chp6} gives the expected number of neutrino events for each type of interaction including neutral current and charged current interactions.
 
 \begin{table}
-    $$
-    \begin{array}{ccc}
-    \hline \text { FHC sample } & \text { MC } \# \boldsymbol{\nu}_{\text {det }} & \text { MC } \# \nu_{\text {det }} \text { fraction (\%) } \\
-    \hline \nu-N C Q E & 204.1 & 76.6 \\
-    \bar{\nu}-\text { NCQE } & 5.6 & 2.1 \\
-    N C-\text { other } & 47.8 & 17.9 \\
-    C C & 8.8 & 3.3 \\
-    \hline \text { Total } & 266.3 & 100 \\
-    \hline
-    \end{array}
-    $$
+    \centering
+    \begin{tabular}{||ccc||}
+        \hline FHC sample & MC $\# \nu_{\mathrm{det}}$ & $\mathrm{MC} \# \nu_{\mathrm{det}}$ fraction (\%) \\
+        \hline
+        \hline$\nu-N C Q E$ & 204.1 & 76.6 \\
+        $\bar{\nu}-$ NCQE & 5.6 & 2.1 \\
+        $N C-$ other & 47.8 & 17.9 \\
+        $C C$ & 8.8 & 3.3 \\
+        \hline Total & 266.3 & 100 \\
+        \hline
+        \end{tabular}
     \caption{FHC MC expectation values for each interaction type}
     \label{table:nu_FHC_mc_chp6}
 \end{table}

@@ -31,13 +31,12 @@ The inner detector tank water is circulated by injecting the water at the bottom
 
 The Super-Kamiokande experiment began taking data on 1st April 1996, and due to maintenance was shut down in July 2001, which was phase I of the experiment. A table of the Super-Kamiokande phases is shown in Table \ref{table:phasetable}. During the refilling of the tank after maintenence, there was cascade of PMT implosions that occurred on the 12th of November 2001, which were triggered by the implosion of a single photomultiplier tube, due to a microfracture in the neck of the tube. This implosion destroyed about 7,000 of the PMTs and in order to avoid such chain reactions in the future, from 2002 onwards all of the inner detector PMTs are fitted with acrylic covers and fiber-glass reinforced plastic (FRP) cases. Detector shutdown and rebuild took nine months and Super-Kamiokande resumed data taking with the full number of photomultiplier tubes in July 2006 which marked the beginning of Super-Kamiokande phase III. Super-Kamiokande phase IV began in September 2008 where a new data aquisition system and charge to time (QTC) based electronics with Ethernet (QBEE) was deployed in order to measure arrival times and integrated charge for inner detector and outer detector photomultiplier tube signals. This replaced the ATM (Analogue and Timing Module). The improvements in electronics and calibration methods meant that when Super-Kamiokande phase IV started running in September of 2008, electrons with energies as low as 3.5 MeV were able to be detected \cite{yamada2010commissioning}.
 
-\begin{table}[htp]
-    $$
-\begin{array}{|c|c|c|c|c|c|c|}
+\begin{table}[!htp]
+\centering
+\begin{tabular}{||c|c|c|c|c|c|c||}
     
-    \hline \multirow{2}{*}{\text { Phase }} & \multirow{2}{*}{\text { Phase Period }} & \multicolumn{2}{|c|}{\text { Total PMT number  }} & \multirow{2}{*}{\text { FRP case? }} & \multirow{2}{*}{\text { Readout }} & \multirow{2}{*}{\text { Gd\% }} \\
-    \tabularnewline
-    \cline {3-4} & &  \text { ID (Coverage) } & \text { OD } & & \tabularnewline
+    \hline \multirow{2}{*}{\text {Phase}} & \multirow{2}{*}{\text {Period}} & \multicolumn{2}{|c|}{\text {Total PMT no.}} & \multirow{2}{*}{\text {FRP case?}} & \multirow{2}{*}{\text {Readout}} & \multirow{2}{*}{\text{Gd\% }} \\
+    \cline {3-4} & &  \text { ID (Coverage) } & \text { OD } & & &\\
     \hline \hline \text { SK-I } & \text { Apr. 1996 - Jul. 2001 } & 11146(40 \%) & 1884 & \text { no } & \text { ATM } & 0 \\
     \hline \text { SK-II } & \text { Oct. 2002 - Oct. 2005 } & 5182(19 \%) & 1884 & \text { yes } & \text { ATM } & 0 \\
     \hline \text { SK-III } & \text { Jul. 2006 - Sep. 2008 } & 11129(40 \%) & 1884 & \text { yes } & \text { ATM } & 0 \\
@@ -46,8 +45,7 @@ The Super-Kamiokande experiment began taking data on 1st April 1996, and due to 
     \hline \text {SK-VI} & \text{ Aug. 2020 - May 2022 }    &  11129(40 \%) & 1884 & \text { yes } & \text { QBEE } & 0.01\% \\
     \hline \text {SK-VII} & \text{ Jun. 2022 - Today }    &  11129(40 \%) & 1884 & \text { yes } & \text { QBEE } & 0.03\% \\
     \hline \hline 
-\end{array}
-    $$
+\end{tabular}
 \caption{Phases of Super-Kamiokande and main properties of each phase }
 \label{table:phasetable}
 \end{table}
@@ -193,25 +191,22 @@ After the success of EGADS, the Super-Kamiokande Gadolinium project was formed i
 
 The SK-Gd water system was designed to dissolve $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$ powder into the detector water, pass it through a ``pretreatement" system to remove contaminants from the water, and then to continously circulate it. The design for this treatment system was successfully tested in EGADS and involves treating this solution with ultraviolet light. Positively charged impurites dissolved in the solution (such as radium ions) and negatively charged impurities (such as uranium) are removed using a cation and anion exchange resins respectively, after which a UV steriliser removes bacteria which were introduced in the dissolving process \cite{10.1093/ptep/ptac170}. 
 
-The acceptable background rate after the final value for Gd loading  was set to be less than double that of the background rate for when Super-Kamioknde ran with pure water. As a result, rigorous standards of cleanliness were set for the $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$ powder, which meant setting maximum allowed levels of radioactive impurites which are shown in Table \ref{gdpowderradiation}.
-
+The acceptable background rate after the final value for Gd loading  was set to be less than double that of the background rate for when Super-Kamioknde ran with pure water. As a result, rigorous standards of cleanliness were set for the $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$ powder, which meant setting maximum allowed levels of radioactive impurites which are shown in Table \ref{table:gdpowderradiation}.
 
 \begin{table}
-
-    $$
-    \begin{array}{llll}
-    \hline \text { Chain } & \text { Isotope } & \text { Criterion [mBq/kg] } & \text { Physics target } \\
-        \hline{ }^{238} \mathrm{U} & { }^{238} \mathrm{U} & <5 & \text { SRN } \\
-    & { }^{226} \mathrm{Ra} & <0.5 & \text { Solar } \\
-    \hline{ }^{232} \mathrm{Th} & { }^{232} \mathrm{Th} & <0.05 & \text { Solar } \\
-    & { }^{228} \mathrm{Ra} & <0.05 & \text { Solar } \\
-    \hline{ }^{235} \mathrm{U} & { }^{235} \mathrm{U} & <30 & \text { Solar } \\
-    & { }^{227} \mathrm{Ac} /{ }^{227} \mathrm{Th} & <30 & \text { Solar } \\
-    \hline
-    \end{array}
-    $$
+\centering
+\begin{tabular}{clll}
+    \hline \hline Chain & Isotope & Criterion $[\mathrm{mBq} / \mathrm{kg}]$ & Physics target \\
+    \hline${ }^{238} \mathrm{U}$ & ${ }^{238} \mathrm{U}$ & $<5$ & SRN \\
+    & ${ }^{226} \mathrm{Ra}$ & $<0.5$ & Solar \\
+    \hline${ }^{232} \mathrm{Th}$ & ${ }^{232} \mathrm{Th}$ & $<0.05$ & Solar \\
+    & ${ }^{228} \mathrm{Ra}$ & $<0.05$ & Solar \\
+    \hline${ }^{235} \mathrm{U}$ & ${ }^{235} \mathrm{U}$ & $<30$ & Solar \\
+    & ${ }^{227} \mathrm{Ac} /{ }^{227} \mathrm{Th}$ & $<30$ & Solar \\
+    \hline \hline
+    \end{tabular}
 \caption{Table of impurities in the gadolinium sulphate octahydrate powder}
-\label{gdpowderradiation}
+\label{table:gdpowderradiation}
 \end{table}
 
 \subsubsection{SK-Gd attenuation, transparency and concentration monitoring}
