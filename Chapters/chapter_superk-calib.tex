@@ -6,14 +6,14 @@ In order to achieve optimal event reconstruction for physics analyses, calibrati
 
 \section{Inner detector calibration}
 
-\subsection{PMT High-voltage setting calibration}
+\subsection{PMT high-voltage setting calibration}
 
-The high-voltage (HV) setting for all photomultiplier tubes need to be adjusted individually so all the PMTs produce the same amount of charge for a certain light intensity recieved by them. Placing a light source which distributes light isotropically in the centre of the inner detetector to achieve this calibration means that there is no position in the detector from which the inner detector PMTs are equidistant, so each PMT will not recieve the same amount of light from the light source. To avoid this problem, a set of 420 pre-calibrated PMTs inside the detector were used, seperated into groups relating to their geometrical distance from the HV calibration light source, which is shown in Figure \ref{fig:hvcalib} for their location with respect to the other photomultiplier tubes.
+The high-voltage (HV) setting for all photomultiplier tubes need to be adjusted individually so all the PMTs produce the same amount of charge for a certain light intensity recieved by them. Placing a light source which distributes light isotropically in the centre of the inner detector to achieve this calibration means that there is no position in the detector from which the inner detector PMTs are equidistant, so each PMT will not recieve the same amount of light from the light source. To avoid this problem, a set of 420 pre-calibrated PMTs inside the detector were used, seperated into groups relating to their geometrical distance from the HV calibration light source, which is shown in Figure \ref{fig:hvcalib} for their location with respect to the other photomultiplier tubes.
 
 \begin{figure}
     \centering
     \includegraphics[width=0.7\textwidth]{Figures/hvcalib.png}
-\caption{Location of 420 reference PMTs used for HV setting calibration. The red lines in show the placement of these PMTs with repsect to the others (left). The grouping of these PMTs due to their geometry in relation to the light source is also shown (right) }
+\caption{Location of 420 reference PMTs used for HV setting calibration. The red lines show the placement of these PMTs with repsect to the others (left). The grouping of these PMTs due to their geometry in relation to the light source is also shown (right) }
     \label{fig:hvcalib}
 \end{figure}
 
@@ -36,22 +36,22 @@ N_{o b s}(i) \quad \propto \quad I_{low} \times a(i) \times \varepsilon_{q e}(i)
 \end{align}
 
 
-Therefore, by simply dividing these two values of $Q_{o b s}(i)$ and ($N_{o b s}(i)$) the average gain over all PMTs can be calculated.  Figure \ref{fig:relativegain} shows the spread of the relative gain over all the PMTs. 
+Therefore, by simply dividing these two values of $Q_{o b s}(i)$ and $N_{o b s}(i)$ the average gain over all PMTs can be calculated.  Figure \ref{fig:relativegain} shows the spread of the relative gain over all the PMTs. 
 
 \begin{figure}
 \centering
-    \includegraphics[width=0.7\textwidth]{Figures/relativegain.png}
+    \includegraphics[width=0.5\textwidth]{Figures/relativegain.png}
 \caption{Relative gain of PMTs in Super-Kamiokande}
     \label{fig:relativegain}
 \end{figure}
 
 \subsection{Absolute gain calibration}
 
-In order to calculate absolute gain, the single photoelectron distrubution needs to be measured, this is because absolute gain relates to the observed charge in the photomultplier tube with the number of photoelectrons produced. A nickel-californium source (shown in Figure \ref{fig:nickel_source}) is used for this measurement due to it releasing gamma rays isotropically, with a total gamma ray cascade energy of 9 MeV \cite{koshio1998study}. Thermal neutron capture on nickel is used as the gamma ray source, with the neutrons provided by the spontaneous fission of ${ }^{252} \mathrm{Cf}$. This nickel source is placed in the centre of the inner detector and the gamma rays produced are detetced by all the inner detector PMTs. On average the observed number of photoelectrons is 0.004 per event per PMT, meaning that single p.e. hits are observed for more than 99\% of the hits. The observed charge distribution of all the hits from this nickel source is used to give the average charge, which is used as a conversion factor from a charge measurement in picoColoumbs and single photo-electrons. The factor is 2.658 pC per photoelectron (calculated at the beginning of SK-IV) which is then used to extract the single-p.e. distribution, shown in Figure \ref{fig:singlepe}.
+In order to calculate absolute gain, the single photoelectron distribution needs to be measured, this is because absolute gain relates to the observed charge in the photomultplier tube with the number of photoelectrons produced. A nickel-californium source (shown in Figure \ref{fig:nickel_source}) is used for this measurement due to it releasing gamma rays isotropically, with a total gamma ray cascade energy of 9 MeV \cite{koshio1998study}. Thermal neutron capture on nickel is used as the gamma ray source, with the neutrons provided by the spontaneous fission of ${ }^{252} \mathrm{Cf}$. This nickel source is placed in the centre of the inner detector and the gamma rays produced are detected by all the inner detector PMTs. On average the observed number of photoelectrons is 0.004 per event per PMT, meaning that single p.e. hits are observed for more than 99\% of the hits. The observed charge distribution of all the hits from this nickel source is used to give the average charge, which is used as a conversion factor from a charge measurement in picoColoumbs and single photo-electrons. The factor is 2.658 pC per photoelectron (calculated at the beginning of SK-IV) which is then used to extract the single-p.e. distribution, shown in Figure \ref{fig:singlepe}.
 
 \begin{figure}
     \centering
-        \includegraphics[width=.7\textwidth]{Figures/nickel_source.png}
+        \includegraphics[width=0.5\textwidth]{Figures/nickel_source.png}
     \caption{Nickel-californium source used for absolute gain calibration \cite{abe_calibration_2014}}
         \label{fig:nickel_source}
 \end{figure}
@@ -66,7 +66,7 @@ In order to calculate absolute gain, the single photoelectron distrubution needs
 
 \subsection{Relative quantum efficiency measurement}
 
-To measure the relative quantum efficiency, the gamma rays from neutron capture on the nickel source are simulated. Inside this simulation, a common value of QE is used for all the ID PMTs to predict the number of hits for each PMT. Comparing this number of hits to the actual data obtained for each individual PMT by calculating the ratio between them provides us with a value for relative QE for each inner detetor PMT which is then used inside the simulation. 
+To measure the relative quantum efficiency, the gamma rays from neutron capture on the nickel source are simulated. Inside this simulation, a common value of QE is used for all the ID PMTs to predict the number of hits for each PMT. Comparing this number of hits to the actual data obtained for each individual PMT by calculating the ratio between them provides us with a value for relative QE for each inner detector PMT which is then used inside the simulation. 
 
 \subsection{Timing information calibration}
 Calibrating the hit timing information of the photomultiplier tubes is essential due to its importance in accurately being able to reconstruct events. Event reconstruction makes use of determining exactly where interaction vertices are and the direction in which particles travel, and to do this the time response needs to be very carefully calibrated. The response time of the PMT also relates to the amount of charge observed: in order for a hit to be registered, the PMT signal must pass the discriminator value of the hit threshold, and the time in which this happens is dependent on the height of the pulse, which is correlated with the observed charge. All thsese factors need to be considered when calibrating hit timing information.
@@ -81,7 +81,7 @@ To aid the timing calibration, a diffuser ball is placed near the centre of the 
 \end{figure}
 
 
-The value of these laser pulse timings, and the time-of-flight value from the diffuser ball are subtracted from the PMT hit time. Using the observed charge values and these adjusted hit times, ``TQ" (time and charge) distributions can be plotted for each inner detetector PMT. An example TQ distribution is shown for an inner detector PMT (cable number 00010) in Figure \ref{fig:TQdist}, where the vertical axis shows the corrected TOF and laser pulse time corrected PMT hit time, and the horizontal axis shows the observed charge of each hit. Figure taken from \cite{abe_calibration_2014}. 
+The value of these laser pulse timings, and the time-of-flight value from the diffuser ball are subtracted from the PMT hit time. Using the observed charge values and these adjusted hit times, ``TQ" (time and charge) distributions can be plotted for each inner detector PMT. An example TQ distribution is shown for an inner detector PMT (cable number 00010) in Figure \ref{fig:TQdist}, where the vertical axis shows the corrected TOF and laser pulse time corrected PMT hit time, and the horizontal axis shows the observed charge of each hit. Figure taken from \cite{abe_calibration_2014}. 
 
 \begin{figure}
     \centering 
@@ -91,7 +91,7 @@ The value of these laser pulse timings, and the time-of-flight value from the di
 \end{figure}
 
 
-The timing resolution of the PMTs (also known as the transit time spread) is also something that must be calibrated. This is calculated by using the same timing and charge data used to produce the TQ distributions \cite{dziomba2012study}. By correcting all the ID PMT hits by their TQ distributions, these residual timing distributions have an asymmetric Gaussian function fitted to them, from which two values of sigma are extracted: $\sigma_{t}$ and $\sigma_{t'}$. These are the values for the timing resolution for before and after the peak time of this distribution. Equation \ref{eq:sigmat} shows how the asymmetric Gaussian is defined. 
+The timing resolution of the PMTs (also known as the transit time spread) is also something that must be calibrated. This is calculated by using the same timing and charge data used to produce the TQ distributions \cite{dziomba2012study}. By correcting all the ID PMT hits by their TQ distributions, these residual timing distributions have an asymmetric Gaussian function fitted to them, from which two values of sigma are extracted: $\sigma_{t}$ and $\sigma_{t'}$. These are the values for the timing resolution before and after the peak time of this distribution. Equation \ref{eq:sigmat} shows how the asymmetric Gaussian is defined. 
 
 \begin{align}
     f\left(t ; t>T_{\text {peak }}\right) \equiv A_{1} \cdot \exp \left(-\left(t-T_{\text {peak }}\right)^{2} / \sigma_{t}^{2}\right)+B_{1}\\
@@ -104,7 +104,7 @@ Figure \ref{fig:asygausst} shows an example of the residual timing distribution 
 \begin{figure}
     \centering
     \includegraphics[width=0.7\textwidth]{Figures/asygausst.png}
-\caption{Residual timing distribution summed over all the readout channels in charge bin 14 (QBin in \ref{fig:TQdist}.)}
+\caption{Residual timing distribution summed over all the readout channels in charge bin 14 (QBin in Figure \ref{fig:TQdist}.)}
     \label{fig:asygausst}
 \end{figure}
 
@@ -176,7 +176,7 @@ Rayleigh scattering occurs when light is scattered from very small particles, th
     \label{fig:laser_system}
 \end{figure}
 
-The absorption and scattering coefficients are measured using data from light injected from the new top (NT) injector. A large set of calibration Monte Carlo are generated using laser generation software and the Super-Kamiokande detector simulation (SKDETSIM). These set of Monte Carlo are generated with different values of absorbtion, symmetric and asymmetric scattering, and their timing distributions are compared to the data from the laser system in order to tune the amount of absorption, symmetric and asymmetric scattering in the calibration Monte Carlo. The way in which the $\alpha_{abs}(\lambda)$, $\alpha_{\text {sym}}$ and $\alpha_{\text {asym}}$ are defined is shown in Equation \ref{eq:P0P8}.
+The absorption and scattering coefficients are measured using data from light injected from the new top (NT) injector. A large set of calibration Monte Carlo are generated using laser generation software and the Super-Kamiokande detector simulation (SKDETSIM). These set of Monte Carlo are generated with different values of absorption, symmetric and asymmetric scattering, and their timing distributions are compared to the data from the laser system in order to tune the amount of absorption, symmetric and asymmetric scattering in the calibration Monte Carlo. The way in which the $\alpha_{abs}$, $\alpha_{\text {sym}}$ and $\alpha_{\text {asym}}$ are defined is shown in Equation \ref{eq:P0P8}.
 
 \begin{equation}
 \begin{gathered}
@@ -186,7 +186,7 @@ The absorption and scattering coefficients are measured using data from light in
 \end{gathered}
 \end{equation}
 
-The term $C$ in the equation for $\alpha_{abs}(\lambda)$ is based on data from \cite{Pope:97} for laser light with wavelengths greater than 464 nm while Equation \ref{eq:Cformula} is used for wavelengths less than 464 nm. 
+The term $C$ in the equation for $\alpha_{abs}$ is based on data from \cite{Pope:97} for laser light with wavelengths greater than 464 nm while Equation \ref{eq:Cformula} is used for wavelengths less than 464 nm. 
 
 \begin{equation}
 C=P_{0} \times P_{2} \times(\lambda / 500)^{P_{3}}
