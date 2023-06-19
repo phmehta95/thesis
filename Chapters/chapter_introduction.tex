@@ -23,7 +23,7 @@ The Standard Solar Model predicts that most of the solar neutrino flux (about 90
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{Figures/ppchain.png}
-    \caption{Proton-proton chain cycle with branching percentages shown}
+    \caption{Proton-proton chain cycle in stars with branching percentages shown for each reaction involved }
     \label{fig:ppchain}
 \end{figure}
 
@@ -85,9 +85,9 @@ c_{12} & s_{12} & 0 \\
 0 & 0 & 1
 \end{array}\right)\\
 &=\left(\begin{array}{ccc} \notag
-c_{12} s_{13} & s_{12} c_{13} & s_{13} e^{-i \delta_{\mathrm{CP}}} \\
+c_{12} c_{13} & s_{12} c_{13} & s_{13} e^{-i \delta_{\mathrm{CP}}} \\
 -s_{12} c_{23}-c_{12} s_{13} s_{23} e^{i \delta_{\mathrm{CP}}} & c_{12} c_{23}-s_{12} s_{13} s_{23} e^{i \delta_{\mathrm{CP}}} & c_{13} s_{23} \\
-s_{12} s_{23}-c_{12} s_{13} c_{23} e^{i \delta_{\mathrm{CP}}} & c_{12} s_{23}-s_{12} s_{13} c_{23} e^{i \delta_{\mathrm{CP}}} & c_{13} c_{23}
+s_{12} s_{23}-c_{12} s_{13} c_{23} e^{i \delta_{\mathrm{CP}}} & -c_{12} s_{23}-s_{12} c_{23} s_{13} e^{i \delta_{\mathrm{CP}}} & c_{13} c_{23}
 \end{array}\right)
 \end{align}
 
@@ -167,7 +167,7 @@ Replacing $\Delta m^{2}$ with $\Delta m^{2}_{M}$ and $sin^{2}\theta$ with $sin^{
 \subsection{Neutrino-nucleus interactions in Super-Kamiokande Gd}
 Understanding neutrino interaction modes, and understanding neutrino nucleus interaction modes, in particular the neutral current quasielastic reaction is key to understanding this analysis. 
 
-There are two main types of neutrino interaction: charged-current (CC) and neutral current (NC). The former occurs when a W$\pm$ boson is involved in a nuclear exchange, and the latter occurs when a $Z^{0}$ is nvolved (see Figure \ref{fig:CC_NC}).
+There are two main types of neutrino interaction: charged-current (CC) and neutral current (NC). The former occurs when a W$\pm$ boson is involved in a nuclear exchange, and the latter occurs when a $Z^{0}$ is involved (see Figure \ref{fig:CC_NC}).
 
 \begin{figure}
     \centering
@@ -249,7 +249,7 @@ Inverse beta decay is the reaction by which Cowan and Reines first detected elec
     \label{fig:IBD_feynman}
 \end{figure}
 
-Finally, we get to the type of interaction investigated in this thesis: quasi-elastic scattering. This makes up the majority of the neutrino-nucleus interaction cross-sections at the energy range from 100 MeV to ~2 GeV, and therefore vital for the study of neutrinos from long baseline neutrino experiments and also low energy atmospheric neutrinos \cite{wan2019measurement}. Equation \ref{eq:QE_reaction} shows the equations for both the charged current (CCQE) and neutral current (NCQE) version of this interaction where the incoming neutrino scatters off a nucleon.
+Finally, we get to the type of interaction investigated in this thesis: quasi-elastic scattering. This makes up the majority of the neutrino-nucleus interaction cross-sections at the energy range from 100 MeV to ~2 GeV, and therefore vital for the study of neutrinos from long baseline neutrino experiments and also low energy atmospheric neutrinos \cite{wan2019measurement}. Equation \ref{eq:QE_reaction} shows the equations for both the charged current (CCQE) and neutral current (NCQE) version of this interaction where the incoming neutrino scatters off a nucleon, shown in Figure \ref{fig:QE_reaction}.
 
 
 \begin{align} 
@@ -325,7 +325,7 @@ Using the pressure produced by the process of nuclear fusion, a star is able to 
 \newline
 As more and more iron accumulates in the core of the star, the density and temperature of the core will increase, and these higher energy electrons will increase the rate of electron capture on protons that will occur in the iron nuclei \cite{fryer2019gamma}. This will cause a reduction in the electron degeneracy pressure, which is further enhanced by the breakdown of the iron nuclei which occurs at higher temperatures when gamma rays interact with them. The degeneracy pressure is no longer greater than the gravitational forces acting inwards, and gravitational core collapse occurs \cite{ebinger2017global}. 
 \newline
-The point at which in the core the neutrino mean free paths become become approximately the same size as the proto-neutron star is called the ``neutrinosphere" \cite{PhysRevD.101.023018}.  Figure \ref{fig:neutrinosphere} shows the formation of a proto-neutron star (PNS) and the neutrino flux and neutrinosphere produced by the core-collapse mechanism. 
+The point at which in the core the neutrino mean free paths become approximately the same size as the proto-neutron star is called the ``neutrinosphere" \cite{PhysRevD.101.023018}.  Figure \ref{fig:neutrinosphere} shows the formation of a proto-neutron star (PNS) and the neutrino flux and neutrinosphere produced by the core-collapse mechanism. 
 
 \begin{figure}
     \centering
@@ -365,7 +365,7 @@ Due to there being no charged current interactions involving muon neutrinos in t
 
 Kamiokande-II observed neutrinos produced from a supernova, later named 1987A, in the Large Magellenic Cloud. These neutrinos were also observed by the Baskan Neutrino Observatory and the Irvine-Michigan-Brookhaven detector (IMB) \cite{hirata_observation_1987}. The neutrinos detcted from 1987A were detected via the inverse beta decay (IBD) interaction (shown in Figure \ref{fig:IBD_feynman}), as opposed to the electron elastic scattering, CC interaction with ${ }^{16} \mathrm{O}$ or NC interaction with  ${ }^{16} \mathrm{O}$ channels. The positron from this reaction is what is searched for, and these positrons are produced isotropically within the detector. A neutrino burst search from SN1987A was carried out on the data run which ran continuously between 16:09 21 February 1987 to 07:31 24th February 1987 JST \cite{Hirata:1988ad}.
 
-The event selection criteria for a supernova neutrino event were as follows: firstly, the total number of photoelectrons per event should be less than 170, as this corresponds to an electron with an energy of 50 MeV, and the neutrinos released from a supernovae have a typical energy of the order of 10 MeV. Secondly, the total number of electrons in the outer detector per event needed to be less than 30, in order for the event to be considered fully contained, and finally, the time between previous events has to be greater than 20 $\mu$sec, in order to avoid Michel electrons. Figure \ref{fig:1987A_events} shows the time-sequence of all low-energy events. If the neutrinos were to show up in Kamiokande-II, they would arive in a cluster lasting of order 10s, so intervals of 10 seconds were used to seacrh for clusters of events. In order to classify the event as a supernova neutrino candidate, the event had to be registered by atleast 30 PMTs, and 6 events were found in the first 10s interval which satisfied this, and 2 events in the next 10s interval. A second search was performed on a larger data sample of 42.9 days, from 9th of January to 25th of February 1987, and no other supernova neutrino burst candidates were found. The first two events shown in Figure \ref{fig:1987A_events} also correlate in angle to the direction of 1987A. As a result, this was considered detection of a genuine supernova neutrino burst, and was the first direct observation of this in neutrino astronomy. 
+The event selection criteria for a supernova neutrino event were as follows: firstly, the total number of photoelectrons per event should be less than 170, as this corresponds to an electron with an energy of 50 MeV, and the neutrinos released from a supernovae have a typical energy of the order of 10 MeV. Secondly, the total number of electrons in the outer detector per event needed to be less than 30, in order for the event to be considered fully contained, and finally, the time between previous events has to be greater than 20 $\mu$sec, in order to avoid Michel electrons. Figure \ref{fig:1987A_events} shows the time-sequence of all low-energy events. If the neutrinos were to show up in Kamiokande-II, they would arive in a cluster lasting of order 10s, so intervals of 10 seconds were used to search for clusters of events. In order to classify the event as a supernova neutrino candidate, the event had to be registered by atleast 30 PMTs, and 6 events were found in the first 10s interval which satisfied this, and 2 events in the next 10s interval. A second search was performed on a larger data sample of 42.9 days, from 9th of January to 25th of February 1987, and no other supernova neutrino burst candidates were found. The first two events shown in Figure \ref{fig:1987A_events} also correlate in angle to the direction of 1987A. As a result, this was considered detection of a genuine supernova neutrino burst, and was the first direct observation of this in neutrino astronomy. 
 
 \begin{figure}
     \includegraphics[width=\textwidth]{Figures/1987A_events.png}
@@ -391,7 +391,7 @@ Here $E_{\nu}^{\prime}=(1+z) E_{\nu}$ is the energy of neutrinos at a certain re
 \label{eq:friedmann}
 \end{equation}
 
-It is worth reviewing the lastest searches from Super-Kamiokande for DSNB neutrinos, and the limit on the flux prediction from different Super-Kamiokande phases. While Figure \ref{fig:DSNBenergy} shows that the majority of DSNB neutrinos have an energy below 10 MeV, due to massive backgrounds these DSNB are hard to detect, so Super-Kamiokande therefore searches for the DSNB signal in the order of 10 MeV. As mentioned previously the main detection channel is inverse-beta decay, with the prompt signal being the emitted positron and the delayed signal constituting of the photon emission from neutron capture. Up to and including now, there has been no DSNB signal evidence but upper-limits on the flux have been set from both KamLAND and from Super-Kamiokande phases I-IV, shown in Figure \ref{fig:DSNBlimit}.
+It is worth reviewing the lastest searches from Super-Kamiokande for DSNB neutrinos, and the limit on the flux prediction from different Super-Kamiokande phases. While Figure \ref{fig:DSNBenergy} shows that the majority of DSNB neutrinos have an energy below 10 MeV, due to massive backgrounds these DSNB are hard to detect, so Super-Kamiokande therefore searches for the DSNB signal in the order of 10 MeV. As mentioned previously the main detection channel is inverse-beta decay, with the prompt signal being the emitted positron and the delayed signal being the photon emission from neutron capture. Up to and including now, there has been no DSNB signal evidence but upper-limits on the flux have been set from both KamLAND and from Super-Kamiokande phases I-IV, shown in Figure \ref{fig:DSNBlimit}.
 
 
 \begin{figure}
@@ -443,6 +443,6 @@ Efficient neutron tagging aids information about neutrino energy and neutrino in
 
 
 
-The ideal goal of this analysis is to complement prior analyses which investigate the NCQE cross-section and analyses which produce neutron multiplicity distributions for NCQE interactions. The emphasis on the distributions of neutrons in this thesis and the methods of neutron tagging used are of increasing interest due to the fact that the main purpose behind adding gadolinium to the detector is to make these neutron captures more visible. Futhermore, in Chapter 8, an estimate of the DSNB NCQE background is made, with an error stemming from the value of the neutron tagging efficiency and systematic error on this efficiency calculated in Chapter 6 and Chapter 7 of this thesis.
+The ideal goal of this analysis is to complement prior analyses which investigate the NCQE cross-section and analyses which produce neutron multiplicity distributions for NCQE interactions. The emphasis on the distributions of neutrons in this thesis and the methods of neutron tagging used are of increasing interest due to the fact that the main purpose behind adding gadolinium to the detector is to make these neutron captures more visible. Futhermore, in Chapter 8, an estimate of the DSNB NCQE background is made, with an uncertainty stemming from the value of the neutron tagging efficiency and systematic uncertainty on this efficiency calculated in Chapter 6 and Chapter 7 of this thesis.
 
 
