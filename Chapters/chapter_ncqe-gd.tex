@@ -6,7 +6,7 @@ Interactions with the SK-Gd Upgrade}
 
 At energies close to the atmospheric peak, the NCQE interaction cross sections can be evaluated using T2K beam neutrinos. This chapter will present the status of the improved neutron tag from SK-Gd and its impact on the measurement of NCQE in T2K, while Chapter 8 will give details on the calculation of DSNB NCQE background events. The prompt and delayed signal of the NCQE interaction mimics that of the DSNB, due to the positron being the prompt signal for DSNB, while the prompt signal for NCQE is given by a gamma ray. Neutron capture constitutes the delayed signal for both DSNB and NCQE interactions. With the recent addition of 0.026\% $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$ to Super-Kamiokande, neutron detection has improved due to the gamma cascade signal produced when neutrons are captured on gadolinium. 
 
-There are multiple stages to this analysis, shown in Figure \ref{fig:analysis_flowchart}, where the ``neutron tagging'' stage occurs via two methods. Previously the NCQE neutron-tagging analyses used a method for neutron tagging which will be referred to as ``legacy NTag code'', but in 2020 the Super-K collaboration decided to proceed to use a new, more compact and streamlined version, which combines most of these stages into one piece of software. This will be referred to as ``current NTag code'', and this is shown in Figure \ref{fig:analysis_flowchart} as well. The red arrows in Figure \ref{fig:analysis_flowchart} show the steps in the analysis prcoedure using the legacy NTag code which have been assimilated into the new NTag code.
+There are multiple stages to this analysis, shown in Figure \ref{fig:analysis_flowchart}, where the ``neutron tagging'' stage occurs via two methods. Previously the NCQE neutron-tagging analyses used a method for neutron tagging which will be referred to as ``legacy NTag code'', but in 2020 the Super-K collaboration decided to proceed to use a new, more compact and streamlined version, which combines most of these stages into one piece of software. This will be referred to as ``current NTag code'', and this is shown in Figure \ref{fig:analysis_flowchart} as well. The red arrows in Figure \ref{fig:analysis_flowchart} show the steps in the analysis procedure using the legacy NTag code which have been assimilated into the new NTag code.
 
 \begin{figure}[htp]
     \includegraphics[width=\textwidth]{Figures/analysis_flowchart.png}
@@ -988,7 +988,7 @@ First, comparison was done between the MC and the Am/Be data from Run 85622, the
 \label{eq:AmBe_fit_eq}
 \end{equation}
 
-In Equation \ref{eq:AmBe_fit_eq}, $t$ is the time from the event trigger in microseconds, $\tau$ is the exponential time constant and $b$ is the background. 
+In Equation \ref{eq:AmBe_fit_eq}, $t$ is the time from the event trigger in microseconds, $\tau$ is the exponential time constant and $B$ is the background. 
 
 \begin{figure}
     \centering
@@ -1011,7 +1011,7 @@ In Equation \ref{eq:AmBe_fit_eq}, $t$ is the time from the event trigger in micr
     \label{fig:ambe_-12}
 \end{figure}
 
-Table \ref{table:ambe_tau_chi2} shows the value of tau for each of these positions, along with the $\chi^{2}$/ndf value for the exponential fit and the value of the neutron capture efficiency calculated from the Am/Be data at each of these positions. Equation \ref{eq:efficiency_ambe_calculation} shows the method by which the efficiency for the neutron capture on Am/Be data is calculated, by subtracting the number of fitted background events from the number of tagged neutron capture events, and dividing this value by the total number of events. Here $N$ is the number of neutron captures, $B$ is the fitted constant background value, and NTag TMAX and NTag TMIN are the end and start times of the neutron tagging algorithm.   
+Table \ref{table:ambe_tau_chi2} shows the value of $\tau$ for each of these positions, along with the $\chi^{2}$/ndf value for the exponential fit and the value of the neutron capture efficiency calculated from the Am/Be data at each of these positions. Equation \ref{eq:efficiency_ambe_calculation} shows the method by which the efficiency for the neutron capture on Am/Be data is calculated, by subtracting the number of fitted background events from the number of tagged neutron capture events, and dividing this value by the total number of events. Here $N$ is the number of neutron captures, $B$ is the fitted constant background value, and NTag TMAX and NTag TMIN are the end and start times of the neutron tagging algorithm.   
 
 
 
