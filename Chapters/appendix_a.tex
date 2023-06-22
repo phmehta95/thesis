@@ -1,12 +1,12 @@
 \chapter{Appendix A}
 \section{Occupancy Plots for the UKLI MC B1 - B5 injector Autocalib data}
 
-As mentioned in Chapter 5, this Appendix gives all the relevant calibration plots for the B1-B5 injectors for the purposes of completeness. Figure \ref{fig:occupancy_coll_auto} shows the occupancy plots for the B1 - B5 collimators from the UKLI Autocalib July 2020 run, while  Figure \ref{fig:occupancy_diff_auto} shows the occupancy plots for the B1 - B5 diffusers from the UKLI Autocalib July 2020 run. These show the beam spot in the unrolled volume of the detector, with the top left corner of each plot stating the date the data was taken, the run number, the run start and end time and the number of events. The timing window in which the time-of-flight cut has been applied is also stated, with the injector and target co-ordinates given in the top right and marked on the plots. The occupancy is simply the number of hits normalised to have a maximum of one, and the occupancy scale is shown on the right of the plots. As mentioned in Chapter 5, the intensely dark purple hits in Figure \ref{fig:occupancy_diffuser} are ``hot channels'' and have not been accounted for - these should not be mistaken for scattered hits.
+As mentioned in Chapter 5, this Appendix gives all the relevant calibration plots for the B1-B5 injectors for the purposes of completeness. Figure \ref{fig:occupancy_coll_auto} shows the occupancy plots for the B1 - B5 collimators from the UKLI Autocalib July 2020 run, while  Figure \ref{fig:occupancy_diff_auto} shows the occupancy plots for the B1 - B5 diffusers from the UKLI Autocalib July 2020 run. These show the beam spot in the unrolled volume of the detector, with the top left corner of each plot stating the date the data was taken, the run number, the run start and end time and the number of events. The timing window in which the time-of-flight cut has been applied is also stated, with the injector and target co-ordinates given in the top right and marked on the plots. The occupancy is the number of hits normalised to have a maximum of one, and the occupancy scale is shown on the right of the plots. As mentioned in Chapter 5, the intensely dark purple hits in Figure \ref{fig:occupancy_diffuser} are ``hot channels'' and have not been accounted for - these should not be mistaken for scattered hits.
 
 \begin{figure}[!htb]
     \centering
     
-    \caption{Occupancy plot for the collimator optics from the UKLI Autocalib July 2020 run} \label{fig:occupancy_coll_auto} 
+    \caption{Occupancy plot for the collimator optics from the UKLI Autocalib July 2020 run for each barrel collimator in the unrolled volume of the SK detector. The crosses show the injector positions, and the collimator beam spots are also shown (the PMTs with highest occupancy). The corrected time-of-flight plots for the PMT hits is shown in the bottom right corner.} \label{fig:occupancy_coll_auto} 
     
     \subfloat[B1 collimator]{\includegraphics[width=0.49\textwidth]{Figures/B1_occupancy_coll_auto.PNG}} \hfill
     \subfloat[B2 collimator]{\includegraphics[width=0.49\textwidth]{Figures/B2_occupancy_coll_auto.PNG}} \par
@@ -20,7 +20,7 @@ As mentioned in Chapter 5, this Appendix gives all the relevant calibration plot
 \begin{figure}[!htb]
     \centering
     
-    \caption{Occupancy plot for the diffuser optics from the UKLI Autocalib July 2020 run} \label{fig:occupancy_diff_auto} 
+    \caption{Occupancy plot for the diffuser optics from the UKLI Autocalib July 2020 run for each barrel diffuser where the injector positions are shown by crosses. The corrected time-of-flight plots for the PMT hits is shown in the bottom right corner.} \label{fig:occupancy_diff_auto} 
     
     \subfloat[B1 diffuser]{\includegraphics[width=0.49\textwidth]{Figures/B1_occupancy_diff_auto.PNG}} \hfill
     \subfloat[B2 diffuser]{\includegraphics[width=0.49\textwidth]{Figures/B2_occupancy_diff_auto.PNG}} \par
@@ -38,7 +38,7 @@ Figure \ref{fig:PDF_CDF_coll} shows the complete PDFs and CDFs for the B1 - B5 c
 \begin{figure}[!htbp]
     \centering
     
-    \caption{PDFs and corresponding CDFs for the B1 - B5 collimators} 
+    \caption{PDFs and corresponding CDFs for the B1 - B5 collimators, with intensity in arbitrary units on the y-axis, and angle in degrees on the x-axis.} 
     \label{fig:PDF_CDF_coll}
     \subfloat[B1 collimator PDF]{\includegraphics[width=0.49\textwidth]{Figures/B1_coll_pdf.png}}\hfill
     \subfloat[B1 collimator CDF]{\includegraphics[width=0.49\textwidth]{Figures/B1_coll_cdf.png}} \par
@@ -60,7 +60,7 @@ Figure \ref{fig:PDF_CDF_coll} shows the complete PDFs and CDFs for the B1 - B5 c
 \begin{figure}[!htbp]
     \centering
     
-    \caption{PDFs and corresponding CDFs for the B1 - B5 diffusers} 
+    \caption{PDFs and corresponding CDFs for the B1 - B5 diffusers, with intensity in arbitrary units on the y-axis, and angle in degrees on the x-axis.} 
     \label{fig:PDF_CDF_diff}
     \subfloat[B1 diffuser PDF]{\includegraphics[width=0.49\textwidth]{Figures/B1_diff_pdf.png}} \hfill
     \subfloat[B1 diffuser CDF]{\includegraphics[width=0.49\textwidth]{Figures/B1_diff_cdf.png}} \par
@@ -86,7 +86,7 @@ This section gives the inverse of the cumulative distribution functions produced
 \begin{figure}[!htbp]
     \centering
         
-    \caption{CDF and inverse CDF fits for the B1 - B5 collimator PDFs}  
+    \caption{CDF and inverse CDF fits for the B1 - B5 collimator PDFs. The y-axis (range 0.0-1.0) on the top subplots for both figures shows the CDF values for the data (blue) and polynomial fit (red) while the x-axis for the top subplots shows the angle scan range for the collimator in degrees. For the bottom subplots which show the resulting inverse CDF function (green) and fit to this function (purple) these axes are reversed.}  
     \label{fig:PDF_CDF_inv_coll}
         \subfloat[B1 inverse collimator CDF]{\includegraphics[width=0.49\textwidth]{Figures/B1_inv_coll_cdf.png}} \hfill
         \subfloat[B2 inverse collimator CDF]{\includegraphics[width=0.49\textwidth]{Figures/B2_inv_coll_cdf.png}} \par
@@ -99,7 +99,7 @@ This section gives the inverse of the cumulative distribution functions produced
     \begin{figure}[!htbp]
         \centering
             
-        \caption{CDF and inverse CDF fits for the B1 - B5 diffuser PDFs}  
+        \caption{CDF and inverse CDF fits for the B1 - B5 diffuser PDFs. The y-axis (range 0.0-1.0) on the top subplots for both figures shows the CDF values for the data (blue) and polynomial fit (red) while the x-axis for the top subplots shows the angle scan range for the diffuser in degrees. For the bottom subplots which show the resulting inverse CDF function (green) and fit to this function (purple) these axes are reversed.}  
         \label{fig:PDF_CDF_inv_diff}   
             \subfloat[B1 inverse diffuser CDF]{\includegraphics[width=0.49\textwidth]{Figures/B1_inv_diff_cdf.png}} \hfill
             \subfloat[B2 inverse diffuser CDF]{\includegraphics[width=0.49\textwidth]{Figures/B2_inv_diff_cdf.png}} \par
