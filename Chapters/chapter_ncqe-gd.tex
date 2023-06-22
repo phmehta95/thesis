@@ -87,7 +87,7 @@ The interaction between the incoming neutrino event and an oxygen nucleus, and t
 \end{figure}
  
 
- NCQE interactions are modelled in NEUT using the Benhar Spectral Function (SF), while CCQE interactions (including 2p2h interactions, where ) are modelled using the Relativistic Fermi-Gas (RFG) model \cite{benhar_electron-_2005}, \cite{rfg_model}. 2p2h interactions (2-particle-2-hole) involve a neutrino knocking nucleons out of a nucleus and creating two holes.
+ NCQE interactions are modelled in NEUT using the Benhar Spectral Function (SF), while CCQE interactions (including 2p2h interactions, where a neutrino knocks out two nucleons at once) are modelled using the Relativistic Fermi-Gas (RFG) model \cite{benhar_electron-_2005}, \cite{rfg_model}. 2p2h interactions (2-particle-2-hole) involve a neutrino knocking nucleons out of a nucleus and creating two holes.
 
 
 \begin{figure}[htp]
@@ -155,7 +155,7 @@ It is therefore important to model the gamma ray emission spectra from both of t
     \label{fig:annrigd}
 \end{figure}
 
-Figure \ref{fig:annrigdenergyspectra} shows the energy spectra for different multiplicity values (left) and hit values (right) from one of the germanium crystals in the ANNRI spectrometer. 
+Figure \ref{fig:annrigdenergyspectra} shows the energy spectra for different multiplicity values (left) and hit values (right) from one of the germanium crystals in the ANNRI spectrometer. The multiplicity of an event is the number of sub-clusters of hit germanium crystals, and the hit value is simply the number of total germanium crystals hit in the event. 
 
 \begin{figure}[htp]
 \centering 
@@ -238,7 +238,7 @@ Here $\sum_{i} w_{i}$ is the weight given to the i-th hit PMT for the reduction 
 \label{direction_goodness}
 \end{equation}
 
-where $\angle_{\mathrm{data}}(i)$ is the azimuthal angle of the i-th hit real PMT included in the number of hits in 50ns. $\angle_{\mathrm{uni}}(i)=2 \pi i / N_{50}$ is the azimuthal angle of the i-th virtual PMT hit, but only when uniform distribution of the hits is assumed. As the uniformity of the hit pattern increases, the goodness decreases. 
+where $\angle_{\mathrm{data}}(i)$ is the azimuthal angle of the i-th hit real PMT included in the number of hits in 50 ns. $\angle_{\mathrm{uni}}(i)=2 \pi i / N_{50}$ is the azimuthal angle of the i-th virtual PMT hit, but only when uniform distribution of the hits is assumed. As the uniformity of the hit pattern increases, the goodness decreases. 
  
 
 
@@ -429,7 +429,7 @@ There are two more cuts used and these involve the distance to the inner detecto
     \label{fig:dwall_effwall_fv}
 \end{figure} 
                                                                                         
-These are standard cuts applied in all Super-Kamiokande analyses in order to avoid backgrounds, and when you have events where the energy region is below 6 MeV even more stringent cuts are required to further reduce background from the inner detector wall, described in the next Subsection. 
+These are standard cuts applied in all Super-Kamiokande analyses in order to avoid backgrounds and when there are events where the energy region is below 6 MeV even more stringent cuts are required to further reduce background from the inner detector wall, described in the next Subsection. 
 
 \subsubsection{Low energy background cut}
 
@@ -477,7 +477,7 @@ Just like for the low energy background cut values, the values of the optimised 
     \centering
     \subfloat[]{\label{main:c}\includegraphics[scale=.5]{Figures/ovaq_cut.PNG}}
     
-    \caption{Optimised cut values for dwall (top left), effwall (top right) and ovaQ (bottom) for Run 8 FHC mode. The red lines are linear fits to the values for these distributions, where events which have values above the lines are used in the analysis \cite{Abe_2019}.}
+    \caption{Optimised cut values for dwall (top left), effwall (top right) and ovaQ (bottom) for Run 8 FHC mode. The red lines are linear fits to the values for these distributions, where events which have values above the lines are used in the analysis \cite{Abe_2019}. The blue vertical bars are the bin widths involved in the parameter scans for each parameter set.}
     \label{fig:optimised_dwall_effwall_ovaq}
 \end{figure}
     
@@ -644,7 +644,19 @@ After ensuring that the truth neutron tagging information was the same between t
       \label{fig:TruCapNuNDistanceReduction}
 \end{figure}
 
-With the level of $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$ in the simulation being 0.026\%, the number of neutron captures on hydrogen and gadolinium should be approximately equal \cite{Sekiya_2020}. Figure \ref{fig:TruCapTimeReductionNewHGd} shows the the true capture time for the neutrons in the Monte Carlo seperated into captures on hydrogen and captures on gadolinium, and the distributions and the number of events look very similar, confirming this. Similarly, Figure \ref{fig:TruCapNuNDistanceReductionNewHGd} shows the distance between the neutrino interaction vertex and the true neutron capture vertex for captures on hydrogen and gadolinium. Once again the distributions are very similar, showing agreement with the equal number of captures.
+With the level of $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$ in the simulation being 0.026\%, the number of neutron captures on hydrogen and gadolinium should be approximately equal \cite{Sekiya_2020}. This is shown in Figure \ref{fig:no_captures_gd_0.02}, where 0.026\% $\mathrm{Gd}_{2}\left(\mathrm{SO}_{4}\right)_{3} \cdot 8 \mathrm{H}_{2} \mathrm{O}$ (which is 0.01\% Gd by mass in water) corresponds to 0.5 on the y-axis.
+ 
+\begin{figure}
+    \centering 
+    \includegraphics[width=0.5\textwidth]{Figures/no_captures_gd.PNG}
+    \caption{Plot of fraction of neutron captures on Gd plotted against percentage of Gd by mass in water, taken from \cite{osti_915115}.}
+    \label{fig:dwall_effwall_fv}
+\end{figure} 
+              
+
+
+
+Figure \ref{fig:TruCapTimeReductionNewHGd} shows the the true capture time for the neutrons in the Monte Carlo seperated into captures on hydrogen and captures on gadolinium, and the distributions and the number of events look very similar, confirming this. Similarly, Figure \ref{fig:TruCapNuNDistanceReductionNewHGd} shows the distance between the neutrino interaction vertex and the true neutron capture vertex for captures on hydrogen and gadolinium. Once again the distributions are very similar, showing agreement with the equal number of captures.
 
 
 \begin{figure}
@@ -685,7 +697,7 @@ T O F_i=\frac{\left\|\overrightarrow{P M T_i}-\overrightarrow{V T X_\nu}\right\|
 \label{eq:TOF_calc}
 \end{equation}
 
-Before the neutron candidate is passed to the secondary selection, other cuts are used to reject candidates which are not neutrons from NCQE interactions. Table \ref{table:new_selection_criteria} shows the three primary selection criteria. The first involves the width of the sliding window used for the neutron tagging search, which is set to 14 ns. The second is the hit tigger for the neutron candidate selection, which is set to 7 hits, which is the same for the previous NCQE hydrogen-ntag analysis, with the maximum value of the hits set to 400. Third, the minimum time seperation between the gamma hits is set to 200 ns - the reason for this is to avoid double counting the same hit from the neutron capture candidate. 
+Before the neutron candidate is passed to the secondary selection, other cuts are used to reject candidates which are not neutrons from NCQE interactions. Table \ref{table:new_selection_criteria} shows the three primary selection criteria. The first involves the width of the sliding window used for the neutron tagging search, which is set to 14 ns. The second is the hit trigger for the neutron candidate selection, which is set to 7 hits, which is the same for the previous NCQE hydrogen-ntag analysis, with the maximum value of the hits set to 400. Third, the minimum time seperation between the gamma hits is set to 200 ns - the reason for this is to avoid double counting the same hit from the neutron capture candidate. 
 
 
 \begin{table}
@@ -861,12 +873,12 @@ where $P_{l}$ are the Legendre polynomials of order $l$ and $\theta_{ij}$ is the
 
 
 
-Figure \ref{fig:tagout} shows the neural network likelihood signal between 0 and 1 (TagOut), for all events, neutron capture on hydrogen candidates and neutron capture on gadolinium candidates. The blue arrow shows the cut on this variable (0.7), so that a neutron candidate that has been analysed is determined to be a signal neutron candidate if its value of TagOut $>$ 0.7, and background if it is $<$ 0.7. The value of 0.7 was chosen due to the amount of background events being sufficiently low enough past this value, while ensuring a substantial amount of neutron capture candidate signals on hydrogen and gadolinium.
+Figure \ref{fig:tagout} shows the neural network likelihood signal between 0 and 1 (TagOut), for all events, neutron capture on hydrogen candidates and neutron capture on gadolinium candidates. The blue arrow shows the cut on this variable (0.7), so that a neutron candidate that has been analysed is determined to be a signal neutron candidate if its value of TagOut greater than or equal to 0.7, and background if it is less than 0.7. The value of 0.7 was chosen due to the amount of background events being sufficiently low enough past this value, while ensuring a substantial amount of neutron capture candidate signals on hydrogen and gadolinium.
 
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{Figures/tagout.png}
-    \caption{Neural network output signal likelihood. Total signal neutron capture candidates are shown in the distribution with a blue line, whereas candidates that capture on hydrogen are shown in red, and gadolinium in green, and the distribution of background candidates are shown in pink}
+    \caption{Neural network output signal likelihood. Total signal neutron capture candidates are shown in the distribution with a blue line, whereas candidates that capture on hydrogen are shown in red, and gadolinium in green, and the distribution of background candidates are shown in pink. The dashed blue line shows the cutoff value of TagOut, where a neutron candidate is determined as being signal if the value of TagOut $\geq$ 0.7 and background if TagOut $<$ 0.7.}
     \label{fig:tagout}
 \end{figure}
 
